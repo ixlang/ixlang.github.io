@@ -1,0 +1,26 @@
+{
+	"SimpleGameServer":	{
+		"version":	"1.2",
+		"language":	"xlang",
+		"sources":	["SimpleGameServer.xcs", ".\\RCPServer.xcsm", ".\\IServer.xcsm", ".\\IClient.xcsm", ".\\GameServer.xcsm", ".\\Room.xcsm", ".\\User.xcsm", ".\\Log.xcsm", ".\\Game.xcsm"],
+		"configures":	{
+			"debug":	{
+				"path":	{
+					"incpath":	[],
+					"libpath":	[]
+				},
+				"libs":	[],
+				"options":	"",
+				"debugable":	"-dbg",
+				"cmd":	"$(Output)",
+				"args":	"",
+				"workdir":	"$(ProjectDir)",
+				"wtype":	"",
+				"outname":	"$(ProjectName).exe",
+				"outpath":	"$(ProjectDir)/$(Arch)/$(Configure)",
+				"command":	"-ce"
+			}
+		},
+		"comment":	"次项目采用RCP(远程调用通道)为通讯基础,\r与chess项目互为Server/Client"
+	}
+}

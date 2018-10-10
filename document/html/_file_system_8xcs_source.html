@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/std/FileSystem.xcs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v6.0 beta</span>
+   </div>
+   <div id="projectbrief">项目介绍</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e3ca87bab28942003398a7ab6222efec.html">std</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">FileSystem.xcs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_file_system_8xcs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> {</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    Data;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;};</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="namespace_file_system.html">    7</a></span>&#160;<span class="keyword">package </span>FileSystem{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_file_system_1_1_operator.html">    9</a></span>&#160;    class Operator{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_file_system_1_1_operator_1_1_f_i_l_e_t_i_m_e.html">   11</a></span>&#160;        static class FILETIME{</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_file_system_1_1_operator_1_1_f_i_l_e_t_i_m_e.html#a05d29dff7b6cc65724d41d771355a834">   12</a></span>&#160;            FILETIME(byte [] data, int ofst){</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                dwLowDateTime = Translate.data2int(data , ofst);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                dwHighDateTime = Translate.data2int(data , ofst + 4);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            }</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_file_system_1_1_operator_1_1_f_i_l_e_t_i_m_e.html#a57c0569fdea73a59efb6fe4c08ac383a">   17</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="class_file_system_1_1_operator_1_1_f_i_l_e_t_i_m_e.html#a57c0569fdea73a59efb6fe4c08ac383a">dwLowDateTime</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_file_system_1_1_operator_1_1_f_i_l_e_t_i_m_e.html#a14fce1ad55c8c62fb05b3b15e886c3a9">   18</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="class_file_system_1_1_operator_1_1_f_i_l_e_t_i_m_e.html#a14fce1ad55c8c62fb05b3b15e886c3a9">dwHighDateTime</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_file_system_1_1_operator_1_1_f_i_l_e_t_i_m_e.html#a3ab7e59404b1d33be1c5bbfca0cb2cd6">   20</a></span>&#160;            <span class="keywordtype">long</span> <a class="code" href="class_file_system_1_1_operator_1_1_f_i_l_e_t_i_m_e.html#a3ab7e59404b1d33be1c5bbfca0cb2cd6">getMillis</a>(){</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                <span class="keywordtype">long</span> m = dwHighDateTime;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                <span class="keywordflow">return</span> (m &lt;&lt; 32) | dwLowDateTime;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        };</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html">   26</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">class </span>WIN32_FIND_DATA{</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a4854233e40506430e7baac2de91a9f63">   27</a></span>&#160;            <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> FILE_ATTRIBUTE_DIRECTORY = 0x10;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a0ad80c378fb4b5fe4bc8a855302c4ae1">   28</a></span>&#160;            byte [] data = <span class="keyword">new</span> byte[320];</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#ad367f2577ad4a57dc0d3da89accc6216">   30</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#ad367f2577ad4a57dc0d3da89accc6216">isDir</a>(){</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="keywordflow">return</span> (getFileAttributes() &amp; FILE_ATTRIBUTE_DIRECTORY) == FILE_ATTRIBUTE_DIRECTORY;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            }</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a3bd080aac1c4ad609524cf5784363738">   33</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a3bd080aac1c4ad609524cf5784363738">getFileAttributes</a>(){</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                <span class="keywordflow">return</span> Translate.data2int(data, 0);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a6e98c01411432c8e9bd26cdade6fb103">   37</a></span>&#160;            FILETIME <a class="code" href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a6e98c01411432c8e9bd26cdade6fb103">getCreationTime</a>(){</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> FILETIME(data, 4);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a17ed027f31e049ca87b2f2f00a937915">   41</a></span>&#160;            FILETIME <a class="code" href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a17ed027f31e049ca87b2f2f00a937915">getLastAccessTime</a>(){</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> FILETIME(data, 12);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;         </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a5a16190bd42ae06c9774a619f148bbe6">   45</a></span>&#160;            FILETIME <a class="code" href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a5a16190bd42ae06c9774a619f148bbe6">getLastWriteTime</a>(){</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> FILETIME(data, 20);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            } </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a7a0534e86734a1d1da377974197738b5">   49</a></span>&#160;            <span class="keywordtype">long</span> <a class="code" href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a7a0534e86734a1d1da377974197738b5">getFileSize</a>(){</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="keywordflow">return</span> ((<span class="keywordtype">long</span>)Translate.data2int(data, 28) &lt;&lt; 32) | Translate.data2int(data, 32) ;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a5fc171300040f22a7a87674ec7094a8f">   53</a></span>&#160;            <a class="code" href="class_string.html">String</a> <a class="code" href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a5fc171300040f22a7a87674ec7094a8f">getFileName</a>(){</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordtype">int</span> i = 44;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <span class="keywordflow">for</span> (; i &lt; 304; i++){</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    <span class="keywordflow">if</span> (data[i] == 0){</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                    }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_string.html">String</a>(data, 44, i - 44);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a78ee178b6a73658d65ca60da4d1e6683">   64</a></span>&#160;            <a class="code" href="class_string.html">String</a> <a class="code" href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a78ee178b6a73658d65ca60da4d1e6683">getName</a>(){</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <span class="keywordtype">int</span> i = 304;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <span class="keywordflow">for</span> (; i &lt; 320; i++){</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                    <span class="keywordflow">if</span> (data[i] == 0){</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_string.html">String</a>(data, 304, i - 304);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        };</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="interface_file_system_1_1_operator_1_1_file_object_listener.html">   77</a></span>&#160;        <span class="keyword">interface </span>FileObjectListener{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordtype">void</span> onSearchStart();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordtype">bool</span> onObjectFound(<a class="code" href="class_string.html">String</a> dir, WIN32_FIND_DATA wfd);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordtype">void</span> onFinish();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        };</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_file_system_1_1_operator.html#a3e08c1d24aa28090371dec6cfa263e43">   83</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_file_system_1_1_operator.html#a3e08c1d24aa28090371dec6cfa263e43">SearchFile</a>(<a class="code" href="class_string.html">String</a> parentDir, <a class="code" href="class_string.html">String</a> wildcardPath, FileObjectListener l){</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordtype">int</span> hFile = -1; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            WIN32_FIND_DATA pNextInfo = <span class="keyword">new</span> WIN32_FIND_DATA();  </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            hFile = Native.FindFirstFileA(wildcardPath, pNextInfo.data); </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">if</span>(-1 == hFile){  </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                l.onFinish();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;  </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            }  </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            l.onSearchStart();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">do</span>{  </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                <span class="keywordflow">if</span> (<span class="keyword">false</span> == l.onObjectFound(parentDir, pNextInfo)){</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            }<span class="keywordflow">while</span> (1 == Native.FindNextFileA(hFile, pNextInfo.data));</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            Native.FindClose(hFile);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            l.onFinish();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="class_file_system_1_1_operator.html#a468eded83ad755e2d85288a9a037304a">  107</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_file_system_1_1_operator.html#a468eded83ad755e2d85288a9a037304a">DeleteFile</a>(<a class="code" href="class_string.html">String</a> filepath){</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class__system__.html">_system_</a>.<a class="code" href="class__system__.html#a068517965454d24a4a4cead267f7160c">deleteFile</a>(filepath);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    };</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;};</div>
+<div class="ttc" id="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a_html_a3bd080aac1c4ad609524cf5784363738"><div class="ttname"><a href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a3bd080aac1c4ad609524cf5784363738">FileSystem.Operator.WIN32_FIND_DATA.getFileAttributes</a></div><div class="ttdeci">int getFileAttributes()</div><div class="ttdef"><b>Definition:</b> <a href="_file_system_8xcs_source.html#l00033">FileSystem.xcs:33</a></div></div>
+<div class="ttc" id="class_file_system_1_1_operator_1_1_f_i_l_e_t_i_m_e_html_a3ab7e59404b1d33be1c5bbfca0cb2cd6"><div class="ttname"><a href="class_file_system_1_1_operator_1_1_f_i_l_e_t_i_m_e.html#a3ab7e59404b1d33be1c5bbfca0cb2cd6">FileSystem.Operator.FILETIME.getMillis</a></div><div class="ttdeci">long getMillis()</div><div class="ttdef"><b>Definition:</b> <a href="_file_system_8xcs_source.html#l00020">FileSystem.xcs:20</a></div></div>
+<div class="ttc" id="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a_html_a5a16190bd42ae06c9774a619f148bbe6"><div class="ttname"><a href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a5a16190bd42ae06c9774a619f148bbe6">FileSystem.Operator.WIN32_FIND_DATA.getLastWriteTime</a></div><div class="ttdeci">FILETIME getLastWriteTime()</div><div class="ttdef"><b>Definition:</b> <a href="_file_system_8xcs_source.html#l00045">FileSystem.xcs:45</a></div></div>
+<div class="ttc" id="class_file_system_1_1_operator_1_1_f_i_l_e_t_i_m_e_html_a57c0569fdea73a59efb6fe4c08ac383a"><div class="ttname"><a href="class_file_system_1_1_operator_1_1_f_i_l_e_t_i_m_e.html#a57c0569fdea73a59efb6fe4c08ac383a">FileSystem.Operator.FILETIME.dwLowDateTime</a></div><div class="ttdeci">int dwLowDateTime</div><div class="ttdef"><b>Definition:</b> <a href="_file_system_8xcs_source.html#l00017">FileSystem.xcs:17</a></div></div>
+<div class="ttc" id="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a_html_a6e98c01411432c8e9bd26cdade6fb103"><div class="ttname"><a href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a6e98c01411432c8e9bd26cdade6fb103">FileSystem.Operator.WIN32_FIND_DATA.getCreationTime</a></div><div class="ttdeci">FILETIME getCreationTime()</div><div class="ttdef"><b>Definition:</b> <a href="_file_system_8xcs_source.html#l00037">FileSystem.xcs:37</a></div></div>
+<div class="ttc" id="class_file_system_1_1_operator_html_a3e08c1d24aa28090371dec6cfa263e43"><div class="ttname"><a href="class_file_system_1_1_operator.html#a3e08c1d24aa28090371dec6cfa263e43">FileSystem.Operator.SearchFile</a></div><div class="ttdeci">static bool SearchFile(String parentDir, String wildcardPath, FileObjectListener l)</div><div class="ttdef"><b>Definition:</b> <a href="_file_system_8xcs_source.html#l00083">FileSystem.xcs:83</a></div></div>
+<div class="ttc" id="class__system___html_a068517965454d24a4a4cead267f7160c"><div class="ttname"><a href="class__system__.html#a068517965454d24a4a4cead267f7160c">_system_.deleteFile</a></div><div class="ttdeci">static bool deleteFile(String filepath)</div><div class="ttdoc">删除一个本地文件 </div></div>
+<div class="ttc" id="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a_html_a5fc171300040f22a7a87674ec7094a8f"><div class="ttname"><a href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a5fc171300040f22a7a87674ec7094a8f">FileSystem.Operator.WIN32_FIND_DATA.getFileName</a></div><div class="ttdeci">String getFileName()</div><div class="ttdef"><b>Definition:</b> <a href="_file_system_8xcs_source.html#l00053">FileSystem.xcs:53</a></div></div>
+<div class="ttc" id="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a_html_ad367f2577ad4a57dc0d3da89accc6216"><div class="ttname"><a href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#ad367f2577ad4a57dc0d3da89accc6216">FileSystem.Operator.WIN32_FIND_DATA.isDir</a></div><div class="ttdeci">bool isDir()</div><div class="ttdef"><b>Definition:</b> <a href="_file_system_8xcs_source.html#l00030">FileSystem.xcs:30</a></div></div>
+<div class="ttc" id="class__system___html"><div class="ttname"><a href="class__system__.html">_system_</a></div><div class="ttdoc">系统和IO相关 </div><div class="ttdef"><b>Definition:</b> <a href="_system_8xcs_source.html#l00006">System.xcs:6</a></div></div>
+<div class="ttc" id="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a_html_a78ee178b6a73658d65ca60da4d1e6683"><div class="ttname"><a href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a78ee178b6a73658d65ca60da4d1e6683">FileSystem.Operator.WIN32_FIND_DATA.getName</a></div><div class="ttdeci">String getName()</div><div class="ttdef"><b>Definition:</b> <a href="_file_system_8xcs_source.html#l00064">FileSystem.xcs:64</a></div></div>
+<div class="ttc" id="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a_html_a7a0534e86734a1d1da377974197738b5"><div class="ttname"><a href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a7a0534e86734a1d1da377974197738b5">FileSystem.Operator.WIN32_FIND_DATA.getFileSize</a></div><div class="ttdeci">long getFileSize()</div><div class="ttdef"><b>Definition:</b> <a href="_file_system_8xcs_source.html#l00049">FileSystem.xcs:49</a></div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="class_file_system_1_1_operator_1_1_f_i_l_e_t_i_m_e_html_a14fce1ad55c8c62fb05b3b15e886c3a9"><div class="ttname"><a href="class_file_system_1_1_operator_1_1_f_i_l_e_t_i_m_e.html#a14fce1ad55c8c62fb05b3b15e886c3a9">FileSystem.Operator.FILETIME.dwHighDateTime</a></div><div class="ttdeci">int dwHighDateTime</div><div class="ttdef"><b>Definition:</b> <a href="_file_system_8xcs_source.html#l00018">FileSystem.xcs:18</a></div></div>
+<div class="ttc" id="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a_html_a17ed027f31e049ca87b2f2f00a937915"><div class="ttname"><a href="class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a17ed027f31e049ca87b2f2f00a937915">FileSystem.Operator.WIN32_FIND_DATA.getLastAccessTime</a></div><div class="ttdeci">FILETIME getLastAccessTime()</div><div class="ttdef"><b>Definition:</b> <a href="_file_system_8xcs_source.html#l00041">FileSystem.xcs:41</a></div></div>
+<div class="ttc" id="class_file_system_1_1_operator_html_a468eded83ad755e2d85288a9a037304a"><div class="ttname"><a href="class_file_system_1_1_operator.html#a468eded83ad755e2d85288a9a037304a">FileSystem.Operator.DeleteFile</a></div><div class="ttdeci">static bool DeleteFile(String filepath)</div><div class="ttdef"><b>Definition:</b> <a href="_file_system_8xcs_source.html#l00107">FileSystem.xcs:107</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

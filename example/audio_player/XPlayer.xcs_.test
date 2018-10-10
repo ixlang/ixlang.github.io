@@ -1,0 +1,263 @@
+/*require(
+"src/codec.xcsm", 
+"src/audioOutput.xcsm",
+"src/WaveDrawer.xcsm",
+"src/WaveLineDrawer.xcsm", 
+"src/EfficDrawer.xcsm", 
+"src/playThread.xcsm")
+
+require ("src/native_class_test.xcsm")*/
+
+using {
+    glGriphics;
+};
+
+class Controller{
+    Image imgPlay = nilptr;
+    Image imgPause = nilptr;
+    Image imgStop = nilptr;
+    RectF c_rect = nilptr;
+    RectF map_rect = nilptr;
+    Image  curState = nilptr;
+    int c_mask = 0xffffffff;
+    void init(){
+        String appPath = _system_.getAppDirector();
+        
+        String szPlay = appPath.appendPath("res/play.png");
+        String szPause = appPath.appendPath("res/pause.png");
+        String szStop = appPath.appendPath("res/stop.png");
+    
+        imgPlay = new Image(new Bitmap(szPlay));
+        Math.
+        imgPause = new Image(new Bitmap(szPause));
+        imgStop = new Image(new Bitmap(szStop));
+        c_rect = new RectF(330, 30, 330 + imgPlay.getWidth(), 30 + imgPlay.getHeight());
+    }
+    
+    void draw(Canvas c){
+        c.drawImage(curState, c_rect, new RectF(0), 0, c_mask, new PointF(0));
+    }
+        
+    void setStatePlay(){
+        curState = imgPause;
+    }
+    
+    void setStatePause(){
+        curState = imgPlay;
+    }
+    
+    void setStateStop(){
+        curState = imgStop;
+    }
+    
+    void onOver(int x, int y){
+        if (map_rect.contains(x, y)){
+            c_mask = 0x7fffffff;
+        }else{
+            c_mask = 0xffffffff;
+        }
+    }
+    
+    bool onClick(int flag, int x, int y){
+        return map_rect.contains(x, y);
+    }
+    
+    bool isPlaying(){
+        return imgPause == curState;
+    }
+    bool isPause(){
+        return imgPlay == curState;
+    }
+};
+
+class GraphicsWindow : Window{
+    Canvas canvas = nilptr;
+    Image img = nilptr;
+    Image txtimg = nilptr;
+    Bitmap bitmap = nilptr;
+    Image tipsimg = nilptr;
+    Controller _control = new Controller();
+
+    playThread t ;
+    EfficDrawer efficer = new WaveDrawer();
+    WaveLineDrawer wef = new WaveLineDrawer();
+    EfficDrawer _cur_efc = nilptr;
+    int effic = 1;
+    Matrix m = new Matrix();
+    Typeface tf = nilptr;
+    String cur_file = nilptr;
+    
+    int onGetStyle(){
+        //去掉 最大化按钮和改变大小的属性
+        return super.onGetStyle() & ~ (0x00040000 | 0x00010000);
+    }
+    GraphicsWindow(){
+ 
+    }
+    
+    bool create(String file) {
+        cur_file = file;
+        t = new playThread(file);
+        if (create(0, nilptr)){
+            setVisible(1);      
+            setText("XPlayer1 - " + file);
+            return true;
+        }
+        return false;
+    }
+    
+    int onGetWidth(){
+        return 500;
+    }
+    
+    int onGetHeight(){
+        return 370;
+    }
+    
+    bool onCreate(){
+        canvas = new Canvas(getDeviceContext(), 500, 350);
+        canvas.setBackColor(0xff000000);
+        canvas.setAntiAliasing(true);
+        String appPath = _system_.getAppDirector();
+        String bkFile = appPath.appendPath("res/back.jpg");
+        
+        
+        String fontPath = _system_.getAppDirector();
+        String fontfile = fontPath.appendPath("font/msyhbd.ttf");
+        
+        tf = new Typeface(fontfile);
+        
+        Bitmap tb = nilptr;
+        try{
+            tb = new Bitmap(cur_file , 12, tf, 0xffffffff, Style.fill);
+        
+        }catch(Exception e){
+            tb = new Bitmap("can not display file info" , 12, tf, 0xffffffff, Style.fill);
+        }
+        txtimg = new Image(tb);
+        
+        Bitmap ts = new Bitmap("  click to switch visual effect" , 12, tf, 0xff00cc00, Style.fill);
+
+        tipsimg = new Image(ts);
+        
+        bitmap = new Bitmap(bkFile);
+       
+        img = new Image(bitmap);
+        if (false == efficer.create()){
+            return false;
+        }
+        if (false == wef.create()){
+            return false;
+        }
+        
+        _control.init();
+        _control.setStatePlay();
+        _cur_efc = wef;
+        t.start();
+        
+        new Timer().schedule(new TimerTask(){
+            void run(){
+                GraphicsWindow.this.update();
+            }
+        }, 20, -1);
+        
+        return true;
+        
+    }
+    
+    void quit(){
+        if (_control.isPlaying() == false){
+            t.play();
+            _control.setStatePlay();
+        }
+        t.quit();
+    }
+    
+    String formatTime(int m){
+        return String.format("%02d:%02d:%03d", m / 1000 / 60 , (m / 1000)  % 60,m % 1000);
+    }
+    void drawText(Canvas c){
+        c.drawText(formatTime(t.getPosition() ) + " / " + formatTime(t.getDuration()), 5, 50, 15, tf, 0xffffffff, Style.fill);
+    }
+    
+    void onPaint(){
+        beginPaint();
+        
+        canvas.prepare();
+        
+        canvas.setMatrix(m);
+
+        _cur_efc.prepare(canvas, t.data, t.rd, t.play_start);
+        
+        RectF rf = new RectF(0, 0,  img.getWidth(), img.getHeight());
+        
+        canvas.drawImage(img, rf, new RectF(0), 0, 0xffffffff, new PointF(0));
+        
+        _cur_efc.drawWave(canvas);
+        
+        canvas.drawImage(txtimg, new RectF(5, 10,  5 + txtimg.getWidth(),10 + txtimg.getHeight()), new RectF(0), 0, 0xffffffff, new PointF(0));
+        
+        canvas.drawImage(tipsimg, new RectF(5, 100,  5 + tipsimg.getWidth(),100 + tipsimg.getHeight()), new RectF(0), 0, 0xffffffff, new PointF(0));
+        
+        drawText(canvas);
+        
+        _control.draw(canvas);
+        
+        canvas.flush();
+        
+        endPaint();
+    }
+    
+    void onLButtonDown(int flag, int x, int y){
+        if (_control.onClick(flag, x, y) == false){
+            if (effic ==1 ){
+                _cur_efc = efficer;
+                effic = 0;
+            }else{
+                _cur_efc = wef;
+                effic = 1;
+            }
+        }else{
+            if (_control.isPlaying()){
+                t.pause();
+                _control.setStatePause();
+            }else{
+                t.play();
+                _control.setStatePlay();
+            }
+        }
+    }
+    
+    void onMouseMove(int flag, int x, int y){
+        _control.onOver(x, y);
+    }
+    
+    void onSize(int flag, int cx, int cy){
+        if (cy != 0){
+            m = new Matrix();
+            double rate = (double)cx / cy;
+            
+            m.Scale(cx / 500.f, cy / 350.f);
+            m.translate((cx - 500.f) / 2 / (cx / 2.f) * rate, -(cy - 350.f) / 2 / (cx / 2.f) * rate);
+            canvas.resize(cx, cy);
+            _control.map_rect = m.mapRect(_control.c_rect);
+        }
+    }
+};
+
+
+int main(String [] args){
+   
+    GraphicsWindow win = new GraphicsWindow();
+    String file = "audio/ring_inside.ogg";
+    if (args.length > 0){
+        file = args[0];
+    }
+    if (win.create(file)){
+        Window.Loop();
+    }
+
+    //通知子线程退出
+    win.quit();
+    return 0;
+}

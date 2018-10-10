@@ -1,0 +1,274 @@
+//xlang Source, Name:Room.xcsm 
+//Date: Thu Oct 21:10:14 2018 
+
+class Room{
+	int id;
+	Map<int, User> _user_list = new Map<int, User>();
+    Map<int, User> _player_list = new Map<int, User>();
+    
+    Game _game = new Game();
+    
+    bool gameStart;
+    
+    void setId(int i){
+		id = i;
+    }
+    
+    int getId(){
+		return id;
+    }
+    
+    void take(User u){
+		synchronized(_user_list){
+			Map.Iterator<int, User> iter = _user_list.find(u.getId());
+            if (iter != nilptr){
+				_user_list.remove(iter);
+            }
+			
+            iter = _player_list.find(u.getId());
+            if (iter != nilptr){
+				_player_list.remove(iter);
+                if (gameStart){
+					gameStart = false;
+                    //注意  有玩家掉线
+                }
+            }
+        }
+    }
+    
+    bool enter(RCPServer rcp, User u){
+		synchronized(_user_list){
+			//已在此房间 则返回失败
+			if (_user_list.containsKey(u.getId())){
+				return false;
+            }
+            
+            _user_list.put(u.getId(), u);
+            u.setRoom(this);
+            Log.i("GAME_SERVER", "用户:" + u.getId() + " 进入房间:" + id);
+            Map.Iterator<int, User> iter = _user_list.iterator();
+            
+            while (iter.hasNext()){
+				User	ut = iter.getValue();
+                ut.onUserEnter(rcp, u.getId(),  u.nick);
+				iter.next();
+            }
+        }
+        return true;
+    }
+    
+    bool leave(User u){
+		synchronized(_user_list){
+			//本来就不在此房间
+			if (_user_list.containsKey(u.getId()) == false){
+				return false;
+            }
+            
+            _user_list.remove(u.getId());
+            u.setRoom(nilptr);
+        }
+        return true;
+    }
+    
+    bool joinGame(User u){
+		//游戏已经开始 则无法加入
+        
+		if (gameStart){
+			return false;
+        }
+        
+		synchronized(_user_list){
+			//本来就不在此房间  无法加入游戏
+			if (_user_list.containsKey(u.getId()) == false){
+				return false;
+			}
+            
+			synchronized(_player_list){
+				//已经在玩家队列
+            	if (_player_list.containsKey(u.getId())){
+					return false;
+                }
+				_player_list.put(u.getId(), u);
+			}
+		}
+        return true;
+    }
+    
+    bool leaveGame(User u){
+		//游戏已经开始 则无法退出
+        
+		if (gameStart){
+			return false;
+        }
+        
+		synchronized(_user_list){
+			//本来就不在此房间  无法退出游戏
+			if (_user_list.containsKey(u.getId()) == false){
+				return false;
+			}
+            
+			synchronized(_player_list){
+				//不在玩家队列
+				if (_player_list.containsKey(u.getId()) == false){
+					return false;
+                }
+				_player_list.remove(u.getId());
+			}
+		}
+        return true;
+    }
+    
+    //准备游戏
+    bool ready(RCPServer rcp, User u){
+		//游戏已经开始 无法准备
+		if (gameStart){
+			return false;
+        }
+        
+		synchronized(_user_list){
+			//本来就不在此房间  无法加入游戏
+			if (_user_list.containsKey(u.getId()) == false){
+				return false;
+			}
+            
+			synchronized(_player_list){
+				//已经在玩家队列
+            	if (_player_list.containsKey(u.getId()) == false){
+					return false;
+                }
+				u.ready();
+                
+                Map.Iterator<int, User> iter = _player_list.iterator();
+                
+                int readyCount = 0;
+                while (iter.hasNext()){
+					if (iter.getValue().isReady()){
+						_game.setUser(readyCount, iter.getKey());
+						readyCount++;
+                    }
+					iter.next();
+                }
+                
+                gameStart = (readyCount == 2);//两人准备好就可以开始游戏
+			}
+            
+            if (gameStart){
+				Map.Iterator<int, User> iter = _user_list.iterator();
+				while (iter.hasNext()){
+					rcp.rcs.onGameStart(iter.getValue().context, _game.getCurrentHand());
+					iter.next();
+				}
+            }else{
+				Map.Iterator<int, User> iter = _user_list.iterator();
+				while (iter.hasNext()){
+					rcp.rcs.onUserStatusUpdate(iter.getValue().context);
+					iter.next();
+				}
+            }
+		}
+        
+        return true;
+    }
+    
+    //取消准备
+    bool cancel(RCPServer rcp , User u){
+		//游戏已经开始 无法取消准备
+    	if (gameStart){
+			return false;
+        }
+        
+		synchronized(_user_list){
+			//本来就不在此房间  无法退出游戏
+			if (_user_list.containsKey(u.getId()) == false){
+				return false;
+			}
+            
+			synchronized(_player_list){
+				//不在玩家队列
+				if (_player_list.containsKey(u.getId()) == false){
+					return false;
+                }
+				u.cancel();
+			}
+            
+			Map.Iterator<int, User> iter = _user_list.iterator();
+			while (iter.hasNext()){
+				rcp.rcs.onUserStatusUpdate(iter.getValue().context);
+				iter.next();
+			}
+		}
+        return true;
+    }
+    
+    
+    void sendRoomMessage(User u, RCPServer rcp , String msg){
+		synchronized(_user_list){
+			Map.Iterator<int, User> iter = _user_list.iterator();
+            while (iter.hasNext()){
+				rcp.rcs.onRoomMessage(iter.getValue().context, u.getId(), msg);
+				iter.next();
+            }
+        }
+    }
+    
+    bool setChess(RCPServer rcp ,User u, int index){
+		if (gameStart){
+			if (_game.set_chess(index, u.getId())){
+				bool bWin = false;
+				if (_game.check_win(u.getId())){
+					bWin = true;
+                    gameStart = false;
+                    _game.reset();
+                }
+				synchronized(_user_list){
+					Map.Iterator<int, User> iter = _user_list.iterator();
+					while (iter.hasNext()){
+						rcp.rcs.setChess(iter.getValue().context, index, u.getId());
+                        if (bWin){
+							rcp.rcs.youwin(iter.getValue().context, u.getId());
+                            iter.getValue().cancel();
+                        }
+						iter.next();
+					}
+				}
+            }
+        }
+		return true;
+    }
+    
+    String getRoomInfo(){
+		JsonObject root = new JsonObject();
+		JsonArray json = new JsonArray();
+		int []users ;
+		synchronized(_user_list){
+			users = new int[_user_list.size()];
+			Map.Iterator<int, User> iter = _user_list.iterator();
+            int i = 0;
+            while (iter.hasNext()){
+				JsonObject juser = new JsonObject();
+                User u = iter.getValue();
+                juser.put("id", iter.getKey());
+                juser.put("name", u.nick);
+                
+                synchronized(_player_list){
+					if (_player_list.containsKey(iter.getKey())){
+						juser.put("player", true);
+                        juser.put("ready", iter.getValue().isReady());
+                    }else{
+						juser.put("player", false);
+                    }
+                }
+                
+                iter.next();
+                json.put(juser);
+                
+            }
+        }
+        
+        root.put("users", json);
+        root.put("start", gameStart);
+        
+		return root.toString(false);
+    }
+    
+};

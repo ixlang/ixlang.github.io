@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/std/AsyncInput.xcs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v6.0 beta</span>
+   </div>
+   <div id="projectbrief">项目介绍</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e3ca87bab28942003398a7ab6222efec.html">std</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">AsyncInput.xcs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_async_input_8xcs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;@Declare </div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="interface_async_input.html">    6</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_async_input.html">AsyncInput</a>{</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_async_input.html#abc8fab9503d36681ef2b037af01581d3">notify</a>(Object own, <span class="keywordtype">int</span> type, <span class="keywordtype">long</span> bind, <span class="keywordtype">bool</span> bsucceed, Object context,<span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="interface_async_input.html#ad56e9f9762093e217134dadda3b93f0f">newInstance</a>(Object own, <span class="keywordtype">int</span> type, <span class="keywordtype">long</span> bind, Object context);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="interface_async_input.html#a725a88f1d9c293dff2d7a763612fcd2f">dataArrives</a>(Object own, Object context, byte[] data);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="interface_async_input.html#a097f96ec6c843d070af6eb8509e3c15d">deleteInstance</a>(Object own, Object context);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="interface_async_input.html#a76ccbe154fa571063ee89fc53cccd4f5">inactiveTimeoutVerify</a>(Object own, Object context);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
+<div class="ttc" id="interface_async_input_html_a097f96ec6c843d070af6eb8509e3c15d"><div class="ttname"><a href="interface_async_input.html#a097f96ec6c843d070af6eb8509e3c15d">AsyncInput.deleteInstance</a></div><div class="ttdeci">bool deleteInstance(Object own, Object context)</div><div class="ttdoc">实例删除通知 </div></div>
+<div class="ttc" id="interface_async_input_html_ad56e9f9762093e217134dadda3b93f0f"><div class="ttname"><a href="interface_async_input.html#ad56e9f9762093e217134dadda3b93f0f">AsyncInput.newInstance</a></div><div class="ttdeci">bool newInstance(Object own, int type, long bind, Object context)</div><div class="ttdoc">新实例创建回调 </div></div>
+<div class="ttc" id="interface_async_input_html"><div class="ttname"><a href="interface_async_input.html">AsyncInput</a></div><div class="ttdoc">异步输入接口 需要继承 </div><div class="ttdef"><b>Definition:</b> <a href="_async_input_8xcs_source.html#l00006">AsyncInput.xcs:6</a></div></div>
+<div class="ttc" id="interface_async_input_html_a725a88f1d9c293dff2d7a763612fcd2f"><div class="ttname"><a href="interface_async_input.html#a725a88f1d9c293dff2d7a763612fcd2f">AsyncInput.dataArrives</a></div><div class="ttdeci">bool dataArrives(Object own, Object context, byte[] data)</div><div class="ttdoc">异步数据到达通知 </div></div>
+<div class="ttc" id="interface_async_input_html_a76ccbe154fa571063ee89fc53cccd4f5"><div class="ttname"><a href="interface_async_input.html#a76ccbe154fa571063ee89fc53cccd4f5">AsyncInput.inactiveTimeoutVerify</a></div><div class="ttdeci">bool inactiveTimeoutVerify(Object own, Object context)</div><div class="ttdoc">实例超时通知 </div></div>
+<div class="ttc" id="interface_async_input_html_abc8fab9503d36681ef2b037af01581d3"><div class="ttname"><a href="interface_async_input.html#abc8fab9503d36681ef2b037af01581d3">AsyncInput.notify</a></div><div class="ttdeci">void notify(Object own, int type, long bind, bool bsucceed, Object context,int length)</div><div class="ttdoc">通知回调函数 </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

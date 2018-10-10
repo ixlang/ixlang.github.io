@@ -1,0 +1,85 @@
+.TH "Unsi" 3 "2018年 六月 29日 星期五" "Version 3.0" "xlang" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Unsi \- unsi 通用网络服务器接口类  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "结构体"
+
+.in +1c
+.ti -1c
+.RI "class \fBInstance\fP"
+.br
+.in -1c
+.SS "包函数"
+.SH "详细描述"
+.PP 
+unsi 通用网络服务器接口类 
+.PP
+在文件 Unsi\&.xcs 第 6 行定义\&.
+.SH "构造及析构函数说明"
+.PP 
+.SS "\fBUnsi\fP (\fBAsyncInput\fP input)\fC [package]\fP"
+
+.PP
+构造函数 
+.PP
+\fB参数:\fP
+.RS 4
+\fI异步输入接口\fP 
+.RE
+.PP
+
+.SH "成员函数说明"
+.PP 
+.SS "bool config (int numOfThreads, int bufferSize, int timeout)\fC [package]\fP"
+
+.PP
+配置服务器参数 
+.PP
+\fB参数:\fP
+.RS 4
+\fInumOfThreads\fP 线程数量 默认为cpu core x 2 
+.br
+\fIbufferSize\fP 缓冲区大小 
+.br
+\fItimeout\fP 超时限定 时间内没有数据交互的链接将被强行关闭 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+成功/失败 
+.RE
+.PP
+
+.SS "bool create (int mode, int port, int timeout)\fC [package]\fP"
+
+.PP
+创建服务器服务器参数 
+.PP
+\fB参数:\fP
+.RS 4
+\fImode\fP 模式 TCP|UDP CAUNSI_TCP 1 CAUNSI_UDP 2 
+.br
+\fIport\fP 服务端口 < 65535 
+.br
+\fItimeout\fP 超时限定 时间内没有数据交互的链接将被强行关闭 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+成功/失败 
+.RE
+.PP
+
+.SS "bool start ()\fC [package]\fP"
+
+.PP
+启动服务器 
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 xlang 的 源代码自动生成\&.

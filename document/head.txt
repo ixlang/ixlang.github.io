@@ -1,0 +1,45 @@
+POD类型:<br />
+byte	无符号8位整数(0~255)<br />
+char	无符号16位整数(0~65535)<br />
+short	有符号16位整数(-32768~+32767)<br />
+int	有符号32位整数(-2,147,483,648~2,147,483,647)<br />
+long	有符号64位整数(-9,223,372,036,854,775,808~9,223,372,036,854,775,807)<br />
+double	双精度浮点数类型(1.7E+10-308~1.7E+10+308)<br />
+bool	布尔类型(true,false)<br />
+String 	字符串类(multibyte characters string)<br />
+<br />
+数组:<br />
+[](Array)	数组对象(POD类型的数组为连续的POD类型数组(string除外),其他类型的数组为指针引用)<br />
+<br />
+特殊对象:<br />
+System	系统平台相关调用集合<br />
+Exception	异常<br />
+<br />
+空指针对象:<br />
+nilptr	空指针,可以与任意类进行,但不可以与byte short char int long bool double互相操作<br />
+<br />
+扩展的内置对象:<br />
+Thread			线程对象(类),如同java的Thread<br />
+Vector			vector容器(模板类)<br />
+Map(含Iterator)		基于红黑树的map实现(模板类)<br />
+List(含Iterator)		列表容器(模板类)<br />
+Pattern(含Result)		正则表达式对象(类)<br />
+HttpRequest		http请求操作类(主要依靠第三方libcurl)(类)<br />
+Unsi(含Instance类)		通用服务器接口组件(类)<br />
+AsyncInput		异步输入接口(接口)<br />
+JsonObject		Json对象类<br />
+JsonArray			Json数组类<br />
+Timer			定时器<br />
+TimerTask			定时器任务接口<br />
+Window			Windows平台下的窗口类<br />
+Math			数学运算库<br />
+<br />
+内置异常类:<br />
+DivByZeroException		除零异常<br />
+IndexOutOfBoundsException	下标越界异常<br />
+ArrayStoreException		数组储存异常<br />
+ClassCastException		强制转换异常<br />
+IllegalArgumentException	参数异常<br />
+NullPointerException	空指针异常<br />
+OutOfMemoryException	内存溢出异常(暂无用)<br />
+InvalidIteratorException	迭代器失效异常<br />

@@ -1,0 +1,981 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: 首页</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v6.0 beta</span>
+   </div>
+   <div id="projectbrief">项目介绍</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li class="current"><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">xlang 文档</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1><a class="anchor" id="intro"></a>
+简介</h1>
+<p>此项目采用C++编写.<br />
+ 代码量:编译器约3.6万行,虚拟机约1.3万行(含自动化工具生成的代码,不包括为虚拟机提供的各种类库)<br />
+ 编译器并没有生成机器码, 而是生成了在虚拟机运行的字节码. 名字随便起了个(PS.有好名字请联系我). </p>
+<h2><a class="anchor" id="tx"></a>
+介绍:</h2>
+<p>源文件扩展名: *.xcs(源文件) *.xcsm(模块源文件)<br />
+ 开发环境XIDE, 使用本语言开发, 底层使用了QT界面库.<br />
+ 支持调试,代码高亮等一般集成开发环境都具有的特性<br />
+ XIDE为开源软件<br />
+ XIDE现仅支持开发xlang app.<br />
+ <b>注意:在版本变更中有存在极少部分信息与文档不符,如确实需要请联系.</b><br />
+ </p>
+<h2><a class="anchor" id="cc"></a>
+编译器: xlang/bin/xcross(.exe)</h2>
+<p>命令行参数: </p><table class="doxtable">
+<tr>
+<th>命令行</th><th>说明  </th></tr>
+<tr>
+<td>概要 </td><td>xcross [-lix] [-libpath path..] [-incpath path...] [-lib libs...] -[c|ce|gs|e|cr] intputfile [outputfile|outputdir] </td></tr>
+<tr>
+<td>-c intput output </td><td>编译为字节码 </td></tr>
+<tr>
+<td>-lix -c intput output </td><td>编译为静态库 </td></tr>
+<tr>
+<td>-gs intput outdir </td><td>生成native的C代码框架 </td></tr>
+<tr>
+<td>-cr intput </td><td>编译并在编译器中运行 </td></tr>
+<tr>
+<td>-ce intput output </td><td>编译为可执行exe文件 </td></tr>
+<tr>
+<td>-e intput [args] </td><td>运行字节码文件 </td></tr>
+<tr>
+<td>-arch:[x86, x86_64, arm, arm64, mips] </td><td>指定目标处理器架构 (v6.0 beta 新增) </td></tr>
+<tr>
+<td>-w </td><td>忽略所有警告 (v6.0 beta 新增) </td></tr>
+<tr>
+<td>-dbg </td><td>编译可调试版本 (v6.0 beta 新增) </td></tr>
+<tr>
+<td>-libpath [path...] </td><td>设置编译器的连接路径 </td></tr>
+<tr>
+<td>-lib [lib.lix...] </td><td>设置要链接的静态库 </td></tr>
+<tr>
+<td>-incpath [path...] </td><td>设置编译器的inc路径 </td></tr>
+<tr>
+<td>-nd </td><td>不生成调试信息, 将使生成的文件更小,应用启动速度略微加快,但意味着出现Exception时,无法获得详尽的跟踪信息 </td></tr>
+<tr>
+<td>注:</td><td><b>编译时采用默认优化,暂无可用优化选项, <br />
+无论生成调试信息与否, 均不会影响运行时性能.</b> </td></tr>
+</table>
+<p>该版本(v6.0 beta 均支持直接编译为操作系统支持运行的可执行文件, 因而未提供运行字节码的独立虚拟机).</p>
+<h2><a class="anchor" id="ex"></a>
+与其他语言相同部分的特性</h2>
+<table class="doxtable">
+<tr>
+<th>序号</th><th>与java相同的部分特性  </th></tr>
+<tr>
+<td>1</td><td>面向对象 </td></tr>
+<tr>
+<td>2</td><td>支持泛型编程(模板类,不支持模板函数) </td></tr>
+<tr>
+<td>3</td><td>支持多态,所有方法均为虚方法,可以在类中声明纯虚函数,或者声明interface类,但需要在派生类中实现才可以被实例化. </td></tr>
+<tr>
+<td>4</td><td>支持闭包 </td></tr>
+<tr>
+<td>5</td><td>同样做了package的特性, 虽然好像用处不大,但是我在测试过程中发现a.b.c.d.e.f.g...这种的写法太蛋疼, 还是加个package 然后用using概括一下比较简单. </td></tr>
+<tr>
+<td>6</td><td>支持多线程. </td></tr>
+<tr>
+<td>7</td><td>自动的垃圾回收(同时提供手动gc接口) </td></tr>
+<tr>
+<td>8</td><td>synchronized块同步语法 </td></tr>
+<tr>
+<td>9</td><td>入口点程序格式: <br />
+int main(String [] args){ <br />
+} </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th>序号</th><th>与C++相同的部分特性  </th></tr>
+<tr>
+<td>1</td><td>include 或者require 包含文件,但不存在头文件之类的, 所有文件都是源文件 </td></tr>
+<tr>
+<td>2</td><td>重载操作符,目前支持 + - / * += -= *= /= == != &gt;&gt; &lt;&lt; &lt; &gt; &lt;= &gt;= &lt;&lt;= &gt;&gt;= &amp; | ^ ~ &amp;= |= ^= ,不支持[]操作符. </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th>序号</th><th>新的内容  </th></tr>
+<tr>
+<td>1</td><td>无论class还是interface,都只能单继承, 不允许多重继承. </td></tr>
+<tr>
+<td>2</td><td>没有enum数据类型(暂时用不到,可能后面考虑添加) </td></tr>
+<tr>
+<td>3</td><td>增强了native api的功能调用,只需要声明 import "**.dll/so" 就可以调用native函数 </td></tr>
+<tr>
+<td>4</td><td>编译源码不用再强调编译或者声明的先后顺序,只要在源码看得到的地方,可以随便调用. </td></tr>
+<tr>
+<td>5</td><td>支持不同参数的函数重载. </td></tr>
+<tr>
+<td>6</td><td>synchronized_read \ synchronized_write 块读写同步语法 </td></tr>
+<tr>
+<td>7</td><td>所有的interface都是静态,interface内不可以有变量声明 </td></tr>
+<tr>
+<td>8</td><td>字符串断行不需要用\, 用 + 连接更好(不会产生运行时代码) </td></tr>
+<tr>
+<td>9</td><td>派生类构造方法中显式调用基类构造方法应放在第一行且仅能调用一次. </td></tr>
+<tr>
+<td>10</td><td>派生类构造方法(无论是否有参)中若没有显式调用基类构造将隐式调用基类默认构造方法. </td></tr>
+<tr>
+<td>11</td><td>基类(该类是另一个类的派生类)若无默认构造函数,在派生类构造的时候将跳过基类构造直接调用基类的基类默认构造方法. </td></tr>
+<tr>
+<td>12</td><td>类中存在有参构造方式且不存在显式默认构造方式时, 将禁用默认构造方法 </td></tr>
+<tr>
+<td>13</td><td>面向过程开发 </td></tr>
+</table>
+<h2><a class="anchor" id="sz"></a>
+实现原理简介.</h2>
+<p>编译器前端使用LL分析法(自己写的一个LL 分析生成器生成的C++代码).<br />
+ 垃圾回收部分采用会消除循环引用的引用计数法.<br />
+ 仅仅对IRcode做了基础的优化,也不会消除无用的代码.<br />
+ 虚拟机指令设计方面采用了寄存器式(register-based)指令系统.<br />
+</p>
+<h2><a class="anchor" id="lc"></a>
+实现流程:</h2>
+<pre class="fragment">源代码 --&gt; LL LEXER -&gt; AST(抽象语法树) -&gt; AST Optimizer(初步优化,主要是对常量之类的以及可变换的语法) -&gt;Compiler(此处原本应该有个Optimizer的) -&gt; IRCODE (中间码) -&gt;IR Optimizer(主要优化指令结构) -&gt; BYTECODE.
+</pre><h2><a class="anchor" id="yy"></a>
+语法特性和定义:</h2>
+<p>new 对象必须为类 或者数组,如new a(), new a[];<br />
+ class 定义末尾须加分号 如 class a{ ... };<br />
+ package 定义同class<br />
+ interface定义同class<br />
+ Object类型可用于任何类型,需要强转<br />
+ native定义为 import "模块名"{ native函数列表 };<br />
+ native函数声明中用到的类型只有int long byte short double <a class="el" href="class_string.html" title="字符串类 ">String</a> bool Object ObjectPtr 九种类型. ObjectPtr表示取地址, 其他为取对象(String默认取地址)<br />
+ include和require语法: include("文件1", "文件2",..."文件N")<br />
+ using语法: using{包1; 包2; 包1.小包1;... 包N};<br />
+ 类继承语法: a继承b = class a : b { };<br />
+ </p><table class="doxtable">
+<tr>
+<th>修饰词 </th><th>说明  </th></tr>
+<tr>
+<td>final</td><td>修饰的类不可被继承<br />
+ </td></tr>
+<tr>
+<td>const</td><td>修饰的变量不可被修改<br />
+ </td></tr>
+<tr>
+<td>final</td><td>修饰的函数不可派生类重写<br />
+ </td></tr>
+<tr>
+<td>static</td><td>修饰的对象为静态对象<br />
+ </td></tr>
+</table>
+<p>其他的参照Java语法, 或者C++语法.<br />
+</p>
+<h2><a class="anchor" id="ys"></a>
+语言结构:</h2>
+<table class="doxtable">
+<tr>
+<th>序号 </th><th>说明  </th></tr>
+<tr>
+<td>1</td><td>变量\常量 </td></tr>
+<tr>
+<td>2</td><td>函数 </td></tr>
+<tr>
+<td>3</td><td>类(含模板类) </td></tr>
+<tr>
+<td>4</td><td>接口 </td></tr>
+<tr>
+<td>5</td><td>包 package </td></tr>
+<tr>
+<td>6</td><td>native组件 </td></tr>
+</table>
+<h2><a class="anchor" id="in"></a>
+内置对象:</h2>
+<p>基本类型: </p><table class="doxtable">
+<tr>
+<th>名称 </th><th>说明  </th></tr>
+<tr>
+<td>void </td><td>无类型 </td></tr>
+<tr>
+<td>POD类型</td><td>8个 </td></tr>
+<tr>
+<td>byte </td><td>无符号8位整数(0~255) </td></tr>
+<tr>
+<td>char </td><td>无符号16位整数(0~65535) </td></tr>
+<tr>
+<td>short </td><td>有符号16位整数(-32768~+32767) </td></tr>
+<tr>
+<td>int </td><td>有符号32位整数(-2,147,483,648~2,147,483,647) </td></tr>
+<tr>
+<td>long </td><td>有符号64位整数(-9,223,372,036,854,775,808~9,223,372,036,854,775,807) </td></tr>
+<tr>
+<td><em>注意</em> </td><td><em>应该注意数值溢出(超过其表示范围)造成的错误问题.</em> </td></tr>
+<tr>
+<td>double </td><td>双精度浮点数类型(1.7E+10-308~1.7E+10+308) </td></tr>
+<tr>
+<td>bool </td><td>布尔类型(true,false) </td></tr>
+<tr>
+<td><a class="el" href="class_string.html" title="字符串类 ">String</a> </td><td>字符串类(multibyte characters string) </td></tr>
+<tr>
+<td><b>数组</b> </td><td>1个 </td></tr>
+<tr>
+<td>[](Array) </td><td>数组对象(POD类型的数组为连续的POD类型数组(string除外),其他类型的数组为指针引用) </td></tr>
+<tr>
+<td><b>特殊对象</b></td><td>3个 </td></tr>
+<tr>
+<td><a class="el" href="class__system__.html" title="系统和IO相关 ">_system_</a> </td><td>系统平台相关调用集合 </td></tr>
+<tr>
+<td><a class="el" href="class_exception.html" title="异常类 ">Exception</a> </td><td>异常 </td></tr>
+<tr>
+<td>nilptr </td><td>空指针,可以与任意类进行,但不可以与byte short char int long bool double互相操作 </td></tr>
+<tr>
+<td><b>扩展的内置对象</b></td><td>14个 </td></tr>
+<tr>
+<td><a class="el" href="class_thread.html" title="线程类 ">Thread</a> </td><td>线程对象(类),如同java的Thread </td></tr>
+<tr>
+<td><a class="el" href="class_vector.html" title="vector容器 ">Vector</a> </td><td>vector容器(模板类) </td></tr>
+<tr>
+<td><a class="el" href="class_map.html" title="map容器 ">Map</a>(含Iterator) </td><td>基于红黑树的map实现(模板类) </td></tr>
+<tr>
+<td><a class="el" href="class_list.html" title="map容器 ">List</a>(含Iterator) </td><td>列表容器(模板类) </td></tr>
+<tr>
+<td><a class="el" href="class_pattern.html" title="正则表达式 ">Pattern</a>(含Result) </td><td>正则表达式对象(类) </td></tr>
+<tr>
+<td><a class="el" href="class_http_request.html" title="http请求类 ">HttpRequest</a> </td><td>http请求操作类(主要依靠第三方libcurl)(类) </td></tr>
+<tr>
+<td><a class="el" href="class_unsi.html" title="unsi 通用网络服务器接口类 ">Unsi</a>(含Instance类) </td><td>通用服务器接口组件(类) (Instance类在v6.0 beta在中已弃用) </td></tr>
+<tr>
+<td><a class="el" href="interface_async_input.html" title="异步输入接口 需要继承 ">AsyncInput</a> </td><td>异步输入接口(接口) </td></tr>
+<tr>
+<td><a class="el" href="class_json_object.html" title="json类 ">JsonObject</a> </td><td>Json对象类 </td></tr>
+<tr>
+<td><a class="el" href="class_json_array.html" title="json数组类 ">JsonArray</a> </td><td>Json数组类 </td></tr>
+<tr>
+<td><a class="el" href="class_timer.html" title="定时器类 ">Timer</a> </td><td>定时器 </td></tr>
+<tr>
+<td><a class="el" href="class_timer_task.html" title="定时器任务类 ">TimerTask</a> </td><td>定时器任务接口 </td></tr>
+<tr>
+<td><a class="el" href="class_window.html" title="异步输入接口 需要继承 ">Window</a> </td><td>Windows平台下的窗口类 </td></tr>
+<tr>
+<td><a class="el" href="class_math.html" title="Math类 ">Math</a> </td><td>数学运算库 </td></tr>
+<tr>
+<td>备注</td><td><b>部分新增类未作详细归纳</b> </td></tr>
+</table>
+<h2><a class="anchor" id="ie"></a>
+内置异常类:</h2>
+<table class="doxtable">
+<tr>
+<th>类名 </th><th>说明  </th></tr>
+<tr>
+<td><a class="el" href="class_div_by_zero_exception.html" title="除零异常 ">DivByZeroException</a> </td><td>除零异常 </td></tr>
+<tr>
+<td><a class="el" href="class_index_out_of_bounds_exception.html" title="下标越界异常 ">IndexOutOfBoundsException</a> </td><td>下标越界异常 </td></tr>
+<tr>
+<td><a class="el" href="class_array_store_exception.html" title="数组储存异常 ">ArrayStoreException</a> </td><td>数组储存异常 </td></tr>
+<tr>
+<td><a class="el" href="class_class_cast_exception.html" title="显式转换异常 ">ClassCastException</a> </td><td>强制转换异常 </td></tr>
+<tr>
+<td><a class="el" href="class_illegal_argument_exception.html" title="参数异常 ">IllegalArgumentException</a> </td><td>参数异常 </td></tr>
+<tr>
+<td><a class="el" href="class_null_pointer_exception.html" title="空指针异常 ">NullPointerException</a> </td><td>空指针异常 </td></tr>
+<tr>
+<td><a class="el" href="class_out_of_memory_exception.html" title="内存溢出异常 ">OutOfMemoryException</a> </td><td>内存溢出异常 </td></tr>
+<tr>
+<td><a class="el" href="class_invalid_iterator_exception.html" title="迭代器失效异常 ">InvalidIteratorException</a> </td><td>迭代器失效异常 </td></tr>
+</table>
+<h2><a class="anchor" id="sp"></a>
+同名对象选择优先级:</h2>
+<p>1.栈<br />
+ 2.成员<br />
+ 3.堆和其他<br />
+ </p>
+<h2><a class="anchor" id="ot"></a>
+examples文件夹介绍:</h2>
+<p>wscite scite的目录<br />
+ std 标准库文件描述<br />
+ native native定义<br />
+ example 代码用例<br />
+ common 通用的类型定义<br />
+ bin 编译器&amp;虚拟机目录<br />
+</p>
+<h2><a class="anchor" id="gf"></a>
+基本规范</h2>
+<h2><a class="anchor" id="key2"></a>
+1.保留关键字(36个):</h2>
+<p><b>import cdecl stdcall fastcall pascal operator for while do try catch if break continue</b><br />
+ <b>default interface class package static const throw switch case else return new</b><br />
+ <b>include using require finally final synchronized_read synchronized_write synchronized</b><br />
+ <b> override</b><br />
+</p>
+<h2><a class="anchor" id="cm1"></a>
+2.注释</h2>
+<p>用于解释说明程序的文字。单行注释：//、多行注释：/* * /、文档注释：/** * /.</p>
+<h2><a class="anchor" id="bk1"></a>
+3.空白字符和空行</h2>
+<p>所有空白字符以及空行(不包括被" "(双引号) ' '(单引号)包含)的部分, 在编译过程中都将被编译器忽略.</p>
+<h2><a class="anchor" id="id1"></a>
+4.标识符说明</h2>
+<table class="doxtable">
+<tr>
+<th>序号 </th><th>说明  </th></tr>
+<tr>
+<td>1</td><td>说明：标识符可以标识类名，变量名，接口名，方法名, 包名。 </td></tr>
+</table>
+<h2><a class="anchor" id="idsa1"></a>
+5.标识符命名规则</h2>
+<table class="doxtable">
+<tr>
+<th>序号 </th><th>说明  </th></tr>
+<tr>
+<td>（1）</td><td>标识符是由，0-9数字，a-z字母(含大小写)，下划线构成，其他符号将不被识别 </td></tr>
+<tr>
+<td>（2）</td><td>必须以字母、下划线开头，不能以数字开头 </td></tr>
+<tr>
+<td>（3）</td><td>关键字不能作为标识符 </td></tr>
+<tr>
+<td>（4）</td><td>标识符区分大小写 </td></tr>
+<tr>
+<td>（5）</td><td>标识符没有长度限制 </td></tr>
+</table>
+<h2><a class="anchor" id="vdf"></a>
+6.变量</h2>
+<p>变量有四个基本属性：变量名，数据类型，存储单元和变量值。 </p><table class="doxtable">
+<tr>
+<th>序号 </th><th>说明  </th></tr>
+<tr>
+<td>（1）</td><td>变量名：合法的标识符 </td></tr>
+<tr>
+<td>（2）</td><td>变量的数据类型：可以是基本类型, 数组和引用类型（必须包含类型）,数组类型必须用[]符号标明, []符号必须在类型之后, 变量名之前. </td></tr>
+<tr>
+<td>（3）</td><td>存储单元：存储单元大小是由数据类型决定的，如：int为4个字节32位 </td></tr>
+<tr>
+<td>（4）</td><td>变量值：在存储单元中放的就是变量值（如果是基本类型放的就是具体值，如果是引用类型放的是内存地址，如果nilptr，表示不指向任何对象） </td></tr>
+<tr>
+<td>（5）</td><td>变量的声明格式：类型 变量名；或者 类型 变量名 = 变量值, 可以同时声明多个变量,多个变量名之间必须用[,]分隔(不含方括号), 如 int a , b, c； </td></tr>
+<tr>
+<td>（6）</td><td>变量数组声明时不能有数组长度.<br />
+ 例: <br />
+ 合法的声明: int[ ] a; <br />
+ 不合法的声明: int [3] a; int a[ ]; int a[3] <br />
+ </td></tr>
+</table>
+<h2><a class="anchor" id="cvdf"></a>
+7.常量</h2>
+<table class="doxtable">
+<tr>
+<th>序号 </th><th>说明  </th></tr>
+<tr>
+<td>（1）</td><td>在程序执行的过程中其值不可以发生改变。 </td></tr>
+<tr>
+<td>（2）</td><td>字面量常量(如:0, 1, 2, "abc")、自定义常量(如:const int a = 0;)。 </td></tr>
+<tr>
+<td>（3）</td><td>整数常量有2种表现形式：十进制、十六进制。 </td></tr>
+</table>
+<h2><a class="anchor" id="mdf"></a>
+8.方法</h2>
+<table class="doxtable">
+<tr>
+<th>序号 </th><th>说明  </th></tr>
+<tr>
+<td>（1）</td><td>方法名：合法的标识符 </td></tr>
+<tr>
+<td>（2）</td><td>成员方法的修饰符 static , final, 非成员方法无效<br />
+ static 声明是静态方法, 使用前不需要实例化<br />
+ final 只对非static的成员方法有效, 表明该方法不可被派生类重写 </td></tr>
+<tr>
+<td>（3）</td><td>非void的方法必须有返回语句. void类型的方法不可有return语句 </td></tr>
+<tr>
+<td>（4）</td><td>形参必须有明确类型和名称 </td></tr>
+<tr>
+<td>（5）</td><td>变长参数用Object[] 表示, 编译器会自动将超出个数的参数装入Object数组传递 </td></tr>
+<tr>
+<td>（6）</td><td><b>抽象方法</b><br />
+ <em>未定义方法主体的为抽象方法.<br />
+ </em>抽象方法定义:<br />
+ 返回值类型 函数名(形式参数类型1 参数名1,形式参数类型2 参数名2,形式参数类型3 参数名3......); </td></tr>
+<tr>
+<td>（7）</td><td>声明结构<br />
+修饰符 返回值类型 函数名(形式参数类型1 参数名1,形式参数类型2 参数名2,形式参数类型3 参数名3......)<br />
+{<br />
+<br />
+方法主体语句;<br />
+<br />
+return 返回值;<br />
+} </td></tr>
+</table>
+<h2><a class="anchor" id="ccdf"></a>
+9.类(class)</h2>
+<table class="doxtable">
+<tr>
+<th>序号 </th><th>说明  </th></tr>
+<tr>
+<td>（1）</td><td>类名：合法的标识符 </td></tr>
+<tr>
+<td>（2）</td><td>类的修饰符<br />
+ static 声明是静态方法, 使用前不需要实例化, 非成员类使用无效<br />
+ final 声明该方法不可被继承 </td></tr>
+<tr>
+<td>（3）</td><td>基类型:<br />
+ 基类型可以是任意不被final限定的类, 以及模板类 </td></tr>
+<tr>
+<td>（4）</td><td>成员类:<br />
+ 在其所有者类未实例化之前无法使用.<br />
+ 成员类可以使用所有者类的成员方法和对象(static类只能使用static对象), 所有者类指针为 ClassName.this. </td></tr>
+<tr>
+<td>（6）</td><td>模板类:<br />
+ 模板类可以有多个模板参数,模板参数必须是类, 或者预置的POD对象, 模板成员类可以使用所有者类的模板参数.<br />
+ 模板类和普通类之间可以互相继承, 但模板类在没有明确参数之前不会被编译 </td></tr>
+<tr>
+<td>（7）</td><td>匿名类:<br />
+ 匿名类必须是new创建, 并且必须指定基类并重写类主体的对象. <br />
+ 匿名类不可被继承<br />
+ 匿名类可以使用在其所在作用域内的对象(闭包操作) </td></tr>
+<tr>
+<td>（8）</td><td>类成员:<br />
+ 类<br />
+ 变量<br />
+ 常量<br />
+ 方法<br />
+ native对象 </td></tr>
+<tr>
+<td>（9）</td><td>类成员方法:<br />
+ 所有的类成员方法均为虚函数任意派生类都可以重写, final和static修饰的方法除外<br />
+ 非静态的类成员方法可以使用override强制重写,若找不到基类中可以重载的方法,将收到错误提示 <br />
+ 类成员方法允许存在纯虚函数, 但实例化之前必须被重写<br />
+ 存在纯虚函数的类不可被实例化<br />
+ 类成员方法可以为重载运算法的方法(见附表) </td></tr>
+<tr>
+<td>（10）</td><td>类构造:<br />
+ 类如没有显式声明默认构造方法, 编译器将为其创建一个默认构造方法<br />
+ 类如果存在有参构造方法且没有显式声明默认构造方法, 则该类将禁用默认构造方法<br />
+ 派生类构造方法中显式调用基类构造方法使用super(args), , 且仅能调用一次.<br />
+ 派生类构造方法(无论是否有参)中若没有显式调用基类构造将隐式调用基类默认构造方法.<br />
+ 基类若无默认构造函数,且该类为其他类的派生类时,在派生类构造的时候将跳过基类构造直接调用基类的基类默认构造方法.<br />
+ 类构造顺序为先基类, 后派生类<br />
+ </td></tr>
+<tr>
+<td>（11）</td><td>类的初始化<br />
+ 类成员在类实例化之后 ,构造之前全部将被初始化, <br />
+ 指定了初始值的变量将被装载值<br />
+ 没有指定初始值的变量初始化规则: <br />
+1).数值型将被初始化为0<br />
+ 2).bool 类型将被初始化为false<br />
+ 3).String和其他类型将被初始化为nilptr </td></tr>
+<tr>
+<td>（12）</td><td>类的析构<br />
+ 定义形式: void finalize(){<br />
+<br />
+ }<br />
+<br />
+ 类在销毁之前将调用finalize实施销毁前的清理工作<br />
+ 类的销毁操作将在该类无任何引用的情况下不定时触发<br />
+ </td></tr>
+<tr>
+<td>（13）</td><td>类的继承:<br />
+ 一个类可以只允许继承自另外的一个类或者接口, 不允许多重继承 </td></tr>
+<tr>
+<td>（14）</td><td>类的定义形式<br />
+ 普通类:<br />
+ class 类名{ 类主体 };<br />
+ class 类名 : 基类型{ 类主体 };<br />
+ class 类名&lt;模板参数类型1,模板参数类型2....&gt; : 基类型{ 类主体 }; </td></tr>
+</table>
+<h2><a class="anchor" id="fbop"></a>
+(附表)支持被重载的操作符</h2>
+<table class="doxtable">
+<tr>
+<th>运算符 </th><th>定义形式说明  </th></tr>
+<tr>
+<td>+ </td><td>类型 operator + (类型 参数名) </td></tr>
+<tr>
+<td>- </td><td>类型 operator - (类型 参数名) </td></tr>
+<tr>
+<td>/ </td><td>类型 operator / (类型 参数名) </td></tr>
+<tr>
+<td>* </td><td>类型 operator * (类型 参数名) </td></tr>
+<tr>
+<td>+= </td><td>类型 operator += (类型 参数名) </td></tr>
+<tr>
+<td>-= </td><td>类型 operator -= (类型 参数名) </td></tr>
+<tr>
+<td>*= </td><td>类型 operator *= (类型 参数名) </td></tr>
+<tr>
+<td>/= </td><td>类型 operator /= (类型 参数名) </td></tr>
+<tr>
+<td>== </td><td>类型 operator == (类型 参数名) </td></tr>
+<tr>
+<td>!= </td><td>类型 operator != (类型 参数名) </td></tr>
+<tr>
+<td>&gt;&gt; </td><td>类型 operator &gt;&gt; (类型 参数名) </td></tr>
+<tr>
+<td>&lt;&lt; </td><td>类型 operator &lt;&lt; (类型 参数名) </td></tr>
+<tr>
+<td>&lt; </td><td>类型 operator &lt; (类型 参数名) </td></tr>
+<tr>
+<td>&gt; </td><td>类型 operator &gt; (类型 参数名) </td></tr>
+<tr>
+<td>&lt;= </td><td>类型 operator &lt;= (类型 参数名) </td></tr>
+<tr>
+<td>&gt;= </td><td>类型 operator &gt;= (类型 参数名) </td></tr>
+<tr>
+<td>&lt;&lt;= </td><td>类型 operator &lt;&lt;= (类型 参数名) </td></tr>
+<tr>
+<td>&gt;&gt;= </td><td>类型 operator &gt;&gt;= (类型 参数名) </td></tr>
+<tr>
+<td>&amp; </td><td>类型 operator &amp; (类型 参数名) </td></tr>
+<tr>
+<td>| </td><td>类型 operator | (类型 参数名) </td></tr>
+<tr>
+<td>^ </td><td>类型 operator ^ (类型 参数名) </td></tr>
+<tr>
+<td>~ </td><td>类型 operator ~ (类型 参数名) </td></tr>
+<tr>
+<td>&amp;= </td><td>类型 operator &amp;= (类型 参数名) </td></tr>
+<tr>
+<td>|= </td><td>类型 operator |= (类型 参数名) </td></tr>
+<tr>
+<td>^= </td><td>类型 operator ^= (类型 参数名) </td></tr>
+<tr>
+<td>++ </td><td>前置自增 : 类型 operator ++ () </td></tr>
+<tr>
+<td>++ </td><td>后置自增 : 类型 operator ++ (int) </td></tr>
+<tr>
+<td>&ndash; </td><td>前置自减 : 类型 operator &ndash; () </td></tr>
+<tr>
+<td>&ndash; </td><td>后置自减 : 类型 operator &ndash; (int) </td></tr>
+<tr>
+<td>注意</td><td><b>操作符的优先级同数学运算的优先级相同</b> </td></tr>
+</table>
+<h2><a class="anchor" id="intd"></a>
+10.接口(interface):</h2>
+<table class="doxtable">
+<tr>
+<th>序号 </th><th>说明  </th></tr>
+<tr>
+<td>（1）</td><td>接口可以继承自另一个接口或者类 </td></tr>
+<tr>
+<td>（2）</td><td>接口的成员可以为:<br />
+ 1.纯虚方法 <br />
+ 2.抽象的重载运算符<br />
+ 3.接口 </td></tr>
+<tr>
+<td>（3）</td><td>接口无法被实例化. </td></tr>
+<tr>
+<td>（4）</td><td>声明形式:<br />
+ interface 标识符{<br />
+ 抽象方法1;<br />
+ 抽象方法2;<br />
+ 抽象方法3;<br />
+ }; </td></tr>
+</table>
+<h2><a class="anchor" id="pdf"></a>
+11.包(package):</h2>
+<table class="doxtable">
+<tr>
+<th>序号 </th><th>说明  </th></tr>
+<tr>
+<td>（1）</td><td>包名：合法的标识符 </td></tr>
+<tr>
+<td>（2）</td><td>包内容:<br />
+ 1.包<br />
+ 2.类<br />
+ 3.接口<br />
+ </td></tr>
+<tr>
+<td>（3）</td><td>包的声明形式:<br />
+ package 标识符{<br />
+ 包;<br />
+ 类;<br />
+ 接口;<br />
+ }; </td></tr>
+<tr>
+<td>（4）</td><td>包的使用:<br />
+ 在全局任意位置 使用using语法声明;<br />
+ 或者使用 包.成员 形式语法. </td></tr>
+</table>
+<h2><a class="anchor" id="nndf"></a>
+12.Native组件:</h2>
+<table class="doxtable">
+<tr>
+<th>序号 </th><th>说明  </th></tr>
+<tr>
+<td>（1）</td><td>native组件提供调用标准的C接口导出函数的功能 </td></tr>
+<tr>
+<td>（2）</td><td>native方法必须有返回类型<br />
+ 返回类型只接受以下类型:<br />
+ void<br />
+ byte<br />
+ char<br />
+ int<br />
+ long<br />
+ bool<br />
+ double<br />
+ <a class="el" href="class_string.html" title="字符串类 ">String</a><br />
+ Pointer(v6.0 beta新增)<br />
+ </td></tr>
+<tr>
+<td>（3）</td><td>native方法必须声明调用约定,支持以下调用约定:<br />
+ stdcall<br />
+ cdecl<br />
+ fastcall<br />
+ pascal </td></tr>
+<tr>
+<td>（4）</td><td>native方法的形参必须有明确类型, 可以无形参名称<br />
+ 参数类型只接受以下类型:<br />
+ void<br />
+ byte<br />
+ char<br />
+ int<br />
+ long<br />
+ bool<br />
+ double<br />
+ <a class="el" href="class_string.html" title="字符串类 ">String</a><br />
+ Pointer(v6.0 beta新增)<br />
+ ObjectPtr </td></tr>
+<tr>
+<td>（5）</td><td>native方法至多接受32个参数 </td></tr>
+<tr>
+<td>（6）</td><td>声明形式:<br />
+ import "libxxx"{<br />
+ void stdcall MessageBoxA(int hWnd,String msg, String caption, int flag);<br />
+ };<br />
+注:旧的import "xxx.dll"形式已在v6.0beta弃用 </td></tr>
+</table>
+<h2><a class="anchor" id="udef"></a>
+13.using 语法:</h2>
+<table class="doxtable">
+<tr>
+<th>序号 </th><th>说明  </th></tr>
+<tr>
+<td>（1）</td><td>在全局范围内使用using 声明要使用的包,可减少使用包内容时繁琐的输入. </td></tr>
+<tr>
+<td>（2）</td><td>一条using语句可以声明多个包 </td></tr>
+<tr>
+<td>（3）</td><td>例:<br />
+ using { a; b; }; </td></tr>
+</table>
+<h2><a class="anchor" id="newdef"></a>
+14.new 语句:</h2>
+<table class="doxtable">
+<tr>
+<th>序号 </th><th>说明  </th></tr>
+<tr>
+<td>（1）</td><td>new 用以创建对象和数组 </td></tr>
+<tr>
+<td>（2）</td><td>new的对象必须为类, 模板类,且类中没有抽象方法 </td></tr>
+<tr>
+<td>（3）</td><td>new数组时必须标明数组长度 </td></tr>
+</table>
+<h2><a class="anchor" id="incdef"></a>
+15.include 语法:</h2>
+<table class="doxtable">
+<tr>
+<th>序号 </th><th>说明  </th></tr>
+<tr>
+<td>（1）</td><td>用来引入其他的源文件并插入到include的位置 </td></tr>
+<tr>
+<td>（2）</td><td>一条include语句可以引入多个源文件 </td></tr>
+<tr>
+<td>（3）</td><td>每一次include都将有效引入文件内容 </td></tr>
+<tr>
+<td>（4）</td><td>例:<br />
+ include("a.xcsm", "b.xcsm"); </td></tr>
+</table>
+<h2><a class="anchor" id="reqdef"></a>
+16.require 语法:</h2>
+<table class="doxtable">
+<tr>
+<th>序号 </th><th>说明  </th></tr>
+<tr>
+<td>（1）</td><td>用来引入其他的源文件并插入到include的位置 </td></tr>
+<tr>
+<td>（2）</td><td>一条require语句可以引入多个源文件 </td></tr>
+<tr>
+<td>（3）</td><td>被require引入的文件无法require第二次,在一次编译过程中,多处require同一个文件,只会第一次有效,其他的require请求将被忽略 </td></tr>
+<tr>
+<td>（4）</td><td>例:<br />
+ require("a.xcsm", "b.xcsm"); </td></tr>
+</table>
+<h2><a class="anchor" id="dedecdef"></a>
+17.@Declare声明:</h2>
+<table class="doxtable">
+<tr>
+<th>序号 </th><th>说明  </th></tr>
+<tr>
+<td>（1）</td><td>@Declare 可以放在package 之前, class之前, interface之前用以标识该对象仅声明, 不编译 </td></tr>
+<tr>
+<td>（2）</td><td>被@Declare修饰的对象不会参与编译和代码生成,但会做基本语法检查. </td></tr>
+</table>
+<h2><a class="anchor" id="sehdefa"></a>
+18.结构化异常处理:</h2>
+<table class="doxtable">
+<tr>
+<th>序号 </th><th>说明  </th></tr>
+<tr>
+<td>（1）</td><td>一个结构化异常语句可以有零~多个catch语句 . </td></tr>
+<tr>
+<td>（2）</td><td>一个结构化异常语句只可以包含0~1个finally语句 </td></tr>
+<tr>
+<td>（3）</td><td>finally结构中的return语句将收到警告. </td></tr>
+<tr>
+<td>（4）</td><td>多层结构化异常语句嵌套时,最靠近当前层的异常处理语句会先得到catch机会 </td></tr>
+<tr>
+<td>（5）</td><td>catch语句有且只能有一个参数 </td></tr>
+<tr>
+<td>（6）</td><td>catch的参数类型必须继承自Exception类型 </td></tr>
+<tr>
+<td>（7）</td><td>引发的异常类型如果是自catch语句中的类型的派生类, 都会被该catch语句捕获 </td></tr>
+</table>
+<h2><a class="anchor" id="ifyfdef"></a>
+19.if语句:</h2>
+<table class="doxtable">
+<tr>
+<th>序号 </th><th>说明  </th></tr>
+<tr>
+<td>（1）</td><td>if语句条件判断对象的类型必须为bool </td></tr>
+<tr>
+<td>（2）</td><td>if语句可以使用{ }对多条语句进行条件化处理 </td></tr>
+<tr>
+<td>（3）</td><td>if语句如果不使用{ },将仅对下一条语句条件化处理 </td></tr>
+<tr>
+<td>（4）</td><td>语句结构: <br />
+ if (a == true){<br />
+ ... ;<br />
+...;<br />
+} <br />
+ if (a == true)<br />
+...; </td></tr>
+</table>
+<h2><a class="anchor" id="whiledef"></a>
+20.while语句:</h2>
+<table class="doxtable">
+<tr>
+<th>序号 </th><th>说明  </th></tr>
+<tr>
+<td>（1）</td><td>while语句条件判断对象的类型必须为bool </td></tr>
+<tr>
+<td>（2）</td><td>while语句可以使用{ }对多条语句进行条件化处理 </td></tr>
+<tr>
+<td>（3）</td><td>while语句如果不使用{ },将仅对下一条语句条件化处理 </td></tr>
+<tr>
+<td>（4）</td><td>语句结构:<br />
+ while (a == true){<br />
+ ... ;<br />
+...;<br />
+} <br />
+ while (a == true)<br />
+...; </td></tr>
+</table>
+<h2><a class="anchor" id="wdohiledef"></a>
+21.do while语句:</h2>
+<table class="doxtable">
+<tr>
+<th>序号 </th><th>说明  </th></tr>
+<tr>
+<td>（1）</td><td>while语句条件判断对象的类型必须为bool </td></tr>
+<tr>
+<td>（2）</td><td>do语句可以使用{ }对多条语句进行条件化处理 </td></tr>
+<tr>
+<td>（3）</td><td>do语句如果不使用{ },将仅对下一条语句条件化处理 </td></tr>
+<tr>
+<td>（4）</td><td>语句结构:<br />
+ do{<br />
+ ... ;<br />
+...;<br />
+}while (a == true);<br />
+ do<br />
+ ... ;<br />
+while (a == true); </td></tr>
+</table>
+<h2><a class="anchor" id="switchdef"></a>
+22.switch case语句:</h2>
+<table class="doxtable">
+<tr>
+<th>序号 </th><th>说明  </th></tr>
+<tr>
+<td>（1）</td><td>switch语句仅能使用除string, double外的pod类型,如byte int long short char </td></tr>
+<tr>
+<td>（2）</td><td>对于非pod类型的对象仅比较指针(该项已在v6.0 beta中弃用) </td></tr>
+<tr>
+<td>（3）</td><td>case语句中没有break的 ,不会产生break跳转 </td></tr>
+</table>
+<h2><a class="anchor" id="syncdef"></a>
+23.块同步语法:</h2>
+<table class="doxtable">
+<tr>
+<th>序号 </th><th>说明  </th></tr>
+<tr>
+<td>（1）</td><td>synchronized 块线程同步<br />
+ synchronized包裹的语句会与其他线程互斥 </td></tr>
+<tr>
+<td>（2）</td><td>synchronized_read <br />
+ synchronized_read包裹的语句会与该对象对应的synchronized_write语句互斥 </td></tr>
+<tr>
+<td>（3）</td><td>synchronized_write <br />
+ synchronized_read包裹的语句会与该对象对应的任何操作互斥 </td></tr>
+<tr>
+<td>（4）</td><td><b>注意:同步对象不可为nilptr</b> </td></tr>
+</table>
+<h2><a class="anchor" id="operator"></a>
+24.运算符优先级规范:</h2>
+<table class="doxtable">
+<tr>
+<th>优先级 </th><th>操作符 </th><th>描述 </th><th>结合方向  </th></tr>
+<tr>
+<td>1 </td><td>() </td><td>调节优先级的括号操作符 </td><td>从左到右 </td></tr>
+<tr>
+<td>1 </td><td>[] </td><td>数组下标访问操作符 </td><td>从左到右 </td></tr>
+<tr>
+<td>1 </td><td>new{}/[]</td><td>创建对象/数组 </td><td>从右到左 </td></tr>
+<tr>
+<td>1 </td><td>. </td><td>访问成员的操作符 </td><td>从左到右 </td></tr>
+<tr>
+<td>1 </td><td>++ </td><td>后置自增操作符 </td><td>从左到右 </td></tr>
+<tr>
+<td>1 </td><td>&ndash; </td><td>后置自减操作符 </td><td>从左到右 </td></tr>
+<tr>
+<td>2 </td><td>! </td><td>逻辑取反操作符 </td><td>从右到左 </td></tr>
+<tr>
+<td>2 </td><td>~ </td><td>按位取反</td><td>从右到左 </td></tr>
+<tr>
+<td>2 </td><td>++ </td><td>前置自增操作符</td><td>从右到左 </td></tr>
+<tr>
+<td>2 </td><td>&ndash; </td><td>前置自减操作符</td><td>从右到左 </td></tr>
+<tr>
+<td>2 </td><td>- </td><td>一元取负操作符</td><td>从右到左 </td></tr>
+<tr>
+<td>3 </td><td>* </td><td>乘法操作符 </td><td>从左到右 </td></tr>
+<tr>
+<td>3 </td><td>/ </td><td>除法操作符</td><td>从左到右 </td></tr>
+<tr>
+<td>3 </td><td>% </td><td>取余数操作符</td><td>从左到右 </td></tr>
+<tr>
+<td>4 </td><td>+ </td><td>加法操作符 </td><td>从左到右 </td></tr>
+<tr>
+<td>4 </td><td>- </td><td>减法操作符</td><td>从左到右 </td></tr>
+<tr>
+<td>5 </td><td>&lt;&lt; </td><td>按位左移操作符 </td><td>从左到右 </td></tr>
+<tr>
+<td>5 </td><td>&gt;&gt; </td><td>按位右移操作符</td><td>从左到右 </td></tr>
+<tr>
+<td>6 </td><td>&lt; </td><td>小于比较操作符 </td><td>从左到右 </td></tr>
+<tr>
+<td>6 </td><td>&lt;= </td><td>小于或等于比较操作符</td><td>从左到右 </td></tr>
+<tr>
+<td>6 </td><td>&gt; </td><td>大于比较操作符</td><td>从左到右 </td></tr>
+<tr>
+<td>6 </td><td>&gt;= </td><td>大于或等于比较操作符</td><td>从左到右 </td></tr>
+<tr>
+<td>7 </td><td>== </td><td>等于比较操作符 </td><td>从左到右 </td></tr>
+<tr>
+<td>7 </td><td>!= </td><td>不等于比较操作符</td><td>从左到右 </td></tr>
+<tr>
+<td>8 </td><td>&amp; </td><td>按位与操作符 </td><td>从左到右 </td></tr>
+<tr>
+<td>9 </td><td>^ </td><td>按位异或操作符 </td><td>从左到右 </td></tr>
+<tr>
+<td>10 </td><td>| </td><td>按位或操作符 </td><td>从左到右 </td></tr>
+<tr>
+<td>11 </td><td>&amp;&amp; </td><td>逻辑与操作符 </td><td>从左到右 </td></tr>
+<tr>
+<td>12 </td><td>|| </td><td>逻辑或操作符 </td><td>从左到右 </td></tr>
+<tr>
+<td>13 </td><td>? : </td><td>三元条件操作符 </td><td>从右到左 </td></tr>
+<tr>
+<td>14 </td><td>= </td><td>赋值操作符 </td><td>从右到左 </td></tr>
+<tr>
+<td>14 </td><td>+= </td><td>复合赋值操作符(加法)</td><td>从右到左 </td></tr>
+<tr>
+<td>14 </td><td>-= </td><td>复合赋值操作符(减法)</td><td>从右到左 </td></tr>
+<tr>
+<td>14 </td><td>*= </td><td>复合赋值操作符(乘法)</td><td>从右到左 </td></tr>
+<tr>
+<td>14 </td><td>/= </td><td>复合赋值操作符(除法)</td><td>从右到左 </td></tr>
+<tr>
+<td>14 </td><td>%= </td><td>复合赋值操作符(取余)</td><td>从右到左 </td></tr>
+<tr>
+<td>14 </td><td>&amp;= </td><td>复合赋值操作符(按位与)</td><td>从右到左 </td></tr>
+<tr>
+<td>14 </td><td>^= </td><td>复合赋值操作符(按位异或)</td><td>从右到左 </td></tr>
+<tr>
+<td>14 </td><td>|= </td><td>复合赋值操作符(按位或)</td><td>从右到左 </td></tr>
+<tr>
+<td>14 </td><td>&lt;&lt;= </td><td>复合赋值操作符(按位左移)</td><td>从右到左 </td></tr>
+<tr>
+<td>14 </td><td>&gt;&gt;= </td><td>复合赋值操作符(按位右移)</td><td>从右到左 </td></tr>
+</table>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

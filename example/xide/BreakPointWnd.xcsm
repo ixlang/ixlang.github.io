@@ -1,0 +1,185 @@
+//xlang Source, Name:BreakPointWnd.xcsm 
+//Date: Tue Sep 17:10:41 2018 
+
+class BreakPointWnd : ListDockWidget{
+	static BreakPointWnd bpWnd;
+	static class BreakPointRequest{
+		String file;
+        int reqline;
+        int realine;
+        bool set;
+        int error;
+        BreakPointRequest(String f, int ql, int rl, bool s, int e){
+			file = f;
+            reqline = ql;
+            realine = rl;
+            set = s;
+            error = e;
+        }
+    };
+    
+    static Vector<BreakPointRequest> requestlist = new Vector<BreakPointRequest>();
+    
+	static Map<String,Map<int,BreakPointRequest>> breakPoints = new Map<String,Map<int,BreakPointRequest>>();
+    
+    static void toggleBreakPoint(XSourceEditor editor, String file, int line, bool add){
+		bpWnd.toggleBreakPoint(editor, new BreakPointRequest(file, line, line, add, 0));
+    }
+     
+    void toggleBreakPoint(XSourceEditor editor, BreakPointRequest brp){
+		Map<int,BreakPointRequest> lineMap = nilptr;
+        
+        try{
+			lineMap = breakPoints.get(brp.file);
+        }catch(Exception e){
+        
+        }
+        
+        if (brp.set){
+			if (lineMap != nilptr){
+				lineMap.put(brp.reqline, brp);
+			}else{
+				lineMap = new Map<int,BreakPointRequest>();
+				lineMap.put(brp.reqline, brp);
+				breakPoints.put(brp.file, lineMap);
+			}
+		}else{
+			if (lineMap != nilptr){
+				lineMap.remove(brp.reqline);
+			}
+        }
+        
+        if (XWorkspace.workspace.debuggee.isDebuging()){
+			XWorkspace.workspace.debuggee.toggleBreakpoint(brp.file, brp.reqline, brp.set);
+        }else{
+			editor.toggleBreakPoint(brp.reqline, brp.set);
+            refreshBreakPoints();
+        }
+    }
+
+	static void SendBreakPoint(){
+		bpWnd.sendBreakPoint();
+    }
+    
+	void sendBreakPoint(){
+		Map.Iterator<String,Map<int,BreakPointRequest>> iter = breakPoints.iterator();
+        while (iter.hasNext()){
+			applyBreakpoint(iter.getValue());
+            iter.next();
+        }
+    }
+    
+    void applyBreakpoint(Map<int,BreakPointRequest> itemmap){
+		if (itemmap != nilptr){
+			Map.Iterator<int,BreakPointRequest> iter = itemmap.iterator();
+			while (iter.hasNext()){
+				BreakPointRequest bpr = iter.getValue();
+				XWorkspace.workspace.debuggee.toggleBreakpoint(bpr.file, bpr.reqline, bpr.set);
+				iter.next();
+			}
+        }
+    }
+    
+    void refreshBreakPoints(){
+		QXTreeView list = getList();
+        
+        list.clear();
+        
+		Map.Iterator<String,Map<int,BreakPointRequest>> iter =  breakPoints.iterator();
+        while (iter.hasNext()){
+			Map<int,BreakPointRequest> mbp = iter.getValue();
+            addToList(list, iter.getKey(), mbp);
+            iter.next();
+        }
+    }
+    
+    void addToList(QXTreeView list , String file, Map<int,BreakPointRequest> mbp){
+    	Map.Iterator<int,BreakPointRequest> iter =  mbp.iterator();
+        while (iter.hasNext()){
+			BreakPointRequest brp =  iter.getValue();
+            
+			long item = list.addItem("res/toolbar/bp.png", "常规断点");
+			list.setItemText(item, 1, "-");
+			list.setItemText(item, 2, brp.file );
+			list.setItemText(item, 3, "" + brp.realine);
+
+            iter.next();
+        }
+    }
+    
+	void onListItemClicked(QXTreeView tree,long item, int column)override{
+    
+    }
+        
+    void onCreate(){
+		bpWnd = this;
+    }
+    
+    String getListName()override{
+    
+		return "bplist";
+    }
+    
+    String [] getColumn()override{
+		String [] columns = {"类型", "地址", "位置", "行"};
+        return columns;
+    }
+    
+    int [] getColumnWidths()override{
+		int [] ws = {100, 50, 300, 50};
+        return ws;
+    }
+    
+
+	void onNotification(long id){
+		 synchronized(requestlist){
+			for (int i =0; i < requestlist.size(); i++){
+				BreakPointRequest bpr = requestlist.get(i);
+                parseBreakPoint(bpr);
+            }
+            refreshBreakPoints();
+            requestlist.clear();
+		 }
+	}
+    
+    void parseBreakPoint(BreakPointRequest bpr){
+		QXTreeView list = getList();
+    
+		if (bpr.error != 0){
+			XWndOutput.outputWnd.output("无法在此位置切换断点:" + bpr.file + " 行:" + bpr.reqline);
+            return ;
+        }
+        
+        Map<int,BreakPointRequest> lineMap = nilptr;
+        
+        try{
+			lineMap = breakPoints.get(bpr.file);
+        }catch(Exception e){
+        
+        }
+        
+        if (bpr.set){
+			if (lineMap != nilptr){
+				lineMap.put(bpr.reqline, bpr);
+			}else{
+				lineMap = new Map<int,BreakPointRequest>();
+				lineMap.put(bpr.reqline, bpr);
+				breakPoints.put(bpr.file, lineMap);
+			}
+        }else{
+			if (lineMap != nilptr){
+				lineMap.remove(bpr.realine);
+			}
+        }
+        
+        XSourceEditor.toggleBreakPointOnFile(XWorkspace.workspace, bpr.file, bpr.realine, bpr.set);
+    }
+    
+    static void setBreakPoint(String file, int reqline, int realine, bool set, int error){
+		synchronized(requestlist){
+			requestlist.add(new BreakPointRequest(file, reqline, realine, set, error));
+            bpWnd.Notify(0);
+        }
+        
+    }
+};

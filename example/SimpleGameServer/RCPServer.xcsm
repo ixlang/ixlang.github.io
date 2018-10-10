@@ -1,0 +1,27 @@
+//xlang Source, Name:RCPServer.xcsm 
+//Date: Thu Oct 20:50:48 2018 
+
+class RCPServer{
+	
+    //远程调用通道
+	RemoteCallPipe<IServer, IClient> rcs = new RemoteCallPipe<IServer, IClient>();	
+        
+    bool create(IServer server, IRCPEventHandler rcph, Unsi unsi){
+		
+        //创建远程调用通道
+		if (rcs.create(unsi.getAsyncDirectOutput(), rcph, server, true)){
+			
+			//开启设置网络参数
+			if (unsi.create(rcs.getAsyncDirectInput(), 1, 13567, 0)){
+				
+				//开启网络服务
+				if (unsi.start()){
+					//开启远程调用通道
+					return 0 == rcs.startForServer();
+				}
+			}
+        }
+        
+        return false;
+    }
+};

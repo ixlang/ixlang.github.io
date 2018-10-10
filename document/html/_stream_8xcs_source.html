@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/std/Stream.xcs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v6.0 beta</span>
+   </div>
+   <div id="projectbrief">项目介绍</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e3ca87bab28942003398a7ab6222efec.html">std</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Stream.xcs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_stream_8xcs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;@Declare</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="interface_stream.html">    6</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_stream.html">Stream</a>{</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="interface_stream.html#adf4ee6bd8e54e18bdeacc20bda65232d">read</a>(byte [] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> <a class="code" href="interface_stream.html#a0ce2b6cf04155541d88f91d94626ec84">length</a>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="interface_stream.html#a7bc3c3e59293fb955b1add3921b44d38">write</a>(byte [] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="interface_stream.html#afdad076420ede6343931f5db055fac07">setPosition</a>(<span class="keywordtype">int</span> pos);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="interface_stream.html#ad8a2786c4ee713c917b468c59ec610df">getPosition</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="interface_stream.html#a0ce2b6cf04155541d88f91d94626ec84">length</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="interface_stream.html#aa62d7ee316aa8566e0ef1107ac0a603e">available</a>(<span class="keywordtype">bool</span> wait);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_stream.html#a5ae591df94fc66ccb85cbb6565368bca">close</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
+<div class="ttc" id="interface_stream_html_ad8a2786c4ee713c917b468c59ec610df"><div class="ttname"><a href="interface_stream.html#ad8a2786c4ee713c917b468c59ec610df">Stream.getPosition</a></div><div class="ttdeci">long getPosition()</div><div class="ttdoc">获取流当前位置 </div></div>
+<div class="ttc" id="interface_stream_html"><div class="ttname"><a href="interface_stream.html">Stream</a></div><div class="ttdoc">流接口 </div><div class="ttdef"><b>Definition:</b> <a href="_stream_8xcs_source.html#l00006">Stream.xcs:6</a></div></div>
+<div class="ttc" id="interface_stream_html_aa62d7ee316aa8566e0ef1107ac0a603e"><div class="ttname"><a href="interface_stream.html#aa62d7ee316aa8566e0ef1107ac0a603e">Stream.available</a></div><div class="ttdeci">long available(bool wait)</div><div class="ttdoc">是否可读 </div></div>
+<div class="ttc" id="interface_stream_html_adf4ee6bd8e54e18bdeacc20bda65232d"><div class="ttname"><a href="interface_stream.html#adf4ee6bd8e54e18bdeacc20bda65232d">Stream.read</a></div><div class="ttdeci">int read(byte [] buffer, int pos, int length)</div><div class="ttdoc">读取数据 </div></div>
+<div class="ttc" id="interface_stream_html_afdad076420ede6343931f5db055fac07"><div class="ttname"><a href="interface_stream.html#afdad076420ede6343931f5db055fac07">Stream.setPosition</a></div><div class="ttdeci">long setPosition(int pos)</div><div class="ttdoc">设置流位置 </div></div>
+<div class="ttc" id="interface_stream_html_a5ae591df94fc66ccb85cbb6565368bca"><div class="ttname"><a href="interface_stream.html#a5ae591df94fc66ccb85cbb6565368bca">Stream.close</a></div><div class="ttdeci">void close()</div><div class="ttdoc">关闭流 </div></div>
+<div class="ttc" id="interface_stream_html_a7bc3c3e59293fb955b1add3921b44d38"><div class="ttname"><a href="interface_stream.html#a7bc3c3e59293fb955b1add3921b44d38">Stream.write</a></div><div class="ttdeci">int write(byte [] buffer, int pos, int length)</div><div class="ttdoc">写入数据 </div></div>
+<div class="ttc" id="interface_stream_html_a0ce2b6cf04155541d88f91d94626ec84"><div class="ttname"><a href="interface_stream.html#a0ce2b6cf04155541d88f91d94626ec84">Stream.length</a></div><div class="ttdeci">long length()</div><div class="ttdoc">获取流总长 </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

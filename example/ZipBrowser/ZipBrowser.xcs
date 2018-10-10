@@ -1,0 +1,115 @@
+//xlang 
+
+
+
+class FileInputStream : Stream{
+	long filehandler;
+
+	FileInputStream(String path){
+		filehandler = _system_.openFile(path, "r");
+	}
+
+	bool attach(String path){
+		if (filehandler != 0){
+			_system_.closeFile(filehandler);
+			filehandler = 0;
+		}
+		filehandler = _system_.openFile(path, "r");
+        return true;
+	}
+	long available(bool bwait){
+		return 0;
+    }
+	long seek(int type, long pos){
+		return _system_.seekFile(filehandler, type, pos);
+    }
+    
+    long getPosition(){
+		return _system_.getFileSeek(filehandler);
+    }
+    
+	long length(){
+		return _system_.fileLength(filehandler);
+	}
+
+	byte[] read(){
+		byte[] data = new byte[length()];
+		_system_.readFile(filehandler, data, 0, data.length);
+		return data;
+	}
+
+	int read(byte [] data , int position, int length)override{
+		return _system_.readFile(filehandler, data, position, length);
+	}
+
+	int write(byte [] data , int position, int length)override{
+		return 0;
+    }
+    
+    void close(){
+		if (filehandler != 0){
+			_system_.closeFile(filehandler);
+			filehandler = 0;
+		}
+    }
+	void finalize(){
+		close();
+	}
+};
+
+int main(String [] args){
+	_system_.createConsole();
+	if (args.length == 0){
+		_system_.consoleWrite("zipbw -p args[zipfile]");
+        Thread.sleep(-1);
+        return 0;
+    }
+    
+    String zipFile = args[0];
+    
+    FileInputStream fis ;
+    
+    try{
+		fis = new FileInputStream(zipFile);
+    }catch(Exception e){
+		_system_.consoleWrite("can not open:" + zipFile);
+        Thread.sleep(-1);
+        return 0;
+    }
+    
+    ZipArchive zs = new ZipArchive();
+    
+    if (zs.open(fis)){
+		int c = zs.getEntriesCount();
+        _system_.consoleWrite("" + c);
+        for (int i = 0; i < c; i ++){
+			ZipEntry entry = zs.getEntry(i);
+            
+            
+            if (entry.isDirectory() == false){
+				_system_.consoleWrite(entry.getName() + "	:	file\n");
+				/*ZipFile file = entry.getFile();
+				
+                byte []buf = new byte[1024];
+                int rd = 0;
+                if (file.open()){
+					String path = "D:/Cadaqs/Desktop/" + i + ".f";
+					long filehandler = _system_.openFile(path, "w");
+					while ((rd = file.read(buf, 0, 1024)) != 0){
+						//_system_.consoleWrite(new String(buf, 0, rd));
+                        _system_.writeFile(filehandler, buf, 0, rd);
+					}
+                    _system_.closeFile(filehandler);
+					file.close();
+                }*/
+            }else{
+				_system_.consoleWrite(entry.getName() + "	:	dir\n");
+            }
+        }
+    }else{
+		_system_.consoleWrite("not a zip file:" + zipFile);
+        Thread.sleep(-1);
+        return 0;    
+    }
+	return 0;
+}

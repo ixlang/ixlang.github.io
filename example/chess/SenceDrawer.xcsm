@@ -1,0 +1,82 @@
+//xlang Source, Name:SenceDrawer.xcsm 
+//Date: Tue Oct 04:14:34 2018 
+
+class SenceDrawer{
+	IServer _server;
+    int myid;
+	QXImage back = nilptr;
+    QXImage blue = nilptr;
+    QXImage red = nilptr;
+    QXImage over = nilptr;
+    
+    int [] data = new int [441];
+    int over_x, over_y;
+    
+    void setServer(IServer server, int mid){
+		_server = server;
+        myid = mid;
+    }
+    
+    bool create(){
+		back = new QXImage("back.png", nilptr);
+        blue = new QXImage("blue.png", nilptr);
+        red = new QXImage("red.png", nilptr);
+        over = new QXImage("over.png", nilptr);
+        return true;
+    }
+    
+	void update(QXPainter p, QXRect rect){
+		p.fillRect(rect, 0xff282822, QXPainter.SolidPattern);
+		p.drawImage(back, 0, 0);
+        drawChess(p);
+    }
+    
+    
+    void drawChess(QXPainter p){
+    
+		p.drawImage(over, 20 - 15 + over_x * 30, 108 - 15 + over_y * 30);
+    
+		for (int i = 0; i < 21; i ++){
+			drawRow(p, i, data, i * 21);
+        }
+        
+    }
+    
+    void drawRow(QXPainter p, int l, int []line, int offset){
+		for (int i = 0; i < 21; i ++){
+			if (line[offset + i] != 0){
+				if (line[offset + i] == myid){
+					p.drawImage(blue, 20 - 15 + i * 30, 108 - 15 + l * 30);
+				}else{
+					p.drawImage(red, 20 - 15 + i * 30, 108 - 15 + l * 30);
+				}
+            }
+        }
+    }
+    
+    int fixPoint(int x,int y){
+		return ((y - (105 - 15)) / 30) * 21 +
+		(x - (20 - 15)) / 30;
+    }
+    
+    bool setChess(int _row, int _line, int id){
+        if (_line >=0 && _line < 21 && _row >=0 && _row < 21){
+			data[_line * 21 + _row] = id;
+            return true;
+        }
+        return false;
+    }
+    
+    bool updateOver(int x,int y){
+		int _line = ((y - (105 - 15)) / 30);
+		int _row = (x - (20 - 15)) / 30;
+        if (_line >=0 && _line < 21 && _row >=0 && _row < 21){
+			if (_row != over_x || _line != over_y){
+				over_x = _row;
+                over_y = _line;
+                return true;
+            }
+        }
+        return false;
+    }
+};

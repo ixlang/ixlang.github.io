@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/std/DgramSocket.xcs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v6.0 beta</span>
+   </div>
+   <div id="projectbrief">项目介绍</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e3ca87bab28942003398a7ab6222efec.html">std</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">DgramSocket.xcs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_dgram_socket_8xcs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;@Declare</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_dgram_socket.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_dgram_socket.html">DgramSocket</a>{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_dgram_socket.html#afc40da5c10713f43f3571e268488b1d5">DgramSocket</a>();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_dgram_socket.html#ace53b11f2bc9ebf267032126d7bb09ea">bind</a>(<a class="code" href="class_string.html">String</a> host, <span class="keywordtype">int</span> port);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#adf4ee6bd8e54e18bdeacc20bda65232d">read</a>(byte [] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#a7bc3c3e59293fb955b1add3921b44d38">write</a>(byte [] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_dgram_socket.html#a5ae591df94fc66ccb85cbb6565368bca">close</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_dgram_socket.html#aa62d7ee316aa8566e0ef1107ac0a603e">available</a>(<span class="keywordtype">bool</span> wait);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#a3d734026e4dcd8000b693e4d5f6bf869">getHandle</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_dgram_socket.html#adc719bb7cd4ce99f5a3cb8323cd09b86">connect</a>(<a class="code" href="class_string.html">String</a> host, <span class="keywordtype">int</span> port);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="class_inet_address.html">InetAddress</a> <a class="code" href="class_dgram_socket.html#ac298d32bb3a982bf29a86cbe8de1b729">getRemoteInetAddress</a>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="class_inet_address.html">InetAddress</a> <a class="code" href="class_dgram_socket.html#a22767aea2554758fd2e5d8e333ee2a20">getLocalInetAddress</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#a5bbaa894c55cf41ed97607c89fa8f882">getRemoteAddress</a>();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#af104a1b2e11c01328a92a0f73dcd6ef1">getRemotePort</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#a55617edfde45be043c0b2bbf92ddec78">getLocalAddress</a>();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#a8b95f080400b8bd87ca6bd4a63d1ae4b">getLocalPort</a>();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#ac8fb0dccd887899df024e840e84a1410">sendTo</a>(<a class="code" href="class_string.html">String</a> host, <span class="keywordtype">int</span> port, byte[] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#ac8fb0dccd887899df024e840e84a1410">sendTo</a>(<a class="code" href="class_inet_address.html">InetAddress</a> addr, byte[] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> length)</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;};</div>
+<div class="ttc" id="class_dgram_socket_html_ac8fb0dccd887899df024e840e84a1410"><div class="ttname"><a href="class_dgram_socket.html#ac8fb0dccd887899df024e840e84a1410">DgramSocket.sendTo</a></div><div class="ttdeci">int sendTo(String host, int port, byte[] buffer, int pos, int length)</div><div class="ttdoc">发送数据到指定地址 </div></div>
+<div class="ttc" id="class_dgram_socket_html_a8b95f080400b8bd87ca6bd4a63d1ae4b"><div class="ttname"><a href="class_dgram_socket.html#a8b95f080400b8bd87ca6bd4a63d1ae4b">DgramSocket.getLocalPort</a></div><div class="ttdeci">int getLocalPort()</div><div class="ttdoc">获取本地端口信息 </div></div>
+<div class="ttc" id="class_dgram_socket_html_adc719bb7cd4ce99f5a3cb8323cd09b86"><div class="ttname"><a href="class_dgram_socket.html#adc719bb7cd4ce99f5a3cb8323cd09b86">DgramSocket.connect</a></div><div class="ttdeci">bool connect(String host, int port)</div><div class="ttdoc">建立UDP连接 </div></div>
+<div class="ttc" id="class_dgram_socket_html_a55617edfde45be043c0b2bbf92ddec78"><div class="ttname"><a href="class_dgram_socket.html#a55617edfde45be043c0b2bbf92ddec78">DgramSocket.getLocalAddress</a></div><div class="ttdeci">int getLocalAddress()</div><div class="ttdoc">获取本地32位的IP地址信息 </div></div>
+<div class="ttc" id="class_inet_address_html"><div class="ttname"><a href="class_inet_address.html">InetAddress</a></div><div class="ttdoc">网络地址类 </div><div class="ttdef"><b>Definition:</b> <a href="_inet_address_8xcs_source.html#l00006">InetAddress.xcs:6</a></div></div>
+<div class="ttc" id="class_dgram_socket_html_ace53b11f2bc9ebf267032126d7bb09ea"><div class="ttname"><a href="class_dgram_socket.html#ace53b11f2bc9ebf267032126d7bb09ea">DgramSocket.bind</a></div><div class="ttdeci">bool bind(String host, int port)</div><div class="ttdoc">bind地址 </div></div>
+<div class="ttc" id="class_dgram_socket_html_adf4ee6bd8e54e18bdeacc20bda65232d"><div class="ttname"><a href="class_dgram_socket.html#adf4ee6bd8e54e18bdeacc20bda65232d">DgramSocket.read</a></div><div class="ttdeci">int read(byte [] buffer, int pos, int length)</div><div class="ttdoc">读取数据 </div></div>
+<div class="ttc" id="class_dgram_socket_html_afc40da5c10713f43f3571e268488b1d5"><div class="ttname"><a href="class_dgram_socket.html#afc40da5c10713f43f3571e268488b1d5">DgramSocket.DgramSocket</a></div><div class="ttdeci">void DgramSocket()</div><div class="ttdoc">构造函数 </div></div>
+<div class="ttc" id="class_dgram_socket_html_a22767aea2554758fd2e5d8e333ee2a20"><div class="ttname"><a href="class_dgram_socket.html#a22767aea2554758fd2e5d8e333ee2a20">DgramSocket.getLocalInetAddress</a></div><div class="ttdeci">InetAddress getLocalInetAddress()</div><div class="ttdoc">获取本地地址信息 </div></div>
+<div class="ttc" id="class_dgram_socket_html_a3d734026e4dcd8000b693e4d5f6bf869"><div class="ttname"><a href="class_dgram_socket.html#a3d734026e4dcd8000b693e4d5f6bf869">DgramSocket.getHandle</a></div><div class="ttdeci">int getHandle()</div><div class="ttdoc">获取套接字句柄 </div></div>
+<div class="ttc" id="class_dgram_socket_html_ac298d32bb3a982bf29a86cbe8de1b729"><div class="ttname"><a href="class_dgram_socket.html#ac298d32bb3a982bf29a86cbe8de1b729">DgramSocket.getRemoteInetAddress</a></div><div class="ttdeci">InetAddress getRemoteInetAddress()</div><div class="ttdoc">获取远程地址信息 </div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="class_dgram_socket_html_a7bc3c3e59293fb955b1add3921b44d38"><div class="ttname"><a href="class_dgram_socket.html#a7bc3c3e59293fb955b1add3921b44d38">DgramSocket.write</a></div><div class="ttdeci">int write(byte [] buffer, int pos, int length)</div><div class="ttdoc">写入数据 </div></div>
+<div class="ttc" id="class_dgram_socket_html_aa62d7ee316aa8566e0ef1107ac0a603e"><div class="ttname"><a href="class_dgram_socket.html#aa62d7ee316aa8566e0ef1107ac0a603e">DgramSocket.available</a></div><div class="ttdeci">long available(bool wait)</div><div class="ttdoc">是否可读 </div></div>
+<div class="ttc" id="class_dgram_socket_html_a5bbaa894c55cf41ed97607c89fa8f882"><div class="ttname"><a href="class_dgram_socket.html#a5bbaa894c55cf41ed97607c89fa8f882">DgramSocket.getRemoteAddress</a></div><div class="ttdeci">int getRemoteAddress()</div><div class="ttdoc">获取远程32位的IP地址信息 </div></div>
+<div class="ttc" id="class_dgram_socket_html_af104a1b2e11c01328a92a0f73dcd6ef1"><div class="ttname"><a href="class_dgram_socket.html#af104a1b2e11c01328a92a0f73dcd6ef1">DgramSocket.getRemotePort</a></div><div class="ttdeci">int getRemotePort()</div><div class="ttdoc">获取远程端口信息 </div></div>
+<div class="ttc" id="class_dgram_socket_html"><div class="ttname"><a href="class_dgram_socket.html">DgramSocket</a></div><div class="ttdoc">udp协议套接字 </div><div class="ttdef"><b>Definition:</b> <a href="_dgram_socket_8xcs_source.html#l00006">DgramSocket.xcs:6</a></div></div>
+<div class="ttc" id="class_dgram_socket_html_a5ae591df94fc66ccb85cbb6565368bca"><div class="ttname"><a href="class_dgram_socket.html#a5ae591df94fc66ccb85cbb6565368bca">DgramSocket.close</a></div><div class="ttdeci">void close()</div><div class="ttdoc">关闭套接字 </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

@@ -1,0 +1,85 @@
+//xlang 
+
+
+class ChessApp : QXApplication {
+
+
+	static ChessWindow window = nilptr;
+    static LoginWindow wndLogin = nilptr;
+    
+	static ChessWindow showGameWindow(IServer server, int mid){
+		window = new ChessWindow(server, mid);
+		if (window.create()){
+			window.show();
+            return window;
+		}
+        return nilptr;
+    }
+    
+    bool create(){
+        if (super.createQXApplication()){
+
+            
+            wndLogin = new LoginWindow();
+            if (wndLogin.create()){
+				wndLogin.show();
+                return true;
+            }
+        }
+        return false;
+    }
+};
+
+class ChessWindow : QXDialog {
+	SenceDrawer sd = new SenceDrawer();
+	IServer _server;
+    
+    ChessWindow(IServer server, int mid){
+		super();
+		_server = server;
+        sd.setServer(_server, mid);
+    }
+    
+	bool create()override{
+		if (super.create()){
+			if (sd.create()){
+				setWindowFlags(CustomizeWindowHint | WindowCloseButtonHint  | Dialog  | WindowTitleHint);
+				resize(640, 750);
+				setFixedSize(width(), height());
+				return true;
+			}
+        }
+        return false;
+    }
+    
+    void onPaint(int l,int t, int r,int b, long hpaint){
+		sd.update(new QXPainter(hpaint), new QXRect(l,t,r,b));
+    }
+    
+    void onMouseButtonPress(int Button, int x, int y, int flags, int source){
+		if (Button == 1){
+			int _line = ((y - (105 - 15)) / 30);
+			int _row = (x - (20 - 15)) / 30;
+			if (_server.setChess(0, _line * 21 + _row)){
+				repaint();
+            }
+        }
+    }
+    
+    void onMouseMove(int Button, int x, int y, int flags, int source){
+
+		if (sd.updateOver(x, y)){
+			repaint();
+		}
+		
+    }
+};
+
+
+int main(String [] args){
+	ChessApp app = new ChessApp();
+    if (app.create()){
+		app.run();
+    }
+	return 0;
+}

@@ -1,0 +1,83 @@
+.TH "Pattern" 3 "2018年 六月 29日 星期五" "Version 3.0" "xlang" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Pattern \- 正则表达式  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "结构体"
+
+.in +1c
+.ti -1c
+.RI "class \fBResult\fP"
+.br
+.in -1c
+.SS "包函数"
+.SS "静态包函数"
+.SH "详细描述"
+.PP 
+正则表达式 
+.PP
+在文件 Pattern\&.xcs 第 5 行定义\&.
+.SH "构造及析构函数说明"
+.PP 
+.SS "\fBPattern\fP (\fBString\fP regex)\fC [package]\fP"
+
+.PP
+构造一个正则表达式对象 
+.PP
+\fB参数:\fP
+.RS 4
+\fIregex正则表达式\fP 
+.RE
+.PP
+
+.SH "成员函数说明"
+.PP 
+.SS "static \fBPattern\fP Compile (\fBString\fP regex)\fC [static]\fP, \fC [package]\fP"
+
+.PP
+构造一个正则表达式对象 
+.PP
+\fB参数:\fP
+.RS 4
+\fIregex正则表达式\fP 
+.br
+\fI正则表达式对象\fP 
+.RE
+.PP
+
+.SS "Result match (\fBString\fP text)\fC [package]\fP"
+
+.PP
+匹配一个字符串 
+.PP
+\fB参数:\fP
+.RS 4
+\fItext\fP 字符串 
+.br
+\fI匹配结果\fP 
+.RE
+.PP
+
+.SS "static bool test (\fBString\fP text, \fBString\fP regex)\fC [static]\fP, \fC [package]\fP"
+
+.PP
+测试一个串是否满足一个正则表达式 
+.PP
+\fB参数:\fP
+.RS 4
+\fItext\fP 字符串 
+.br
+\fIregex\fP 正则表达式 
+.br
+\fI是否\fP 
+.RE
+.PP
+
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 xlang 的 源代码自动生成\&.

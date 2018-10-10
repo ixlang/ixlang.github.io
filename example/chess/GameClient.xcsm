@@ -1,0 +1,62 @@
+//xlang Source, Name:GameClient.xcsm 
+//Date: Tue Oct 05:15:28 2018 
+
+
+class GameClient : IClient{
+	RCPClient rcp = new RCPClient();
+    IClient _client;
+    
+    void setClient(IClient c){
+		_client = c;
+    }
+    
+    bool login(){
+		return rcp.create(this);
+    }
+	//走子
+	void setChess(long context ,int index, int uid)override{
+		_client.setChess(context, index, uid);
+    }
+    
+    //游戏开始
+    void onGameStart(long context ,int []user)override{
+		_client.onGameStart(context, user);
+    }
+    
+    //你赢了
+    void youwin(long context, int uid)override{
+		_client.youwin(context, uid);
+    }
+    
+    //游戏结束
+    void gameOver(long context)override{
+		_client.gameOver(context);
+    }
+    
+    //玩家退出
+    void playerQuit(long context)override{
+		_client.playerQuit(context);
+    }
+    
+    //用户消息
+    void onUserMessage(long context ,int sender, String message)override{
+		_client.onUserMessage(context, sender, message);
+    }
+    
+    //房间消息
+    void onRoomMessage(long context ,int sender, String message)override{
+		_client.onRoomMessage(context, sender, message);
+    }
+    
+    void onUserEnter(long context ,int user, String name)override{
+		_client.onUserEnter(context, user, name);
+    }
+    
+	void onGameStart(long context, int firstHand)override{
+		_client.onGameStart(context, firstHand);
+	}
+    
+	void onUserStatusUpdate(long context)override{
+		_client.onUserStatusUpdate(context);
+	}
+};

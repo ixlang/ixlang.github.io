@@ -1,0 +1,52 @@
+class playThread : Thread{
+    short [] data = new short[2048];
+    Codec codec = new Codec();
+    AudioOut player = new AudioOut();
+    int rd = 0;
+    long play_start = 0;
+    bool quit = false;
+    String file;
+    playThread(String _path){
+        file = _path;
+    }
+    void quit(){
+        quit = true;
+    }
+    
+    int getDuration(){
+        return codec.getDuration();
+    }
+    
+    int getPosition(){
+        return bytes2ms(player.getPosition());
+    }
+    
+    int bytes2ms(long data_bytelength){
+        return (data_bytelength * 8 * 1000) / (44100 * 16 * 2);
+    }
+    
+    void play(){
+        player.play();
+    }
+    
+    void pause(){
+        player.pause();
+    }
+    void run(){
+        
+        
+        if (file == nilptr){
+            return;
+        }
+        if (codec.createCodec(file, 2, 44100, 16)){
+            if (player.create(2, 44100, 16)){
+                player.play();
+                Thread.sleep(500);
+                while (quit == false && 0 < (rd = codec.read(data, 4096))){
+                    play_start = _system_.currentTimeMillis();
+                    player.write(data, rd);
+                }
+            }
+        }
+    }
+};

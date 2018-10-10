@@ -1,0 +1,10 @@
+//xlang 
+
+	
+int main(String [] args){
+	GameServer gs = new GameServer();
+    if (gs.create()){
+		Thread.sleep(-1);
+    }
+	return 0;
+}

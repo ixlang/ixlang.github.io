@@ -1,0 +1,64 @@
+class WaveDrawer : EfficDrawer{
+    Image waimg = nilptr;
+    Bitmap wabitmap = nilptr;
+    double bottom = 345.f;
+    double []wavetop = new double[50];
+    
+    WaveDrawer(){
+        for (int i = 0; i < wavetop.length; i++){
+            wavetop[i] = bottom;
+        }
+    }
+    
+    bool create(){
+        try{
+            String appPath = _system_.getAppDirectory();
+            String wave_item = appPath.appendPath("res/wave_item.png");
+            wabitmap = new Bitmap(wave_item);
+            waimg = new Image(wabitmap);   
+        }catch(Exception e){
+            return false;
+        }
+        return true;
+    }
+    
+    int ms2wave(long million_second){
+        return ((44100 * 16 * 2 * million_second) / (16 * 1000));
+    }
+    
+    void drawWave(Canvas c){
+        for (int i =0; i < wavetop.length; i++){
+            RectF rf = new RectF(i * 10, wavetop[i],  i * 10 + waimg.getWidth(), bottom);
+           /* int mask = ((int)((345 - wavetop[i])  * 255 / 100)) & 0xff;
+            int color = 0xff000000 | mask  << 16  | mask  << 16 | (255 - mask ) ;*/
+            double a = (double)Math.abs(i - wavetop.length / 2) / (double)(wavetop.length / 2);
+            c.drawImage(waimg, rf, new RectF(0), 0, (int)(255 - a * 127 ) << 24 | 0xffffff, new PointF(0));
+            
+        }
+    
+    }
+    void prepare(Canvas /*c*/, short [] data,  int /*rd*/, long play_start){
+        long ms = _system_.currentTimeMillis() - play_start;
+        int offset = ms2wave(ms);
+        
+        for (int i =0; i < wavetop.length; i++){
+            double newtop = 0;
+            if ((offset + i) > 0 && (offset + i < data.length)){
+                double top = Math.abs((double)data[offset + i]) / 32768.f * 100.f;
+				
+                newtop = bottom - top;
+                if (newtop < wavetop[i]){
+                    wavetop[i] = newtop;
+                }else
+                if (wavetop[i] < bottom){
+                    wavetop[i] += Math.max((bottom - wavetop[i]) / 20 , 3.f);
+                }
+            }else
+            if (wavetop[i] < bottom){
+                wavetop[i] += Math.max((bottom - wavetop[i]) / 20 , 3.f);
+            }
+            
+
+        }
+    }   
+};

@@ -1,0 +1,70 @@
+.TH "Thread" 3 "2018年 六月 29日 星期五" "Version 3.0" "xlang" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Thread \- 线程类  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "包函数"
+.SS "静态包函数"
+.SH "详细描述"
+.PP 
+线程类 
+.PP
+在文件 Thread\&.xcs 第 6 行定义\&.
+.SH "成员函数说明"
+.PP 
+.SS "static long getId ()\fC [static]\fP, \fC [package]\fP"
+
+.PP
+获取线程的native id 
+.PP
+\fB返回:\fP
+.RS 4
+线程的native id 
+.RE
+.PP
+
+.SS "static void join ()\fC [static]\fP, \fC [package]\fP"
+
+.PP
+等待线程工作完成 
+.SS "void run ()\fC [package]\fP"
+
+.PP
+线程运行的主要执行体 
+.PP
+\fB警告:\fP
+.RS 4
+此方法是抽象的 需要在子类中重写 
+.RE
+.PP
+
+.SS "void run ()\fC [package]\fP"
+
+.PP
+使线程开始工作 run 
+.PP
+\fB参见:\fP
+.RS 4
+\fBrun\fP 
+.RE
+.PP
+
+.SS "static void sleep (long milliSecond)\fC [static]\fP, \fC [package]\fP"
+
+.PP
+使线程进入休眠 
+.PP
+\fB参数:\fP
+.RS 4
+\fImilliSecond\fP 毫秒数 
+.RE
+.PP
+
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 xlang 的 源代码自动生成\&.

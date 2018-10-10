@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: :</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">3.0</span>
+   </div>
+   <div id="projectbrief">项目概要</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">: </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>1.面向对象, (但同时继承了C++的面向过程式开发) 2.支持泛型编程(主要就是模板类,但不支持模板函数, 感觉太乱, 还是不支持的好) 3.支持多态,所有方法均为虚方法,可以在类中声明纯虚函数,或者声明interface类,但不实现肯定是不能通过编译的. 4.支持闭包,是真闭包哦, 没有什么蛋疼的语法,就像java那样使用,(但是java却是假闭包, 只是做了一份copy, 只能用不能改) 5.同样做了package的特性, 虽然好像用处不大,但是我在测试过程中发现a.b.c.d.e.f.g...这种的写法太蛋疼, 还是加个package 然后用using概括一下比较简单. 6.支持多线程. 7.自动的垃圾回收(提供手动gc接口) 8.synchronized块同步语法 9.入口点程序格式: int main(String [] args){ }</p>
+<p>该语言继承了C++的部分如下特性: 1.include 或者require 包含文件,但不存在头文件之类的, 所有文件都是源文件 2.重载操作符,目前支持 + - / * += -= *= /= == != &gt;&gt; &lt;&lt; &lt; &gt; &lt;= &gt;= &lt;&lt;= &gt;&gt;= &amp; | ^ ~ &amp;= |= ^= ,很遗憾没有支持[]操作符.</p>
+<p>新的内容: 1.无论class还是interface,都只能单继承, 不允许多重继承. 2.没有enum数据类型(暂时用不到,可能后面考虑添加) 3.增强了native api的功能调用,只需要声明 import "**.dll/so" 就可以调用native函数 4.编译源码不用再强调编译或者声明的先后顺序,只要在源码看得到的地方,可以随便调用. 5.支持不同参数的函数重载. 6.synchronized_read \ synchronized_write 块读写同步语法 7.所有的interface都是静态,interface内不可以有变量声明 8.字符串断行不需要用\, 用 + 连接更好(不会产生运行时代码) 9.派生类构造方法中显式调用基类构造方法应放在第一行且仅能调用一次. 10.派生类构造方法(无论是否有参)中若没有显式调用基类构造将隐式调用基类默认构造方法. 11.基类(该类是另一个类的派生类)若无默认构造函数,在派生类构造的时候将跳过基类构造直接调用基类的基类默认构造方法. 12.类中存在有参构造方式且不存在显式默认构造方式时, 将禁用默认构造方法</p>
+<p>编译器前端使用LL分析法(自己写的一个LL 分析生成器生成的C++代码). 垃圾回收部分采用引用计数法(当然会消除循环引用). 虚拟机很遗憾没有用C写,用C的话会带来更好的性能体验,但是那将是一个很麻烦的过程. 仅仅对IRcode做了基础的优化,也不会消除无用的代码. 虚拟机指令设计方面采用了寄存器式(register-based)指令系统.</p>
+<p>源代码 &ndash;&gt; LL LEXER -&gt; AST(抽象语法树) -&gt; AST Optimizer(初步优化,主要是对常量之类的以及可变换的语法) -&gt;Compiler(此处原本应该有个Optimizer的) -&gt; IRCODE (中间码) -&gt;IR Optimizer(主要优化指令结构) -&gt; BYTECODE.</p>
+<p>import cdecl stdcall fastcall pascal operator for while do try catch if break continue default interface class package static const throw switch case else return new include using require finally final synchronized_read synchronized_write synchronized </p>
+<p>运算符优先级: </p><hr/>
+ <h2>优先级 操作符 描述 结合方向 </h2>
+<p>1 () 调节优先级的括号操作符 从左到右 [] 数组下标访问操作符 new{}/[] 创建对象/数组 从右到左 . 访问成员的操作符 从左到右 ++ 后置自增操作符 </p><h2>&ndash; 后置自减操作符 </h2>
+<p>2 ! 逻辑取反操作符 从右到左 ~ 按位取反 ++ 前置自增操作符 &ndash; 前置自减操作符 </p><h2>- 一元取负操作符 </h2>
+<p>3 * 乘法操作符 从左到右 / 除法操作符 </p><h2>% 取余数操作符 </h2>
+<p>4 + 加法操作符 从左到右 </p><h2>- 减法操作符 </h2>
+<p>5 &lt;&lt; 按位左移操作符 从左到右 </p><h2>&gt;&gt; 按位右移操作符 </h2>
+<p>6 &lt; 小于比较操作符 从左到右 &lt;= 小于或等于比较操作符 &gt; 大于比较操作符 </p><h2>&gt;= 大于或等于比较操作符 </h2>
+<p>7 == 等于比较操作符 从左到右 </p><h2>!= 不等于比较操作符 </h2>
+<h2>8 &amp; 按位与操作符 从左到右 </h2>
+<h2>9 ^ 按位异或操作符 从左到右 </h2>
+<h2>10 | 按位或操作符 从左到右 </h2>
+<h2>11 &amp;&amp; 逻辑与操作符 从左到右 </h2>
+<h2>12 || 逻辑或操作符 从左到右 </h2>
+<h2>13 ? : 三元条件操作符 从右到左 </h2>
+<p>14 = 赋值操作符 从右到左 += 复合赋值操作符(加法) -= 复合赋值操作符(减法) *= 复合赋值操作符(乘法) /= 复合赋值操作符(除法) %= 复合赋值操作符(取余) &amp;= 复合赋值操作符(按位与) ^= 复合赋值操作符(按位异或) |= 复合赋值操作符(按位或) &lt;&lt;= 复合赋值操作符(按位左移) </p><h2>&gt;&gt;= 复合赋值操作符(按位右移) </h2>
+<p>new 对象必须为类 或者数组,如new a(), new a[]; class 定义末尾须加分号 如 class a{ ... }; package 定义同class interface定义同class Object类型可用于任何类型,需要强转 native定义为 import "模块名"{ native函数列表 }; native函数声明中用到的类型只有int long byte short double <a class="el" href="class_string.html" title="字符串类 ">String</a> bool Object ObjectPtr 九种类型. ObjectPtr表示取地址, 其他为取对象(String默认取地址) include和require语法: include("文件1", "文件2",..."文件N") using语法: using{包1; 包2; 包1.小包1;... 包N}; 类继承语法: a继承b = class a : b { }; final修饰的类不可被继承 const修饰的变量不可被修改 final修饰的函数不可派生类重写 static修饰的对象为静态对象 其他的参照Java语法, 或者C++语法.</p>
+<p>1.变量\常量 2.函数 3.类(含模板类) 4.接口 5.包 package 6.native组件</p>
+<p>基本类型: void 无类型 POD类型: byte 无符号8位整数(0~255) char 无符号16位整数(0~65535) short 有符号16位整数(-32768~+32767) int 有符号32位整数(-2,147,483,648~2,147,483,647) long 有符号64位整数(-9,223,372,036,854,775,808~9,223,372,036,854,775,807) double 双精度浮点数类型(1.7E+10-308~1.7E+10+308) bool 布尔类型(true,false) <a class="el" href="class_string.html" title="字符串类 ">String</a> 字符串类(multibyte characters string) 数组: [](Array) 数组对象(POD类型的数组为连续的POD类型数组(string除外),其他类型的数组为指针引用) 特殊对象: System 系统平台相关调用集合 Exception 异常 空指针对象: nilptr 空指针,可以与任意类进行,但不可以与byte short char int long bool double互相操作 扩展的内置对象: <a class="el" href="class_thread.html" title="线程类 ">Thread</a> 线程对象(类),如同java的Thread <a class="el" href="class_vector.html" title="vector容器 ">Vector</a> vector容器(模板类) <a class="el" href="class_map.html" title="map容器 ">Map</a>(含Iterator) 基于红黑树的map实现(模板类) <a class="el" href="class_list.html" title="map容器 ">List</a>(含Iterator) 列表容器(模板类) <a class="el" href="class_pattern.html" title="正则表达式 ">Pattern</a>(含Result) 正则表达式对象(类) <a class="el" href="class_http_request.html" title="http请求类 ">HttpRequest</a> http请求操作类(主要依靠第三方libcurl)(类) <a class="el" href="class_unsi.html" title="unsi 通用网络服务器接口类 ">Unsi</a>(含Instance类) 通用服务器接口组件(类) <a class="el" href="interface_async_input.html" title="异步输入接口 需要继承 ">AsyncInput</a> 异步输入接口(接口) <a class="el" href="class_json_object.html" title="json类 ">JsonObject</a> Json对象类 <a class="el" href="class_json_array.html" title="json数组类 ">JsonArray</a> Json数组类 Timer 定时器 TimerTask 定时器任务接口 Window Windows平台下的窗口类 <a class="el" href="class_math.html" title="Math类 ">Math</a> 数学运算库 内置异常类: DivByZeroException 除零异常 IndexOutOfBoundsException 下标越界异常 ArrayStoreException 数组储存异常 ClassCastException 强制转换异常 IllegalArgumentException 参数异常 NullPointerException 空指针异常 OutOfMemoryException 内存溢出异常(暂无用) InvalidIteratorException 迭代器失效异常</p>
+<p>1.栈 2.成员 3.堆和其他 </p>
+<p>wscite scite的目录 std 标准库文件描述 native native定义 example 代码用例 common 通用的类型定义 bin 编译器&amp;虚拟机目录 </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

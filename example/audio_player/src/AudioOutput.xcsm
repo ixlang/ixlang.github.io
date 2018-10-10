@@ -1,0 +1,52 @@
+
+class AudioOut{
+    long handle = 0;
+    
+    bool create(int channel, int sample, int widebits){
+        handle = audio_create(channel, sample, widebits, 40);
+        return handle != 0;
+    }
+    
+    int write(short [] data, int size){
+        return audio_writeData(handle, data, size);
+    }
+    
+    bool play(){
+        return audio_play(handle);
+    }
+    
+    bool stop(){
+        return audio_stop(handle);
+    }
+    
+    bool pause(){
+        return audio_pause(handle);
+    }
+    
+    void reset(){
+        audio_cleanup(handle);
+    }
+    
+    void finalize(){
+        audio_destroy(handle);
+    }
+    
+    int getPosition(){
+        if (handle == 0){
+            return 0;
+        }
+        return audio_getPosition(handle);
+    }
+    
+    import "codec.dll"{
+        long stdcall audio_create(int channel, int sample, int widebits, int buffersize);
+        int stdcall audio_writeData(long handle, ObjectPtr data, int size);
+        bool stdcall audio_play(long handle);
+        bool stdcall audio_stop(long handle);
+        bool stdcall audio_pause(long handle);
+        void stdcall audio_cleanup(long handle);
+        void stdcall audio_destroy(long handle);
+        int stdcall audio_getPosition(long handle);
+    };
+
+};

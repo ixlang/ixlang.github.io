@@ -1,0 +1,17 @@
+//xlang Source, Name:Log.xcsm 
+//Date: Fri Oct 02:40:20 2018 
+
+class Log{
+	static void d(String tag, String text){
+		_system_.log(tag, _system_.LOG_LEV_DEBUG, text,  false);
+    }
+    static void e(String tag, String text){
+		_system_.log(tag, _system_.LOG_LEV_ERR, text,  false);
+    }
+    static void i(String tag, String text){
+		_system_.log(tag, _system_.LOG_LEV_INFO, text,  false);
+    }
+    static void w(String tag, String text){
+		_system_.log(tag, _system_.LOG_LEV_WARNING, text,  false);
+    }
+};

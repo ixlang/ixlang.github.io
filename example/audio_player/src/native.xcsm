@@ -1,0 +1,638 @@
+
+
+
+package glGriphics{
+
+    class NativeCore{
+        long handle;
+    };
+    
+    class Style{
+        static const int invalid = 0;
+        static const int stroke = 1;
+        static const int fill = 2;
+    };
+    
+    class Canvas : NativeCore{
+        
+        Canvas(long hwnd, double width,  double height){
+            handle = glcreateCanvas(hwnd, width, height);
+        }
+        
+        void resize(double width,  double height){
+            glCanvasResize(handle, width, height);
+        }
+        
+        bool  drawImage(Image image, RectF dst_rect,RectF src_rect, double rotate, int imageMask,PointF rotate_point){
+            return gldrawImage(handle, image.handle, dst_rect.handle, src_rect.handle, rotate, imageMask, rotate_point.handle);
+        }
+        bool  drawText(String text, int x, int y, double size, Typeface tf, int color, int style){
+            Image txtimg = createText(text,size,  tf, color, style);
+            if (txtimg != nilptr){
+                drawImage(txtimg, new RectF(x, y, x + txtimg.getWidth(),y + txtimg.getHeight()), new RectF(0), 0, 0xffffffff, new PointF(0));
+            }
+            return false;
+        }
+        
+        Image createText(String text, double size, Typeface tf, int color, int style){
+            Bitmap tb = new Bitmap(text, size, tf, color, style);
+            if (tb != nilptr){
+               Image txtimg = new Image(tb);
+               if (txtimg != nilptr){
+                   return txtimg;
+               }
+            }
+            return nilptr;
+        }
+        
+        void  setMatrix(Matrix matrix){
+            glsetMatrix(handle, matrix.handle);
+        }
+        
+        void  save(){
+            glsave(handle);
+        }
+        void  restore(){
+            glrestore(handle);
+        }
+        
+        bool  prepare(){
+            return glprepare(handle);
+        }
+        void  flush(){
+            glflush(handle);
+        }
+        
+        void  scale(double fscale){
+            glscale(handle, fscale);
+        }
+        void  translate(double cx, double cy){
+            gltranslate(handle, cx, cy);
+        }
+        
+        void  setBackColor(int argb){
+            glsetBackColor(handle, argb);
+        }
+        
+        int  getBackColor(){
+            return glgetBackColor(handle);
+        }
+        void  setAntiAliasing(bool bba){
+            glsetAntiAliasing(handle, bba);
+        }
+        
+        void  drawLine(PointF ptstart, PointF ptend,int color,double width_pixels){
+            gldrawLine(handle, ptstart.handle, ptend.handle, color, width_pixels);
+        }
+        
+        void  dot(PointF pt_center, int color, double width_pixels){
+            gldot(handle, pt_center.handle, color, width_pixels);
+        }
+        
+        void  draw_path(Path path_path, ColorPath color, int color_count, double width_pixels){
+            gldraw_path(handle, path_path.handle, color.handle, color_count, width_pixels);
+        }
+        void  polygon(Path path_path, ColorPath color, int color_count, int style, double width_pixels){
+            glpolygon(handle,path_path.handle,  color.handle, color_count, style, width_pixels);
+        }
+        void  circle(PointF pt_point, double x_radius, double y_radius, int style, ColorPath color, int color_count, double width_pixels, int smooth_level){
+            glcircle(handle, pt_point.handle, x_radius, y_radius, style, color.handle, color_count, width_pixels, smooth_level);
+        }
+        double  map_x_coord(double x_pos){
+            return glmap_x_coord(handle, x_pos);
+        }
+        double  map_y_coord(double y_pos){
+            return glmap_y_coord(handle, y_pos);
+        }
+        double  map_width(double w){
+            return glmap_width(handle, w);
+        }
+        double  map_height(double h){
+            return glmap_width(handle, h);
+        }
+        
+        PointF map_point(PointF pt_point){
+            return new PointF(glmap_point(handle, pt_point.handle));
+        }
+        SizeF  map_size(SizeF sz_size){
+            return new SizeF(glmap_size(handle, sz_size.handle));
+        }
+        double  getWidth(){
+            return glgetWidth(handle);
+        }
+        double  getHeight(){
+            return glgetHeight(handle);
+        }
+        void  drawBezier(PointF pt_start_point,
+            PointF pt_start_ctl_point, 
+            PointF pt_end_point, 
+            PointF pt_end_ctl_point, 
+            ColorPath color,
+            int color_count, 
+            double width_pixels,
+            int smooth_level)
+        {
+            gldrawBezier(handle, pt_start_point.handle, 
+            pt_start_ctl_point.handle, 
+            pt_end_point.handle, 
+            pt_end_ctl_point.handle,
+            color.handle, 
+            color_count, 
+            width_pixels, 
+            smooth_level);
+        }
+
+        long  getGraphicsDevice(){
+            return glgetGraphicsDevice(handle);
+        }
+        void finalize(){
+            destroyCanvas(handle);
+        }   
+        import "caglgraphic.dll"{
+            long stdcall glcreateCanvas(long hwnd, double width,  double height);
+            void stdcall glCanvasResize(long hcanvas, double width,  double height);
+            bool stdcall gldrawImage(long hcanvas, long image, long dst_rect,long src_rect, double rotate, long imageMask,long rotate_point);
+            void stdcall glsetMatrix(long hcanvas, long matrix);
+            void stdcall glsave(long hcanvas);
+            void stdcall glrestore(long hcanvas);
+            bool stdcall glprepare(long hcanvas);
+            void stdcall glflush(long hcanvas);
+            void stdcall glscale(long hcanvas, double fscale);
+            void stdcall gltranslate(long hcanvas, double cx, double cy);
+            void stdcall glsetBackColor(long hcanvas, int argb);
+            int stdcall glgetBackColor(long hcanvas);
+            void stdcall glsetAntiAliasing(long hcanvas, bool bba);
+            void stdcall gldrawLine(long hcanvas, long ptstart, long ptend,int color,double width_pixels);
+            void stdcall gldot(long hcanvas,long pt_center, int color, double width_pixels);
+            void stdcall gldraw_path(long hcanvas,long path_path, long color, int color_count, double width_pixels);
+            void stdcall glpolygon(long hcanvas,long path_path, long color, int color_count, int style, double width_pixels);
+            void stdcall glcircle(long hcanvas,long pt_point, double x_radius, double y_radius, int style, long color, int color_count, double width_pixels, int smooth_level);
+            double stdcall glmap_x_coord(long hcanvas,double x_pos);
+            double stdcall glmap_y_coord(long hcanvas,double y_pos);
+            double stdcall glmap_width(long hcanvas,double w);
+            double stdcall glmap_height(long hcanvas,double h);
+            long stdcall glmap_point(long hcanvas,long pt_point);
+            long stdcall glmap_size(long hcanvas,long sz_size);
+            double stdcall glgetWidth(long hcanvas);
+            double stdcall glgetHeight(long hcanvas);
+            void stdcall gldrawBezier(long hcanvas,long pt_start_point,
+                long pt_start_ctl_point, 
+                long pt_end_point, 
+                long pt_end_ctl_point, 
+                long color,
+                int color_count, 
+                double width_pixels,
+                int smooth_level);
+
+            long stdcall glgetGraphicsDevice(long hcanvas);
+            void stdcall destroyCanvas(long hcanvas);
+        };
+    };
+
+
+    class PointF : NativeCore{
+        PointF(long h){
+            handle = h;
+        }
+        
+        PointF(double x, double y){
+            handle = pt_create(x, y);
+        }
+        
+        double x(){
+            return pt_get_x(handle);
+        }
+        
+        double y(){
+            return pt_get_y(handle);
+        }
+        
+        void offset(double x, double y){
+            pt_offset(handle, x, y);
+        }
+       
+        void offset(PointF pt){
+            pt_offset_1(handle, pt.handle);
+        }
+        
+        void set(double x, double y){
+            pt_set(handle, x, y);
+        }
+        void finalize(){
+            destroyPoint(handle);
+        }   
+        import "caglgraphic.dll"{
+            long stdcall pt_create(double x, double y);
+            double stdcall pt_get_x(long hpoint);
+            double stdcall pt_get_y(long hpoint);
+            void stdcall pt_offset(long hpoint, double x, double y);
+            void stdcall pt_offset_1(long hpoint, long pt);
+            void stdcall pt_set(long hpoint, double x, double y);
+            void stdcall destroyPoint(long hcanvas);
+        };
+    };
+    
+    
+    class SizeF : NativeCore{
+        SizeF(long h){
+            handle = h;
+        }
+        
+        SizeF(double w, double h){
+            handle = sz_create(w, h);
+        }
+        
+        double width(){
+            return sz_get_w(handle);
+        }
+        
+        double height(){
+            return sz_get_h(handle);
+        }
+        
+        void shrink(double value){
+            sz_shrink(handle, value);
+        }
+       
+        void expand(double value){
+            sz_shrink(handle, -value);
+        }
+        
+        void set(double w, double h){
+            sz_set(handle, w, h);
+        }
+        void finalize(){
+            destroySize(handle);
+        }   
+        import "caglgraphic.dll"{
+            long stdcall sz_create(double w, double h);
+            double stdcall sz_get_w(long hsize);
+            double stdcall sz_get_h(long hsize);
+            
+            void stdcall sz_shrink(long hsize, double v);
+            void stdcall sz_set(long hsize, double w, double h);
+             void stdcall destroySize(long hcanvas);
+        };
+    };
+    
+    
+    class Path : NativeCore{
+        Path(){
+            handle = path_create();
+        }
+        void addPoint(PointF pt){
+            if (pt == nilptr || pt.handle == 0){
+                throw new NullPointerException("point is null");
+            }
+            path_add(handle, pt.handle);
+        }
+        void addPoint(double x, double y){
+            path_add_1(handle, x, y);
+        }
+        void offset(double x, double y){
+            path_offset(handle, x, y);
+        }
+        void set(int id, double x, double y){
+            path_set(handle,id, x, y);
+        }
+        void insert(int id, double x, double y){
+            path_insert(handle,id, x, y);
+        }
+        int length(){
+            return path_length(handle);
+        }
+        PointF get(int id){
+            return new PointF(path_get(handle, id));
+        }
+        void remove(int id){
+            path_remove(handle, id);
+        }
+        void finalize(){
+            destroyPath(handle);
+        }   
+        import "caglgraphic.dll"{
+            long stdcall path_create();
+            void stdcall path_add(long hsize, long hpt);
+            void stdcall path_add_1(long hsize, double x, double y);
+            void stdcall path_offset(long hsize, double x, double y);
+            void stdcall path_set(long hsize,int id, double x, double y);
+            void stdcall path_insert(long hsize,int id, double x, double y);
+            int stdcall path_length(long hsize);
+            long stdcall path_get(long hsize,int id);
+            void stdcall path_remove(long hsize,int id);
+            void stdcall destroyPath(long hcanvas);
+        };
+    };
+    
+    
+     class Matrix : NativeCore{
+        Matrix(){
+            handle = matrix_create();
+        }
+        Matrix(double a, double b, double c, double d, double e, double f){
+            handle = createMatrix(a, b, c, d, e, f);
+        }
+        void sMatrix(double a, double b, double c, double d, double e, double f){
+            setMatrix(handle, a, b, c, d, e, f);
+        }
+     	void translate(double tx, double ty){
+            matrix_translate(handle, tx, ty);
+        }
+        void Rotate(double a){
+            matrix_rotate(handle, a);
+        }
+        void Scale(double sx, double sy){
+            matrix_scale(handle, sx, sy);
+        }
+        void translate3d(double tx, double ty, double tz){
+            matrix_translate3d(handle, tx, ty, tz);
+        }
+        
+        void translateRight(double tx, double ty){
+            matrix_translateRight(handle,tx, ty);
+        }
+        
+        void translateRight3d(double tx, double ty, double tz){
+            matrix_translateRight3d(handle,tx, ty, tz);
+        }
+        
+        bool isIdentity(){
+            return matrix_isIdentity(handle);
+        }
+        
+        PointF mapPoint(PointF pt){
+            return new PointF(matrix_mapPoint(handle, pt.handle));
+        }
+        
+        RectF mapRect(RectF pt){
+            return new RectF(matrix_mapRect(handle, pt.handle));
+        }
+        void finalize(){
+            destroyMatrix(handle);
+        }   
+        import "caglgraphic.dll"{
+            long stdcall matrix_create();
+            long stdcall createMatrix(double a, double b, double c, double d, double e, double f);
+            void stdcall setMatrix(long hmatrix,double a, double b, double c, double d, double e, double f);
+            void stdcall matrix_translate(long hmatrix,double tx, double ty);
+            void stdcall matrix_translate3d(long hmatrix,double tx, double ty, double tz);
+            void stdcall matrix_translateRight(long hmatrix,double tx, double ty);
+            void stdcall matrix_translateRight3d(long hmatrix,double tx, double ty, double tz);
+            bool stdcall matrix_isIdentity(long hmatrix);
+            long stdcall matrix_mapPoint(long hmatrix, long pthandle);
+            long stdcall matrix_mapRect(long hmatrix, long ptrect);
+            void stdcall matrix_rotate(long hmatrix, double angle);
+            void stdcall matrix_scale(long hmatrix, double sx, double sy);
+            void stdcall destroyMatrix(long hcanvas);
+        };
+     };
+     
+     
+     class RectF : NativeCore{
+        RectF(){
+            handle = rect_create();
+        }
+        RectF(long v){
+            handle = v;
+        }
+        RectF(double l,double t,double r,double b){
+            handle = rect_create4(l, t, r, b);
+        }
+        void set(double l,double t,double r,double b){
+            rect_set(handle, l , t, r, b);
+        }
+        
+        void shrink(double cx, double cy){
+            rect_shrink(handle, cx, cy);
+        }
+        void expand(double cx, double cy){
+            rect_shrink(handle, -cx, -cy);
+        }
+        RectF intersect(RectF rc){
+            return new RectF(rect_intersect(handle, rc.handle));
+        }
+        RectF union(RectF rc){
+            return new RectF(rect_union(handle, rc.handle));
+        }
+        bool contains(double x, double y){
+            return rect_contains(handle, x, y);
+        }
+        double x(){
+            return rect_get_x(handle);
+        }
+        double y(){
+            return rect_get_y(handle);
+        }
+        double width(){
+            return rect_get_width(handle);
+        }
+        double height(){
+            return rect_get_height(handle);
+        }
+            double left(){
+            return rect_get_left(handle);
+        }
+        double top(){
+            return rect_get_top(handle);
+        }
+        double right(){
+            return rect_get_right(handle);
+        }
+        double bottom(){
+            return rect_get_bottom(handle);
+        }
+        PointF centerPoint(){
+            return new PointF(rect_get_center(handle));
+        }
+        void finalize(){
+            destroyRect(handle);
+        }   
+        import "caglgraphic.dll"{
+            long stdcall rect_create();
+            long stdcall rect_create4(double l,double t,double r,double b);
+            void stdcall rect_set(long hrect,double l,double t,double r,double b);
+            void stdcall rect_shrink(long hrect,double cx, double cy);
+            long stdcall rect_intersect(long hrect,long rect);
+            long stdcall rect_union(long hrect,long rect);
+            bool stdcall rect_contains(long hrect,double x, double y);
+            double stdcall rect_get_x(long hrect);
+            double stdcall rect_get_y(long hrect);
+            double stdcall rect_get_width(long hrect);
+            double stdcall rect_get_height(long hrect);
+            double stdcall rect_get_left(long hrect);
+            double stdcall rect_get_top(long hrect);
+            double stdcall rect_get_right(long hrect);
+            double stdcall rect_get_bottom(long hrect);
+            long stdcall rect_get_center(long hrect);
+            void stdcall destroyRect(long hcanvas);
+        };
+     };
+     
+     
+     class Image : NativeCore{
+        Image(Bitmap bitmap){
+            if (bitmap == nilptr){
+                throw new NullPointerException("bitmap is null");
+            }
+            handle = image_create_from_bitmap(bitmap.handle);
+        }
+        
+        Image(byte[] data, int depth, int covt, int width, int height){
+            handle = image_create_from_data(data, depth, covt, width, height);
+        }
+        
+        int getWidth(){
+            return image_get_width(handle);
+        }
+        
+        int getHeight(){
+            return image_get_height(handle);
+        }
+        void finalize(){
+            destroyImage(handle);
+        } 
+        import "caglgraphic.dll"{
+            long stdcall image_create_from_bitmap(long bitmap);
+            long stdcall image_create_from_data(ObjectPtr, int depth, int covt, int width, int height);
+            int stdcall image_get_width(long himage);
+            int stdcall image_get_height(long himage);
+            void stdcall destroyImage(long hcanvas);
+        };
+     };
+     
+     
+     class Bitmap : NativeCore{
+        Bitmap(int width, int height, int color){
+            handle = bitmap_create_config(width, height, color);
+        }
+        
+        Bitmap(String file){
+            if (0 == (handle = bitmap_create_file(file))){
+                throw new Exception("can't open file:" + file);
+            }
+        }
+        Bitmap(String Text, long size, Typeface typeface,int color, int style){
+            handle = bitmap_create_text(Text, size, typeface.handle, color, style);
+            if (handle == 0){
+                throw new IllegalArgumentException("can't not create Text");
+            }
+        }
+        int getDate(byte [] data){
+            return bitmap_getdata(handle, data, data.length);
+        }
+        
+        int getColor(){
+            return image_get_color(handle);
+        }
+        void finalize(){
+            destroyBitmap(handle);
+        } 
+        import "caglgraphic.dll"{
+            long stdcall bitmap_create_config(int width, int height, int color);
+            long stdcall bitmap_create_text(String Text, long size, long typeface,int color, int style);
+            long stdcall bitmap_create_file(String file);
+            int stdcall bitmap_getdata(long handle, ObjectPtr data,long len);
+            int stdcall image_get_color(long himage);
+            void stdcall destroyBitmap(long hcanvas);
+        };
+     };
+     
+     
+     class Typeface: NativeCore{
+        Typeface(String file){
+            handle = typeface_fromfile(file);
+            if (handle == 0){
+                throw new IllegalArgumentException("加载字体文件失败:" + file);
+            }
+        }
+        Typeface(byte[] data, int len){
+            handle = typeface_fromdata(data, len);
+        }
+        int getGlyphsCount(){
+            return typeface_get_glyphs(handle);
+        }
+        int getTypefaceCount(){
+            return typeface_get_typefaces(handle);
+        }
+        String getFamilyName(){
+            return typeface_get_family(handle);
+        }
+        String getStyleNme(){
+            return typeface_get_style(handle);
+        }
+        SizeF measure(String text, int width,int height, int style){
+            return new SizeF(typeface_measure(handle, text, width, height, style));
+        }
+        void finalize(){
+            destroyTypeface(handle);
+        } 
+        import "caglgraphic.dll"{
+            long stdcall typeface_fromfile(String file);
+            long stdcall typeface_fromdata(ObjectPtr ptr, int len);
+            int stdcall typeface_get_glyphs(long htypeface);
+            int stdcall typeface_get_typefaces(long htypeface);
+            String stdcall typeface_get_family(long htypeface);
+            String stdcall typeface_get_style(long htypeface);
+            long stdcall typeface_measure(long htypeface, String text, int width,int height, int style);
+            void stdcall destroyTypeface(long hcanvas);
+        };
+     };
+     
+     
+     class ColorPath : NativeCore{
+     
+        ColorPath(){
+            handle = colorpath_create();
+        }
+        
+        void addColor(int color, double position){
+            colorpath_add(handle, color, position);
+        }
+
+
+        void set(int id, int color, double position){
+            colorpath_set(handle,id, color, position);
+        }
+        
+        
+        void insert(int id, int color, double position){
+            colorpath_insert(handle, id, color, position);
+        }
+        
+        
+        int length(){
+            return colorpath_length(handle);
+        }
+        
+        
+        int getColor(int id){
+            return colorpath_get_color(handle, id);
+        }
+        
+        double getPosition(int id){
+            return colorpath_get_position(handle, id);
+        }
+        
+        void remove(int id){
+            colorpath_remove(handle, id);
+        }
+        
+        void finalize(){
+            destroyColorPath(handle);
+        } 
+        
+        import "caglgraphic.dll"{
+            long stdcall colorpath_create();
+            void stdcall colorpath_add(long hcolor, int color, double position);
+            void stdcall colorpath_set(long hcolor,int id, int color, double position);
+            void stdcall colorpath_insert(long hcolor,int id, int color, double position);
+            int stdcall colorpath_length(long hcolor);
+            int stdcall colorpath_get_color(long hcolor,int id);
+            double stdcall colorpath_get_position(long hcolor,int id);
+            void stdcall colorpath_remove(long hcolor,int id);
+            void stdcall destroyColorPath(long hcanvas);
+        };
+    };
+    
+};
+

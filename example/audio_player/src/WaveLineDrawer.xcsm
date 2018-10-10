@@ -1,0 +1,182 @@
+
+class WaveLineDrawer : EfficDrawer{
+    Image waimg = nilptr;
+    Bitmap wabitmap = nilptr;
+    bool shocked = false;
+    static const int NUMBER_OF_LINE = 20;
+    static const double BOTTOM = 260.f;
+
+    static class EffPath{
+        Path path = new Path();
+        double line_width = 1.f;
+        bool invert = false;
+        EffPath[] subpath = nilptr;
+    };
+    
+    Vector<EffPath> wavePath = new Vector<EffPath>();
+    ColorPath []cp = new ColorPath[NUMBER_OF_LINE];
+    ColorPath []cps = new ColorPath[NUMBER_OF_LINE];
+    ColorPath []cpr = new ColorPath[NUMBER_OF_LINE];
+    ColorPath []cpb = new ColorPath[NUMBER_OF_LINE];
+    WaveLineDrawer(){
+        for (int i = 0; i < NUMBER_OF_LINE; i ++){
+            cp[i] = new ColorPath();
+            cp[i].addColor(((12 * i ) << 24 ) | 0xffffff, 1.f);
+	
+            cps[i] = new ColorPath();
+            cps[i].addColor(((8 * i ) << 24 ) | 0x0023e3, 1.f);
+
+            cpr[i] = new ColorPath();
+            cpr[i].addColor(((4 * i ) << 24 ) | 0xfd0555, 1.f);
+
+            cpb[i] = new ColorPath();
+            cpb[i].addColor(((4 * i ) << 24 ) | 0x0535ff, 1.f);
+	
+        }
+    }
+    
+    bool create(){
+        return true;
+    }
+    
+    int ms2wave(long million_second){
+        return ((44100 * 16 * 2 * million_second) / (16 * 1000));
+    }
+    
+    void drawPath(Canvas c, EffPath mainpath, EffPath p1, int i){
+        if (i > 15 && p1.line_width > 3){
+            if ((i & 1) == 1){
+                if (p1.subpath != nilptr){
+                    for (int x = 0; x < p1.subpath.length; x++)
+                        drawPath(c, mainpath, p1.subpath[x], i);
+                }
+                c.draw_path(p1.path, cps[i], 1, p1.line_width + 6);
+                c.draw_path(p1.path, cpr[i], 1, p1.line_width + 3);
+                c.draw_path(p1.path, cp[i], 1, p1.line_width - 3);
+            }else{
+                c.draw_path(p1.path, cp[i], 1, p1.line_width);
+            }
+        }else{
+            if (shocked){
+                mainpath.invert = true;
+            }
+            if (p1.subpath != nilptr){
+                    for (int x = 0; x < p1.subpath.length; x++)
+                        drawPath(c, mainpath, p1.subpath[x], i);
+            }
+            if (mainpath.invert){
+                c.draw_path(p1.path, cpb[i], 1, p1.line_width + 2);
+            }
+            
+            c.draw_path(p1.path, cp[i], 1, p1.line_width);
+        }
+    }
+    void drawWave(Canvas c){
+    
+        for (int i = 0, t = wavePath.size();i < t; i++ ){  
+            EffPath ep = wavePath.get(i);
+            drawPath(c, ep, ep, i);
+        }
+    }
+    
+    double getRandom(double maxv, double minv){
+        double r = (Math.random()  - 0.5f) * 2;
+        if (r > 0){
+            return minv + r * (maxv - minv);
+        }else{
+            return r * (maxv - minv) - minv;
+        }
+    }
+    
+    double getRandom_n(double maxv, double minv){
+
+        double r = (Math.random()  - 1.f);
+        return r * (maxv - minv) / 2 - minv;
+    }
+    
+    Path createRandomPath(PointF start,int node, double maxl, double minl){
+        Path ph = new Path();
+        ph.addPoint(start);
+        
+        for (int i =0; i < node; i ++){
+            PointF pt = new PointF(start.x() + getRandom_n(maxl , minl) , start.y() + getRandom(maxl , minl));
+            if (pt.handle == 0){
+                throw new NullPointerException("new PointF exception 1");
+            }
+            ph.addPoint(pt);
+        }
+        
+        return ph;
+    }
+    
+    void createSubNode(EffPath p, int nc,  double total, int loop){
+        p.subpath = new EffPath[nc];
+                
+        for (int i = 0; i < nc; i++){
+            int rid = Math.random() * (p.path.length() - 1);
+            
+            PointF sp = p.path.get(rid);
+            
+            p.subpath[i] = new EffPath();
+            p.subpath[i].path = createRandomPath(sp, Math.random() * 3, 30, 15);
+            p.subpath[i].line_width = total - 1 ;
+            if (nc > 4){            
+                createSubNode(p.subpath[i], nc / 2, total - 1, loop - 1);
+            }
+        }
+    }
+    void prepare(Canvas c, short [] data,  int rd, long play_start){
+        
+        long ms = _system_.currentTimeMillis() - play_start;
+        int offset = ms2wave(ms);
+        bool needShock = false;
+        if ((offset > 0) && (offset < data.length)){
+            EffPath p = new EffPath();
+            double total = 0; 
+            for (int i = 0; i < 51; i++){ 
+                if ((offset + i) > 0 && (offset + i < data.length)){
+                    double top = data[offset + i] / 32768.f * 60.f;
+                    total += Math.abs((double)data[offset + i]);
+                    p.path.addPoint(i == 0 ? 0 : (i * 10.f + 5 - Math.random() * 10.f), BOTTOM + top);
+                }else{
+                    p.path.addPoint(i == 0 ? 0 :(i * 10.f + 5 - Math.random() * 10.f), BOTTOM);
+                }
+            }
+            
+            total /= (50.f * 6554.f);
+            
+            if (total == 0.f){
+                total = 1.f;
+            }
+            
+            p.line_width = total;
+            
+            if (total > 3){
+                needShock = true;
+                for (int i =0; i < 10; i++){
+                    p.path.remove(Math.random() * (p.path.length() - 3) + 1);
+                }
+                //createSubNode(p, 5, total, 3);
+            }
+            
+            wavePath.add(p);
+            
+            if (wavePath.size() > NUMBER_OF_LINE){
+                wavePath.remove(0);
+            }
+            
+        }
+        if (shocked){
+            Matrix mx = new Matrix();
+            mx.translate(-0.007f, -0.007f);
+            c.setMatrix(mx);
+            shocked = false;
+        }else
+        if (needShock){
+            Matrix mx = new Matrix();
+            mx.translate(0.007f, 0.007f);
+            c.setMatrix(mx);
+            shocked = true;
+        }
+    }   
+};

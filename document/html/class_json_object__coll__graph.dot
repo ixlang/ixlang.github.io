@@ -1,0 +1,6 @@
+digraph "JsonObject"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{JsonObject\n||~ JsonObject()\l~ JsonObject()\l~ getInt()\l~ getDouble()\l~ getBool()\l~ getString()\l~ getName()\l~ getArray()\l~ get()\l~ isNull()\l和 14 更多...\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

@@ -1,0 +1,104 @@
+//xlang Source, Name:User.xcsm 
+//Date: Thu Oct 21:11:21 2018 
+
+class User{
+
+	User(int i,String n){
+		id = i;
+        nick = n;
+    }
+    
+	int id;
+    String nick;
+    
+    int getId(){
+		return id;
+    }
+    
+    Room room;
+    
+    //已准备好
+    bool readyToStart;
+    
+    IClient client;
+    
+    long context;
+    
+    void setContext(long c){
+		context = c;
+    }
+    
+    void ready(){
+		readyToStart = true;
+    }
+    
+    void cancel(){
+		readyToStart = false;
+    }
+    
+    bool isReady(){
+		return readyToStart;
+    }
+    Room getRoom(){
+		return room;
+	}
+    
+    void setRoom(Room r){
+		room = r;
+    }
+    
+    bool leaveRoom(){
+		if (room != nilptr){
+			return room.leave(this);
+        }
+        return false;
+    }
+    
+    bool joinGame(){
+    	if (room != nilptr){
+			return room.joinGame(this);
+        }
+        return false;
+    }
+        
+    bool leaveGame(){
+    	if (room != nilptr){
+			return room.leaveGame(this);
+        }
+        return false;
+    }
+    
+    bool setChess(RCPServer rcp ,int index){
+    	if (room != nilptr){
+			return room.setChess(rcp, this, index);
+        }
+        return false;
+    }
+    
+    bool startGame(RCPServer rcp, bool ready){
+		if (room != nilptr){
+			if (ready){
+				return room.ready(rcp, this);
+            }else{
+				return room.cancel(rcp, this);
+            }
+        }
+        return false;
+    }
+    
+    bool sendRoomMessage(RCPServer rcp , String msg){
+		if (room != nilptr){
+			room.sendRoomMessage(this, rcp, msg);
+            return true;
+        }
+        return false;
+    }
+    
+    void sendMessage(RCPServer rcp , User sender, String msg){
+		rcp.rcs.onUserMessage(context, sender.getId(),  msg);
+    }
+    
+    void onUserEnter(RCPServer rcp, int uid, String _nick){
+		rcp.rcs.onUserEnter(context, uid,  _nick);
+    }
+};

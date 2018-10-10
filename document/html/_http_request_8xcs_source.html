@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/std/HttpRequest.xcs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v6.0 beta</span>
+   </div>
+   <div id="projectbrief">项目介绍</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e3ca87bab28942003398a7ab6222efec.html">std</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">HttpRequest.xcs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_http_request_8xcs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;@Declare</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_http_request.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_http_request.html">HttpRequest</a>{</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">bool</span> <span class="keyword">get</span>(<a class="code" href="class_string.html">String</a> url, <span class="keywordtype">int</span> timeout, <span class="keywordtype">bool</span> bssh);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_http_request.html#a7ff1d0cea711d0bf7aaeb4961da95145">post</a>(<a class="code" href="class_string.html">String</a> url, <span class="keywordtype">int</span> timeout, <span class="keywordtype">bool</span> bssh);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_http_request.html#a8a1ef8a20d6a2a879bf5cda2ca291476">setProxy</a>(<a class="code" href="class_string.html">String</a> url, <span class="keywordtype">int</span> port, <span class="keywordtype">int</span> optionType, <a class="code" href="class_string.html">String</a> username, <a class="code" href="class_string.html">String</a> password);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_http_request.html#adfd7894a5264d5ad4f57a2133b45ba0a">putField</a>(<a class="code" href="class_string.html">String</a> name, <a class="code" href="class_string.html">String</a> aliasName, <a class="code" href="class_string.html">String</a> path);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_http_request.html#adfd7894a5264d5ad4f57a2133b45ba0a">putField</a>(<a class="code" href="class_string.html">String</a> name, <a class="code" href="class_string.html">String</a> aliasName, byte [] data);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_http_request.html#adfd7894a5264d5ad4f57a2133b45ba0a">putField</a>(<a class="code" href="class_string.html">String</a> name, <a class="code" href="class_string.html">String</a> txt);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_http_request.html#aeafb235faae15dba6260d95ca7c06fd6">removeField</a>(<a class="code" href="class_string.html">String</a> name);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_http_request.html#a8579b838fc78833e0b9a9096949ffd2d">setCookie</a>(<a class="code" href="class_string.html">String</a> cookie);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_http_request.html#aead0aabcf8d9c3251ad7dcd15a2b6f15">setCookieInputFile</a>(<a class="code" href="class_string.html">String</a> filepath);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_http_request.html#a46252762f4438f6c18d2d3697584d652">setCookieOutputFile</a>(<a class="code" href="class_string.html">String</a> filepath);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_http_request.html#a588de474b788e0cde0186dec6651de12">setUserAgent</a>(<a class="code" href="class_string.html">String</a> agent);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_http_request.html#aa18caaf58a4ec39132bfdc2369d91090">putHeader</a>(<a class="code" href="class_string.html">String</a> header);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_http_request.html#abe2569827026c172707e8966df4f1bb4">removeHeader</a>(<a class="code" href="class_string.html">String</a> header);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_http_request.html#ade596c9c69586d55473c033fabfd80bf">getResponseCode</a>();</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_http_request.html#aa62d7ee316aa8566e0ef1107ac0a603e">available</a>(<span class="keywordtype">bool</span> wait);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_http_request.html#ad9dc031eaf5ef4e60d5fc2ba1714b2c2">readData</a>(buye [] buffer, <span class="keywordtype">int</span> offset, <span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_http_request.html#a50910ef42a65d4c139af341f1ef2323f">reset</a>();</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;};</div>
+<div class="ttc" id="class_http_request_html_abe2569827026c172707e8966df4f1bb4"><div class="ttname"><a href="class_http_request.html#abe2569827026c172707e8966df4f1bb4">HttpRequest.removeHeader</a></div><div class="ttdeci">bool removeHeader(String header)</div><div class="ttdoc">移除http请求的header </div></div>
+<div class="ttc" id="class_http_request_html_a588de474b788e0cde0186dec6651de12"><div class="ttname"><a href="class_http_request.html#a588de474b788e0cde0186dec6651de12">HttpRequest.setUserAgent</a></div><div class="ttdeci">bool setUserAgent(String agent)</div><div class="ttdoc">设置用户的agent </div></div>
+<div class="ttc" id="class_http_request_html_ade596c9c69586d55473c033fabfd80bf"><div class="ttname"><a href="class_http_request.html#ade596c9c69586d55473c033fabfd80bf">HttpRequest.getResponseCode</a></div><div class="ttdeci">int getResponseCode()</div><div class="ttdoc">获取http请求的响应码 </div></div>
+<div class="ttc" id="class_http_request_html_a7ff1d0cea711d0bf7aaeb4961da95145"><div class="ttname"><a href="class_http_request.html#a7ff1d0cea711d0bf7aaeb4961da95145">HttpRequest.post</a></div><div class="ttdeci">bool post(String url, int timeout, bool bssh)</div><div class="ttdoc">执行post操作 </div></div>
+<div class="ttc" id="class_http_request_html_aeafb235faae15dba6260d95ca7c06fd6"><div class="ttname"><a href="class_http_request.html#aeafb235faae15dba6260d95ca7c06fd6">HttpRequest.removeField</a></div><div class="ttdeci">bool removeField(String name)</div><div class="ttdoc">删除指定的数据段 </div></div>
+<div class="ttc" id="class_http_request_html"><div class="ttname"><a href="class_http_request.html">HttpRequest</a></div><div class="ttdoc">http请求类 </div><div class="ttdef"><b>Definition:</b> <a href="_http_request_8xcs_source.html#l00006">HttpRequest.xcs:6</a></div></div>
+<div class="ttc" id="class_http_request_html_aead0aabcf8d9c3251ad7dcd15a2b6f15"><div class="ttname"><a href="class_http_request.html#aead0aabcf8d9c3251ad7dcd15a2b6f15">HttpRequest.setCookieInputFile</a></div><div class="ttdeci">bool setCookieInputFile(String filepath)</div><div class="ttdoc">设置Cookie输入文件 </div></div>
+<div class="ttc" id="class_http_request_html_a8a1ef8a20d6a2a879bf5cda2ca291476"><div class="ttname"><a href="class_http_request.html#a8a1ef8a20d6a2a879bf5cda2ca291476">HttpRequest.setProxy</a></div><div class="ttdeci">bool setProxy(String url, int port, int optionType, String username, String password)</div><div class="ttdoc">设置代理 </div></div>
+<div class="ttc" id="class_http_request_html_ad9dc031eaf5ef4e60d5fc2ba1714b2c2"><div class="ttname"><a href="class_http_request.html#ad9dc031eaf5ef4e60d5fc2ba1714b2c2">HttpRequest.readData</a></div><div class="ttdeci">long readData(buye [] buffer, int offset, int length)</div><div class="ttdoc">读取相应数据 </div></div>
+<div class="ttc" id="class_http_request_html_a46252762f4438f6c18d2d3697584d652"><div class="ttname"><a href="class_http_request.html#a46252762f4438f6c18d2d3697584d652">HttpRequest.setCookieOutputFile</a></div><div class="ttdeci">bool setCookieOutputFile(String filepath)</div><div class="ttdoc">设置Cookie输出文件 </div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="class_http_request_html_adfd7894a5264d5ad4f57a2133b45ba0a"><div class="ttname"><a href="class_http_request.html#adfd7894a5264d5ad4f57a2133b45ba0a">HttpRequest.putField</a></div><div class="ttdeci">bool putField(String name, String aliasName, String path)</div><div class="ttdoc">添加数据段 </div></div>
+<div class="ttc" id="class_http_request_html_a8579b838fc78833e0b9a9096949ffd2d"><div class="ttname"><a href="class_http_request.html#a8579b838fc78833e0b9a9096949ffd2d">HttpRequest.setCookie</a></div><div class="ttdeci">bool setCookie(String cookie)</div><div class="ttdoc">设置Cookie </div></div>
+<div class="ttc" id="class_http_request_html_aa62d7ee316aa8566e0ef1107ac0a603e"><div class="ttname"><a href="class_http_request.html#aa62d7ee316aa8566e0ef1107ac0a603e">HttpRequest.available</a></div><div class="ttdeci">long available(bool wait)</div><div class="ttdoc">检查是否有响应数据 </div></div>
+<div class="ttc" id="class_http_request_html_a50910ef42a65d4c139af341f1ef2323f"><div class="ttname"><a href="class_http_request.html#a50910ef42a65d4c139af341f1ef2323f">HttpRequest.reset</a></div><div class="ttdeci">bool reset()</div><div class="ttdoc">重置请求 </div></div>
+<div class="ttc" id="class_http_request_html_aa18caaf58a4ec39132bfdc2369d91090"><div class="ttname"><a href="class_http_request.html#aa18caaf58a4ec39132bfdc2369d91090">HttpRequest.putHeader</a></div><div class="ttdeci">bool putHeader(String header)</div><div class="ttdoc">设置http请求的header </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

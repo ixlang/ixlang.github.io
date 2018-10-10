@@ -1,0 +1,167 @@
+class Configure{
+    String name;
+    JsonObject root;
+    
+    Configure(){
+    }
+    
+    Configure(String _name, JsonObject _root){
+        name = _name;
+        root = _root;
+    }
+    void setOption(String key, String text){
+        root.remove(key);
+        root.put(key, text);
+    }
+    //----------------------------------------
+    void setLibs(String text){
+		String [] paths = text.split(';');
+        JsonArray libpath = new JsonArray();
+        for (int i = 0; i < paths.length; i++){
+			if (paths[i].length() > 0){
+				libpath.put(paths[i]);
+            }
+        }
+        root.remove("libs");
+        root.put("libs", libpath);
+
+    }
+    
+    String getLibs(){        
+        JsonArray libpath = (JsonArray)root.get("libs");
+        if (libpath == nilptr){
+			return "";
+        }
+        
+        String out = "";
+        for (int i = 0; i < libpath.length(); i++){
+			String path = libpath.getString(i);
+            if (path != nilptr && path.length() > 0){
+				if (out.length() > 0){
+					out = out + ";";
+                }
+				out = out + path;
+            }
+        }
+        
+        return out;
+    }
+    
+    //-------------------------------------------------------------------- 
+    void setLibsPath(String text){
+		String [] paths = text.split(';');
+        JsonArray libpath = new JsonArray();
+        for (int i = 0; i < paths.length; i++){
+			if (paths[i].length() > 0){
+				libpath.put(paths[i]);
+            }
+        }
+        
+        JsonObject pathObj = (JsonObject)root.get("path");
+        if (pathObj == nilptr){
+			pathObj = new JsonObject();
+            root.put("path", pathObj);
+        }
+        pathObj.remove("libpath");
+        pathObj.put("libpath", libpath);
+    }
+    
+    String getLibsPath(){
+		JsonObject pathObj = (JsonObject)root.get("path");
+        if (pathObj == nilptr){
+			return "";
+        }
+        
+        JsonArray libpath = (JsonArray)pathObj.get("libpath");
+        if (libpath == nilptr){
+			return "";
+        }
+        
+        String out = "";
+        for (int i = 0; i < libpath.length(); i++){
+			String path = libpath.getString(i);
+            if (path != nilptr && path.length() > 0){
+				if (out.length() > 0){
+					out = out + ";";
+                }
+				out = out + path;
+            }
+        }
+        
+        return out;
+    }
+    
+    String getIncsPath(){
+		JsonObject pathObj = (JsonObject)root.get("path");
+        if (pathObj == nilptr){
+			return "";
+        }
+        
+        JsonArray libpath = (JsonArray)pathObj.get("incpath");
+        if (libpath == nilptr){
+			return "";
+        }
+        
+        String out = "";
+        for (int i = 0; i < libpath.length(); i++){
+			String path = libpath.getString(i);
+            if (path != nilptr && path.length() > 0){
+				if (out.length() > 0){
+					out = out + ";";
+                }
+				out = out + path;
+            }
+        }
+        
+        return out;
+    }
+        
+    void setIncsPath(String text){
+		String [] paths = text.split(';');
+        JsonArray incpath = new JsonArray();
+        for (int i = 0; i < paths.length; i++){
+			if (paths[i].length() > 0){
+				incpath.put(paths[i]);
+			}
+        }
+        
+        JsonObject pathObj = (JsonObject)root.get("path");
+        if (pathObj == nilptr){
+			pathObj = new JsonObject();
+            root.put("path", pathObj);
+        }
+        pathObj.remove("incpath");
+        pathObj.put("incpath", incpath);
+    }
+    String getOption(String key){
+		String value = root.getString(key);
+        if (value == nilptr){
+			return "";
+        }
+        return value;
+    }
+    String getName(){
+        return name;
+    }
+    bool createConfigure(String projName,JsonObject project, String configName){
+        root = new JsonObject();
+    
+        name = configName;
+        JsonObject paths = new JsonObject();
+        paths.put("incpath", new JsonArray());
+        paths.put("libpath", new JsonArray());
+        root.put("paths", paths);
+        
+        //root.put("source", new JsonArray());
+        root.put("libs", new JsonArray());
+        root.put("options", "");
+        root.put("command", "-cr");
+        root.put("outpath", "/out");
+        root.put("outname", projName + ".exe");
+        
+        project.put(name, root);
+        
+        return true;
+    }
+    
+};

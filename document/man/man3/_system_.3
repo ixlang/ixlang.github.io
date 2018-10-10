@@ -1,0 +1,305 @@
+.TH "_system_" 3 "2018年 六月 29日 星期五" "Version 3.0" "xlang" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+_system_ \- 系统和IO相关  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "静态包函数"
+.SH "详细描述"
+.PP 
+系统和IO相关 
+.PP
+在文件 System\&.xcs 第 6 行定义\&.
+.SH "成员函数说明"
+.PP 
+.SS "static void arrayCopy (Object  [] src, long srcpos, Object  [] dst, long dstpos, long length)\fC [static]\fP, \fC [package]\fP"
+
+.PP
+复制数组对象内容,要求类型匹配 
+.PP
+\fB参数:\fP
+.RS 4
+\fIsrc\fP 源对象 
+.br
+\fIsrcpos\fP 源对象起始位置 
+.br
+\fIdst\fP 目标对象 
+.br
+\fIsrcpos\fP 目标对象起始位置 
+.br
+\fIlength\fP 复制长度 
+.RE
+.PP
+\fB异常:\fP
+.RS 4
+\fIIndexOutOfBoundsException\fP 数组下标越界 
+.br
+\fIArrayStoreException:类型不匹配\fP 
+.RE
+.PP
+
+.SS "static bool closeFile (long handle)\fC [static]\fP, \fC [package]\fP"
+
+.PP
+关闭一个已打开的文件 
+.PP
+\fB参数:\fP
+.RS 4
+\fIhandle\fP 一个由openFile打开的文件句柄对象 
+.RE
+.PP
+\fB参见:\fP
+.RS 4
+\fBopenFile\fP
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+成功或者失败 
+.RE
+.PP
+
+.SS "static long consoleRead (byte  [] buffer, long offset, long length)\fC [static]\fP, \fC [package]\fP"
+
+.PP
+从控制台环境中读取数据 
+.PP
+\fB参数:\fP
+.RS 4
+\fIbuffer\fP 数据缓冲区 
+.br
+\fIoffset\fP 指针在数据缓冲区中的位置 
+.br
+\fIlength\fP 待读取的长度 
+.RE
+.PP
+\fB异常:\fP
+.RS 4
+\fIIndexOutOfBoundsException\fP 数组下标越界 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+成功读取的长度 
+.RE
+.PP
+
+.SS "static long consoleWrite (\fBString\fP text)\fC [static]\fP, \fC [package]\fP"
+
+.PP
+向控制台环境中写入文本 
+.PP
+\fB参数:\fP
+.RS 4
+\fItext\fP 要写入的字符串
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+成功写入的长度 
+.RE
+.PP
+
+.SS "static void createConsole ()\fC [static]\fP, \fC [package]\fP"
+
+.PP
+创建控制台环境 
+.SS "static long currentTimeMillis ()\fC [static]\fP, \fC [package]\fP"
+
+.PP
+获取当前毫秒数 
+.SS "static bool deleteFile (\fBString\fP filepath)\fC [static]\fP, \fC [package]\fP"
+
+.PP
+删除一个本地文件 
+.PP
+\fB参数:\fP
+.RS 4
+\fIfilepath\fP (本地)文件路径
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+成功或者失败 
+.RE
+.PP
+
+.SS "static void exit ()\fC [static]\fP, \fC [package]\fP"
+
+.PP
+程序退出 
+.SS "static bool fileExists (\fBString\fP filepath)\fC [static]\fP, \fC [package]\fP"
+
+.PP
+测试一个本地文件是否存在 
+.PP
+\fB参数:\fP
+.RS 4
+\fIfilepath\fP (本地)文件路径
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+存在或者不存在 
+.RE
+.PP
+
+.SS "static long fileLength (long handle)\fC [static]\fP, \fC [package]\fP"
+
+.PP
+获取一个已打开的文件的长度 
+.PP
+\fB参数:\fP
+.RS 4
+\fIhandle\fP 一个由openFile打开的文件句柄对象 
+.RE
+.PP
+\fB参见:\fP
+.RS 4
+\fBopenFile\fP
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+文件长度 
+.RE
+.PP
+
+.SS "static void gc ()\fC [static]\fP, \fC [package]\fP"
+
+.PP
+手动垃圾回收,一般不建议使用 
+.SS "static \fBString\fP getAppDirector ()\fC [static]\fP, \fC [package]\fP"
+
+.PP
+获取程序所在文件夹 
+.SS "static \fBString\fP getAppPath ()\fC [static]\fP, \fC [package]\fP"
+
+.PP
+获取程序的路径 
+.SS "static long getFileSize (\fBString\fP filepath)\fC [static]\fP, \fC [package]\fP"
+
+.PP
+获取一个文件的长度 
+.PP
+\fB参数:\fP
+.RS 4
+\fIfilepath\fP (本地)文件路径
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+文件长度 
+.RE
+.PP
+
+.SS "static \fBString\fP getWorkDirector ()\fC [static]\fP, \fC [package]\fP"
+
+.PP
+获取程序当前工作目录 
+.SS "static long openFile (\fBString\fP filepath, \fBString\fP mode)\fC [static]\fP, \fC [package]\fP"
+
+.PP
+打开文件 
+.PP
+\fB参数:\fP
+.RS 4
+\fIfilepath\fP (本地)文件路径 
+.br
+\fImode\fP 打开模式字串 r 读 w写 a追加 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+返回文件句柄对象 
+.RE
+.PP
+
+.SS "static long readFile (long handle, byte  [] buffer, long offset, long length)\fC [static]\fP, \fC [package]\fP"
+
+.PP
+读取文件数据 
+.PP
+\fB参数:\fP
+.RS 4
+\fIhandle\fP 一个由openFile打开的文件句柄对象 
+.RE
+.PP
+\fB参见:\fP
+.RS 4
+\fBopenFile\fP 
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIbuffer\fP 数据缓冲区 
+.br
+\fIoffset\fP 指针在数据缓冲区中的位置 
+.br
+\fIlength\fP 待读取的长度 
+.RE
+.PP
+\fB异常:\fP
+.RS 4
+\fIIndexOutOfBoundsException\fP 数组下标越界 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+成功读取的长度 
+.RE
+.PP
+
+.SS "static void sleep (long milliSecond)\fC [static]\fP, \fC [package]\fP"
+
+.PP
+使线程进入休眠 
+.PP
+\fB参数:\fP
+.RS 4
+\fImilliSecond\fP 毫秒数 
+.RE
+.PP
+
+.SS "static long writeFile (long handle, byte  [] buffer, long offset, long length)\fC [static]\fP, \fC [package]\fP"
+
+.PP
+向文件中写入数据 
+.PP
+\fB参数:\fP
+.RS 4
+\fIhandle\fP 一个由openFile打开的文件句柄对象 
+.RE
+.PP
+\fB参见:\fP
+.RS 4
+\fBopenFile\fP 
+.RE
+.PP
+\fB参数:\fP
+.RS 4
+\fIbuffer\fP 数据缓冲区 
+.br
+\fIoffset\fP 指针在数据缓冲区中的位置 
+.br
+\fIlength\fP 待写入的长度 
+.RE
+.PP
+\fB异常:\fP
+.RS 4
+\fIIndexOutOfBoundsException\fP 数组下标越界 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+成功写入的长度 
+.RE
+.PP
+
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 xlang 的 源代码自动生成\&.

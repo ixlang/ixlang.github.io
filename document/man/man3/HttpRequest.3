@@ -1,0 +1,313 @@
+.TH "HttpRequest" 3 "2018年 六月 29日 星期五" "Version 3.0" "xlang" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+HttpRequest \- http请求类  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "包函数"
+.SH "详细描述"
+.PP 
+http请求类 
+.PP
+在文件 HttpRequest\&.xcs 第 6 行定义\&.
+.SH "成员函数说明"
+.PP 
+.SS "long available (bool wait)\fC [package]\fP"
+
+.PP
+检查是否有响应数据 
+.PP
+\fB参数:\fP
+.RS 4
+\fIwait是否阻塞等待\fP 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+数据长度 
+.RE
+.PP
+
+.SS "bool get (\fBString\fP url, int timeout, bool bssh)\fC [package]\fP"
+
+.PP
+执行get操作 
+.PP
+\fB参数:\fP
+.RS 4
+\fIurl\fP 地址 
+.br
+\fItimeout\fP 超时限定 
+.br
+\fIbssh\fP 安全连接 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+执行结果 
+.RE
+.PP
+
+.SS "int getResponseCode ()\fC [package]\fP"
+
+.PP
+获取http请求的响应码 
+.PP
+\fB返回:\fP
+.RS 4
+执行结果 
+.RE
+.PP
+
+.SS "bool post (\fBString\fP url, int timeout, bool bssh)\fC [package]\fP"
+
+.PP
+执行post操作 
+.PP
+\fB参数:\fP
+.RS 4
+\fIurl\fP 地址 
+.br
+\fItimeout\fP 超时限定 
+.br
+\fIbssh\fP 安全连接 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+执行结果 
+.RE
+.PP
+
+.SS "bool putField (\fBString\fP name, \fBString\fP aliasName, \fBString\fP path)\fC [package]\fP"
+
+.PP
+添加数据段 
+.PP
+\fB参数:\fP
+.RS 4
+\fIname\fP 字段名 
+.br
+\fIaliasName\fP 别名 
+.br
+\fIpath\fP 文件路径 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+执行结果 
+.RE
+.PP
+
+.SS "bool putField (\fBString\fP name, \fBString\fP aliasName, byte   [] data)\fC [package]\fP"
+
+.PP
+添加数据段 
+.PP
+\fB参数:\fP
+.RS 4
+\fIname\fP 字段名 
+.br
+\fIaliasName\fP 别名 
+.br
+\fIdata\fP 数据 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+执行结果 
+.RE
+.PP
+
+.SS "bool putField (\fBString\fP name, \fBString\fP txt)\fC [package]\fP"
+
+.PP
+添加数据段 
+.PP
+\fB参数:\fP
+.RS 4
+\fIname\fP 字段名 
+.br
+\fItxt\fP 数据 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+执行结果 
+.RE
+.PP
+
+.SS "bool putHeader (\fBString\fP header)\fC [package]\fP"
+
+.PP
+设置http请求的header 
+.PP
+\fB参数:\fP
+.RS 4
+\fIheader内容\fP 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+执行结果 
+.RE
+.PP
+
+.SS "long readData (buye   [] buffer, int offset, int length)\fC [package]\fP"
+
+.PP
+读取相应数据 
+.PP
+\fB参数:\fP
+.RS 4
+\fIbuffer\fP 缓冲区 
+.br
+\fIoffset\fP 缓冲区的偏移量 
+.br
+\fIlength\fP 待读取长度 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+成功读取的长度 
+.RE
+.PP
+
+.SS "bool removeField (\fBString\fP name)\fC [package]\fP"
+
+.PP
+删除指定的数据段 
+.PP
+\fB参数:\fP
+.RS 4
+\fIname\fP 字段名 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+执行结果 
+.RE
+.PP
+
+.SS "bool removeHeader (\fBString\fP header)\fC [package]\fP"
+
+.PP
+移除http请求的header 
+.PP
+\fB参数:\fP
+.RS 4
+\fIheader内容\fP 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+执行结果 
+.RE
+.PP
+
+.SS "bool reset ()\fC [package]\fP"
+
+.PP
+重置请求 
+.PP
+\fB返回:\fP
+.RS 4
+
+.RE
+.PP
+
+.SS "bool setCookie (\fBString\fP cookie)\fC [package]\fP"
+
+.PP
+设置Cookie 
+.PP
+\fB参数:\fP
+.RS 4
+\fIcookie\fP cookie 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+执行结果 
+.RE
+.PP
+
+.SS "bool setCookieInputFile (\fBString\fP filepath)\fC [package]\fP"
+
+.PP
+设置Cookie输入文件 
+.PP
+\fB参数:\fP
+.RS 4
+\fIfilepath\fP 本地磁盘上的文件路径 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+执行结果 
+.RE
+.PP
+
+.SS "bool setCookieOutputFile (\fBString\fP filepath)\fC [package]\fP"
+
+.PP
+设置Cookie输出文件 
+.PP
+\fB参数:\fP
+.RS 4
+\fIfilepath\fP 本地磁盘上的文件路径 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+执行结果 
+.RE
+.PP
+
+.SS "bool setProxy (\fBString\fP url, int port, int optionType, \fBString\fP username, \fBString\fP password)\fC [package]\fP"
+
+.PP
+设置代理 
+.PP
+\fB参数:\fP
+.RS 4
+\fIurl\fP 代理服务器地址 
+.br
+\fIport\fP 代理服务器端口 
+.br
+\fIoptionType\fP 代理类型 PT_HTTP = 0, PT_HTTP_10 = 1, PT_SOCKS4 = 4, PT_SOCKS5 = 5, PT_SOCKS4A = 6, PT_SOCKS5_HOSTNAME = 7, 
+.br
+\fIusername\fP 用户名 
+.br
+\fIpassword\fP 密码 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+执行结果 
+.RE
+.PP
+
+.SS "bool setUserAgent (\fBString\fP agent)\fC [package]\fP"
+
+.PP
+设置用户的agent 
+.PP
+\fB参数:\fP
+.RS 4
+\fIagent名称\fP 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+执行结果 
+.RE
+.PP
+
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 xlang 的 源代码自动生成\&.

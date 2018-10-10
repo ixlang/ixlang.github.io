@@ -1,0 +1,84 @@
+//xlang Source, Name:RCPClient.xcsm 
+//Date: Thu Oct 22:20:07 2018 
+
+require(
+	"../SimpleGameServer/IClient.xcsm", 
+	"../SimpleGameServer/IServer.xcsm"
+)
+
+class RCPClient{
+
+	RemoteCallPipe<IClient, IServer> rcs = new RemoteCallPipe<IClient, IServer>();	
+    
+    class XAsyncOutput : AsyncOutput{
+		StreamSocket _socket = new StreamSocket();
+        
+		bool create(){
+			return _socket.connect("127.0.0.1", 13567);
+        }
+        
+        bool dataDeparture(AsyncInput input, long context, long bind, byte [] buffer ,int offset, int length){
+			return (length == _socket.write(buffer, offset, length));
+        }
+        
+        void deleteInstance(AsyncInput input, long context){}
+        
+        long newInstance(AsyncInput input, String ip, int port, long bind){return 0;}
+        
+        long getInstanceId(long context){return 0;}
+        
+        long cloneContext(long context){return 0;}
+        
+        void releaseContext(long context){}
+    };
+    
+    XAsyncOutput ao = new XAsyncOutput();
+    
+    IRCPEventHandler rcph = new IRCPEventHandler(){
+    
+		bool onNewInstance(long context, int type)override{
+			return true;
+        }
+		bool onDeleteInstance(long context)override{
+			return true;
+        }
+        void onAccessFailed(long context)override{
+        
+        }
+        bool onTimeout(long context)override{
+			return true;
+        }
+    };
+    
+    bool create(IClient client){
+		//异步输出接口
+		if (ao.create()){
+			
+			//执行socket循环
+			loop();
+			
+			//创建远程调用通道
+			if (rcs.create(ao, rcph, client, false)){
+			
+				//开启远程调用通道, 超时5000毫秒
+				if(0 == rcs.startForClient(0, 5000)){
+					return true;
+				}
+			}
+        }
+        return false;
+    }
+    
+
+    void loop(){
+		new Thread(){
+			void run()override{
+				byte [] buffer = new byte[1024];
+                int rd = 0;
+                while ((rd = ao._socket.read(buffer, 0, 1024)) > 0){
+					rcs.getAsyncDirectInput().dataArrives(ao, 0, buffer, 0, rd);
+                }
+            }
+        }.start();
+    }
+};
