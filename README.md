@@ -7,3 +7,5 @@ xlang 一门新语言, 闲暇之余开发, 支持多线程, 支持跨平台, 可
 ide的底层使用QT,代码在example/ide下 
 
 语法接近java 和 c++
+
+<a href = "https://ixlang.github.io/"> come on baby!</a>
