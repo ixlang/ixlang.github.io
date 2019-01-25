@@ -1,9 +1,21 @@
 var searchData=
 [
-  ['waitfor',['waitFor',['../class_process.html#a67d54ad8b312a2f4f93f4c7b98679613',1,'Process']]],
-  ['win32_5ffind_5fdata',['WIN32_FIND_DATA',['../class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html',1,'FileSystem::Operator']]],
-  ['window',['Window',['../class_window.html',1,'Window'],['../class_window.html#a004cf7aac21e18b5b5675f1b635c3734',1,'Window.Window()']]],
-  ['window_2excs',['window.xcs',['../window_8xcs.html',1,'']]],
-  ['write',['write',['../class_dgram_socket.html#a7bc3c3e59293fb955b1add3921b44d38',1,'DgramSocket.write()'],['../class_process.html#a7bc3c3e59293fb955b1add3921b44d38',1,'Process.write()'],['../interface_stream.html#a7bc3c3e59293fb955b1add3921b44d38',1,'Stream.write()'],['../class_stream_socket.html#a7bc3c3e59293fb955b1add3921b44d38',1,'StreamSocket.write()']]],
-  ['writefile',['writeFile',['../class__system__.html#a67d70a7686eb74110c83fee117397322',1,'_system_']]]
+  ['uint',['UInt',['../class_q_x_variant.html#a577afba3e3c4fe10ac5bea73d00d46cb',1,'QXVariant']]],
+  ['ulonglong',['ULongLong',['../class_q_x_variant.html#a64f27588b18c94d5717621c54e43ac94',1,'QXVariant']]],
+  ['unbuffered',['Unbuffered',['../class_q_x_buffer.html#a55454cd4651c3b8b0137af75f92169f3',1,'QXBuffer']]],
+  ['undo',['Undo',['../class_q_x_sci.html#a251dc16f349ac47b155a41f09fe28735',1,'QXSci']]],
+  ['undo_5fmay_5fcoalesce',['UNDO_MAY_COALESCE',['../class_q_x_sci.html#ad8d6c0c079314f374e2a50bf41fcd900',1,'QXSci']]],
+  ['ungrabkeyboard',['UngrabKeyboard',['../class_q_x_event.html#a90560c828bb3970cca993357482637ce',1,'QXEvent']]],
+  ['ungrabmouse',['UngrabMouse',['../class_q_x_event.html#a7a1ada1ac44db803280cc09456b99dab',1,'QXEvent']]],
+  ['unsi',['Unsi',['../class_unsi.html',1,'Unsi'],['../class_unsi.html#a25d971356d5ad43071f3435f358dcf53',1,'Unsi.Unsi()']]],
+  ['unsi_2excs',['Unsi.xcs',['../_unsi_8xcs.html',1,'']]],
+  ['uparrowcursor',['UpArrowCursor',['../class_q_x_object.html#a279542774fe9744cee7d7e91dd9b0653',1,'QXObject']]],
+  ['update',['UPDATE',['../class_q_x_core.html#ab4ea9483362f8e7d95fe2166bacc4f9f',1,'QXCore.UPDATE()'],['../class_q_x_widget.html#ac5c54df7ed3b930268c8d7752c101725',1,'QXWidget.update()']]],
+  ['updatelater',['UpdateLater',['../class_q_x_event.html#a94755638e526b33400c1acacfc075e66',1,'QXEvent']]],
+  ['updaterequest',['UpdateRequest',['../class_q_x_event.html#a0bcc5f800e73b065b227b988e7c17a11',1,'QXEvent']]],
+  ['upper',['upper',['../class_string.html#a8d2ff59fc6acb92a53e77945e8626260',1,'String']]],
+  ['url',['Url',['../class_q_x_variant.html#a2dbdb3932e27305a32f100b0313c2356',1,'QXVariant']]],
+  ['user',['User',['../class_q_x_event.html#a7c652ee43700e88625f66af0f1e588c0',1,'QXEvent']]],
+  ['usertype',['UserType',['../class_q_x_variant.html#a3ff84d2c6adeaf688b941e06654f91f7',1,'QXVariant']]],
+  ['uuid',['Uuid',['../class_q_x_variant.html#ad86a80211b68bbf5203653573ec9fd1b',1,'QXVariant']]]
 ];

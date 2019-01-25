@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v6.0 beta</span>
+   &#160;<span id="projectnumber">v1.1 Release</span>
    </div>
    <div id="projectbrief">项目介绍</div>
   </td>
@@ -86,7 +86,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">结构体</a> &#124;
 <a href="#pac-methods">包函数</a>  </div>
   <div class="headertitle">
 <div class="title">Unsi类 参考</div>  </div>
@@ -96,12 +95,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <p>unsi 通用网络服务器接口类  
  <a href="class_unsi.html#details">更多...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-结构体</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unsi_1_1_instance.html">Instance</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">UNSI实例类  <a href="class_unsi_1_1_instance.html#details">更多...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
 包函数</h2></td></tr>
 </table>
@@ -143,6 +136,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div>
 </div>
 <h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a6ca5700b140000252909fd78da6b2341"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">long clone </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>克隆实例句柄 </p>
+<dl class="section return"><dt>返回</dt><dd>句柄 </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="afb7c18af3c116fc1b43cc3c7d6f0af42"></a>
 <div class="memitem">
 <div class="memproto">
@@ -194,7 +214,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 </div>
 </div>
-<a class="anchor" id="a466265d7cdb94b39f9f34b990ff547e4"></a>
+<a class="anchor" id="ac7fb5c93a921e7970d3aaff545c93553"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -204,6 +224,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
         <tr>
           <td class="memname">bool create </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_async_input.html">AsyncInput</a>&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>mode</em>, </td>
         </tr>
@@ -235,6 +261,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <p>创建服务器服务器参数 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
+    <tr><td class="paramname">input异步输入</td><td></td></tr>
     <tr><td class="paramname">mode</td><td>模式 TCP|UDP CAUNSI_TCP 1 CAUNSI_UDP 2 </td></tr>
     <tr><td class="paramname">port</td><td>服务端口 &lt; 65535 </td></tr>
     <tr><td class="paramname">timeout</td><td>超时限定 时间内没有数据交互的链接将被强行关闭 </td></tr>
@@ -242,6 +269,215 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   </dd>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>成功/失败 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a49f9c842922bf59fc35c8866d8a7482e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool disconnect </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>断开连接 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>连接句柄 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="adce4ec03200d87479928a7a7b37a5c1c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool equalsHandle </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>比较实例句柄是否指向同一个链接 </p>
+<dl class="section return"><dt>返回</dt><dd>true, false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aecc07e4c2003ab1c1f584ae968929209"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_async_output.html">AsyncOutput</a> getAsyncDirectOutput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取异步输出接口 </p>
+<dl class="section return"><dt>返回</dt><dd>异步输出接口 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a50bf6d93214b9871dcafde45d31b44d7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">long getId </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取实例ID </p>
+<dl class="section return"><dt>返回</dt><dd>ID </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a09a625a44c067108a749c1b2323841dc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_inet_address.html">InetAddress</a> getRemoteInetAddress </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取远程地址信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>连接句柄 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a952e28f99be24de1afb59da6451b262b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool send </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte  []&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>发送数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>链接句柄 </td></tr>
+    <tr><td class="paramname">id</td><td>保留 , 应为0 </td></tr>
+    <tr><td class="paramname">buffer</td><td>数据缓冲区 </td></tr>
+    <tr><td class="paramname">offset</td><td>缓冲区偏移 </td></tr>
+    <tr><td class="paramname">length</td><td>长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>提交结果 </dd></dl>
 
 </div>
 </div>

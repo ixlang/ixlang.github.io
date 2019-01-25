@@ -1,0 +1,283 @@
+
+class XWndOutput: QXDockWidget{
+    QXSci _sci;
+    static const long APPENTEVENTID = 1;
+    Vector<String> outputList = new Vector<String>();
+    static XWndOutput outputWnd;
+    Timer urlmon = new Timer();
+    bool sciisHand = false;
+    
+	Pattern url_match = new Pattern("((http[s]{0,1}|ftp)://[a-zA-Z0-9\\.\\-]" + 
+		"+\\.([a-zA-Z]{2,4})(:\\d+)?(/[a-zA-Z0-9\\.\\-~!@#$%^&*+?:_/=<>]*)?)|" + 
+		"(www.[a-zA-Z0-9\\.\\-]+\\.([a-zA-Z]{2,4})(:\\d+)?(/[a-zA-Z0-9\\.\\-~!@#$%^&*+?:_/=<>]*)?)");
+    
+    static void Output(String text){
+        outputWnd.output(text);
+    }
+    void output(String text){
+        synchronized(outputList){
+            outputList.add(text);
+        }
+        this.Notify(APPENTEVENTID);
+    }
+    
+    void clear(bool focus){
+        _sci.clear();
+        raise();
+    }
+    
+    void appendText(String info){
+        _sci.appendText(info);
+    }
+    
+    void onNotification(long eventid){        
+        synchronized(outputList){
+            for (int i =0; i < outputList.size(); i++){
+                String info = outputList.get(i);
+                _sci.appendText(info);
+            }
+            outputList.clear();
+        }
+        
+        _sci.gotoPos(_sci.getLength());
+    }
+    
+    
+    void syntaxForOutput(){
+		if (Setting.isDarkStyle()){
+			syntaxForOutputDark();
+            return ;
+		}
+        _sci.sendEditor(QXSci.SCI_SETCODEPAGE, QXSci.SC_CP_UTF8);
+        _sci.setWrap(true);
+        _sci.sendEditor(QXSci.SCI_STYLESETBACK, QXSci.STYLE_DEFAULT, 0xffffffff);
+        _sci.sendEditor(QXSci.SCI_STYLESETFORE, QXSci.STYLE_DEFAULT, 0xff222827);
+        _sci.sendEditor(QXSci.SCI_STYLESETFORE, 75, 0xff222827);
+        _sci.sendEditor(QXSci.SCI_STYLECLEARALL, 0, 0);
+        //_sci.sendEditor(QXSci.STYLE_LINENUMBER, 1, 0);
+        bool bmac = (_system_.getPlatformId() == 2);
+        if (bmac == false){
+			_sci.sendEditor(QXSci.SCI_STYLESETFONT, QXSci.STYLE_DEFAULT,"Consolas"); 
+            _sci.sendEditor(QXSci.SCI_STYLESETSIZE, QXSci.STYLE_DEFAULT,9); 
+        }else{
+			_sci.sendEditor(QXSci.SCI_STYLESETFONT, QXSci.STYLE_DEFAULT,"Monaco"); 
+            _sci.sendEditor(QXSci.SCI_STYLESETSIZE, QXSci.STYLE_DEFAULT,11); 
+        }
+        
+        _sci.sendEditor(QXSci.SCI_STYLECLEARALL, 0, 0); 
+        _sci.sendEditor(QXSci.SCI_SETEOLMODE, 1, 0); 
+        
+        _sci.sendEditor(QXSci.SCI_SETMARGINTYPEN, 0, QXSci.SC_MARGIN_NUMBER); 
+        _sci.sendEditor(QXSci.SCI_SETMARGINWIDTHN, 0, 40); 
+        _sci.sendEditor(QXSci.SCI_SETMARGINWIDTHN, 1, 10); 
+        _sci.sendEditor(QXSci.SCI_SETMARGINWIDTHN, 2, 0); 
+        _sci.sendEditor(QXSci.SCI_SETMARGINWIDTHN, 3, 0); 
+        _sci.sendEditor(QXSci.SCI_SETMARGINWIDTHN, 4, 0); 
+
+        _sci.sendEditor(QXSci.SCI_STYLESETBACK, QXSci.STYLE_LINENUMBER, 0xffefefef);
+        _sci.sendEditor(QXSci.SCI_STYLESETFORE, QXSci.STYLE_LINENUMBER, 0xffaf912b);
+        _sci.sendEditor(QXSci.SCI_SETMARGINLEFT, 0, 0);
+        
+        _sci.sendEditor(QXSci.SCI_SETCARETFORE,0xff000000,0);
+        
+        _sci.sendEditor(QXSci.SCI_SETCARETLINEVISIBLE, 1); 
+        _sci.sendEditor(QXSci.SCI_SETCARETLINEBACK, 0xffefefef); 
+
+        _sci.sendEditor(QXSci.SCI_SETTABWIDTH, 4); 
+    }
+    
+    void syntaxForOutputDark(){
+        _sci.sendEditor(QXSci.SCI_SETCODEPAGE, QXSci.SC_CP_UTF8);
+        _sci.setWrap(true);
+        _sci.sendEditor(QXSci.SCI_STYLESETBACK, QXSci.STYLE_DEFAULT, 0xff262525);
+        _sci.sendEditor(QXSci.SCI_STYLESETFORE, QXSci.STYLE_DEFAULT, 0xffefefef);
+        _sci.sendEditor(QXSci.SCI_STYLESETFORE, 75, 0xffefefef);
+        _sci.sendEditor(QXSci.SCI_STYLECLEARALL, 0, 0);
+        //_sci.sendEditor(QXSci.STYLE_LINENUMBER, 1, 0);
+        bool bmac = (_system_.getPlatformId() == 2);
+        if (bmac == false){
+			_sci.sendEditor(QXSci.SCI_STYLESETFONT, QXSci.STYLE_DEFAULT,"Consolas"); 
+            _sci.sendEditor(QXSci.SCI_STYLESETSIZE, QXSci.STYLE_DEFAULT,9); 
+        }else{
+			_sci.sendEditor(QXSci.SCI_STYLESETFONT, QXSci.STYLE_DEFAULT,"Monaco"); 
+            _sci.sendEditor(QXSci.SCI_STYLESETSIZE, QXSci.STYLE_DEFAULT,11); 
+        }
+        _sci.sendEditor(QXSci.SCI_STYLECLEARALL, 0, 0); 
+        _sci.sendEditor(QXSci.SCI_SETEOLMODE, 1, 0); 
+
+        _sci.sendEditor(QXSci.SCI_SETMARGINTYPEN, 0, QXSci.SC_MARGIN_NUMBER); 
+        _sci.sendEditor(QXSci.SCI_SETMARGINWIDTHN, 0, 40); 
+        _sci.sendEditor(QXSci.SCI_SETMARGINWIDTHN, 1, 10); 
+        _sci.sendEditor(QXSci.SCI_SETMARGINWIDTHN, 2, 0); 
+        _sci.sendEditor(QXSci.SCI_SETMARGINWIDTHN, 3, 0); 
+        _sci.sendEditor(QXSci.SCI_SETMARGINWIDTHN, 4, 0); 
+        
+        _sci.sendEditor(QXSci.SCI_STYLESETBACK, QXSci.STYLE_LINENUMBER, 0xff262525);
+        _sci.sendEditor(QXSci.SCI_STYLESETFORE, QXSci.STYLE_LINENUMBER, 0xff666666);
+        _sci.sendEditor(QXSci.SCI_SETMARGINLEFT, 0, 0);
+        
+        _sci.sendEditor(QXSci.SCI_SETCARETFORE,0xffffffff,0);
+        
+        _sci.sendEditor(QXSci.SCI_SETCARETLINEVISIBLE, 1); 
+        _sci.sendEditor(QXSci.SCI_SETCARETLINEBACK, 0xff202020); 
+        
+        
+    }
+    
+    bool onClose()override{
+		if (urlmon != nilptr){
+			urlmon.cancel();
+            urlmon = nilptr;
+		}
+        return true;
+    }
+    void onAttach(){
+        _sci = new QXSci();
+        
+        if (_sci.create()){
+            syntaxForOutput();
+            setWidget(_sci);
+            setOnLayoutEventListener(new onLayoutEventListener(){
+                    void onResize(QXObject obj, int w, int h, int oldw, int oldh)override {
+                        if (_sci != nilptr){
+                            _sci.resize(w, h );
+                        }
+                    }
+            });
+            
+            _sci.setOnSciEventListener(new SciEventListener(){
+			void ON_DOUBLECLICK(QXSci sci,int position, int line, int modifiers){	
+ 
+				String lineText = sci.getText(line);
+				if (lineText != nilptr && lineText.length() > 0){
+					int pos = lineText.lastIndexOf('(');
+                    if (pos != -1){
+						int lp = lineText.indexOf(':', pos);
+                        if (lp != -1){
+							int le = lineText.indexOf(',', lp);
+							int rp = lineText.indexOf(':', lp + 1);
+                            if (rp != -1){
+								int re = lineText.indexOf(')', lp);
+								String file = lineText.substring(0, pos).trim(true);
+                                int tl = lineText.substring(lp + 1, le).parseInt();
+                                int tr = lineText.substring(rp + 1, re).parseInt();
+                                
+                                
+                                int i = line + 1;
+                                String infos = lineText;
+                                
+                                for (int c = sci.countOfLine(); i < c; i++){
+									String linestr = sci.getText(i);
+                     
+                                    if (linestr.startWith(" ") == false){
+										break;
+                                    }else{
+										infos = infos + "\n" + linestr ;
+                                    }
+                                }
+                                /*if (infos.length() < 5){
+									infos = nilptr;
+                                }*/
+                                XSourceEditor.openForFileInfo(XWorkspace.workspace, file, tl, tr, infos);
+                            }
+                        }
+                    }
+                }
+            }
+        });
+        }
+        
+        
+        outputWnd = this;
+        _sci.setIndicStyle(1, QXSci.INDIC_PLAIN);
+        _sci.setIndicCurrent(1);
+        
+        urlmon.schedule(new TimerTask(){
+			void run(){
+				runOnUi(new Runnable(){
+					void run()override{
+						testUrl();
+                    }
+                });
+            }
+        
+        }, 1000, -1);
+        
+		QXWidget viewport = _sci.viewPort();
+		viewport.setOnMouseEventListener(new onMouseEventListener(){
+           
+            void onMouseMove(QXObject obj, int Button, int x, int y, int flags, int source)override{
+				if (sciisHand){
+					int pos = _sci.positionFromPoint(x, y);
+					int start = _sci.getIndicStart(1, pos);
+                    int end = _sci.getIndicEnd(1, pos);
+                    if (start != 0 && end != 0){
+						_sci.setCursor(QXSci.cursorHand);
+                    }
+                }
+			}
+            
+            void onMouseButtonPress(QXObject obj, int Button, int x, int y, int flags, int source)override{
+				if (sciisHand){
+					int pos = _sci.positionFromPoint(x, y);
+					int start = _sci.getIndicStart(1, pos);
+                    int end = _sci.getIndicEnd(1, pos);
+                    if (start != 0 && end != 0){
+                        _sci.setSelect(start, end);
+                        String current_Url = _sci.getSelectedText();
+                        current_Url = current_Url.trim(true);
+                        if (current_Url.length() > 0){
+							openUrl(current_Url);
+                        }
+                    }
+                }
+			}
+		});
+        
+		_sci.setOnKeyEventListener(new onKeyEventListener(){
+			
+			bool onKeyPress(QXObject obj, int key, bool repeat, int count, String text, int scanCode, int virtualKey)override{                
+                if (key == Key_Control){
+                    sciisHand = true;
+                }
+                
+				return true;
+			}
+            bool onKeyRelease(QXObject obj, int key, bool repeat, int count, String text, int scanCode, int virtualKey)override{
+                if (key == Key_Control ){
+					_sci.setCursor(QXSci.cursorText);
+                    sciisHand = false;
+                }
+				return true;
+            }
+        });
+        
+         _sci.setOnFocusEventListener(new onFocusEventListener(){
+			void onFocusIn(QXObject obj, bool focus, int reson){
+				sciisHand = false;
+                _sci.setCursor(QXSci.cursorText);
+			}
+			void onFocusOut(QXObject obj, bool focus, int reson){
+				sciisHand = false;
+                _sci.setCursor(QXSci.cursorText);
+			}
+		});
+    }
+    
+    void testUrl(){
+    
+		String text = _sci.getText();
+        _sci.clearIndic(0, _sci.getLength());
+        _sci.setIndicCurrent(1);
+        
+        if (text.length() > 0){
+			Pattern.Result rt = url_match.match(text, 0);
+			
+			for (int i =0; i < rt.length(); i++){
+				int start = rt.get(i).start();
+				int end = rt.get(i).end();
+				_sci.applyIndic(start, end - start + 1);
+			}
+        }
+    }
+};

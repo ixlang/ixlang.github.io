@@ -135,7 +135,7 @@
      </rect>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="text">
      <string/>
@@ -229,12 +229,12 @@
     </property>
    </column>
   </widget>
-  <widget class="QCheckBox" name="addExists">
+  <widget class="QLabel" name="addExists">
    <property name="geometry">
     <rect>
-     <x>641</x>
+     <x>690</x>
      <y>455</y>
-     <width>151</width>
+     <width>111</width>
      <height>16</height>
     </rect>
    </property>
@@ -242,18 +242,6 @@
     <string>添加到当前项目</string>
    </property>
   </widget>
-  <zorder>btnOk</zorder>
-  <zorder>btnCancel</zorder>
-  <zorder>projName</zorder>
-  <zorder>_proName</zorder>
-  <zorder>projPath</zorder>
-  <zorder>_proPath</zorder>
-  <zorder>btnPathBro</zorder>
-  <zorder>lblwidget</zorder>
-  <zorder>projType</zorder>
-  <zorder>projContent</zorder>
-  <zorder>addExists</zorder>
-  <zorder>projDescr</zorder>
  </widget>
  <resources/>
  <connections/>

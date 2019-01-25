@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/example/XStudio/qt5/widgets/QXFont.xcsm 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v1.1 Release</span>
+   </div>
+   <div id="projectbrief">项目介绍</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_cfafba98a580ce4b62f8a6fa96d7cbb0.html">example</a></li><li class="navelem"><a class="el" href="dir_70e0fdd3e867b2d8c145ac6a91e1bd4f.html">XStudio</a></li><li class="navelem"><a class="el" href="dir_4676be69caee5ba42025b9084878d123.html">qt5</a></li><li class="navelem"><a class="el" href="dir_0429eb8fd7528773df798bf9a8c31a44.html">widgets</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">QXFont.xcsm</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_q_x_font_8xcsm.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="class_q_x_font.html">    1</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_q_x_font.html">QXFont</a> : <a class="code" href="class_q_x_core.html">QXCore</a>{</div>
+<div class="line"><a name="l00002"></a><span class="lineno"><a class="line" href="class_q_x_font.html#a15fe6413b519cc095d5c953a02fc02f6">    2</a></span>&#160;    <a class="code" href="class_q_x_font.html#a15fe6413b519cc095d5c953a02fc02f6">QXFont</a>(<a class="code" href="class_string.html">String</a> fontName){</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;        <a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a> = createNObject(<a class="code" href="class_q_type.html">QType</a>.<a class="code" href="class_q_type.html#a7c6bbe2198b97db7b22e8bdb92bfed87">qtFont</a>, 0);</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;        widget_slot_string(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a5dd22acd9e2e93b05147baf883cc58a9">FONTSETFAMILY</a>, fontName);</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    }</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_q_x_font.html#aadd7696fcc1d15e073a8495b8da4c71e">    7</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_q_x_font.html">QXFont</a> <a class="code" href="class_q_x_font.html#aadd7696fcc1d15e073a8495b8da4c71e">loadFromFile</a>(<a class="code" href="class_string.html">String</a> file, <a class="code" href="class_string.html">String</a> subName){</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        <span class="keywordtype">long</span> h = long_string2(0, <a class="code" href="class_q_x_core.html#aaca89003f3b83db407f0ab04ab8f6537">LOADFONT</a>, file, subName);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <span class="keywordflow">if</span> (h != 0){</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_font.html#ae7cbad720119bfd90344bc33e5a91d23">QXFont</a>(h);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        }</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;     </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_q_x_font.html#ab69c2d0365a871eb051819cf29bff6e0">   16</a></span>&#160;    <a class="code" href="class_q_x_font.html#ab69c2d0365a871eb051819cf29bff6e0">QXFont</a>(<a class="code" href="class_string.html">String</a> fontName, <span class="keywordtype">int</span> size, <span class="keywordtype">bool</span> ptsize){</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a> = createNObject(<a class="code" href="class_q_type.html">QType</a>.<a class="code" href="class_q_type.html#a7c6bbe2198b97db7b22e8bdb92bfed87">qtFont</a>, 0);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        widget_slot_string(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a5dd22acd9e2e93b05147baf883cc58a9">FONTSETFAMILY</a>, fontName);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">if</span> (ptsize){</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            widget_set_vint_value(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a1b3fce7aac7aadd91afaf7981a9eabc6">FONTPTSIZE</a>, size);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            widget_set_vint_value(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#abda6208a703067ce1d12910143d91606">FONTPXSIZE</a>, size);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_q_x_font.html#a52a769a41e8bb225730b44595cdab193">   26</a></span>&#160;    <a class="code" href="class_q_x_font.html#a52a769a41e8bb225730b44595cdab193">QXFont</a>(<span class="keywordtype">long</span> handle){</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a> = handle; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_q_x_font.html#ae7cbad720119bfd90344bc33e5a91d23">   30</a></span>&#160;    <a class="code" href="class_q_x_font.html#ae7cbad720119bfd90344bc33e5a91d23">QXFont</a>(){</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a> = createNObject(<a class="code" href="class_q_type.html">QType</a>.<a class="code" href="class_q_type.html#a7c6bbe2198b97db7b22e8bdb92bfed87">qtFont</a>, 0);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_q_x_font.html#a695fa6aee82a7494d2d4e7a1c2b9328e">   34</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_x_font.html#a695fa6aee82a7494d2d4e7a1c2b9328e">setFont</a>(<a class="code" href="class_string.html">String</a> fontName){</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        widget_slot_string(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a5dd22acd9e2e93b05147baf883cc58a9">FONTSETFAMILY</a>, fontName);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_q_x_font.html#a323e49ad14bbb82cf68d2340f9f8d36e">   38</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_x_font.html#a323e49ad14bbb82cf68d2340f9f8d36e">setPointSize</a>(<span class="keywordtype">int</span> ptSize){</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        widget_set_vint_value(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a1b3fce7aac7aadd91afaf7981a9eabc6">FONTPTSIZE</a>, ptSize);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_q_x_font.html#a3a641ac7cfeeb244f00af3df3c4aee91">   42</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_x_font.html#a3a641ac7cfeeb244f00af3df3c4aee91">setPixelSize</a>(<span class="keywordtype">int</span> pxSize){</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        widget_set_vint_value(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#abda6208a703067ce1d12910143d91606">FONTPXSIZE</a>, pxSize);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_q_x_font.html#a32d626626eee0bc4ade146973f6abb1c">   46</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_x_font.html#a32d626626eee0bc4ade146973f6abb1c">finalize</a>(){</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        widget_slot(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a478c8c1e5b890eb8b5cbaf682ba5cb08">FONTCTOR</a>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_q_x_font.html#a88267bd93ab03c16e30d81745e859d21">   50</a></span>&#160;    <a class="code" href="class_q_x_rect.html">QXRect</a> <a class="code" href="class_q_x_font.html#a88267bd93ab03c16e30d81745e859d21">measure</a>(<a class="code" href="class_string.html">String</a> text){</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="class_q_x_rect.html">QXRect</a> qr = <span class="keyword">new</span> <a class="code" href="class_q_x_rect.html">QXRect</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">long</span> v = long_longstring(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a474656526d78425e1648c2ffb6822357">MEASURETEXT</a>, 0, text);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        qr.<a class="code" href="class_q_x_rect.html#ad8f5e19e19f12974c9713e920ec54331">left</a> = qr.<a class="code" href="class_q_x_rect.html#af93f4f37fc2ad9c37af4a715423b110c">top</a> = 0;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        qr.<a class="code" href="class_q_x_rect.html#a2f54f8b71f0d765e2b7dbd9a8b9774ff">right</a> = (v &gt;&gt; 32) &amp; 0xffffffff;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        qr.<a class="code" href="class_q_x_rect.html#a323a7064fba6e15e3e542e34fb19764e">bottom</a> = v &amp; 0xffffffff;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> qr;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
+<div class="ttc" id="class_q_x_rect_html"><div class="ttname"><a href="class_q_x_rect.html">QXRect</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_rect_8xcsm_source.html#l00004">QXRect.xcsm:4</a></div></div>
+<div class="ttc" id="class_q_x_core_html_a474656526d78425e1648c2ffb6822357"><div class="ttname"><a href="class_q_x_core.html#a474656526d78425e1648c2ffb6822357">QXCore.MEASURETEXT</a></div><div class="ttdeci">static const int MEASURETEXT</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00259">QXCore.xcsm:259</a></div></div>
+<div class="ttc" id="class_q_x_font_html_ae7cbad720119bfd90344bc33e5a91d23"><div class="ttname"><a href="class_q_x_font.html#ae7cbad720119bfd90344bc33e5a91d23">QXFont.QXFont</a></div><div class="ttdeci">QXFont()</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_font_8xcsm_source.html#l00030">QXFont.xcsm:30</a></div></div>
+<div class="ttc" id="class_q_x_native_html_adc4b3fd5b05624dfe6705339748b8aab"><div class="ttname"><a href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">QXNative.nativehandle</a></div><div class="ttdeci">long nativehandle</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_native_8xcsm_source.html#l00003">QXNative.xcsm:3</a></div></div>
+<div class="ttc" id="class_q_x_font_html_a52a769a41e8bb225730b44595cdab193"><div class="ttname"><a href="class_q_x_font.html#a52a769a41e8bb225730b44595cdab193">QXFont.QXFont</a></div><div class="ttdeci">QXFont(long handle)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_font_8xcsm_source.html#l00026">QXFont.xcsm:26</a></div></div>
+<div class="ttc" id="class_q_x_core_html_a1b3fce7aac7aadd91afaf7981a9eabc6"><div class="ttname"><a href="class_q_x_core.html#a1b3fce7aac7aadd91afaf7981a9eabc6">QXCore.FONTPTSIZE</a></div><div class="ttdeci">static const int FONTPTSIZE</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00043">QXCore.xcsm:43</a></div></div>
+<div class="ttc" id="class_q_type_html"><div class="ttname"><a href="class_q_type.html">QType</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_types_8xcsm_source.html#l00001">QXTypes.xcsm:1</a></div></div>
+<div class="ttc" id="class_q_type_html_a7c6bbe2198b97db7b22e8bdb92bfed87"><div class="ttname"><a href="class_q_type.html#a7c6bbe2198b97db7b22e8bdb92bfed87">QType.qtFont</a></div><div class="ttdeci">static const int qtFont</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_types_8xcsm_source.html#l00009">QXTypes.xcsm:9</a></div></div>
+<div class="ttc" id="class_q_x_rect_html_a323a7064fba6e15e3e542e34fb19764e"><div class="ttname"><a href="class_q_x_rect.html#a323a7064fba6e15e3e542e34fb19764e">QXRect.bottom</a></div><div class="ttdeci">int bottom</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_rect_8xcsm_source.html#l00020">QXRect.xcsm:20</a></div></div>
+<div class="ttc" id="class_q_x_font_html"><div class="ttname"><a href="class_q_x_font.html">QXFont</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_font_8xcsm_source.html#l00001">QXFont.xcsm:1</a></div></div>
+<div class="ttc" id="class_q_x_font_html_ab69c2d0365a871eb051819cf29bff6e0"><div class="ttname"><a href="class_q_x_font.html#ab69c2d0365a871eb051819cf29bff6e0">QXFont.QXFont</a></div><div class="ttdeci">QXFont(String fontName, int size, bool ptsize)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_font_8xcsm_source.html#l00016">QXFont.xcsm:16</a></div></div>
+<div class="ttc" id="class_q_x_rect_html_a2f54f8b71f0d765e2b7dbd9a8b9774ff"><div class="ttname"><a href="class_q_x_rect.html#a2f54f8b71f0d765e2b7dbd9a8b9774ff">QXRect.right</a></div><div class="ttdeci">int right</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_rect_8xcsm_source.html#l00020">QXRect.xcsm:20</a></div></div>
+<div class="ttc" id="class_q_x_core_html_a5dd22acd9e2e93b05147baf883cc58a9"><div class="ttname"><a href="class_q_x_core.html#a5dd22acd9e2e93b05147baf883cc58a9">QXCore.FONTSETFAMILY</a></div><div class="ttdeci">static const int FONTSETFAMILY</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00042">QXCore.xcsm:42</a></div></div>
+<div class="ttc" id="class_q_x_core_html_a478c8c1e5b890eb8b5cbaf682ba5cb08"><div class="ttname"><a href="class_q_x_core.html#a478c8c1e5b890eb8b5cbaf682ba5cb08">QXCore.FONTCTOR</a></div><div class="ttdeci">static const int FONTCTOR</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00045">QXCore.xcsm:45</a></div></div>
+<div class="ttc" id="class_q_x_core_html"><div class="ttname"><a href="class_q_x_core.html">QXCore</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00001">QXCore.xcsm:1</a></div></div>
+<div class="ttc" id="class_q_x_font_html_aadd7696fcc1d15e073a8495b8da4c71e"><div class="ttname"><a href="class_q_x_font.html#aadd7696fcc1d15e073a8495b8da4c71e">QXFont.loadFromFile</a></div><div class="ttdeci">static QXFont loadFromFile(String file, String subName)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_font_8xcsm_source.html#l00007">QXFont.xcsm:7</a></div></div>
+<div class="ttc" id="class_q_x_font_html_a695fa6aee82a7494d2d4e7a1c2b9328e"><div class="ttname"><a href="class_q_x_font.html#a695fa6aee82a7494d2d4e7a1c2b9328e">QXFont.setFont</a></div><div class="ttdeci">void setFont(String fontName)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_font_8xcsm_source.html#l00034">QXFont.xcsm:34</a></div></div>
+<div class="ttc" id="class_q_x_font_html_a15fe6413b519cc095d5c953a02fc02f6"><div class="ttname"><a href="class_q_x_font.html#a15fe6413b519cc095d5c953a02fc02f6">QXFont.QXFont</a></div><div class="ttdeci">QXFont(String fontName)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_font_8xcsm_source.html#l00002">QXFont.xcsm:2</a></div></div>
+<div class="ttc" id="class_q_x_font_html_a3a641ac7cfeeb244f00af3df3c4aee91"><div class="ttname"><a href="class_q_x_font.html#a3a641ac7cfeeb244f00af3df3c4aee91">QXFont.setPixelSize</a></div><div class="ttdeci">void setPixelSize(int pxSize)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_font_8xcsm_source.html#l00042">QXFont.xcsm:42</a></div></div>
+<div class="ttc" id="class_q_x_core_html_abda6208a703067ce1d12910143d91606"><div class="ttname"><a href="class_q_x_core.html#abda6208a703067ce1d12910143d91606">QXCore.FONTPXSIZE</a></div><div class="ttdeci">static const int FONTPXSIZE</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00044">QXCore.xcsm:44</a></div></div>
+<div class="ttc" id="class_q_x_rect_html_ad8f5e19e19f12974c9713e920ec54331"><div class="ttname"><a href="class_q_x_rect.html#ad8f5e19e19f12974c9713e920ec54331">QXRect.left</a></div><div class="ttdeci">int left</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_rect_8xcsm_source.html#l00020">QXRect.xcsm:20</a></div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="class_q_x_font_html_a88267bd93ab03c16e30d81745e859d21"><div class="ttname"><a href="class_q_x_font.html#a88267bd93ab03c16e30d81745e859d21">QXFont.measure</a></div><div class="ttdeci">QXRect measure(String text)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_font_8xcsm_source.html#l00050">QXFont.xcsm:50</a></div></div>
+<div class="ttc" id="class_q_x_rect_html_af93f4f37fc2ad9c37af4a715423b110c"><div class="ttname"><a href="class_q_x_rect.html#af93f4f37fc2ad9c37af4a715423b110c">QXRect.top</a></div><div class="ttdeci">int top</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_rect_8xcsm_source.html#l00020">QXRect.xcsm:20</a></div></div>
+<div class="ttc" id="class_q_x_font_html_a323e49ad14bbb82cf68d2340f9f8d36e"><div class="ttname"><a href="class_q_x_font.html#a323e49ad14bbb82cf68d2340f9f8d36e">QXFont.setPointSize</a></div><div class="ttdeci">void setPointSize(int ptSize)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_font_8xcsm_source.html#l00038">QXFont.xcsm:38</a></div></div>
+<div class="ttc" id="class_q_x_font_html_a32d626626eee0bc4ade146973f6abb1c"><div class="ttname"><a href="class_q_x_font.html#a32d626626eee0bc4ade146973f6abb1c">QXFont.finalize</a></div><div class="ttdeci">void finalize()</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_font_8xcsm_source.html#l00046">QXFont.xcsm:46</a></div></div>
+<div class="ttc" id="class_q_x_core_html_aaca89003f3b83db407f0ab04ab8f6537"><div class="ttname"><a href="class_q_x_core.html#aaca89003f3b83db407f0ab04ab8f6537">QXCore.LOADFONT</a></div><div class="ttdeci">static const int LOADFONT</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00238">QXCore.xcsm:238</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

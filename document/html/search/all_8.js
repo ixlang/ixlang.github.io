@@ -1,8 +1,26 @@
 var searchData=
 [
   ['has',['has',['../class_json_object.html#aa1503cdd008c9d4fc8b86262aa0ed7cc',1,'JsonObject']]],
+  ['hasfocus',['hasFocus',['../class_q_x_widget.html#acbfaf08686b51f8772f88625a3b269b1',1,'QXWidget.hasFocus()'],['../class_q_x_core.html#affa85e9006343a51b12fb1df7af026fa',1,'QXCore.HASFOCUS()']]],
+  ['hash',['Hash',['../class_q_x_variant.html#a28f2f93bd28f760845326d9c90cc47fe',1,'QXVariant']]],
   ['hasnext',['hasNext',['../class_list_1_1_iterator.html#a634d758e1811c32295f5665e4f8a0178',1,'List.Iterator.hasNext()'],['../class_map_1_1_iterator.html#a634d758e1811c32295f5665e4f8a0178',1,'Map.Iterator.hasNext()']]],
   ['hasprevious',['hasPrevious',['../class_list_1_1_iterator.html#a0bf831f46c2f7ea955007f59d6fdac2c',1,'List.Iterator.hasPrevious()'],['../class_map_1_1_iterator.html#a0bf831f46c2f7ea955007f59d6fdac2c',1,'Map.Iterator.hasPrevious()']]],
+  ['height',['HEIGHT',['../class_q_x_core.html#af728b7647e0b8c49832983a31f9a2e9b',1,'QXCore.HEIGHT()'],['../class_q_x_image.html#a822ae85493a742654ba563619492b26a',1,'QXImage.height()'],['../class_q_x_rect.html#a822ae85493a742654ba563619492b26a',1,'QXRect.height()'],['../class_q_x_widget.html#a822ae85493a742654ba563619492b26a',1,'QXWidget.height()']]],
+  ['help',['Help',['../class_q_x_message_box.html#a7e098ad46c1cddbe354093b8aebd2075',1,'QXMessageBox']]],
+  ['helprequest',['HelpRequest',['../class_q_x_event.html#ac2375fa0b4615a7cd8a270eab9f975f9',1,'QXEvent']]],
+  ['hidden',['HIDDEN',['../class_q_x_core.html#ad2c7dc4687506073960c4258d886eb7b',1,'QXCore']]],
+  ['hide',['hide',['../class_q_x_widget.html#ade42eb4da4eb77db85a8d1e4b92e7be4',1,'QXWidget.hide()'],['../class_q_x_event.html#aba7fcc955751c0d7657b6729575c479a',1,'QXEvent.Hide()'],['../class_q_x_core.html#a880aa621de35b132beb9557e43f00a77',1,'QXCore.HIDE()']]],
+  ['hidetoparent',['HideToParent',['../class_q_x_event.html#a3d07e779b74f38524dccc4c51b4af17b',1,'QXEvent']]],
+  ['highlight',['Highlight',['../class_color_role.html#ac068c24e50896f5cb5168836ebb7ed80',1,'ColorRole']]],
+  ['highlightedtext',['HighlightedText',['../class_color_role.html#a2b19735cfa86bb3fc8e4bf8d6eb6df13',1,'ColorRole']]],
+  ['highqualityantialiasing',['HighQualityAntialiasing',['../class_q_x_painter_1_1_render_hint.html#afa43ec1318ae4663dccc2e08a3d0594e',1,'QXPainter::RenderHint']]],
+  ['himage',['himage',['../class_q_x_image.html#a056d4e294ae90aa970242d379be9dfaf',1,'QXImage']]],
+  ['horizontal',['Horizontal',['../class_q_x_widget.html#ab42e49b7acf1f6a34241f49e6d10e990',1,'QXWidget']]],
+  ['horpattern',['HorPattern',['../class_q_x_painter_1_1_brush_style.html#af4fe8dd7215d0c533d68deef576cbd21',1,'QXPainter::BrushStyle']]],
+  ['hoverenter',['HoverEnter',['../class_q_x_event.html#af1598c97a6da4fb411762d22e5f5d7f4',1,'QXEvent']]],
+  ['hoverleave',['HoverLeave',['../class_q_x_event.html#a009d062630e98511f4e4641ba1f51ccd',1,'QXEvent']]],
+  ['hovermove',['HoverMove',['../class_q_x_event.html#ae6c99edd3e6f3b4dccff526b54ad6e7c',1,'QXEvent']]],
+  ['hpaint',['hpaint',['../class_q_x_painter.html#a9a30d172ccabb9ba4eba5c6a0fbb2860',1,'QXPainter']]],
   ['httprequest',['HttpRequest',['../class_http_request.html',1,'']]],
   ['httprequest_2excs',['HttpRequest.xcs',['../_http_request_8xcs.html',1,'']]]
 ];

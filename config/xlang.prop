@@ -11,6 +11,15 @@
 				"xlang 静态链接库(-lix -c)"
 			]
 		},
+		"目标操作系统:ostype":{
+			"type":"stringlist",
+			"list":[
+				"当前操作系统",
+				"-xcross-windows",
+				"-xcross-linux",
+				"-xcross-darwin"
+			]
+		},
 		"处理器架构:wtype":{
 			"type":"stringlist",
 			"list":[
@@ -26,6 +35,17 @@
 			"type":"string"
 		},
 		"输出文件:outfile":{
+			"type":"string"
+		},
+		"UAC控制:uaclevel":{
+			"type":"stringlist",
+			"list":[
+				"默认",
+				"管理员(-uac-admin)",
+				"最高级别(-uac-highest)"
+			]
+		},
+		"应用程序图标:icofile":{
 			"type":"string"
 		}
 	},
@@ -48,18 +68,25 @@
 				"禁用(nilptr)"
 			]
 		},
-		"包含调试信息:debuginfo":{
+		"生成调试信息:debuginfo":{
 			"type":"stringlist",
 			"list":[
 				"启用(nilptr)",
 				"禁用(-nd)"
 			]
 		},
-		"调试:debugable":{
+		"生成可调试版本:debugable":{
 			"type":"stringlist",
 			"list":[
 				"启用(-dbg)",
 				"禁用(nilptr)"
+			]
+		},
+		"版本随构建次数增加:versioninc":{
+			"type":"stringlist",
+			"list":[
+				"禁用",
+				"启用"
 			]
 		}
 	},
@@ -67,11 +94,33 @@
 		"启动命令:cmd":{
 			"type":"string"
 		},
-		"启动参数:arglist":{
+		"命令行参数:arglist":{
 			"type":"string",
 			"tips":"多个参数使用用空格分隔"
 		},
 		"工作目录:workdir":{
+			"type":"string"
+		}
+	},
+	"构建步骤":{
+		"makefile 构建参数:makebuild":{
+			"type":"string",
+			"tips":"多个参数使用用空格分隔"
+		},
+		"makefile 清理参数:makeclean":{
+			"type":"string",
+			"tips":"多个参数使用用空格分隔"
+		},
+		"构建前动作(*.sh|*.bat):prebuild":{
+			"type":"string"
+		},
+		"构建后动作(*.sh|*.bat):afterbuild":{
+			"type":"string"
+		},
+		"清理前动作(*.sh|*.bat):preclean":{
+			"type":"string"
+		},
+		"清理后动作(*.sh|*.bat):afterclean":{
 			"type":"string"
 		}
 	}

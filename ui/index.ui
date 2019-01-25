@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>Form</class>
  <widget class="QWidget" name="Form">
@@ -18,7 +18,7 @@
     <rect>
      <x>40</x>
      <y>30</y>
-     <width>231</width>
+     <width>500</width>
      <height>41</height>
     </rect>
    </property>
@@ -29,7 +29,7 @@
     </font>
    </property>
    <property name="text">
-    <string>XIDE beta v1.0</string>
+    <string>XStudio beta v1.11.25</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
@@ -407,7 +407,7 @@
     <cursorShape>OpenHandCursor</cursorShape>
    </property>
    <property name="text">
-    <string>&lt;a style=&quot;color:#1684fb&quot;&gt;XPlayer(Windows)&lt;/a&gt;</string>
+    <string>&lt;a style=&quot;color:#1684fb&quot;&gt;XPlayer&lt;/a&gt;</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_21">
@@ -451,7 +451,7 @@
     <cursorShape>OpenHandCursor</cursorShape>
    </property>
    <property name="text">
-    <string>&lt;a style=&quot;color:#1684fb&quot;&gt;XIDE&lt;/a&gt;</string>
+    <string>&lt;a style=&quot;color:#1684fb&quot;&gt;XStudio&lt;/a&gt;</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_25">
@@ -560,7 +560,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>使用OpenGL和ffmpeg开发的Windows音频播放器</string>
+    <string>使用OpenGL和ffmpeg开发的音频播放器</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_17">

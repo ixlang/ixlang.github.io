@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['匿名类可以使用在其所在作用域内的对象',['匿名类可以使用在其所在作用域内的对象',['../mainpage_8xcs.html#a4cdda32e0dd2e9dd245cac271ad00665',1,'mainpage.xcs']]]
+  ['y',['y',['../class_q_x_widget.html#ad2fbece2f53c8f17552a75843b4440b1',1,'QXWidget']]],
+  ['yfromposition',['yFromPosition',['../class_q_x_sci.html#a1307467314b7e6ac75bedb48feb015a4',1,'QXSci']]]
 ];

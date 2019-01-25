@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v6.0 beta</span>
+   &#160;<span id="projectnumber">v1.1 Release</span>
    </div>
    <div id="projectbrief">项目介绍</div>
   </td>
@@ -83,16 +83,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="intro"></a>
 简介</h1>
-<p>此项目采用C++编写.<br />
- 代码量:编译器约3.6万行,虚拟机约1.3万行(含自动化工具生成的代码,不包括为虚拟机提供的各种类库)<br />
- 编译器并没有生成机器码, 而是生成了在虚拟机运行的字节码. 名字随便起了个(PS.有好名字请联系我). </p>
+<p>此项目为C++编写的跨平台语言(含编译器+虚拟机).<br />
+ 编译器并没有生成机器码, 而是生成了在虚拟机运行的字节码.<br />
+ 2018年6月6日发布Alpha V1.0版本.<br />
+ 2018年7月5日发布Beta V1.0版本.<br />
+ 2018年12月15日发布Release V1.0版本.<br />
+ 2019年1月23日发布Release V1.1版本.<br />
+ </p>
 <h2><a class="anchor" id="tx"></a>
 介绍:</h2>
 <p>源文件扩展名: *.xcs(源文件) *.xcsm(模块源文件)<br />
- 开发环境XIDE, 使用本语言开发, 底层使用了QT界面库.<br />
+ 目标文件扩展名: *.exc(x可执行文件,需安装xre[X运行环境]) *.lix(x静态库)<br />
+ 开发环境XStudio(1.11.20版本更名), 使用xlang开发, 底层使用了QT界面库.<br />
  支持调试,代码高亮等一般集成开发环境都具有的特性<br />
- XIDE为开源软件<br />
- XIDE现仅支持开发xlang app.<br />
+ XStudio为开源软件,开源地址为: <a href="http://ixlang.github.io/">http://ixlang.github.io/</a><br />
+ XStudio现仅支持开发xlang app.<br />
+ XStudio使用C++开发的智能提示和辅助输入.<br />
  <b>注意:在版本变更中有存在极少部分信息与文档不符,如确实需要请联系.</b><br />
  </p>
 <h2><a class="anchor" id="cc"></a>
@@ -116,22 +122,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <td>-e intput [args] </td><td>运行字节码文件 </td></tr>
 <tr>
 <td>-arch:[x86, x86_64, arm, arm64, mips] </td><td>指定目标处理器架构 (v6.0 beta 新增) </td></tr>
-<tr>
-<td>-w </td><td>忽略所有警告 (v6.0 beta 新增) </td></tr>
-<tr>
-<td>-dbg </td><td>编译可调试版本 (v6.0 beta 新增) </td></tr>
-<tr>
-<td>-libpath [path...] </td><td>设置编译器的连接路径 </td></tr>
-<tr>
-<td>-lib [lib.lix...] </td><td>设置要链接的静态库 </td></tr>
-<tr>
-<td>-incpath [path...] </td><td>设置编译器的inc路径 </td></tr>
-<tr>
-<td>-nd </td><td>不生成调试信息, 将使生成的文件更小,应用启动速度略微加快,但意味着出现Exception时,无法获得详尽的跟踪信息 </td></tr>
-<tr>
-<td>注:</td><td><b>编译时采用默认优化,暂无可用优化选项, <br />
-无论生成调试信息与否, 均不会影响运行时性能.</b> </td></tr>
 </table>
+<p>-xcross-[osname] 指定交叉生成的目标操作系统(仅限于-ce编译,可选项-xcross-[windows|linux|drawin]).(v1.5 release 新增) -w | 忽略所有警告 (v6.0 beta 新增) -dbg | 编译可调试版本 (v6.0 beta 新增) -ico filepath | 为目标可行执行程序指定图标(仅Windows -ce编译) (v7.0 beta 新增) -libpath [path...] | 设置编译器的连接路径 -lib [lib.lix...] | 设置要链接的静态库 -incpath [path...] | 设置编译器的inc路径 -nd | 不生成调试信息, 将使生成的文件更小,应用启动速度略微加快,但意味着出现Exception时,无法获得详尽的跟踪信息 注:|<b>编译时采用默认优化,暂无可用优化选项, <br />
+无论生成调试信息与否, 均不会影响运行时性能.</b></p>
 <p>该版本(v6.0 beta 均支持直接编译为操作系统支持运行的可执行文件, 因而未提供运行字节码的独立虚拟机).</p>
 <h2><a class="anchor" id="ex"></a>
 与其他语言相同部分的特性</h2>
@@ -321,7 +314,7 @@ int main(String [] args){ <br />
 <tr>
 <td><a class="el" href="class_timer_task.html" title="定时器任务类 ">TimerTask</a> </td><td>定时器任务接口 </td></tr>
 <tr>
-<td><a class="el" href="class_window.html" title="异步输入接口 需要继承 ">Window</a> </td><td>Windows平台下的窗口类 </td></tr>
+<td>Window </td><td>Windows平台下的窗口类(注意：为保证各平台统一， 该类已从版本1.1开始不再内置提供) </td></tr>
 <tr>
 <td><a class="el" href="class_math.html" title="Math类 ">Math</a> </td><td>数学运算库 </td></tr>
 <tr>
@@ -435,7 +428,7 @@ examples文件夹介绍:</h2>
 <tr>
 <td>（2）</td><td>字面量常量(如:0, 1, 2, "abc")、自定义常量(如:const int a = 0;)。 </td></tr>
 <tr>
-<td>（3）</td><td>整数常量有2种表现形式：十进制、十六进制。 </td></tr>
+<td>（3）</td><td>整数常量有2种表现形式：十进制、十六进制(0x开头)、八进制(0开头, V9.1beta新增)。 </td></tr>
 </table>
 <h2><a class="anchor" id="mdf"></a>
 8.方法</h2>
@@ -535,6 +528,8 @@ return 返回值;<br />
 <br />
  类在销毁之前将调用finalize实施销毁前的清理工作<br />
  类的销毁操作将在该类无任何引用的情况下不定时触发<br />
+<br />
+ finalize函数仅会执行一次,在finalize中复活的对象将不会再执行finalize(v8.0新增)<br />
  </td></tr>
 <tr>
 <td>（13）</td><td>类的继承:<br />
@@ -665,7 +660,7 @@ return 返回值;<br />
 <tr>
 <th>序号 </th><th>说明  </th></tr>
 <tr>
-<td>（1）</td><td>native组件提供调用标准的C接口导出函数的功能 </td></tr>
+<td>（1）</td><td>native组件提供调用标准的C接口导出函数的功能，可使用两种方式进行调用(V1.1新增动态调用) </td></tr>
 <tr>
 <td>（2）</td><td>native方法必须有返回类型<br />
  返回类型只接受以下类型:<br />
@@ -702,9 +697,18 @@ return 返回值;<br />
 <td>（5）</td><td>native方法至多接受32个参数 </td></tr>
 <tr>
 <td>（6）</td><td>声明形式:<br />
- import "libxxx"{<br />
+ 静态链接:<br />
+import "libxxx"{<br />
  void stdcall MessageBoxA(int hWnd,String msg, String caption, int flag);<br />
  };<br />
+注:旧的import "xxx.dll"形式已在v6.0beta弃用<br />
+ 动态链接(必须在类中声明):<br />
+ class MyNative : Library { <br />
+ import "libxxx"{<br />
+ void stdcall MessageBoxA(int hWnd,String msg, String caption, int flag);<br />
+ }; <br />
+ };<br />
+ MyNative.loadLibrary("xxx.dll"); <br />
 注:旧的import "xxx.dll"形式已在v6.0beta弃用 </td></tr>
 </table>
 <h2><a class="anchor" id="udef"></a>

@@ -1,5 +1,29 @@
 var searchData=
 [
-  ['if语句',['if语句',['../mainpage_8xcs.html#ada4e9e95ea02bc01cde72dac1edbbfdf',1,'mainpage.xcs']]],
-  ['interface之前用以标识该对象仅声明',['interface之前用以标识该对象仅声明',['../mainpage_8xcs.html#a7431ac13f7bdec4f14e514fc665597e4',1,'mainpage.xcs']]]
+  ['gesture',['Gesture',['../class_q_x_event.html#a8b42fe0710de6141337adc33c480e4a2',1,'QXEvent']]],
+  ['gestureoverride',['GestureOverride',['../class_q_x_event.html#ac48e45cd658ce3e84f255351f11bf502',1,'QXEvent']]],
+  ['getmenu',['GETMENU',['../class_q_x_core.html#a9608d4c1237067b0cb75d81946b7888a',1,'QXCore']]],
+  ['getstylesheey',['GETSTYLESHEEY',['../class_q_x_core.html#ace24e0f2e19f196925ac8792b88ced90',1,'QXCore']]],
+  ['gettag',['GETTAG',['../class_q_x_core.html#a433306fc0a08bbb2c24b82dfe80b53bc',1,'QXCore']]],
+  ['gettext',['GETTEXT',['../class_q_x_core.html#a206ad3bfc5dd64623b483f69692f9ef2',1,'QXCore']]],
+  ['getviewport',['GETVIEWPORT',['../class_q_x_core.html#aab9033a83750693ba16572ebfa9b5f0a',1,'QXCore']]],
+  ['getwidget',['GETWIDGET',['../class_q_x_core.html#a96328557fac508e336f9f7a3786c8da7',1,'QXCore']]],
+  ['grabkeyboard',['GrabKeyboard',['../class_q_x_event.html#a93d449343cffc15d3db8e470cfe6c5a7',1,'QXEvent']]],
+  ['grabmouse',['GrabMouse',['../class_q_x_event.html#a26813c3597f3ada8e1e86ea590b629cc',1,'QXEvent']]],
+  ['graphicsscenecontextmenu',['GraphicsSceneContextMenu',['../class_q_x_event.html#aa48a375d964eeee62b878b35afabb81f',1,'QXEvent']]],
+  ['graphicsscenedragenter',['GraphicsSceneDragEnter',['../class_q_x_event.html#a4181d9eb55ab223d38561fa81bf1b16f',1,'QXEvent']]],
+  ['graphicsscenedragleave',['GraphicsSceneDragLeave',['../class_q_x_event.html#a6ad657745273efc68b885b111f57e77d',1,'QXEvent']]],
+  ['graphicsscenedragmove',['GraphicsSceneDragMove',['../class_q_x_event.html#ae51b1ff8e9c380bed7b0ff59e1d23723',1,'QXEvent']]],
+  ['graphicsscenedrop',['GraphicsSceneDrop',['../class_q_x_event.html#a2e0fb18d2655f17d48d33354f5c01907',1,'QXEvent']]],
+  ['graphicsscenehelp',['GraphicsSceneHelp',['../class_q_x_event.html#af34d827e6cd92c83064a2395eacf0f93',1,'QXEvent']]],
+  ['graphicsscenehoverenter',['GraphicsSceneHoverEnter',['../class_q_x_event.html#afa3a931911c28f65d070a0965c415c10',1,'QXEvent']]],
+  ['graphicsscenehoverleave',['GraphicsSceneHoverLeave',['../class_q_x_event.html#a6515f65a6f8d77bca27398e09e7abb2f',1,'QXEvent']]],
+  ['graphicsscenehovermove',['GraphicsSceneHoverMove',['../class_q_x_event.html#a7b6982348cd3bec473d633dc59258cb7',1,'QXEvent']]],
+  ['graphicsscenemousedoubleclick',['GraphicsSceneMouseDoubleClick',['../class_q_x_event.html#a05d484c7699273deca333e0144c9021a',1,'QXEvent']]],
+  ['graphicsscenemousemove',['GraphicsSceneMouseMove',['../class_q_x_event.html#ab262572d5bd29f1617dcefccbdecfe4d',1,'QXEvent']]],
+  ['graphicsscenemousepress',['GraphicsSceneMousePress',['../class_q_x_event.html#a0b5ada9bc00cadb93323ea7be4ae5c47',1,'QXEvent']]],
+  ['graphicsscenemouserelease',['GraphicsSceneMouseRelease',['../class_q_x_event.html#a5cd7256111a5bf668394fa0284ef8366',1,'QXEvent']]],
+  ['graphicsscenemove',['GraphicsSceneMove',['../class_q_x_event.html#a2ede3bff5ac8b81cff3d6669d09fa3ed',1,'QXEvent']]],
+  ['graphicssceneresize',['GraphicsSceneResize',['../class_q_x_event.html#a365ba46a2a12e9c8b6c99e7a9bdb693f',1,'QXEvent']]],
+  ['graphicsscenewheel',['GraphicsSceneWheel',['../class_q_x_event.html#ae81b28a6b7f12ae178ba03c64f860636',1,'QXEvent']]]
 ];

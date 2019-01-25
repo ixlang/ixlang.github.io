@@ -141,26 +141,28 @@ public:
 	virtual XObject * createStringArray(int length) = 0;
 	virtual XObject * createObjectArray(int length) = 0;
 
-	virtual bool setElementValue(XObject * object, int index, xbyte byteValue) = 0;
-	virtual bool setElementValue(XObject * object, int index, xchar charValue) = 0;
-	virtual bool setElementValue(XObject * object, int index, short shortValue) = 0;
-	virtual bool setElementValue(XObject * object, int index, xint intValue) = 0;
-	virtual bool setElementValue(XObject * object, int index, xlong longValue) = 0;
-	virtual bool setElementValue(XObject * object, int index, double doubleValue) = 0;
-	virtual bool setElementValue(XObject * object, int index, bool boolValue) = 0;
-	virtual bool setElementValue(XContext * context, XObject * object, int index, const char * stringValue, int length) = 0;
-	virtual bool setElementValue(XContext * context, XObject * object, int index, XObject * value) = 0;
+	virtual bool setElementValue(XObject * object, size_t index, xbyte *byteValue, size_t length) = 0;
+	virtual bool setElementValue(XObject * object, size_t index, xchar *charValue, size_t length) = 0;
+	virtual bool setElementValue(XObject * object, size_t index, short *shortValue, size_t length) = 0;
+	virtual bool setElementValue(XObject * object, size_t index, xint *intValue, size_t length) = 0;
+	virtual bool setElementValue(XObject * object, size_t index, xlong *longValue, size_t length) = 0;
+	virtual bool setElementValue(XObject * object, size_t index, double *doubleValue, size_t length) = 0;
+	virtual bool setElementValue(XObject * object, size_t index, bool *boolValue, size_t length) = 0;
+	virtual bool setElementValue(XContext * context, XObject * object, size_t index, xstring* stringValue, int * strslength, size_t length) = 0;
+	virtual bool setElementValue(XContext * context, XObject * object, size_t index, XObject ** value, size_t length) = 0;
 
-	virtual bool getElementValue(XObject * object, int index, xbyte * byteValue) = 0;
-	virtual bool getElementValue(XObject * object, int index, xchar * charValue) = 0;
-	virtual bool getElementValue(XObject * object, int index, short * shortValue) = 0;
-	virtual bool getElementValue(XObject * object, int index, xint * intValue) = 0;
-	virtual bool getElementValue(XObject * object, int index, xlong * longValue) = 0;
-	virtual bool getElementValue(XObject * object, int index, double * doubleValue) = 0;
-	virtual bool getElementValue(XObject * object, int index, bool * boolValue) = 0;
-	virtual bool getElementValue(XObject * object, int index, const char * * stringValue, int * length) = 0;
-	virtual bool getElementValue(XContext * context, XObject * object, int index, XObject * value) = 0;
+	virtual bool getElementValue(XObject * object, size_t index, xbyte * byteValue, size_t length) = 0;
+	virtual bool getElementValue(XObject * object, size_t index, xchar * charValue, size_t length) = 0;
+	virtual bool getElementValue(XObject * object, size_t index, short * shortValue, size_t length) = 0;
+	virtual bool getElementValue(XObject * object, size_t index, xint * intValue, size_t length) = 0;
+	virtual bool getElementValue(XObject * object, size_t index, xlong * longValue, size_t length) = 0;
+	virtual bool getElementValue(XObject * object, size_t index, double * doubleValue, size_t length) = 0;
+	virtual bool getElementValue(XObject * object, size_t index, bool * boolValue, size_t length) = 0;
+	virtual bool getElementValue(XObject * object, size_t index, xstring * stringValue, size_t * strlength, size_t length) = 0;
+	virtual bool getElementValue(XContext * context, XObject * object, size_t index, XObject ** value, size_t length) = 0;
 
+
+	virtual void throwNativeException(XContext * context, const char * message) = 0;
 
 	//判断对象是不是一个类(非类实例)
 	virtual bool isClass(XObject * object) = 0;

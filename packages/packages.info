@@ -1,0 +1,38 @@
+{
+	"list":	[{
+			"package":	"FileStream",
+			"version":	"1.0.0.0",
+			"descr":	"用于文件读写, 支持在Windows的UTF8<->GB1080转换",
+			"author":	"https://github.com/ixlang/xlibrarys",
+			"file":	".\\packages\\FileStream1.0.0.0",
+			"icon":	".\\packages\\FileStream1.0.0.0.png"
+		}, {
+			"package":	"FileSystem",
+			"version":	"1.0.0.0",
+			"descr":	"用于文件常规文件处理  遍历等操作",
+			"author":	"https://github.com/ixlang/xlibrarys",
+			"file":	".\\packages\\FileSystem1.0.0.0",
+			"icon":	".\\packages\\FileSystem1.0.0.0.png"
+		}, {
+			"package":	"Qt",
+			"version":	"5.9.1.1",
+			"descr":	"基于QT的界面库",
+			"author":	"https://github.com/ixlang/xlibrarys",
+			"file":	".\\packages\\Qt5.9.1.1",
+			"icon":	".\\packages\\Qt5.9.1.1.png"
+		}, {
+			"package":	"Runtime",
+			"version":	"1.0.0.0",
+			"descr":	"用于运行时进程的处理",
+			"author":	"https://github.com/ixlang/xlibrarys",
+			"file":	".\\packages\\Runtime1.0.0.0",
+			"icon":	".\\packages\\Runtime1.0.0.0.png"
+		}, {
+			"package":	"XPlatform",
+			"version":	"1.0.0.0",
+			"descr":	"主要用以桥接来处理不同平台的默认字符集.",
+			"author":	"https://github.com/ixlang/xlibrarys",
+			"file":	".\\packages\\XPlatform1.0.0.0",
+			"icon":	".\\packages\\XPlatform1.0.0.0.png"
+		}]
+}

@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v6.0 beta</span>
+   &#160;<span id="projectnumber">v1.1 Release</span>
    </div>
    <div id="projectbrief">项目介绍</div>
   </td>
@@ -93,53 +93,46 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <a href="_unsi_8xcs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;@Declare</div>
 <div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_unsi.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_unsi.html">Unsi</a>{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_unsi_1_1_instance.html">   11</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">class </span>Instance{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_unsi.html#a25d971356d5ad43071f3435f358dcf53">Unsi</a>(<a class="code" href="interface_async_input.html">AsyncInput</a> input);</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_unsi_1_1_instance.html#aa5f6731b5f6f6b0bbfa0e9cf9d4748b4">send</a>(<span class="keywordtype">long</span> sendid, byte [] buffer, <span class="keywordtype">int</span> offset, <span class="keywordtype">int</span> length);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_unsi_1_1_instance.html#a12db172f74059f7eceb63714f4589aa0">disconnect</a>();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_unsi_1_1_instance.html#a97ddd546246f14d1f8a634b241f70dbb">setTimeout</a>(<span class="keywordtype">int</span> timeout);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_unsi_1_1_instance.html#a5bbaa894c55cf41ed97607c89fa8f882">getRemoteAddress</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_unsi_1_1_instance.html#af104a1b2e11c01328a92a0f73dcd6ef1">getRemotePort</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        Instance <a class="code" href="class_unsi_1_1_instance.html#ab8bf7a00752193cb08310d6de6b0bf61">clone</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_unsi_1_1_instance.html#a67283be3f45257d1e0c474c563ebb6b6">getId</a>();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_unsi_1_1_instance.html#ac074684eadb5d0635400b97f90620a20">equals</a>(Instance ins);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    };</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_unsi.html#aad5997aaaa2d622f0ca57f8b24a51a7b">start</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_unsi.html#a49f9c842922bf59fc35c8866d8a7482e">disconnect</a>(<span class="keywordtype">long</span> context);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_unsi.html#afb7c18af3c116fc1b43cc3c7d6f0af42">config</a>(<span class="keywordtype">int</span> numOfThreads, <span class="keywordtype">int</span> bufferSize, <span class="keywordtype">int</span> timeout);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_unsi.html#ac7fb5c93a921e7970d3aaff545c93553">create</a>(<a class="code" href="interface_async_input.html">AsyncInput</a> input, <span class="keywordtype">int</span> mode,<span class="keywordtype">int</span> port, <span class="keywordtype">int</span> timeout);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="interface_async_output.html">AsyncOutput</a> <a class="code" href="class_unsi.html#aecc07e4c2003ab1c1f584ae968929209">getAsyncDirectOutput</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_unsi.html#a952e28f99be24de1afb59da6451b262b">send</a>(<span class="keywordtype">long</span> context, <span class="keywordtype">long</span> <span class="keywordtype">id</span>, byte[] buffer, <span class="keywordtype">int</span> offset, <span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="class_inet_address.html">InetAddress</a> <a class="code" href="class_unsi.html#a09a625a44c067108a749c1b2323841dc">getRemoteInetAddress</a>(<span class="keywordtype">long</span> context);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="class_unsi.html#a25d971356d5ad43071f3435f358dcf53">Unsi</a>(<a class="code" href="interface_async_input.html">AsyncInput</a> input);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_unsi.html#a6ca5700b140000252909fd78da6b2341">clone</a>(<span class="keywordtype">long</span> context);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_unsi.html#aad5997aaaa2d622f0ca57f8b24a51a7b">start</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_unsi.html#a50bf6d93214b9871dcafde45d31b44d7">getId</a>(<span class="keywordtype">long</span> context);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_unsi.html#afb7c18af3c116fc1b43cc3c7d6f0af42">config</a>(<span class="keywordtype">int</span> numOfThreads, <span class="keywordtype">int</span> bufferSize, <span class="keywordtype">int</span> timeout);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_unsi.html#a466265d7cdb94b39f9f34b990ff547e4">create</a>(<span class="keywordtype">int</span> mode,<span class="keywordtype">int</span> port, <span class="keywordtype">int</span> timeout);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;};</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_unsi.html#adce4ec03200d87479928a7a7b37a5c1c">equalsHandle</a>(<span class="keywordtype">long</span> context);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
+<div class="ttc" id="class_unsi_html_adce4ec03200d87479928a7a7b37a5c1c"><div class="ttname"><a href="class_unsi.html#adce4ec03200d87479928a7a7b37a5c1c">Unsi.equalsHandle</a></div><div class="ttdeci">bool equalsHandle(long context)</div><div class="ttdoc">比较实例句柄是否指向同一个链接 </div></div>
+<div class="ttc" id="class_unsi_html_a09a625a44c067108a749c1b2323841dc"><div class="ttname"><a href="class_unsi.html#a09a625a44c067108a749c1b2323841dc">Unsi.getRemoteInetAddress</a></div><div class="ttdeci">InetAddress getRemoteInetAddress(long context)</div><div class="ttdoc">获取远程地址信息 </div></div>
 <div class="ttc" id="class_unsi_html_a25d971356d5ad43071f3435f358dcf53"><div class="ttname"><a href="class_unsi.html#a25d971356d5ad43071f3435f358dcf53">Unsi.Unsi</a></div><div class="ttdeci">Unsi(AsyncInput input)</div><div class="ttdoc">构造函数 </div></div>
-<div class="ttc" id="class_unsi_1_1_instance_html_af104a1b2e11c01328a92a0f73dcd6ef1"><div class="ttname"><a href="class_unsi_1_1_instance.html#af104a1b2e11c01328a92a0f73dcd6ef1">Unsi.Instance.getRemotePort</a></div><div class="ttdeci">int getRemotePort()</div><div class="ttdoc">获取远程主机端口 </div></div>
+<div class="ttc" id="class_unsi_html_a952e28f99be24de1afb59da6451b262b"><div class="ttname"><a href="class_unsi.html#a952e28f99be24de1afb59da6451b262b">Unsi.send</a></div><div class="ttdeci">bool send(long context, long id, byte[] buffer, int offset, int length)</div><div class="ttdoc">发送数据 </div></div>
 <div class="ttc" id="interface_async_input_html"><div class="ttname"><a href="interface_async_input.html">AsyncInput</a></div><div class="ttdoc">异步输入接口 需要继承 </div><div class="ttdef"><b>Definition:</b> <a href="_async_input_8xcs_source.html#l00006">AsyncInput.xcs:6</a></div></div>
-<div class="ttc" id="class_unsi_1_1_instance_html_a12db172f74059f7eceb63714f4589aa0"><div class="ttname"><a href="class_unsi_1_1_instance.html#a12db172f74059f7eceb63714f4589aa0">Unsi.Instance.disconnect</a></div><div class="ttdeci">bool disconnect()</div><div class="ttdoc">断开实例链接 </div></div>
-<div class="ttc" id="class_unsi_1_1_instance_html_a67283be3f45257d1e0c474c563ebb6b6"><div class="ttname"><a href="class_unsi_1_1_instance.html#a67283be3f45257d1e0c474c563ebb6b6">Unsi.Instance.getId</a></div><div class="ttdeci">int getId()</div><div class="ttdoc">获取实例编号 </div></div>
+<div class="ttc" id="class_unsi_html_ac7fb5c93a921e7970d3aaff545c93553"><div class="ttname"><a href="class_unsi.html#ac7fb5c93a921e7970d3aaff545c93553">Unsi.create</a></div><div class="ttdeci">bool create(AsyncInput input, int mode,int port, int timeout)</div><div class="ttdoc">创建服务器服务器参数 </div></div>
+<div class="ttc" id="class_unsi_html_a50bf6d93214b9871dcafde45d31b44d7"><div class="ttname"><a href="class_unsi.html#a50bf6d93214b9871dcafde45d31b44d7">Unsi.getId</a></div><div class="ttdeci">long getId(long context)</div><div class="ttdoc">获取实例ID </div></div>
 <div class="ttc" id="class_unsi_html"><div class="ttname"><a href="class_unsi.html">Unsi</a></div><div class="ttdoc">unsi 通用网络服务器接口类 </div><div class="ttdef"><b>Definition:</b> <a href="_unsi_8xcs_source.html#l00006">Unsi.xcs:6</a></div></div>
-<div class="ttc" id="class_unsi_html_a466265d7cdb94b39f9f34b990ff547e4"><div class="ttname"><a href="class_unsi.html#a466265d7cdb94b39f9f34b990ff547e4">Unsi.create</a></div><div class="ttdeci">bool create(int mode,int port, int timeout)</div><div class="ttdoc">创建服务器服务器参数 </div></div>
+<div class="ttc" id="class_inet_address_html"><div class="ttname"><a href="class_inet_address.html">InetAddress</a></div><div class="ttdoc">网络地址类 </div><div class="ttdef"><b>Definition:</b> <a href="_inet_address_8xcs_source.html#l00006">InetAddress.xcs:6</a></div></div>
+<div class="ttc" id="class_unsi_html_aecc07e4c2003ab1c1f584ae968929209"><div class="ttname"><a href="class_unsi.html#aecc07e4c2003ab1c1f584ae968929209">Unsi.getAsyncDirectOutput</a></div><div class="ttdeci">AsyncOutput getAsyncDirectOutput()</div><div class="ttdoc">获取异步输出接口 </div></div>
 <div class="ttc" id="class_unsi_html_afb7c18af3c116fc1b43cc3c7d6f0af42"><div class="ttname"><a href="class_unsi.html#afb7c18af3c116fc1b43cc3c7d6f0af42">Unsi.config</a></div><div class="ttdeci">bool config(int numOfThreads, int bufferSize, int timeout)</div><div class="ttdoc">配置服务器参数 </div></div>
-<div class="ttc" id="class_unsi_1_1_instance_html_a5bbaa894c55cf41ed97607c89fa8f882"><div class="ttname"><a href="class_unsi_1_1_instance.html#a5bbaa894c55cf41ed97607c89fa8f882">Unsi.Instance.getRemoteAddress</a></div><div class="ttdeci">int getRemoteAddress()</div><div class="ttdoc">获取远程主机地址 </div></div>
 <div class="ttc" id="class_unsi_html_aad5997aaaa2d622f0ca57f8b24a51a7b"><div class="ttname"><a href="class_unsi.html#aad5997aaaa2d622f0ca57f8b24a51a7b">Unsi.start</a></div><div class="ttdeci">bool start()</div><div class="ttdoc">启动服务器 </div></div>
-<div class="ttc" id="class_unsi_1_1_instance_html_ac074684eadb5d0635400b97f90620a20"><div class="ttname"><a href="class_unsi_1_1_instance.html#ac074684eadb5d0635400b97f90620a20">Unsi.Instance.equals</a></div><div class="ttdeci">bool equals(Instance ins)</div><div class="ttdoc">测试两个实例是否同一个链接 </div></div>
-<div class="ttc" id="class_unsi_1_1_instance_html_aa5f6731b5f6f6b0bbfa0e9cf9d4748b4"><div class="ttname"><a href="class_unsi_1_1_instance.html#aa5f6731b5f6f6b0bbfa0e9cf9d4748b4">Unsi.Instance.send</a></div><div class="ttdeci">bool send(long sendid, byte [] buffer, int offset, int length)</div><div class="ttdoc">发送数据 </div></div>
-<div class="ttc" id="class_unsi_1_1_instance_html_ab8bf7a00752193cb08310d6de6b0bf61"><div class="ttname"><a href="class_unsi_1_1_instance.html#ab8bf7a00752193cb08310d6de6b0bf61">Unsi.Instance.clone</a></div><div class="ttdeci">Instance clone()</div><div class="ttdoc">克隆一个用于永久保存的实例对象 </div></div>
-<div class="ttc" id="class_unsi_1_1_instance_html_a97ddd546246f14d1f8a634b241f70dbb"><div class="ttname"><a href="class_unsi_1_1_instance.html#a97ddd546246f14d1f8a634b241f70dbb">Unsi.Instance.setTimeout</a></div><div class="ttdeci">bool setTimeout(int timeout)</div><div class="ttdoc">设置实例链接的超时时间 </div></div>
+<div class="ttc" id="class_unsi_html_a49f9c842922bf59fc35c8866d8a7482e"><div class="ttname"><a href="class_unsi.html#a49f9c842922bf59fc35c8866d8a7482e">Unsi.disconnect</a></div><div class="ttdeci">bool disconnect(long context)</div><div class="ttdoc">断开连接 </div></div>
+<div class="ttc" id="class_unsi_html_a6ca5700b140000252909fd78da6b2341"><div class="ttname"><a href="class_unsi.html#a6ca5700b140000252909fd78da6b2341">Unsi.clone</a></div><div class="ttdeci">long clone(long context)</div><div class="ttdoc">克隆实例句柄 </div></div>
+<div class="ttc" id="interface_async_output_html"><div class="ttname"><a href="interface_async_output.html">AsyncOutput</a></div><div class="ttdoc">异步输出接口 需要继承 </div><div class="ttdef"><b>Definition:</b> <a href="_async_output_8xcs_source.html#l00006">AsyncOutput.xcs:6</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/std/AsyncOutput.xcs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v1.1 Release</span>
+   </div>
+   <div id="projectbrief">项目介绍</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e3ca87bab28942003398a7ab6222efec.html">std</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">AsyncOutput.xcs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_async_output_8xcs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;@Declare </div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="interface_async_output.html">    6</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_async_output.html">AsyncOutput</a>{</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="interface_async_output.html#ad289a01e153c86490491578a8220c53a">dataDeparture</a>(<a class="code" href="interface_async_input.html">AsyncInput</a> input, <span class="keywordtype">long</span> context, <span class="keywordtype">long</span> bind, byte[] data, <span class="keywordtype">int</span> offset, <span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_async_output.html#a3863196a0085b3cae2ac7c1bcb5f70bf">deleteInstance</a>(<a class="code" href="interface_async_input.html">AsyncInput</a> input, <span class="keywordtype">long</span> context);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="interface_async_output.html#a664e72231f6feb46720302b074cf0cea">newInstance</a>(<a class="code" href="interface_async_input.html">AsyncInput</a> input, <a class="code" href="class_string.html">String</a> host, <span class="keywordtype">int</span> port, <span class="keywordtype">long</span> bind);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="interface_async_output.html#aa436f9a65986985f7d2c4f00a55265dd">getInstanceId</a>(<span class="keywordtype">long</span> context);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="interface_async_output.html#a30fdd442c12e9af0007866abbcf2fa77">cloneContext</a>(<span class="keywordtype">long</span> context);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_async_output.html#a920ba938802345608030a0c31525a2a5">releaseContext</a>(<span class="keywordtype">long</span> context);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="ttc" id="interface_async_output_html_a664e72231f6feb46720302b074cf0cea"><div class="ttname"><a href="interface_async_output.html#a664e72231f6feb46720302b074cf0cea">AsyncOutput.newInstance</a></div><div class="ttdeci">long newInstance(AsyncInput input, String host, int port, long bind)</div><div class="ttdoc">异步数据到达通知 </div></div>
+<div class="ttc" id="interface_async_output_html_a920ba938802345608030a0c31525a2a5"><div class="ttname"><a href="interface_async_output.html#a920ba938802345608030a0c31525a2a5">AsyncOutput.releaseContext</a></div><div class="ttdeci">void releaseContext(long context)</div><div class="ttdoc">释放克隆的句柄 </div></div>
+<div class="ttc" id="interface_async_input_html"><div class="ttname"><a href="interface_async_input.html">AsyncInput</a></div><div class="ttdoc">异步输入接口 需要继承 </div><div class="ttdef"><b>Definition:</b> <a href="_async_input_8xcs_source.html#l00006">AsyncInput.xcs:6</a></div></div>
+<div class="ttc" id="interface_async_output_html_aa436f9a65986985f7d2c4f00a55265dd"><div class="ttname"><a href="interface_async_output.html#aa436f9a65986985f7d2c4f00a55265dd">AsyncOutput.getInstanceId</a></div><div class="ttdeci">long getInstanceId(long context)</div><div class="ttdoc">获取实例ID </div></div>
+<div class="ttc" id="interface_async_output_html_a30fdd442c12e9af0007866abbcf2fa77"><div class="ttname"><a href="interface_async_output.html#a30fdd442c12e9af0007866abbcf2fa77">AsyncOutput.cloneContext</a></div><div class="ttdeci">long cloneContext(long context)</div><div class="ttdoc">克隆实例句柄 </div></div>
+<div class="ttc" id="interface_async_output_html_ad289a01e153c86490491578a8220c53a"><div class="ttname"><a href="interface_async_output.html#ad289a01e153c86490491578a8220c53a">AsyncOutput.dataDeparture</a></div><div class="ttdeci">bool dataDeparture(AsyncInput input, long context, long bind, byte[] data, int offset, int length)</div><div class="ttdoc">发送数据 </div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="interface_async_output_html_a3863196a0085b3cae2ac7c1bcb5f70bf"><div class="ttname"><a href="interface_async_output.html#a3863196a0085b3cae2ac7c1bcb5f70bf">AsyncOutput.deleteInstance</a></div><div class="ttdeci">void deleteInstance(AsyncInput input, long context)</div><div class="ttdoc">删除实例 </div></div>
+<div class="ttc" id="interface_async_output_html"><div class="ttname"><a href="interface_async_output.html">AsyncOutput</a></div><div class="ttdoc">异步输出接口 需要继承 </div><div class="ttdef"><b>Definition:</b> <a href="_async_output_8xcs_source.html#l00006">AsyncOutput.xcs:6</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

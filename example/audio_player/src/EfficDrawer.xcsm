@@ -1,5 +1,0 @@
-interface EfficDrawer{
-    bool create();
-    void drawWave(Canvas c);
-    void prepare(Canvas c, short [] data,  int rd, long play_start);
-};

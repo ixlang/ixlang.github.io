@@ -1,4 +1,21 @@
 var searchData=
 [
-  ['msg',['msg',['../mainpage_8xcs.html#a3e35bd3e9990a2d4894afa50e5c78560',1,'mainpage.xcs']]]
+  ['hasfocus',['HASFOCUS',['../class_q_x_core.html#affa85e9006343a51b12fb1df7af026fa',1,'QXCore']]],
+  ['hash',['Hash',['../class_q_x_variant.html#a28f2f93bd28f760845326d9c90cc47fe',1,'QXVariant']]],
+  ['height',['HEIGHT',['../class_q_x_core.html#af728b7647e0b8c49832983a31f9a2e9b',1,'QXCore']]],
+  ['help',['Help',['../class_q_x_message_box.html#a7e098ad46c1cddbe354093b8aebd2075',1,'QXMessageBox']]],
+  ['helprequest',['HelpRequest',['../class_q_x_event.html#ac2375fa0b4615a7cd8a270eab9f975f9',1,'QXEvent']]],
+  ['hidden',['HIDDEN',['../class_q_x_core.html#ad2c7dc4687506073960c4258d886eb7b',1,'QXCore']]],
+  ['hide',['Hide',['../class_q_x_event.html#aba7fcc955751c0d7657b6729575c479a',1,'QXEvent.Hide()'],['../class_q_x_core.html#a880aa621de35b132beb9557e43f00a77',1,'QXCore.HIDE()']]],
+  ['hidetoparent',['HideToParent',['../class_q_x_event.html#a3d07e779b74f38524dccc4c51b4af17b',1,'QXEvent']]],
+  ['highlight',['Highlight',['../class_color_role.html#ac068c24e50896f5cb5168836ebb7ed80',1,'ColorRole']]],
+  ['highlightedtext',['HighlightedText',['../class_color_role.html#a2b19735cfa86bb3fc8e4bf8d6eb6df13',1,'ColorRole']]],
+  ['highqualityantialiasing',['HighQualityAntialiasing',['../class_q_x_painter_1_1_render_hint.html#afa43ec1318ae4663dccc2e08a3d0594e',1,'QXPainter::RenderHint']]],
+  ['himage',['himage',['../class_q_x_image.html#a056d4e294ae90aa970242d379be9dfaf',1,'QXImage']]],
+  ['horizontal',['Horizontal',['../class_q_x_widget.html#ab42e49b7acf1f6a34241f49e6d10e990',1,'QXWidget']]],
+  ['horpattern',['HorPattern',['../class_q_x_painter_1_1_brush_style.html#af4fe8dd7215d0c533d68deef576cbd21',1,'QXPainter::BrushStyle']]],
+  ['hoverenter',['HoverEnter',['../class_q_x_event.html#af1598c97a6da4fb411762d22e5f5d7f4',1,'QXEvent']]],
+  ['hoverleave',['HoverLeave',['../class_q_x_event.html#a009d062630e98511f4e4641ba1f51ccd',1,'QXEvent']]],
+  ['hovermove',['HoverMove',['../class_q_x_event.html#ae6c99edd3e6f3b4dccff526b54ad6e7c',1,'QXEvent']]],
+  ['hpaint',['hpaint',['../class_q_x_painter.html#a9a30d172ccabb9ba4eba5c6a0fbb2860',1,'QXPainter']]]
 ];

@@ -1,6 +1,31 @@
 var searchData=
 [
+  ['background',['Background',['../class_color_role.html#a3d7d266be21ebcb669d1718ef225900e',1,'ColorRole']]],
+  ['backgroundmode',['BackgroundMode',['../class_q_x_painter_1_1_background_mode.html',1,'QXPainter']]],
+  ['base',['Base',['../class_color_role.html#a93e1a70d740d93d47247bb427bd36a71',1,'ColorRole']]],
   ['base64',['Base64',['../class_base64.html',1,'']]],
   ['base64_2excs',['Base64.xcs',['../_base64_8xcs.html',1,'']]],
-  ['bind',['bind',['../class_dgram_socket.html#ace53b11f2bc9ebf267032126d7bb09ea',1,'DgramSocket.bind()'],['../class_stream_socket.html#ace53b11f2bc9ebf267032126d7bb09ea',1,'StreamSocket.bind()']]]
+  ['bdiagpattern',['BDiagPattern',['../class_q_x_painter_1_1_brush_style.html#aa37cc825a4b0f4b96ce37cd4789dedda',1,'QXPainter::BrushStyle']]],
+  ['bind',['bind',['../class_dgram_socket.html#ace53b11f2bc9ebf267032126d7bb09ea',1,'DgramSocket.bind()'],['../class_stream_socket.html#ace53b11f2bc9ebf267032126d7bb09ea',1,'StreamSocket.bind()']]],
+  ['bitarray',['BitArray',['../class_q_x_variant.html#ad1673b0cc28891ff8933d9e2a7ab5063',1,'QXVariant']]],
+  ['bitmap',['Bitmap',['../class_q_x_variant.html#aa9ceba6733aa17e7334967174bb5f169',1,'QXVariant']]],
+  ['bitmapcursor',['BitmapCursor',['../class_q_x_object.html#a5a76d16f6d8fbb138eebbf657a8787e1',1,'QXObject']]],
+  ['blankcursor',['BlankCursor',['../class_q_x_object.html#abed455eb51539993dbbe8aa38f888c17',1,'QXObject']]],
+  ['bneed_5fdelloc',['bneed_delloc',['../class_q_x_painter.html#af0aa45835f54e44b113bd81b95559d4a',1,'QXPainter']]],
+  ['bool',['Bool',['../class_q_x_variant.html#a2cf740206ca6aafb9f953f2a1859c48c',1,'QXVariant']]],
+  ['bottom',['bottom',['../class_q_x_rect.html#a323a7064fba6e15e3e542e34fb19764e',1,'QXRect']]],
+  ['bottomtotop',['BottomToTop',['../class_q_x_widget.html#af23322d67e9d4c9ecfedd7d6a6d2ebb3',1,'QXWidget']]],
+  ['break_5fpoint_5fmark_5fid',['BREAK_POINT_MARK_ID',['../class_q_x_sci.html#aba1184209c99dffb9d4ae5d05283d351',1,'QXSci']]],
+  ['brighttext',['BrightText',['../class_color_role.html#a442be7862aeca2ed5fb5b5156b0ebc4c',1,'ColorRole']]],
+  ['brush',['Brush',['../class_q_x_variant.html#a4b3ad4845984158ed7c344448a5dcd7e',1,'QXVariant']]],
+  ['brushstyle',['BrushStyle',['../class_q_x_painter_1_1_brush_style.html',1,'QXPainter']]],
+  ['buffersetdata',['BUFFERSETDATA',['../class_q_x_core.html#a1f081385f560fbca3f4235eacfb525f1',1,'QXCore']]],
+  ['busycursor',['BusyCursor',['../class_q_x_object.html#a9fd03048c10a918059f66ceb6e593666',1,'QXObject']]],
+  ['button',['Button',['../class_color_role.html#ac3c065a987f4d8cd6133968cf3439d0d',1,'ColorRole']]],
+  ['buttonmask',['ButtonMask',['../class_q_x_message_box.html#a5e27a6c08f0fab9327a48aada5b15304',1,'QXMessageBox']]],
+  ['buttonsettext',['BUTTONSETTEXT',['../class_q_x_core.html#ace7335628f08d31557ea6af775d5b79a',1,'QXCore']]],
+  ['buttontext',['ButtonText',['../class_color_role.html#afe1a002fe43fbb768518c90885d9b2bb',1,'ColorRole']]],
+  ['bypassgraphicsproxywidget',['BypassGraphicsProxyWidget',['../class_q_x_widget.html#a64ab1a1881037534df02bdec48accc0c',1,'QXWidget']]],
+  ['bypasswindowmanagerhint',['BypassWindowManagerHint',['../class_q_x_widget.html#a43eb1a8037284f703fd981122e7b8455',1,'QXWidget']]],
+  ['bytearray',['ByteArray',['../class_q_x_variant.html#adc5d9927dd61c7f7b68e279453496b01',1,'QXVariant']]]
 ];
