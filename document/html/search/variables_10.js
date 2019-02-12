@@ -53,6 +53,7 @@ var searchData=
   ['qtsizepropertymanager',['qtSizePropertyManager',['../class_q_type.html#ae4a4497ec2db5c3bdf99803d09966dfa',1,'QType']]],
   ['qtstatusbar',['qtStatusBar',['../class_q_type.html#a5f5719432237b02b63ba7111e47593e0',1,'QType']]],
   ['qtstringpropertymanager',['qtStringPropertyManager',['../class_q_type.html#abff98dcb3834f72c62f0b83fa4cde1de',1,'QType']]],
+  ['qttablewidget',['qtTableWidget',['../class_q_type.html#a2a87f38d1aef1f9efa58cf2b65073024',1,'QType']]],
   ['qttimepropertymanager',['qtTimePropertyManager',['../class_q_type.html#a182bac2248cb5b85473c06e10cafe374',1,'QType']]],
   ['qttoolbar',['qtToolbar',['../class_q_type.html#a4bbf6531e43f646f68ce46f5dd88091d',1,'QType']]],
   ['qttreeview',['qtTreeView',['../class_q_type.html#a0132a8c76f0e95c597a2c7bc67b52ee6',1,'QType']]],

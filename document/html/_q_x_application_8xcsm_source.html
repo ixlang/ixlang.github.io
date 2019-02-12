@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/example/XStudio/qt5/widgets/QXApplication.xcsm 源文件</title>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/XStudio/qt5/widgets/QXApplication.xcsm 源文件</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v1.1 Release</span>
+   &#160;<span id="projectnumber">v1.5 Release</span>
    </div>
    <div id="projectbrief">项目介绍</div>
   </td>
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_cfafba98a580ce4b62f8a6fa96d7cbb0.html">example</a></li><li class="navelem"><a class="el" href="dir_70e0fdd3e867b2d8c145ac6a91e1bd4f.html">XStudio</a></li><li class="navelem"><a class="el" href="dir_4676be69caee5ba42025b9084878d123.html">qt5</a></li><li class="navelem"><a class="el" href="dir_0429eb8fd7528773df798bf9a8c31a44.html">widgets</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_735e24decaf1c49b6a1919196d463802.html">XStudio</a></li><li class="navelem"><a class="el" href="dir_bf5f207b5684b49bd4be31a45c20b08f.html">qt5</a></li><li class="navelem"><a class="el" href="dir_d764631b0f579dfcfd22963eb2f03413.html">widgets</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -168,12 +168,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QToolBar&quot;</span>)){</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_tool_bar.html">QXToolBar</a>(<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QFileSystemWatcher&quot;</span>)){</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_file_system_watcher.html">QXFileSystemWatcher</a>(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QTableWidget&quot;</span>)){</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_table_widget.html">QXTableWidget</a>(<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">return</span> nilptr;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QTreeWidget&quot;</span>)){</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_tree_view.html">QXTreeView</a>(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QFileSystemWatcher&quot;</span>)){</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_file_system_watcher.html">QXFileSystemWatcher</a>(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
 <div class="ttc" id="class_q_x_application_html_a13a43e6d814de94978c515cb084873b1"><div class="ttname"><a href="class_q_x_application.html#a13a43e6d814de94978c515cb084873b1">QXApplication.run</a></div><div class="ttdeci">void run()</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_application_8xcsm_source.html#l00009">QXApplication.xcsm:9</a></div></div>
 <div class="ttc" id="class_q_x_native_html_adc4b3fd5b05624dfe6705339748b8aab"><div class="ttname"><a href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">QXNative.nativehandle</a></div><div class="ttdeci">long nativehandle</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_native_8xcsm_source.html#l00003">QXNative.xcsm:3</a></div></div>
 <div class="ttc" id="class_q_x_widget_html"><div class="ttname"><a href="class_q_x_widget.html">QXWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_widget_8xcsm_source.html#l00006">QXWidget.xcsm:6</a></div></div>
@@ -199,7 +205,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="class_q_x_tool_bar_html"><div class="ttname"><a href="class_q_x_tool_bar.html">QXToolBar</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_tool_bar_8xcsm_source.html#l00004">QXToolBar.xcsm:4</a></div></div>
 <div class="ttc" id="class_q_x_core_html_ae163ec82eca4e889d870fdf7a068e17b"><div class="ttname"><a href="class_q_x_core.html#ae163ec82eca4e889d870fdf7a068e17b">QXCore.STYLESHEET</a></div><div class="ttdeci">static const int STYLESHEET</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00187">QXCore.xcsm:187</a></div></div>
 <div class="ttc" id="class_q_x_application_html_a40125f1f05c96682d0d9723530174dfd"><div class="ttname"><a href="class_q_x_application.html#a40125f1f05c96682d0d9723530174dfd">QXApplication.onCreateXObject</a></div><div class="ttdeci">Object onCreateXObject(long object, String objectClass)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_application_8xcsm_source.html#l00032">QXApplication.xcsm:32</a></div></div>
+<div class="ttc" id="class_q_x_tree_view_html"><div class="ttname"><a href="class_q_x_tree_view.html">QXTreeView</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_tree_view_8xcsm_source.html#l00001">QXTreeView.xcsm:1</a></div></div>
 <div class="ttc" id="class_q_x_application_html_a15485d02f8d409752467f2c701687320"><div class="ttname"><a href="class_q_x_application.html#a15485d02f8d409752467f2c701687320">QXApplication.setStyleSheet</a></div><div class="ttdeci">void setStyleSheet(String file)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_application_8xcsm_source.html#l00018">QXApplication.xcsm:18</a></div></div>
+<div class="ttc" id="class_q_x_table_widget_html"><div class="ttname"><a href="class_q_x_table_widget.html">QXTableWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_table_widget_8xcsm_source.html#l00004">QXTableWidget.xcsm:4</a></div></div>
 <div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
 <div class="ttc" id="class_q_x_file_system_watcher_html"><div class="ttname"><a href="class_q_x_file_system_watcher.html">QXFileSystemWatcher</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_file_system_watcher_8xcsm_source.html#l00004">QXFileSystemWatcher.xcsm:4</a></div></div>
 <div class="ttc" id="class_q_x_application_html_a558274a30374d7c258f1e5a470b520cc"><div class="ttname"><a href="class_q_x_application.html#a558274a30374d7c258f1e5a470b520cc">QXApplication.loadTranslator</a></div><div class="ttdeci">void loadTranslator(String file)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_application_8xcsm_source.html#l00028">QXApplication.xcsm:28</a></div></div>

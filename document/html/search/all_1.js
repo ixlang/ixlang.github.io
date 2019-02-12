@@ -30,7 +30,7 @@ var searchData=
   ['addpath',['addPath',['../class_q_x_file_system_watcher.html#ae8993424a579c992190dd33d8da65856',1,'QXFileSystemWatcher']]],
   ['addpermanentwidget',['addPermanentWidget',['../class_q_x_status_bar.html#afec0c1e06e898cbce09a1a6d8aef716c',1,'QXStatusBar']]],
   ['addperwidget',['ADDPERWIDGET',['../class_q_x_core.html#af2b448fbc0a5605aa6efd943daaf6078',1,'QXCore']]],
-  ['addproperty',['ADDPROPERTY',['../class_q_x_core.html#aa84846da34826e5da4fcd0f04118bb4c',1,'QXCore.ADDPROPERTY()'],['../class_q_x_property_browser_1_1_qt_variant_property_manager.html#ad267b14de4512a1f48b8bc22133c4588',1,'QXPropertyBrowser.QtVariantPropertyManager.addProperty()'],['../class_q_x_property_browser.html#ab21c2352bea34ba617c679e3a817d529',1,'QXPropertyBrowser.addProperty()']]],
+  ['addproperty',['addProperty',['../class_q_x_property_browser_1_1_qt_variant_property_manager.html#ad267b14de4512a1f48b8bc22133c4588',1,'QXPropertyBrowser.QtVariantPropertyManager.addProperty()'],['../class_q_x_property_browser.html#ab21c2352bea34ba617c679e3a817d529',1,'QXPropertyBrowser.addProperty()'],['../class_q_x_core.html#aa84846da34826e5da4fcd0f04118bb4c',1,'QXCore.ADDPROPERTY()']]],
   ['addpropertygroup',['addPropertyGroup',['../class_q_x_property_browser_1_1_qt_variant_property_manager.html#ad9e27f469e279c5ebc7f63b899bbeadb',1,'QXPropertyBrowser::QtVariantPropertyManager']]],
   ['addsep',['ADDSEP',['../class_q_x_core.html#a7b76f06dcc98f3f2ad39e731ec0df8b0',1,'QXCore']]],
   ['addseparator',['addSeparator',['../class_q_x_menu_bar.html#aad280670f760fcbf0eee2ca625c76225',1,'QXMenuBar']]],

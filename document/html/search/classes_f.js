@@ -61,6 +61,7 @@ var searchData=
   ['qxsci',['QXSci',['../class_q_x_sci.html',1,'']]],
   ['qxstatusbar',['QXStatusBar',['../class_q_x_status_bar.html',1,'']]],
   ['qxstyle',['QXStyle',['../class_q_x_style.html',1,'']]],
+  ['qxtablewidget',['QXTableWidget',['../class_q_x_table_widget.html',1,'']]],
   ['qxtoolbar',['QXToolBar',['../class_q_x_tool_bar.html',1,'']]],
   ['qxtreeview',['QXTreeView',['../class_q_x_tree_view.html',1,'']]],
   ['qxvariant',['QXVariant',['../class_q_x_variant.html',1,'']]],

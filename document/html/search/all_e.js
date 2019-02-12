@@ -18,6 +18,7 @@ var searchData=
   ['nodockwidgetfeatures',['NoDockWidgetFeatures',['../class_q_x_dock_widget.html#a250efeace6486331a8f791dddfe2d833',1,'QXDockWidget']]],
   ['nodropshadowwindowhint',['NoDropShadowWindowHint',['../class_q_x_widget.html#aa6b4e51126ad7bbd28c80646901f0e58',1,'QXWidget']]],
   ['noecho',['NoEcho',['../class_q_x_line_edit.html#a774b9d12a96393923e293ffd62dd3448',1,'QXLineEdit']]],
+  ['nofocus',['NoFocus',['../class_q_x_widget.html#a4332313d06638a3ffaa00986976f64f3',1,'QXWidget']]],
   ['noformatconversion',['NoFormatConversion',['../class_q_x_painter_1_1_image_conversion_flag.html#a860892627d456963678e400bf162c8a6',1,'QXPainter::ImageConversionFlag']]],
   ['noitemflags',['NoItemFlags',['../class_q_x_tree_view.html#a87a137df781b043b20cf61ca3db29ed3',1,'QXTreeView']]],
   ['nonclientareamousebuttondblclick',['NonClientAreaMouseButtonDblClick',['../class_q_x_event.html#ac32db0f34a8bdf93302532632689189e',1,'QXEvent']]],

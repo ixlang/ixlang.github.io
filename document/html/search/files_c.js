@@ -39,6 +39,7 @@ var searchData=
   ['qxsci_2excsm',['QXSci.xcsm',['../_q_x_sci_8xcsm.html',1,'']]],
   ['qxstatusbar_2excs',['QXStatusBar.xcs',['../_q_x_status_bar_8xcs.html',1,'']]],
   ['qxstyle_2excsm',['QXStyle.xcsm',['../_q_x_style_8xcsm.html',1,'']]],
+  ['qxtablewidget_2excsm',['QXTableWidget.xcsm',['../_q_x_table_widget_8xcsm.html',1,'']]],
   ['qxtoolbar_2excsm',['QXToolBar.xcsm',['../_q_x_tool_bar_8xcsm.html',1,'']]],
   ['qxtreeview_2excsm',['QXTreeView.xcsm',['../_q_x_tree_view_8xcsm.html',1,'']]],
   ['qxtypes_2excsm',['QXTypes.xcsm',['../_q_x_types_8xcsm.html',1,'']]],

@@ -17,6 +17,7 @@ var searchData=
   ['childremoved',['ChildRemoved',['../class_q_x_event.html#a8ab81281015e479224e0af46610dc9c4',1,'QXEvent']]],
   ['chkgetcheck',['CHKGETCHECK',['../class_q_x_core.html#a0e0eb741d51f0405b17ae5b522992199',1,'QXCore']]],
   ['chksetcheck',['CHKSETCHECK',['../class_q_x_core.html#a4db80874ba132d58ea955fb9973c4c52',1,'QXCore']]],
+  ['clickfocus',['ClickFocus',['../class_q_x_widget.html#a5afefb69d5f9f66c2bc19acefeff8666',1,'QXWidget']]],
   ['clipboard',['Clipboard',['../class_q_x_event.html#a22e99b503ab994688999ab4fa1396f53',1,'QXEvent']]],
   ['close',['Close',['../class_q_x_event.html#a3641d47a4e78c2584cb825c0ba8d776a',1,'QXEvent.Close()'],['../class_q_x_message_box.html#a3641d47a4e78c2584cb825c0ba8d776a',1,'QXMessageBox.Close()'],['../class_q_x_core.html#a241ad27f936a4185eb1fbcd0170de2dc',1,'QXCore.CLOSE()']]],
   ['closedhandcursor',['ClosedHandCursor',['../class_q_x_object.html#ae8a38a769719b76853aaccb2eab6c300',1,'QXObject']]],

@@ -14,6 +14,6 @@ var searchData=
   ['minimized',['minimized',['../class_q_x_widget.html#aaf58f8355723930cdfb026ba492b8083',1,'QXWidget']]],
   ['minimum',['minimum',['../class_q_x_progress_bar.html#a17c124c64514dd5c2a625fd53ff868e7',1,'QXProgressBar']]],
   ['mkdir',['mkdir',['../class_q_x_native.html#ae1dcd2f26e4718f559a2de7827c695b2',1,'QXNative']]],
-  ['modifyitemflags',['modifyItemFlags',['../class_q_x_tree_view.html#a26c67e1e3fdc9c8baabc614f72746637',1,'QXTreeView']]],
+  ['modifyitemflags',['modifyItemFlags',['../class_q_x_table_widget.html#a26c67e1e3fdc9c8baabc614f72746637',1,'QXTableWidget.modifyItemFlags()'],['../class_q_x_tree_view.html#a26c67e1e3fdc9c8baabc614f72746637',1,'QXTreeView.modifyItemFlags()']]],
   ['move',['move',['../class_q_x_widget.html#a7e67b4a2ada5392aeaa37daa52c3d3d5',1,'QXWidget']]]
 ];

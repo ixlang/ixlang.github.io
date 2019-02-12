@@ -58,7 +58,7 @@ var searchData=
   ['modified_5fsaveed_5fline',['MODIFIED_SAVEED_LINE',['../class_q_x_sci.html#add8467d2b0dc09d42332154c1737ebf1',1,'QXSci']]],
   ['modified_5funsaveed_5fline',['MODIFIED_UNSAVEED_LINE',['../class_q_x_sci.html#aab17b9c45c0ad07a477871423b9ec36c',1,'QXSci']]],
   ['modifiedchange',['ModifiedChange',['../class_q_x_event.html#a3517840df405a66fe876a682eff2fce2',1,'QXEvent']]],
-  ['modifyitemflags',['modifyItemFlags',['../class_q_x_tree_view.html#a26c67e1e3fdc9c8baabc614f72746637',1,'QXTreeView']]],
+  ['modifyitemflags',['modifyItemFlags',['../class_q_x_table_widget.html#a26c67e1e3fdc9c8baabc614f72746637',1,'QXTableWidget.modifyItemFlags()'],['../class_q_x_tree_view.html#a26c67e1e3fdc9c8baabc614f72746637',1,'QXTreeView.modifyItemFlags()']]],
   ['monoonly',['MonoOnly',['../class_q_x_painter_1_1_image_conversion_flag.html#ad4dda49c946bfecba3c696dfafa98a8d',1,'QXPainter::ImageConversionFlag']]],
   ['mousebuttondblclick',['MouseButtonDblClick',['../class_q_x_event.html#a5ed37bd9d0b207e7fceff1650f4f9d41',1,'QXEvent']]],
   ['mousebuttonpress',['MouseButtonPress',['../class_q_x_event.html#adcc66fbcf2904891880a6a61f1601297',1,'QXEvent']]],
