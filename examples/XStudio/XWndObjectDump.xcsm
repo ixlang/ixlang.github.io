@@ -18,14 +18,14 @@ class XWndObjectDump : QXDockWidget{
         btnUpdate = (QXPushButton)attachByName(new QXPushButton(), "btnUpdate");
         
         
-        setOnLayoutEventListener(new onLayoutEventListener(){
+        /*setOnLayoutEventListener(new onLayoutEventListener(){
                 void onResize(QXObject obj, int w, int h, int oldw, int oldh)override {
                     if (_listview != nilptr){
                         _listview.resize(w, h - 60);
                         btnUpdate.move(0, h - 55);
                     }
                 }
-        });
+        });*/
         
         btnUpdate.setOnClickListener(
         new onClickListener(){

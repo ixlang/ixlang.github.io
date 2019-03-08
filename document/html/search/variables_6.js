@@ -16,7 +16,7 @@ var searchData=
   ['focusin',['FocusIn',['../class_q_x_event.html#afed9d00f738daa53c49fc6a4418b21a4',1,'QXEvent']]],
   ['focusout',['FocusOut',['../class_q_x_event.html#ae180563e6fb51c2ebfff1366f77b5bea',1,'QXEvent']]],
   ['folder',['FOLDER',['../class_q_x_core.html#a67228e5520e6d0ba92f5eab9c395b27f',1,'QXCore']]],
-  ['font',['Font',['../class_q_x_variant.html#ae21effd19cf9b200c6871d9325592929',1,'QXVariant']]],
+  ['font',['Font',['../class_q_x_object.html#ae21effd19cf9b200c6871d9325592929',1,'QXObject.Font()'],['../class_q_x_variant.html#ae21effd19cf9b200c6871d9325592929',1,'QXVariant.Font()']]],
   ['fontchange',['FontChange',['../class_q_x_event.html#af77c6f8facfba2e58638a1a15bbf7117',1,'QXEvent']]],
   ['fontctor',['FONTCTOR',['../class_q_x_core.html#a478c8c1e5b890eb8b5cbaf682ba5cb08',1,'QXCore']]],
   ['fontptsize',['FONTPTSIZE',['../class_q_x_core.html#a1b3fce7aac7aadd91afaf7981a9eabc6',1,'QXCore']]],

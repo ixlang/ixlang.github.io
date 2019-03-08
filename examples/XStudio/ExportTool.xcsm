@@ -3,7 +3,7 @@
 
 class ExportTool : QXDialog{
 
-	QXLineEdit edtStaticLib ,nativefile, destfile, edtName, edtVersion;
+	QXLineEdit edtStaticLib ,nativefile, destfile, edtName, edtVersion, lelDescr, lblAuthor;
     QXComboBox cbbNative, cbbOs;
     QXPushButton stBrowser, nativeBrowser, btnEmpty, btnAdd , brwExport, btnExport, btnReadme, btnIcon;
     QXTreeView  structView;
@@ -182,6 +182,8 @@ class ExportTool : QXDialog{
         
         edtName = (QXLineEdit)attachByName(new QXLineEdit(), "edtName");
         edtVersion = (QXLineEdit)attachByName(new QXLineEdit(), "edtVersion");
+        lelDescr = (QXLineEdit)attachByName(new QXLineEdit(), "lelDescr");
+        lblAuthor = (QXLineEdit)attachByName(new QXLineEdit(), "lblAuthor");
         
         cbbNative = (QXComboBox)attachByName(new QXComboBox(), "cbbNative");
         cbbOs = (QXComboBox)attachByName(new QXComboBox(), "cbbOs");
@@ -199,7 +201,7 @@ class ExportTool : QXDialog{
         prgExport = (QXProgressBar)attachByName(new QXProgressBar(), "prgExport");
         
         stBrowser.setOnClickListener(new BrowserListener(edtStaticLib, false, "选择静态库", "X 静态链接库 (*.lix)"));
-        nativeBrowser.setOnClickListener(new BrowserListener(nativefile, false, "选择Native文件", "所有文件 (*.*)"));
+        nativeBrowser.setOnClickListener(new BrowserListener(nativefile, false, "选择Native文件", "Windows 动态链接库 (*.dll);;Unix/Linux 动态链接库文件 (*.so);;Darwin 动态链接库文件 (*.dylib);;所有文件 (*.*)"));
         
 		brwExport.setOnClickListener(new onClickListener(){
 			void onClick(QXObject obj, bool checked)override{
@@ -223,7 +225,7 @@ class ExportTool : QXDialog{
 				String file = QXFileDialog.getOpenFileName("添加图标", nilptr,  "PNG图像 (*.png)", ExportTool.this);
 				if (file != nilptr && file.length() > 0){
 					currentPackage.icon = file;
-                    btnIcon.setStyleSheet("#btnIcon{border-image:url(\"" + file + "\");}");
+                    btnIcon.setStyleSheetString("#btnIcon{border-image:url(\"" + file + "\");}");
 				}
             }
         });
@@ -296,6 +298,7 @@ class ExportTool : QXDialog{
         structView.setColumns(columns);
         
         structView.setColumnWidth(0, 300);
+        setWindowIcon("./res/toolbar/wizard.png");
     }
 
 	void updatepreview(){
@@ -309,9 +312,17 @@ class ExportTool : QXDialog{
     
     void onBuild(){
 		String outpath = destfile.getText();
+        String descrtxt = lelDescr.getText();
+        String author = lblAuthor.getText();
+        
         currentPackage.lixpath = edtStaticLib.getText();
         
         String libname = edtName.getText();
+        
+        if (descrtxt.length() == 0){
+			QXMessageBox.Critical("错误", "没有填写简要描述", QXMessageBox.Ok, QXMessageBox.Ok);
+			return ;
+        }
         
         if (libname.length() == 0){
 			QXMessageBox.Critical("错误", "没有填写包名", QXMessageBox.Ok, QXMessageBox.Ok);
@@ -342,8 +353,12 @@ class ExportTool : QXDialog{
 			ZipArchive xp = new ZipArchive();
 			
             JsonObject root = new JsonObject();
+            
             root.put("package", libname);
             root.put("version", version);
+            root.put("descr", descrtxt);
+            root.put("author", author);
+            
             xp.setComment(root.toString(true));
 			if (xp.create(fos)){
 				if (currentPackage.build(xp)){

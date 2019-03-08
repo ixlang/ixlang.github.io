@@ -33,13 +33,15 @@ class XWndClass : QXDockWidget{
     void onAttach(){
         _treeview = (QXTreeView)attachByName(new QXTreeView(), "tree_class");
         wndClass = this;
+        /*
+        改成layout之后就不需要resize了
         setOnLayoutEventListener(new onLayoutEventListener(){
                 void onResize(QXObject obj, int w, int h, int oldw, int oldh)override {
                     if (_treeview != nilptr){
                         _treeview.resize(w, h - 25);
                     }
                 }
-        });
+        });*/
 		_treeview.setOnTreeViewItemEvent(new onTreeViewItemEvent(){
 			void onItemExpanded(QXTreeView,long item)override{
 				XWndClass.this.expandLoad(item);
@@ -70,7 +72,7 @@ class XWndClass : QXDockWidget{
 			if (workspace.currentProject != nilptr){
 				source = workspace.currentProject.getFullPath(source);
 			}
-			if (QXNative.existsSystemFile(source) == false){
+			if (XPlatform.existsSystemFile(source) == false){
 				if (pos.lib == false){
 					QXMessageBox.Critical("文件不存在", "找不到文件:" + sources.getString(pos.source) + "该位置的文件已不存在.", QXMessageBox.Ok, QXMessageBox.Ok);
 				}
@@ -174,9 +176,14 @@ class XWndClass : QXDockWidget{
 			long root = hroot;
 			JsonObject obj = (JsonObject)objs.get(i);
 			int type = obj.getInt("type");
+            int libid = obj.getInt("lib");
             bool blib = obj.has("lib");
             if (blib && libs != nilptr){
-				root = libs[obj.getInt("lib")];
+				if (libid < libs.length){
+					root = libs[libid];
+                }else{
+					continue;
+                }
             }
 			long item = 0;
 			if (type == 34){

@@ -1,12 +1,13 @@
 var searchData=
 [
   ['ibeamcursor',['IBeamCursor',['../class_q_x_object.html#a9e80bf2e553d9143e4ba56d1cbf0540a',1,'QXObject']]],
-  ['icon',['Icon',['../class_q_x_variant.html#ab10d912d49fb035a23660f24091d5b48',1,'QXVariant']]],
+  ['icon',['Icon',['../class_q_x_object.html#ab10d912d49fb035a23660f24091d5b48',1,'QXObject.Icon()'],['../class_q_x_variant.html#ab10d912d49fb035a23660f24091d5b48',1,'QXVariant.Icon()']]],
   ['icondrag',['IconDrag',['../class_q_x_event.html#a3643dc806da2903686ca3cb750f38689',1,'QXEvent']]],
   ['icontextchange',['IconTextChange',['../class_q_x_event.html#a948e7cc78fef1a204f648dee5dbf377e',1,'QXEvent']]],
+  ['icrashhandler',['ICrashHandler',['../interface_i_crash_handler.html',1,'']]],
   ['ignore',['Ignore',['../class_q_x_message_box.html#ac212a594e0045c146602a5fe7889778f',1,'QXMessageBox']]],
   ['illegalargumentexception',['IllegalArgumentException',['../class_illegal_argument_exception.html',1,'IllegalArgumentException'],['../class_illegal_argument_exception.html#a78d56a4c7bf983b91dd52f32e1a8e2db',1,'IllegalArgumentException.IllegalArgumentException()'],['../class_illegal_argument_exception.html#a910a82314317b0c154668394baa96838',1,'IllegalArgumentException.IllegalArgumentException(String message)']]],
-  ['image',['Image',['../class_q_x_variant.html#aa1f0be423e29b20e230171570bbef0b0',1,'QXVariant']]],
+  ['image',['Image',['../class_q_x_object.html#aa1f0be423e29b20e230171570bbef0b0',1,'QXObject.Image()'],['../class_q_x_variant.html#aa1f0be423e29b20e230171570bbef0b0',1,'QXVariant.Image()']]],
   ['imageconversionflag',['ImageConversionFlag',['../class_q_x_painter_1_1_image_conversion_flag.html',1,'QXPainter']]],
   ['imgformat',['IMGFORMAT',['../class_q_x_core.html#a2f5ed128af9ae54a9626cd5b080e012e',1,'QXCore']]],
   ['imggetdata',['IMGGETDATA',['../class_q_x_core.html#ace6cb76497fdfcd3cb8b8ee5c8f0ea73',1,'QXCore']]],
@@ -46,9 +47,9 @@ var searchData=
   ['insertwidget',['insertWidget',['../class_q_x_status_bar.html#a429d114f44064705c4a8e8fd40833c86',1,'QXStatusBar.insertWidget()'],['../class_q_x_tool_bar.html#a098aafa4345ef42c75811b9de892d1c4',1,'QXToolBar.insertWidget()'],['../class_q_x_core.html#a18b486ab690d04052d39f1259049d822',1,'QXCore.INSERTWIDGET()']]],
   ['insmenu',['INSMENU',['../class_q_x_core.html#a21bbbee7e2fd3f4b3f8148068c6f7f7a',1,'QXCore']]],
   ['inssep',['INSSEP',['../class_q_x_core.html#a3fb8292f1f363afc1d3e7b89839e8b58',1,'QXCore']]],
-  ['int',['Int',['../class_q_x_variant.html#ac785fa5f6c9d9caef921a23b7183dc62',1,'QXVariant']]],
+  ['int',['Int',['../class_q_x_object.html#ac785fa5f6c9d9caef921a23b7183dc62',1,'QXObject.Int()'],['../class_q_x_variant.html#ac785fa5f6c9d9caef921a23b7183dc62',1,'QXVariant.Int()']]],
   ['intbitstodouble',['intBitsToDouble',['../class_math.html#a242f585a7ae86b736a6b069b0abfbd09',1,'Math.intBitsToDouble(int v)'],['../class_math.html#a482cfff85fae6dc319722d2249202dc3',1,'Math.intBitsToDouble(double v)']]],
-  ['invalid',['Invalid',['../class_q_x_variant.html#a65efee63c52e51c16d0950cdd615d1f3',1,'QXVariant']]],
+  ['invalid',['Invalid',['../class_q_x_object.html#a65efee63c52e51c16d0950cdd615d1f3',1,'QXObject.Invalid()'],['../class_q_x_variant.html#a65efee63c52e51c16d0950cdd615d1f3',1,'QXVariant.Invalid()']]],
   ['invaliditeratorexception',['InvalidIteratorException',['../class_invalid_iterator_exception.html',1,'InvalidIteratorException'],['../class_invalid_iterator_exception.html#a5713dd1cc81d736fec97a0278f6412d9',1,'InvalidIteratorException.InvalidIteratorException()'],['../class_invalid_iterator_exception.html#a454fdb4858cf17e8cb6b601f5c80bac4',1,'InvalidIteratorException.InvalidIteratorException(String message)']]],
   ['invertedappearance',['invertedAppearance',['../class_q_x_progress_bar.html#a478639993a7da04a370852d53f9d6268',1,'QXProgressBar']]],
   ['isactive',['isActive',['../class_q_x_widget.html#aa1f512ab0fcc05612f8e3d6a4664ce9a',1,'QXWidget']]],
@@ -88,7 +89,7 @@ var searchData=
   ['itemisusercheckable',['ItemIsUserCheckable',['../class_q_x_tree_view.html#ad7d44a64b762a5425fef2b07c65901c2',1,'QXTreeView']]],
   ['itemisusertristate',['ItemIsUserTristate',['../class_q_x_tree_view.html#a6a1df538bc5b8ba887d63c5f3f7b917e',1,'QXTreeView']]],
   ['itemneverhaschildren',['ItemNeverHasChildren',['../class_q_x_tree_view.html#a7e8c5215f176db66697f347d48d5449f',1,'QXTreeView']]],
+  ['iterator',['iterator',['../class_list.html#a6d73326f2404a3df917a7e4b951f9177',1,'List.iterator()'],['../class_map.html#ade5b7a4fecfe1b38d06f0c8dc825cf5c',1,'Map.iterator()']]],
   ['iterator',['Iterator',['../class_list_1_1_iterator.html',1,'List']]],
-  ['iterator',['Iterator',['../class_map_1_1_iterator.html',1,'Map']]],
-  ['iterator',['iterator',['../class_list.html#a6d73326f2404a3df917a7e4b951f9177',1,'List.iterator()'],['../class_map.html#ade5b7a4fecfe1b38d06f0c8dc825cf5c',1,'Map.iterator()']]]
+  ['iterator',['Iterator',['../class_map_1_1_iterator.html',1,'Map']]]
 ];

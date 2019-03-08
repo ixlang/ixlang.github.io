@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v1.5 Release</span>
+   &#160;<span id="projectnumber">v1.6 Release</span>
    </div>
    <div id="projectbrief">项目介绍</div>
   </td>
@@ -102,11 +102,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="keywordflow">return</span> openfile_dlg_string3_obj(<a class="code" href="class_q_x_core.html">QXCore</a>.<a class="code" href="class_q_x_core.html#a67228e5520e6d0ba92f5eab9c395b27f">FOLDER</a>, caption, defaultPath, optionNum, parent.nativehandle);</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    }</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;};</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_q_x_font_dialog.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_q_x_font_dialog.html">QXFontDialog</a> : <a class="code" href="class_q_x_native.html">QXNative</a>{</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_q_x_font_dialog.html#a31d5518605e8b082f8eb5161d6a02d15">   15</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_q_x_font_dialog.html#a31d5518605e8b082f8eb5161d6a02d15">getFontDialog</a>(<a class="code" href="class_string.html">String</a> caption, <a class="code" href="class_string.html">String</a> defaultfont, <a class="code" href="class_q_x_widget.html">QXWidget</a> parent){</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordflow">return</span> openfile_dlg_string3_obj(<a class="code" href="class_q_x_core.html">QXCore</a>.<a class="code" href="class_q_x_core.html#a09eb7d10e6682da12c65f6cb94800162">GETFONT</a>, caption, defaultfont, nilptr, parent.nativehandle);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
 <div class="ttc" id="class_q_x_native_html"><div class="ttname"><a href="class_q_x_native.html">QXNative</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_native_8xcsm_source.html#l00002">QXNative.xcsm:2</a></div></div>
 <div class="ttc" id="class_q_x_widget_html"><div class="ttname"><a href="class_q_x_widget.html">QXWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_widget_8xcsm_source.html#l00006">QXWidget.xcsm:6</a></div></div>
 <div class="ttc" id="class_q_x_core_html_ad40489190489a7903859a406da4c5cc6"><div class="ttname"><a href="class_q_x_core.html#ad40489190489a7903859a406da4c5cc6">QXCore.SAVE</a></div><div class="ttdeci">static const int SAVE</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00081">QXCore.xcsm:81</a></div></div>
+<div class="ttc" id="class_q_x_font_dialog_html"><div class="ttname"><a href="class_q_x_font_dialog.html">QXFontDialog</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_file_dialog_8xcsm_source.html#l00014">QXFileDialog.xcsm:14</a></div></div>
+<div class="ttc" id="class_q_x_core_html_a09eb7d10e6682da12c65f6cb94800162"><div class="ttname"><a href="class_q_x_core.html#a09eb7d10e6682da12c65f6cb94800162">QXCore.GETFONT</a></div><div class="ttdeci">static const int GETFONT</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00324">QXCore.xcsm:324</a></div></div>
 <div class="ttc" id="class_q_x_core_html_a47ba2f5680b7700c97b81a636bc38916"><div class="ttname"><a href="class_q_x_core.html#a47ba2f5680b7700c97b81a636bc38916">QXCore.OPEN</a></div><div class="ttdeci">static const int OPEN</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00080">QXCore.xcsm:80</a></div></div>
 <div class="ttc" id="class_q_x_file_dialog_html_a2f0015a6458acaa8766c3802b1529074"><div class="ttname"><a href="class_q_x_file_dialog.html#a2f0015a6458acaa8766c3802b1529074">QXFileDialog.getSaveFileName</a></div><div class="ttdeci">static String getSaveFileName(String caption, String defaultPath, String pattern, QXWidget parent)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_file_dialog_8xcsm_source.html#l00006">QXFileDialog.xcsm:6</a></div></div>
+<div class="ttc" id="class_q_x_font_dialog_html_a31d5518605e8b082f8eb5161d6a02d15"><div class="ttname"><a href="class_q_x_font_dialog.html#a31d5518605e8b082f8eb5161d6a02d15">QXFontDialog.getFontDialog</a></div><div class="ttdeci">static String getFontDialog(String caption, String defaultfont, QXWidget parent)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_file_dialog_8xcsm_source.html#l00015">QXFileDialog.xcsm:15</a></div></div>
 <div class="ttc" id="class_q_x_core_html"><div class="ttname"><a href="class_q_x_core.html">QXCore</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00001">QXCore.xcsm:1</a></div></div>
 <div class="ttc" id="class_q_x_core_html_a67228e5520e6d0ba92f5eab9c395b27f"><div class="ttname"><a href="class_q_x_core.html#a67228e5520e6d0ba92f5eab9c395b27f">QXCore.FOLDER</a></div><div class="ttdeci">static const int FOLDER</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00092">QXCore.xcsm:92</a></div></div>
 <div class="ttc" id="class_q_x_file_dialog_html"><div class="ttname"><a href="class_q_x_file_dialog.html">QXFileDialog</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_file_dialog_8xcsm_source.html#l00002">QXFileDialog.xcsm:2</a></div></div>

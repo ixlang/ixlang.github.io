@@ -2,7 +2,7 @@ var searchData=
 [
   ['has',['has',['../class_json_object.html#aa1503cdd008c9d4fc8b86262aa0ed7cc',1,'JsonObject']]],
   ['hasfocus',['hasFocus',['../class_q_x_widget.html#acbfaf08686b51f8772f88625a3b269b1',1,'QXWidget.hasFocus()'],['../class_q_x_core.html#affa85e9006343a51b12fb1df7af026fa',1,'QXCore.HASFOCUS()']]],
-  ['hash',['Hash',['../class_q_x_variant.html#a28f2f93bd28f760845326d9c90cc47fe',1,'QXVariant']]],
+  ['hash',['Hash',['../class_q_x_object.html#a28f2f93bd28f760845326d9c90cc47fe',1,'QXObject.Hash()'],['../class_q_x_variant.html#a28f2f93bd28f760845326d9c90cc47fe',1,'QXVariant.Hash()']]],
   ['hasnext',['hasNext',['../class_list_1_1_iterator.html#a634d758e1811c32295f5665e4f8a0178',1,'List.Iterator.hasNext()'],['../class_map_1_1_iterator.html#a634d758e1811c32295f5665e4f8a0178',1,'Map.Iterator.hasNext()']]],
   ['hasprevious',['hasPrevious',['../class_list_1_1_iterator.html#a0bf831f46c2f7ea955007f59d6fdac2c',1,'List.Iterator.hasPrevious()'],['../class_map_1_1_iterator.html#a0bf831f46c2f7ea955007f59d6fdac2c',1,'Map.Iterator.hasPrevious()']]],
   ['height',['HEIGHT',['../class_q_x_core.html#af728b7647e0b8c49832983a31f9a2e9b',1,'QXCore.HEIGHT()'],['../class_q_x_image.html#a822ae85493a742654ba563619492b26a',1,'QXImage.height()'],['../class_q_x_rect.html#a822ae85493a742654ba563619492b26a',1,'QXRect.height()'],['../class_q_x_widget.html#a822ae85493a742654ba563619492b26a',1,'QXWidget.height()']]],

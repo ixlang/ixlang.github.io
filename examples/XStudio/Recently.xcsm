@@ -18,7 +18,7 @@ class Recently{
 	JsonObject recently; 
     
 	String getRecentlyPath(){
-		String file = QXNative.getAppDirectory();
+		String file = XPlatform.getAppDirectory();
 		return String.formatPath(file.appendPath("config").appendPath("recently.prop"), false);
 	}
     
@@ -163,11 +163,11 @@ class Recently{
     }
     
     static bool isFirstRun(){
-		return false == QXNative.existsSystemFile(recent.getRecentlyPath());
+		return false == XPlatform.existsSystemFile(recent.getRecentlyPath());
     }
     
     static void mkFirstFile(){
-		long fp = QXNative.openSystemFile(recent.getRecentlyPath(), "w");
+		long fp = XPlatform.openSystemFile(recent.getRecentlyPath(), "w");
         _system_.closeFile(fp);
     }
 };

@@ -361,6 +361,11 @@ class XWorkspace : QXMdiArea{
         
     void doOpen(){
 		String file = QXFileDialog.getOpenFileName("打开文件", nilptr,  "X 项目(*.xprj);;X 模块源文件(*.xcs *.xcsm);;Qt UI文件(*.ui);;X 模块源文件(*.xcs *.xcsm);;Make File(makefile);;C/C++ 源文件(*.cpp *.c *.cc *.cxx *.hpp *.h *.mm);;html 网页(*.htm *.html);;纯文本文件 (*.txt);;其他文件 (*.*)", this);
+		openFile(file);
+    }
+    
+    
+    void openFile(String file){
 		if (file != nilptr && file.length() > 0){
 			String exts = file.findExtension();
 			
@@ -370,7 +375,7 @@ class XWorkspace : QXMdiArea{
 				loadProject(file);
 			}
 			updateDocumentStatus();
-		}
+		}    
     }
     
     bool createProject(){
@@ -399,6 +404,7 @@ class XWorkspace : QXMdiArea{
             wnd.close();
         }
     }
+    
     QXWidget currentSubWindow()override{
 		QXWidget win = super.currentSubWindow();
         if (win == indexPage || win == nilptr){
@@ -406,7 +412,7 @@ class XWorkspace : QXMdiArea{
         }
         return win;
     }
-    
+        
     void saveFile(){
 		try{
 			XSourceEditor wnd = (XSourceEditor)currentSubWindow();
@@ -515,6 +521,11 @@ class XWorkspace : QXMdiArea{
         return bSaveModified;
     }
     
+    void cleanup(){
+        if (currentProject != nilptr){
+            cleanup_project(_builder);
+        }
+    }
     void build(){
         if (currentProject != nilptr){
 			if (Setting.isAutoSave()){
@@ -556,6 +567,20 @@ class XWorkspace : QXMdiArea{
                 stopRun();
 			}
 			currentProject.build(_builder, l, params);
+        }
+    }
+    
+    void cleanup_project(IBuilder _builder){
+        if (currentProject != nilptr){
+			firstBuild = true;
+			if (isDebugging() || _run_thread != nilptr){
+				int rt = QXMessageBox.Question("注意", "程序正在运行, 是否关闭并继续?", QXMessageBox.Ok | QXMessageBox.Cancel, QXMessageBox.Cancel);
+				if (rt == QXMessageBox.Cancel){
+					return ;
+				}
+                stopRun();
+			}
+			currentProject.cleanup(_builder);
         }
     }
     
@@ -718,6 +743,7 @@ class XWorkspace : QXMdiArea{
 			findDlg.setDefaultFindText(text);
 		}
 		findDlg.setActive(true);
+        
 		return ;
     }
 
@@ -736,7 +762,12 @@ class XWorkspace : QXMdiArea{
 		if (currentProject != nilptr){
 			InputDialog.requestInput(new InputDialog.onInputListener(){
 				bool onInputOk(String text)override{
-					currentProject.saveAsTemplate(tempName, text);
+					bool b = currentProject.saveAsTemplate(tempName, text);
+                    ProgressView pv = ProgressView.showWait(-1);
+                    pv.centerScreen();
+                    pv.showResult(true,b);
+                    pv.setTitleText(b ? "已存为模板" : "保存失败");
+                    pv.dismissAfter(1000);
 					return true;
 				}
 				bool onInputCancel()override{
@@ -807,46 +838,49 @@ class XWorkspace : QXMdiArea{
         }
         return false;
     }
+    
+    
+    InputDialog.onInputListener remotedbglistener = new InputDialog.onInputListener(){
+		String defaultaddress = "127.0.0.1:23326";
+		bool onInputOk(String text)override{
+			int spf = text.indexOf(':');
+			if (spf < 1){
+				QXMessageBox.Critical("错误", "输入了不正确的地址", QXMessageBox.Ok, QXMessageBox.Ok);
+				return false;
+			}
+			
+			String ip = text.substring(0, spf);
+			int port = text.substring(spf + 1, text.length()).parseInt();
+
+			if (port <=0 || port >= 65535){
+				QXMessageBox.Critical("提示", "端口范围错误0~65535", QXMessageBox.Ok, QXMessageBox.Ok);
+				return false;
+			}
+			defaultaddress = text;
+			connectRemoteDebug(ip, port);
+			return true;
+		}
+		bool onInputCancel()override{
+			return true;
+		}
+		String getTitle()override{
+			return "TCP/IP 远程调试";
+		}
+		String getTips()override{
+			return "输入目标地址:(格式 IP:PORT)";
+		}
+		String getDefault()override{
+			return defaultaddress;
+		}
+	};
+    
     void remoteDebug(){
 		if (_debugThread != nilptr){
 			QXMessageBox.Critical("注意", "调试器正忙, 请稍候再试", QXMessageBox.Ok, QXMessageBox.Ok);
 			return ;
 		}
         
-		InputDialog.requestInput(new InputDialog.onInputListener(){
-			bool onInputOk(String text)override{
-				int spf = text.indexOf(':');
-				if (spf < 1){
-					QXMessageBox.Critical("错误", "输入了不正确的地址", QXMessageBox.Ok, QXMessageBox.Ok);
-					return false;
-				}
-                
-                String ip = text.substring(0, spf);
-				int port = text.substring(spf + 1, text.length()).parseInt();
-	
-				if (port <=0 || port >= 65535){
-					QXMessageBox.Critical("提示", "端口范围错误0~65535", QXMessageBox.Ok, QXMessageBox.Ok);
-					return false;
-				}
-				
-				connectRemoteDebug(ip, port);
-				return true;
-			}
-			bool onInputCancel()override{
-				return true;
-			}
-			String getTitle()override{
-				return "TCP/IP 远程调试";
-			}
-			String getTips()override{
-				return "输入目标地址:(格式 IP:PORT)";
-			}
-			String getDefault()override{
-				return "127.0.0.1:23326";
-			}
-		});
-        
-
+		InputDialog.requestInput(remotedbglistener);
     }
     
     void runDebug(){
@@ -870,8 +904,11 @@ class XWorkspace : QXMdiArea{
     void debugRun(){
 		if (isDebugging()){
 			debuggee.continuerun(ThreadManager.currentThreadId);
-        }else{
-			if (_run_thread == nilptr && (firstBuild == false || saveAllFile())){
+        }else
+        if (currentProject != nilptr){
+			String target = currentProject.getOutputTarget();
+            
+			if (_run_thread == nilptr && (firstBuild == false || saveAllFile() || (XPlatform.existsSystemFile(target) == false))){
 				build_project(_builder, new BuildListener(){
 					void onBuild(bool b){
 						runDebug();
@@ -883,7 +920,7 @@ class XWorkspace : QXMdiArea{
         }
     }
     
-    void Run(){
+    void runApp(){
 		synchronized(runThreadLock){
 			if (_run_thread == nilptr){
 				if (currentProject != nilptr){
@@ -892,13 +929,29 @@ class XWorkspace : QXMdiArea{
 							XWorkspace.updateRunStatus(true);
 							XWorkspace.this.currentProject.Run(XWorkspace.this._builder);
 							XWorkspace.this._run_thread = nilptr;
-                            XWorkspace.updateRunStatus(false);
+							XWorkspace.updateRunStatus(false);
 						}
 					};
 					_run_thread.start();
 				}
 			}
 		}
+    }
+    
+    void Run(){
+        if (currentProject != nilptr){
+			String target = currentProject.getOutputTarget();
+            
+			if (_run_thread == nilptr && (firstBuild == false || saveAllFile() || (XPlatform.existsSystemFile(target) == false))){
+				build_project(_builder, new BuildListener(){
+					void onBuild(bool b){
+						runApp();
+					}
+				}, nilptr);
+			}else{
+				runApp();
+			}
+        }
     }
     
     static const int NOTIFY_DEBUG_START = 0x100;
@@ -969,6 +1022,28 @@ class XWorkspace : QXMdiArea{
 				QXMessageBox.Critical("注意", "目标程序不支持调试,请在[项目]->[属性]->[编译选项]中开启调试后重新编译", QXMessageBox.Ok, QXMessageBox.Ok);
             break;
         }
+	}
+    
+    void test(){
+
+    }
+
+	void overrideFunction(){
+        XSourceEditor wnd = (XSourceEditor)currentSubWindow();
+        if (wnd != nilptr){
+            wnd.overrideObject(wnd._sci.currentPosition());
+        }
+    }
+    
+	XIntelliSense.XIntelliResult [] XISQueryM(String sourcePath,int line){
+		synchronized(this){
+			if (currentProject != nilptr){
+				if (currentProject.intelliSense != nilptr){
+					return currentProject.intelliSense.getIntelliSenseObjectM(sourcePath, line);
+				}
+			}
+		}
+		return nilptr;
 	}
     
 	XIntelliSense.XIntelliResult [] XISQuery(String sourcePath,int line,String keyWord){

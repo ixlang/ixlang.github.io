@@ -442,6 +442,6 @@ var searchData=
   ['keyboardlayoutchange',['KeyboardLayoutChange',['../class_q_x_event.html#a70ae673773c689435cde5accb1358de7',1,'QXEvent']]],
   ['keypress',['KeyPress',['../class_q_x_event.html#a4b7f3134e1bd87b9519255532cdfb293',1,'QXEvent']]],
   ['keyrelease',['KeyRelease',['../class_q_x_event.html#a1c87fb04abba217168cae9853a7ea343',1,'QXEvent']]],
-  ['keysequence',['KeySequence',['../class_q_x_variant.html#acb8f03a14d28bde9cd7b4f155e0904d5',1,'QXVariant']]],
+  ['keysequence',['KeySequence',['../class_q_x_object.html#acb8f03a14d28bde9cd7b4f155e0904d5',1,'QXObject.KeySequence()'],['../class_q_x_variant.html#acb8f03a14d28bde9cd7b4f155e0904d5',1,'QXVariant.KeySequence()']]],
   ['keywordset_5fmax',['KEYWORDSET_MAX',['../class_q_x_sci.html#ae4bd7e26e01d4e74d294725815590423',1,'QXSci']]]
 ];

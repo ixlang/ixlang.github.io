@@ -1,6 +1,7 @@
 //xlang Source, Name:XLogcat.xcsm 
 //Date: Fri Sep 11:41:18 2018 
 
+// log 由于使用了QTreeWidget 所以能处理的数据非常有限 10万行就卡的不行
 
 class XLogcatWnd : QXDockWidget{
     QXTreeView filterlist;
@@ -10,6 +11,8 @@ class XLogcatWnd : QXDockWidget{
     ContextMenu _contextMenu = new ContextMenu();
     static XLogcatWnd logcatWnd;
     static const int LOGCAT_INFO_NOTIFY = 2;
+    static int logcat_maxitems = 10000;
+    
     QXCheckBox chkAutoScroll;
     Filter currentFilter;
     long allRoot;
@@ -67,7 +70,7 @@ class XLogcatWnd : QXDockWidget{
             FILTER_MSG = 4,
             FILTER_LEVEL = 8;
             
-        Vector<Logcat> logcats = new Vector<Logcat>();
+        List<Logcat> logcats = new List<Logcat>();
         
         bool filter(Logcat log){
 			if (type == 0){
@@ -98,10 +101,13 @@ class XLogcatWnd : QXDockWidget{
             
             logcats.add(log);
 
+			while (logcats.size() > logcat_maxitems){
+				logcats.remove(logcats.iterator());
+            }
             return true;
         }
         
-        Vector<Logcat> getLogs(){
+        List<Logcat> getLogs(){
 			return logcats;
         }
         
@@ -110,8 +116,8 @@ class XLogcatWnd : QXDockWidget{
         }
     };
     
-    Vector<Logcat> logcat_list = new Vector<Logcat>();
-    Vector<Logcat> prepare_list = new Vector<Logcat>();
+    List<Logcat> logcat_list = new List<Logcat>();
+    List<Logcat> prepare_list = new List<Logcat>();
     
     Map<String, Filter> filter_list = new Map<String, Filter>();
     
@@ -198,22 +204,25 @@ class XLogcatWnd : QXDockWidget{
 		 synchronized(prepare_list){
 			int c = prepare_list.size();
             
-			for (int i = 0; i < c; i++){
-				Logcat log = prepare_list.get(i);
-                
+            List.Iterator<Logcat> iter = prepare_list.iterator();
+            
+            while (iter.hasNext()){
+				Logcat log = iter.next();
+            
                 logcat_list.add(log);
                 updateFilter(log);
                 
+                while (logcat_list.size() > logcat_maxitems){
+					logcat_list.remove(logcat_list.iterator());
+                }
 				if (allRoot != 0){
 					filterlist.setItemText(allRoot , 1 , "" + logcat_list.size());
 				}
                 if (currentFilter == nilptr){
 					addToList(log);
                 }
-            }
-            
+            }            
             prepare_list.clear();
-
 		 }
 	}
     
@@ -225,8 +234,28 @@ class XLogcatWnd : QXDockWidget{
         }
         return "UNKNOW";
     }
+    
+    static void setMaxItems(int maxitem){
+		if (maxitem > 0){
+			logcat_maxitems = maxitem;
+        }else{
+			QXMessageBox.Critical("注意","Logcat最大记录数为0~10000.",QXMessageBox.Ok,QXMessageBox.Ok);
+        }
+        
+        if (logcat_maxitems > 10000){
+			logcat_maxitems = 10000;
+            QXMessageBox.Critical("注意","Logcat最大记录数为0~10000.",QXMessageBox.Ok,QXMessageBox.Ok);
+        }
+    }
+    
     void addToList(Logcat log){
 		long item = logcatlist.addItem(nilptr, log.time);
+        while (logcatlist.getTopLevelCount() > logcat_maxitems){
+			long ritem = logcatlist.getTopItem(0);
+            if (ritem != 0){
+				logcatlist.removeItem(ritem);
+            }
+        }
         logcatlist.setItemText(item, 3, getLevel(log.level));
         logcatlist.setItemText(item, 2, log.thread);
         logcatlist.setItemText(item, 1, "-");
@@ -245,7 +274,7 @@ class XLogcatWnd : QXDockWidget{
         filterlist = (QXTreeView)attachByName(new QXTreeView(), "filterlist");
         logcatlist = (QXTreeView)attachByName(new QXTreeView(), "logList");
        
-        setOnLayoutEventListener(new onLayoutEventListener(){
+        /*setOnLayoutEventListener(new onLayoutEventListener(){
                 void onResize(QXObject obj, int w, int h, int oldw, int oldh)override {
                     if (filterlist != nilptr){
                         filterlist.resize(160, h - 80);
@@ -264,7 +293,7 @@ class XLogcatWnd : QXDockWidget{
 						chkAutoScroll.move(5, h - 46);
                     }
                 }
-        });
+        });*/
         
         String [] fcolumns = {"过滤器", "数量"};
         filterlist.setColumns(fcolumns);
@@ -338,11 +367,13 @@ class XLogcatWnd : QXDockWidget{
 		}
     }
     
-    void loadLogcat(Vector<Logcat> logcats){
+    void loadLogcat(List<Logcat> logcats){
 		logcatlist.clear();
-		for (int i = 0; i < logcats.size(); i++){
-			addToList(logcats.get(i));
-		}
+        
+        List.Iterator<Logcat> iter = logcats.iterator();
+        while (iter.hasNext()){
+			addToList(iter.next());
+        }
     }
     
     void updateFilterList(){

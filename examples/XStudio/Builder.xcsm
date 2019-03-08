@@ -24,11 +24,11 @@ class Builder : IBuilder{
                 fullCommand = fullCommand + (args[i] + " ");
             }
             
-			output.output(QXNative.converPlatformCharSetTo(fullCommand) + "\n");
+			output.output(XPlatform.converPlatformCharSetTo(fullCommand) + "\n");
             
-            buildProcess = new Process(QXNative.converToPlatformCharSet(compilerPath), args);
+            buildProcess = new Process(XPlatform.converToPlatformCharSet(compilerPath), args);
             
-            buildProcess.setWorkDirectory(QXNative.converToPlatformCharSet(workDir));
+            buildProcess.setWorkDirectory(XPlatform.converToPlatformCharSet(workDir));
             
             try{
                 if (buildProcess.create(false, true, false, false)){
@@ -53,23 +53,27 @@ class Builder : IBuilder{
 									lines ="";
                                 }
                                 
-                                output.output(QXNative.converPlatformCharSetTo(szOut));
+                                output.output(XPlatform.converPlatformCharSetTo(szOut));
                             }
                         }
                         
                     }catch(Exception e){
                      
                     }
-                    output.output(QXNative.converPlatformCharSetTo(lines));
+                    output.output(XPlatform.converPlatformCharSetTo(lines));
                 }
             }catch(Exception e){
                 String str = e.getMessage();
-                output.output("错误:" + new String(str.getBytes(), "CP936"));
+                if (_system_.getPlatformId() == 0){
+					str = new String(str.getBytes(), "GB18030//IGNORE");
+                    compilerPath = new String(compilerPath.getBytes(), "GB18030//IGNORE");
+                }
+                output.output("运行编译器时发生错误:\n[" + compilerPath + "]" + str);
             }
             buildProcess = nilptr;
         }
         
-        return QXNative.converPlatformCharSetTo(allInfo);
+        return XPlatform.converPlatformCharSetTo(allInfo);
     }
     
     void OutputText(String text)override{

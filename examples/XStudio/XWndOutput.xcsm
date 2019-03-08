@@ -2,9 +2,12 @@
 class XWndOutput: QXDockWidget{
     QXSci _sci;
     static const long APPENTEVENTID = 1;
-    Vector<String> outputList = new Vector<String>();
+    List<String> outputList = new List<String>();
+    Object outputlock = new Object();
+    static bool outputInFocus = false;
     static XWndOutput outputWnd;
-    Timer urlmon = new Timer();
+    Thread mergeThread = nilptr;
+    //Timer urlmon = new Timer();
     bool sciisHand = false;
     
 	Pattern url_match = new Pattern("((http[s]{0,1}|ftp)://[a-zA-Z0-9\\.\\-]" + 
@@ -15,10 +18,15 @@ class XWndOutput: QXDockWidget{
         outputWnd.output(text);
     }
     void output(String text){
-        synchronized(outputList){
+
+        synchronized(outputlock){
             outputList.add(text);
+			if (mergeThread == nilptr){
+				//this.Notify(APPENTEVENTID);
+                processOutput();
+			}
         }
-        this.Notify(APPENTEVENTID);
+
     }
     
     void clear(bool focus){
@@ -26,22 +34,108 @@ class XWndOutput: QXDockWidget{
         raise();
     }
     
+    
+    void reconfig(){
+		syntaxForOutput();
+    }
     void appendText(String info){
         _sci.appendText(info);
     }
-    
-    void onNotification(long eventid){        
-        synchronized(outputList){
-            for (int i =0; i < outputList.size(); i++){
-                String info = outputList.get(i);
-                _sci.appendText(info);
-            }
-            outputList.clear();
-        }
         
-        _sci.gotoPos(_sci.getLength());
+    /**
+		这里用到一个延迟加载的算法， LOG可能会输出上百万行， 高频率连续不断的刷新造成SCI无法及时处理，导致界面停止响应。
+        因此用一个单独的线程来对琐碎的log文本进行合并
+        但是合并时间不能太久，否则会造成输出卡顿
+        
+        所以合并的时候需要计算合并的行数 然后得出合并花费的时间， 既刷新间隔，达到阈值后再显示，
+        阈值算法 
+        阈值 = 显示所用时间 + 50毫秒 + 行数 / 100000 * 5 毫秒
+        
+        经测试， 能有效处理百万行级别的log输出
+        
+        滚动算法， 显示的最顶端行 + 可显示的行 如果小于最后行 说明被人为向上拉了， 则停止自动滚动， 反之自动滚动
+    */
+    void processOutput(){
+		mergeThread = new Thread(){
+			void run(){
+				List<String> tmplist = nilptr;
+				
+				synchronized(outputlock){
+					tmplist = outputList;
+					outputList = new List<String>();
+				}
+				
+                int interval = 50;
+                
+				while(true){
+					
+					String finalstr = "";
+					List.Iterator<String> iter = tmplist.iterator();
+					
+                    while (iter.hasNext()){
+						long start = _system_.currentTimeMillis();
+						int mgcount = 0;
+                        
+						while (iter.hasNext()){
+							String str = iter.next();
+							finalstr = finalstr + str;
+                            
+							mgcount++;
+                            
+                            if (mgcount > interval){
+								mgcount = 0;
+								long curtime = _system_.currentTimeMillis();
+								if (curtime - start > interval){
+									break;
+								}
+                            }
+						}
+						
+						runOnUi(new Runnable(){
+							String appstr = finalstr;
+							void run()override{
+								long displaytime = _system_.currentTimeMillis();
+								int topline = _sci.getFirstVisibleLine();
+                                int scrlines = _sci.getLinesOfDisplay();
+                                
+                                topline += scrlines;
+                                bool tobottom = true;
+                                if (topline < _sci.countOfLine()){
+									tobottom = false;
+                                }
+								_sci.appendText(appstr);
+                                int cutcountline = _sci.countOfLine();
+                                
+                                if (tobottom){
+									_sci.setFirstVisibleLine(cutcountline - scrlines);
+                                }
+                                
+                                displaytime = _system_.currentTimeMillis() - displaytime;
+                                
+								interval = displaytime + 50 + (cutcountline / 100000) * 5;
+							}
+						
+						});
+						
+						finalstr = "";
+                    }
+                    
+                    Thread.sleep(100);
+                    
+					synchronized(outputlock){
+						if (outputList.size() == 0){
+							mergeThread = nilptr;
+							break;
+						}else{
+							tmplist = outputList;
+							outputList = new List<String>();
+						}
+					}
+				}
+			}
+		};
+		mergeThread.start();
     }
-    
     
     void syntaxForOutput(){
 		if (Setting.isDarkStyle()){
@@ -49,7 +143,7 @@ class XWndOutput: QXDockWidget{
             return ;
 		}
         _sci.sendEditor(QXSci.SCI_SETCODEPAGE, QXSci.SC_CP_UTF8);
-        _sci.setWrap(true);
+        //_sci.setWrap(true);
         _sci.sendEditor(QXSci.SCI_STYLESETBACK, QXSci.STYLE_DEFAULT, 0xffffffff);
         _sci.sendEditor(QXSci.SCI_STYLESETFORE, QXSci.STYLE_DEFAULT, 0xff222827);
         _sci.sendEditor(QXSci.SCI_STYLESETFORE, 75, 0xff222827);
@@ -68,8 +162,8 @@ class XWndOutput: QXDockWidget{
         _sci.sendEditor(QXSci.SCI_SETEOLMODE, 1, 0); 
         
         _sci.sendEditor(QXSci.SCI_SETMARGINTYPEN, 0, QXSci.SC_MARGIN_NUMBER); 
-        _sci.sendEditor(QXSci.SCI_SETMARGINWIDTHN, 0, 40); 
-        _sci.sendEditor(QXSci.SCI_SETMARGINWIDTHN, 1, 10); 
+        _sci.sendEditor(QXSci.SCI_SETMARGINWIDTHN, 0, 65); 
+        _sci.sendEditor(QXSci.SCI_SETMARGINWIDTHN, 1, 5); 
         _sci.sendEditor(QXSci.SCI_SETMARGINWIDTHN, 2, 0); 
         _sci.sendEditor(QXSci.SCI_SETMARGINWIDTHN, 3, 0); 
         _sci.sendEditor(QXSci.SCI_SETMARGINWIDTHN, 4, 0); 
@@ -88,7 +182,7 @@ class XWndOutput: QXDockWidget{
     
     void syntaxForOutputDark(){
         _sci.sendEditor(QXSci.SCI_SETCODEPAGE, QXSci.SC_CP_UTF8);
-        _sci.setWrap(true);
+        //_sci.setWrap(true);
         _sci.sendEditor(QXSci.SCI_STYLESETBACK, QXSci.STYLE_DEFAULT, 0xff262525);
         _sci.sendEditor(QXSci.SCI_STYLESETFORE, QXSci.STYLE_DEFAULT, 0xffefefef);
         _sci.sendEditor(QXSci.SCI_STYLESETFORE, 75, 0xffefefef);
@@ -106,8 +200,8 @@ class XWndOutput: QXDockWidget{
         _sci.sendEditor(QXSci.SCI_SETEOLMODE, 1, 0); 
 
         _sci.sendEditor(QXSci.SCI_SETMARGINTYPEN, 0, QXSci.SC_MARGIN_NUMBER); 
-        _sci.sendEditor(QXSci.SCI_SETMARGINWIDTHN, 0, 40); 
-        _sci.sendEditor(QXSci.SCI_SETMARGINWIDTHN, 1, 10); 
+        _sci.sendEditor(QXSci.SCI_SETMARGINWIDTHN, 0, 65); 
+        _sci.sendEditor(QXSci.SCI_SETMARGINWIDTHN, 1, 5); 
         _sci.sendEditor(QXSci.SCI_SETMARGINWIDTHN, 2, 0); 
         _sci.sendEditor(QXSci.SCI_SETMARGINWIDTHN, 3, 0); 
         _sci.sendEditor(QXSci.SCI_SETMARGINWIDTHN, 4, 0); 
@@ -125,10 +219,10 @@ class XWndOutput: QXDockWidget{
     }
     
     bool onClose()override{
-		if (urlmon != nilptr){
+		/*if (urlmon != nilptr){
 			urlmon.cancel();
             urlmon = nilptr;
-		}
+		}*/
         return true;
     }
     void onAttach(){
@@ -192,7 +286,7 @@ class XWndOutput: QXDockWidget{
         _sci.setIndicStyle(1, QXSci.INDIC_PLAIN);
         _sci.setIndicCurrent(1);
         
-        urlmon.schedule(new TimerTask(){
+        /*urlmon.schedule(new TimerTask(){
 			void run(){
 				runOnUi(new Runnable(){
 					void run()override{
@@ -201,7 +295,7 @@ class XWndOutput: QXDockWidget{
                 });
             }
         
-        }, 1000, -1);
+        }, 1000, -1);*/
         
 		QXWidget viewport = _sci.viewPort();
 		viewport.setOnMouseEventListener(new onMouseEventListener(){
@@ -237,8 +331,9 @@ class XWndOutput: QXDockWidget{
 		_sci.setOnKeyEventListener(new onKeyEventListener(){
 			
 			bool onKeyPress(QXObject obj, int key, bool repeat, int count, String text, int scanCode, int virtualKey)override{                
-                if (key == Key_Control){
+                if (key == Key_Control && sciisHand == false){
                     sciisHand = true;
+                    testUrl();
                 }
                 
 				return true;
@@ -255,6 +350,7 @@ class XWndOutput: QXDockWidget{
          _sci.setOnFocusEventListener(new onFocusEventListener(){
 			void onFocusIn(QXObject obj, bool focus, int reson){
 				sciisHand = false;
+                XFindDlg.findinOutput = true;
                 _sci.setCursor(QXSci.cursorText);
 			}
 			void onFocusOut(QXObject obj, bool focus, int reson){
@@ -265,19 +361,23 @@ class XWndOutput: QXDockWidget{
     }
     
     void testUrl(){
-    
-		String text = _sci.getText();
-        _sci.clearIndic(0, _sci.getLength());
-        _sci.setIndicCurrent(1);
-        
-        if (text.length() > 0){
-			Pattern.Result rt = url_match.match(text, 0);
+		if (_sci.isModified()){
+			String text = _sci.getText();
+			_sci.clearIndic(0, _sci.getLength());
+			_sci.setIndicCurrent(1);
 			
-			for (int i =0; i < rt.length(); i++){
-				int start = rt.get(i).start();
-				int end = rt.get(i).end();
-				_sci.applyIndic(start, end - start + 1);
+			if (text.length() > 0){
+				Pattern.Result rt = url_match.match(text, 0);
+				
+				for (int i =0; i < rt.length(); i++){
+					int start = rt.get(i).start();
+					int end = rt.get(i).end();
+					_sci.applyIndic(start, end - start + 1);
+				}
 			}
+            _sci.setSavePoint();
         }
     }
+    
+    
 };

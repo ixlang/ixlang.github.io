@@ -20,7 +20,7 @@ class XMemoryWnd : QXDockWidget{
         
         btnGc = (QXPushButton)attachByName(new QXPushButton(), "btnGc");
         btnRefresh = (QXPushButton)attachByName(new QXPushButton(), "btnRefresh");
-        setOnLayoutEventListener(new onLayoutEventListener(){
+        /*setOnLayoutEventListener(new onLayoutEventListener(){
                 void onResize(QXObject obj, int w, int h, int oldw, int oldh)override {
                     if (_listview != nilptr){
                         _listview.resize(w, h - 60);
@@ -30,7 +30,7 @@ class XMemoryWnd : QXDockWidget{
                         _system_.consoleWrite("XMemoryWnd listview no prepared");
                     }
                 }
-        });
+        });*/
         
         btnGc.setOnClickListener(
         new onClickListener(){
@@ -193,7 +193,7 @@ class XMemoryWnd : QXDockWidget{
                 
                 item = _listview.addItem(nilptr, "全部");
                 _listview.setItemText(item, 1, "" + (long)(pooltotal + heap + uheap));
-                _listview.setItemText(item, 2, formatByte(pooltotal + heap + uheap));
+                _listview.setItemText(item, 2, formatByte(pooltotal + heap + uheap + ts + au + js));
 			}
 		}
     }

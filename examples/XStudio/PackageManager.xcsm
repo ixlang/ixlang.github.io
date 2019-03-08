@@ -10,11 +10,16 @@ class PackageManager{
         String version;
         String filepath;
         String iconFile;
+        String descr;
+        String author;
+        
         //String message;
         PackageInfo(int _id,JsonObject jo){
 			id = _id;
 			name = jo.getString("package");
             version = jo.getString("version");
+            descr = jo.getString("descr");
+            author = jo.getString("author");
             iconFile = String.formatPath(_system_.getAppDirectory().appendPath(jo.getString("icon")), false);
             filepath = String.formatPath(_system_.getAppDirectory().appendPath(jo.getString("file")), false);
         }
@@ -23,6 +28,8 @@ class PackageManager{
 			id = -1;
 			name = jo.getString("package");
             version = jo.getString("version");
+            descr = jo.getString("descr");
+            author = jo.getString("author");
             filepath = file;
         }
         
@@ -71,7 +78,7 @@ class PackageManager{
     bool load(){
 
 		String package_dir = String.formatPath(_system_.getAppDirectory().appendPath("packages"), false);
-		QXNative.mkdir(package_dir);
+		XPlatform.mkdir(package_dir);
 
 		String pckInfo = package_dir.appendPath("packages.info");
         
@@ -119,9 +126,9 @@ class PackageManager{
         if (list != nilptr){
 			if (pi.id < list.length() && pi.id >= 0){
 				list.remove(pi.id);
-                QXNative.deleteFile(pi.filepath);
+                XPlatform.deleteFile(pi.filepath);
                 if (pi.iconFile != nilptr && pi.iconFile.length() > 0){
-					QXNative.deleteFile(pi.iconFile);
+					XPlatform.deleteFile(pi.iconFile);
                 }
                 return true;
             }
@@ -207,6 +214,9 @@ class PackageManager{
                 
                 json.put("package", pi.name);
                 json.put("version", pi.version);
+                json.put("descr", pi.descr);
+                json.put("author", pi.author);
+                
                 json.put("file", install_path.toRelativePath(_system_.getAppDirectory(), true));
                 json.put("icon", install_icon.toRelativePath(_system_.getAppDirectory(), true));
                 list.put(json);

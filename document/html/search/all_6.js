@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['familyname',['familyName',['../class_q_x_font.html#aa4389eccaad973229b5e134c8f1b3107',1,'QXFont']]],
   ['fdiagpattern',['FDiagPattern',['../class_q_x_painter_1_1_brush_style.html#a285ab27b6e7e5a3466c63f81f63bed19',1,'QXPainter::BrushStyle']]],
   ['file_5fattribute_5fdirectory',['FILE_ATTRIBUTE_DIRECTORY',['../class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a4854233e40506430e7baac2de91a9f63',1,'FileSystem::Operator::WIN32_FIND_DATA']]],
   ['fileexists',['fileExists',['../class__system__.html#a98652f3c55187a10acf6e0992a816763',1,'_system_']]],
@@ -12,7 +13,7 @@ var searchData=
   ['filetime',['FILETIME',['../class_file_system_1_1_operator_1_1_f_i_l_e_t_i_m_e.html#a05d29dff7b6cc65724d41d771355a834',1,'FileSystem::Operator::FILETIME']]],
   ['fill',['FILL',['../class_q_x_painter_1_1_paint.html#a8beb5a729d4115ba8064a8bd9dfacc23',1,'QXPainter::Paint']]],
   ['fill_5fand_5fstroke',['FILL_AND_STROKE',['../class_q_x_painter_1_1_paint.html#a2f60305d45ea2e055cd53cbcef5a85f2',1,'QXPainter::Paint']]],
-  ['fillrect',['fillRect',['../class_q_x_painter.html#a2ca9d1966367bf3cb5277a637a06b329',1,'QXPainter.fillRect(int x,int y, int w,int h, int color, int brushStyle)'],['../class_q_x_painter.html#a6a5b86460431917b3e4c440e395a25ac',1,'QXPainter.fillRect(QXRect r, int color, int brushStyle)'],['../class_q_x_core.html#ad8abe4581248eddae99a7907a0f04fd9',1,'QXCore.FILLRECT()']]],
+  ['fillrect',['FILLRECT',['../class_q_x_core.html#ad8abe4581248eddae99a7907a0f04fd9',1,'QXCore.FILLRECT()'],['../class_q_x_painter.html#a2ca9d1966367bf3cb5277a637a06b329',1,'QXPainter.fillRect(int x,int y, int w,int h, int color, int brushStyle)'],['../class_q_x_painter.html#a6a5b86460431917b3e4c440e395a25ac',1,'QXPainter.fillRect(QXRect r, int color, int brushStyle)']]],
   ['finalize',['finalize',['../class_q_x_buffer.html#a32d626626eee0bc4ade146973f6abb1c',1,'QXBuffer.finalize()'],['../class_q_x_byte_array.html#a32d626626eee0bc4ade146973f6abb1c',1,'QXByteArray.finalize()'],['../class_q_x_font.html#a32d626626eee0bc4ade146973f6abb1c',1,'QXFont.finalize()'],['../class_q_x_icon.html#a32d626626eee0bc4ade146973f6abb1c',1,'QXIcon.finalize()'],['../class_q_x_image.html#a32d626626eee0bc4ade146973f6abb1c',1,'QXImage.finalize()'],['../class_q_x_matrix.html#a32d626626eee0bc4ade146973f6abb1c',1,'QXMatrix.finalize()'],['../class_q_x_object.html#a32d626626eee0bc4ade146973f6abb1c',1,'QXObject.finalize()'],['../class_q_x_painter.html#a32d626626eee0bc4ade146973f6abb1c',1,'QXPainter.finalize()']]],
   ['find',['find',['../class_string.html#aa6b8f7b00d6ade74e01b69336d72f767',1,'String.find(String sub)'],['../class_string.html#acd1cc88ac71267f02b9f50dfa125172c',1,'String.find(String sub, int offset, int length)']]],
   ['findbyname',['findByName',['../class_q_x_object.html#a55e00ffb68589d138d4d643bf2bc3ee1',1,'QXObject']]],
@@ -36,7 +37,7 @@ var searchData=
   ['focusin',['FocusIn',['../class_q_x_event.html#afed9d00f738daa53c49fc6a4418b21a4',1,'QXEvent']]],
   ['focusout',['FocusOut',['../class_q_x_event.html#ae180563e6fb51c2ebfff1366f77b5bea',1,'QXEvent']]],
   ['folder',['FOLDER',['../class_q_x_core.html#a67228e5520e6d0ba92f5eab9c395b27f',1,'QXCore']]],
-  ['font',['Font',['../class_q_x_variant.html#ae21effd19cf9b200c6871d9325592929',1,'QXVariant']]],
+  ['font',['Font',['../class_q_x_object.html#ae21effd19cf9b200c6871d9325592929',1,'QXObject.Font()'],['../class_q_x_variant.html#ae21effd19cf9b200c6871d9325592929',1,'QXVariant.Font()']]],
   ['fontchange',['FontChange',['../class_q_x_event.html#af77c6f8facfba2e58638a1a15bbf7117',1,'QXEvent']]],
   ['fontctor',['FONTCTOR',['../class_q_x_core.html#a478c8c1e5b890eb8b5cbaf682ba5cb08',1,'QXCore']]],
   ['fontptsize',['FONTPTSIZE',['../class_q_x_core.html#a1b3fce7aac7aadd91afaf7981a9eabc6',1,'QXCore']]],

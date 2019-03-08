@@ -17,6 +17,15 @@ class XIndexWindow : QXMdiSubWindow{
 			if (indexPage.load("ui/index.ui") == false){
 				return false;
 			}
+
+			if (_system_.getPlatformId() == 2){
+				//qt在macos下有widget背景和别的平台不一致的情况，所以这里手动设置一下风格 
+				String wqss = "#Form{background-color:#3e3e42;}";
+				if (Setting.isDarkStyle() == false){
+					wqss = "#Form{background-color:#f0f0f0;}";
+				}
+				indexPage.setStyleSheetString(wqss);
+            }
 			setWidget(indexPage);
 			indexPage.show();
 			setMaximized(true);   
@@ -34,7 +43,7 @@ class XIndexWindow : QXMdiSubWindow{
             lblnew = (QXLabel)indexPage.findByName("lblnew");
             lblopen = (QXLabel)indexPage.findByName("lblopen");
             
-            verslabel.setText("XStudio beta " + Utils.getAppMarjonVersion());
+            verslabel.setText("XStudio " + Utils.getAppMarjonVersion());
             for (int i =0; i < 10; i ++){
 				labels[i] = (QXLabel)indexPage.findByName("rl" + i);
                 labels[i].setOnMouseEventListener(recentlistener);
@@ -143,8 +152,8 @@ class XIndexWindow : QXMdiSubWindow{
                 }
                 
 				if (simple_path != nilptr){
-					simple_path = String.formatPath(QXNative.getAppDirectory().appendPath(simple_path), false);
-                    if (QXNative.existsSystemFile(simple_path)){
+					simple_path = String.formatPath(XPlatform.getAppDirectory().appendPath(simple_path), false);
+                    if (XPlatform.existsSystemFile(simple_path)){
 						XWorkspace.workspace.loadProject(simple_path);
                     }else{	
 						QXMessageBox.Critical("提示", "未安装此示例代码, 请下载相关示例项目并安装到软件目录下的 example 文件夹.", QXMessageBox.Ok, QXMessageBox.Ok);

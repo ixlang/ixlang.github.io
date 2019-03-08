@@ -53,7 +53,8 @@ class XWndInfor : QXDockWidget{
         btnError.setOnClickListener(buttonListener);
         btnWarning.setOnClickListener(buttonListener);
         btnTips.setOnClickListener(buttonListener);
-        
+                /*
+        改成layout之后就不需要resize了
         setOnLayoutEventListener(new onLayoutEventListener(){
                 void onResize(QXObject obj, int w, int h, int oldw, int oldh)override {
                     if (_listview != nilptr){
@@ -66,7 +67,7 @@ class XWndInfor : QXDockWidget{
                     }
                 }
         });
-        
+        */
         String [] columns = {"类型", "文件", "行", "字"};
         _listview.setColumns(columns);
         
@@ -123,7 +124,7 @@ class XWndInfor : QXDockWidget{
     void loadInfo(){
 		String [] columns = {"提示", "警告", "错误"};
         String [] icons = {"res/toolbar/tips.png", "res/toolbar/warning_out.png", "res/toolbar/error.png"};
-        int []colors = {0xff00ff00, 0xffffff00, 0xffff0000};
+        //int []colors = {0xff00ff00, 0xffffff00, 0xffff0000};
         
         synchronized(infoLock){
             if (infoList != nilptr){
@@ -162,6 +163,8 @@ class XWndInfor : QXDockWidget{
         if (Setting.isSwitchToInfo()){
 			raise();
         }
-        Builder.output.appendText(String.format(" (%d 建议, %d 警告, %d 错误.)", getCountOfTips(), getCountOfWarning(), getCountOfError()));
+        XWndOutput.Output(String.format("\n (%d 建议, %d 警告, %d 错误.)\n", getCountOfTips(), getCountOfWarning(), getCountOfError()));
+        
+        XWndOutput.Output("[" + String.formatDate("%c", _system_.currentTimeMillis()) + "] 编译完成.\n");
     }
 };

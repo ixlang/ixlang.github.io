@@ -3,6 +3,7 @@
 class XIntelliSense{
 	long handle;
 	Project project;
+    
 	static class XIntelliResult{
 		String name;
 		String type;
@@ -42,7 +43,7 @@ class XIntelliSense{
 							for (int i = 0; i < libpath.length(); i++){
 								String var = libpath.getString(i);
 								if (var != nilptr){
-									addLibPath(handle, var);
+									addLibPath(handle, XPlatform.converToPlatformCharSet(var));
 								}
 							}
 						}
@@ -53,7 +54,7 @@ class XIntelliSense{
 						for (int i = 0; i < libs.length(); i++){
 							String var = libs.getString(i);
 							if (var != nilptr){
-								addLib(handle, var);
+								addLib(handle, XPlatform.converToPlatformCharSet(var));
 							}
 						}
 					}
@@ -63,7 +64,7 @@ class XIntelliSense{
 					String ext = source.findExtension();
 					
 					if (ext != nilptr && (ext.equalsIgnoreCase(".xcs") || ext.equalsIgnoreCase(".xcsm") )){
-						addFile(handle, source);
+						addFile(handle, XPlatform.converToPlatformCharSet(source));
 					}
 				}
 				
@@ -72,36 +73,44 @@ class XIntelliSense{
 	}
     
     void appendLibpath(String path){
-		addLibPath(handle, path);
+		addLibPath(handle, XPlatform.converToPlatformCharSet(path));
     }
     
     void appendLib(String path){
-		addLib(handle, path);
+		addLib(handle, XPlatform.converToPlatformCharSet(path));
     }
     
     void addSource(String source){
 		if (Setting.isIntellisense()){
-			addFile(handle, source);
+			addFile(handle, XPlatform.converToPlatformCharSet(source));
         }
     }
     
+
 	XIntelliResult [] getIntelliSenseL(String source,int line){
 		if (Setting.isIntellisense()){
-			IntelliSenseL(handle, source, line);
+			IntelliSenseL(handle, XPlatform.converToPlatformCharSet(source), line);
         }
 		return getResult();
 	}
     
     XIntelliResult [] getIntelliSenseObject(String source,int line, String name){
 		if (Setting.isIntellisense()){
-			XISQueryObject(handle, source, line, name);
+			XISQueryObject(handle, XPlatform.converToPlatformCharSet(source), line, name);
         }
 		return getResult();
 	}
-      
+     
+    XIntelliResult [] getIntelliSenseObjectM(String source,int line){
+		if (Setting.isIntellisense()){
+			XISQueryObjectM(handle, XPlatform.converToPlatformCharSet(source), line);
+        }
+		return getResult();
+	}
+    
 	XIntelliResult [] getIntelliSense(String source,String content, long pos){
 		if (Setting.isIntellisense()){
-			IntelliSense(handle, source, content, pos);
+			IntelliSense(handle, XPlatform.converToPlatformCharSet(source), content, pos);
 		}
 		return getResult();
 	}
@@ -115,12 +124,12 @@ class XIntelliSense{
 	}
 	void update(String sourcePath, String content){
 		if (Setting.isIntellisense()){
-			updateFile(handle, sourcePath, content);
+			updateFile(handle, XPlatform.converToPlatformCharSet(sourcePath), content);
 		}
 	}
     void updateSource(String sourcePath, String newFile){
 		if (Setting.isIntellisense()){
-			updateSource(handle, sourcePath, newFile);
+			updateSource(handle, XPlatform.converToPlatformCharSet(sourcePath), XPlatform.converToPlatformCharSet(newFile));
         }
     }
 	XIntelliResult [] getResult(){
@@ -182,6 +191,7 @@ class XIntelliSense{
         bool cdecl updateSource(long h, String file, String content); 
 		bool cdecl IntelliSense(long h, String file, String content, long position); 
         bool cdecl XISQueryObject(long _sc, String sourceFile, int line, String name);
+        bool cdecl XISQueryObjectM(long _sc, String sourceFile, int line);
         bool cdecl IntelliSenseL(long h, String file, int line); 
 		int cdecl getXIntelliSenseCount(long h); 
 		String cdecl getIntelliSenseItemInfo(long h, int id, int prop);

@@ -8,6 +8,8 @@ var searchData=
   ['parselong',['parseLong',['../class_string.html#a6ec3096a2bc5ad76a7be8cfb8b2b63fa',1,'String']]],
   ['paste',['Paste',['../class_q_x_sci.html#a5cc283d2b3edd5d6e3f33bbfbbc320c1',1,'QXSci']]],
   ['pattern',['Pattern',['../class_pattern.html#a329ce5a3c41ffe60af12413b5c6d48a3',1,'Pattern']]],
+  ['pixelsize',['pixelSize',['../class_q_x_font.html#ac636eacd71132380bbd111fdbf0a3599',1,'QXFont']]],
+  ['pointsize',['pointSize',['../class_q_x_font.html#ae6abb21a2fd1695f51e39c425c3202c1',1,'QXFont']]],
   ['positionfrompoint',['positionFromPoint',['../class_q_x_sci.html#a2ecfa5493cf8a9bc2b346fed489b04d4',1,'QXSci']]],
   ['positiontoline',['positionToLine',['../class_q_x_sci.html#a8fada31982d1dacbd22590c5374d0b1d',1,'QXSci']]],
   ['post',['post',['../class_http_request.html#a7ff1d0cea711d0bf7aaeb4961da95145',1,'HttpRequest']]],

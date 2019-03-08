@@ -44,13 +44,13 @@ class ListDockWidget : QXDockWidget{
     void onAttach(){
         _listview = (QXTreeView)attachByName(new QXTreeView(), getListName());
        
-        setOnLayoutEventListener(new onLayoutEventListener(){
+        /*setOnLayoutEventListener(new onLayoutEventListener(){
                 void onResize(QXObject obj, int w, int h, int oldw, int oldh)override {
                     if (_listview != nilptr){
                         _listview.resize(w, h - 20);
                     }
                 }
-        });
+        });*/
         
         String [] columns = getColumn();
         _listview.setColumns(columns);

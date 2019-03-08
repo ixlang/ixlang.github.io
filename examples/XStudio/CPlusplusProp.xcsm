@@ -33,9 +33,13 @@ class CPlusplusProp : ProjectPropInterface{
 	void build(IBuilder builder, Project object, Configure configure, Object param) override {
 
 	}
+   
+    void cleanup(IBuilder builder, Project object, Configure configure) override {
+
+	}
     
 	bool createNormalFileToProject(WizardLoader loader,String projectName, String projectDir, String uuid, Project ownProject, bool addToProject, String ext){
-		QXNative.mkdir(projectDir);
+		XPlatform.mkdir(projectDir);
 		try{
 			String extsion = projectName.findExtension();
 			String filename ;
@@ -67,7 +71,7 @@ class CPlusplusProp : ProjectPropInterface{
             
 			String destProj = String.formatPath(projectDir.appendPath(filename), false);
 			
-            if (QXNative.existsSystemFile(destProj)){
+            if (XPlatform.existsSystemFile(destProj)){
 				if (QXMessageBox.Question("注意", destProj + " 该文件已经存在, <a style=\"color:#ffff0000\">继续建立新文件将改写原有文件?</a>", QXMessageBox.Ok | QXMessageBox.No, QXMessageBox.Ok) == QXMessageBox.No){
 					return false;
                 }

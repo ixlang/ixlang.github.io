@@ -87,7 +87,7 @@ class Windows : QXDialog {
         
         loadWindow();
         
-        setOnLayoutEventListener(new onLayoutEventListener(){
+        /*setOnLayoutEventListener(new onLayoutEventListener(){
 			void onResize(QXObject obj, int w, int h, int oldw, int oldh)override {
 				_listview.resize(w - 200, h-  50);
 				btnOk.move(w - 150, h - 80);
@@ -96,8 +96,8 @@ class Windows : QXDialog {
 				
 				btnClose.move(w - 150, 60);
 			}
-        });
-        
+        });*/
+        setWindowIcon("./res/toolbar/winoverlap.png");
         setWindowTitle("窗口");
         setModal(true);
         show();
@@ -109,10 +109,12 @@ class Windows : QXDialog {
        Map.Iterator<String, XSourceEditor> iter = XSourceEditor.editorMgr.iterator();
        
         while (iter.hasNext()){
-            String key = iter.getKey();
+            //String key = iter.getKey();
             XSourceEditor val = iter.getValue();
+            
             iter.next();
-            long item = _listview.addItem(nilptr, val.szTitle);
+            
+            long item = _listview.addItem("./res/toolbar/source.png", val.szTitle);
 
 			windows_list.put(item, val);
 
@@ -121,8 +123,6 @@ class Windows : QXDialog {
             }else{
                 _listview.setItemText(item, 1, val.filePath);
             }
-            
-            
         }
     }
 };

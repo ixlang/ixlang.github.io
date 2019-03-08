@@ -76,6 +76,10 @@ class XFindresWnd : ListDockWidget{
 	}
     
     void showResult(XFinder.FindResult result){
+		if (result == nilptr){
+			return ;
+        }
+        
 		synchronized(findlock){
 			_find_result = result;
 			

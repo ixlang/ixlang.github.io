@@ -13,6 +13,7 @@ var searchData=
   ['onmouseeventlistener',['onMouseEventListener',['../class_q_x_object_1_1on_mouse_event_listener.html',1,'QXObject']]],
   ['onnotifylistener',['onNotifyListener',['../class_q_x_object_1_1on_notify_listener.html',1,'QXObject']]],
   ['onpaintlistener',['onPaintListener',['../class_q_x_object_1_1on_paint_listener.html',1,'QXObject']]],
+  ['onpropertyeventlistener',['onPropertyEventListener',['../class_q_x_property_browser_1_1_property_manager_1_1on_property_event_listener.html',1,'QXPropertyBrowser::PropertyManager']]],
   ['onscopeeventlistener',['onScopeEventListener',['../class_q_x_object_1_1on_scope_event_listener.html',1,'QXObject']]],
   ['onstatuslistener',['onStatusListener',['../class_q_x_object_1_1on_status_listener.html',1,'QXObject']]],
   ['ontreeviewitemevent',['onTreeViewItemEvent',['../class_q_x_object_1_1on_tree_view_item_event.html',1,'QXObject']]],

@@ -47,6 +47,7 @@ class Switche : QXWidget{
 			bReCreateCached = true;
 			_bForceRedraw = true;
 		}
+        
 		if (bReCreateCached){
 			_cachedBitmap = new QXImage(width(), height(), QXImage.Format_ARGB32);
 		}
@@ -129,7 +130,7 @@ class Switche : QXWidget{
 			//paint.setMaskFilter(blurFilter);
 			//paint.setShadowLayer(10F, 11F,5F, Color.BLACK);
 			//paint.setXfermode(new PorterDuffXfermode(Mode.SRC_IN));
-			paint.setStrokeWidth(1.f);
+			paint.setStrokeWidth(0.f);
 			paint.setStyle(QXPainter.Paint.STROKE);
 			paint.setColor(0xffdedede);		
 			//paint.setShadowLayer(0,0,0, Color.BLACK);

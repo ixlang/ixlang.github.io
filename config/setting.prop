@@ -15,6 +15,261 @@
 			]
 		}
 	},
+	"加速键":{
+		"键盘布局:shortkeystyle":{
+			"type":"stringlist",
+			"list":[
+				"自定义",
+				"MS Visual C++",
+				"Eclipse",
+				"XCode"
+			]
+		},
+		"文件(F)->新建项目(&P):actionProject_P":	{
+			"type":	"string",
+			"value":	"Ctrl+N"
+		},
+		"文件(F)->打开(&O):actionOpen":	{
+			"type":	"string",
+			"value":	"Ctrl+O"
+		},
+		"文件(F)->关闭文件(&C):actionclose":	{
+			"type":	"string",
+			"value":	""
+		},
+		"文件(F)->关闭项目(&K):actioncloseproject":	{
+			"type":	"string",
+			"value":	""
+		},
+		"文件(F)->保存文件:actionsave":	{
+			"type":	"string",
+			"value":	"Ctrl+S"
+		},
+		"文件(F)->保存为模板(&T):actionsaveastemp":	{
+			"type":	"string",
+			"value":	""
+		},
+		"文件(F)->文件另存为(&A):actionsaveas":	{
+			"type":	"string",
+			"value":	""
+		},
+		"文件(F)->保存项目:actionsaveproject":	{
+			"type":	"string",
+			"value":	"Ctrl+Shift+S"
+		},
+		"文件(F)->退出:actionexit":	{
+			"type":	"string",
+			"value":	"Ctrl+Q"
+		},
+		"编辑(E)->添加(A)->类(&C):actionclass":	{
+			"type":	"string",
+			"value":	""
+		},
+		"编辑(E)->添加(A)->接口(&I):actioninterface":	{
+			"type":	"string",
+			"value":	""
+		},
+		"编辑(E)->添加(A)->包(&P):actionpackage":	{
+			"type":	"string",
+			"value":	""
+		},
+		"编辑(E)->撤销(&U):actionundo":	{
+			"type":	"string",
+			"value":	"Ctrl+Z"
+		},
+		"编辑(E)->重做(&R):actionredo":	{
+			"type":	"string",
+			"value":	"Ctrl+Y"
+		},
+		"编辑(E)->复制(&C):actioncopy":	{
+			"type":	"string",
+			"value":	"Ctrl+C"
+		},
+		"编辑(E)->剪切(&T):actioncut":	{
+			"type":	"string",
+			"value":	"Ctrl+X"
+		},
+		"编辑(E)->粘贴(&P):actionpaste":	{
+			"type":	"string",
+			"value":	"Ctrl+V"
+		},
+		"编辑(E)->删除(&D):actiondelete":	{
+			"type":	"string",
+			"value":	"Del"
+		},
+		"编辑(E)->转到定义(&F):actiongotodef":	{
+			"type":	"string",
+			"value":	"F12"
+		},
+		"编辑(E)->重载方法(&O):actionoverride":	{
+			"type":	"string",
+			"value":	"Alt+V"
+		},
+		"编辑(E)->列出补全(&L):actionautocomplete":	{
+			"type":	"string",
+			"value":	"Alt+."
+		},
+		"编辑(E)->组建项目(&B):actioncompile_project":	{
+			"type":	"string",
+			"value":	"F7"
+		},
+		"编辑(E)->查找(&F):actionfind":	{
+			"type":	"string",
+			"value":	"Ctrl+F"
+		},
+		"编辑(E)->查找下一个(&A):actionfindagain":	{
+			"type":	"string",
+			"value":	"F3"
+		},
+		"编辑(E)->替换(&R):actionreplace":	{
+			"type":	"string",
+			"value":	"Ctrl+R"
+		},
+		"编辑(E)->定位问题:actionlocalProblem":	{
+			"type":	"string",
+			"value":	"F4"
+		},
+		"编辑(E)->转到行:actiongoto":	{
+			"type":	"string",
+			"value":	"Ctrl+G"
+		},
+		"编辑(E)->向前(&F):actiontofront":	{
+			"type":	"string",
+			"value":	"Ctrl+Alt+Right"
+		},
+		"编辑(E)->向后(&B):actiontoback":	{
+			"type":	"string",
+			"value":	"Ctrl+Alt+Left"
+		},
+		"项目(P)->清理(&C):actionclean":	{
+			"type":	"string",
+			"value":	"Ctrl+Alt+C"
+		},
+		"项目(P)->生成Native文件(&N):actiongenerateNativeSrc":	{
+			"type":	"string",
+			"value":	"Ctrl+Alt+G"
+		},
+		"项目(P)->属性:actionprop":	{
+			"type":	"string",
+			"value":	""
+		},
+		"项目(P)->选项(&T):actionsetting":	{
+			"type":	"string",
+			"value":	"Ctrl+T"
+		},
+		"项目(P)->起始页(&S):actionstartup":	{
+			"type":	"string",
+			"value":	""
+		},
+		"项目(P)->注释(&C):actioncomment":	{
+			"type":	"string",
+			"value":	""
+		},
+		"项目(P)->打开输出目录(&O):actionopenoutput":	{
+			"type":	"string",
+			"value":	"Ctrl+Alt+O"
+		},
+		"调试(D)->调试运行(&D):actiondebug":	{
+			"type":	"string",
+			"value":	"F5"
+		},
+		"调试(D)->运行(&R):actionrun":	{
+			"type":	"string",
+			"value":	"Ctrl+F5"
+		},
+		"调试(D)->单步步入(&I):actionstepin":	{
+			"type":	"string",
+			"value":	"F11"
+		},
+		"调试(D)->单步步过(&O):actionstepover":	{
+			"type":	"string",
+			"value":	"F10"
+		},
+		"调试(D)->单步跳出(&T):actionstepout":	{
+			"type":	"string",
+			"value":	"Shift+F11"
+		},
+		"调试(D)->切换断点(&P):actionbreakpoint":	{
+			"type":	"string",
+			"value":	"F9"
+		},
+		"调试(D)->测试(&A):actiontest":	{
+			"type":	"string",
+			"value":	""
+		},
+		"调试(D)->停止运行(&S):actionstoprun":	{
+			"type":	"string",
+			"value":	"Shift+F5"
+		},
+		"调试(D)->中断:actionbreak":	{
+			"type":	"string",
+			"value":	""
+		},
+		"调试(D)->远程调试(&R):actionremotedbg":	{
+			"type":	"string",
+			"value":	""
+		},
+		"工具(T)->QT Designer(UI设计器):actionQTCreator":	{
+			"type":	"string",
+			"value":	""
+		},
+		"工具(T)->导出包工具(&E):actionexporttools":	{
+			"type":	"string",
+			"value":	""
+		},
+		"工具(T)->包管理(&P):actionpackmgr":	{
+			"type":	"string",
+			"value":	""
+		},
+		"窗口(W)->平铺窗口(&S):sortwindows":	{
+			"type":	"string",
+			"value":	""
+		},
+		"窗口(W)->窗口(&W):allwindows":	{
+			"type":	"string",
+			"value":	"Ctrl+E"
+		},
+		"窗口(W)->重叠窗口(&T):actionoverlapped":	{
+			"type":	"string",
+			"value":	""
+		},
+		"帮助(H)->帮助文档(&H):actionhelp":	{
+			"type":	"string",
+			"value":	""
+		},
+		"帮助(H)->发送反馈(&F):actionsendfeedback":	{
+			"type":	"string",
+			"value":	""
+		},
+		"帮助(H)->代码示例:actionsamples":	{
+			"type":	"string",
+			"value":	""
+		},
+		"帮助(H)->关于(&A):actionabout":	{
+			"type":	"string",
+			"value":	""
+		}
+	},
+	"输出":{
+		"调试时输出线程状态:threadstat":{
+			"type":"stringlist",
+			"list":[
+				"开启",
+				"关闭"
+			]
+		},
+		"logcat最大数量(条):logcatmax":{
+			"type":"string",
+			"value":""
+		},
+		"调试/运行时重定向StdOut到输出:stdoutrel":{
+			"type":"stringlist",
+			"list":[
+				"开启",
+				"关闭"
+			]
+		}
+	},
 	"版本管理":{
 		"版本控制系统:verc":{
 			"type":"stringlist",
@@ -39,12 +294,11 @@
 	},
 	"编辑器":{
 		"字体:editorfont":{
-			"type":"string",
-			"value":"Consolas"
-		},
-		"大小:fontsize":{
-			"type":"string",
-			"value":"11.5"
+			"type":"stringlist",
+			"list":[
+				"$(editorfont)",
+				"选择字体..."
+			]
 		},
 		"()[]{}自动输入:brace":{
 			"type":"stringlist",
@@ -61,6 +315,20 @@
 			]
 		},
 		"智能缩进:ident":{
+			"type":"stringlist",
+			"list":[
+				"关闭",
+				"开启"
+			]
+		},
+		"全部替换前确认:repallconfirm":{
+			"type":"stringlist",
+			"list":[
+				"关闭",
+				"开启"
+			]
+		},
+		"显示行号:linenumber":{
 			"type":"stringlist",
 			"list":[
 				"关闭",
@@ -84,12 +352,15 @@
 			]
 		},
 		"默认工作空间:workspace":{
-			"type":"string",
-			"value":""
+			"type":"stringlist",
+			"list":[
+				"$(workspace)",
+				"浏览目录..."
+			]
 		}
 	},
-	"IntelSence":{
-		"启用IntelSence:intelsence":{
+	"智能感知(beta)":{
+		"智能感知(beta版):intelsence":{
 			"type":"stringlist",
 			"list":[
 				"关闭",

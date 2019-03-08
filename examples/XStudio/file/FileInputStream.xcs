@@ -4,7 +4,7 @@ class FileInputStream : Stream{
 	long filehandler;
 
 	FileInputStream(String path){
-		filehandler = QXNative.openSystemFile(path, "r");
+		filehandler = XPlatform.openSystemFile(path, "r");
         if (filehandler == 0){
             throw new IllegalArgumentException("file " + path + " can not open");
         }
@@ -15,7 +15,7 @@ class FileInputStream : Stream{
 			_system_.closeFile(filehandler);
 			filehandler = 0;
 		}
-		filehandler = QXNative.openSystemFile(path, "r");
+		filehandler = XPlatform.openSystemFile(path, "r");
         return filehandler != 0;
 	}
     void checkValid(){

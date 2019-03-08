@@ -1,7 +1,7 @@
 var searchData=
 [
   ['hasfocus',['HASFOCUS',['../class_q_x_core.html#affa85e9006343a51b12fb1df7af026fa',1,'QXCore']]],
-  ['hash',['Hash',['../class_q_x_variant.html#a28f2f93bd28f760845326d9c90cc47fe',1,'QXVariant']]],
+  ['hash',['Hash',['../class_q_x_object.html#a28f2f93bd28f760845326d9c90cc47fe',1,'QXObject.Hash()'],['../class_q_x_variant.html#a28f2f93bd28f760845326d9c90cc47fe',1,'QXVariant.Hash()']]],
   ['height',['HEIGHT',['../class_q_x_core.html#af728b7647e0b8c49832983a31f9a2e9b',1,'QXCore']]],
   ['help',['Help',['../class_q_x_message_box.html#a7e098ad46c1cddbe354093b8aebd2075',1,'QXMessageBox']]],
   ['helprequest',['HelpRequest',['../class_q_x_event.html#ac2375fa0b4615a7cd8a270eab9f975f9',1,'QXEvent']]],

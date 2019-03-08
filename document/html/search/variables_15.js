@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['vector2d',['Vector2D',['../class_q_x_variant.html#a7c69f9abc0dcc54cb9ac5b472189e1e0',1,'QXVariant']]],
-  ['vector3d',['Vector3D',['../class_q_x_variant.html#a4243cabb4b2900fd1e66dffd40a9f67f',1,'QXVariant']]],
-  ['vector4d',['Vector4D',['../class_q_x_variant.html#a5f3e6121ef81c3b49a4cd7a2e9f3b894',1,'QXVariant']]],
+  ['vector2d',['Vector2D',['../class_q_x_object.html#a7c69f9abc0dcc54cb9ac5b472189e1e0',1,'QXObject.Vector2D()'],['../class_q_x_variant.html#a7c69f9abc0dcc54cb9ac5b472189e1e0',1,'QXVariant.Vector2D()']]],
+  ['vector3d',['Vector3D',['../class_q_x_object.html#a4243cabb4b2900fd1e66dffd40a9f67f',1,'QXObject.Vector3D()'],['../class_q_x_variant.html#a4243cabb4b2900fd1e66dffd40a9f67f',1,'QXVariant.Vector3D()']]],
+  ['vector4d',['Vector4D',['../class_q_x_object.html#a5f3e6121ef81c3b49a4cd7a2e9f3b894',1,'QXObject.Vector4D()'],['../class_q_x_variant.html#a5f3e6121ef81c3b49a4cd7a2e9f3b894',1,'QXVariant.Vector4D()']]],
   ['verpattern',['VerPattern',['../class_q_x_painter_1_1_brush_style.html#a16f20516aba5bc507a6a9fb8c405fd56',1,'QXPainter::BrushStyle']]],
   ['vertical',['Vertical',['../class_q_x_widget.html#af619ad91b60d79e0329717c9ee1f330d',1,'QXWidget']]],
   ['visible',['VISIBLE',['../class_q_x_core.html#a74c572b947a06a04914d47778597f059',1,'QXCore']]],

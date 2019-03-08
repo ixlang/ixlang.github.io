@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['easingcurve',['EasingCurve',['../class_q_x_variant.html#a9077685a3c261706b57fc7459414d64f',1,'QXVariant']]],
+  ['easingcurve',['EasingCurve',['../class_q_x_object.html#a9077685a3c261706b57fc7459414d64f',1,'QXObject.EasingCurve()'],['../class_q_x_variant.html#a9077685a3c261706b57fc7459414d64f',1,'QXVariant.EasingCurve()']]],
   ['edge_5fbackground',['EDGE_BACKGROUND',['../class_q_x_sci.html#a0e52138e83d1fb09c630673cd43bbe57',1,'QXSci']]],
   ['edge_5fline',['EDGE_LINE',['../class_q_x_sci.html#a5530c6ccfc6598ee62da608c6e1d66f7',1,'QXSci']]],
   ['edge_5fnone',['EDGE_NONE',['../class_q_x_sci.html#a3540f6b77e83426250a0f202127bd5ea',1,'QXSci']]],
@@ -9,6 +9,7 @@ var searchData=
   ['elidenone',['ElideNone',['../class_q_x_object.html#a4f884cbecc5d9f369a532d1d2fe416ef',1,'QXObject']]],
   ['elideright',['ElideRight',['../class_q_x_object.html#a6a8b246de827a374ca8bd752ff741ecd',1,'QXObject']]],
   ['embeddingcontrol',['EmbeddingControl',['../class_q_x_event.html#a173a1099c7bee24d990d81a15ce3ed99',1,'QXEvent']]],
+  ['enableadjust',['enableAdjust',['../class_q_x_property_browser.html#a7199bd277eb9acc8dc580239d8867dac',1,'QXPropertyBrowser']]],
   ['enabled',['ENABLED',['../class_q_x_core.html#a1cc3eb3d2ccce3ceaad23db6d862a96a',1,'QXCore']]],
   ['enabledchange',['EnabledChange',['../class_q_x_event.html#af57bd003dd9316c5f92c34bccd6f4111',1,'QXEvent']]],
   ['enablekeepalive',['enableKeepAlive',['../class_stream_socket.html#adc1893007b04e94b06a6c0a87714e158',1,'StreamSocket']]],
@@ -23,9 +24,9 @@ var searchData=
   ['equalshandle',['equalsHandle',['../class_unsi.html#adce4ec03200d87479928a7a7b37a5c1c',1,'Unsi']]],
   ['equalsignorecase',['equalsIgnoreCase',['../class_string.html#af098e4de46f029cf43824fdd51c49e6f',1,'String']]],
   ['escape',['Escape',['../class_q_x_message_box.html#a84330b2eee28e14f3fe74c190f3f3a67',1,'QXMessageBox.Escape()'],['../class_string.html#add846c8be97342fa2f37d74b8265149b',1,'String.escape()']]],
+  ['eventlistener',['eventListener',['../class_q_x_property_browser_1_1_property_manager.html#a26e192978f1e513a48bc4febd2e1bc25',1,'QXPropertyBrowser::PropertyManager']]],
   ['exception',['Exception',['../class_exception.html',1,'Exception'],['../class_exception.html#abfbc23b99b2e78b609d50ac688611236',1,'Exception.Exception()'],['../class_exception.html#a1cd7a7de9dc517cfbf55ceda3d471c9c',1,'Exception.Exception(String message)']]],
   ['exception_2excs',['Exception.xcs',['../_exception_8xcs.html',1,'']]],
-  ['existssystemfile',['existsSystemFile',['../class_q_x_native.html#aeeba6ebe4753640df4527f156deb0539',1,'QXNative']]],
   ['exit',['exit',['../class__system__.html#a98a9fd114ee065ff149a7d4fb4de8de8',1,'_system_']]],
   ['exp',['exp',['../class_math.html#a7adcaca0d84e9fa58ae1977a150e8c66',1,'Math']]],
   ['expm1',['expm1',['../class_math.html#a517878947d28b4191c0d016560248efe',1,'Math']]],

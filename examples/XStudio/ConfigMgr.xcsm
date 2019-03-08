@@ -99,7 +99,7 @@ class ConfigMgr : QXDialog{
         
         loadConfigures();
         
-        setOnLayoutEventListener(new onLayoutEventListener(){
+        /*setOnLayoutEventListener(new onLayoutEventListener(){
 			void onResize(QXObject obj, int w, int h, int oldw, int oldh)override {
 				_listview.resize(w - 120, h -  20);
 
@@ -109,9 +109,10 @@ class ConfigMgr : QXDialog{
                 
                 btnClose.move(w - 95, h - 50);
 			}
-        });
+        });*/
         
         setWindowTitle(_curproject.getName() + " - 配置");
+        setWindowIcon("./res/toolbar/output.png");
         setModal(true);
         show();
     }
@@ -123,7 +124,7 @@ class ConfigMgr : QXDialog{
        Map.Iterator<String, Configure> iter = _curproject.configures.iterator();
        
         while (iter.hasNext()){
-            String key = iter.getKey();
+            //String key = iter.getKey();
             Configure cfg = iter.getValue();
             iter.next();
             _listview.addItem(nilptr, cfg.getName());  

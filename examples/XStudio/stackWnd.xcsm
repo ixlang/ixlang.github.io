@@ -9,6 +9,8 @@ class XStackInfor : QXDockWidget{
 	static const int XDBG_STATE_EXCEPTION = 	4;	//捕获异常
     static const int XDBG_STATE_REIGGEBP 	= 	8;	//触发断点
     
+    static bool bOutputThreadStatus = true;
+    
     QXTreeView _listview;
     
     JsonObject root;
@@ -76,13 +78,13 @@ class XStackInfor : QXDockWidget{
     void onAttach(){
         _listview = (QXTreeView)attachByName(new QXTreeView(), "stacklist");
        
-        setOnLayoutEventListener(new onLayoutEventListener(){
+        /*setOnLayoutEventListener(new onLayoutEventListener(){
                 void onResize(QXObject obj, int w, int h, int oldw, int oldh)override {
                     if (_listview != nilptr){
                         _listview.resize(w, h - 20);
                     }
                 }
-        });
+        });*/
         
         String [] columns = {"名称", "ID", "状态", "堆栈"};
         
@@ -114,53 +116,56 @@ class XStackInfor : QXDockWidget{
 			
 			_listview.setItemIcon(item, 0, "res/toolbar/break.png");
             _listview.setItemText(item, 2, "中断");
-            
-            if (to.frames != nilptr){
-				for (int i = 0; i < to.frames.length; i++){
-					ThreadManager.StackFrame sf = to.frames[i];
-					
-					String ip = String.format("0x%08X", sf.ip);
-					
-					long fitem = _listview.insertItem(item, nilptr, "#frame:" + i);
-					_listview.setItemText(fitem, 1, "" + i);
-					
-					
-					if (sf.source == nilptr){
-						_listview.setItemText(fitem, 3, ip + "<无调试信息>");
-					}else{
-						_listview.setItemText(fitem, 2, "" + sf.line + "," + sf.row);
-						_listview.setItemText(fitem, 3, sf.source);
-						
-						if (i == 0){
-						
-							BreakPosition bp = new BreakPosition(sf.source, sf.line, sf.row, bLocate);
-						
-							Map.Iterator<int, BreakPosition> iter = breakList.find(to.id);
-							if (iter != nilptr){
-								BreakPosition old_bp = iter.getValue();
-								
-								if (old_bp.file.equals(sf.source) && old_bp.line == sf.line && old_bp.row == sf.row){
-									continue ;
-								}else{
-									XSourceEditor.removeBreak(iter.getValue());
-								}
-								
-								iter.setValue(bp);
-							}else{
-								breakList.put(to.id ,bp);
-							}
-							
-							XSourceEditor.setBreak(bp);
-							ThreadManager.setCurrentThread(to.id, 0);
-						}
-					}
-				}
-            }
-        }else{
+        }else
+        if (to.frames == nilptr){
 			_listview.setItemIcon(item, 0, "res/toolbar/run.png");
             _listview.setItemText(item, 2, "运行");
+        }else{
+			_listview.setItemIcon(item, 0, "res/toolbar/wait.png");
+            _listview.setItemText(item, 2, "未知");
         }
-    
+	
+		if (to.frames != nilptr){
+			for (int i = 0; i < to.frames.length; i++){
+				ThreadManager.StackFrame sf = to.frames[i];
+				
+				String ip = String.format("0x%08X", sf.ip);
+				
+				long fitem = _listview.insertItem(item, nilptr, "#frame:" + i);
+				_listview.setItemText(fitem, 1, "" + i);
+				
+				
+				if (sf.source == nilptr){
+					_listview.setItemText(fitem, 3, ip + "<无调试信息>");
+				}else{
+					_listview.setItemText(fitem, 2, "" + sf.line + "," + sf.row);
+					_listview.setItemText(fitem, 3, sf.source);
+					
+					if (i == 0){
+					
+						BreakPosition bp = new BreakPosition(sf.source, sf.line, sf.row, bLocate);
+					
+						Map.Iterator<int, BreakPosition> iter = breakList.find(to.id);
+						if (iter != nilptr){
+							BreakPosition old_bp = iter.getValue();
+							
+							if (old_bp.file.equals(sf.source) && old_bp.line == sf.line && old_bp.row == sf.row){
+								continue ;
+							}else{
+								XSourceEditor.removeBreak(iter.getValue());
+							}
+							
+							iter.setValue(bp);
+						}else{
+							breakList.put(to.id ,bp);
+						}
+						
+						XSourceEditor.setBreak(bp);
+						ThreadManager.setCurrentThread(to.id, 0);
+					}
+				}
+			}
+		}
     }
     
     
@@ -239,6 +244,11 @@ class XStackInfor : QXDockWidget{
         }
     }
         
+        
+    static void setThreadOuputStatus(bool b){
+		bOutputThreadStatus = b;
+    }
+    
     void onNotification(long id){
 		synchronized(threadlist){
 			int tid = (id >> 32) & 0xffffffff;
@@ -252,9 +262,15 @@ class XStackInfor : QXDockWidget{
 				break;
 				case XDBG_STATE_CREATE:
 					createThread(tid);
+                    if (bOutputThreadStatus){
+						XWndOutput.Output("线程:" + tid + " 已创建/启动.\n");
+                    }
 				break;
 				case XDBG_STATE_EXIT:
 					exitThread(tid);
+                    if (bOutputThreadStatus){
+						XWndOutput.Output("线程:" + tid + " 已退出/休眠.\n");
+                    }
 				break;
 				case XDBG_STATE_EXCEPTION:
 					onException(tid);

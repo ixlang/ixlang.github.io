@@ -47,9 +47,18 @@ class QxApp : QXApplication{
         xDumpWnd  =  (XWndObjectDump)mainWindow.attachByName(new XWndObjectDump(), "gcinfo");
     }
     
+    
+    void reconfig(){
+		loadConfig();
+        wndOutput.reconfig();
+        XSourceEditor.reconfig();
+    }
+    
 	void loadConfig(){
         if (Setting.isDarkStyle()){
 			setStyleSheet("res/qss/black.qss");
+        }else{
+			setStyleSheetString("");
         }
 	}
 
@@ -60,6 +69,8 @@ class QxApp : QXApplication{
 				if (_mdispace.loadProject(_appargs[2])){
 					_mdispace.debugRun();
                 }
+            }else{
+				_mdispace.openFile( _appargs[1]);
             }
         }
     }
@@ -71,7 +82,8 @@ class QxApp : QXApplication{
 			return false;
 		}
 		
-	 
+		loadConfig();
+        
 		//setPaletteColor("#F0F0F0");
 		/*mainWindow.setOnActivateListener(new onActivateListener(){
 			void onWindowActivate(QXObject obj){
@@ -91,13 +103,13 @@ class QxApp : QXApplication{
 		_mdispace.setStackView(wndStack);
 		wndclass.workspace = _mdispace;
        
-		mainWindow.getCentralWindow().setOnLayoutEventListener(new onLayoutEventListener(){
+		/*mainWindow.getCentralWindow().setOnLayoutEventListener(new onLayoutEventListener(){
 				void onResize(QXObject obj, int w, int h, int oldw, int oldh)override {
 					if (_mdispace != nilptr){
 						_mdispace.resize(w, h);
 					}
 				}
-		}); 
+		}); */
 		
 		//mainWindow.resize(800, 600);
 		ProjectPropManager.registryAllProp();
@@ -112,7 +124,7 @@ class QxApp : QXApplication{
 				if (XSourceEditor.closeAllWindows()){
 					if (_mdispace.requestQuit()){
 						_mdispace.closeIndexPage(); 
-						String statefile = QXNative.getAppDirectory().appendPath("x.save");
+						String statefile = XPlatform.getAppDirectory().appendPath("x.save");
 						try{
 							byte [] state = mainWindow.saveState();
 							if (state != nilptr){
@@ -143,7 +155,7 @@ class QxApp : QXApplication{
 		XMenuManager.setProjectLoaded(false);
 		XMenuManager.setDocumentOpened(false);
 		
-		String statefile = QXNative.getAppDirectory().appendPath("x.save");
+		String statefile = XPlatform.getAppDirectory().appendPath("x.save");
 		try{
 			FileInputStream fis = new FileInputStream(statefile);
 			byte []data = fis.read();
@@ -157,6 +169,7 @@ class QxApp : QXApplication{
 		   
 		_mdispace.openIndexPage();
         processArgs();
+        Setting.applySetting();
         return true;  
     }
  
@@ -164,6 +177,7 @@ class QxApp : QXApplication{
 	bool preprocessArgs(){
 		if (_appargs.length > 1){
 			if (_appargs[1].equals("-installpkg")){
+				loadConfig();
 				PackageViewer.Install(_appargs[2]);
                 return true;
             }
@@ -174,7 +188,7 @@ class QxApp : QXApplication{
     bool create(){ 
         if (super.createQXApplication()){
 			loadTranslator("translator/qt_zh_CN.qm");
-            loadConfig();
+            
 			_theApp = this;
             if (Recently.isFirstRun()){
 				return FirstPrepare.showFirstRun(this);
@@ -191,6 +205,7 @@ class QxApp : QXApplication{
     
        
 int main(String [] args){  
+    _system_.chdir( _system_.getAppDirectory());
     QxApp app = new QxApp();
 	QxApp._appargs = args;
     if (app.create()){

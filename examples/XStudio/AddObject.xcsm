@@ -106,7 +106,7 @@ class AddObjectDlg : QXDialog {
 				}
                 
 				String sourceFile = currentProject.generateFullPath(edtFile.getText());
-                if (QXNative.existsSystemFile(sourceFile)){
+                if (XPlatform.existsSystemFile(sourceFile)){
  					QXMessageBox.Critical("注意", "文件已存在", QXMessageBox.Ok, QXMessageBox.Ok);
                     return ;
                 }
@@ -143,7 +143,7 @@ class AddObjectDlg : QXDialog {
                     }
                 }catch(Exception E){
 					fos.close();
-                    QXNative.deleteFile(sourceFile);
+                    XPlatform.deleteFile(sourceFile);
                  	QXMessageBox.Critical("注意", "无法建立文件:" + sourceFile, QXMessageBox.Ok, QXMessageBox.Ok);
                     return ;
                 }
@@ -213,7 +213,7 @@ class AddObjectDlg : QXDialog {
 		});
         
         
-         setOnLayoutEventListener(new onLayoutEventListener(){
+         /*setOnLayoutEventListener(new onLayoutEventListener(){
 			void onResize(QXObject obj, int w, int h, int oldw, int oldh)override {
 				_treeview.resize(w - 40, h-  210);
                 
@@ -223,8 +223,8 @@ class AddObjectDlg : QXDialog {
 				btnOk.move(w - 190, h - 35);
 				btnCancel.move(w - 100, h - 35);
 			}
-        });
-        
+        });*/
+        setWindowIcon("./res/toolbar/interfacefun.png");
     }
     
     void setChildrenUnChecked(long item){

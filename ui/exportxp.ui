@@ -38,6 +38,9 @@
      <height>20</height>
     </rect>
    </property>
+   <property name="whatsThis">
+    <string>选择要发布的静态库文件</string>
+   </property>
   </widget>
   <widget class="QPushButton" name="stBrowser">
    <property name="geometry">
@@ -73,6 +76,9 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="whatsThis">
+     <string>选择处理器架构</string>
+    </property>
    </widget>
    <widget class="QLineEdit" name="nativefile">
     <property name="geometry">
@@ -82,6 +88,9 @@
       <width>301</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="whatsThis">
+     <string>Native 库,通常是与静态库关联的C/C++开发的动态链接库.</string>
     </property>
    </widget>
    <widget class="QPushButton" name="nativeBrowser">
@@ -158,6 +167,9 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="whatsThis">
+     <string>选择操作系统平台</string>
+    </property>
    </widget>
    <widget class="QLabel" name="label_5">
     <property name="geometry">
@@ -223,6 +235,9 @@
      <height>20</height>
     </rect>
    </property>
+   <property name="whatsThis">
+    <string>选择生成位置</string>
+   </property>
   </widget>
   <widget class="QPushButton" name="brwExport">
    <property name="geometry">
@@ -272,6 +287,9 @@
      <height>21</height>
     </rect>
    </property>
+   <property name="whatsThis">
+    <string>readme文件,包添加到项目时将出现在输出视图中</string>
+   </property>
    <property name="text">
     <string>+ README.MD</string>
    </property>
@@ -315,7 +333,7 @@
     </property>
     <property name="styleSheet">
      <string notr="true">#btnIcon{
-	border-image:url(&quot;./res/xide.png&quot;);
+	border-image:url(&quot;./res/package64.png&quot;);
 }</string>
     </property>
     <property name="text">
@@ -361,6 +379,9 @@
      <height>20</height>
     </rect>
    </property>
+   <property name="whatsThis">
+    <string>包的名称</string>
+   </property>
   </widget>
   <widget class="QLineEdit" name="edtVersion">
    <property name="geometry">
@@ -370,6 +391,9 @@
      <width>113</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="whatsThis">
+    <string>包版本</string>
    </property>
    <property name="text">
     <string>1.0.0.0</string>
@@ -400,6 +424,9 @@
      <height>20</height>
     </rect>
    </property>
+   <property name="whatsThis">
+    <string>一句话说明功能和作用,将显示在包列表中.</string>
+   </property>
   </widget>
   <widget class="QLineEdit" name="lblAuthor">
    <property name="geometry">
@@ -409,6 +436,9 @@
      <width>221</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="whatsThis">
+    <string>发布者站点,将显示在包列表中</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_10">

@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v1.5 Release</span>
+   &#160;<span id="projectnumber">v1.6 Release</span>
    </div>
    <div id="projectbrief">项目介绍</div>
   </td>
@@ -174,6 +174,68 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 </div>
 </div>
+<a class="anchor" id="a306c47583629169b79c2cf7e515ec11c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool chdir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>改变当前路径 </p>
+
+</div>
+</div>
+<a class="anchor" id="a279b1facdb9dc1ec2ac06484495b4510"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool chmod </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>改变文件权限 </p>
+
+</div>
+</div>
 <a class="anchor" id="a0aa7c150126463044db37c4f260a3038"></a>
 <div class="memitem">
 <div class="memproto">
@@ -205,6 +267,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </dl>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="class__system__.html#af17f89e027f53ec945c22de72f1f6ef2" title="打开文件 ">openFile</a></dd></dl>
 <dl class="section return"><dt>返回</dt><dd>成功或者失败 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa078785b7f5b4d3891de5e3c7ca6cdb5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool closePipe </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>pipe</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>关闭管道 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pipe</td><td>填入createPipe返回的句柄 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -323,6 +417,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 </div>
 </div>
+<a class="anchor" id="ac08fe73c795f38ca089be3768f1a90aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static long createPipe </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>forOpen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>创建一个管道 </p>
+<dl class="section return"><dt>返回</dt><dd>管道句柄 </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ae2577c522d61ec6f231d1965385e6dba"></a>
 <div class="memitem">
 <div class="memproto">
@@ -379,7 +510,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </dl>
 <dl class="section return"><dt>返回</dt><dd>成功或者失败 </dd></dl>
 
-<p>参考自 <a class="el" href="_q_x_native__update_8xcsm_source.html#l00066">QXNative.deleteFile()</a> , 以及 <a class="el" href="_file_system_8xcs_source.html#l00107">Operator.DeleteFile()</a>.</p>
+<p>参考自 <a class="el" href="_file_system_8xcs_source.html#l00107">Operator.DeleteFile()</a>.</p>
 
 </div>
 </div>
@@ -438,8 +569,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   </dd>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>存在或者不存在 </dd></dl>
-
-<p>参考自 <a class="el" href="_q_x_native__update_8xcsm_source.html#l00056">QXNative.existsSystemFile()</a>.</p>
 
 </div>
 </div>
@@ -552,6 +681,107 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 </div>
 </div>
+<a class="anchor" id="aa4fe4321f77c77910eeace6710a24af5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static long getAppTimestamp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取App组建时间 毫秒数 </p>
+
+</div>
+</div>
+<a class="anchor" id="af28af47e49bbbc8399af00d7c10e6a60"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static long getAppVersion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取App版本， 该版本由.version文件定义， 返回值为一个64位的long， 每两个字节为一个版本的值 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9c1c63fc191d7ae1902b21fbab1e96fd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int getArchId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取平台架构 1 X86 2 X86_64 3 ARM 4 ARM64 5 MIPS 6 MIPS64 7 UNKNOW </p>
+
+</div>
+</div>
+<a class="anchor" id="a280a8406451b9795118dfee47946ba72"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_string.html">String</a> getDefaultEncoding </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取操作系统默认字符集 </p>
+<dl class="section return"><dt>返回</dt><dd>字符集名称 </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a55e7f98549fde58097e2372b023a50ab"></a>
 <div class="memitem">
 <div class="memproto">
@@ -583,7 +813,81 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </dl>
 <dl class="section return"><dt>返回</dt><dd>文件长度 </dd></dl>
 
-<p>参考自 <a class="el" href="_q_x_native__update_8xcsm_source.html#l00041">QXNative.SystemFileSize()</a>.</p>
+</div>
+</div>
+<a class="anchor" id="a9f074b5a4b27cb3017019f01c8b2411f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_string.html">String</a> getHostName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取本机名称 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0ed297e3d49cab302e8c8902c9c06cce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int getOSBit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取操作系统位数 </p>
+<dl class="section return"><dt>返回</dt><dd>32 / 64 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0667f38c65ced7dfb0404c062c775299"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int getPlatformId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取平台操作系统ID 0 WINDOWS 1 LINUX 2 MAC OSX 3 iPhone 模拟器 4 iPhone 5 unix 6 其他poxis环境 </p>
 
 </div>
 </div>
@@ -609,6 +913,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><div class="memdoc">
 
 <p>获取程序当前工作目录 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab872780494ca01109d54fe8e284969f0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool mkdir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>创建文件夹 </p>
 
 </div>
 </div>
@@ -654,7 +984,48 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </dl>
 <dl class="section return"><dt>返回</dt><dd>返回文件句柄对象 </dd></dl>
 
-<p>参考自 <a class="el" href="_q_x_native__update_8xcsm_source.html#l00051">QXNative.openSystemFile()</a>.</p>
+</div>
+</div>
+<a class="anchor" id="ac63b13250e55372664a3254409ede2c7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool openPipe </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>pipe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>forRead</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>打开一个管道 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pipe</td><td>填入createPipe返回的句柄 </td></tr>
+    <tr><td class="paramname">forRead</td><td>读方式打开， 反之写方式 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -725,6 +1096,183 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   </dd>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>成功读取的长度 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8f4c1a2e862ea8e743314f4e9c2bc8e2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static long readPipe </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>pipe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte   []&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>从管道中读取数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>数据缓冲区 </td></tr>
+    <tr><td class="paramname">offset</td><td>指针在数据缓冲区中的位置 </td></tr>
+    <tr><td class="paramname">length</td><td>待读取的长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_index_out_of_bounds_exception.html" title="下标越界异常 ">IndexOutOfBoundsException</a></td><td>数组下标越界 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功读取的长度 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a461f8b3469d5c94506d1ea9da3bb2b68"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool registryCrashHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_i_crash_handler.html">ICrashHandler</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>添加一个程序crash的回调接口， 当程序发生异常或者没有catch的Exception时 将调用此接口 </p>
+
+</div>
+</div>
+<a class="anchor" id="a154d42ff0ef3ee01dc71cf7094484405"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool rename </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>oldname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>newname</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重命名文件或者文件夹 </p>
+
+</div>
+</div>
+<a class="anchor" id="a30721b48c57e7b041d40debef70f31d6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool rmdir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>删除文件夹 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5ecbfb533b8827e0382dcc73d40e29ed"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool setupLogSource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>eventName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置日志事件源 windows下有效 </p>
 
 </div>
 </div>
@@ -817,6 +1365,69 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
     <tr><td class="paramname">buffer</td><td>数据缓冲区 </td></tr>
     <tr><td class="paramname">offset</td><td>指针在数据缓冲区中的位置 </td></tr>
     <tr><td class="paramname">length</td><td>待写入的长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_index_out_of_bounds_exception.html" title="下标越界异常 ">IndexOutOfBoundsException</a></td><td>数组下标越界 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功写入的长度 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aba3a7e260ead2de4b3939961ec39de3f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static long writePipe </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>pipe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte   []&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>向管道中写入数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>数据缓冲区 </td></tr>
+    <tr><td class="paramname">offset</td><td>指针在数据缓冲区中的位置 </td></tr>
+    <tr><td class="paramname">length</td><td>待写入取的长度 </td></tr>
   </table>
   </dd>
 </dl>

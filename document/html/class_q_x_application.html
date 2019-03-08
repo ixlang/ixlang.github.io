@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v1.5 Release</span>
+   &#160;<span id="projectnumber">v1.6 Release</span>
    </div>
    <div id="projectbrief">项目介绍</div>
   </td>
@@ -193,12 +193,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_q_x_application_8xcsm_source.html">QXApplication.xcsm</a> 第 <a class="el" href="_q_x_application_8xcsm_source.html#l00028">28</a> 行定义.</p>
+<p>在文件 <a class="el" href="_q_x_application_8xcsm_source.html">QXApplication.xcsm</a> 第 <a class="el" href="_q_x_application_8xcsm_source.html#l00031">31</a> 行定义.</p>
 
 <p>参考 <a class="el" href="_q_x_core_8xcsm_source.html#l00278">QXCore.LOADTRANSLATE</a> , 以及 <a class="el" href="_q_x_native_8xcsm_source.html#l00003">QXNative.nativehandle</a>.</p>
-<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                    {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        widget_slot_string(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a056e900b3e2721d273eb8abd46177c4a">LOADTRANSLATE</a>, file);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                    {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        widget_slot_string(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a056e900b3e2721d273eb8abd46177c4a">LOADTRANSLATE</a>, file);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
 <div class="ttc" id="class_q_x_native_html_adc4b3fd5b05624dfe6705339748b8aab"><div class="ttname"><a href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">QXNative.nativehandle</a></div><div class="ttdeci">long nativehandle</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_native_8xcsm_source.html#l00003">QXNative.xcsm:3</a></div></div>
 <div class="ttc" id="class_q_x_core_html_a056e900b3e2721d273eb8abd46177c4a"><div class="ttname"><a href="class_q_x_core.html#a056e900b3e2721d273eb8abd46177c4a">QXCore.LOADTRANSLATE</a></div><div class="ttdeci">static const int LOADTRANSLATE</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00278">QXCore.xcsm:278</a></div></div>
 </div><!-- fragment -->
@@ -236,67 +236,67 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_q_x_application_8xcsm_source.html">QXApplication.xcsm</a> 第 <a class="el" href="_q_x_application_8xcsm_source.html#l00032">32</a> 行定义.</p>
+<p>在文件 <a class="el" href="_q_x_application_8xcsm_source.html">QXApplication.xcsm</a> 第 <a class="el" href="_q_x_application_8xcsm_source.html#l00035">35</a> 行定义.</p>
 
 <p>参考 <a class="el" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">String.equals()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                                           {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="comment">//_system_.consoleWrite(&quot;QXApplication request class :&quot; + objectClass + &quot;\n&quot;);</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QMdiArea&quot;</span>)){</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_mdi_area.html">QXMdiArea</a>(<span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QWidget&quot;</span>)){</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_widget.html">QXWidget</a>(<span class="keywordtype">object</span>);</div>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                           {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="comment">//_system_.consoleWrite(&quot;QXApplication request class :&quot; + objectClass + &quot;\n&quot;);</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QMdiArea&quot;</span>)){</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_mdi_area.html">QXMdiArea</a>(<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QPushButton&quot;</span>)){</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QWidget&quot;</span>)){</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_widget.html">QXWidget</a>(<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QLineEdit&quot;</span>)){</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_line_edit.html">QXLineEdit</a>(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QPushButton&quot;</span>)){</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_widget.html">QXWidget</a>(<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QDockWidget&quot;</span>)){</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_dock_widget.html">QXDockWidget</a>(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QLineEdit&quot;</span>)){</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_line_edit.html">QXLineEdit</a>(<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QMenuBar&quot;</span>)){</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_menu_bar.html">QXMenuBar</a>(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QDockWidget&quot;</span>)){</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_dock_widget.html">QXDockWidget</a>(<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QAction&quot;</span>)){</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_action.html">QXAction</a>(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QMenuBar&quot;</span>)){</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_menu_bar.html">QXMenuBar</a>(<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QMenu&quot;</span>)){</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_menu.html">QXMenu</a>(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QAction&quot;</span>)){</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_action.html">QXAction</a>(<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QDialog&quot;</span>)){</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_dialog.html">QXDialog</a>(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QMenu&quot;</span>)){</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_menu.html">QXMenu</a>(<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QPushButton&quot;</span>)){</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_push_button.html">QXPushButton</a>(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QDialog&quot;</span>)){</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_dialog.html">QXDialog</a>(<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QComboBox&quot;</span>)){</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_combo_box.html">QXComboBox</a>(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QPushButton&quot;</span>)){</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_push_button.html">QXPushButton</a>(<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QLabel&quot;</span>)){</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_label.html">QXLabel</a>(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QComboBox&quot;</span>)){</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_combo_box.html">QXComboBox</a>(<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QCheckBox&quot;</span>)){</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_check_box.html">QXCheckBox</a>(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QLabel&quot;</span>)){</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_label.html">QXLabel</a>(<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QStatusBar&quot;</span>)){</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_status_bar.html">QXStatusBar</a>(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QCheckBox&quot;</span>)){</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_check_box.html">QXCheckBox</a>(<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QToolBar&quot;</span>)){</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_tool_bar.html">QXToolBar</a>(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QStatusBar&quot;</span>)){</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_status_bar.html">QXStatusBar</a>(<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QTableWidget&quot;</span>)){</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_table_widget.html">QXTableWidget</a>(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QToolBar&quot;</span>)){</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_tool_bar.html">QXToolBar</a>(<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QTreeWidget&quot;</span>)){</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_tree_view.html">QXTreeView</a>(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QTableWidget&quot;</span>)){</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_table_widget.html">QXTableWidget</a>(<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QFileSystemWatcher&quot;</span>)){</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_file_system_watcher.html">QXFileSystemWatcher</a>(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QTreeWidget&quot;</span>)){</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_tree_view.html">QXTreeView</a>(<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">return</span> nilptr;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QFileSystemWatcher&quot;</span>)){</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_file_system_watcher.html">QXFileSystemWatcher</a>(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
 <div class="ttc" id="class_q_x_widget_html"><div class="ttname"><a href="class_q_x_widget.html">QXWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_widget_8xcsm_source.html#l00006">QXWidget.xcsm:6</a></div></div>
 <div class="ttc" id="class_q_x_dialog_html"><div class="ttname"><a href="class_q_x_dialog.html">QXDialog</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_dialog_8xcsm_source.html#l00002">QXDialog.xcsm:2</a></div></div>
 <div class="ttc" id="class_q_x_check_box_html"><div class="ttname"><a href="class_q_x_check_box.html">QXCheckBox</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_check_box_8xcsm_source.html#l00001">QXCheckBox.xcsm:1</a></div></div>
@@ -429,12 +429,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_q_x_application_8xcsm_source.html">QXApplication.xcsm</a> 第 <a class="el" href="_q_x_application_8xcsm_source.html#l00024">24</a> 行定义.</p>
+<p>在文件 <a class="el" href="_q_x_application_8xcsm_source.html">QXApplication.xcsm</a> 第 <a class="el" href="_q_x_application_8xcsm_source.html#l00027">27</a> 行定义.</p>
 
 <p>参考 <a class="el" href="_q_x_native_8xcsm_source.html#l00003">QXNative.nativehandle</a> , 以及 <a class="el" href="_q_x_core_8xcsm_source.html#l00239">QXCore.SETAPPFONT</a>.</p>
-<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                             {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        widget_set_native_value(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#acd74f0de38e12d054328ce19c7141636">SETAPPFONT</a>, font.nativehandle);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                             {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        widget_set_native_value(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#acd74f0de38e12d054328ce19c7141636">SETAPPFONT</a>, font.nativehandle);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
 <div class="ttc" id="class_q_x_native_html_adc4b3fd5b05624dfe6705339748b8aab"><div class="ttname"><a href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">QXNative.nativehandle</a></div><div class="ttdeci">long nativehandle</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_native_8xcsm_source.html#l00003">QXNative.xcsm:3</a></div></div>
 <div class="ttc" id="class_q_x_core_html_acd74f0de38e12d054328ce19c7141636"><div class="ttname"><a href="class_q_x_core.html#acd74f0de38e12d054328ce19c7141636">QXCore.SETAPPFONT</a></div><div class="ttdeci">static const int SETAPPFONT</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00239">QXCore.xcsm:239</a></div></div>
 </div><!-- fragment -->
@@ -462,12 +462,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_q_x_application_8xcsm_source.html">QXApplication.xcsm</a> 第 <a class="el" href="_q_x_application_8xcsm_source.html#l00021">21</a> 行定义.</p>
+<p>在文件 <a class="el" href="_q_x_application_8xcsm_source.html">QXApplication.xcsm</a> 第 <a class="el" href="_q_x_application_8xcsm_source.html#l00024">24</a> 行定义.</p>
 
 <p>参考 <a class="el" href="_q_x_native_8xcsm_source.html#l00003">QXNative.nativehandle</a> , 以及 <a class="el" href="_q_x_core_8xcsm_source.html#l00188">QXCore.PALETTECOLOR</a>.</p>
-<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                     {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        widget_slot_string(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a5a4b2803b436d941e336100c38eb66ba">PALETTECOLOR</a>, file);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                     {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        widget_slot_string(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a5a4b2803b436d941e336100c38eb66ba">PALETTECOLOR</a>, file);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
 <div class="ttc" id="class_q_x_native_html_adc4b3fd5b05624dfe6705339748b8aab"><div class="ttname"><a href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">QXNative.nativehandle</a></div><div class="ttdeci">long nativehandle</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_native_8xcsm_source.html#l00003">QXNative.xcsm:3</a></div></div>
 <div class="ttc" id="class_q_x_core_html_a5a4b2803b436d941e336100c38eb66ba"><div class="ttname"><a href="class_q_x_core.html#a5a4b2803b436d941e336100c38eb66ba">QXCore.PALETTECOLOR</a></div><div class="ttdeci">static const int PALETTECOLOR</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00188">QXCore.xcsm:188</a></div></div>
 </div><!-- fragment -->
@@ -503,6 +503,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
 <div class="ttc" id="class_q_x_native_html_adc4b3fd5b05624dfe6705339748b8aab"><div class="ttname"><a href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">QXNative.nativehandle</a></div><div class="ttdeci">long nativehandle</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_native_8xcsm_source.html#l00003">QXNative.xcsm:3</a></div></div>
 <div class="ttc" id="class_q_x_core_html_ae163ec82eca4e889d870fdf7a068e17b"><div class="ttname"><a href="class_q_x_core.html#ae163ec82eca4e889d870fdf7a068e17b">QXCore.STYLESHEET</a></div><div class="ttdeci">static const int STYLESHEET</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00187">QXCore.xcsm:187</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ad07e15751d5ff33c061f1978b0ac51af"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setStyleSheetString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>stylesheet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_q_x_application_8xcsm_source.html">QXApplication.xcsm</a> 第 <a class="el" href="_q_x_application_8xcsm_source.html#l00021">21</a> 行定义.</p>
+
+<p>参考 <a class="el" href="_q_x_native_8xcsm_source.html#l00003">QXNative.nativehandle</a> , 以及 <a class="el" href="_q_x_core_8xcsm_source.html#l00322">QXCore.STYLESHEETSTRING</a>.</p>
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                               {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        widget_slot_string(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a4c1416b1682aa6c5c823297c1922353a">STYLESHEETSTRING</a>, stylesheet);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
+<div class="ttc" id="class_q_x_native_html_adc4b3fd5b05624dfe6705339748b8aab"><div class="ttname"><a href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">QXNative.nativehandle</a></div><div class="ttdeci">long nativehandle</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_native_8xcsm_source.html#l00003">QXNative.xcsm:3</a></div></div>
+<div class="ttc" id="class_q_x_core_html_a4c1416b1682aa6c5c823297c1922353a"><div class="ttname"><a href="class_q_x_core.html#a4c1416b1682aa6c5c823297c1922353a">QXCore.STYLESHEETSTRING</a></div><div class="ttdeci">static const int STYLESHEETSTRING</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00322">QXCore.xcsm:322</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

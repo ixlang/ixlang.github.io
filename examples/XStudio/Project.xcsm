@@ -18,8 +18,7 @@ class Project{
     bool bModified = false;
     
     Map<String, Configure> configures = new Map<String, Configure>();
-       
-       
+
     bool cloneConfigure(String tempName, String newName){
 		if (configures.containsKey(newName) == false){
 			Configure cfgs = getConfigure(tempName);
@@ -83,6 +82,15 @@ class Project{
         return nilptr;
     }
     
+    String getOutputTarget(){
+		if (currentConfig != nilptr && _propinterface != nilptr){
+			String out_path = currentConfig .getOption("cmd");
+			out_path = String.formatPath(XlangProjectProp.map_variable(this, currentConfig , out_path), false);
+			return (out_path);    
+        }
+        return nilptr;
+    }
+    
     void setOption(String key, String text){
         root.remove(key);
         root.put(key, text);
@@ -106,6 +114,7 @@ class Project{
         }
         return value;
     }
+    
     String readSlnFile(String file){
         FileInputStream fis = nilptr;
         try{
@@ -135,6 +144,43 @@ class Project{
         }
     }
     
+    void thread_cleanup(Builder _builder){
+		if (_propinterface != nilptr){
+			_propinterface.cleanup(_builder, this, currentConfig);
+			build_thread = nilptr;
+        }
+    }
+    
+    bool cleanup(Builder _builder){
+		Builder.clear(true);
+        
+		synchronized(buildlock){
+			if (build_thread == nilptr){
+            
+				ProgressView pv = ProgressView.showWait(-1);
+                
+                pv.centerScreen();
+                
+                pv.setTitleText("正在清理...");
+                
+                _builder.OutputText("[" + String.formatDate("%c", _system_.currentTimeMillis()) + "] 已启动清理...\n");
+                
+				build_thread = new Thread(){
+					void run(){
+						thread_cleanup(_builder);
+                        pv.showResult(true, true);
+                        pv.setTitleText("清理完成");
+                        pv.dismissAfter(1000);
+					}
+				};
+				build_thread.start();
+			}else{ 
+				return false;
+			}
+        }
+        return true;
+    }
+    
     bool build(Builder _builder, BuildListener l, XlangProjectProp. BuildParams params){
         Builder.clear(true);
         
@@ -146,6 +192,8 @@ class Project{
                 pv.centerScreen();
                 
                 pv.setTitleText("正在编译...");
+                
+                _builder.OutputText("[" + String.formatDate("%c", _system_.currentTimeMillis()) + "] 已启动编译...\n");
                 
 				build_thread = new Thread(){
 					void run(){
@@ -397,7 +445,7 @@ class Project{
         String newid = "" + Math.random() + "-" + _system_.currentTimeMillis() ;
         String tempfile = "./config/" + newid + ".utemp";
         
-        String temppath = QXNative.getAppDirectory().appendPath(tempfile);
+        String temppath = XPlatform.getAppDirectory().appendPath(tempfile);
         
         try{
 			FileOutputStream fis = new FileOutputStream(temppath);
@@ -440,7 +488,7 @@ class Project{
                 temproot.put("uuid", newid);
                 temproot.put("language", languageConf);
                 temproot.put("icon", "config/xlang.png");
-                temproot.put("platform", "customized");
+                temproot.put("platform", "用户自定义");
                 temproot.put("details", descr);
                 temproot.put("user", "project");
 				
@@ -530,7 +578,7 @@ class Project{
         
         String finalpath;
         
-        if (QXNative.existsSystemFile(fullpath)){
+        if (XPlatform.existsSystemFile(fullpath)){
 			finalpath = fullpath;
         }else{
 			finalpath = source_path;
@@ -655,7 +703,7 @@ class Project{
                 
                 String destpath = projDir.appendPath("libs");
                 
-                QXNative.mkdir(destpath);
+                XPlatform.mkdir(destpath);
                 
                 String destlix = destpath.appendPath(lixName);
                 

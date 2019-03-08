@@ -136,8 +136,8 @@ class XWndSln : QXDockWidget{
 						}
 						bool fileDeleted = false;
 						String file = current_ps.getSourcePath();
-						if (QXNative.existsSystemFile(file)){
-							fileDeleted = QXNative.deleteFile(file);
+						if (XPlatform.existsSystemFile(file)){
+							fileDeleted = XPlatform.deleteFile(file);
 						}
 						if (fileDeleted == false){
 							QXMessageBox.Question("注意", "无法从硬盘上删除文件: " + current_ps.getSourcePath() + " 文件已不存在或者正被占用.", QXMessageBox.Yes ,QXMessageBox.Yes);
@@ -163,7 +163,7 @@ class XWndSln : QXDockWidget{
 				if (ps != nilptr){
 					String source = ps.getSourcePath();
 
-					if (QXNative.existsSystemFile(source) == false){
+					if (XPlatform.existsSystemFile(source) == false){
 						QXMessageBox.Critical("文件不存在", "找不到文件:" + ps.getSourcePath() + "该位置的文件已不存在.", QXMessageBox.Ok, QXMessageBox.Ok);
 					}else{
 						workspace.openTextFile(source);
@@ -251,6 +251,8 @@ class XWndSln : QXDockWidget{
     void onAttach(){
 		editSearch =  (QXLineEdit)attachByName(new QXLineEdit(), "editSearch");
         _treesln = (QXTreeView)attachByName(new QXTreeView(), "tree_sln");
+        /*
+        改成layout之后就不需要resize了
         setOnLayoutEventListener(new onLayoutEventListener(){
                 void onResize(QXObject obj, int w, int h, int oldw, int oldh)override {
                     if (_treesln != nilptr){
@@ -261,6 +263,7 @@ class XWndSln : QXDockWidget{
                     }
                 }
         });
+        */
         _treesln.setOnTreeViewItemEvent(listlistener);
 		_slnView = this;
         

@@ -4,7 +4,7 @@ var searchData=
   ['datadeparture',['dataDeparture',['../interface_async_output.html#ad289a01e153c86490491578a8220c53a',1,'AsyncOutput']]],
   ['decodestring',['decodeString',['../class_base64.html#a1f00451292a805322807e0810d612177',1,'Base64']]],
   ['delete',['Delete',['../class_q_x_sci.html#ac2e5aab0612d67400354a4fe71278a21',1,'QXSci']]],
-  ['deletefile',['DeleteFile',['../class_file_system_1_1_operator.html#a468eded83ad755e2d85288a9a037304a',1,'FileSystem.Operator.DeleteFile()'],['../class__system__.html#a068517965454d24a4a4cead267f7160c',1,'_system_.deleteFile()'],['../class_q_x_native.html#a068517965454d24a4a4cead267f7160c',1,'QXNative.deleteFile()']]],
+  ['deletefile',['DeleteFile',['../class_file_system_1_1_operator.html#a468eded83ad755e2d85288a9a037304a',1,'FileSystem.Operator.DeleteFile()'],['../class__system__.html#a068517965454d24a4a4cead267f7160c',1,'_system_.deleteFile()']]],
   ['deleteinstance',['deleteInstance',['../interface_async_input.html#a666f2eec31d3cce909cfcc676597801b',1,'AsyncInput.deleteInstance()'],['../interface_async_output.html#a3863196a0085b3cae2ac7c1bcb5f70bf',1,'AsyncOutput.deleteInstance()']]],
   ['dgramsocket',['DgramSocket',['../class_dgram_socket.html#afc40da5c10713f43f3571e268488b1d5',1,'DgramSocket']]],
   ['disconnect',['disconnect',['../class_unsi.html#a49f9c842922bf59fc35c8866d8a7482e',1,'Unsi']]],

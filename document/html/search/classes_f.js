@@ -37,6 +37,7 @@ var searchData=
   ['qxfiledialog',['QXFileDialog',['../class_q_x_file_dialog.html',1,'']]],
   ['qxfilesystemwatcher',['QXFileSystemWatcher',['../class_q_x_file_system_watcher.html',1,'']]],
   ['qxfont',['QXFont',['../class_q_x_font.html',1,'']]],
+  ['qxfontdialog',['QXFontDialog',['../class_q_x_font_dialog.html',1,'']]],
   ['qxicon',['QXIcon',['../class_q_x_icon.html',1,'']]],
   ['qximage',['QXImage',['../class_q_x_image.html',1,'']]],
   ['qxlabel',['QXLabel',['../class_q_x_label.html',1,'']]],

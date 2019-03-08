@@ -8,17 +8,42 @@ class PackageViewer : QXDialog{
     PackageManager pm = new PackageManager();
     
 	void onAttach() override {
-		setFixedSize(width(), height());
+		//setFixedSize(width(), height());
 		pcklist = (QXTreeView)attachByName(new QXTreeView(), "pcklist");
-        btnInstall = (QXPushButton)attachByName(new QXPushButton(), "btnInstall");
-        btnDelete = (QXPushButton)attachByName(new QXPushButton(), "btnDelete");
-        btnAdd = (QXPushButton)attachByName(new QXPushButton(), "btnAdd");
-		btnExport = (QXPushButton)attachByName(new QXPushButton(), "btnExport");
+        pcklist.setWhatsThis("显示当前开发环境中已安装的包");
         
-		String [] columns = {"名称", "版本"};
+        btnInstall = (QXPushButton)attachByName(new QXPushButton(), "btnInstall");
+        btnInstall.setWhatsThis("从文件安装一个包到开发环境中");
+        
+        btnDelete = (QXPushButton)attachByName(new QXPushButton(), "btnDelete");
+        btnDelete.setWhatsThis("删除选择的包");
+        
+        btnAdd = (QXPushButton)attachByName(new QXPushButton(), "btnAdd");
+        btnAdd.setWhatsThis("将选择的包添加到当前的项目中");
+        
+		btnExport = (QXPushButton)attachByName(new QXPushButton(), "btnExport");
+        btnExport.setWhatsThis("将选择的包导出到文件");
+        
+		String [] columns = {"名称", "版本", "描述", "发布者"};
         
         pcklist.setColumns(columns);
+        pcklist.setColumnWidth(0,120);
+        pcklist.setColumnWidth(1,80);
+        pcklist.setColumnWidth(2,550);
+        pcklist.setColumnWidth(3,150);
         
+        pcklist.setOnTreeViewItemEvent( new onTreeViewItemEvent(){
+			void onItemClicked(QXTreeView tree,long item, int column){
+				if (column == 3){
+					String txt = tree.getItemText(item, column);
+                    if (txt.upper().startWith("HTTP")){
+						if (QXMessageBox.Question("提示","是否转到发布者网站: <b>" + txt + "</b> ?",QXMessageBox.Ok | QXMessageBox.No,QXMessageBox.Ok) == QXMessageBox.Ok){
+							openUrl(txt);
+                        }
+                    }
+                }
+			}
+        });
 		if (pm.load() == false){
 			QXMessageBox.Critical("错误", "加载包时出现故障", QXMessageBox.Ok, QXMessageBox.Ok);
         }else{
@@ -59,13 +84,14 @@ class PackageViewer : QXDialog{
             }
         
         });
+        
+        setWindowIcon("./res/package64.png");
 	}
 
 	void exportPackage(){
 		long []items = pcklist.getSelectedItems();
         
         if (items.length > 0){
-			int count = 0;
 			for (int i = 0; i < items.length; i++){
 				int id = pcklist.getItemTag(items[i], 0);
 				PackageManager.PackageInfo pi = pm.get(id);
@@ -115,7 +141,7 @@ class PackageViewer : QXDialog{
 	void install(String file){
 		PackageManager.PackageInfo pi = pm.previewPackage(file);
 		if (pi != nilptr){
-			if (QXMessageBox.Information("提示", "将安装包 " + pi.name + " " + pi.version + "?", QXMessageBox.Ok | QXMessageBox.Cancel, QXMessageBox.Ok) == QXMessageBox.Ok){
+			if (QXMessageBox.Information("提示", "将安装包 " + pi.name + " " + pi.version + "?" + "<br /><br />简介:<br /><b>" + pi.descr + "</b><br /><br />发布者:<a href=\"" + pi.author + "\">" + pi.author + "<em>", QXMessageBox.Ok | QXMessageBox.Cancel, QXMessageBox.Ok) == QXMessageBox.Ok){
 				if (pm.installPackage(pi)){
 					loadList();
 				}else{
@@ -132,6 +158,7 @@ class PackageViewer : QXDialog{
 		ProgressView pv = ProgressView.showWait(-1);
         pv.setTitleText("正在导入...");
         pv.EnableProgress(true , 0);
+        pv.centerScreen();
 		long []items = pcklist.getSelectedItems();
         
         if (items.length > 0){
@@ -182,6 +209,8 @@ class PackageViewer : QXDialog{
             long item = pcklist.addItem(pi.iconFile, pi.name);
             pcklist.modifyItemFlags(item, QXTreeView.ItemIsUserCheckable, 0);
             pcklist.setItemText(item, 1, pi.version);
+            pcklist.setItemText(item, 2, pi.descr);
+            pcklist.setItemText(item, 3, pi.author);
             pcklist.setItemTag(item, 0, i);
         }
     }

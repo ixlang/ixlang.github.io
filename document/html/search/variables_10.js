@@ -1,6 +1,8 @@
 var searchData=
 [
   ['qpalign',['QPALIGN',['../class_q_x_core.html#a42da5d52609bcb1e6f4dabbd6d038185',1,'QXCore']]],
+  ['qpbadjust',['QPBADJUST',['../class_q_x_core.html#a353c2e1666c17142de51b97e86cb0d84',1,'QXCore']]],
+  ['qpbsetlabels',['QPBSETLABELS',['../class_q_x_core.html#a4ee43062b98124e82753c82a519ecc3f',1,'QXCore']]],
   ['qpformat',['QPFORMAT',['../class_q_x_core.html#a427ed57a77b1c05f5c6752770bf4a891',1,'QXCore']]],
   ['qpinvertappear',['QPINVERTAPPEAR',['../class_q_x_core.html#a0aeed19ec605df450d936f060ff46c5d',1,'QXCore']]],
   ['qpmaxinum',['QPMAXINUM',['../class_q_x_core.html#a5b16b05001ab6d05fa8d7d3b62847e14',1,'QXCore']]],
@@ -61,7 +63,7 @@ var searchData=
   ['qtvariantproperty',['qtVariantProperty',['../class_q_type.html#a15c5b64eba910860eca632e5f144cefc',1,'QType']]],
   ['qtvariantpropertymanager',['qtVariantPropertyManager',['../class_q_type.html#a48da95be955fe2b8d77c327439213f15',1,'QType']]],
   ['qtwidget',['qtWidget',['../class_q_type.html#a8971e0184a5bbf159ace99f36609110e',1,'QType']]],
-  ['quaternion',['Quaternion',['../class_q_x_variant.html#ae6c77fbadde7f92cf501b016baddaf4e',1,'QXVariant']]],
+  ['quaternion',['Quaternion',['../class_q_x_object.html#ae6c77fbadde7f92cf501b016baddaf4e',1,'QXObject.Quaternion()'],['../class_q_x_variant.html#ae6c77fbadde7f92cf501b016baddaf4e',1,'QXVariant.Quaternion()']]],
   ['querywhatsthis',['QueryWhatsThis',['../class_q_x_event.html#a2c5c8a3a7656b5bb992de9e3b1267e17',1,'QXEvent']]],
   ['quit',['Quit',['../class_q_x_event.html#af1cbda99c08542345085b448cbf9a0e5',1,'QXEvent']]],
   ['qxpaintbgmmode',['QXPAINTBGMMODE',['../class_q_x_core.html#a7215ef08a5bdbb01ed864af166ac7b48',1,'QXCore']]],

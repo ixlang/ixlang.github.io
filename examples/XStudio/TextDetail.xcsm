@@ -34,8 +34,8 @@ class TextDetail : QXDialog {
         _sci.sendEditor(QXSci.SCI_STYLESETFORE, 75, 0xff222827);
         _sci.sendEditor(QXSci.SCI_STYLECLEARALL, 0, 0);
         //_sci.sendEditor(QXSci.STYLE_LINENUMBER, 1, 0);
-        _sci.sendEditor(QXSci.SCI_STYLESETFONT, QXSci.STYLE_DEFAULT,"Consolas"); 
-        _sci.sendEditor(QXSci.SCI_STYLESETSIZE, QXSci.STYLE_DEFAULT,9); 
+        _sci.sendEditor(QXSci.SCI_STYLESETFONT, QXSci.STYLE_DEFAULT,Setting.getEditorFont()); 
+        _sci.sendEditor(QXSci.SCI_STYLESETSIZEFRACTIONAL, QXSci.STYLE_DEFAULT,Setting.getEditorFontSize()); 
         _sci.sendEditor(QXSci.SCI_STYLECLEARALL, 0, 0); 
         _sci.sendEditor(QXSci.SCI_SETEOLMODE, 1, 0); 
         
@@ -65,8 +65,8 @@ class TextDetail : QXDialog {
         _sci.sendEditor(QXSci.SCI_STYLESETFORE, 75, 0xffefefef);
         _sci.sendEditor(QXSci.SCI_STYLECLEARALL, 0, 0);
         //_sci.sendEditor(QXSci.STYLE_LINENUMBER, 1, 0);
-        _sci.sendEditor(QXSci.SCI_STYLESETFONT, QXSci.STYLE_DEFAULT,"Consolas"); 
-        _sci.sendEditor(QXSci.SCI_STYLESETSIZE, QXSci.STYLE_DEFAULT,9); 
+        _sci.sendEditor(QXSci.SCI_STYLESETFONT, QXSci.STYLE_DEFAULT,Setting.getEditorFont()); 
+        _sci.sendEditor(QXSci.SCI_STYLESETSIZEFRACTIONAL, QXSci.STYLE_DEFAULT,Setting.getEditorFontSize()); 
         _sci.sendEditor(QXSci.SCI_STYLECLEARALL, 0, 0); 
         //_sci.sendEditor(QXSci.SCI_SETREADONLY, 1);
         //C++语法解析 

@@ -124,7 +124,7 @@ var searchData=
   ['widget',['Widget',['../class_q_x_widget.html#af0c522443aed57ed44c2b2486253f3b4',1,'QXWidget']]],
   ['width',['width',['../class_q_x_painter_1_1_paint.html#a9df23e056f5d1a0388cd8190431c0e03',1,'QXPainter.Paint.width()'],['../class_q_x_image.html#a3eeed61a3424d2f907c8a1e420fddf6d',1,'QXImage.width()'],['../class_q_x_rect.html#a3eeed61a3424d2f907c8a1e420fddf6d',1,'QXRect.width()'],['../class_q_x_widget.html#a3eeed61a3424d2f907c8a1e420fddf6d',1,'QXWidget.width()'],['../class_q_x_core.html#a9649ab8139c4c2ea5c93625b30d92a05',1,'QXCore.WIDTH()']]],
   ['win32_5ffind_5fdata',['WIN32_FIND_DATA',['../class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html',1,'FileSystem::Operator']]],
-  ['window',['Window',['../class_color_role.html#afebd8c195a8fa8696a826da59cb67acb',1,'ColorRole.Window()'],['../class_q_x_widget.html#afebd8c195a8fa8696a826da59cb67acb',1,'QXWidget.Window()'],['../class_q_x_core.html#af22433d42ec6b35a5cee3c88109537c2',1,'QXCore.WINDOW()']]],
+  ['window',['WINDOW',['../class_q_x_core.html#af22433d42ec6b35a5cee3c88109537c2',1,'QXCore.WINDOW()'],['../class_color_role.html#afebd8c195a8fa8696a826da59cb67acb',1,'ColorRole.Window()'],['../class_q_x_widget.html#afebd8c195a8fa8696a826da59cb67acb',1,'QXWidget.Window()']]],
   ['windowactivate',['WindowActivate',['../class_q_x_event.html#a619a0896550fd4e997b8a3685b9118da',1,'QXEvent']]],
   ['windowblocked',['WindowBlocked',['../class_q_x_event.html#a8ba9f29e125c71f206dc684bee0dc16c',1,'QXEvent']]],
   ['windowchangeinternal',['WindowChangeInternal',['../class_q_x_event.html#a3c0974a95eee132ca3802b434d21c554',1,'QXEvent']]],
@@ -156,5 +156,6 @@ var searchData=
   ['winidchange',['WinIdChange',['../class_q_x_event.html#aedf6ff501b662dde08bfeae45d91f3f3',1,'QXEvent']]],
   ['write',['write',['../class_dgram_socket.html#a7bc3c3e59293fb955b1add3921b44d38',1,'DgramSocket.write()'],['../class_process.html#a7bc3c3e59293fb955b1add3921b44d38',1,'Process.write()'],['../interface_stream.html#a7bc3c3e59293fb955b1add3921b44d38',1,'Stream.write()'],['../class_stream_socket.html#a7bc3c3e59293fb955b1add3921b44d38',1,'StreamSocket.write()']]],
   ['writefile',['writeFile',['../class__system__.html#a67d70a7686eb74110c83fee117397322',1,'_system_']]],
-  ['writeonly',['WriteOnly',['../class_q_x_buffer.html#a30149e7e5d1384750d02d84aef2c34fa',1,'QXBuffer']]]
+  ['writeonly',['WriteOnly',['../class_q_x_buffer.html#a30149e7e5d1384750d02d84aef2c34fa',1,'QXBuffer']]],
+  ['writepipe',['writePipe',['../class__system__.html#aba3a7e260ead2de4b3939961ec39de3f',1,'_system_']]]
 ];

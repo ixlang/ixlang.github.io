@@ -194,7 +194,7 @@ class QXPainter{
         }
     }
     void setPen(int color, int penStyle, double width){
-		QXNative.widget_set_v2int_double_value(hpaint, QXCore.SETPEN, color, penStyle, width);
+		QXNative.widget_set_v2int_double_value(hpaint, QXCore.SETPEN, color, width, penStyle);
     }
     
     void setBrush(int color, int brushStyle){

@@ -2,6 +2,11 @@ var searchData=
 [
   ['gesture',['Gesture',['../class_q_x_event.html#a8b42fe0710de6141337adc33c480e4a2',1,'QXEvent']]],
   ['gestureoverride',['GestureOverride',['../class_q_x_event.html#ac48e45cd658ce3e84f255351f11bf502',1,'QXEvent']]],
+  ['getfont',['GETFONT',['../class_q_x_core.html#a09eb7d10e6682da12c65f6cb94800162',1,'QXCore']]],
+  ['getfontdescription',['GETFONTDESCRIPTION',['../class_q_x_core.html#a09abc39d2e13d2361214e5dc806600ae',1,'QXCore']]],
+  ['getfontname',['GETFONTNAME',['../class_q_x_core.html#a821f321c732093031ab03cdda816ddbf',1,'QXCore']]],
+  ['getfontpixelsize',['GETFONTPIXELSIZE',['../class_q_x_core.html#a4e98120e6de3e4326d5a2d7df95e6cc4',1,'QXCore']]],
+  ['getfontptsize',['GETFONTPTSIZE',['../class_q_x_core.html#a4bc467238bcd4e9294a42cc576c0b9cc',1,'QXCore']]],
   ['getmenu',['GETMENU',['../class_q_x_core.html#a9608d4c1237067b0cb75d81946b7888a',1,'QXCore']]],
   ['getstylesheey',['GETSTYLESHEEY',['../class_q_x_core.html#ace24e0f2e19f196925ac8792b88ced90',1,'QXCore']]],
   ['gettag',['GETTAG',['../class_q_x_core.html#a433306fc0a08bbb2c24b82dfe80b53bc',1,'QXCore']]],

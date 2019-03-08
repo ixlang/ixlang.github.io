@@ -2,7 +2,7 @@ class FileOutputStream : Stream{
 	long filehandler;
 
 	FileOutputStream(String path){
-		filehandler = QXNative.openSystemFile(path, "w");
+		filehandler = XPlatform.openSystemFile(path, "w");
         if (filehandler == 0){
             throw new IllegalArgumentException("file " + path + " can not open");
         }
@@ -13,7 +13,7 @@ class FileOutputStream : Stream{
 			_system_.closeFile(filehandler);
 			filehandler = 0;
 		}
-		filehandler = QXNative.openSystemFile(path, "w");
+		filehandler = XPlatform.openSystemFile(path, "w");
         return filehandler != 0;
 	}
     void checkValid(){
