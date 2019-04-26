@@ -19,6 +19,8 @@ var searchData=
   ['getcentralwindow',['getCentralWindow',['../class_q_x_main_window.html#a7b8d95df41d063c4260a6d80982deb84',1,'QXMainWindow']]],
   ['getchar',['getChar',['../class_q_x_sci.html#a2e04a667356b45bbc9dcc69501b9985a',1,'QXSci']]],
   ['getcheck',['getCheck',['../class_q_x_check_box.html#ae6d819c3f2dd2e2e33ebafb023efe423',1,'QXCheckBox.getCheck()'],['../class_q_x_push_button.html#ae6d819c3f2dd2e2e33ebafb023efe423',1,'QXPushButton.getCheck()']]],
+  ['getcheckable',['getCheckable',['../class_q_x_action.html#ac92a573bc5ec5124257503da7b165f73',1,'QXAction']]],
+  ['getchecked',['getChecked',['../class_q_x_action.html#a225bef32ce2ecc3ec4b771f0e7f3214d',1,'QXAction']]],
   ['getclassname',['getClassName',['../class_q_x_object.html#a3e97a324df2af082cdb089491757ce11',1,'QXObject']]],
   ['getcreationtime',['getCreationTime',['../class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a6e98c01411432c8e9bd26cdade6fb103',1,'FileSystem::Operator::WIN32_FIND_DATA']]],
   ['getcurrentcolumn',['getCurrentColumn',['../class_q_x_tree_view.html#a7ab2c5179129cd2aac6da3c49b6c7807',1,'QXTreeView']]],
@@ -125,6 +127,9 @@ var searchData=
   ['gotopos',['gotoPos',['../class_q_x_sci.html#aba1378e4e0749b3a4282739cdf46cda0',1,'QXSci']]],
   ['grabkeyboard',['GrabKeyboard',['../class_q_x_event.html#a93d449343cffc15d3db8e470cfe6c5a7',1,'QXEvent']]],
   ['grabmouse',['GrabMouse',['../class_q_x_event.html#a26813c3597f3ada8e1e86ea590b629cc',1,'QXEvent']]],
+  ['gradhandle',['gradhandle',['../class_q_x_brush_1_1_gradient.html#a4954a7db3d8a99eceb2102ba04b6b589',1,'QXBrush::Gradient']]],
+  ['gradient',['Gradient',['../class_q_x_brush_1_1_gradient.html',1,'QXBrush']]],
+  ['gradient',['Gradient',['../class_q_x_brush_1_1_gradient.html#ac14ad3d301094808fc943aafbd1edce8',1,'QXBrush::Gradient']]],
   ['graphicsscenecontextmenu',['GraphicsSceneContextMenu',['../class_q_x_event.html#aa48a375d964eeee62b878b35afabb81f',1,'QXEvent']]],
   ['graphicsscenedragenter',['GraphicsSceneDragEnter',['../class_q_x_event.html#a4181d9eb55ab223d38561fa81bf1b16f',1,'QXEvent']]],
   ['graphicsscenedragleave',['GraphicsSceneDragLeave',['../class_q_x_event.html#a6ad657745273efc68b885b111f57e77d',1,'QXEvent']]],
@@ -140,5 +145,6 @@ var searchData=
   ['graphicsscenemouserelease',['GraphicsSceneMouseRelease',['../class_q_x_event.html#a5cd7256111a5bf668394fa0284ef8366',1,'QXEvent']]],
   ['graphicsscenemove',['GraphicsSceneMove',['../class_q_x_event.html#a2ede3bff5ac8b81cff3d6669d09fa3ed',1,'QXEvent']]],
   ['graphicssceneresize',['GraphicsSceneResize',['../class_q_x_event.html#a365ba46a2a12e9c8b6c99e7a9bdb693f',1,'QXEvent']]],
-  ['graphicsscenewheel',['GraphicsSceneWheel',['../class_q_x_event.html#ae81b28a6b7f12ae178ba03c64f860636',1,'QXEvent']]]
+  ['graphicsscenewheel',['GraphicsSceneWheel',['../class_q_x_event.html#ae81b28a6b7f12ae178ba03c64f860636',1,'QXEvent']]],
+  ['groupswitchmodifier',['GroupSwitchModifier',['../class_q_x_object.html#a60c4a819662587f655eb72cc8d157c46',1,'QXObject']]]
 ];

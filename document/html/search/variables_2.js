@@ -2,7 +2,7 @@ var searchData=
 [
   ['background',['Background',['../class_color_role.html#a3d7d266be21ebcb669d1718ef225900e',1,'ColorRole']]],
   ['base',['Base',['../class_color_role.html#a93e1a70d740d93d47247bb427bd36a71',1,'ColorRole']]],
-  ['bdiagpattern',['BDiagPattern',['../class_q_x_painter_1_1_brush_style.html#aa37cc825a4b0f4b96ce37cd4789dedda',1,'QXPainter::BrushStyle']]],
+  ['bdiagpattern',['BDiagPattern',['../class_q_x_brush_1_1_style.html#aa37cc825a4b0f4b96ce37cd4789dedda',1,'QXBrush::Style']]],
   ['bitarray',['BitArray',['../class_q_x_object.html#ad1673b0cc28891ff8933d9e2a7ab5063',1,'QXObject.BitArray()'],['../class_q_x_variant.html#ad1673b0cc28891ff8933d9e2a7ab5063',1,'QXVariant.BitArray()']]],
   ['bitmap',['Bitmap',['../class_q_x_object.html#aa9ceba6733aa17e7334967174bb5f169',1,'QXObject.Bitmap()'],['../class_q_x_variant.html#aa9ceba6733aa17e7334967174bb5f169',1,'QXVariant.Bitmap()']]],
   ['bitmapcursor',['BitmapCursor',['../class_q_x_object.html#a5a76d16f6d8fbb138eebbf657a8787e1',1,'QXObject']]],

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['padspread',['PadSpread',['../class_q_x_brush.html#ae6e475fab80ffd1db2ddff208b3d9a0a',1,'QXBrush']]],
   ['paint',['Paint',['../class_q_x_painter_1_1_paint.html',1,'QXPainter']]],
   ['paint',['Paint',['../class_q_x_event.html#a9f855be41da962feb41f96c6d3798b1b',1,'QXEvent']]],
   ['painterfromimg',['PAINTERFROMIMG',['../class_q_x_core.html#a578c073bb1b06962add2ec7d06cdc9c2',1,'QXCore']]],
@@ -70,8 +71,8 @@ var searchData=
   ['propattrminim',['PROPATTRMINIM',['../class_q_x_core.html#aad0bfb0d4b039dd8002fd0327f4c374a',1,'QXCore']]],
   ['propattrregex',['PROPATTRREGEX',['../class_q_x_core.html#a0fdd96633423671a94eec0ac2a8678b9',1,'QXCore']]],
   ['propattrsstep',['PROPATTRSSTEP',['../class_q_x_core.html#a747821f05bbbef6e7cddaccd8ee27113',1,'QXCore']]],
-  ['propertymanager',['PropertyManager',['../class_q_x_property_browser_1_1_property_manager.html#a8441f8734e74f78efa409b13cde04ff5',1,'QXPropertyBrowser.PropertyManager.PropertyManager()'],['../class_q_x_property_browser_1_1_property_manager.html#a28667dd62e8e712dd3000e5791f84516',1,'QXPropertyBrowser.PropertyManager.PropertyManager(long handle)']]],
   ['propertymanager',['PropertyManager',['../class_q_x_property_browser_1_1_property_manager.html',1,'QXPropertyBrowser']]],
+  ['propertymanager',['PropertyManager',['../class_q_x_property_browser_1_1_property_manager.html#a8441f8734e74f78efa409b13cde04ff5',1,'QXPropertyBrowser.PropertyManager.PropertyManager()'],['../class_q_x_property_browser_1_1_property_manager.html#a28667dd62e8e712dd3000e5791f84516',1,'QXPropertyBrowser.PropertyManager.PropertyManager(long handle)']]],
   ['propgetvalue',['PROPGETVALUE',['../class_q_x_core.html#af1dc15a4ddb9aed009713a5701b975b9',1,'QXCore']]],
   ['propsetarrt',['PROPSETARRT',['../class_q_x_core.html#a0cd693abeef052b30872d1f27fcae015',1,'QXCore']]],
   ['propsetarrtptmax',['PROPSETARRTPTMAX',['../class_q_x_core.html#abd4dab89949683873c9d65cbee8695b8',1,'QXCore']]],

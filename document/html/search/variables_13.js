@@ -44,7 +44,7 @@ var searchData=
   ['textformat',['TextFormat',['../class_q_x_object.html#ab84bc4fe14423075779c3471acef2eb6',1,'QXObject.TextFormat()'],['../class_q_x_variant.html#ab84bc4fe14423075779c3471acef2eb6',1,'QXVariant.TextFormat()']]],
   ['textlength',['TextLength',['../class_q_x_object.html#aab8429f1c0784e22d89423b019052378',1,'QXObject.TextLength()'],['../class_q_x_variant.html#aab8429f1c0784e22d89423b019052378',1,'QXVariant.TextLength()']]],
   ['textsize',['textSize',['../class_q_x_painter_1_1_paint.html#acf40dd19bb9c51a2f1927a8e5d767623',1,'QXPainter::Paint']]],
-  ['texturepattern',['TexturePattern',['../class_q_x_painter_1_1_brush_style.html#acf2bbef523153864f9e1f96437d52f05',1,'QXPainter::BrushStyle']]],
+  ['texturepattern',['TexturePattern',['../class_q_x_brush_1_1_style.html#acf2bbef523153864f9e1f96437d52f05',1,'QXBrush::Style']]],
   ['themechange',['ThemeChange',['../class_q_x_event.html#a5f169414d0e0352f1d445f491d2dc2c7',1,'QXEvent']]],
   ['threadchange',['ThreadChange',['../class_q_x_event.html#a9e3bc20b5d38078ea4b2d1b3ecfeff35',1,'QXEvent']]],
   ['thresholdalphadither',['ThresholdAlphaDither',['../class_q_x_painter_1_1_image_conversion_flag.html#a1d85a76c15d9e99b8a4d25b634c16775',1,'QXPainter::ImageConversionFlag']]],

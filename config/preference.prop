@@ -52,6 +52,7 @@
 	"actionfindagain":	"F3",
 	"actioninterface":	"",
 	"actionremotedbg":	"",
+	"actionmatchbrace":	"F2",
 	"actionbreakpoint":	"F9",
 	"actionopenoutput":	"Ctrl+Alt+O",
 	"actionoverlapped":	"",
@@ -77,6 +78,8 @@
 	"linenumber":	"开启",
 	"repallconfirm":	"开启",
 	"autosave":	"开启",
+	"indentguide":	"开启",
+	"showfolding":	"开启",
 	"workspace":	"",
 	"switchinfo":	"开启"
 }

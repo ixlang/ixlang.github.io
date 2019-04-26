@@ -10,5 +10,8 @@ var searchData=
   ['tostring',['toString',['../class_json_array.html#a1c9a6caf7c15489cfb807265d869af1c',1,'JsonArray.toString()'],['../class_json_object.html#a1c9a6caf7c15489cfb807265d869af1c',1,'JsonObject.toString()'],['../class_x_dom_node.html#ad146fa8579a5f8a876c4688cc5a68520',1,'XDomNode.toString()']]],
   ['translate',['translate',['../class_q_x_matrix.html#a3f4a683f0f755bc3c8f2a573fb889a5e',1,'QXMatrix.translate()'],['../class_q_x_painter.html#ad6c65c6f675c498218073dca7d2f2424',1,'QXPainter.translate()']]],
   ['trigger',['trigger',['../class_q_x_action.html#ab0554cb7241c0b72d34402f0bb419462',1,'QXAction']]],
-  ['trim',['trim',['../class_string.html#a24053e961f5f1b3dafea27a7c98538b7',1,'String']]]
+  ['trim',['trim',['../class_string.html#a24053e961f5f1b3dafea27a7c98538b7',1,'String']]],
+  ['trylock',['trylock',['../interface_lock.html#a79ba6f06a91dbeaa8b6086f7ccec53f7',1,'Lock.trylock()'],['../class_reentrant_lock.html#a79ba6f06a91dbeaa8b6086f7ccec53f7',1,'ReentrantLock.trylock()'],['../class_unreentrant_lock.html#a79ba6f06a91dbeaa8b6086f7ccec53f7',1,'UnreentrantLock.trylock()']]],
+  ['trylockread',['trylockRead',['../class_read_write_lock.html#a29e0ffc7b80ac3d3d2a52b9d6fea7f39',1,'ReadWriteLock.trylockRead()'],['../interface_r_w_lock.html#a29e0ffc7b80ac3d3d2a52b9d6fea7f39',1,'RWLock.trylockRead()']]],
+  ['trylockwrite',['trylockWrite',['../class_read_write_lock.html#a2ab2a815a1cfe5a5b73b089ac44ffffb',1,'ReadWriteLock.trylockWrite()'],['../interface_r_w_lock.html#a2ab2a815a1cfe5a5b73b089ac44ffffb',1,'RWLock.trylockWrite()']]]
 ];

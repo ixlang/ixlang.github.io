@@ -14,13 +14,6 @@
 			"file":	".\\packages\\FileSystem1.0.0.2",
 			"icon":	".\\packages\\FileSystem1.0.0.2.png"
 		}, {
-			"package":	"Qt5.9.1",
-			"version":	"5.9.1.2",
-			"descr":	"优秀的跨平台界面库",
-			"author":	"https://github.com/ixlang/xlibrarys",
-			"file":	".\\packages\\Qt5.9.15.9.1.2",
-			"icon":	".\\packages\\Qt5.9.15.9.1.2.png"
-		}, {
 			"package":	"Runtime",
 			"version":	"1.0.0.2",
 			"descr":	"用于运行时进程的处理",
@@ -34,5 +27,19 @@
 			"author":	"https://github.com/ixlang/xlibrarys",
 			"file":	".\\packages\\XPlatform1.0.0.2",
 			"icon":	".\\packages\\XPlatform1.0.0.2.png"
+		}, {
+			"package":	"Qt5.9.1",
+			"version":	"5.9.1.4",
+			"descr":	"优秀的跨平台界面库",
+			"author":	"https://github.com/ixlang/xlibraries",
+			"file":	".\\packages\\Qt5.9.15.9.1.4",
+			"icon":	".\\packages\\Qt5.9.15.9.1.4.png"
+		}, {
+			"package":	"xfftw",
+			"version":	"1.0.0.0",
+			"descr":	"快速傅里叶变换库",
+			"author":	"https://github.com/ixlang/xlibraries",
+			"file":	".\\packages\\xfftw1.0.0.0",
+			"icon":	".\\packages\\xfftw1.0.0.0.png"
 		}]
 }

@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v1.8 Release</span>
+   &#160;<span id="projectnumber">v2.0 Release</span>
    </div>
    <div id="projectbrief">项目介绍</div>
   </td>
@@ -143,6 +143,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </li>
 <li>saveState()
 : <a class="el" href="class_q_x_main_window.html#a79000016b1490230e010186c4df0d4d5">QXMainWindow</a>
+</li>
+<li>saveToFile()
+: <a class="el" href="class_q_x_image.html#ad7b406547ffec4983bcd338cbfb74cdb">QXImage</a>
 </li>
 <li>SC_ALPHA_NOALPHA
 : <a class="el" href="class_q_x_sci.html#a0111f6a446b96927237bdff97d160895">QXSci</a>
@@ -4410,7 +4413,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 : <a class="el" href="class_q_x_sci.html#ad57d6451a4cbf01d5db0f25753e77ed1">QXSci</a>
 </li>
 <li>schedule()
-: <a class="el" href="class_timer.html#a3900967a7053c4c5eb83aae5d6241fe7">Timer</a>
+: <a class="el" href="class_timer.html#abe67887e0c918890f2d0b3824884a434">Timer</a>
 </li>
 <li>SCI_ADDREFDOCUMENT
 : <a class="el" href="class_q_x_sci.html#a8384c412b1988fb87c88532918b03c1b">QXSci</a>
@@ -6669,7 +6672,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 : <a class="el" href="class_unsi.html#a952e28f99be24de1afb59da6451b262b">Unsi</a>
 </li>
 <li>sendEditor()
-: <a class="el" href="class_q_x_sci.html#afddfe1ab85fe0b40a8e06a5905215316">QXSci</a>
+: <a class="el" href="class_q_x_sci.html#afa429f468e2280b2841707e11ffba1b3">QXSci</a>
 </li>
 <li>sendTo()
 : <a class="el" href="class_dgram_socket.html#ac8fb0dccd887899df024e840e84a1410">DgramSocket</a>
@@ -6717,7 +6720,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 : <a class="el" href="class_q_x_property_browser_1_1_qt_variant_property.html#ad5a21c7ff1207887a4f545ae33f62a3d">QXPropertyBrowser.QtVariantProperty</a>
 </li>
 <li>setAttributeMin()
-: <a class="el" href="class_q_x_property_browser_1_1_qt_variant_property.html#a8c83b0a6f02ffada9db5b130e3bf5758">QXPropertyBrowser.QtVariantProperty</a>
+: <a class="el" href="class_q_x_property_browser_1_1_qt_variant_property.html#ac490dfccf91038c49478b606a760dde4">QXPropertyBrowser.QtVariantProperty</a>
 </li>
 <li>setAttributePointMax()
 : <a class="el" href="class_q_x_property_browser_1_1_qt_variant_property.html#a73906bf933e022585d167f54ba8745f8">QXPropertyBrowser.QtVariantProperty</a>
@@ -6759,7 +6762,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 : <a class="el" href="class_q_x_core.html#ae1bfd3f4ad6cf75a1b6be1d5dc014699">QXCore</a>
 </li>
 <li>setBrush()
-: <a class="el" href="class_q_x_painter.html#a319d58596c83317bde5f588f24b52465">QXPainter</a>
+: <a class="el" href="class_q_x_painter.html#ac87b935ccd824c218adea07e22db45ff">QXPainter</a>
 </li>
 <li>setBuffer()
 : <a class="el" href="class_q_x_buffer.html#a34554fb651a8d08de78ef3bd42983e2f">QXBuffer</a>
@@ -6771,11 +6774,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 : <a class="el" href="class_q_x_check_box.html#a4810de91a3146bbaf0d67aed5d360d68">QXCheckBox</a>
 , <a class="el" href="class_q_x_push_button.html#a4810de91a3146bbaf0d67aed5d360d68">QXPushButton</a>
 </li>
+<li>setCheckable()
+: <a class="el" href="class_q_x_action.html#aba50dc987d16fd79bd73cd28225129ac">QXAction</a>
+</li>
 <li>setChecked()
 : <a class="el" href="class_q_x_action.html#a1a1a0bd6bbe494562a772083d0f33f7d">QXAction</a>
 </li>
 <li>setColor()
 : <a class="el" href="class_q_x_painter_1_1_paint.html#a5551ca73ea9118c8dc6dbfd26e72e3d6">QXPainter.Paint</a>
+</li>
+<li>setColorAt()
+: <a class="el" href="class_q_x_brush_1_1_gradient.html#ac11b3ec2cfabdebcec23cd5e33d784ff">QXBrush.Gradient</a>
+</li>
+<li>SETCOLORAT
+: <a class="el" href="class_q_x_core.html#a47c9e1f3537f2eeb3c2400a5ad7c3d9f">QXCore</a>
 </li>
 <li>SETCOLUMBWIDTH
 : <a class="el" href="class_q_x_core.html#abd0c39add7018cce96a8b96a7dc4ba43">QXCore</a>
@@ -6896,8 +6908,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <li>setFullRowSelection()
 : <a class="el" href="class_q_x_tree_view.html#a561960813c69b3b664e4c361f6fdc974">QXTreeView</a>
 </li>
+<li>SETGRADIENT
+: <a class="el" href="class_q_x_core.html#a038f5a2bf6ff267b412669e72ec8e7c7">QXCore</a>
+</li>
 <li>setHeaderVisible()
 : <a class="el" href="class_q_x_tree_view.html#a452cc845ae9ac4d614bb8c406458cc69">QXTreeView</a>
+</li>
+<li>setHeaderWidths()
+: <a class="el" href="class_q_x_property_browser.html#aa6d9f1376e014bc024771ff55e170f8c">QXPropertyBrowser</a>
 </li>
 <li>setHHColumns()
 : <a class="el" href="class_q_x_table_widget.html#ad2d48d92bcd6ad81aaae4396ed48198c">QXTableWidget</a>
@@ -7063,7 +7081,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 : <a class="el" href="class_q_x_painter.html#ad7a8952f0a8efe38178bd237bbf01bf8">QXPainter</a>
 </li>
 <li>setPalette()
-: <a class="el" href="class_q_x_widget.html#af4f9aeb7ea4cb1d3b8106e4f59ca6d57">QXWidget</a>
+: <a class="el" href="class_q_x_widget.html#afc296486cac0601b0bd7859e9e2714e7">QXWidget</a>
 </li>
 <li>setPaletteColor()
 : <a class="el" href="class_q_x_application.html#a0d3e88541a8e4b1eb4697a2b646ce4c0">QXApplication</a>
@@ -7091,6 +7109,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </li>
 <li>setPropertyEventListener()
 : <a class="el" href="class_q_x_property_browser_1_1_property_manager.html#a0a01e4d3f1c56ea16e28d9831091fe99">QXPropertyBrowser.PropertyManager</a>
+</li>
+<li>SETPROPWIDTHS
+: <a class="el" href="class_q_x_core.html#ab0335d0a681d59eea809c71f4c7939f6">QXCore</a>
 </li>
 <li>setProxy()
 : <a class="el" href="class_http_request.html#a8a1ef8a20d6a2a879bf5cda2ca291476">HttpRequest</a>
@@ -7145,6 +7166,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </li>
 <li>setSortEnable()
 : <a class="el" href="class_q_x_tree_view.html#a7e5e7cd991669202a25da2e3c3d3b2c5">QXTreeView</a>
+</li>
+<li>setSpread()
+: <a class="el" href="class_q_x_brush_1_1_gradient.html#ac160cda63179e610226cb97b90531129">QXBrush.Gradient</a>
+</li>
+<li>SETSPREAD
+: <a class="el" href="class_q_x_core.html#abf784ea0e6520bc24220764caccfaee5">QXCore</a>
 </li>
 <li>setStrokeWidth()
 : <a class="el" href="class_q_x_painter_1_1_paint.html#afcefbe798064fc2967d5f85dd3fbf3ff">QXPainter.Paint</a>
@@ -7313,6 +7340,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <li>Sheet
 : <a class="el" href="class_q_x_widget.html#a26756b22875ef66a2cd363c66639d925">QXWidget</a>
 </li>
+<li>ShiftModifier
+: <a class="el" href="class_q_x_object.html#aa4422647e586bb4f8df70d8a0cf6bc2a">QXObject</a>
+</li>
 <li>Shortcut
 : <a class="el" href="class_q_x_event.html#a1f27a8b1836c2b012899002e7c0ad722">QXEvent</a>
 </li>
@@ -7424,7 +7454,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 : <a class="el" href="class_q_x_painter_1_1_pen_style.html#af4e194ffd8fa9957974f5205104278a9">QXPainter.PenStyle</a>
 </li>
 <li>SolidPattern
-: <a class="el" href="class_q_x_painter_1_1_brush_style.html#a8a74951fd9ef0acd5554d0abbd6c68b3">QXPainter.BrushStyle</a>
+: <a class="el" href="class_q_x_brush_1_1_style.html#a8a74951fd9ef0acd5554d0abbd6c68b3">QXBrush.Style</a>
 </li>
 <li>Speech
 : <a class="el" href="class_q_x_event.html#ad444c43ca7432dc228aff26f27904803">QXEvent</a>
@@ -7433,7 +7463,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 : <a class="el" href="class_q_x_widget.html#a64d9cfccf4efe512573a0ee169869e09">QXWidget</a>
 </li>
 <li>split()
-: <a class="el" href="class_string.html#a5339bc7d29e9e803c81f2caefb32bc59">String</a>
+: <a class="el" href="class_string.html#aa6078aae44f67b7a48831c17cb75ce26">String</a>
 </li>
 <li>SplitHCursor
 : <a class="el" href="class_q_x_object.html#af4dc4b716f70a3802f37231e4a23a5a4">QXObject</a>
@@ -7448,7 +7478,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 : <a class="el" href="class_q_x_core.html#a7d986376b24b144629cf6cc8bb1a700d">QXCore</a>
 </li>
 <li>StackOverflowException()
-: <a class="el" href="class_stack_overflow_exception.html#adb4955b0da783b64ed8b1817f8630a88">StackOverflowException</a>
+: <a class="el" href="class_stack_overflow_exception.html#aa7ad7459ea3b1efe13a721a93324fb50">StackOverflowException</a>
 </li>
 <li>start()
 : <a class="el" href="class_pattern_1_1_result.html#ac92d3b835636641550b12b0f93daf21d">Pattern.Result</a>
@@ -7475,7 +7505,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <li>String
 : <a class="el" href="class_q_x_object.html#a7e3dd3673c0f41e53c380dcd5cb5bebd">QXObject</a>
 , <a class="el" href="class_q_x_variant.html#a7e3dd3673c0f41e53c380dcd5cb5bebd">QXVariant</a>
-, <a class="el" href="class_string.html#aad2c67dc885494e48562fb12ff873150">String</a>
+, <a class="el" href="class_string.html#a5d57e6990d0d93128309fa765f8cdcd4">String</a>
 </li>
 <li>StringList
 : <a class="el" href="class_q_x_object.html#a3bd4854dc8e0be57de0319baf640fa82">QXObject</a>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['fdiagpattern',['FDiagPattern',['../class_q_x_painter_1_1_brush_style.html#a285ab27b6e7e5a3466c63f81f63bed19',1,'QXPainter::BrushStyle']]],
+  ['fdiagpattern',['FDiagPattern',['../class_q_x_brush_1_1_style.html#a285ab27b6e7e5a3466c63f81f63bed19',1,'QXBrush::Style']]],
   ['file_5fattribute_5fdirectory',['FILE_ATTRIBUTE_DIRECTORY',['../class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a4854233e40506430e7baac2de91a9f63',1,'FileSystem::Operator::WIN32_FIND_DATA']]],
   ['fileopen',['FileOpen',['../class_q_x_event.html#a00e383cfb94f665a6a00c55f565e1643',1,'QXEvent']]],
   ['fill',['FILL',['../class_q_x_painter_1_1_paint.html#a8beb5a729d4115ba8064a8bd9dfacc23',1,'QXPainter::Paint']]],

@@ -48,7 +48,7 @@ var searchData=
   ['textformat',['TextFormat',['../class_q_x_object.html#ab84bc4fe14423075779c3471acef2eb6',1,'QXObject.TextFormat()'],['../class_q_x_variant.html#ab84bc4fe14423075779c3471acef2eb6',1,'QXVariant.TextFormat()']]],
   ['textlength',['TextLength',['../class_q_x_object.html#aab8429f1c0784e22d89423b019052378',1,'QXObject.TextLength()'],['../class_q_x_variant.html#aab8429f1c0784e22d89423b019052378',1,'QXVariant.TextLength()']]],
   ['textsize',['textSize',['../class_q_x_painter_1_1_paint.html#acf40dd19bb9c51a2f1927a8e5d767623',1,'QXPainter::Paint']]],
-  ['texturepattern',['TexturePattern',['../class_q_x_painter_1_1_brush_style.html#acf2bbef523153864f9e1f96437d52f05',1,'QXPainter::BrushStyle']]],
+  ['texturepattern',['TexturePattern',['../class_q_x_brush_1_1_style.html#acf2bbef523153864f9e1f96437d52f05',1,'QXBrush::Style']]],
   ['themechange',['ThemeChange',['../class_q_x_event.html#a5f169414d0e0352f1d445f491d2dc2c7',1,'QXEvent']]],
   ['thread',['Thread',['../class_thread.html',1,'']]],
   ['thread_2excs',['Thread.xcs',['../_thread_8xcs.html',1,'']]],
@@ -116,5 +116,8 @@ var searchData=
   ['trscrollbottom',['TRSCROLLBOTTOM',['../class_q_x_core.html#a179621adbdea7058430f663147c67be3',1,'QXCore']]],
   ['trselectmode',['TRSELECTMODE',['../class_q_x_core.html#ad8e8e0564f55205fe1c99ba3a3f18fcd',1,'QXCore']]],
   ['trsortenable',['TRSORTENABLE',['../class_q_x_core.html#a8b93a881149bc14964ccf9988db7a485',1,'QXCore']]],
-  ['truncate',['Truncate',['../class_q_x_buffer.html#a198da7171d05a01f84e7cdf7df2fad89',1,'QXBuffer']]]
+  ['truncate',['Truncate',['../class_q_x_buffer.html#a198da7171d05a01f84e7cdf7df2fad89',1,'QXBuffer']]],
+  ['trylock',['trylock',['../interface_lock.html#a79ba6f06a91dbeaa8b6086f7ccec53f7',1,'Lock.trylock()'],['../class_reentrant_lock.html#a79ba6f06a91dbeaa8b6086f7ccec53f7',1,'ReentrantLock.trylock()'],['../class_unreentrant_lock.html#a79ba6f06a91dbeaa8b6086f7ccec53f7',1,'UnreentrantLock.trylock()']]],
+  ['trylockread',['trylockRead',['../class_read_write_lock.html#a29e0ffc7b80ac3d3d2a52b9d6fea7f39',1,'ReadWriteLock.trylockRead()'],['../interface_r_w_lock.html#a29e0ffc7b80ac3d3d2a52b9d6fea7f39',1,'RWLock.trylockRead()']]],
+  ['trylockwrite',['trylockWrite',['../class_read_write_lock.html#a2ab2a815a1cfe5a5b73b089ac44ffffb',1,'ReadWriteLock.trylockWrite()'],['../interface_r_w_lock.html#a2ab2a815a1cfe5a5b73b089ac44ffffb',1,'RWLock.trylockWrite()']]]
 ];

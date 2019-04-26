@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['nativefinalize',['nativeFinalize',['../class_q_x_object.html#ad2ae0de7691a8cabcd24dd1c6112fc6f',1,'QXObject.nativeFinalize()'],['../class_q_x_core.html#a94a5e9fd15b387ec8f0bdc1803d5495d',1,'QXCore.NATIVEFINALIZE()']]],
+  ['nativefinalize',['NATIVEFINALIZE',['../class_q_x_core.html#a94a5e9fd15b387ec8f0bdc1803d5495d',1,'QXCore.NATIVEFINALIZE()'],['../class_q_x_object.html#ad2ae0de7691a8cabcd24dd1c6112fc6f',1,'QXObject.nativeFinalize()']]],
   ['nativegesture',['NativeGesture',['../class_q_x_event.html#a1191895670d52e071fccbb14af847fcc',1,'QXEvent']]],
   ['nativehandle',['nativehandle',['../class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab',1,'QXNative']]],
   ['ncolorroles',['NColorRoles',['../class_color_role.html#a79e614a5495a2d0c6991762367988fe7',1,'ColorRole']]],
@@ -12,7 +12,7 @@ var searchData=
   ['no',['No',['../class_q_x_message_box.html#a8b7b3b3f9c9c81501e71dec0a381d645',1,'QXMessageBox']]],
   ['noall',['NoAll',['../class_q_x_message_box.html#aa5a0309a8b3a904984e4bf8f696a5189',1,'QXMessageBox']]],
   ['noalpha',['NoAlpha',['../class_q_x_painter_1_1_image_conversion_flag.html#af0fd3b86b028d11ce1a419b19144b5f0',1,'QXPainter::ImageConversionFlag']]],
-  ['nobrush',['NoBrush',['../class_q_x_painter_1_1_brush_style.html#a5914bad407e02b5d6ac81a1c4fcacc2d',1,'QXPainter::BrushStyle']]],
+  ['nobrush',['NoBrush',['../class_q_x_brush_1_1_style.html#a5914bad407e02b5d6ac81a1c4fcacc2d',1,'QXBrush::Style']]],
   ['nobutton',['NoButton',['../class_q_x_message_box.html#a678943707038da5ba12c2686be5212df',1,'QXMessageBox']]],
   ['nocontextmenu',['NoContextMenu',['../class_q_x_widget.html#aea104bc83743a0ecedb9e352d129ae0c',1,'QXWidget']]],
   ['nodockwidgetfeatures',['NoDockWidgetFeatures',['../class_q_x_dock_widget.html#a250efeace6486331a8f791dddfe2d833',1,'QXDockWidget']]],
@@ -21,6 +21,7 @@ var searchData=
   ['nofocus',['NoFocus',['../class_q_x_widget.html#a4332313d06638a3ffaa00986976f64f3',1,'QXWidget']]],
   ['noformatconversion',['NoFormatConversion',['../class_q_x_painter_1_1_image_conversion_flag.html#a860892627d456963678e400bf162c8a6',1,'QXPainter::ImageConversionFlag']]],
   ['noitemflags',['NoItemFlags',['../class_q_x_tree_view.html#a87a137df781b043b20cf61ca3db29ed3',1,'QXTreeView']]],
+  ['nomodifier',['NoModifier',['../class_q_x_object.html#ab1609c27d57d8c583b3f50f81271f8e3',1,'QXObject']]],
   ['nonclientareamousebuttondblclick',['NonClientAreaMouseButtonDblClick',['../class_q_x_event.html#ac32db0f34a8bdf93302532632689189e',1,'QXEvent']]],
   ['nonclientareamousebuttonpress',['NonClientAreaMouseButtonPress',['../class_q_x_event.html#a7a4af860aa6b5b6a2cf6c6e8f0ca0765',1,'QXEvent']]],
   ['nonclientareamousebuttonrelease',['NonClientAreaMouseButtonRelease',['../class_q_x_event.html#a0202a346dc42085e17be0360608a9dee',1,'QXEvent']]],
@@ -34,5 +35,6 @@ var searchData=
   ['notify',['notify',['../interface_async_input.html#aa2c2c9eef81bf51c21a6e777367ffb10',1,'AsyncInput.notify()'],['../class_q_x_core.html#a5b2596ce6082ca2c9f7bf18be09cd874',1,'QXCore.Notify()']]],
   ['notoall',['NoToAll',['../class_q_x_message_box.html#ae0ab8db756358d6ce7cc4c78a3b43965',1,'QXMessageBox']]],
   ['notopen',['NotOpen',['../class_q_x_buffer.html#a4c8a6b70d1d50ad88eadc101804d43ce',1,'QXBuffer']]],
+  ['nstyle',['nstyle',['../class_q_x_brush_1_1_gradient.html#a23477d65a9dbdca347a60b1b883a9ade',1,'QXBrush::Gradient']]],
   ['nullpointerexception',['NullPointerException',['../class_null_pointer_exception.html',1,'NullPointerException'],['../class_null_pointer_exception.html#a323d62453fa1b0e8ff073028aa2ddcac',1,'NullPointerException.NullPointerException()'],['../class_null_pointer_exception.html#a41a4d97149deeee5515086b1669efbc5',1,'NullPointerException.NullPointerException(String message)']]]
 ];

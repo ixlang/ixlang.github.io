@@ -110,7 +110,7 @@
      <x>0</x>
      <y>0</y>
      <width>1501</width>
-     <height>22</height>
+     <height>23</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -170,6 +170,7 @@
     <addaction name="actionreplace"/>
     <addaction name="actionfindagain"/>
     <addaction name="separator"/>
+    <addaction name="actionmatchbrace"/>
     <addaction name="actionoverride"/>
     <addaction name="actionautocomplete"/>
     <addaction name="separator"/>
@@ -325,7 +326,14 @@
         <number>2</number>
        </property>
        <item>
-        <widget class="QLineEdit" name="editSearch"/>
+        <widget class="QLineEdit" name="editSearch">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>输入关键字搜索...</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </item>
@@ -384,7 +392,7 @@
    <property name="minimumSize">
     <size>
      <width>150</width>
-     <height>111</height>
+     <height>119</height>
     </size>
    </property>
    <property name="features">
@@ -400,7 +408,10 @@
     <number>1</number>
    </attribute>
    <widget class="QWidget" name="dockWidgetContents_5">
-    <layout class="QVBoxLayout" name="verticalLayout" stretch="0">
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0">
+     <property name="spacing">
+      <number>0</number>
+     </property>
      <property name="leftMargin">
       <number>0</number>
      </property>
@@ -413,6 +424,29 @@
      <property name="bottomMargin">
       <number>0</number>
      </property>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <property name="leftMargin">
+        <number>2</number>
+       </property>
+       <property name="topMargin">
+        <number>2</number>
+       </property>
+       <property name="rightMargin">
+        <number>2</number>
+       </property>
+       <property name="bottomMargin">
+        <number>2</number>
+       </property>
+       <item>
+        <widget class="QLineEdit" name="classSearch">
+         <property name="placeholderText">
+          <string>输入关键字搜索...</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
      <item>
       <widget class="QTreeWidget" name="tree_class">
        <property name="verticalScrollMode">
@@ -1786,6 +1820,18 @@
    </property>
    <property name="text">
     <string>包管理(&amp;P)</string>
+   </property>
+  </action>
+  <action name="actionmatchbrace">
+   <property name="icon">
+    <iconset>
+     <normaloff>res/toolbar/matchbrace.png</normaloff>res/toolbar/matchbrace.png</iconset>
+   </property>
+   <property name="text">
+    <string>匹配括号(&amp;M)</string>
+   </property>
+   <property name="shortcut">
+    <string>F2</string>
    </property>
   </action>
  </widget>

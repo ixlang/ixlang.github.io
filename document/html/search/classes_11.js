@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['scieventlistener',['SciEventListener',['../class_q_x_object_1_1_sci_event_listener.html',1,'QXObject']]],
-  ['stackoverflowexception',['StackOverflowException',['../class_stack_overflow_exception.html',1,'']]],
-  ['stream',['Stream',['../interface_stream.html',1,'']]],
-  ['streamsocket',['StreamSocket',['../class_stream_socket.html',1,'']]],
-  ['string',['String',['../class_string.html',1,'']]]
+  ['readwritelock',['ReadWriteLock',['../class_read_write_lock.html',1,'']]],
+  ['reentrantlock',['ReentrantLock',['../class_reentrant_lock.html',1,'']]],
+  ['renderhint',['RenderHint',['../class_q_x_painter_1_1_render_hint.html',1,'QXPainter']]],
+  ['result',['Result',['../class_pattern_1_1_result.html',1,'Pattern']]],
+  ['runnable',['Runnable',['../class_runnable.html',1,'']]],
+  ['rwlock',['RWLock',['../interface_r_w_lock.html',1,'']]]
 ];

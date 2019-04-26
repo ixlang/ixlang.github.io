@@ -46,6 +46,7 @@ var searchData=
   ['messageboxque',['MESSAGEBOXQUE',['../class_q_x_core.html#a1e1df3c29e3304e2899642f725bdf1d5',1,'QXCore']]],
   ['messageboxwar',['MESSAGEBOXWAR',['../class_q_x_core.html#a5c2b6836557e1656d6ec5d98ffc25ea6',1,'QXCore']]],
   ['metacall',['MetaCall',['../class_q_x_event.html#aa07cd0e5b83b8b65f1964f2c6b9c66be',1,'QXEvent']]],
+  ['metamodifier',['MetaModifier',['../class_q_x_object.html#a7eec0a26a73ca379a5f6a193871448ee',1,'QXObject']]],
   ['mid',['Mid',['../class_color_role.html#aba76b0cf60547b285b963ecab34d87f6',1,'ColorRole']]],
   ['midlight',['Midlight',['../class_color_role.html#aa3a284da22315266c09a7d91153abdb8',1,'ColorRole']]],
   ['min',['min',['../class_math.html#a2f2bf96d77a187bd4446b4ba3864470d',1,'Math.min(int a, int b)'],['../class_math.html#aae78f234a48742ac10b1a231f771d809',1,'Math.min(long a, long b)'],['../class_math.html#af3a87289fa5f023930c93d80e6375930',1,'Math.min(double a, double b)']]],
@@ -66,7 +67,7 @@ var searchData=
   ['mousebuttonrelease',['MouseButtonRelease',['../class_q_x_event.html#acb350601c44575fd5a341c8cf9ee19be',1,'QXEvent']]],
   ['mousemove',['MouseMove',['../class_q_x_event.html#a537d41598459528a6690fab10174631a',1,'QXEvent']]],
   ['mousetrackingchange',['MouseTrackingChange',['../class_q_x_event.html#a2846696fd0ba9917e788d8af24a32b96',1,'QXEvent']]],
-  ['move',['move',['../class_q_x_widget.html#a7e67b4a2ada5392aeaa37daa52c3d3d5',1,'QXWidget.move()'],['../class_q_x_event.html#a1e9f3fb6777f464a342b16eef234271b',1,'QXEvent.Move()'],['../class_q_x_core.html#a9cdd70415e4644e01d4f0f7de52fe12e',1,'QXCore.MOVE()']]],
+  ['move',['MOVE',['../class_q_x_core.html#a9cdd70415e4644e01d4f0f7de52fe12e',1,'QXCore.MOVE()'],['../class_q_x_widget.html#a7e67b4a2ada5392aeaa37daa52c3d3d5',1,'QXWidget.move()'],['../class_q_x_event.html#a1e9f3fb6777f464a342b16eef234271b',1,'QXEvent.Move()']]],
   ['mpenstyle',['MPenStyle',['../class_q_x_painter_1_1_pen_style.html#a96036a8d70cdc6ae9e4379c172bddfa4',1,'QXPainter::PenStyle']]],
   ['mswindowsfixedsizedialoghint',['MSWindowsFixedSizeDialogHint',['../class_q_x_widget.html#a88649178e51aa10aa499cb10c5bda270',1,'QXWidget']]],
   ['mswindowsowndc',['MSWindowsOwnDC',['../class_q_x_widget.html#acc4f015d6176aabfbfad2473cdb01674',1,'QXWidget']]]

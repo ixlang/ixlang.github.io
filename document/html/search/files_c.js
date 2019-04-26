@@ -2,6 +2,7 @@ var searchData=
 [
   ['qxaction_2excsm',['QXAction.xcsm',['../_q_x_action_8xcsm.html',1,'']]],
   ['qxapplication_2excsm',['QXApplication.xcsm',['../_q_x_application_8xcsm.html',1,'']]],
+  ['qxbrush_2excsm',['QXBrush.xcsm',['../_q_x_brush_8xcsm.html',1,'']]],
   ['qxbuffer_2excsm',['QXBuffer.xcsm',['../_q_x_buffer_8xcsm.html',1,'']]],
   ['qxbytearray_2excsm',['QXByteArray.xcsm',['../_q_x_byte_array_8xcsm.html',1,'']]],
   ['qxcheckbox_2excsm',['QXCheckBox.xcsm',['../_q_x_check_box_8xcsm.html',1,'']]],

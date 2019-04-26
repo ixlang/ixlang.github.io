@@ -16,6 +16,7 @@ var searchData=
   ['getwidget',['GETWIDGET',['../class_q_x_core.html#a96328557fac508e336f9f7a3786c8da7',1,'QXCore']]],
   ['grabkeyboard',['GrabKeyboard',['../class_q_x_event.html#a93d449343cffc15d3db8e470cfe6c5a7',1,'QXEvent']]],
   ['grabmouse',['GrabMouse',['../class_q_x_event.html#a26813c3597f3ada8e1e86ea590b629cc',1,'QXEvent']]],
+  ['gradhandle',['gradhandle',['../class_q_x_brush_1_1_gradient.html#a4954a7db3d8a99eceb2102ba04b6b589',1,'QXBrush::Gradient']]],
   ['graphicsscenecontextmenu',['GraphicsSceneContextMenu',['../class_q_x_event.html#aa48a375d964eeee62b878b35afabb81f',1,'QXEvent']]],
   ['graphicsscenedragenter',['GraphicsSceneDragEnter',['../class_q_x_event.html#a4181d9eb55ab223d38561fa81bf1b16f',1,'QXEvent']]],
   ['graphicsscenedragleave',['GraphicsSceneDragLeave',['../class_q_x_event.html#a6ad657745273efc68b885b111f57e77d',1,'QXEvent']]],
@@ -31,5 +32,6 @@ var searchData=
   ['graphicsscenemouserelease',['GraphicsSceneMouseRelease',['../class_q_x_event.html#a5cd7256111a5bf668394fa0284ef8366',1,'QXEvent']]],
   ['graphicsscenemove',['GraphicsSceneMove',['../class_q_x_event.html#a2ede3bff5ac8b81cff3d6669d09fa3ed',1,'QXEvent']]],
   ['graphicssceneresize',['GraphicsSceneResize',['../class_q_x_event.html#a365ba46a2a12e9c8b6c99e7a9bdb693f',1,'QXEvent']]],
-  ['graphicsscenewheel',['GraphicsSceneWheel',['../class_q_x_event.html#ae81b28a6b7f12ae178ba03c64f860636',1,'QXEvent']]]
+  ['graphicsscenewheel',['GraphicsSceneWheel',['../class_q_x_event.html#ae81b28a6b7f12ae178ba03c64f860636',1,'QXEvent']]],
+  ['groupswitchmodifier',['GroupSwitchModifier',['../class_q_x_object.html#a60c4a819662587f655eb72cc8d157c46',1,'QXObject']]]
 ];

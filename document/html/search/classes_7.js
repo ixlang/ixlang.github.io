@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['httprequest',['HttpRequest',['../class_http_request.html',1,'']]]
+  ['gradient',['Gradient',['../class_q_x_brush_1_1_gradient.html',1,'QXBrush']]]
 ];

@@ -17,6 +17,8 @@ var searchData=
   ['getcentralwindow',['getCentralWindow',['../class_q_x_main_window.html#a7b8d95df41d063c4260a6d80982deb84',1,'QXMainWindow']]],
   ['getchar',['getChar',['../class_q_x_sci.html#a2e04a667356b45bbc9dcc69501b9985a',1,'QXSci']]],
   ['getcheck',['getCheck',['../class_q_x_check_box.html#ae6d819c3f2dd2e2e33ebafb023efe423',1,'QXCheckBox.getCheck()'],['../class_q_x_push_button.html#ae6d819c3f2dd2e2e33ebafb023efe423',1,'QXPushButton.getCheck()']]],
+  ['getcheckable',['getCheckable',['../class_q_x_action.html#ac92a573bc5ec5124257503da7b165f73',1,'QXAction']]],
+  ['getchecked',['getChecked',['../class_q_x_action.html#a225bef32ce2ecc3ec4b771f0e7f3214d',1,'QXAction']]],
   ['getclassname',['getClassName',['../class_q_x_object.html#a3e97a324df2af082cdb089491757ce11',1,'QXObject']]],
   ['getcreationtime',['getCreationTime',['../class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a6e98c01411432c8e9bd26cdade6fb103',1,'FileSystem::Operator::WIN32_FIND_DATA']]],
   ['getcurrentcolumn',['getCurrentColumn',['../class_q_x_tree_view.html#a7ab2c5179129cd2aac6da3c49b6c7807',1,'QXTreeView']]],
@@ -114,5 +116,6 @@ var searchData=
   ['getwordstart',['getWordStart',['../class_q_x_sci.html#a00e50de4ab11e5e9ec9b2003066209ce',1,'QXSci']]],
   ['getworkdirector',['getWorkDirector',['../class__system__.html#ae2dbdcc30b5c31ecb8af1157466535e3',1,'_system_']]],
   ['goto',['goto',['../class_q_x_sci.html#ace4004eebd7a0920043d1408765d26d8',1,'QXSci']]],
-  ['gotopos',['gotoPos',['../class_q_x_sci.html#aba1378e4e0749b3a4282739cdf46cda0',1,'QXSci']]]
+  ['gotopos',['gotoPos',['../class_q_x_sci.html#aba1378e4e0749b3a4282739cdf46cda0',1,'QXSci']]],
+  ['gradient',['Gradient',['../class_q_x_brush_1_1_gradient.html#ac14ad3d301094808fc943aafbd1edce8',1,'QXBrush::Gradient']]]
 ];

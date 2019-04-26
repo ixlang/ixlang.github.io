@@ -17,7 +17,7 @@ var searchData=
   ['length',['length',['../class_process.html#ae9a8e7afda2a262a4182e05aba9eff39',1,'Process']]],
   ['light',['Light',['../class_color_role.html#a24deb60a79de9470ea29bccc6c029449',1,'ColorRole']]],
   ['line',['Line',['../class_q_x_object.html#a6c7485c97bce70d26abfa1cea69600f9',1,'QXObject.Line()'],['../class_q_x_variant.html#a6c7485c97bce70d26abfa1cea69600f9',1,'QXVariant.Line()']]],
-  ['lineargradientpattern',['LinearGradientPattern',['../class_q_x_painter_1_1_brush_style.html#a9b11369c215c13676dd3c8a96c66ffa2',1,'QXPainter::BrushStyle']]],
+  ['lineargradientpattern',['LinearGradientPattern',['../class_q_x_brush_1_1_style.html#a9b11369c215c13676dd3c8a96c66ffa2',1,'QXBrush::Style']]],
   ['lineeditgettext',['LINEEDITGETTEXT',['../class_q_x_core.html#a1357623c283c3e5a028fabfb68194b87',1,'QXCore']]],
   ['lineeditsettext',['LINEEDITSETTEXT',['../class_q_x_core.html#a0276db7ddc256dad118ad07b55621e66',1,'QXCore']]],
   ['linef',['LineF',['../class_q_x_object.html#a3cf93a02748eeddb098ac15433f645bd',1,'QXObject.LineF()'],['../class_q_x_variant.html#a3cf93a02748eeddb098ac15433f645bd',1,'QXVariant.LineF()']]],
