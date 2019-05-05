@@ -57,6 +57,7 @@ var searchData=
   ['qxobject',['QXObject',['../class_q_x_object.html',1,'']]],
   ['qxpainter',['QXPainter',['../class_q_x_painter.html',1,'']]],
   ['qxpalette',['QXPalette',['../class_q_x_palette.html',1,'']]],
+  ['qxpath',['QXPath',['../class_q_x_path.html',1,'']]],
   ['qxpoint',['QXPoint',['../class_q_x_point.html',1,'']]],
   ['qxprogressbar',['QXProgressBar',['../class_q_x_progress_bar.html',1,'']]],
   ['qxpropertybrowser',['QXPropertyBrowser',['../class_q_x_property_browser.html',1,'']]],

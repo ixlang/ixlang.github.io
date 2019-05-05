@@ -8,6 +8,7 @@ var searchData=
   ['readpipe',['readPipe',['../class__system__.html#a8f4c1a2e862ea8e743314f4e9c2bc8e2',1,'_system_']]],
   ['redo',['Redo',['../class_q_x_sci.html#aed702f174af26edb025dcf4d39b778b2',1,'QXSci']]],
   ['registrycrashhandler',['registryCrashHandler',['../class__system__.html#a461f8b3469d5c94506d1ea9da3bb2b68',1,'_system_']]],
+  ['registrysystemsignalhandler',['registrySystemSignalHandler',['../class__system__.html#a4646f79c6f2478aed9ee42e2ef02adde',1,'_system_']]],
   ['releasecontext',['releaseContext',['../interface_async_output.html#a920ba938802345608030a0c31525a2a5',1,'AsyncOutput']]],
   ['remove',['remove',['../class_json_array.html#aee361e7eceef271fff5c5c8aca9944de',1,'JsonArray.remove()'],['../class_json_object.html#a7070703982ebf50a731d800a3a354d03',1,'JsonObject.remove()'],['../class_list.html#a3ab1df7a495a5b4ea39e7321496db60e',1,'List.remove()'],['../class_map.html#a1935948322479c973d2e12f741d7449b',1,'Map.remove(_K key)'],['../class_map.html#aa3f791ad00cf0627a660aecdde56512e',1,'Map.remove(Iterator&lt;_K, _V&gt; iterator)'],['../class_vector.html#afa58589387dad634638f96f84f49a5ba',1,'Vector.remove()']]],
   ['removeallchild',['removeAllchild',['../class_q_x_tree_view.html#afef29bd977ce43434981272eec4ce3cc',1,'QXTreeView']]],

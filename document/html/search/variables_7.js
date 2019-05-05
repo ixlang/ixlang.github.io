@@ -11,6 +11,7 @@ var searchData=
   ['getstylesheey',['GETSTYLESHEEY',['../class_q_x_core.html#ace24e0f2e19f196925ac8792b88ced90',1,'QXCore']]],
   ['gettag',['GETTAG',['../class_q_x_core.html#a433306fc0a08bbb2c24b82dfe80b53bc',1,'QXCore']]],
   ['gettext',['GETTEXT',['../class_q_x_core.html#a206ad3bfc5dd64623b483f69692f9ef2',1,'QXCore']]],
+  ['gettooltips',['GETTOOLTIPS',['../class_q_x_core.html#ace016bdbffce48886775d35df4fdd7d9',1,'QXCore']]],
   ['gettopitem',['GETTOPITEM',['../class_q_x_core.html#a823d5abcb274bb8b3cc3396f6f295d4b',1,'QXCore']]],
   ['getviewport',['GETVIEWPORT',['../class_q_x_core.html#aab9033a83750693ba16572ebfa9b5f0a',1,'QXCore']]],
   ['getwidget',['GETWIDGET',['../class_q_x_core.html#a96328557fac508e336f9f7a3786c8da7',1,'QXCore']]],

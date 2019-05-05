@@ -55,6 +55,7 @@ var searchData=
   ['drawellipse',['DRAWELLIPSE',['../class_q_x_core.html#a469aa51b702bf0474b86d5fc3fa0f950',1,'QXCore']]],
   ['drawer',['Drawer',['../class_q_x_widget.html#a231921136c104223224441c32d47e522',1,'QXWidget']]],
   ['drawimage',['DRAWIMAGE',['../class_q_x_core.html#a694f54d976b0d7e75ee9b04fc168f2d3',1,'QXCore']]],
+  ['drawpath',['DRAWPATH',['../class_q_x_core.html#ac9102ce3af32dd3914da9fdcb3bbbe9d',1,'QXCore']]],
   ['drawtext',['DRAWTEXT',['../class_q_x_core.html#a9847c51ce6703868df9672d95685080f',1,'QXCore']]],
   ['drop',['Drop',['../class_q_x_event.html#a20a2fcdb6271f707858c203e6ad7f431',1,'QXEvent']]],
   ['dwhighdatetime',['dwHighDateTime',['../class_file_system_1_1_operator_1_1_f_i_l_e_t_i_m_e.html#a14fce1ad55c8c62fb05b3b15e886c3a9',1,'FileSystem::Operator::FILETIME']]],

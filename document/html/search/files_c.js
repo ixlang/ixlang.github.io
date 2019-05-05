@@ -32,6 +32,7 @@ var searchData=
   ['qxobject_2excsm',['QXObject.xcsm',['../_q_x_object_8xcsm.html',1,'']]],
   ['qxpainter_2excsm',['QXPainter.xcsm',['../_q_x_painter_8xcsm.html',1,'']]],
   ['qxpalette_2excsm',['QXPalette.xcsm',['../_q_x_palette_8xcsm.html',1,'']]],
+  ['qxpath_2excsm',['QXPath.xcsm',['../_q_x_path_8xcsm.html',1,'']]],
   ['qxpoint_2excsm',['QXPoint.xcsm',['../_q_x_point_8xcsm.html',1,'']]],
   ['qxprogressbar_2excs',['QXProgressBar.xcs',['../_q_x_progress_bar_8xcs.html',1,'']]],
   ['qxpropertybrowser_2excsm',['QXPropertyBrowser.xcsm',['../_q_x_property_browser_8xcsm.html',1,'']]],

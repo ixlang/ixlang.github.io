@@ -5,7 +5,7 @@ var searchData=
   ['hash',['Hash',['../class_q_x_object.html#a28f2f93bd28f760845326d9c90cc47fe',1,'QXObject.Hash()'],['../class_q_x_variant.html#a28f2f93bd28f760845326d9c90cc47fe',1,'QXVariant.Hash()']]],
   ['hasnext',['hasNext',['../class_list_1_1_iterator.html#a634d758e1811c32295f5665e4f8a0178',1,'List.Iterator.hasNext()'],['../class_map_1_1_iterator.html#a634d758e1811c32295f5665e4f8a0178',1,'Map.Iterator.hasNext()']]],
   ['hasprevious',['hasPrevious',['../class_list_1_1_iterator.html#a0bf831f46c2f7ea955007f59d6fdac2c',1,'List.Iterator.hasPrevious()'],['../class_map_1_1_iterator.html#a0bf831f46c2f7ea955007f59d6fdac2c',1,'Map.Iterator.hasPrevious()']]],
-  ['height',['HEIGHT',['../class_q_x_core.html#af728b7647e0b8c49832983a31f9a2e9b',1,'QXCore.HEIGHT()'],['../class_q_x_image.html#a822ae85493a742654ba563619492b26a',1,'QXImage.height()'],['../class_q_x_rect.html#a822ae85493a742654ba563619492b26a',1,'QXRect.height()'],['../class_q_x_widget.html#a822ae85493a742654ba563619492b26a',1,'QXWidget.height()']]],
+  ['height',['height',['../class_q_x_image.html#a822ae85493a742654ba563619492b26a',1,'QXImage.height()'],['../class_q_x_rect.html#a822ae85493a742654ba563619492b26a',1,'QXRect.height()'],['../class_q_x_widget.html#a822ae85493a742654ba563619492b26a',1,'QXWidget.height()'],['../class_q_x_core.html#af728b7647e0b8c49832983a31f9a2e9b',1,'QXCore.HEIGHT()']]],
   ['help',['Help',['../class_q_x_message_box.html#a7e098ad46c1cddbe354093b8aebd2075',1,'QXMessageBox']]],
   ['helprequest',['HelpRequest',['../class_q_x_event.html#ac2375fa0b4615a7cd8a270eab9f975f9',1,'QXEvent']]],
   ['hidden',['HIDDEN',['../class_q_x_core.html#ad2c7dc4687506073960c4258d886eb7b',1,'QXCore']]],

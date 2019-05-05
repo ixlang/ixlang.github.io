@@ -64,6 +64,7 @@ var searchData=
   ['create',['Create',['../class_q_x_event.html#adc658dfbbc8e3f1238c4dd988c2cff88',1,'QXEvent']]],
   ['crosscursor',['CrossCursor',['../class_q_x_object.html#a2fcb45e9bdae4ccfda6d1124441734e7',1,'QXObject']]],
   ['crosspattern',['CrossPattern',['../class_q_x_brush_1_1_style.html#a2ff80d633c1c00631b0ef02f230cfe0a',1,'QXBrush::Style']]],
+  ['cubicto',['CUBICTO',['../class_q_x_core.html#a1f99fb1898077a221ef60bc6b822fb56',1,'QXCore']]],
   ['currentmessage',['CURRENTMESSAGE',['../class_q_x_core.html#aa136dccc5a8d9efbe93129ecd5392f3e',1,'QXCore']]],
   ['currentscreen',['CURRENTSCREEN',['../class_q_x_core.html#a86d2616b99f75b8d290ea96135d02eb9',1,'QXCore']]],
   ['currentsubwin',['CURRENTSUBWIN',['../class_q_x_core.html#ad6d585fd35d27689bcf198a5351f9ec7',1,'QXCore']]],

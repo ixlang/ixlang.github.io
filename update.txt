@@ -267,3 +267,26 @@ QXLibrary & QT新增 QXTable 控件， 增加部分接口
 增加XStudio标题栏状态
 增加QT功能
 增加XStudio类视图搜索功能
+
+2019-04-20
+发布 release 2.0
+
+2019-04-25
+新增编译器常量
+__file__ 
+__line__ 
+__column__ 
+__appver__ 
+__appver_long__ 
+__productver__ 
+__productver_long__ 
+__x_ver__
+
+2019-05-01
+更改Process类的exit信号为SIGKILL
+增加信号处理接口
+增加QT绘图部分功能
+
+
+2019-05-02
+发布release 2.1版

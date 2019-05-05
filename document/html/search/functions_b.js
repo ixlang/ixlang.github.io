@@ -10,10 +10,12 @@ var searchData=
   ['maximized',['maximized',['../class_q_x_widget.html#a8b747045626abafd3fe9c56adf9c0c3b',1,'QXWidget']]],
   ['maximum',['maximum',['../class_q_x_progress_bar.html#afa25dac2ec81611286a2108b33344d15',1,'QXProgressBar']]],
   ['measure',['measure',['../class_q_x_font.html#a88267bd93ab03c16e30d81745e859d21',1,'QXFont']]],
+  ['measuretext',['measureText',['../class_q_x_painter.html#a75c0c7263eeca56a4d7a264f59233eff',1,'QXPainter']]],
   ['min',['min',['../class_math.html#a2f2bf96d77a187bd4446b4ba3864470d',1,'Math.min(int a, int b)'],['../class_math.html#aae78f234a48742ac10b1a231f771d809',1,'Math.min(long a, long b)'],['../class_math.html#af3a87289fa5f023930c93d80e6375930',1,'Math.min(double a, double b)']]],
   ['minimized',['minimized',['../class_q_x_widget.html#aaf58f8355723930cdfb026ba492b8083',1,'QXWidget']]],
   ['minimum',['minimum',['../class_q_x_progress_bar.html#a17c124c64514dd5c2a625fd53ff868e7',1,'QXProgressBar']]],
   ['mkdir',['mkdir',['../class__system__.html#ab872780494ca01109d54fe8e284969f0',1,'_system_']]],
   ['modifyitemflags',['modifyItemFlags',['../class_q_x_table_widget.html#a26c67e1e3fdc9c8baabc614f72746637',1,'QXTableWidget.modifyItemFlags()'],['../class_q_x_tree_view.html#a26c67e1e3fdc9c8baabc614f72746637',1,'QXTreeView.modifyItemFlags()']]],
-  ['move',['move',['../class_q_x_widget.html#a7e67b4a2ada5392aeaa37daa52c3d3d5',1,'QXWidget']]]
+  ['move',['move',['../class_q_x_widget.html#a7e67b4a2ada5392aeaa37daa52c3d3d5',1,'QXWidget']]],
+  ['moveto',['moveto',['../class_q_x_path.html#a16ee40dea09de9c13cd779004a13514a',1,'QXPath']]]
 ];

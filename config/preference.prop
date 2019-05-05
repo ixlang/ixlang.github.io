@@ -78,8 +78,6 @@
 	"linenumber":	"开启",
 	"repallconfirm":	"开启",
 	"autosave":	"开启",
-	"indentguide":	"开启",
-	"showfolding":	"开启",
 	"workspace":	"",
 	"switchinfo":	"开启"
 }

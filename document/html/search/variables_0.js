@@ -4,6 +4,7 @@ var searchData=
   ['_5fclicklistener',['_clicklistener',['../class_q_x_object.html#a4588d19c67a28809ae6203cc88a0d3b7',1,'QXObject']]],
   ['_5fcomboboxlistener',['_comboboxListener',['../class_q_x_object.html#afe88aade1d2752c2887e623202b7eda3',1,'QXObject']]],
   ['_5fcontextmenulistener',['_contextMenuListener',['../class_q_x_object.html#a3bd8411f48da05809d352f3f45eb9b3a',1,'QXObject']]],
+  ['_5fdraglistener',['_dragListener',['../class_q_x_object.html#a980bda7282dcaa43e2e6e0752c0b8674',1,'QXObject']]],
   ['_5fediteventlistener',['_editEventListener',['../class_q_x_object.html#a2625e57f4ca55f9760d8e76e51482da4',1,'QXObject']]],
   ['_5feventlistener',['_eventListener',['../class_q_x_object.html#ae4466b74f9b5a63c10754cb3e48dde22',1,'QXObject']]],
   ['_5ffocuslistener',['_focusListener',['../class_q_x_object.html#a971ad369acdeb9fb9e5777cb72f2efa1',1,'QXObject']]],

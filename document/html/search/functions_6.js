@@ -107,6 +107,7 @@ var searchData=
   ['gettag',['getTag',['../class_q_x_object.html#a61f283fc991ebc1e742ef4f228c55657',1,'QXObject.getTag()'],['../class_q_x_table_widget.html#af38bcab51cdef08e1c5db107d674cb40',1,'QXTableWidget.getTag()']]],
   ['gettext',['getText',['../class_q_x_action.html#afab766445043570e6a82c14851366933',1,'QXAction.getText()'],['../class_q_x_label.html#afab766445043570e6a82c14851366933',1,'QXLabel.getText()'],['../class_q_x_line_edit.html#afab766445043570e6a82c14851366933',1,'QXLineEdit.getText()'],['../class_q_x_progress_bar.html#afab766445043570e6a82c14851366933',1,'QXProgressBar.getText()'],['../class_q_x_sci.html#afab766445043570e6a82c14851366933',1,'QXSci.getText()'],['../class_q_x_sci.html#a3e16c93b2a50964abf0d14ce3f942334',1,'QXSci.getText(int start, int end)'],['../class_q_x_sci.html#a5a00588771c2466076c36e278dcd564c',1,'QXSci.getText(int line)'],['../class_q_x_table_widget.html#add117a9454dfc77a5d400227256293fd',1,'QXTableWidget.getText()']]],
   ['gettitalbar',['getTitalBar',['../class_q_x_dock_widget.html#a7b85bbdbc93314f07b92c6d7a2803c94',1,'QXDockWidget']]],
+  ['gettooltips',['getToolTips',['../class_q_x_widget.html#a32dfe997613a41e9a3623624040d98c4',1,'QXWidget']]],
   ['gettopitem',['getTopItem',['../class_q_x_tree_view.html#a7494a6fdb950630443336c9eebe52881',1,'QXTreeView']]],
   ['gettopitems',['getTopItems',['../class_q_x_tree_view.html#a23ceb77864477317e11c3ec869e3d98a',1,'QXTreeView']]],
   ['gettoplevelcount',['getTopLevelCount',['../class_q_x_tree_view.html#a44725ad4abbf65e09df2ba1801973724',1,'QXTreeView']]],

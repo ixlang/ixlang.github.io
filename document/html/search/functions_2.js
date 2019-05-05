@@ -42,6 +42,7 @@ var searchData=
   ['createqxapplication',['createQXApplication',['../class_q_x_application.html#aba95e5874a1b46ecd29d506a5f2455d6',1,'QXApplication']]],
   ['createsubwnd',['createSubWnd',['../class_q_x_mdi_area.html#a9ce976e2f7b6acd0182508190446451c',1,'QXMdiArea']]],
   ['critical',['Critical',['../class_q_x_message_box.html#a1fd71ea79731543eb35dfd1822a8ca1b',1,'QXMessageBox.Critical()'],['../class_q_x_widget.html#ad05b85017c5ddddfa24699414de56dca',1,'QXWidget.Critical()']]],
+  ['cubicto',['cubicto',['../class_q_x_path.html#a2b3cce5058c492882243752169074867',1,'QXPath']]],
   ['currentmessage',['currentMessage',['../class_q_x_status_bar.html#a7cef04cdd82bd2e6e176cb01a97619c3',1,'QXStatusBar']]],
   ['currentposition',['currentPosition',['../class_q_x_sci.html#a1198d59f25e3f15f3d929ba9f297db16',1,'QXSci']]],
   ['currentsubwindow',['currentSubWindow',['../class_q_x_mdi_area.html#a342512b980f048f8c1dcdf77472906ec',1,'QXMdiArea']]],

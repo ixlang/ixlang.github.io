@@ -17,6 +17,7 @@ var searchData=
   ['intbitstodouble',['intBitsToDouble',['../class_math.html#a242f585a7ae86b736a6b069b0abfbd09',1,'Math.intBitsToDouble(int v)'],['../class_math.html#a482cfff85fae6dc319722d2249202dc3',1,'Math.intBitsToDouble(double v)']]],
   ['invaliditeratorexception',['InvalidIteratorException',['../class_invalid_iterator_exception.html#a5713dd1cc81d736fec97a0278f6412d9',1,'InvalidIteratorException.InvalidIteratorException()'],['../class_invalid_iterator_exception.html#a454fdb4858cf17e8cb6b601f5c80bac4',1,'InvalidIteratorException.InvalidIteratorException(String message)']]],
   ['invertedappearance',['invertedAppearance',['../class_q_x_progress_bar.html#a478639993a7da04a370852d53f9d6268',1,'QXProgressBar']]],
+  ['isacceptdrops',['isAcceptDrops',['../class_q_x_widget.html#a29478e93ae4b39cc78d78a1e8fd4a66c',1,'QXWidget']]],
   ['isactive',['isActive',['../class_q_x_widget.html#aa1f512ab0fcc05612f8e3d6a4664ce9a',1,'QXWidget']]],
   ['isconnected',['isConnected',['../class_stream_socket.html#a772f8f0487e0d3804e9da7585e23a29a',1,'StreamSocket']]],
   ['isdefaultup',['isDefaultUp',['../class_q_x_menu_bar.html#ad194eb60f5c2bc35c8b36ae5eb203e56',1,'QXMenuBar']]],
@@ -39,6 +40,7 @@ var searchData=
   ['isseparator',['isSeparator',['../class_q_x_action.html#a8cd169028f8f0a887f9380a52ee0f455',1,'QXAction']]],
   ['issizegripenabled',['isSizeGripEnabled',['../class_q_x_status_bar.html#a1e7b8905e6e85df38f8da64f55eaf294',1,'QXStatusBar']]],
   ['istextvisible',['isTextVisible',['../class_q_x_progress_bar.html#a41176fbaabb2fa364215133a397e95ea',1,'QXProgressBar']]],
+  ['isupdateenabled',['isUpdateEnabled',['../class_q_x_widget.html#a1a40ba53577ee2fe6a5f16bbf0ee1d21',1,'QXWidget']]],
   ['isvisible',['isVisible',['../class_q_x_widget.html#aadc2f7e6c414e3e7016fb654293daa7f',1,'QXWidget']]],
   ['iswindow',['isWindow',['../class_q_x_widget.html#a160dc8bc1624734ebfc530685552e284',1,'QXWidget']]],
   ['iterator',['iterator',['../class_list.html#a6d73326f2404a3df917a7e4b951f9177',1,'List.iterator()'],['../class_map.html#ade5b7a4fecfe1b38d06f0c8dc825cf5c',1,'Map.iterator()']]]

@@ -8,6 +8,7 @@ var searchData=
   ['ungrabmouse',['UngrabMouse',['../class_q_x_event.html#a7a1ada1ac44db803280cc09456b99dab',1,'QXEvent']]],
   ['uparrowcursor',['UpArrowCursor',['../class_q_x_object.html#a279542774fe9744cee7d7e91dd9b0653',1,'QXObject']]],
   ['update',['UPDATE',['../class_q_x_core.html#ab4ea9483362f8e7d95fe2166bacc4f9f',1,'QXCore']]],
+  ['updateenable',['UPDATEENABLE',['../class_q_x_core.html#a71e303591780dab8e2e1a8c185f860fe',1,'QXCore']]],
   ['updatelater',['UpdateLater',['../class_q_x_event.html#a94755638e526b33400c1acacfc075e66',1,'QXEvent']]],
   ['updaterequest',['UpdateRequest',['../class_q_x_event.html#a0bcc5f800e73b065b227b988e7c17a11',1,'QXEvent']]],
   ['url',['Url',['../class_q_x_object.html#a2dbdb3932e27305a32f100b0313c2356',1,'QXObject.Url()'],['../class_q_x_variant.html#a2dbdb3932e27305a32f100b0313c2356',1,'QXVariant.Url()']]],

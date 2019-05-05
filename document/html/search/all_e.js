@@ -32,7 +32,7 @@ var searchData=
   ['nopen',['NoPen',['../class_q_x_painter_1_1_pen_style.html#a21036e94a8d6dc87375ea76e32d32a2f',1,'QXPainter::PenStyle']]],
   ['normal',['Normal',['../class_q_x_line_edit.html#ab298167a57917e19505c862051fce3e0',1,'QXLineEdit']]],
   ['norole',['NoRole',['../class_color_role.html#ae9df675e1cc2644f5d0f508dfc28a39b',1,'ColorRole']]],
-  ['notify',['notify',['../interface_async_input.html#aa2c2c9eef81bf51c21a6e777367ffb10',1,'AsyncInput.notify()'],['../class_q_x_core.html#a5b2596ce6082ca2c9f7bf18be09cd874',1,'QXCore.Notify()']]],
+  ['notify',['Notify',['../class_q_x_core.html#a5b2596ce6082ca2c9f7bf18be09cd874',1,'QXCore.Notify()'],['../interface_async_input.html#aa2c2c9eef81bf51c21a6e777367ffb10',1,'AsyncInput.notify()']]],
   ['notoall',['NoToAll',['../class_q_x_message_box.html#ae0ab8db756358d6ce7cc4c78a3b43965',1,'QXMessageBox']]],
   ['notopen',['NotOpen',['../class_q_x_buffer.html#a4c8a6b70d1d50ad88eadc101804d43ce',1,'QXBuffer']]],
   ['nstyle',['nstyle',['../class_q_x_brush_1_1_gradient.html#a23477d65a9dbdca347a60b1b883a9ade',1,'QXBrush::Gradient']]],

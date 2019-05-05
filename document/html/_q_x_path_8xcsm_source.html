@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/XStudio/qt5/widgets/QXPath.xcsm 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v2.1 Release</span>
+   </div>
+   <div id="projectbrief">项目介绍</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_735e24decaf1c49b6a1919196d463802.html">XStudio</a></li><li class="navelem"><a class="el" href="dir_bf5f207b5684b49bd4be31a45c20b08f.html">qt5</a></li><li class="navelem"><a class="el" href="dir_d764631b0f579dfcfd22963eb2f03413.html">widgets</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">QXPath.xcsm</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_q_x_path_8xcsm.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//xlang Source, Name:qt5/widgets/QXPath.xcsm </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//Date: Tue Apr 17:42:15 2019 </span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_q_x_path.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_q_x_path.html">QXPath</a> : <a class="code" href="class_q_x_core.html">QXCore</a>{</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_q_x_path.html#a4fbcf07ad2c6a231cabee5457e2016fb">    6</a></span>&#160;    <a class="code" href="class_q_x_path.html#a4fbcf07ad2c6a231cabee5457e2016fb">QXPath</a>(){</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        <a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a> = createNObject(<a class="code" href="class_q_type.html">QType</a>.<a class="code" href="class_q_type.html#a220c4e9514d0d2e0aba3c2f4300146b6">qtPath</a>, 0);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a> == 0){</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="class_illegal_argument_exception.html">IllegalArgumentException</a>(<span class="stringliteral">&quot;can not new QXPath&quot;</span>);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        }</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    }</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_q_x_path.html#a16ee40dea09de9c13cd779004a13514a">   13</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_x_path.html#a16ee40dea09de9c13cd779004a13514a">moveto</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y){</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordtype">double</span> [] param = {x, y};</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        pointer_intlong2(param, <a class="code" href="class_q_x_core.html#ada618038d6d2c5f94efecdf6da27c3bd">PATHMOVETO</a>, <a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, 0);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    }</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_q_x_path.html#a79a041dcab6dc2c3ecbb1974e45a7c4c">   18</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_x_path.html#a79a041dcab6dc2c3ecbb1974e45a7c4c">lineto</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y){</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordtype">double</span> [] param = {x, y};</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        pointer_intlong2(param, <a class="code" href="class_q_x_core.html#a0ca4ee87fffd250135348d33d61b1fd8">PATHLINETO</a>, <a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, 0);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_q_x_path.html#a3faa88786e884f714400a43af1aaa9e5">   23</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_x_path.html#a3faa88786e884f714400a43af1aaa9e5">arcmoveto</a>(<span class="keywordtype">double</span> l,<span class="keywordtype">double</span> t,<span class="keywordtype">double</span> r,<span class="keywordtype">double</span> b,<span class="keywordtype">double</span> angle){</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">double</span> [] param = {l, t, r, b, angle};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        pointer_intlong2(param, <a class="code" href="class_q_x_core.html#a98a01c205cc5397ac0af330adde2bd13">PATHARCMOVETO</a>, <a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, 0);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_q_x_path.html#a9581e2cf28687db0d6769e889bd5bd7d">   28</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_x_path.html#a9581e2cf28687db0d6769e889bd5bd7d">arcto</a>(<span class="keywordtype">double</span> l,<span class="keywordtype">double</span> t,<span class="keywordtype">double</span> r,<span class="keywordtype">double</span> b,<span class="keywordtype">double</span> angle, <span class="keywordtype">double</span> length){</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">double</span> [] param = {l, t, r, b, angle, length};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        pointer_intlong2(param, <a class="code" href="class_q_x_core.html#a0edb627117513b2988b0498db80511e0">PATHARCTO</a>, <a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, 0);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_q_x_path.html#a2b3cce5058c492882243752169074867">   33</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_x_path.html#a2b3cce5058c492882243752169074867">cubicto</a>(<span class="keywordtype">double</span> c1x,<span class="keywordtype">double</span> c1y,<span class="keywordtype">double</span> c2x,<span class="keywordtype">double</span> c2y,<span class="keywordtype">double</span> ex, <span class="keywordtype">double</span> ey){</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">double</span> [] param = {c1x, c1y, c2x, c2y, ex, ey};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        pointer_intlong2(param, <a class="code" href="class_q_x_core.html#a1f99fb1898077a221ef60bc6b822fb56">CUBICTO</a>, <a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, 0);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_q_x_path.html#a2a2894f36119f9486e7b57801484d9e9">   38</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_x_path.html#a2a2894f36119f9486e7b57801484d9e9">quadto</a>(<span class="keywordtype">double</span> c1x,<span class="keywordtype">double</span> c1y,<span class="keywordtype">double</span> ex, <span class="keywordtype">double</span> ey){</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">double</span> [] param = {c1x, c1y, ex, ey};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        pointer_intlong2(param, <a class="code" href="class_q_x_core.html#abb5c329c413b0ccf70dbb1afabcda75a">QUADTO</a>, <a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, 0);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_q_x_path.html#a84023f4b25d70a1c8921a64d22473a98">   43</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_x_path.html#a84023f4b25d70a1c8921a64d22473a98">addRect</a>(<span class="keywordtype">double</span> l,<span class="keywordtype">double</span> t,<span class="keywordtype">double</span> r,<span class="keywordtype">double</span> b){</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">double</span> [] param = {l, t, r, b};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        pointer_intlong2(param, <a class="code" href="class_q_x_core.html#a0ba54b1db7ac900f8eea02640079c71e">ADDRECT</a>, <a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, 0);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_q_x_path.html#adb1d2634f16c8d0641c4fb8587441466">   48</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_x_path.html#adb1d2634f16c8d0641c4fb8587441466">addEllipse</a>(<span class="keywordtype">double</span> l,<span class="keywordtype">double</span> t,<span class="keywordtype">double</span> r,<span class="keywordtype">double</span> b){</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">double</span> [] param = {l, t, r, b};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        pointer_intlong2(param, <a class="code" href="class_q_x_core.html#ac0a532410cea533ff1a5be9c8bd248af">ADDELLIPSE</a>, <a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, 0);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_q_x_path.html#a32d626626eee0bc4ade146973f6abb1c">   53</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_x_path.html#a32d626626eee0bc4ade146973f6abb1c">finalize</a>(){</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        widget_slot(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#ac2794de37d2d5d3ff9101f5538525f0a">PATHCTOR</a>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="ttc" id="class_q_x_core_html_ac0a532410cea533ff1a5be9c8bd248af"><div class="ttname"><a href="class_q_x_core.html#ac0a532410cea533ff1a5be9c8bd248af">QXCore.ADDELLIPSE</a></div><div class="ttdeci">static const int ADDELLIPSE</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00361">QXCore.xcsm:361</a></div></div>
+<div class="ttc" id="class_q_x_core_html_a0edb627117513b2988b0498db80511e0"><div class="ttname"><a href="class_q_x_core.html#a0edb627117513b2988b0498db80511e0">QXCore.PATHARCTO</a></div><div class="ttdeci">static const int PATHARCTO</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00357">QXCore.xcsm:357</a></div></div>
+<div class="ttc" id="class_q_x_native_html_adc4b3fd5b05624dfe6705339748b8aab"><div class="ttname"><a href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">QXNative.nativehandle</a></div><div class="ttdeci">long nativehandle</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_native_8xcsm_source.html#l00003">QXNative.xcsm:3</a></div></div>
+<div class="ttc" id="class_q_x_core_html_ac2794de37d2d5d3ff9101f5538525f0a"><div class="ttname"><a href="class_q_x_core.html#ac2794de37d2d5d3ff9101f5538525f0a">QXCore.PATHCTOR</a></div><div class="ttdeci">static const int PATHCTOR</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00362">QXCore.xcsm:362</a></div></div>
+<div class="ttc" id="class_q_x_core_html_a1f99fb1898077a221ef60bc6b822fb56"><div class="ttname"><a href="class_q_x_core.html#a1f99fb1898077a221ef60bc6b822fb56">QXCore.CUBICTO</a></div><div class="ttdeci">static const int CUBICTO</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00358">QXCore.xcsm:358</a></div></div>
+<div class="ttc" id="class_q_type_html"><div class="ttname"><a href="class_q_type.html">QType</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_types_8xcsm_source.html#l00001">QXTypes.xcsm:1</a></div></div>
+<div class="ttc" id="class_q_x_path_html_a9581e2cf28687db0d6769e889bd5bd7d"><div class="ttname"><a href="class_q_x_path.html#a9581e2cf28687db0d6769e889bd5bd7d">QXPath.arcto</a></div><div class="ttdeci">void arcto(double l,double t,double r,double b,double angle, double length)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_path_8xcsm_source.html#l00028">QXPath.xcsm:28</a></div></div>
+<div class="ttc" id="class_q_x_path_html_a4fbcf07ad2c6a231cabee5457e2016fb"><div class="ttname"><a href="class_q_x_path.html#a4fbcf07ad2c6a231cabee5457e2016fb">QXPath.QXPath</a></div><div class="ttdeci">QXPath()</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_path_8xcsm_source.html#l00006">QXPath.xcsm:6</a></div></div>
+<div class="ttc" id="class_q_x_path_html_a2a2894f36119f9486e7b57801484d9e9"><div class="ttname"><a href="class_q_x_path.html#a2a2894f36119f9486e7b57801484d9e9">QXPath.quadto</a></div><div class="ttdeci">void quadto(double c1x,double c1y,double ex, double ey)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_path_8xcsm_source.html#l00038">QXPath.xcsm:38</a></div></div>
+<div class="ttc" id="class_q_x_path_html_a3faa88786e884f714400a43af1aaa9e5"><div class="ttname"><a href="class_q_x_path.html#a3faa88786e884f714400a43af1aaa9e5">QXPath.arcmoveto</a></div><div class="ttdeci">void arcmoveto(double l,double t,double r,double b,double angle)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_path_8xcsm_source.html#l00023">QXPath.xcsm:23</a></div></div>
+<div class="ttc" id="class_q_x_core_html_a98a01c205cc5397ac0af330adde2bd13"><div class="ttname"><a href="class_q_x_core.html#a98a01c205cc5397ac0af330adde2bd13">QXCore.PATHARCMOVETO</a></div><div class="ttdeci">static const int PATHARCMOVETO</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00356">QXCore.xcsm:356</a></div></div>
+<div class="ttc" id="class_q_x_core_html"><div class="ttname"><a href="class_q_x_core.html">QXCore</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00001">QXCore.xcsm:1</a></div></div>
+<div class="ttc" id="class_q_x_path_html_adb1d2634f16c8d0641c4fb8587441466"><div class="ttname"><a href="class_q_x_path.html#adb1d2634f16c8d0641c4fb8587441466">QXPath.addEllipse</a></div><div class="ttdeci">void addEllipse(double l,double t,double r,double b)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_path_8xcsm_source.html#l00048">QXPath.xcsm:48</a></div></div>
+<div class="ttc" id="class_q_x_path_html_a84023f4b25d70a1c8921a64d22473a98"><div class="ttname"><a href="class_q_x_path.html#a84023f4b25d70a1c8921a64d22473a98">QXPath.addRect</a></div><div class="ttdeci">void addRect(double l,double t,double r,double b)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_path_8xcsm_source.html#l00043">QXPath.xcsm:43</a></div></div>
+<div class="ttc" id="class_q_x_core_html_abb5c329c413b0ccf70dbb1afabcda75a"><div class="ttname"><a href="class_q_x_core.html#abb5c329c413b0ccf70dbb1afabcda75a">QXCore.QUADTO</a></div><div class="ttdeci">static const int QUADTO</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00359">QXCore.xcsm:359</a></div></div>
+<div class="ttc" id="class_q_x_path_html"><div class="ttname"><a href="class_q_x_path.html">QXPath</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_path_8xcsm_source.html#l00004">QXPath.xcsm:4</a></div></div>
+<div class="ttc" id="class_q_x_core_html_a0ca4ee87fffd250135348d33d61b1fd8"><div class="ttname"><a href="class_q_x_core.html#a0ca4ee87fffd250135348d33d61b1fd8">QXCore.PATHLINETO</a></div><div class="ttdeci">static const int PATHLINETO</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00355">QXCore.xcsm:355</a></div></div>
+<div class="ttc" id="class_illegal_argument_exception_html"><div class="ttname"><a href="class_illegal_argument_exception.html">IllegalArgumentException</a></div><div class="ttdoc">参数异常 </div><div class="ttdef"><b>Definition:</b> <a href="_exception_8xcs_source.html#l00174">Exception.xcs:174</a></div></div>
+<div class="ttc" id="class_q_x_core_html_ada618038d6d2c5f94efecdf6da27c3bd"><div class="ttname"><a href="class_q_x_core.html#ada618038d6d2c5f94efecdf6da27c3bd">QXCore.PATHMOVETO</a></div><div class="ttdeci">static const int PATHMOVETO</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00354">QXCore.xcsm:354</a></div></div>
+<div class="ttc" id="class_q_x_path_html_a2b3cce5058c492882243752169074867"><div class="ttname"><a href="class_q_x_path.html#a2b3cce5058c492882243752169074867">QXPath.cubicto</a></div><div class="ttdeci">void cubicto(double c1x,double c1y,double c2x,double c2y,double ex, double ey)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_path_8xcsm_source.html#l00033">QXPath.xcsm:33</a></div></div>
+<div class="ttc" id="class_q_x_path_html_a79a041dcab6dc2c3ecbb1974e45a7c4c"><div class="ttname"><a href="class_q_x_path.html#a79a041dcab6dc2c3ecbb1974e45a7c4c">QXPath.lineto</a></div><div class="ttdeci">void lineto(double x, double y)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_path_8xcsm_source.html#l00018">QXPath.xcsm:18</a></div></div>
+<div class="ttc" id="class_q_x_path_html_a16ee40dea09de9c13cd779004a13514a"><div class="ttname"><a href="class_q_x_path.html#a16ee40dea09de9c13cd779004a13514a">QXPath.moveto</a></div><div class="ttdeci">void moveto(double x, double y)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_path_8xcsm_source.html#l00013">QXPath.xcsm:13</a></div></div>
+<div class="ttc" id="class_q_x_core_html_a0ba54b1db7ac900f8eea02640079c71e"><div class="ttname"><a href="class_q_x_core.html#a0ba54b1db7ac900f8eea02640079c71e">QXCore.ADDRECT</a></div><div class="ttdeci">static const int ADDRECT</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00360">QXCore.xcsm:360</a></div></div>
+<div class="ttc" id="class_q_x_path_html_a32d626626eee0bc4ade146973f6abb1c"><div class="ttname"><a href="class_q_x_path.html#a32d626626eee0bc4ade146973f6abb1c">QXPath.finalize</a></div><div class="ttdeci">void finalize()</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_path_8xcsm_source.html#l00053">QXPath.xcsm:53</a></div></div>
+<div class="ttc" id="class_q_type_html_a220c4e9514d0d2e0aba3c2f4300146b6"><div class="ttname"><a href="class_q_type.html#a220c4e9514d0d2e0aba3c2f4300146b6">QType.qtPath</a></div><div class="ttdeci">static const int qtPath</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_types_8xcsm_source.html#l00055">QXTypes.xcsm:55</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

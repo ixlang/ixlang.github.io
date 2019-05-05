@@ -502,6 +502,16 @@ class QXObject : QXCore{
         Key_CameraFocus = 0x01100021,
         Key_unknown = 0x01ffffff;
         
+     static const int NoModifier           = 0x00000000,
+        ShiftModifier        = 0x02000000,
+        ControlModifier      = 0x04000000,
+        AltModifier          = 0x08000000,
+        MetaModifier         = 0x10000000,
+        KeypadModifier       = 0x20000000,
+        GroupSwitchModifier  = 0x40000000,
+        // Do not extend the mask to include 0x01000000
+        KeyboardModifierMask = 0xfe000000;
+        
 	static const int Invalid = 0,
         Bool = 1,
         Int = 2,
@@ -582,10 +592,10 @@ class QXObject : QXCore{
     };
     
     static class onKeyEventListener{
-        bool onKeyPress(QXObject obj, int key, bool repeat, int count, String text, int scanCode, int virtualKey){
+        bool onKeyPress(QXObject obj, int key, bool repeat, int count, String text, int scanCode, int virtualKey, int modifier){
 			return true;
         }
-        bool onKeyRelease(QXObject obj, int key, bool repeat, int count, String text, int scanCode, int virtualKey){
+        bool onKeyRelease(QXObject obj, int key, bool repeat, int count, String text, int scanCode, int virtualKey, int modifier){
 			return true;
         }
     };
@@ -673,6 +683,20 @@ class QXObject : QXCore{
         }
         void onItemSelected(QXObject obj, int id){
         }
+    };
+    
+    static class onDragListener{
+		bool onDragEnter(QXObject obj, int l,int t,int r,int b){
+			return true;
+		}
+		bool onDragMove(QXObject obj,int l,int t,int r,int b){
+			return true;
+		}
+		bool onDragLeave(QXObject obj,int l,int t,int r,int b){
+			return true;
+		}
+		void onDrop(QXObject obj,Object [] object){
+		}
     };
     
     static class onStatusListener{
@@ -816,7 +840,10 @@ class QXObject : QXCore{
 	onContextMenuListener	_contextMenuListener = nilptr;
 	onActivateListener _activateListener = nilptr;
     onComboBoxEventListener _comboboxListener = nilptr;
-    
+    onDragListener _dragListener = nilptr; 
+    void setOnDragListener(onDragListener l){
+		_dragListener = l;
+	} 
    	void setOnTableWidgetEventListener(TableWidgetEventListener l){
 		_tableenvlis = l;
 	} 
@@ -950,15 +977,15 @@ class QXObject : QXCore{
         }
     }
     ////
-    bool onKeyPress(int key, bool repeat, int count, String text, int scanCode, int virtualKey){
+    bool onKeyPress(int key, bool repeat, int count, String text, int scanCode, int virtualKey, int modifier){
         if (_keyListener != nilptr){
-            return _keyListener.onKeyPress(this, key, repeat, count, text, scanCode, virtualKey);
+            return _keyListener.onKeyPress(this, key, repeat, count, text, scanCode, virtualKey, modifier);
         }
 		return true;
     }
-    bool onKeyRelease(int key, bool repeat, int count, String text, int scanCode, int virtualKey){
+    bool onKeyRelease(int key, bool repeat, int count, String text, int scanCode, int virtualKey, int modifier){
         if (_keyListener != nilptr){
-            return _keyListener.onKeyRelease(this, key, repeat, count, text, scanCode, virtualKey);
+            return _keyListener.onKeyRelease(this, key, repeat, count, text, scanCode, virtualKey, modifier);
         }
 		return true;
     }
@@ -1062,10 +1089,29 @@ class QXObject : QXCore{
     void onClipboard(){     }
     void onWinEventAct(){}
     void onDeferredDelete(){}
-    bool onDragEnter(int l,int t,int r,int b){return true;}
-    bool onDragMove(int l,int t,int r,int b){return true;}
-    bool onDragLeave(int l,int t,int r,int b){return true; }
-    void onDrop(Object [] object){}
+    bool onDragEnter(int l,int t,int r,int b){
+		if (_dragListener != nilptr){
+			return _dragListener.onDragEnter(this, l,t,r,b);
+        }
+		return true;
+    }
+    bool onDragMove(int l,int t,int r,int b){
+		if (_dragListener != nilptr){
+			return _dragListener.onDragMove(this, l,t,r,b);
+        }
+		return true;
+    }
+    bool onDragLeave(int l,int t,int r,int b){
+		if (_dragListener != nilptr){
+			return _dragListener.onDragLeave(this, l,t,r,b);
+        }
+		return true;
+    }
+    void onDrop(Object [] object){
+		if (_dragListener != nilptr){
+			_dragListener.onDrop(this, object);
+        }
+    }
     void onDragResponse(){}
     void onLayoutRequest(){}
     void onUpdateRequest(){

@@ -43,7 +43,7 @@ var searchData=
   ['textantialiasing',['TextAntialiasing',['../class_q_x_painter_1_1_render_hint.html#a8bc45011be0365ff9496ff4351849d7b',1,'QXPainter::RenderHint']]],
   ['textformat',['TextFormat',['../class_q_x_object.html#ab84bc4fe14423075779c3471acef2eb6',1,'QXObject.TextFormat()'],['../class_q_x_variant.html#ab84bc4fe14423075779c3471acef2eb6',1,'QXVariant.TextFormat()']]],
   ['textlength',['TextLength',['../class_q_x_object.html#aab8429f1c0784e22d89423b019052378',1,'QXObject.TextLength()'],['../class_q_x_variant.html#aab8429f1c0784e22d89423b019052378',1,'QXVariant.TextLength()']]],
-  ['textsize',['textSize',['../class_q_x_painter_1_1_paint.html#acf40dd19bb9c51a2f1927a8e5d767623',1,'QXPainter::Paint']]],
+  ['textsize',['textSize',['../class_q_x_painter_1_1_paint.html#a45780b627cc68e644654ff164efb78d7',1,'QXPainter::Paint']]],
   ['texturepattern',['TexturePattern',['../class_q_x_brush_1_1_style.html#acf2bbef523153864f9e1f96437d52f05',1,'QXBrush::Style']]],
   ['themechange',['ThemeChange',['../class_q_x_event.html#a5f169414d0e0352f1d445f491d2dc2c7',1,'QXEvent']]],
   ['threadchange',['ThreadChange',['../class_q_x_event.html#a9e3bc20b5d38078ea4b2d1b3ecfeff35',1,'QXEvent']]],
@@ -100,6 +100,8 @@ var searchData=
   ['tritemsetcheck',['TRITEMSETCHECK',['../class_q_x_core.html#a3349923abf88b08fda6c4904ebfa3b14',1,'QXCore']]],
   ['trscrollbottom',['TRSCROLLBOTTOM',['../class_q_x_core.html#a179621adbdea7058430f663147c67be3',1,'QXCore']]],
   ['trselectmode',['TRSELECTMODE',['../class_q_x_core.html#ad8e8e0564f55205fe1c99ba3a3f18fcd',1,'QXCore']]],
+  ['trsetbackbr',['TRSETBACKBR',['../class_q_x_core.html#a5d40192b4ef279b8c9e527dfdd4c9c0d',1,'QXCore']]],
+  ['trsetforebr',['TRSETFOREBR',['../class_q_x_core.html#ad675763abbab93dfa84e7140d38ecade',1,'QXCore']]],
   ['trsortenable',['TRSORTENABLE',['../class_q_x_core.html#a8b93a881149bc14964ccf9988db7a485',1,'QXCore']]],
   ['truncate',['Truncate',['../class_q_x_buffer.html#a198da7171d05a01f84e7cdf7df2fad89',1,'QXBuffer']]]
 ];

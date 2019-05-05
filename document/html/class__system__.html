@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.0 Release</span>
+   &#160;<span id="projectnumber">v2.1 Release</span>
    </div>
    <div id="projectbrief">项目介绍</div>
   </td>
@@ -86,7 +86,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pac-static-methods">静态包函数</a>  </div>
+<a href="#pac-static-methods">静态包函数</a> &#124;
+<a href="#pac-static-attribs">静态包属性</a>  </div>
   <div class="headertitle">
 <div class="title">_system_类 参考</div>  </div>
 </div><!--header-->
@@ -97,6 +98,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-methods"></a>
 静态包函数</h2></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-attribs"></a>
+静态包属性</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>系统和IO相关 </p>
@@ -1185,6 +1189,79 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><div class="memdoc">
 
 <p>添加一个程序crash的回调接口， 当程序发生异常或者没有catch的Exception时 将调用此接口 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_i_crash_handler.html" title="App 崩溃处理接口 ">ICrashHandler</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4646f79c6f2478aed9ee42e2ef02adde"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool registrySystemSignalHandler </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>signal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_i_system_signal_handler.html">ISystemSignalHandler</a>&#160;</td>
+          <td class="paramname"><em>handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>add</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>添加信号处理回调， 该方法可以添加多个信号处理接口，当有信号时按照添加的顺序进行调用，若前面的接口返回SIGNAL_ABORT 则后添加的接口得不到处理机会 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">signal</td><td>信号值,参考以下常量(且仅支持以下信号) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class__system__.html#a77b34cb437f4fd0454a6cbce4edc2cab" title="信号 ">SIGINT</a> </dd>
+<dd>
+<a class="el" href="class__system__.html#a6eff3d835a87fb978e195859ff3d5244">SIGTSTP</a> </dd>
+<dd>
+<a class="el" href="class__system__.html#a16c773573ffd52b7447e9cd18b3cefc2">SIGCONT</a> </dd>
+<dd>
+<a class="el" href="class__system__.html#ae5cd72e6c32d4df55fdec4aaed577050">SIGTERM</a> </dd>
+<dd>
+<a class="el" href="class__system__.html#ae069b9e329bf8903f5abb0f5be46930a">SIGPWR</a> </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handler</td><td>回调接口 </td></tr>
+    <tr><td class="paramname">add</td><td>添加或者删除 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>系统根据返回值对信号进行默认处理 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class__system__.html#a88b0344dad217fd1e82d5b249e55c48e" title="信号处理接口返回值 ">SIGNAL_UNINTERESTED</a> 不感兴趣, 则由系统按照默认方式处理 </dd>
+<dd>
+<a class="el" href="class__system__.html#ab92ae1ed20d520a889203e6e647af371">SIGNAL_SPREAD</a> 继续传播此信号 </dd>
+<dd>
+<a class="el" href="class__system__.html#ac1c42c98523e64fbc741af0ecf4cecf6">SIGNAL_ABORT</a> 终止传播此信号 </dd>
+<dd>
+<a class="el" href="class__system__.html#a2cff59d5b488386d52e4cfc1e69f8677">SIGNAL_DISCARD</a> 丢弃此信号(忽略)  注意 XRVM中的SIGINT默认为屏蔽状态, 安装信号处理接口后，系统的SIGINT信号将被激活, wait sleep等方法将在收到信号时激活，因此当使用SIGINT信号时应当考虑含有wait和sleep等逻辑 </dd></dl>
 
 </div>
 </div>
@@ -1438,6 +1515,699 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   </dd>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>成功写入的长度 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">结构体成员变量说明</h2>
+<a class="anchor" id="aff7ca6f744ed7e5421811bd3283ec2fb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ARCH_ARM = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00338">338</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="acd9452ef137c4893e6e4dda3e439148e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ARCH_ARM64 = 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00339">339</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af795a4600ab502a80c6938a4a3e28c0b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ARCH_MIPS = 5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00340">340</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a48379ec87e1d0d69222d50496ffd9478"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ARCH_MIPS64 = 6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00341">341</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab9ef0e78b67b49177d3b2f4282109ad3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ARCH_UNKNOW = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>处理器架构 </p>
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00335">335</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2920db20fa0fe0f93c1c50b382a84396"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ARCH_X64 = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00337">337</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8ee75e5a651aa8004c439af8e88046c7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ARCH_X86 = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00336">336</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="adf0b0d74d2c71bc27811d39799ec6be2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int LOG_LEV_ALERT = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00313">313</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6bfa4afcb2db59586f3a27af01fab3e9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int LOG_LEV_CRIT = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00314">314</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ef990f4604307b1e6e6404602e693d3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int LOG_LEV_DEBUG = 6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00318">318</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5e8038ff445c0276968636db8f546fd4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int LOG_LEV_EMERG = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>logcat 信息级别 </p>
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00312">312</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0af6654674bc76766c1fc37d53608d4a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int LOG_LEV_ERR = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00315">315</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a783df9f840a364c53582a33ee61a2dd6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int LOG_LEV_NOTICE = 5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00317">317</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad35fb0cfcefc8792855e1b511c1e3d58"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int LOG_LEV_WARNING = 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00316">316</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="adfa004f8cb729e2e95ba66c02187f1ec"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int PLATFORM_IOS = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00327">327</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="abbcb0f6ab105e7bdb1552afbdfffeadf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int PLATFORM_IOS_SIMULATOR = 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00328">328</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8cdef8aff40d8c06f966b768f7ed3fe3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int PLATFORM_LINUX = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00325">325</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a697942d44a27bd20c5c9e86ed50bb62f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int PLATFORM_MACOSX = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00326">326</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="afe576c047c891fae200f39c240ca6295"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int PLATFORM_POSIX = 6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00330">330</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1eacd948dfd9411e3e4b84342c94a80e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int PLATFORM_UNIX = 5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00329">329</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab5c19a90287e8c2a3904d401a7942fcd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int PLATFORM_UNKNOW = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>操作系统 </p>
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00323">323</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a795d5a74b041aaf42cd39822fdc2d35c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int PLATFORM_WINDOWS = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00324">324</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a16c773573ffd52b7447e9cd18b3cefc2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int SIGCONT = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00348">348</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a77b34cb437f4fd0454a6cbce4edc2cab"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int SIGINT = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>信号 </p>
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00346">346</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac1c42c98523e64fbc741af0ecf4cecf6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int SIGNAL_ABORT = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00357">357</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2cff59d5b488386d52e4cfc1e69f8677"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int SIGNAL_DISCARD = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00358">358</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab92ae1ed20d520a889203e6e647af371"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int SIGNAL_SPREAD = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00356">356</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a88b0344dad217fd1e82d5b249e55c48e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int SIGNAL_UNINTERESTED = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>信号处理接口返回值 </p>
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00355">355</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae069b9e329bf8903f5abb0f5be46930a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int SIGPWR = 5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00350">350</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae5cd72e6c32d4df55fdec4aaed577050"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int SIGTERM = 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00349">349</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6eff3d835a87fb978e195859ff3d5244"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int SIGTSTP = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00347">347</a> 行定义.</p>
 
 </div>
 </div>

@@ -11,6 +11,7 @@ var searchData=
   ['embeddingcontrol',['EmbeddingControl',['../class_q_x_event.html#a173a1099c7bee24d990d81a15ce3ed99',1,'QXEvent']]],
   ['enabled',['ENABLED',['../class_q_x_core.html#a1cc3eb3d2ccce3ceaad23db6d862a96a',1,'QXCore']]],
   ['enabledchange',['EnabledChange',['../class_q_x_event.html#af57bd003dd9316c5f92c34bccd6f4111',1,'QXEvent']]],
+  ['enabledrog',['ENABLEDROG',['../class_q_x_core.html#ae1b91941140dcf6c323a40cd37e70f56',1,'QXCore']]],
   ['enter',['Enter',['../class_q_x_event.html#a1077d5615e8939153a321d1a0daa5c86',1,'QXEvent']]],
   ['entereditfocus',['EnterEditFocus',['../class_q_x_event.html#ada5407938257fe8403e22366728eb82a',1,'QXEvent']]],
   ['enterwhatsthismode',['EnterWhatsThisMode',['../class_q_x_event.html#ac96c0ae10b0ceff5de39fd4ab3a46916',1,'QXEvent']]],

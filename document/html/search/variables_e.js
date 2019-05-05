@@ -4,7 +4,7 @@ var searchData=
   ['okrequest',['OkRequest',['../class_q_x_event.html#acef1b934dd66518fd1b1683c4c12fb12',1,'QXEvent']]],
   ['opacity',['OPACITY',['../class_q_x_core.html#aef4629eef91ccf8bb3f681d1a5e5fa1d',1,'QXCore']]],
   ['opaquemode',['OpaqueMode',['../class_q_x_painter_1_1_background_mode.html#aa3b7cc21ef8f78a51575e4b6262d1c62',1,'QXPainter::BackgroundMode']]],
-  ['open',['OPEN',['../class_q_x_core.html#a47ba2f5680b7700c97b81a636bc38916',1,'QXCore.OPEN()'],['../class_q_x_message_box.html#ad0a04456d2c4ca25de4e9263124f45bf',1,'QXMessageBox.Open()']]],
+  ['open',['Open',['../class_q_x_message_box.html#ad0a04456d2c4ca25de4e9263124f45bf',1,'QXMessageBox.Open()'],['../class_q_x_core.html#a47ba2f5680b7700c97b81a636bc38916',1,'QXCore.OPEN()']]],
   ['openbuffer',['OPENBUFFER',['../class_q_x_core.html#a1e73b1c1baf6f2b6bf60beeee0e91fc3',1,'QXCore']]],
   ['openhandcursor',['OpenHandCursor',['../class_q_x_object.html#a80d6e0153fa9cfac95f0b8933a15c954',1,'QXObject']]],
   ['openlocal',['OPENLOCAL',['../class_q_x_core.html#a62b203708cac4c8227b528d258befc73',1,'QXCore']]],

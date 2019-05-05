@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.0 Release</span>
+   &#160;<span id="projectnumber">v2.1 Release</span>
    </div>
    <div id="projectbrief">项目介绍</div>
   </td>
@@ -92,18 +92,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><!--header-->
 <div class="contents">
 
-<p>Crash回调接口  
+<p>App 崩溃处理接口  
  <a href="interface_i_crash_handler.html#details">更多...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p>Crash回调接口 </p>
+<div class="textblock"><p>App 崩溃处理接口 </p>
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00294">294</a> 行定义.</p>
+<p>在文件 <a class="el" href="_i_crash_handler_8xcs_source.html">ICrashHandler.xcs</a> 第 <a class="el" href="_i_crash_handler_8xcs_source.html#l00006">6</a> 行定义.</p>
 </div><h2 class="groupheader">成员函数说明</h2>
-<a class="anchor" id="a65b69ac77220edb2d01a9c1fce36bd2a"></a>
+<a class="anchor" id="ab860e5d81f793944097c929f0d2d7085"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -111,11 +111,19 @@ Public 成员函数</h2></td></tr>
           <td class="memname">void onCrash </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
+          <td class="paramname"><em>crashInfo</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>崩溃处理回调 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">crashInfo</td><td>崩溃信息 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
