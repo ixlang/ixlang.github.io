@@ -79,5 +79,8 @@
 	"repallconfirm":	"开启",
 	"autosave":	"开启",
 	"workspace":	"",
+	"indentguide":	"开启",
+	"showfolding":	"开启",
+	"showbuildin":	"关闭",
 	"switchinfo":	"开启"
 }

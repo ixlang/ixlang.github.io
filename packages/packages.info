@@ -36,10 +36,10 @@
 			"icon":	".\\packages\\xfftw1.0.0.0.png"
 		}, {
 			"package":	"Qt5.9.1",
-			"version":	"5.9.1.5",
+			"version":	"5.9.1.6",
 			"descr":	"优秀的跨平台界面库",
 			"author":	"https://github.com/ixlang/xlibraries",
-			"file":	".\\packages\\Qt5.9.15.9.1.5",
-			"icon":	".\\packages\\Qt5.9.15.9.1.5.png"
+			"file":	".\\packages\\Qt5.9.15.9.1.6",
+			"icon":	".\\packages\\Qt5.9.15.9.1.6.png"
 		}]
 }

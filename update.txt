@@ -286,7 +286,9 @@ __x_ver__
 更改Process类的exit信号为SIGKILL
 增加信号处理接口
 增加QT绘图部分功能
-
+增加操作系统信号处理和绘图的在线示例代码
+改善XStudio健壮性
+增加XStudio命令行编译项目
 
 2019-05-02
 发布release 2.1版

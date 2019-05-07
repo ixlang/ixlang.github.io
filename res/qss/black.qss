@@ -26,7 +26,7 @@ QMainWindow,QDialog {
 	color: #F1F1F1;
 }
 
-QMdiSubWindow { border: 5px solid #262627; background: #3e3e42 }
+#indexForm {background: #3e3e42 }
 QMdiSubWindow:title { background: #3e3e42}
 
 QLabel {
