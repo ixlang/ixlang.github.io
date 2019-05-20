@@ -2288,17 +2288,14 @@ class QXSci : QXWidget{
 		return sendEditor(SCI_WORDSTARTPOSITION, pos, 0);
 	}
     String getText(){
-       return (String)core_getString(nativehandle, QSCIGETTEXT);
+       return core_getString(nativehandle, QSCIGETTEXT);
     }
     String getSelectedText(){
-       return (String)core_getString(nativehandle, QSCIGETSELTXT);
+       return core_getString(nativehandle, QSCIGETSELTXT);
     }
     
     String getText(int start, int end){
-		if (end <= start){
-			return "";
-		}
-       return (String)core_getStringlongint(nativehandle, QSCIGETRANGE, start, end);
+       return core_getStringlongint(nativehandle, QSCIGETRANGE, start, end);
     }
     String getText(int line){
 		int start = getPosition(line);

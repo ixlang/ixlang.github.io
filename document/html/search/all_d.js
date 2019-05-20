@@ -50,7 +50,7 @@ var searchData=
   ['mid',['Mid',['../class_color_role.html#aba76b0cf60547b285b963ecab34d87f6',1,'ColorRole']]],
   ['midlight',['Midlight',['../class_color_role.html#aa3a284da22315266c09a7d91153abdb8',1,'ColorRole']]],
   ['min',['min',['../class_math.html#a2f2bf96d77a187bd4446b4ba3864470d',1,'Math.min(int a, int b)'],['../class_math.html#aae78f234a48742ac10b1a231f771d809',1,'Math.min(long a, long b)'],['../class_math.html#af3a87289fa5f023930c93d80e6375930',1,'Math.min(double a, double b)']]],
-  ['minimized',['MINIMIZED',['../class_q_x_core.html#acb3eaace63f702d778e93e44a6a55644',1,'QXCore.MINIMIZED()'],['../class_q_x_widget.html#aaf58f8355723930cdfb026ba492b8083',1,'QXWidget.minimized()']]],
+  ['minimized',['minimized',['../class_q_x_widget.html#aaf58f8355723930cdfb026ba492b8083',1,'QXWidget.minimized()'],['../class_q_x_core.html#acb3eaace63f702d778e93e44a6a55644',1,'QXCore.MINIMIZED()']]],
   ['minimum',['minimum',['../class_q_x_progress_bar.html#a17c124c64514dd5c2a625fd53ff868e7',1,'QXProgressBar']]],
   ['minimumheight',['MINIMUMHEIGHT',['../class_q_x_core.html#a591b0ef214f694c4446280eea214c97a',1,'QXCore']]],
   ['minimumwidth',['MINIMUMWIDTH',['../class_q_x_core.html#ad6c67eaa4ce2023ec49fe596596f7ae6',1,'QXCore']]],

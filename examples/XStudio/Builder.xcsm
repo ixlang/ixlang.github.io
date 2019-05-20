@@ -3,20 +3,15 @@ class Builder : IBuilder{
     static XWndOutput output;
     static XWndInfor infownd;
 
-	bool inConsole = false;
     Process buildProcess;
     
     
     Builder(){
     }
-    Builder(bool bcon){
-		inConsole = bcon;
-    }
+    
     static void clear(bool focus){
-		if (output != nilptr){
-			output.clear(focus);
-			infownd.clear();
-        }
+        output.clear(focus);
+        infownd.clear();
     }
 
     String build(String compilerPath, String []args, String workDir)override{
@@ -29,7 +24,7 @@ class Builder : IBuilder{
                 fullCommand = fullCommand + (args[i] + " ");
             }
             
-			OutputText(XPlatform.converPlatformCharSetTo(fullCommand) + "\n");
+			output.output(XPlatform.converPlatformCharSetTo(fullCommand) + "\n");
             
             buildProcess = new Process(XPlatform.converToPlatformCharSet(compilerPath), args);
             
@@ -58,14 +53,14 @@ class Builder : IBuilder{
 									lines ="";
                                 }
                                 
-                                OutputText(XPlatform.converPlatformCharSetTo(szOut));
+                                output.output(XPlatform.converPlatformCharSetTo(szOut));
                             }
                         }
                         
                     }catch(Exception e){
                      
                     }
-                    OutputText(XPlatform.converPlatformCharSetTo(lines));
+                    output.output(XPlatform.converPlatformCharSetTo(lines));
                 }
             }catch(Exception e){
                 String str = e.getMessage();
@@ -73,7 +68,7 @@ class Builder : IBuilder{
 					str = new String(str.getBytes(), "GB18030//IGNORE");
                     compilerPath = new String(compilerPath.getBytes(), "GB18030//IGNORE");
                 }
-                OutputText("运行编译器时发生错误:\n[" + compilerPath + "]" + str);
+                output.output("运行编译器时发生错误:\n[" + compilerPath + "]" + str);
             }
             buildProcess = nilptr;
         }
@@ -82,15 +77,9 @@ class Builder : IBuilder{
     }
     
     void OutputText(String text)override{
-		if (inConsole == false){
-			output.output(text);
-		}else{
-			_system_.consoleWrite(XPlatform.converToPlatformCharSet(text));
-        }
+        output.output(text);
     }
     void setCompileInfor(Vector<ICompileInfo> infos)override{
-		if (inConsole == false){
-			infownd.showInfo(infos);
-        }
+        infownd.showInfo(infos);
     }
 };

@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.1 Release</span>
+   &#160;<span id="projectnumber">v2.2 Release</span>
    </div>
    <div id="projectbrief">项目介绍</div>
   </td>
@@ -126,7 +126,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">return</span> widget_get_int_value(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a8fd38a0a59b2180990eb9593d2eb187a">QPVALUE</a>);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_q_x_progress_bar.html#afab766445043570e6a82c14851366933">   36</a></span>&#160;    <a class="code" href="class_string.html">String</a> <a class="code" href="class_q_x_progress_bar.html#afab766445043570e6a82c14851366933">getText</a>(){</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> core_getString(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a157d45c41c498560421390abbd91d166">QPTEXT</a>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="class_string.html">String</a>)core_getString(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a157d45c41c498560421390abbd91d166">QPTEXT</a>);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_q_x_progress_bar.html#a9d1bcb6f0834d3cd7aa9674160c71f18">   39</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_x_progress_bar.html#a9d1bcb6f0834d3cd7aa9674160c71f18">setTextVisible</a>(<span class="keywordtype">bool</span> visible){</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        widget_set_bool_value(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#ad5baa0b8f33429d2c273231889ee9c7b">QPVISIBLE</a>, visible);</div>
@@ -162,7 +162,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        widget_slot(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a427ed57a77b1c05f5c6752770bf4a891">QPFORMAT</a>);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
 <div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_q_x_progress_bar.html#ab47c45a95de14e78d9779f6cac49986f">   72</a></span>&#160;    <a class="code" href="class_string.html">String</a> <a class="code" href="class_q_x_progress_bar.html#ab47c45a95de14e78d9779f6cac49986f">format</a>() {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> core_getString(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a427ed57a77b1c05f5c6752770bf4a891">QPFORMAT</a>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="class_string.html">String</a>)core_getString(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a427ed57a77b1c05f5c6752770bf4a891">QPFORMAT</a>);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
 <div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_q_x_progress_bar.html#ad20897c5c8bd47f5d4005989bead0e55">   75</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_x_progress_bar.html#ad20897c5c8bd47f5d4005989bead0e55">reset</a>(){</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        widget_slot(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#aadf3ff88072cab08dbfa41b079fe80c1">QPRESET</a>);</div>

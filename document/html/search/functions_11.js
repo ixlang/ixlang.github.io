@@ -198,7 +198,7 @@ var searchData=
   ['showminimized',['showMinimized',['../class_q_x_widget.html#ab5f4a09a34a3ce1348f61a8d4219606a',1,'QXWidget']]],
   ['shownormal',['showNormal',['../class_q_x_widget.html#a5de818cc4573b779ee22ab5477c731cd',1,'QXWidget']]],
   ['showtips',['showTips',['../class_q_x_sci.html#ac661dacefc9010d4b317d86433543cf0',1,'QXSci']]],
-  ['showtooltips',['showToolTips',['../class_q_x_widget.html#a987c7888cede40dbafcf4984105a881f',1,'QXWidget.showToolTips(int x, int y, long duration)'],['../class_q_x_widget.html#a81c3e0b5d76ebaf39ccd7d3413acf7e9',1,'QXWidget.showToolTips(int x, int y, String text, long duration)'],['../class_q_x_widget.html#a407aab36d8aba46c6e03a9126865e5cc',1,'QXWidget.ShowToolTips(int x, int y, String text, long duration)']]],
+  ['showtooltips',['ShowToolTips',['../class_q_x_widget.html#a407aab36d8aba46c6e03a9126865e5cc',1,'QXWidget.ShowToolTips(int x, int y, String text, long duration)'],['../class_q_x_widget.html#a987c7888cede40dbafcf4984105a881f',1,'QXWidget.showToolTips(int x, int y, long duration)'],['../class_q_x_widget.html#a81c3e0b5d76ebaf39ccd7d3413acf7e9',1,'QXWidget.showToolTips(int x, int y, String text, long duration)']]],
   ['sinh',['sinh',['../class_math.html#ac4b47f59cd42705f480c50f3b72ffee3',1,'Math']]],
   ['size',['size',['../class_list.html#af4b57d21919c42d55af03391f91a1c08',1,'List.size()'],['../class_map.html#af4b57d21919c42d55af03391f91a1c08',1,'Map.size()'],['../class_vector.html#af4b57d21919c42d55af03391f91a1c08',1,'Vector.size()']]],
   ['sleep',['sleep',['../class__system__.html#ae90b637551c19784c210a93438435bc0',1,'_system_.sleep()'],['../class_thread.html#ae90b637551c19784c210a93438435bc0',1,'Thread.sleep()']]],

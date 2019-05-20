@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>indexForm</class>
  <widget class="QWidget" name="indexForm">
@@ -9,6 +9,9 @@
     <width>1085</width>
     <height>711</height>
    </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
   </property>
   <property name="windowTitle">
    <string>欢迎使用</string>

@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.1 Release</span>
+   &#160;<span id="projectnumber">v2.2 Release</span>
    </div>
    <div id="projectbrief">项目介绍</div>
   </td>
@@ -191,10 +191,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        widget_set_object_value(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#ab35ebc645bf120343f68072208c3532d">SETTABVHCOLUMNS</a>, columns);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
 <div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_q_x_table_widget.html#add117a9454dfc77a5d400227256293fd">  101</a></span>&#160;    <a class="code" href="class_string.html">String</a> <a class="code" href="class_q_x_table_widget.html#add117a9454dfc77a5d400227256293fd">getText</a>(<span class="keywordtype">int</span> <a class="code" href="class_q_x_widget.html#a50ddd862d7f7c8f11d9c43c2c7a3bf37">x</a>, <span class="keywordtype">int</span> <a class="code" href="class_q_x_widget.html#ad2fbece2f53c8f17552a75843b4440b1">y</a>){</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">return</span> core_getStringlongint(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a7259fd8fd5897bc99c7fc8904486cef7">TABLEGETTEXTBYRC</a>, x, y);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="class_string.html">String</a>)core_getStringlongint(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a7259fd8fd5897bc99c7fc8904486cef7">TABLEGETTEXTBYRC</a>, x, y);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
 <div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="class_q_x_table_widget.html#a9c0a963db301788da78c45ecbe607290">  104</a></span>&#160;    <a class="code" href="class_string.html">String</a> <a class="code" href="class_q_x_table_widget.html#a9c0a963db301788da78c45ecbe607290">getItemText</a>(<span class="keywordtype">long</span> item){</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">return</span> core_getStringlongint(item, <a class="code" href="class_q_x_core.html#a0ba368b630eec4f23cc54a9358090ede">TABLEGETTEXTBYITEM</a>, 0, 0);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="class_string.html">String</a>)core_getStringlongint(item, <a class="code" href="class_q_x_core.html#a0ba368b630eec4f23cc54a9358090ede">TABLEGETTEXTBYITEM</a>, 0, 0);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
 <div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="class_q_x_table_widget.html#ac8bb3912a3ce86b15842e79d0b421204">  107</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_x_table_widget.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a>(){</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        widget_slot(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a932fc6c2d9233c97467ac41471f6402b">TABLECLEAR</a>);</div>

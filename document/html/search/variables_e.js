@@ -8,6 +8,7 @@ var searchData=
   ['openbuffer',['OPENBUFFER',['../class_q_x_core.html#a1e73b1c1baf6f2b6bf60beeee0e91fc3',1,'QXCore']]],
   ['openhandcursor',['OpenHandCursor',['../class_q_x_object.html#a80d6e0153fa9cfac95f0b8933a15c954',1,'QXObject']]],
   ['openlocal',['OPENLOCAL',['../class_q_x_core.html#a62b203708cac4c8227b528d258befc73',1,'QXCore']]],
+  ['openmulti',['OPENMULTI',['../class_q_x_core.html#a1579c6595e65174561237ea5fab01323',1,'QXCore']]],
   ['openurl',['OPENURL',['../class_q_x_core.html#afc7c46da8d05537a83d5b099e729b177',1,'QXCore']]],
   ['orderedalphadither',['OrderedAlphaDither',['../class_q_x_painter_1_1_image_conversion_flag.html#a288e85c528112bbabdf0f638c2c4f39e',1,'QXPainter::ImageConversionFlag']]],
   ['ordereddither',['OrderedDither',['../class_q_x_painter_1_1_image_conversion_flag.html#a9ed6254ab86a5ef22b8945b0aca50aa6',1,'QXPainter::ImageConversionFlag']]],

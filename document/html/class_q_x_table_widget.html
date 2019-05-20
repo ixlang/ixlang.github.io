@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.1 Release</span>
+   &#160;<span id="projectnumber">v2.2 Release</span>
    </div>
    <div id="projectbrief">项目介绍</div>
   </td>
@@ -455,9 +455,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <p>参考 <a class="el" href="_q_x_core_8xcsm_source.html#l00305">QXCore.TABLEGETTEXTBYITEM</a>.</p>
 <div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                 {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">return</span> core_getStringlongint(item, <a class="code" href="class_q_x_core.html#a0ba368b630eec4f23cc54a9358090ede">TABLEGETTEXTBYITEM</a>, 0, 0);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="class_string.html">String</a>)core_getStringlongint(item, <a class="code" href="class_q_x_core.html#a0ba368b630eec4f23cc54a9358090ede">TABLEGETTEXTBYITEM</a>, 0, 0);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
 <div class="ttc" id="class_q_x_core_html_a0ba368b630eec4f23cc54a9358090ede"><div class="ttname"><a href="class_q_x_core.html#a0ba368b630eec4f23cc54a9358090ede">QXCore.TABLEGETTEXTBYITEM</a></div><div class="ttdeci">static const int TABLEGETTEXTBYITEM</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00305">QXCore.xcsm:305</a></div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -603,12 +604,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <p>参考 <a class="el" href="_q_x_native_8xcsm_source.html#l00003">QXNative.nativehandle</a> , 以及 <a class="el" href="_q_x_core_8xcsm_source.html#l00304">QXCore.TABLEGETTEXTBYRC</a>.</p>
 <div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">return</span> core_getStringlongint(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a7259fd8fd5897bc99c7fc8904486cef7">TABLEGETTEXTBYRC</a>, <a class="code" href="class_q_x_widget.html#a50ddd862d7f7c8f11d9c43c2c7a3bf37">x</a>, <a class="code" href="class_q_x_widget.html#ad2fbece2f53c8f17552a75843b4440b1">y</a>);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="class_string.html">String</a>)core_getStringlongint(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a7259fd8fd5897bc99c7fc8904486cef7">TABLEGETTEXTBYRC</a>, <a class="code" href="class_q_x_widget.html#a50ddd862d7f7c8f11d9c43c2c7a3bf37">x</a>, <a class="code" href="class_q_x_widget.html#ad2fbece2f53c8f17552a75843b4440b1">y</a>);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
 <div class="ttc" id="class_q_x_native_html_adc4b3fd5b05624dfe6705339748b8aab"><div class="ttname"><a href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">QXNative.nativehandle</a></div><div class="ttdeci">long nativehandle</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_native_8xcsm_source.html#l00003">QXNative.xcsm:3</a></div></div>
 <div class="ttc" id="class_q_x_widget_html_a50ddd862d7f7c8f11d9c43c2c7a3bf37"><div class="ttname"><a href="class_q_x_widget.html#a50ddd862d7f7c8f11d9c43c2c7a3bf37">QXWidget.x</a></div><div class="ttdeci">int x()</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_widget_8xcsm_source.html#l00417">QXWidget.xcsm:417</a></div></div>
 <div class="ttc" id="class_q_x_core_html_a7259fd8fd5897bc99c7fc8904486cef7"><div class="ttname"><a href="class_q_x_core.html#a7259fd8fd5897bc99c7fc8904486cef7">QXCore.TABLEGETTEXTBYRC</a></div><div class="ttdeci">static const int TABLEGETTEXTBYRC</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00304">QXCore.xcsm:304</a></div></div>
 <div class="ttc" id="class_q_x_widget_html_ad2fbece2f53c8f17552a75843b4440b1"><div class="ttname"><a href="class_q_x_widget.html#ad2fbece2f53c8f17552a75843b4440b1">QXWidget.y</a></div><div class="ttdeci">int y()</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_widget_8xcsm_source.html#l00421">QXWidget.xcsm:421</a></div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

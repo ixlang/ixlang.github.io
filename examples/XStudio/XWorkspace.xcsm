@@ -164,7 +164,7 @@ class XWorkspace : QXMdiArea{
 			return false;
 		}
         Project project = new Project();
-        if (project.loadWorkspace(file, false)){
+        if (project.loadWorkspace(file)){
 			Recently.putRecent(project.getName(), file);
 			setCurrentProject(project);
             XWndClass.prepare(project);
@@ -644,7 +644,7 @@ class XWorkspace : QXMdiArea{
 			new onComboBoxEventListener(){
 				void onItemSelected(QXObject obj, int id){
                     if (currentProject != nilptr){
-						currentProject.setCurrentConfigure(cfgSel.getCurrentText(), true);
+						currentProject.setCurrentConfigure(cfgSel.getCurrentText());
                     }
 				}
 			}
@@ -1127,12 +1127,10 @@ class XWorkspace : QXMdiArea{
 		
 			QxApp.statusBar.statusBar.showMessage("正在运行 XIntelliSense...");
 			synchronized(xintellisencelock){
-				Project project = currentProject;
-				if (_autoComp_thread == nilptr || project != nilptr){
-                    updateAllOpenedFile(project, originalName);
+				if (_autoComp_thread == nilptr){
 					_autoComp_thread = new Thread(){
 						void run()override{
-							XWorkspace.this.autocomp = XWorkspace.this.getXIntelliSense(project, originalName, content, position);
+							XWorkspace.this.autocomp = XWorkspace.this.getXIntelliSense(originalName, content, position);
                             editor.setIntellisense(XWorkspace.this.autocomp);
 							XWorkspace.this._autoComp_thread = nilptr;
                             showXintellisenceComplete();
@@ -1236,27 +1234,22 @@ class XWorkspace : QXMdiArea{
         return true;
     }
     
-    void updateAllOpenedFile(Project project, String except){
-		if (project != nilptr){
-			if (project.intelliSense != nilptr){
-				int c = project.getSourceFileCount();
+	XIntelliSense.XIntelliResult [] getXIntelliSense(String sourcePath,String content,long position){
+		if (currentProject != nilptr){
+			if (currentProject.intelliSense != nilptr){
+				int c = currentProject.getSourceFileCount();
 				for (int i = 0; i < c; i++){
-					String _sourcePath = project.getSourcePath(i);
-					if (_sourcePath.equals(except) == false){
+					String _sourcePath = currentProject.getSourcePath(i);
+					if (_sourcePath.equals(sourcePath) == false){
 						XSourceEditor wnd = XSourceEditor.findFileWindow(_sourcePath);
 						if (wnd != nilptr){
 							String _content = wnd.getTextContent();
-							project.intelliSense.update(_sourcePath, _content);
+							currentProject.intelliSense.update(_sourcePath, _content);
 						}
 					}	
 				}
+				return currentProject.intelliSense.getIntelliSense(sourcePath, content, position);
 			}
-		}
-    }
-    
-	XIntelliSense.XIntelliResult [] getXIntelliSense(Project project, String sourcePath,String content,long position){
-		if (project != nilptr){
-			return project.intelliSense.getIntelliSense(sourcePath, content, position);
 		}
 		return nilptr;
 	}
