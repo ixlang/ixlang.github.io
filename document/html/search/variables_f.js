@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['padspread',['PadSpread',['../class_q_x_brush.html#ae6e475fab80ffd1db2ddff208b3d9a0a',1,'QXBrush']]],
+  ['padspread',['PadSpread',['../enum_q_x_brush_1_1_spread.html#a9948de0534b12ce9dd70f84a61e6a5e3',1,'QXBrush::Spread']]],
   ['paint',['Paint',['../class_q_x_event.html#a9f855be41da962feb41f96c6d3798b1b',1,'QXEvent']]],
   ['painterfromimg',['PAINTERFROMIMG',['../class_q_x_core.html#a578c073bb1b06962add2ec7d06cdc9c2',1,'QXCore']]],
   ['paintergetfcont',['PAINTERGETFCONT',['../class_q_x_core.html#a9c3502286ad0ee5fd8ec6f262e598297',1,'QXCore']]],
@@ -16,7 +16,7 @@ var searchData=
   ['paintresetmatrix',['PAINTRESETMATRIX',['../class_q_x_core.html#a8afa497956b398ba5dea898f707b8508',1,'QXCore']]],
   ['paintresettransform',['PAINTRESETTRANSFORM',['../class_q_x_core.html#ae774ac94cbeb8048222215426e7737b0',1,'QXCore']]],
   ['paintsetmatrix',['PAINTSETMATRIX',['../class_q_x_core.html#a624acd4e71c89e2d7cbf2bdaee169f4b',1,'QXCore']]],
-  ['palette',['Palette',['../class_q_x_object.html#afdebd747457bdc3dc1eb06aeaf0956f2',1,'QXObject.Palette()'],['../class_q_x_variant.html#afdebd747457bdc3dc1eb06aeaf0956f2',1,'QXVariant.Palette()'],['../class_q_x_core.html#a7b69136549ba6efdf840ef2dbce7cf5d',1,'QXCore.PALETTE()']]],
+  ['palette',['PALETTE',['../class_q_x_core.html#a7b69136549ba6efdf840ef2dbce7cf5d',1,'QXCore.PALETTE()'],['../class_q_x_object.html#afdebd747457bdc3dc1eb06aeaf0956f2',1,'QXObject.Palette()'],['../class_q_x_variant.html#afdebd747457bdc3dc1eb06aeaf0956f2',1,'QXVariant.Palette()']]],
   ['palettechange',['PaletteChange',['../class_q_x_event.html#a09da303652685042ad578d8ee4a7ca6b',1,'QXEvent']]],
   ['palettecolor',['PALETTECOLOR',['../class_q_x_core.html#a5a4b2803b436d941e336100c38eb66ba',1,'QXCore']]],
   ['parentabouttochange',['ParentAboutToChange',['../class_q_x_event.html#ab0aab1e8af68ea42af4151573180231f',1,'QXEvent']]],
@@ -49,6 +49,7 @@ var searchData=
   ['pointinghandcursor',['PointingHandCursor',['../class_q_x_object.html#acca2729425886cb0d6a26b754531f936',1,'QXObject']]],
   ['polish',['Polish',['../class_q_x_event.html#a5658f225d02184a862bd844212b21a47',1,'QXEvent']]],
   ['polishrequest',['PolishRequest',['../class_q_x_event.html#a305fab781635375f48bd50ec33be5278',1,'QXEvent']]],
+  ['poll_5fmodel',['POLL_MODEL',['../class_http_server.html#a3418b090a0dd628a8f24ddf7617e6841',1,'HttpServer']]],
   ['polygon',['Polygon',['../class_q_x_object.html#a838c270c7aa52cd0887dd7e9f5219cad',1,'QXObject.Polygon()'],['../class_q_x_variant.html#a838c270c7aa52cd0887dd7e9f5219cad',1,'QXVariant.Polygon()']]],
   ['polygonf',['PolygonF',['../class_q_x_object.html#a35dadd7b3d5601d47a8d3d49e170dd2e',1,'QXObject.PolygonF()'],['../class_q_x_variant.html#a35dadd7b3d5601d47a8d3d49e170dd2e',1,'QXVariant.PolygonF()']]],
   ['popup',['Popup',['../class_q_x_widget.html#a8b8dbc75e3d0142f6a632def986e0e8a',1,'QXWidget']]],

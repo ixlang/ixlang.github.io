@@ -8,13 +8,15 @@
 			"list":[
 				"xlang 可执行文件(-c)",
 				"可执行文件(-ce)",
-				"xlang 静态链接库(-lix -c)"
+				"xlang 静态链接库(-lix -c)",
+				"xlang 共享库(-slx -c)",
+				"xlang 链接库(-xl -c)"
 			]
 		},
 		"目标操作系统:ostype":{
 			"type":"stringlist",
 			"list":[
-				"当前操作系统",
+				"缺省",
 				"-xcross-windows",
 				"-xcross-linux",
 				"-xcross-darwin"
@@ -23,7 +25,7 @@
 		"处理器架构:wtype":{
 			"type":"stringlist",
 			"list":[
-				"当前开发环境",
+				"缺省",
 				"-arch:x86",
 				"-arch:x86_64",
 				"-arch:arm",
@@ -53,7 +55,10 @@
 		"库目录:libspath":{
 			"type":"string"
 		},
-		"依赖库:libs":{
+		"静态依赖库:libs":{
+			"type":"string"
+		},
+		"动态链接库:links":{
 			"type":"string"
 		},
 		"引用目录:incspath":{
@@ -65,6 +70,13 @@
 			"type":"stringlist",
 			"list":[
 				"启用(-w)",
+				"禁用(nilptr)"
+			]
+		},
+		"压缩目标代码以减小体积:compdest":{
+			"type":"stringlist",
+			"list":[
+				"启用(-z)",
 				"禁用(nilptr)"
 			]
 		},

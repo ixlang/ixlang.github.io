@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1501</width>
+    <width>1864</width>
     <height>989</height>
    </rect>
   </property>
@@ -118,7 +118,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1501</width>
+     <width>1864</width>
      <height>23</height>
     </rect>
    </property>
@@ -194,6 +194,8 @@
     <addaction name="actionclean"/>
     <addaction name="actiongenerateNativeSrc"/>
     <addaction name="separator"/>
+    <addaction name="actiongenmake"/>
+    <addaction name="separator"/>
     <addaction name="actioncomment"/>
     <addaction name="actionprop"/>
     <addaction name="separator"/>
@@ -255,6 +257,8 @@
     <addaction name="separator"/>
     <addaction name="actionstartup"/>
     <addaction name="actionsamples"/>
+    <addaction name="separator"/>
+    <addaction name="actioninstcext"/>
     <addaction name="separator"/>
     <addaction name="actionabout"/>
    </widget>
@@ -1078,7 +1082,7 @@
     </layout>
    </widget>
   </widget>
-  <widget class="QDockWidget" name="memoryinfo">
+  <widget class="QDockWidget" name="memlookup">
    <property name="features">
     <set>QDockWidget::DockWidgetClosable|QDockWidget::DockWidgetMovable</set>
    </property>
@@ -1087,6 +1091,80 @@
    </property>
    <property name="windowTitle">
     <string>内存</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>8</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_8">
+    <layout class="QVBoxLayout" name="verticalLayout_10" stretch="0,1">
+     <property name="spacing">
+      <number>4</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QWidget" name="widget_4" native="true">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>地址:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="edtaddress"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnLockup">
+          <property name="text">
+           <string>查看</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="memcontent" native="true"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="memoryinfo">
+   <property name="features">
+    <set>QDockWidget::DockWidgetClosable|QDockWidget::DockWidgetMovable</set>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::AllDockWidgetAreas</set>
+   </property>
+   <property name="windowTitle">
+    <string>实时内存</string>
    </property>
    <attribute name="dockWidgetArea">
     <number>8</number>
@@ -1851,6 +1929,16 @@
    </property>
    <property name="shortcut">
     <string>F2</string>
+   </property>
+  </action>
+  <action name="actiongenmake">
+   <property name="text">
+    <string>生成makefile</string>
+   </property>
+  </action>
+  <action name="actioninstcext">
+   <property name="text">
+    <string>安装编译器扩展(&amp;i)</string>
    </property>
   </action>
  </widget>

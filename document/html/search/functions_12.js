@@ -6,6 +6,8 @@ var searchData=
   ['tilesubwindows',['tileSubWindows',['../class_q_x_mdi_area.html#a772d04bae963f5ae029385ebc3235a1a',1,'QXMdiArea']]],
   ['timer',['Timer',['../class_timer.html#a6a8bc5014802d569f6d01c4f36121a81',1,'Timer']]],
   ['toabsolutepath',['toAbsolutePath',['../class_string.html#a9dd60c39ede7a773300232fd28d79271',1,'String']]],
+  ['toarray',['toArray',['../class_list.html#a9af415234a91ad0b28b4cd79451c1f39',1,'List.toArray()'],['../class_vector.html#a9af415234a91ad0b28b4cd79451c1f39',1,'Vector.toArray()']]],
+  ['tochararray',['toCharArray',['../class_string.html#a18035d57d11aec49ed53b153a84321f1',1,'String']]],
   ['torelativepath',['toRelativePath',['../class_string.html#af6fb3a72a3ab4011bbeee3616421b95d',1,'String']]],
   ['tostring',['toString',['../class_json_array.html#a1c9a6caf7c15489cfb807265d869af1c',1,'JsonArray.toString()'],['../class_json_object.html#a1c9a6caf7c15489cfb807265d869af1c',1,'JsonObject.toString()'],['../class_x_dom_node.html#ad146fa8579a5f8a876c4688cc5a68520',1,'XDomNode.toString()']]],
   ['translate',['translate',['../class_q_x_matrix.html#a3f4a683f0f755bc3c8f2a573fb889a5e',1,'QXMatrix.translate()'],['../class_q_x_painter.html#ad6c65c6f675c498218073dca7d2f2424',1,'QXPainter.translate()']]],

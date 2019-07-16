@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['nativefinalize',['NATIVEFINALIZE',['../class_q_x_core.html#a94a5e9fd15b387ec8f0bdc1803d5495d',1,'QXCore.NATIVEFINALIZE()'],['../class_q_x_object.html#ad2ae0de7691a8cabcd24dd1c6112fc6f',1,'QXObject.nativeFinalize()']]],
+  ['nativefinalize',['nativeFinalize',['../class_q_x_object.html#ad2ae0de7691a8cabcd24dd1c6112fc6f',1,'QXObject.nativeFinalize()'],['../class_q_x_core.html#a94a5e9fd15b387ec8f0bdc1803d5495d',1,'QXCore.NATIVEFINALIZE()']]],
   ['nativegesture',['NativeGesture',['../class_q_x_event.html#a1191895670d52e071fccbb14af847fcc',1,'QXEvent']]],
   ['nativehandle',['nativehandle',['../class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab',1,'QXNative']]],
   ['ncolorroles',['NColorRoles',['../class_color_role.html#a79e614a5495a2d0c6991762367988fe7',1,'ColorRole']]],
@@ -12,7 +12,7 @@ var searchData=
   ['no',['No',['../class_q_x_message_box.html#a8b7b3b3f9c9c81501e71dec0a381d645',1,'QXMessageBox']]],
   ['noall',['NoAll',['../class_q_x_message_box.html#aa5a0309a8b3a904984e4bf8f696a5189',1,'QXMessageBox']]],
   ['noalpha',['NoAlpha',['../class_q_x_painter_1_1_image_conversion_flag.html#af0fd3b86b028d11ce1a419b19144b5f0',1,'QXPainter::ImageConversionFlag']]],
-  ['nobrush',['NoBrush',['../class_q_x_brush_1_1_style.html#a5914bad407e02b5d6ac81a1c4fcacc2d',1,'QXBrush::Style']]],
+  ['nobrush',['NoBrush',['../enum_q_x_brush_1_1_style.html#a540efc7c881af5b4c40fac62ad1dabf1',1,'QXBrush::Style']]],
   ['nobutton',['NoButton',['../class_q_x_message_box.html#a678943707038da5ba12c2686be5212df',1,'QXMessageBox']]],
   ['nocontextmenu',['NoContextMenu',['../class_q_x_widget.html#aea104bc83743a0ecedb9e352d129ae0c',1,'QXWidget']]],
   ['nodockwidgetfeatures',['NoDockWidgetFeatures',['../class_q_x_dock_widget.html#a250efeace6486331a8f791dddfe2d833',1,'QXDockWidget']]],
@@ -29,7 +29,7 @@ var searchData=
   ['noncosmeticdefaultpen',['NonCosmeticDefaultPen',['../class_q_x_painter_1_1_render_hint.html#a4b1cca7ea5ba956e8e72a4564a051c7e',1,'QXPainter::RenderHint']]],
   ['none',['None',['../class_q_x_event.html#a3f378f294d4ba1d4ad3b0e473ed5e206',1,'QXEvent.None()'],['../class_q_type.html#a3f378f294d4ba1d4ad3b0e473ed5e206',1,'QType.None()']]],
   ['noopaquedetection',['NoOpaqueDetection',['../class_q_x_painter_1_1_image_conversion_flag.html#af2a98ec4e720ed053ada0bd3ea4796cf',1,'QXPainter::ImageConversionFlag']]],
-  ['nopen',['NoPen',['../class_q_x_painter_1_1_pen_style.html#a21036e94a8d6dc87375ea76e32d32a2f',1,'QXPainter::PenStyle']]],
+  ['nopen',['NoPen',['../enum_q_x_painter_1_1_pen_style.html#adb1c28e05135317f73b0e0e735310bef',1,'QXPainter::PenStyle']]],
   ['normal',['Normal',['../class_q_x_line_edit.html#ab298167a57917e19505c862051fce3e0',1,'QXLineEdit']]],
   ['norole',['NoRole',['../class_color_role.html#ae9df675e1cc2644f5d0f508dfc28a39b',1,'ColorRole']]],
   ['notify',['Notify',['../class_q_x_core.html#a5b2596ce6082ca2c9f7bf18be09cd874',1,'QXCore.Notify()'],['../interface_async_input.html#aa2c2c9eef81bf51c21a6e777367ffb10',1,'AsyncInput.notify()']]],

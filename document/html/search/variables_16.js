@@ -119,6 +119,7 @@ var searchData=
   ['whatsthiscursor',['WhatsThisCursor',['../class_q_x_object.html#ad5fc76505dba6f8fdd0d2abb9b743fbb',1,'QXObject']]],
   ['wheel',['Wheel',['../class_q_x_event.html#ae8bb57101392e42a971c340305d95b6d',1,'QXEvent']]],
   ['wheelfocus',['WheelFocus',['../class_q_x_widget.html#ac51a12c84e77fe6731b578067508100c',1,'QXWidget']]],
+  ['white_5fnamelist',['WHITE_NAMELIST',['../class_unsi.html#a0104293072fdd6063dd9a9a1f8514b30',1,'Unsi']]],
   ['widget',['Widget',['../class_q_x_widget.html#af0c522443aed57ed44c2b2486253f3b4',1,'QXWidget']]],
   ['width',['WIDTH',['../class_q_x_core.html#a9649ab8139c4c2ea5c93625b30d92a05',1,'QXCore.WIDTH()'],['../class_q_x_painter_1_1_paint.html#a9df23e056f5d1a0388cd8190431c0e03',1,'QXPainter.Paint.width()']]],
   ['window',['Window',['../class_color_role.html#afebd8c195a8fa8696a826da59cb67acb',1,'ColorRole.Window()'],['../class_q_x_widget.html#afebd8c195a8fa8696a826da59cb67acb',1,'QXWidget.Window()'],['../class_q_x_core.html#af22433d42ec6b35a5cee3c88109537c2',1,'QXCore.WINDOW()']]],

@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.2 Release</span>
+   &#160;<span id="projectnumber">v2.4 Release</span>
    </div>
    <div id="projectbrief">项目介绍</div>
   </td>
@@ -100,15 +100,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_vector.html#a7aadda5fed3baf7dd2702adf4ac2363c">add</a>(_V val);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    _V <span class="keyword">get</span>(<span class="keywordtype">int</span> pos);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_vector.html#a7e6206d5482a792655d0c3d69da1b4a7">insert</a>(<span class="keywordtype">int</span> pos, _V val);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <span class="keyword">remove</span>(<span class="keywordtype">int</span> pos);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    _V <span class="keyword">get</span>(<span class="keywordtype">int</span> pos);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_vector.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <span class="keyword">remove</span>(<span class="keywordtype">int</span> pos);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_vector.html#a61964cd75f78f11c4a9ddfe142503454">removeRange</a>(<span class="keywordtype">int</span> pos， <span class="keywordtype">int</span> size);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    _V [] <a class="code" href="class_vector.html#a9af415234a91ad0b28b4cd79451c1f39">toArray</a>(_V [] array);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_vector.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_vector.html#a32d626626eee0bc4ade146973f6abb1c">finalize</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
+<div class="ttc" id="class_vector_html_a7e6206d5482a792655d0c3d69da1b4a7"><div class="ttname"><a href="class_vector.html#a7e6206d5482a792655d0c3d69da1b4a7">Vector.insert</a></div><div class="ttdeci">void insert(int pos, _V val)</div><div class="ttdoc">在指定位置插入数据 </div></div>
+<div class="ttc" id="class_vector_html_a9af415234a91ad0b28b4cd79451c1f39"><div class="ttname"><a href="class_vector.html#a9af415234a91ad0b28b4cd79451c1f39">Vector.toArray</a></div><div class="ttdeci">_V [] toArray(_V [] array)</div><div class="ttdoc">将容器内容转到数组 </div></div>
 <div class="ttc" id="class_vector_html_a3568508e881912b2caaacb1620cdd667"><div class="ttname"><a href="class_vector.html#a3568508e881912b2caaacb1620cdd667">Vector.Vector</a></div><div class="ttdeci">Vector(int presize)</div><div class="ttdoc">构造 </div></div>
+<div class="ttc" id="class_vector_html_a32d626626eee0bc4ade146973f6abb1c"><div class="ttname"><a href="class_vector.html#a32d626626eee0bc4ade146973f6abb1c">Vector.finalize</a></div><div class="ttdeci">void finalize()</div><div class="ttdoc">析构处理  注意 重写finalize时必须使用 super.finalize(); 否则会造成泄露 </div></div>
+<div class="ttc" id="class_vector_html_a61964cd75f78f11c4a9ddfe142503454"><div class="ttname"><a href="class_vector.html#a61964cd75f78f11c4a9ddfe142503454">Vector.removeRange</a></div><div class="ttdeci">void removeRange(int pos， int size)</div><div class="ttdoc">从指定位置删除指定长度的数据 </div></div>
 <div class="ttc" id="class_vector_html_a7aadda5fed3baf7dd2702adf4ac2363c"><div class="ttname"><a href="class_vector.html#a7aadda5fed3baf7dd2702adf4ac2363c">Vector.add</a></div><div class="ttdeci">void add(_V val)</div><div class="ttdoc">插入数据 </div></div>
 <div class="ttc" id="class_vector_html_af4b57d21919c42d55af03391f91a1c08"><div class="ttname"><a href="class_vector.html#af4b57d21919c42d55af03391f91a1c08">Vector.size</a></div><div class="ttdeci">int size()</div><div class="ttdoc">获取容器内数据数量 </div></div>
 <div class="ttc" id="class_vector_html_ac8bb3912a3ce86b15842e79d0b421204"><div class="ttname"><a href="class_vector.html#ac8bb3912a3ce86b15842e79d0b421204">Vector.clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">清空容器 </div></div>

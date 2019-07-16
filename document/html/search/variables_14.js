@@ -6,6 +6,8 @@ var searchData=
   ['undo_5fmay_5fcoalesce',['UNDO_MAY_COALESCE',['../class_q_x_sci.html#ad8d6c0c079314f374e2a50bf41fcd900',1,'QXSci']]],
   ['ungrabkeyboard',['UngrabKeyboard',['../class_q_x_event.html#a90560c828bb3970cca993357482637ce',1,'QXEvent']]],
   ['ungrabmouse',['UngrabMouse',['../class_q_x_event.html#a7a1ada1ac44db803280cc09456b99dab',1,'QXEvent']]],
+  ['unsi_5ftcp',['UNSI_TCP',['../class_unsi.html#a6a0d2505a4255a6645dd022fe5c4b183',1,'Unsi']]],
+  ['unsi_5fudp',['UNSI_UDP',['../class_unsi.html#a9054e268dcc9880c0e3156c643a8d538',1,'Unsi']]],
   ['uparrowcursor',['UpArrowCursor',['../class_q_x_object.html#a279542774fe9744cee7d7e91dd9b0653',1,'QXObject']]],
   ['update',['UPDATE',['../class_q_x_core.html#ab4ea9483362f8e7d95fe2166bacc4f9f',1,'QXCore']]],
   ['updateenable',['UPDATEENABLE',['../class_q_x_core.html#a71e303591780dab8e2e1a8c185f860fe',1,'QXCore']]],

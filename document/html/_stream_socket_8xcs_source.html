@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.2 Release</span>
+   &#160;<span id="projectnumber">v2.4 Release</span>
    </div>
    <div id="projectbrief">项目介绍</div>
   </td>
@@ -126,30 +126,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    </div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_stream_socket.html#adc1893007b04e94b06a6c0a87714e158">enableKeepAlive</a>(<span class="keywordtype">bool</span> be);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_stream_socket.html#a4fdfb05009c5dea1b412584902db9fdf">isNagleEnabled</a>();</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_stream_socket.html#ad3e0c136f482884469d61171dc25176a">isKeepAliveEnabled</a>();</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <a class="code" href="class_inet_address.html">InetAddress</a> <a class="code" href="class_stream_socket.html#ac298d32bb3a982bf29a86cbe8de1b729">getRemoteInetAddress</a>();</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    </div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <a class="code" href="class_inet_address.html">InetAddress</a> <a class="code" href="class_stream_socket.html#a22767aea2554758fd2e5d8e333ee2a20">getLocalInetAddress</a>();</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    </div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_stream_socket.html#a5bbaa894c55cf41ed97607c89fa8f882">getRemoteAddress</a>();</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    </div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_stream_socket.html#af104a1b2e11c01328a92a0f73dcd6ef1">getRemotePort</a>();</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    </div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_stream_socket.html#a55617edfde45be043c0b2bbf92ddec78">getLocalAddress</a>();</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_stream_socket.html#a8b95f080400b8bd87ca6bd4a63d1ae4b">getLocalPort</a>();</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;};</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_stream_socket.html#abe194325e4c787fb2317f435449b6920">setSelectFlags</a>(<span class="keywordtype">int</span> flags);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_stream_socket.html#abe4d0f700f4623acd6970b955dfe87d5">getSelectFlags</a>();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_stream_socket.html#ad445a096039575738559fc5955a2d58e">select</a>(StreamSocket [] sockets, <span class="keywordtype">int</span> offset, <span class="keywordtype">int</span> count, <span class="keywordtype">int</span>[] sets, <span class="keywordtype">int</span> timeout);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_stream_socket.html#a4fdfb05009c5dea1b412584902db9fdf">isNagleEnabled</a>();</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_stream_socket.html#ad3e0c136f482884469d61171dc25176a">isKeepAliveEnabled</a>();</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <a class="code" href="class_inet_address.html">InetAddress</a> <a class="code" href="class_stream_socket.html#ac298d32bb3a982bf29a86cbe8de1b729">getRemoteInetAddress</a>();</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <a class="code" href="class_inet_address.html">InetAddress</a> <a class="code" href="class_stream_socket.html#a22767aea2554758fd2e5d8e333ee2a20">getLocalInetAddress</a>();</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_stream_socket.html#a5bbaa894c55cf41ed97607c89fa8f882">getRemoteAddress</a>();</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_stream_socket.html#af104a1b2e11c01328a92a0f73dcd6ef1">getRemotePort</a>();</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_stream_socket.html#a55617edfde45be043c0b2bbf92ddec78">getLocalAddress</a>();</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_stream_socket.html#a8b95f080400b8bd87ca6bd4a63d1ae4b">getLocalPort</a>();</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;};</div>
 <div class="ttc" id="class_stream_socket_html_adf4ee6bd8e54e18bdeacc20bda65232d"><div class="ttname"><a href="class_stream_socket.html#adf4ee6bd8e54e18bdeacc20bda65232d">StreamSocket.read</a></div><div class="ttdeci">int read(byte [] buffer, int pos, int length)</div><div class="ttdoc">读取数据 </div></div>
 <div class="ttc" id="interface_stream_html"><div class="ttname"><a href="interface_stream.html">Stream</a></div><div class="ttdoc">流接口 </div><div class="ttdef"><b>Definition:</b> <a href="_stream_8xcs_source.html#l00006">Stream.xcs:6</a></div></div>
 <div class="ttc" id="class_stream_socket_html_ad3e0c136f482884469d61171dc25176a"><div class="ttname"><a href="class_stream_socket.html#ad3e0c136f482884469d61171dc25176a">StreamSocket.isKeepAliveEnabled</a></div><div class="ttdeci">bool isKeepAliveEnabled()</div><div class="ttdoc">检查是否开启长连接 </div></div>
+<div class="ttc" id="class_stream_socket_html_abe4d0f700f4623acd6970b955dfe87d5"><div class="ttname"><a href="class_stream_socket.html#abe4d0f700f4623acd6970b955dfe87d5">StreamSocket.getSelectFlags</a></div><div class="ttdeci">int getSelectFlags()</div><div class="ttdoc">获取select触发的选项 </div></div>
 <div class="ttc" id="class_stream_socket_html_a3d734026e4dcd8000b693e4d5f6bf869"><div class="ttname"><a href="class_stream_socket.html#a3d734026e4dcd8000b693e4d5f6bf869">StreamSocket.getHandle</a></div><div class="ttdeci">int getHandle()</div><div class="ttdoc">获取套接字句柄 </div></div>
 <div class="ttc" id="class_stream_socket_html_ac298d32bb3a982bf29a86cbe8de1b729"><div class="ttname"><a href="class_stream_socket.html#ac298d32bb3a982bf29a86cbe8de1b729">StreamSocket.getRemoteInetAddress</a></div><div class="ttdeci">InetAddress getRemoteInetAddress()</div><div class="ttdoc">获取远程地址信息 </div></div>
 <div class="ttc" id="class_stream_socket_html_a22767aea2554758fd2e5d8e333ee2a20"><div class="ttname"><a href="class_stream_socket.html#a22767aea2554758fd2e5d8e333ee2a20">StreamSocket.getLocalInetAddress</a></div><div class="ttdeci">InetAddress getLocalInetAddress()</div><div class="ttdoc">获取本地地址信息 </div></div>
+<div class="ttc" id="class_stream_socket_html_abe194325e4c787fb2317f435449b6920"><div class="ttname"><a href="class_stream_socket.html#abe194325e4c787fb2317f435449b6920">StreamSocket.setSelectFlags</a></div><div class="ttdeci">void setSelectFlags(int flags)</div><div class="ttdoc">设置select触发的选项 </div></div>
 <div class="ttc" id="class_stream_socket_html_af92214a41e3523055a4ebeddec9a998e"><div class="ttname"><a href="class_stream_socket.html#af92214a41e3523055a4ebeddec9a998e">StreamSocket.StreamSocket</a></div><div class="ttdeci">void StreamSocket()</div><div class="ttdoc">构造函数 </div></div>
 <div class="ttc" id="class_stream_socket_html"><div class="ttname"><a href="class_stream_socket.html">StreamSocket</a></div><div class="ttdoc">tcp协议套接字 </div><div class="ttdef"><b>Definition:</b> <a href="_stream_socket_8xcs_source.html#l00006">StreamSocket.xcs:6</a></div></div>
 <div class="ttc" id="class_inet_address_html"><div class="ttname"><a href="class_inet_address.html">InetAddress</a></div><div class="ttdoc">网络地址类 </div><div class="ttdef"><b>Definition:</b> <a href="_inet_address_8xcs_source.html#l00006">InetAddress.xcs:6</a></div></div>
@@ -157,6 +165,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="class_stream_socket_html_a5bbaa894c55cf41ed97607c89fa8f882"><div class="ttname"><a href="class_stream_socket.html#a5bbaa894c55cf41ed97607c89fa8f882">StreamSocket.getRemoteAddress</a></div><div class="ttdeci">int getRemoteAddress()</div><div class="ttdoc">获取远程32位的IP地址信息 </div></div>
 <div class="ttc" id="interface_stream_html_a0ce2b6cf04155541d88f91d94626ec84"><div class="ttname"><a href="interface_stream.html#a0ce2b6cf04155541d88f91d94626ec84">Stream.length</a></div><div class="ttdeci">long length()</div><div class="ttdoc">获取流总长 </div></div>
 <div class="ttc" id="class_stream_socket_html_afd5a4a0518a3d8c488c21cf7317f95f2"><div class="ttname"><a href="class_stream_socket.html#afd5a4a0518a3d8c488c21cf7317f95f2">StreamSocket.listen</a></div><div class="ttdeci">bool listen(int port, int backlog)</div><div class="ttdoc">监听端口 </div></div>
+<div class="ttc" id="class_stream_socket_html_ad445a096039575738559fc5955a2d58e"><div class="ttname"><a href="class_stream_socket.html#ad445a096039575738559fc5955a2d58e">StreamSocket.select</a></div><div class="ttdeci">int select(StreamSocket [] sockets, int offset, int count, int[] sets, int timeout)</div><div class="ttdoc">选择事件触发的socket </div></div>
 <div class="ttc" id="class_stream_socket_html_adc1893007b04e94b06a6c0a87714e158"><div class="ttname"><a href="class_stream_socket.html#adc1893007b04e94b06a6c0a87714e158">StreamSocket.enableKeepAlive</a></div><div class="ttdeci">bool enableKeepAlive(bool be)</div><div class="ttdoc">开启禁用长连接 </div></div>
 <div class="ttc" id="class_stream_socket_html_aa62d7ee316aa8566e0ef1107ac0a603e"><div class="ttname"><a href="class_stream_socket.html#aa62d7ee316aa8566e0ef1107ac0a603e">StreamSocket.available</a></div><div class="ttdeci">long available(bool wait)</div><div class="ttdoc">是否可读 </div></div>
 <div class="ttc" id="class_stream_socket_html_a7bc3c3e59293fb955b1add3921b44d38"><div class="ttname"><a href="class_stream_socket.html#a7bc3c3e59293fb955b1add3921b44d38">StreamSocket.write</a></div><div class="ttdeci">int write(byte [] buffer, int pos, int length)</div><div class="ttdoc">写入数据 </div></div>

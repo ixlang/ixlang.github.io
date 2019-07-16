@@ -69,7 +69,7 @@ var searchData=
   ['mousetrackingchange',['MouseTrackingChange',['../class_q_x_event.html#a2846696fd0ba9917e788d8af24a32b96',1,'QXEvent']]],
   ['move',['move',['../class_q_x_widget.html#a7e67b4a2ada5392aeaa37daa52c3d3d5',1,'QXWidget.move()'],['../class_q_x_core.html#a9cdd70415e4644e01d4f0f7de52fe12e',1,'QXCore.MOVE()'],['../class_q_x_event.html#a1e9f3fb6777f464a342b16eef234271b',1,'QXEvent.Move()']]],
   ['moveto',['moveto',['../class_q_x_path.html#a16ee40dea09de9c13cd779004a13514a',1,'QXPath']]],
-  ['mpenstyle',['MPenStyle',['../class_q_x_painter_1_1_pen_style.html#a96036a8d70cdc6ae9e4379c172bddfa4',1,'QXPainter::PenStyle']]],
+  ['mpenstyle',['MPenStyle',['../enum_q_x_painter_1_1_pen_style.html#acc230e4d7311f99ca238d4ddc4bedd0c',1,'QXPainter::PenStyle']]],
   ['mswindowsfixedsizedialoghint',['MSWindowsFixedSizeDialogHint',['../class_q_x_widget.html#a88649178e51aa10aa499cb10c5bda270',1,'QXWidget']]],
   ['mswindowsowndc',['MSWindowsOwnDC',['../class_q_x_widget.html#acc4f015d6176aabfbfad2473cdb01674',1,'QXWidget']]]
 ];

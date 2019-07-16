@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.2 Release</span>
+   &#160;<span id="projectnumber">v2.4 Release</span>
    </div>
    <div id="projectbrief">项目介绍</div>
   </td>
@@ -165,6 +165,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 </div>
 </div>
+<a class="anchor" id="a32d626626eee0bc4ade146973f6abb1c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void finalize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>析构处理  注意 重写finalize时必须使用 super.finalize(); 否则会造成泄露 </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a30cd5fc5f4b89f45c29eef4ceb892e71"></a>
 <div class="memitem">
 <div class="memproto">
@@ -215,6 +241,60 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <p>获取迭代器 </p>
 <dl class="section return"><dt>返回</dt><dd>迭代器 指向头部 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3dfbaa28497ec96c87455bcb6d932313"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_V pollHead </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取并删除第一个元素 </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>参考自 <a class="el" href="_q_x_widget_8xcsm_source.html#l00259">QXWidget.onNotify()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af0cbf3c56720840bf32e0eeb1fc9c886"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_V pollLast </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取并删除最后一个元素 </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -270,6 +350,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <dl class="section return"><dt>返回</dt><dd>长度 </dd></dl>
 
 <p>参考自 <a class="el" href="_q_x_widget_8xcsm_source.html#l00259">QXWidget.onNotify()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9af415234a91ad0b28b4cd79451c1f39"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_V [] toArray </td>
+          <td>(</td>
+          <td class="paramtype">_V   []&#160;</td>
+          <td class="paramname"><em>array</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将容器内容转到数组 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">array</td><td>类型标志 用 new _V[0] 即可 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
 
 </div>
 </div>

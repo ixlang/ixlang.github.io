@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.2 Release</span>
+   &#160;<span id="projectnumber">v2.4 Release</span>
    </div>
    <div id="projectbrief">项目介绍</div>
   </td>
@@ -565,6 +565,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 </div>
 </div>
+<a class="anchor" id="abe4d0f700f4623acd6970b955dfe87d5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getSelectFlags </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取select触发的选项 </p>
+<dl class="section return"><dt>返回</dt><dd>结果 </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a772f8f0487e0d3804e9da7585e23a29a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -737,6 +763,97 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <dl class="section return"><dt>返回</dt><dd>读取长度 </dd></dl>
 
 <p>实现了 <a class="el" href="interface_stream.html#adf4ee6bd8e54e18bdeacc20bda65232d">Stream</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad445a096039575738559fc5955a2d58e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int select </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_stream_socket.html">StreamSocket</a>   []&#160;</td>
+          <td class="paramname"><em>sockets</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int  []&#160;</td>
+          <td class="paramname"><em>sets</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>选择事件触发的socket </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">offset</td><td>偏移量 </td></tr>
+    <tr><td class="paramname">count</td><td>选择的总数量 </td></tr>
+    <tr><td class="paramname">sets</td><td>数组 用于接收结果 </td></tr>
+    <tr><td class="paramname">time</td><td>超时 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>结果 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abe194325e4c787fb2317f435449b6920"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setSelectFlags </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置select触发的选项 </p>
+<dl class="section return"><dt>返回</dt><dd>结果 </dd></dl>
 
 </div>
 </div>

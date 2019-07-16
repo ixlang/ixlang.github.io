@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.2 Release</span>
+   &#160;<span id="projectnumber">v2.4 Release</span>
    </div>
    <div id="projectbrief">项目介绍</div>
   </td>
@@ -93,63 +93,100 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <a href="_dgram_socket_8xcs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;@Declare</div>
 <div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_dgram_socket.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_dgram_socket.html">DgramSocket</a>{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_dgram_socket.html#afc40da5c10713f43f3571e268488b1d5">DgramSocket</a>();</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_dgram_socket.html#ace53b11f2bc9ebf267032126d7bb09ea">bind</a>(<a class="code" href="class_string.html">String</a> host, <span class="keywordtype">int</span> port);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#adf4ee6bd8e54e18bdeacc20bda65232d">read</a>(byte [] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> length);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#a7bc3c3e59293fb955b1add3921b44d38">write</a>(byte [] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> length);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_dgram_socket.html#a5ae591df94fc66ccb85cbb6565368bca">close</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_dgram_socket.html#aa62d7ee316aa8566e0ef1107ac0a603e">available</a>(<span class="keywordtype">bool</span> wait);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#a3d734026e4dcd8000b693e4d5f6bf869">getHandle</a>();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_dgram_socket.html#adc719bb7cd4ce99f5a3cb8323cd09b86">connect</a>(<a class="code" href="class_string.html">String</a> host, <span class="keywordtype">int</span> port);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="class_inet_address.html">InetAddress</a> <a class="code" href="class_dgram_socket.html#ac298d32bb3a982bf29a86cbe8de1b729">getRemoteInetAddress</a>();</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_dgram_socket_1_1_dgram_packet.html">   11</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">class </span>DgramPacket{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="class_dgram_socket_1_1_dgram_packet.html#ad1b794f2736b7184a436a14498dda6bf">DgramPacket</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="class_dgram_socket_1_1_dgram_packet.html#ad1b794f2736b7184a436a14498dda6bf">DgramPacket</a>(byte[] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket_1_1_dgram_packet.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>, <a class="code" href="class_inet_address.html">InetAddress</a> addr);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="class_inet_address.html">InetAddress</a> <a class="code" href="class_dgram_socket_1_1_dgram_packet.html#ac298d32bb3a982bf29a86cbe8de1b729">getRemoteInetAddress</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_dgram_socket_1_1_dgram_packet.html#aed9b5d9c9a0bafe0bcfb6a788608ee58">setData</a>(byte[] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket_1_1_dgram_packet.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        byte[] <a class="code" href="class_dgram_socket_1_1_dgram_packet.html#a40b55cb2f93e6e911cfd6f0ac12042a8">getData</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    };</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_dgram_socket.html#afc40da5c10713f43f3571e268488b1d5">DgramSocket</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_dgram_socket.html#ace53b11f2bc9ebf267032126d7bb09ea">bind</a>(<a class="code" href="class_string.html">String</a> host, <span class="keywordtype">int</span> port);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#adf4ee6bd8e54e18bdeacc20bda65232d">read</a>(byte [] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> length);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="class_inet_address.html">InetAddress</a> <a class="code" href="class_dgram_socket.html#a22767aea2554758fd2e5d8e333ee2a20">getLocalInetAddress</a>();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#a5bbaa894c55cf41ed97607c89fa8f882">getRemoteAddress</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#a7bc3c3e59293fb955b1add3921b44d38">write</a>(byte [] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_dgram_socket.html#a5ae591df94fc66ccb85cbb6565368bca">close</a>();</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#af104a1b2e11c01328a92a0f73dcd6ef1">getRemotePort</a>();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#a55617edfde45be043c0b2bbf92ddec78">getLocalAddress</a>();</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#a8b95f080400b8bd87ca6bd4a63d1ae4b">getLocalPort</a>();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#ac8fb0dccd887899df024e840e84a1410">sendTo</a>(<a class="code" href="class_string.html">String</a> host, <span class="keywordtype">int</span> port, byte[] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> length);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#ac8fb0dccd887899df024e840e84a1410">sendTo</a>(<a class="code" href="class_inet_address.html">InetAddress</a> addr, byte[] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> length)</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;};</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_dgram_socket.html#aa62d7ee316aa8566e0ef1107ac0a603e">available</a>(<span class="keywordtype">bool</span> wait);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#a3d734026e4dcd8000b693e4d5f6bf869">getHandle</a>();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_dgram_socket.html#adc719bb7cd4ce99f5a3cb8323cd09b86">connect</a>(<a class="code" href="class_string.html">String</a> host, <span class="keywordtype">int</span> port);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    DgramPacket <a class="code" href="class_dgram_socket.html#aae207bd3b646c687337eaae4b8efc4a6">recvPacket</a>();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_dgram_socket.html#aae207bd3b646c687337eaae4b8efc4a6">recvPacket</a>(DgramPacket packet);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="class_inet_address.html">InetAddress</a> <a class="code" href="class_dgram_socket.html#ac298d32bb3a982bf29a86cbe8de1b729">getRemoteInetAddress</a>();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_dgram_socket.html#abe194325e4c787fb2317f435449b6920">setSelectFlags</a>(<span class="keywordtype">int</span> flags);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#abe4d0f700f4623acd6970b955dfe87d5">getSelectFlags</a>();</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#a452bfe34f0087963686f3518a8dc81c7">select</a>(<a class="code" href="class_dgram_socket.html">DgramSocket</a> [] sockets, <span class="keywordtype">int</span> offset, <span class="keywordtype">int</span> count, <span class="keywordtype">int</span>[] sets, <span class="keywordtype">int</span> timeout);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <a class="code" href="class_inet_address.html">InetAddress</a> <a class="code" href="class_dgram_socket.html#a22767aea2554758fd2e5d8e333ee2a20">getLocalInetAddress</a>();</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#a5bbaa894c55cf41ed97607c89fa8f882">getRemoteAddress</a>();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#af104a1b2e11c01328a92a0f73dcd6ef1">getRemotePort</a>();</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#a55617edfde45be043c0b2bbf92ddec78">getLocalAddress</a>();</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#a8b95f080400b8bd87ca6bd4a63d1ae4b">getLocalPort</a>();</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#ac8fb0dccd887899df024e840e84a1410">sendTo</a>(<a class="code" href="class_string.html">String</a> host, <span class="keywordtype">int</span> port, byte[] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    </div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_dgram_socket.html#ac8fb0dccd887899df024e840e84a1410">sendTo</a>(<a class="code" href="class_inet_address.html">InetAddress</a> addr, byte[] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> length)</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;};</div>
 <div class="ttc" id="class_dgram_socket_html_ac8fb0dccd887899df024e840e84a1410"><div class="ttname"><a href="class_dgram_socket.html#ac8fb0dccd887899df024e840e84a1410">DgramSocket.sendTo</a></div><div class="ttdeci">int sendTo(String host, int port, byte[] buffer, int pos, int length)</div><div class="ttdoc">发送数据到指定地址 </div></div>
 <div class="ttc" id="class_dgram_socket_html_a8b95f080400b8bd87ca6bd4a63d1ae4b"><div class="ttname"><a href="class_dgram_socket.html#a8b95f080400b8bd87ca6bd4a63d1ae4b">DgramSocket.getLocalPort</a></div><div class="ttdeci">int getLocalPort()</div><div class="ttdoc">获取本地端口信息 </div></div>
+<div class="ttc" id="class_dgram_socket_1_1_dgram_packet_html_a3d0f4ae571310c6ed081daa3985ecb47"><div class="ttname"><a href="class_dgram_socket_1_1_dgram_packet.html#a3d0f4ae571310c6ed081daa3985ecb47">DgramSocket.DgramPacket.length</a></div><div class="ttdeci">int length()</div><div class="ttdoc">获取数据长度 </div></div>
 <div class="ttc" id="class_dgram_socket_html_adc719bb7cd4ce99f5a3cb8323cd09b86"><div class="ttname"><a href="class_dgram_socket.html#adc719bb7cd4ce99f5a3cb8323cd09b86">DgramSocket.connect</a></div><div class="ttdeci">bool connect(String host, int port)</div><div class="ttdoc">建立UDP连接 </div></div>
 <div class="ttc" id="class_dgram_socket_html_a55617edfde45be043c0b2bbf92ddec78"><div class="ttname"><a href="class_dgram_socket.html#a55617edfde45be043c0b2bbf92ddec78">DgramSocket.getLocalAddress</a></div><div class="ttdeci">int getLocalAddress()</div><div class="ttdoc">获取本地32位的IP地址信息 </div></div>
+<div class="ttc" id="class_dgram_socket_html_abe4d0f700f4623acd6970b955dfe87d5"><div class="ttname"><a href="class_dgram_socket.html#abe4d0f700f4623acd6970b955dfe87d5">DgramSocket.getSelectFlags</a></div><div class="ttdeci">int getSelectFlags()</div><div class="ttdoc">获取select触发的选项 </div></div>
+<div class="ttc" id="class_dgram_socket_1_1_dgram_packet_html_ad1b794f2736b7184a436a14498dda6bf"><div class="ttname"><a href="class_dgram_socket_1_1_dgram_packet.html#ad1b794f2736b7184a436a14498dda6bf">DgramSocket.DgramPacket.DgramPacket</a></div><div class="ttdeci">DgramPacket()</div><div class="ttdoc">构造一个数据报文 </div></div>
+<div class="ttc" id="class_dgram_socket_1_1_dgram_packet_html_a40b55cb2f93e6e911cfd6f0ac12042a8"><div class="ttname"><a href="class_dgram_socket_1_1_dgram_packet.html#a40b55cb2f93e6e911cfd6f0ac12042a8">DgramSocket.DgramPacket.getData</a></div><div class="ttdeci">byte [] getData()</div><div class="ttdoc">获取数据 </div></div>
+<div class="ttc" id="class_dgram_socket_html_abe194325e4c787fb2317f435449b6920"><div class="ttname"><a href="class_dgram_socket.html#abe194325e4c787fb2317f435449b6920">DgramSocket.setSelectFlags</a></div><div class="ttdeci">void setSelectFlags(int flags)</div><div class="ttdoc">设置select触发的选项 </div></div>
 <div class="ttc" id="class_inet_address_html"><div class="ttname"><a href="class_inet_address.html">InetAddress</a></div><div class="ttdoc">网络地址类 </div><div class="ttdef"><b>Definition:</b> <a href="_inet_address_8xcs_source.html#l00006">InetAddress.xcs:6</a></div></div>
 <div class="ttc" id="class_dgram_socket_html_ace53b11f2bc9ebf267032126d7bb09ea"><div class="ttname"><a href="class_dgram_socket.html#ace53b11f2bc9ebf267032126d7bb09ea">DgramSocket.bind</a></div><div class="ttdeci">bool bind(String host, int port)</div><div class="ttdoc">bind地址 </div></div>
 <div class="ttc" id="class_dgram_socket_html_adf4ee6bd8e54e18bdeacc20bda65232d"><div class="ttname"><a href="class_dgram_socket.html#adf4ee6bd8e54e18bdeacc20bda65232d">DgramSocket.read</a></div><div class="ttdeci">int read(byte [] buffer, int pos, int length)</div><div class="ttdoc">读取数据 </div></div>
 <div class="ttc" id="class_dgram_socket_html_afc40da5c10713f43f3571e268488b1d5"><div class="ttname"><a href="class_dgram_socket.html#afc40da5c10713f43f3571e268488b1d5">DgramSocket.DgramSocket</a></div><div class="ttdeci">void DgramSocket()</div><div class="ttdoc">构造函数 </div></div>
 <div class="ttc" id="class_dgram_socket_html_a22767aea2554758fd2e5d8e333ee2a20"><div class="ttname"><a href="class_dgram_socket.html#a22767aea2554758fd2e5d8e333ee2a20">DgramSocket.getLocalInetAddress</a></div><div class="ttdeci">InetAddress getLocalInetAddress()</div><div class="ttdoc">获取本地地址信息 </div></div>
 <div class="ttc" id="class_dgram_socket_html_a3d734026e4dcd8000b693e4d5f6bf869"><div class="ttname"><a href="class_dgram_socket.html#a3d734026e4dcd8000b693e4d5f6bf869">DgramSocket.getHandle</a></div><div class="ttdeci">int getHandle()</div><div class="ttdoc">获取套接字句柄 </div></div>
+<div class="ttc" id="class_dgram_socket_html_a452bfe34f0087963686f3518a8dc81c7"><div class="ttname"><a href="class_dgram_socket.html#a452bfe34f0087963686f3518a8dc81c7">DgramSocket.select</a></div><div class="ttdeci">int select(DgramSocket [] sockets, int offset, int count, int[] sets, int timeout)</div><div class="ttdoc">选择事件触发的socket </div></div>
+<div class="ttc" id="class_dgram_socket_html_aae207bd3b646c687337eaae4b8efc4a6"><div class="ttname"><a href="class_dgram_socket.html#aae207bd3b646c687337eaae4b8efc4a6">DgramSocket.recvPacket</a></div><div class="ttdeci">DgramPacket recvPacket()</div><div class="ttdoc">接收数据报文 </div></div>
 <div class="ttc" id="class_dgram_socket_html_ac298d32bb3a982bf29a86cbe8de1b729"><div class="ttname"><a href="class_dgram_socket.html#ac298d32bb3a982bf29a86cbe8de1b729">DgramSocket.getRemoteInetAddress</a></div><div class="ttdeci">InetAddress getRemoteInetAddress()</div><div class="ttdoc">获取远程地址信息 </div></div>
 <div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
 <div class="ttc" id="class_dgram_socket_html_a7bc3c3e59293fb955b1add3921b44d38"><div class="ttname"><a href="class_dgram_socket.html#a7bc3c3e59293fb955b1add3921b44d38">DgramSocket.write</a></div><div class="ttdeci">int write(byte [] buffer, int pos, int length)</div><div class="ttdoc">写入数据 </div></div>
+<div class="ttc" id="class_dgram_socket_1_1_dgram_packet_html_aed9b5d9c9a0bafe0bcfb6a788608ee58"><div class="ttname"><a href="class_dgram_socket_1_1_dgram_packet.html#aed9b5d9c9a0bafe0bcfb6a788608ee58">DgramSocket.DgramPacket.setData</a></div><div class="ttdeci">void setData(byte[] buffer, int pos, int length)</div><div class="ttdoc">设置数据 </div></div>
 <div class="ttc" id="class_dgram_socket_html_aa62d7ee316aa8566e0ef1107ac0a603e"><div class="ttname"><a href="class_dgram_socket.html#aa62d7ee316aa8566e0ef1107ac0a603e">DgramSocket.available</a></div><div class="ttdeci">long available(bool wait)</div><div class="ttdoc">是否可读 </div></div>
 <div class="ttc" id="class_dgram_socket_html_a5bbaa894c55cf41ed97607c89fa8f882"><div class="ttname"><a href="class_dgram_socket.html#a5bbaa894c55cf41ed97607c89fa8f882">DgramSocket.getRemoteAddress</a></div><div class="ttdeci">int getRemoteAddress()</div><div class="ttdoc">获取远程32位的IP地址信息 </div></div>
 <div class="ttc" id="class_dgram_socket_html_af104a1b2e11c01328a92a0f73dcd6ef1"><div class="ttname"><a href="class_dgram_socket.html#af104a1b2e11c01328a92a0f73dcd6ef1">DgramSocket.getRemotePort</a></div><div class="ttdeci">int getRemotePort()</div><div class="ttdoc">获取远程端口信息 </div></div>
 <div class="ttc" id="class_dgram_socket_html"><div class="ttname"><a href="class_dgram_socket.html">DgramSocket</a></div><div class="ttdoc">udp协议套接字 </div><div class="ttdef"><b>Definition:</b> <a href="_dgram_socket_8xcs_source.html#l00006">DgramSocket.xcs:6</a></div></div>
 <div class="ttc" id="class_dgram_socket_html_a5ae591df94fc66ccb85cbb6565368bca"><div class="ttname"><a href="class_dgram_socket.html#a5ae591df94fc66ccb85cbb6565368bca">DgramSocket.close</a></div><div class="ttdeci">void close()</div><div class="ttdoc">关闭套接字 </div></div>
+<div class="ttc" id="class_dgram_socket_1_1_dgram_packet_html_ac298d32bb3a982bf29a86cbe8de1b729"><div class="ttname"><a href="class_dgram_socket_1_1_dgram_packet.html#ac298d32bb3a982bf29a86cbe8de1b729">DgramSocket.DgramPacket.getRemoteInetAddress</a></div><div class="ttdeci">InetAddress getRemoteInetAddress()</div><div class="ttdoc">获取远端地址 </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

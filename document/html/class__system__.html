@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.2 Release</span>
+   &#160;<span id="projectnumber">v2.4 Release</span>
    </div>
    <div id="projectbrief">项目介绍</div>
   </td>
@@ -635,6 +635,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 </div>
 </div>
+<a class="anchor" id="a84b0f70e4b08744c88ab12aad05fe1f3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int [] getAllModules </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取所有已加载的slx动态库的id </p>
+<dl class="section return"><dt>返回</dt><dd>id [] slx动态库id </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a77e8cade02b8bb45d71c28bc6fcb600b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -786,6 +812,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 </div>
 </div>
+<a class="anchor" id="a50d4d967268cf5c3189e778f820f5252"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int getFileMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>filepath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取文件属性 </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class__system__.html#aab393045e3d8f6764feaf242a34f684a">S_IFMT</a> ... </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a55e7f98549fde58097e2372b023a50ab"></a>
 <div class="memitem">
 <div class="memproto">
@@ -841,6 +895,71 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><div class="memdoc">
 
 <p>获取本机名称 </p>
+
+</div>
+</div>
+<a class="anchor" id="ae458ab7d55ffc2d1448268be06606092"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int getModuleId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取已加载的slx动态库的id </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>文件路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>id slx动态库id </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a55e6b220afb58ddb36b7f8927a89b45b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_string.html">String</a> getModulePath </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取slx动态库的路径 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>slx动态库id </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -917,6 +1036,117 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><div class="memdoc">
 
 <p>获取程序当前工作目录 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad2171960f6cb935c84f5ace1d882d0b7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool installService </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a> apppath，String&#160;</td>
+          <td class="paramname"><em>serviceName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>displayName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>description</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>检查服务是否已安装 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">apppath</td><td>可执行文件路径 </td></tr>
+    <tr><td class="paramname">serviceName</td><td>服务名称 </td></tr>
+    <tr><td class="paramname">displayName</td><td>服务显示名 </td></tr>
+    <tr><td class="paramname">description</td><td>描述 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>是否成功 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5641f26c864d9be9947b3bfae8a4ace7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool isServiceInstalled </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>serviceName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>检查服务是否已安装 </p>
+
+</div>
+</div>
+<a class="anchor" id="a3e6998d963cce947ef9cd16319256edc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int loadLibrary </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>加载slx动态库 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>文件路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>slx动态库ID </dd></dl>
 
 </div>
 </div>
@@ -1327,6 +1557,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 </div>
 </div>
+<a class="anchor" id="a9754462bc96618122325cdff2349c6a2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int serviceRun </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>服务主线程循环 </p>
+<dl class="section return"><dt>返回</dt><dd>1 为成功 0 为不成功 </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a5ecbfb533b8827e0382dcc73d40e29ed"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1382,6 +1638,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a11cae27a2014f6d658a5dcb756726d91"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool uninstallService </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>serviceName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>卸载服务 </p>
 
 </div>
 </div>
@@ -1537,7 +1819,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00338">338</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00397">397</a> 行定义.</p>
 
 </div>
 </div>
@@ -1559,7 +1841,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00339">339</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00398">398</a> 行定义.</p>
 
 </div>
 </div>
@@ -1581,7 +1863,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00340">340</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00399">399</a> 行定义.</p>
 
 </div>
 </div>
@@ -1603,7 +1885,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00341">341</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00400">400</a> 行定义.</p>
 
 </div>
 </div>
@@ -1627,7 +1909,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <p>处理器架构 </p>
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00335">335</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00394">394</a> 行定义.</p>
 
 </div>
 </div>
@@ -1649,7 +1931,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00337">337</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00396">396</a> 行定义.</p>
 
 </div>
 </div>
@@ -1671,7 +1953,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00336">336</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00395">395</a> 行定义.</p>
 
 </div>
 </div>
@@ -1693,7 +1975,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00313">313</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00372">372</a> 行定义.</p>
 
 </div>
 </div>
@@ -1715,7 +1997,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00314">314</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00373">373</a> 行定义.</p>
 
 </div>
 </div>
@@ -1737,7 +2019,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00318">318</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00377">377</a> 行定义.</p>
 
 </div>
 </div>
@@ -1761,7 +2043,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <p>logcat 信息级别 </p>
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00312">312</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00371">371</a> 行定义.</p>
 
 </div>
 </div>
@@ -1783,7 +2065,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00315">315</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00374">374</a> 行定义.</p>
 
 </div>
 </div>
@@ -1805,7 +2087,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00317">317</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00376">376</a> 行定义.</p>
 
 </div>
 </div>
@@ -1827,7 +2109,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00316">316</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00375">375</a> 行定义.</p>
 
 </div>
 </div>
@@ -1849,7 +2131,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00327">327</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00386">386</a> 行定义.</p>
 
 </div>
 </div>
@@ -1871,7 +2153,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00328">328</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00387">387</a> 行定义.</p>
 
 </div>
 </div>
@@ -1893,7 +2175,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00325">325</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00384">384</a> 行定义.</p>
 
 </div>
 </div>
@@ -1915,7 +2197,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00326">326</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00385">385</a> 行定义.</p>
 
 </div>
 </div>
@@ -1937,7 +2219,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00330">330</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00389">389</a> 行定义.</p>
 
 </div>
 </div>
@@ -1959,7 +2241,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00329">329</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00388">388</a> 行定义.</p>
 
 </div>
 </div>
@@ -1983,7 +2265,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <p>操作系统 </p>
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00323">323</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00382">382</a> 行定义.</p>
 
 </div>
 </div>
@@ -2005,7 +2287,513 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00324">324</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00383">383</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a00dbd549e121c851641c782449873d3f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int S_IFBLK = 0060000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00423">423</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e6b0c86ce96ab9231ca7bb98660b93a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int S_IFCHR = 0020000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00425">425</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a28c8f82448af0bb967010a50507cae47"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int S_IFDIR = 0040000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00424">424</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af38518605f48415f4d0ea53e070a472e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int S_IFIFO = 0010000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00426">426</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa3096f0c6ad7d04f6a17cb5806ff3887"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int S_IFLNK = 0120000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00421">421</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aab393045e3d8f6764feaf242a34f684a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int S_IFMT = 00170000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00419">419</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a412751d9b32cadf3410307fdc00a2f9e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int S_IFREG = 0100000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00422">422</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a52924fc6800c4ba799aa32be17e41c9d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int S_IFSOCK = 0140000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00420">420</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="acd7db9bb9eea1f6ebe694f740ae3791f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int S_IRGRP = 00040</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00435">435</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a78c3f13e19de6d813c94916c24392fde"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int S_IROTH = 00004</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00439">439</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af2fa779136296deab2f0c0b7d6335637"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int S_IRUSR = 00400</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00431">431</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0d02f1d569238acde26214ea3470a9f4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int S_IRWXG = 00070</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00434">434</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aded0f765b7ab23ee40eadb40acc8a7b0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int S_IRWXO = 00007</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00438">438</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a91953d834a8d30f65b1b64cd994b880b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int S_IRWXU = 00700</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00430">430</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a397dd5629a51a8c8d73e01bae0ee063c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int S_ISGID = 0002000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00428">428</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae80f988c7465e198e60ce3e89f24991f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int S_ISUID = 0004000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00427">427</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2c46e6363964a5bb06766180a6910a5b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int S_ISVTX = 0001000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00429">429</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a97ba5a18ea0f06c1e78010fb570bb9e4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int S_IWGRP = 00020</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00436">436</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4d6eecce8532b838c64c131566d89613"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int S_IWOTH = 00002</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00440">440</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a558220a8ee918c358e9569fb783b9b72"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int S_IWUSR = 00200</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00432">432</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a76f0af82f7335629ea8b000e2d1631c4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int S_IXGRP = 00010</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00437">437</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa223ac1c6cbbbd6647946e06551f7c76"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int S_IXOTH = 00001</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00441">441</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a167358049ba910a783f2d1febafe4aba"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int S_IXUSR = 00100</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00433">433</a> 行定义.</p>
 
 </div>
 </div>
@@ -2027,7 +2815,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00348">348</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00407">407</a> 行定义.</p>
 
 </div>
 </div>
@@ -2051,7 +2839,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <p>信号 </p>
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00346">346</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00405">405</a> 行定义.</p>
 
 </div>
 </div>
@@ -2073,7 +2861,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00357">357</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00416">416</a> 行定义.</p>
 
 </div>
 </div>
@@ -2095,7 +2883,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00358">358</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00417">417</a> 行定义.</p>
 
 </div>
 </div>
@@ -2117,7 +2905,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00356">356</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00415">415</a> 行定义.</p>
 
 </div>
 </div>
@@ -2141,7 +2929,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <p>信号处理接口返回值 </p>
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00355">355</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00414">414</a> 行定义.</p>
 
 </div>
 </div>
@@ -2163,7 +2951,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00350">350</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00409">409</a> 行定义.</p>
 
 </div>
 </div>
@@ -2185,7 +2973,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00349">349</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00408">408</a> 行定义.</p>
 
 </div>
 </div>
@@ -2207,7 +2995,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00347">347</a> 行定义.</p>
+<p>在文件 <a class="el" href="_system_8xcs_source.html">System.xcs</a> 第 <a class="el" href="_system_8xcs_source.html#l00406">406</a> 行定义.</p>
 
 </div>
 </div>
