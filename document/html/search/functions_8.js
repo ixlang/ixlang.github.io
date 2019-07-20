@@ -14,7 +14,7 @@ var searchData=
   ['insertseparator',['insertSeparator',['../class_q_x_menu_bar.html#abc228fa0386f18d498cec0cfe968e8f9',1,'QXMenuBar']]],
   ['inserttext',['insertText',['../class_q_x_sci.html#ac0b3344792e9c298781eb6765670e622',1,'QXSci']]],
   ['insertwidget',['insertWidget',['../class_q_x_status_bar.html#a429d114f44064705c4a8e8fd40833c86',1,'QXStatusBar.insertWidget()'],['../class_q_x_tool_bar.html#a098aafa4345ef42c75811b9de892d1c4',1,'QXToolBar.insertWidget()']]],
-  ['installservice',['installService',['../class__system__.html#ad2171960f6cb935c84f5ace1d882d0b7',1,'_system_']]],
+  ['installservice',['installService',['../class__system__.html#af2d41a18e2342f577d4b09ba08af2638',1,'_system_']]],
   ['intbitstodouble',['intBitsToDouble',['../class_math.html#a242f585a7ae86b736a6b069b0abfbd09',1,'Math.intBitsToDouble(int v)'],['../class_math.html#a482cfff85fae6dc319722d2249202dc3',1,'Math.intBitsToDouble(double v)']]],
   ['invaliditeratorexception',['InvalidIteratorException',['../class_invalid_iterator_exception.html#a5713dd1cc81d736fec97a0278f6412d9',1,'InvalidIteratorException.InvalidIteratorException()'],['../class_invalid_iterator_exception.html#a454fdb4858cf17e8cb6b601f5c80bac4',1,'InvalidIteratorException.InvalidIteratorException(String message)']]],
   ['invertedappearance',['invertedAppearance',['../class_q_x_progress_bar.html#a478639993a7da04a370852d53f9d6268',1,'QXProgressBar']]],

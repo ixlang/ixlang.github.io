@@ -48,7 +48,7 @@ var searchData=
   ['insertwidget',['INSERTWIDGET',['../class_q_x_core.html#a18b486ab690d04052d39f1259049d822',1,'QXCore.INSERTWIDGET()'],['../class_q_x_status_bar.html#a429d114f44064705c4a8e8fd40833c86',1,'QXStatusBar.insertWidget()'],['../class_q_x_tool_bar.html#a098aafa4345ef42c75811b9de892d1c4',1,'QXToolBar.insertWidget()']]],
   ['insmenu',['INSMENU',['../class_q_x_core.html#a21bbbee7e2fd3f4b3f8148068c6f7f7a',1,'QXCore']]],
   ['inssep',['INSSEP',['../class_q_x_core.html#a3fb8292f1f363afc1d3e7b89839e8b58',1,'QXCore']]],
-  ['installservice',['installService',['../class__system__.html#ad2171960f6cb935c84f5ace1d882d0b7',1,'_system_']]],
+  ['installservice',['installService',['../class__system__.html#af2d41a18e2342f577d4b09ba08af2638',1,'_system_']]],
   ['int',['Int',['../class_q_x_object.html#ac785fa5f6c9d9caef921a23b7183dc62',1,'QXObject.Int()'],['../class_q_x_variant.html#ac785fa5f6c9d9caef921a23b7183dc62',1,'QXVariant.Int()']]],
   ['intbitstodouble',['intBitsToDouble',['../class_math.html#a242f585a7ae86b736a6b069b0abfbd09',1,'Math.intBitsToDouble(int v)'],['../class_math.html#a482cfff85fae6dc319722d2249202dc3',1,'Math.intBitsToDouble(double v)']]],
   ['invalid',['Invalid',['../class_q_x_object.html#a65efee63c52e51c16d0950cdd615d1f3',1,'QXObject.Invalid()'],['../class_q_x_variant.html#a65efee63c52e51c16d0950cdd615d1f3',1,'QXVariant.Invalid()']]],

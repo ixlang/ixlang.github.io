@@ -9,6 +9,7 @@ var searchData=
   ['descent',['descent',['../class_q_x_font.html#a72ae1c4457fff3ac0f635c5c331a9cb9',1,'QXFont.descent()'],['../class_q_x_painter.html#a72ae1c4457fff3ac0f635c5c331a9cb9',1,'QXPainter.descent()']]],
   ['dgrampacket',['DgramPacket',['../class_dgram_socket_1_1_dgram_packet.html#ad1b794f2736b7184a436a14498dda6bf',1,'DgramSocket.DgramPacket.DgramPacket()'],['../class_dgram_socket_1_1_dgram_packet.html#a7567d0b235ec564c95bfa6ec2fce0377',1,'DgramSocket.DgramPacket.DgramPacket(byte[] buffer, int pos, int length, InetAddress addr)']]],
   ['dgramsocket',['DgramSocket',['../class_dgram_socket.html#afc40da5c10713f43f3571e268488b1d5',1,'DgramSocket']]],
+  ['disableinternalshortcut',['disableInternalShortcut',['../class_q_x_sci.html#a5c53731c04fcb8b96e97dfce25e933a1',1,'QXSci']]],
   ['disconnect',['disconnect',['../class_unsi.html#a49f9c842922bf59fc35c8866d8a7482e',1,'Unsi']]],
   ['divbyzeroexception',['DivByZeroException',['../class_div_by_zero_exception.html#afaa19af6897fea09571e44caae42ca34',1,'DivByZeroException.DivByZeroException()'],['../class_div_by_zero_exception.html#a5267a965705d78b706a10cc400edb078',1,'DivByZeroException.DivByZeroException(String message)']]],
   ['doget',['doGet',['../class_http_servlet.html#acbb0464b722fe81da21dd04e9b864863',1,'HttpServlet']]],

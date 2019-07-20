@@ -26,6 +26,7 @@ var searchData=
   ['getclientaddress',['getClientAddress',['../class_http_servlet_request.html#a1380a4a09202544a084e81e730856d11',1,'HttpServletRequest']]],
   ['getclipboardimage',['getClipboardImage',['../class_q_x_core.html#ad2e32131cf1f1e1f6b293eaf566a78fd',1,'QXCore']]],
   ['getclipboardtext',['getClipboardText',['../class_q_x_core.html#a6303ccdfd93324c35786c8cd9228ff13',1,'QXCore']]],
+  ['getconnectionnumber',['getConnectionNumber',['../class_unsi.html#a6ebed3a3dccbdce3c9b3f2cb06c8dce3',1,'Unsi']]],
   ['getcookie',['getCookie',['../class_http_servlet_request.html#ac1fa427ebfe4dd6fd9a09c05cffe313f',1,'HttpServletRequest']]],
   ['getcreationtime',['getCreationTime',['../class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a6e98c01411432c8e9bd26cdade6fb103',1,'FileSystem::Operator::WIN32_FIND_DATA']]],
   ['getcurrentcolumn',['getCurrentColumn',['../class_q_x_tree_view.html#a7ab2c5179129cd2aac6da3c49b6c7807',1,'QXTreeView']]],

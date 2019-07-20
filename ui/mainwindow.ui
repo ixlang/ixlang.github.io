@@ -171,7 +171,11 @@
     <addaction name="actioncopy"/>
     <addaction name="actionpaste"/>
     <addaction name="separator"/>
+    <addaction name="actionnewlineup"/>
+    <addaction name="actionnewlinedown"/>
+    <addaction name="separator"/>
     <addaction name="actiondelete"/>
+    <addaction name="actiondelcurline"/>
     <addaction name="separator"/>
     <addaction name="actiongotodef"/>
     <addaction name="separator"/>
@@ -259,6 +263,7 @@
     <addaction name="actionsamples"/>
     <addaction name="separator"/>
     <addaction name="actioninstcext"/>
+    <addaction name="actioninstallplugin"/>
     <addaction name="separator"/>
     <addaction name="actionabout"/>
    </widget>
@@ -1939,6 +1944,35 @@
   <action name="actioninstcext">
    <property name="text">
     <string>安装编译器扩展(&amp;i)</string>
+   </property>
+  </action>
+  <action name="actiondelcurline">
+   <property name="text">
+    <string>删除当前行</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionnewlineup">
+   <property name="text">
+    <string>插入新行</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+O</string>
+   </property>
+  </action>
+  <action name="actionnewlinedown">
+   <property name="text">
+    <string>换行</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Shift+O</string>
+   </property>
+  </action>
+  <action name="actioninstallplugin">
+   <property name="text">
+    <string>安装插件</string>
    </property>
   </action>
  </widget>

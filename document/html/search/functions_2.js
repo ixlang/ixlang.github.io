@@ -16,6 +16,7 @@ var searchData=
   ['clearcacher',['clearCacher',['../class_website.html#ae4e210f124cf318e1bad505e70619a2c',1,'Website']]],
   ['clearcontent',['clearContent',['../class_q_x_table_widget.html#a0761c8cf0283a7b44a7de06a5dac6e45',1,'QXTableWidget']]],
   ['clearindic',['clearIndic',['../class_q_x_sci.html#a1f56630adfacdccb282d7a9070c7770e',1,'QXSci']]],
+  ['clearinternalshortcuts',['clearInternalShortcuts',['../class_q_x_sci.html#ad58054ad9a82f45932e00866c6167ed3',1,'QXSci']]],
   ['clearsession',['clearSession',['../class_website.html#a127586b4e8e9c3ce927ec134fd0d03b4',1,'Website']]],
   ['clearundo',['clearUndo',['../class_q_x_sci.html#a290d325d8a1fff0afd86365518af30a1',1,'QXSci']]],
   ['clone',['clone',['../class_json_array.html#a0560a37a4768ff105917f635f98d02b6',1,'JsonArray.clone()'],['../class_json_object.html#a0560a37a4768ff105917f635f98d02b6',1,'JsonObject.clone()'],['../class_unsi.html#a6ca5700b140000252909fd78da6b2341',1,'Unsi.clone()']]],

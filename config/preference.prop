@@ -54,6 +54,8 @@
 	"actionremotedbg":	"",
 	"actionmatchbrace":	"F2",
 	"actionbreakpoint":	"F9",
+	"tabstop" : "空格",
+	"tabwidth" : "4",
 	"actionopenoutput":	"Ctrl+Alt+O",
 	"actionoverlapped":	"",
 	"actionsaveastemp":	"",

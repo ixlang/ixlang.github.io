@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.4 Release</span>
+   &#160;<span id="projectnumber">v2.5 Release</span>
    </div>
    <div id="projectbrief">项目介绍</div>
   </td>
@@ -135,13 +135,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_unsi.html#a1b90a5681a196b9816fff51316ab08f9">setNamelistMode</a>(<span class="keywordtype">int</span> mode);</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_unsi.html#a2f0b67c8c393c173ec868ac92830614d">addToNamelist</a>(<a class="code" href="class_string.html">String</a> hostip, <span class="keywordtype">bool</span> <span class="keyword">remove</span>);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;};</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_unsi.html#a6ebed3a3dccbdce3c9b3f2cb06c8dce3">getConnectionNumber</a>();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_unsi.html#a2f0b67c8c393c173ec868ac92830614d">addToNamelist</a>(<a class="code" href="class_string.html">String</a> hostip, <span class="keywordtype">bool</span> <span class="keyword">remove</span>);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;};</div>
 <div class="ttc" id="class_unsi_html_adce4ec03200d87479928a7a7b37a5c1c"><div class="ttname"><a href="class_unsi.html#adce4ec03200d87479928a7a7b37a5c1c">Unsi.equalsHandle</a></div><div class="ttdeci">bool equalsHandle(long context)</div><div class="ttdoc">比较实例句柄是否指向同一个链接 </div></div>
 <div class="ttc" id="class_unsi_html_a09a625a44c067108a749c1b2323841dc"><div class="ttname"><a href="class_unsi.html#a09a625a44c067108a749c1b2323841dc">Unsi.getRemoteInetAddress</a></div><div class="ttdeci">InetAddress getRemoteInetAddress(long context)</div><div class="ttdoc">获取远程地址信息 </div></div>
 <div class="ttc" id="class_unsi_html_a3c6bc9f7eaab853c808d195a9607ce8d"><div class="ttname"><a href="class_unsi.html#a3c6bc9f7eaab853c808d195a9607ce8d">Unsi.DISABLE_NAMELIST</a></div><div class="ttdeci">static const int DISABLE_NAMELIST</div><div class="ttdoc">禁用名单模式 </div><div class="ttdef"><b>Definition:</b> <a href="_unsi_8xcs_source.html#l00020">Unsi.xcs:20</a></div></div>
 <div class="ttc" id="class_unsi_html_a25d971356d5ad43071f3435f358dcf53"><div class="ttname"><a href="class_unsi.html#a25d971356d5ad43071f3435f358dcf53">Unsi.Unsi</a></div><div class="ttdeci">Unsi(AsyncInput input)</div><div class="ttdoc">构造函数 </div></div>
+<div class="ttc" id="class_unsi_html_a6ebed3a3dccbdce3c9b3f2cb06c8dce3"><div class="ttname"><a href="class_unsi.html#a6ebed3a3dccbdce3c9b3f2cb06c8dce3">Unsi.getConnectionNumber</a></div><div class="ttdeci">long getConnectionNumber()</div><div class="ttdoc">获取当前的连接数 </div></div>
 <div class="ttc" id="class_unsi_html_a952e28f99be24de1afb59da6451b262b"><div class="ttname"><a href="class_unsi.html#a952e28f99be24de1afb59da6451b262b">Unsi.send</a></div><div class="ttdeci">bool send(long context, long id, byte[] buffer, int offset, int length)</div><div class="ttdoc">发送数据 </div></div>
 <div class="ttc" id="interface_async_input_html"><div class="ttname"><a href="interface_async_input.html">AsyncInput</a></div><div class="ttdoc">异步输入接口 需要继承 </div><div class="ttdef"><b>Definition:</b> <a href="_async_input_8xcs_source.html#l00006">AsyncInput.xcs:6</a></div></div>
 <div class="ttc" id="class_unsi_html_ac7fb5c93a921e7970d3aaff545c93553"><div class="ttname"><a href="class_unsi.html#ac7fb5c93a921e7970d3aaff545c93553">Unsi.create</a></div><div class="ttdeci">bool create(AsyncInput input, int mode,int port, int timeout)</div><div class="ttdoc">创建服务器服务器参数 </div></div>

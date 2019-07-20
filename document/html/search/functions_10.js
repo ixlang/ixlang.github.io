@@ -21,7 +21,7 @@ var searchData=
   ['removeitem',['removeItem',['../class_q_x_tree_view.html#ae7c587d40bbe71153cc649f86fbca968',1,'QXTreeView']]],
   ['removenode',['removeNode',['../class_x_dom_node.html#a3563be159b533c35123182a2797cac4e',1,'XDomNode']]],
   ['removepath',['removePath',['../class_q_x_file_system_watcher.html#acfebd766df161280002c5b6f88a7b22a',1,'QXFileSystemWatcher']]],
-  ['removerange',['removeRange',['../class_vector.html#a61964cd75f78f11c4a9ddfe142503454',1,'Vector']]],
+  ['removerange',['removeRange',['../class_vector.html#ae5886dec9cd3ba4b6257120a911608ac',1,'Vector']]],
   ['removerow',['removeRow',['../class_q_x_table_widget.html#aaf68b356575cfae98eaeaff35c87fb1c',1,'QXTableWidget']]],
   ['removesubwindow',['removeSubWindow',['../class_q_x_mdi_area.html#aad646091249e127a0b5f760710cfaaca',1,'QXMdiArea']]],
   ['removewidget',['removeWidget',['../class_q_x_status_bar.html#a46239be4c4bcd78087b6554d2c377ba7',1,'QXStatusBar']]],

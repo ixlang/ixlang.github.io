@@ -26,231 +26,251 @@
 			]
 		},
 		"文件(F)->新建项目(&P):actionProject_P":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"Ctrl+N"
 		},
 		"文件(F)->打开(&O):actionOpen":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"Ctrl+O"
 		},
 		"文件(F)->关闭文件(&C):actionclose":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	""
 		},
 		"文件(F)->关闭项目(&K):actioncloseproject":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	""
 		},
 		"文件(F)->保存文件:actionsave":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"Ctrl+S"
 		},
 		"文件(F)->保存为模板(&T):actionsaveastemp":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	""
 		},
 		"文件(F)->文件另存为(&A):actionsaveas":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	""
 		},
 		"文件(F)->保存项目:actionsaveproject":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"Ctrl+Shift+S"
 		},
 		"文件(F)->退出:actionexit":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"Ctrl+Q"
 		},
 		"编辑(E)->添加(A)->类(&C):actionclass":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	""
 		},
 		"编辑(E)->添加(A)->接口(&I):actioninterface":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	""
 		},
 		"编辑(E)->添加(A)->包(&P):actionpackage":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	""
 		},
 		"编辑(E)->撤销(&U):actionundo":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"Ctrl+Z"
 		},
 		"编辑(E)->重做(&R):actionredo":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"Ctrl+Y"
 		},
 		"编辑(E)->复制(&C):actioncopy":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"Ctrl+C"
 		},
 		"编辑(E)->剪切(&T):actioncut":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"Ctrl+X"
 		},
 		"编辑(E)->粘贴(&P):actionpaste":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"Ctrl+V"
 		},
+		"编辑(E)->插入新行:actionnewlineup":	{
+			"type":	"keysequence",
+			"value":	"Ctrl+Shift+O"
+		},
+		"编辑(E)->换行:actionnewlinedown":	{
+			"type":	"keysequence",
+			"value":	"Alt+Shift+O"
+		},
 		"编辑(E)->删除(&D):actiondelete":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"Del"
 		},
+		"编辑(E)->删除当前行:actiondelcurline":	{
+			"type":	"keysequence",
+			"value":	"Ctrl+D"
+		},
 		"编辑(E)->转到定义(&F):actiongotodef":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"F12"
 		},
 		"编辑(E)->匹配括号(&M):actionmatchbrace":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"F2"
 		},
 		"编辑(E)->重载方法(&O):actionoverride":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"Alt+V"
 		},
 		"编辑(E)->列出补全(&L):actionautocomplete":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"Alt+."
 		},
 		"编辑(E)->组建项目(&B):actioncompile_project":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"F7"
 		},
 		"编辑(E)->查找(&F):actionfind":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"Ctrl+F"
 		},
 		"编辑(E)->查找下一个(&A):actionfindagain":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"F3"
 		},
 		"编辑(E)->替换(&R):actionreplace":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"Ctrl+R"
 		},
 		"编辑(E)->定位问题:actionlocalProblem":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"F4"
 		},
 		"编辑(E)->转到行:actiongoto":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"Ctrl+G"
 		},
 		"编辑(E)->向前(&F):actiontofront":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"Ctrl+Alt+Right"
 		},
 		"编辑(E)->向后(&B):actiontoback":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"Ctrl+Alt+Left"
 		},
 		"项目(P)->清理(&C):actionclean":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"Ctrl+Alt+C"
 		},
 		"项目(P)->生成Native文件(&N):actiongenerateNativeSrc":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"Ctrl+Alt+G"
 		},
 		"项目(P)->属性:actionprop":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	""
 		},
 		"项目(P)->选项(&T):actionsetting":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"Ctrl+T"
 		},
 		"项目(P)->起始页(&S):actionstartup":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	""
 		},
 		"项目(P)->注释(&C):actioncomment":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	""
 		},
 		"项目(P)->打开输出目录(&O):actionopenoutput":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"Ctrl+Alt+O"
 		},
 		"调试(D)->调试运行(&D):actiondebug":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"F5"
 		},
 		"调试(D)->运行(&R):actionrun":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"Ctrl+F5"
 		},
 		"调试(D)->单步步入(&I):actionstepin":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"F11"
 		},
 		"调试(D)->单步步过(&O):actionstepover":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"F10"
 		},
 		"调试(D)->单步跳出(&T):actionstepout":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"Shift+F11"
 		},
 		"调试(D)->切换断点(&P):actionbreakpoint":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"F9"
 		},
 		"调试(D)->测试(&A):actiontest":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	""
 		},
 		"调试(D)->停止运行(&S):actionstoprun":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"Shift+F5"
 		},
 		"调试(D)->中断:actionbreak":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	""
 		},
 		"调试(D)->远程调试(&R):actionremotedbg":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	""
 		},
 		"工具(T)->QT Designer(UI设计器):actionQTCreator":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	""
 		},
 		"工具(T)->导出包工具(&E):actionexporttools":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	""
 		},
 		"工具(T)->包管理(&P):actionpackmgr":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	""
 		},
 		"窗口(W)->平铺窗口(&S):sortwindows":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	""
 		},
 		"窗口(W)->窗口(&W):allwindows":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	"Ctrl+E"
 		},
 		"窗口(W)->重叠窗口(&T):actionoverlapped":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	""
 		},
 		"帮助(H)->帮助文档(&H):actionhelp":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	""
 		},
 		"帮助(H)->发送反馈(&F):actionsendfeedback":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	""
 		},
 		"帮助(H)->代码示例:actionsamples":	{
-			"type":	"string",
+			"type":	"keysequence",
+			"value":	""
+		},
+		"帮助(H)->安装编译器扩展(i):actioninstcext":	{
+			"type":	"keysequence",
+			"value":	""
+		},
+		"帮助(H)->安装插件:actioninstallplugin":	{
+			"type":	"keysequence",
 			"value":	""
 		},
 		"帮助(H)->关于(&A):actionabout":	{
-			"type":	"string",
+			"type":	"keysequence",
 			"value":	""
 		}
 	},
@@ -352,6 +372,17 @@
 				"关闭",
 				"开启"
 			]
+		},
+		"缩进:tabstop":{
+			"type":"stringlist",
+			"list":[
+				"制表符",
+				"空格"
+			]
+		},
+		"缩进宽度:tabwidth":{
+			"type":"string",
+			"value":"4"
 		}
 	},
 	"项目":{

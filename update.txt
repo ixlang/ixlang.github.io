@@ -336,3 +336,8 @@ xlang版本更新为2.4
 
 XStudio增加内存查看器
 XStudio改善健壮性
+
+2019年7月20日
+改善XStudio用户体验
+优化编译器
+更新版本号 Release 2.5

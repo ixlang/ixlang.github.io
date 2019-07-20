@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['objectsetname',['OBJECTSETNAME',['../class_q_x_core.html#a65f9d3aa02ea1b8ab8308be4f9c83325',1,'QXCore']]],
   ['offset',['offset',['../class_q_x_point.html#a4bd0d5aec74e27f13406c16b214fc377',1,'QXPoint.offset(int _x,int _y)'],['../class_q_x_point.html#ad90320d05ecffd4ec9a7f0a839a463d2',1,'QXPoint.offset(QXPoint p)'],['../class_q_x_rect.html#a05ebdee549255d2b3863d093c9859139',1,'QXRect.offset(int x, int y)'],['../class_q_x_rect.html#a2c019ef1807e0950f9407ed86d643370',1,'QXRect.offset(QXPoint pt)']]],
   ['ok',['Ok',['../class_q_x_message_box.html#a0f2e63b0c7bc2cee4ddba447bb8b2009',1,'QXMessageBox']]],
   ['okrequest',['OkRequest',['../class_q_x_event.html#acef1b934dd66518fd1b1683c4c12fb12',1,'QXEvent']]],

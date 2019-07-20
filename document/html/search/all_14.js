@@ -111,7 +111,7 @@ var searchData=
   ['triemclearchild',['TRIEMCLEARCHILD',['../class_q_x_core.html#a1370708bca32c2a80e60d8575623c4fa',1,'QXCore']]],
   ['triemsetexpand',['TRIEMSETEXPAND',['../class_q_x_core.html#a2c66f3ddc488db1094362e434d9733e3',1,'QXCore']]],
   ['triemsethidden',['TRIEMSETHIDDEN',['../class_q_x_core.html#a67fb20d6664590da232cbb9bd98d55bf',1,'QXCore']]],
-  ['trigger',['TRIGGER',['../class_q_x_core.html#a313d7b03edbcb97ca67d1aaff946cd82',1,'QXCore.TRIGGER()'],['../class_q_x_action.html#ab0554cb7241c0b72d34402f0bb419462',1,'QXAction.trigger()']]],
+  ['trigger',['trigger',['../class_q_x_action.html#ab0554cb7241c0b72d34402f0bb419462',1,'QXAction.trigger()'],['../class_q_x_core.html#a313d7b03edbcb97ca67d1aaff946cd82',1,'QXCore.TRIGGER()']]],
   ['trim',['trim',['../class_string.html#a24053e961f5f1b3dafea27a7c98538b7',1,'String']]],
   ['tritemgetcheck',['TRITEMGETCHECK',['../class_q_x_core.html#aa87b7c1f32a94d05a5f2ea7d2ba74e2e',1,'QXCore']]],
   ['tritemsetcheck',['TRITEMSETCHECK',['../class_q_x_core.html#a3349923abf88b08fda6c4904ebfa3b14',1,'QXCore']]],

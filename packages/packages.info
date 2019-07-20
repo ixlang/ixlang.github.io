@@ -15,11 +15,11 @@
 			"icon":	".\\packages\\xfftw1.0.0.0.png"
 		}, {
 			"package":	"FileStream",
-			"version":	"1.0.0.3",
+			"version":	"1.0.0.4",
 			"descr":	"用于文件读写, 支持在Windows的UTF8<->GB1080转换",
 			"author":	"https://github.com/ixlang/xlibraries",
-			"file":	".\\packages\\FileStream1.0.0.3",
-			"icon":	".\\packages\\FileStream1.0.0.3.png"
+			"file":	".\\packages\\FileStream1.0.0.4",
+			"icon":	".\\packages\\FileStream1.0.0.4.png"
 		}, {
 			"package":	"FileSystem",
 			"version":	"1.0.0.3",
@@ -36,11 +36,11 @@
 			"icon":	".\\packages\\Logcat1.0.0.0.png"
 		}, {
 			"package":	"Qt5.9.1",
-			"version":	"5.9.1.8",
+			"version":	"5.9.1.9",
 			"descr":	"优秀的跨平台界面库",
 			"author":	"https://github.com/ixlang/xlibraries",
-			"file":	".\\packages\\Qt5.9.15.9.1.8",
-			"icon":	".\\packages\\Qt5.9.15.9.1.8.png"
+			"file":	".\\packages\\Qt5.9.15.9.1.9",
+			"icon":	".\\packages\\Qt5.9.15.9.1.9.png"
 		}, {
 			"package":	"Runtime",
 			"version":	"1.0.0.3",
