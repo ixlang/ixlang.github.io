@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1864</width>
-    <height>989</height>
+    <height>990</height>
    </rect>
   </property>
   <property name="acceptDrops">
@@ -137,6 +137,8 @@
     <addaction name="separator"/>
     <addaction name="actionsaveproject"/>
     <addaction name="separator"/>
+    <addaction name="actionprint"/>
+    <addaction name="separator"/>
     <addaction name="actionsaveastemp"/>
     <addaction name="separator"/>
     <addaction name="actionexit"/>
@@ -157,6 +159,24 @@
      <addaction name="actionclass"/>
      <addaction name="actioninterface"/>
      <addaction name="actionpackage"/>
+    </widget>
+    <widget class="QMenu" name="menukeyboard">
+     <property name="title">
+      <string>键盘操作</string>
+     </property>
+     <addaction name="actioncurup"/>
+     <addaction name="actioncurleft"/>
+     <addaction name="actioncurright"/>
+     <addaction name="actioncurdown"/>
+     <addaction name="separator"/>
+     <addaction name="actionlinebegin"/>
+     <addaction name="actionlineend"/>
+     <addaction name="separator"/>
+     <addaction name="actionprepage"/>
+     <addaction name="actionnextpage"/>
+     <addaction name="separator"/>
+     <addaction name="actiontotop"/>
+     <addaction name="actiontobottom"/>
     </widget>
     <addaction name="menuaddition"/>
     <addaction name="separator"/>
@@ -179,6 +199,9 @@
     <addaction name="separator"/>
     <addaction name="actiongotodef"/>
     <addaction name="separator"/>
+    <addaction name="actionupper"/>
+    <addaction name="actionlower"/>
+    <addaction name="separator"/>
     <addaction name="actionfind"/>
     <addaction name="actionreplace"/>
     <addaction name="actionfindagain"/>
@@ -189,6 +212,7 @@
     <addaction name="separator"/>
     <addaction name="actionlocalProblem"/>
     <addaction name="actiongoto"/>
+    <addaction name="menukeyboard"/>
    </widget>
    <widget class="QMenu" name="menuSln">
     <property name="title">
@@ -1152,6 +1176,13 @@
           </property>
          </widget>
         </item>
+        <item>
+         <widget class="QPushButton" name="dumpButton">
+          <property name="text">
+           <string>Dump</string>
+          </property>
+         </widget>
+        </item>
        </layout>
       </widget>
      </item>
@@ -1817,7 +1848,7 @@
      <normaloff>res/toolbar/winoverlap.png</normaloff>res/toolbar/winoverlap.png</iconset>
    </property>
    <property name="text">
-    <string>重叠窗口(&amp;T)</string>
+    <string>层叠窗口(&amp;T)</string>
    </property>
   </action>
   <action name="actions">
@@ -1972,7 +2003,93 @@
   </action>
   <action name="actioninstallplugin">
    <property name="text">
-    <string>安装插件</string>
+    <string>安装XStudio扩展</string>
+   </property>
+  </action>
+  <action name="actioncurup">
+   <property name="text">
+    <string>游标上移</string>
+   </property>
+  </action>
+  <action name="actioncurleft">
+   <property name="text">
+    <string>游标左移</string>
+   </property>
+  </action>
+  <action name="actioncurright">
+   <property name="text">
+    <string>游标右移</string>
+   </property>
+  </action>
+  <action name="actioncurdown">
+   <property name="text">
+    <string>游标下移</string>
+   </property>
+  </action>
+  <action name="actionprepage">
+   <property name="text">
+    <string>向上翻页</string>
+   </property>
+  </action>
+  <action name="actionnextpage">
+   <property name="text">
+    <string>向下翻页</string>
+   </property>
+  </action>
+  <action name="actiontotop">
+   <property name="text">
+    <string>到顶部</string>
+   </property>
+  </action>
+  <action name="actiontobottom">
+   <property name="text">
+    <string>到底部</string>
+   </property>
+  </action>
+  <action name="actionlinebegin">
+   <property name="text">
+    <string>游标至行首</string>
+   </property>
+  </action>
+  <action name="actionlineend">
+   <property name="text">
+    <string>游标至行尾</string>
+   </property>
+  </action>
+  <action name="actionupper">
+   <property name="text">
+    <string>转为大写(&amp;U)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+  <action name="actionlower">
+   <property name="text">
+    <string>转为小写(&amp;L)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+U</string>
+   </property>
+  </action>
+  <action name="actionprint">
+   <property name="icon">
+    <iconset>
+     <normaloff>res/toolbar/printer.png</normaloff>res/toolbar/printer.png</iconset>
+   </property>
+   <property name="text">
+    <string>打印(&amp;P)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionprintpreview">
+   <property name="text">
+    <string>打印预览</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+P</string>
    </property>
   </action>
  </widget>

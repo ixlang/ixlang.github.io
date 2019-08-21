@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/XStudio/qt5/widgets/QPrinter.xcsm 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v2.6 Release</span>
+   </div>
+   <div id="projectbrief">项目介绍</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_735e24decaf1c49b6a1919196d463802.html">XStudio</a></li><li class="navelem"><a class="el" href="dir_bf5f207b5684b49bd4be31a45c20b08f.html">qt5</a></li><li class="navelem"><a class="el" href="dir_d764631b0f579dfcfd22963eb2f03413.html">widgets</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">QPrinter.xcsm</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_q_printer_8xcsm.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//xlang Source, Name:QPrinter.xcsm </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//Date: Sat Aug 13:36:30 2019 </span></div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_q_printer.html">    3</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_q_printer.html">QPrinter</a> : <a class="code" href="class_q_paged_paint_device.html">QPagedPaintDevice</a>{</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    </div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_q_printer.html#a9be3eb76433a88762198f856a95c8e6b">    5</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_q_printer.html#a9be3eb76433a88762198f856a95c8e6b">need_delloc</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_printer_mode.html#a7cd447c6ec8d3e67373ac6b9558045a7">    6</a></span>&#160;    <span class="keyword">enum</span> PrinterMode { <a class="code" href="enum_q_printer_1_1_printer_mode.html#a7cd447c6ec8d3e67373ac6b9558045a7">ScreenResolution</a>, PrinterResolution, HighResolution };</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_orientation.html#a4c11af3c8ebc49b1415b8a64c6741e75">    7</a></span>&#160;    <span class="keyword">enum</span> Orientation { <a class="code" href="enum_q_printer_1_1_orientation.html#a4c11af3c8ebc49b1415b8a64c6741e75">Portrait</a>, Landscape };</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_page_order.html#a910e98ecd3e69938acd4c04ce9af92ac">    8</a></span>&#160;    <span class="keyword">enum</span> PageOrder   { <a class="code" href="enum_q_printer_1_1_page_order.html#a910e98ecd3e69938acd4c04ce9af92ac">FirstPageFirst</a>,</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_page_order.html#af772b3f979bc09fc1ee6fb91360ac398">    9</a></span>&#160;                       LastPageFirst };</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_color_mode.html#a44b34381cc486137f6837bc3a8f9cef1">   11</a></span>&#160;    <span class="keyword">enum</span> ColorMode   { <a class="code" href="enum_q_printer_1_1_color_mode.html#a44b34381cc486137f6837bc3a8f9cef1">GrayScale</a>,</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_color_mode.html#ab87bacfdad76e61b9412d7124be44c1c">   12</a></span>&#160;                       Color };</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_paper_source.html#a828286b69ab6477a135bc7869a8ece19">   14</a></span>&#160;    <span class="keyword">enum</span> PaperSource { <a class="code" href="enum_q_printer_1_1_paper_source.html#a828286b69ab6477a135bc7869a8ece19">OnlyOne</a>,</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_paper_source.html#a362b1cbce711baf543cdc7baaa479a03">   15</a></span>&#160;                       <a class="code" href="enum_q_printer_1_1_paper_source.html#a362b1cbce711baf543cdc7baaa479a03">Lower</a>,</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_paper_source.html#a909d7c4131e2b6d96ea6cdde4db8a3ec">   16</a></span>&#160;                       <a class="code" href="enum_q_printer_1_1_paper_source.html#a909d7c4131e2b6d96ea6cdde4db8a3ec">Middle</a>,</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_paper_source.html#a88e8c0b345e703fd0c9771d14db4e75b">   17</a></span>&#160;                       <a class="code" href="enum_q_printer_1_1_paper_source.html#a88e8c0b345e703fd0c9771d14db4e75b">Manual</a>,</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_paper_source.html#aa6281b98c82825a898ccefa207ec1636">   18</a></span>&#160;                       <a class="code" href="enum_q_printer_1_1_paper_source.html#aa6281b98c82825a898ccefa207ec1636">Envelope</a>,</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_paper_source.html#afe98ca0031aabe698b718b9f765f9de3">   19</a></span>&#160;                       <a class="code" href="enum_q_printer_1_1_paper_source.html#afe98ca0031aabe698b718b9f765f9de3">EnvelopeManual</a>,</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_paper_source.html#aa4aff3e9b2f01784b94bbc8a916791a4">   20</a></span>&#160;                       <a class="code" href="enum_q_printer_1_1_paper_source.html#aa4aff3e9b2f01784b94bbc8a916791a4">Auto</a>,</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_paper_source.html#a395f73b978683c832a4cb6d70e9033c6">   21</a></span>&#160;                       <a class="code" href="enum_q_printer_1_1_paper_source.html#a395f73b978683c832a4cb6d70e9033c6">Tractor</a>,</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_paper_source.html#a441a2ef3c05ed3480b1d298048fcfb85">   22</a></span>&#160;                       <a class="code" href="enum_q_printer_1_1_paper_source.html#a441a2ef3c05ed3480b1d298048fcfb85">SmallFormat</a>,</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_paper_source.html#a18892dbaa3014be81c13a684c263abbd">   23</a></span>&#160;                       <a class="code" href="enum_q_printer_1_1_paper_source.html#a18892dbaa3014be81c13a684c263abbd">LargeFormat</a>,</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_paper_source.html#a80915d87a6617e0747255164905039ac">   24</a></span>&#160;                       <a class="code" href="enum_q_printer_1_1_paper_source.html#a80915d87a6617e0747255164905039ac">LargeCapacity</a>,</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_paper_source.html#a45e2af0bc267f9c0f5365e311394e207">   25</a></span>&#160;                       <a class="code" href="enum_q_printer_1_1_paper_source.html#a45e2af0bc267f9c0f5365e311394e207">Cassette</a>,</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_paper_source.html#acfabbcb2242d56c4c2f20a1ec8b51a2a">   26</a></span>&#160;                       <a class="code" href="enum_q_printer_1_1_paper_source.html#acfabbcb2242d56c4c2f20a1ec8b51a2a">FormSource</a>,</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_paper_source.html#ad9f8129d6d4fdf769fb363fe98f4aa7e">   27</a></span>&#160;                       <a class="code" href="enum_q_printer_1_1_paper_source.html#ad9f8129d6d4fdf769fb363fe98f4aa7e">MaxPageSource</a>, <span class="comment">// Deprecated</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_paper_source.html#a7dc031efdb60d6f307c00efca1f89040">   28</a></span>&#160;                       CustomSource</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    };</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_printer_state.html#afe7d1c7aed81f571e8f510f7501baa12">   31</a></span>&#160;    <span class="keyword">enum</span> PrinterState { <a class="code" href="enum_q_printer_1_1_printer_state.html#afe7d1c7aed81f571e8f510f7501baa12">Idle</a>,</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_printer_state.html#a36bc05a92dd2950b613ace141e2408ad">   32</a></span>&#160;                        <a class="code" href="enum_q_printer_1_1_printer_state.html#a36bc05a92dd2950b613ace141e2408ad">Active</a>,</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_printer_state.html#a7556ddf1ef0943a527972a5f4d8b0dda">   33</a></span>&#160;                        <a class="code" href="enum_q_printer_1_1_printer_state.html#a7556ddf1ef0943a527972a5f4d8b0dda">Aborted</a>,</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_printer_state.html#a2c3e4bb40f36b262a5214e2da2bca9c5">   34</a></span>&#160;                        Error };</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_output_format.html#ad24513bf88a76e23e8eff6bf8fe59bf0">   36</a></span>&#160;    <span class="keyword">enum</span> OutputFormat { NativeFormat, PdfFormat };</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// Keep in sync with QAbstractPrintDialog::PrintRange</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_print_range.html#a3c2ddfd4ea03c0cc63e201d7621931df">   39</a></span>&#160;    <span class="keyword">enum</span> PrintRange { AllPages, <a class="code" href="enum_q_printer_1_1_print_range.html#a3c2ddfd4ea03c0cc63e201d7621931df">Selection</a>, PageRange, CurrentPage };</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_unit.html">   41</a></span>&#160;    <span class="keyword">enum</span> Unit {</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_unit.html#a2653164cc89492e36c667a66fa62a629">   42</a></span>&#160;        <a class="code" href="enum_q_printer_1_1_unit.html#a2653164cc89492e36c667a66fa62a629">Millimeter</a>,</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_unit.html#a1de5e45af54f9f098e4ae388726e9677">   43</a></span>&#160;        <a class="code" href="enum_q_printer_1_1_unit.html#a1de5e45af54f9f098e4ae388726e9677">Point</a>,</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_unit.html#ad4328e623072c877483936ebd199a6ea">   44</a></span>&#160;        <a class="code" href="enum_q_printer_1_1_unit.html#ad4328e623072c877483936ebd199a6ea">Inch</a>,</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_unit.html#a095e36eb89b5b80b3eae3e4b52bd7c23">   45</a></span>&#160;        <a class="code" href="enum_q_printer_1_1_unit.html#a095e36eb89b5b80b3eae3e4b52bd7c23">Pica</a>,</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_unit.html#a2e06b2d39aa686a03db9025231c9033d">   46</a></span>&#160;        <a class="code" href="enum_q_printer_1_1_unit.html#a2e06b2d39aa686a03db9025231c9033d">Didot</a>,</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_unit.html#a169008488bf216d620a30130f220b755">   47</a></span>&#160;        <a class="code" href="enum_q_printer_1_1_unit.html#a169008488bf216d620a30130f220b755">Cicero</a>,</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_unit.html#a171a9cfd66ed2175f2e5b01c07ef872d">   48</a></span>&#160;        DevicePixel</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    };</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_duplex_mode.html">   51</a></span>&#160;    <span class="keyword">enum</span> DuplexMode {</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_duplex_mode.html#a2dcdbc7a280fa7489a8bfd61278e15b1">   52</a></span>&#160;        DuplexNone = 0,</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_duplex_mode.html#add8b9fd5d0426d9a4a9ba59f62635745">   53</a></span>&#160;        <a class="code" href="enum_q_printer_1_1_duplex_mode.html#add8b9fd5d0426d9a4a9ba59f62635745">DuplexAuto</a>,</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_duplex_mode.html#a45165ab770cd2d69dc52c86de88e688a">   54</a></span>&#160;        <a class="code" href="enum_q_printer_1_1_duplex_mode.html#a45165ab770cd2d69dc52c86de88e688a">DuplexLongSide</a>,</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="enum_q_printer_1_1_duplex_mode.html#a4d06ddd72b75c017edf6ff0b793d2749">   55</a></span>&#160;        DuplexShortSide</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    };</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_q_printer.html#adf6cca89a6a1c1ab8475cee516e231cd">   58</a></span>&#160;    <a class="code" href="class_q_printer.html#adf6cca89a6a1c1ab8475cee516e231cd">QPrinter</a>(){</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a> = createQPObject(<a class="code" href="class_q_type.html">QType</a>.<a class="code" href="class_q_type.html#aa9331862b3c86f4468dface3704f6cd0">qtPrinter</a>, <span class="keyword">this</span>, 0, PrinterMode.ScreenResolution, 0, 0, 0);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a> == 0) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="class_illegal_argument_exception.html">IllegalArgumentException</a>(<span class="stringliteral">&quot;can&#39;t new Object&quot;</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_q_printer.html#ac5086d872a431ebcfb336d9226024d0e">   65</a></span>&#160;    <a class="code" href="class_q_printer.html#ac5086d872a431ebcfb336d9226024d0e">QPrinter</a>(<span class="keywordtype">long</span> handle){</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        need_delloc = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a> = handle;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_q_printer.html#af5b2190e7d2a6e2817db9e986046427a">   70</a></span>&#160;    <a class="code" href="class_q_printer.html#af5b2190e7d2a6e2817db9e986046427a">QPrinter</a>(PrinterMode mode){</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a> = createQPObject(<a class="code" href="class_q_type.html">QType</a>.<a class="code" href="class_q_type.html#aa9331862b3c86f4468dface3704f6cd0">qtPrinter</a>, <span class="keyword">this</span>, 0, mode, 0, 0, 0);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a> == 0) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="class_illegal_argument_exception.html">IllegalArgumentException</a>(<span class="stringliteral">&quot;can&#39;t new Object&quot;</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_q_printer.html#a561ab75ec92ec571f6eb0f3686954f57">   76</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_q_printer.html#a561ab75ec92ec571f6eb0f3686954f57">devType</a>() {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">return</span> widget_get_int_value(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a0dfdb10444a7cb8b246bd73506e7f7a4">PAINTERTYPE</a>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_q_printer.html#a565d09573b9603eddffd2a20e7284733">   80</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_printer.html#a565d09573b9603eddffd2a20e7284733">setOutputFormat</a>(OutputFormat format){</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        widget_set_vint_value(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a69bd6bacc8152a7ac2c216b15f0e8adf">PRINTERSETOUTFMT</a>, format);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_q_printer.html#a509a29d41475b2c6bd3b0a23a0aca75f">   84</a></span>&#160;    OutputFormat <a class="code" href="class_q_printer.html#a509a29d41475b2c6bd3b0a23a0aca75f">outputFormat</a>() {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">return</span> (OutputFormat)widget_get_int_value(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a4125a5a4cc03e5f9ce396128ab57548b">PRINTERGETOUTFMT</a>);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    </div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="class_q_printer.html#a32d626626eee0bc4ade146973f6abb1c">   88</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_printer.html#a32d626626eee0bc4ade146973f6abb1c">finalize</a>(){</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">if</span> (need_delloc){</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            widget_slot(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a6ec46778ac3b061e5115ed48eb95a4b9">PRINTERDTOR</a>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        } </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
+<div class="ttc" id="enum_q_printer_1_1_paper_source_html_a45e2af0bc267f9c0f5365e311394e207"><div class="ttname"><a href="enum_q_printer_1_1_paper_source.html#a45e2af0bc267f9c0f5365e311394e207">QPrinter.PaperSource.Cassette</a></div><div class="ttdeci">Cassette</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00025">QPrinter.xcsm:25</a></div></div>
+<div class="ttc" id="class_q_printer_html_adf6cca89a6a1c1ab8475cee516e231cd"><div class="ttname"><a href="class_q_printer.html#adf6cca89a6a1c1ab8475cee516e231cd">QPrinter.QPrinter</a></div><div class="ttdeci">QPrinter()</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00058">QPrinter.xcsm:58</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_paper_source_html_ad9f8129d6d4fdf769fb363fe98f4aa7e"><div class="ttname"><a href="enum_q_printer_1_1_paper_source.html#ad9f8129d6d4fdf769fb363fe98f4aa7e">QPrinter.PaperSource.MaxPageSource</a></div><div class="ttdeci">MaxPageSource</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00027">QPrinter.xcsm:27</a></div></div>
+<div class="ttc" id="class_q_x_native_html_adc4b3fd5b05624dfe6705339748b8aab"><div class="ttname"><a href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">QXNative.nativehandle</a></div><div class="ttdeci">long nativehandle</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_native_8xcsm_source.html#l00003">QXNative.xcsm:3</a></div></div>
+<div class="ttc" id="class_q_type_html_aa9331862b3c86f4468dface3704f6cd0"><div class="ttname"><a href="class_q_type.html#aa9331862b3c86f4468dface3704f6cd0">QType.qtPrinter</a></div><div class="ttdeci">static const int qtPrinter</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_types_8xcsm_source.html#l00058">QXTypes.xcsm:58</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_paper_source_html_a80915d87a6617e0747255164905039ac"><div class="ttname"><a href="enum_q_printer_1_1_paper_source.html#a80915d87a6617e0747255164905039ac">QPrinter.PaperSource.LargeCapacity</a></div><div class="ttdeci">LargeCapacity</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00024">QPrinter.xcsm:24</a></div></div>
+<div class="ttc" id="class_q_type_html"><div class="ttname"><a href="class_q_type.html">QType</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_types_8xcsm_source.html#l00001">QXTypes.xcsm:1</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_orientation_html_a4c11af3c8ebc49b1415b8a64c6741e75"><div class="ttname"><a href="enum_q_printer_1_1_orientation.html#a4c11af3c8ebc49b1415b8a64c6741e75">QPrinter.Orientation.Portrait</a></div><div class="ttdeci">Portrait</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00007">QPrinter.xcsm:7</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_paper_source_html_a395f73b978683c832a4cb6d70e9033c6"><div class="ttname"><a href="enum_q_printer_1_1_paper_source.html#a395f73b978683c832a4cb6d70e9033c6">QPrinter.PaperSource.Tractor</a></div><div class="ttdeci">Tractor</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00021">QPrinter.xcsm:21</a></div></div>
+<div class="ttc" id="class_q_printer_html_a561ab75ec92ec571f6eb0f3686954f57"><div class="ttname"><a href="class_q_printer.html#a561ab75ec92ec571f6eb0f3686954f57">QPrinter.devType</a></div><div class="ttdeci">int devType() </div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00076">QPrinter.xcsm:76</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_duplex_mode_html_add8b9fd5d0426d9a4a9ba59f62635745"><div class="ttname"><a href="enum_q_printer_1_1_duplex_mode.html#add8b9fd5d0426d9a4a9ba59f62635745">QPrinter.DuplexMode.DuplexAuto</a></div><div class="ttdeci">DuplexAuto</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00053">QPrinter.xcsm:53</a></div></div>
+<div class="ttc" id="class_q_x_core_html_a4125a5a4cc03e5f9ce396128ab57548b"><div class="ttname"><a href="class_q_x_core.html#a4125a5a4cc03e5f9ce396128ab57548b">QXCore.PRINTERGETOUTFMT</a></div><div class="ttdeci">static const int PRINTERGETOUTFMT</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00395">QXCore.xcsm:395</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_paper_source_html_a88e8c0b345e703fd0c9771d14db4e75b"><div class="ttname"><a href="enum_q_printer_1_1_paper_source.html#a88e8c0b345e703fd0c9771d14db4e75b">QPrinter.PaperSource.Manual</a></div><div class="ttdeci">Manual</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00017">QPrinter.xcsm:17</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_printer_mode_html_a7cd447c6ec8d3e67373ac6b9558045a7"><div class="ttname"><a href="enum_q_printer_1_1_printer_mode.html#a7cd447c6ec8d3e67373ac6b9558045a7">QPrinter.PrinterMode.ScreenResolution</a></div><div class="ttdeci">ScreenResolution</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00006">QPrinter.xcsm:6</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_paper_source_html_a18892dbaa3014be81c13a684c263abbd"><div class="ttname"><a href="enum_q_printer_1_1_paper_source.html#a18892dbaa3014be81c13a684c263abbd">QPrinter.PaperSource.LargeFormat</a></div><div class="ttdeci">LargeFormat</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00023">QPrinter.xcsm:23</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_printer_state_html_a7556ddf1ef0943a527972a5f4d8b0dda"><div class="ttname"><a href="enum_q_printer_1_1_printer_state.html#a7556ddf1ef0943a527972a5f4d8b0dda">QPrinter.PrinterState.Aborted</a></div><div class="ttdeci">Aborted</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00033">QPrinter.xcsm:33</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_paper_source_html_aa6281b98c82825a898ccefa207ec1636"><div class="ttname"><a href="enum_q_printer_1_1_paper_source.html#aa6281b98c82825a898ccefa207ec1636">QPrinter.PaperSource.Envelope</a></div><div class="ttdeci">Envelope</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00018">QPrinter.xcsm:18</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_unit_html_a2653164cc89492e36c667a66fa62a629"><div class="ttname"><a href="enum_q_printer_1_1_unit.html#a2653164cc89492e36c667a66fa62a629">QPrinter.Unit.Millimeter</a></div><div class="ttdeci">Millimeter</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00042">QPrinter.xcsm:42</a></div></div>
+<div class="ttc" id="class_q_printer_html_a565d09573b9603eddffd2a20e7284733"><div class="ttname"><a href="class_q_printer.html#a565d09573b9603eddffd2a20e7284733">QPrinter.setOutputFormat</a></div><div class="ttdeci">void setOutputFormat(OutputFormat format)</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00080">QPrinter.xcsm:80</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_paper_source_html_aa4aff3e9b2f01784b94bbc8a916791a4"><div class="ttname"><a href="enum_q_printer_1_1_paper_source.html#aa4aff3e9b2f01784b94bbc8a916791a4">QPrinter.PaperSource.Auto</a></div><div class="ttdeci">Auto</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00020">QPrinter.xcsm:20</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_printer_state_html_afe7d1c7aed81f571e8f510f7501baa12"><div class="ttname"><a href="enum_q_printer_1_1_printer_state.html#afe7d1c7aed81f571e8f510f7501baa12">QPrinter.PrinterState.Idle</a></div><div class="ttdeci">Idle</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00031">QPrinter.xcsm:31</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_paper_source_html_a909d7c4131e2b6d96ea6cdde4db8a3ec"><div class="ttname"><a href="enum_q_printer_1_1_paper_source.html#a909d7c4131e2b6d96ea6cdde4db8a3ec">QPrinter.PaperSource.Middle</a></div><div class="ttdeci">Middle</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00016">QPrinter.xcsm:16</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_paper_source_html_a362b1cbce711baf543cdc7baaa479a03"><div class="ttname"><a href="enum_q_printer_1_1_paper_source.html#a362b1cbce711baf543cdc7baaa479a03">QPrinter.PaperSource.Lower</a></div><div class="ttdeci">Lower</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00015">QPrinter.xcsm:15</a></div></div>
+<div class="ttc" id="class_q_printer_html_ac5086d872a431ebcfb336d9226024d0e"><div class="ttname"><a href="class_q_printer.html#ac5086d872a431ebcfb336d9226024d0e">QPrinter.QPrinter</a></div><div class="ttdeci">QPrinter(long handle)</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00065">QPrinter.xcsm:65</a></div></div>
+<div class="ttc" id="class_q_x_core_html_a69bd6bacc8152a7ac2c216b15f0e8adf"><div class="ttname"><a href="class_q_x_core.html#a69bd6bacc8152a7ac2c216b15f0e8adf">QXCore.PRINTERSETOUTFMT</a></div><div class="ttdeci">static const int PRINTERSETOUTFMT</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00394">QXCore.xcsm:394</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_unit_html_a1de5e45af54f9f098e4ae388726e9677"><div class="ttname"><a href="enum_q_printer_1_1_unit.html#a1de5e45af54f9f098e4ae388726e9677">QPrinter.Unit.Point</a></div><div class="ttdeci">Point</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00043">QPrinter.xcsm:43</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_paper_source_html_afe98ca0031aabe698b718b9f765f9de3"><div class="ttname"><a href="enum_q_printer_1_1_paper_source.html#afe98ca0031aabe698b718b9f765f9de3">QPrinter.PaperSource.EnvelopeManual</a></div><div class="ttdeci">EnvelopeManual</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00019">QPrinter.xcsm:19</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_unit_html_a2e06b2d39aa686a03db9025231c9033d"><div class="ttname"><a href="enum_q_printer_1_1_unit.html#a2e06b2d39aa686a03db9025231c9033d">QPrinter.Unit.Didot</a></div><div class="ttdeci">Didot</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00046">QPrinter.xcsm:46</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_print_range_html_a3c2ddfd4ea03c0cc63e201d7621931df"><div class="ttname"><a href="enum_q_printer_1_1_print_range.html#a3c2ddfd4ea03c0cc63e201d7621931df">QPrinter.PrintRange.Selection</a></div><div class="ttdeci">Selection</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00039">QPrinter.xcsm:39</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_unit_html_a095e36eb89b5b80b3eae3e4b52bd7c23"><div class="ttname"><a href="enum_q_printer_1_1_unit.html#a095e36eb89b5b80b3eae3e4b52bd7c23">QPrinter.Unit.Pica</a></div><div class="ttdeci">Pica</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00045">QPrinter.xcsm:45</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_unit_html_ad4328e623072c877483936ebd199a6ea"><div class="ttname"><a href="enum_q_printer_1_1_unit.html#ad4328e623072c877483936ebd199a6ea">QPrinter.Unit.Inch</a></div><div class="ttdeci">Inch</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00044">QPrinter.xcsm:44</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_paper_source_html_a441a2ef3c05ed3480b1d298048fcfb85"><div class="ttname"><a href="enum_q_printer_1_1_paper_source.html#a441a2ef3c05ed3480b1d298048fcfb85">QPrinter.PaperSource.SmallFormat</a></div><div class="ttdeci">SmallFormat</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00022">QPrinter.xcsm:22</a></div></div>
+<div class="ttc" id="class_q_printer_html_af5b2190e7d2a6e2817db9e986046427a"><div class="ttname"><a href="class_q_printer.html#af5b2190e7d2a6e2817db9e986046427a">QPrinter.QPrinter</a></div><div class="ttdeci">QPrinter(PrinterMode mode)</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00070">QPrinter.xcsm:70</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_printer_state_html_a36bc05a92dd2950b613ace141e2408ad"><div class="ttname"><a href="enum_q_printer_1_1_printer_state.html#a36bc05a92dd2950b613ace141e2408ad">QPrinter.PrinterState.Active</a></div><div class="ttdeci">Active</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00032">QPrinter.xcsm:32</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_duplex_mode_html_a45165ab770cd2d69dc52c86de88e688a"><div class="ttname"><a href="enum_q_printer_1_1_duplex_mode.html#a45165ab770cd2d69dc52c86de88e688a">QPrinter.DuplexMode.DuplexLongSide</a></div><div class="ttdeci">DuplexLongSide</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00054">QPrinter.xcsm:54</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_color_mode_html_a44b34381cc486137f6837bc3a8f9cef1"><div class="ttname"><a href="enum_q_printer_1_1_color_mode.html#a44b34381cc486137f6837bc3a8f9cef1">QPrinter.ColorMode.GrayScale</a></div><div class="ttdeci">GrayScale</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00011">QPrinter.xcsm:11</a></div></div>
+<div class="ttc" id="class_q_x_core_html_a6ec46778ac3b061e5115ed48eb95a4b9"><div class="ttname"><a href="class_q_x_core.html#a6ec46778ac3b061e5115ed48eb95a4b9">QXCore.PRINTERDTOR</a></div><div class="ttdeci">static const int PRINTERDTOR</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00393">QXCore.xcsm:393</a></div></div>
+<div class="ttc" id="class_illegal_argument_exception_html"><div class="ttname"><a href="class_illegal_argument_exception.html">IllegalArgumentException</a></div><div class="ttdoc">参数异常 </div><div class="ttdef"><b>Definition:</b> <a href="_exception_8xcs_source.html#l00174">Exception.xcs:174</a></div></div>
+<div class="ttc" id="class_q_printer_html_a509a29d41475b2c6bd3b0a23a0aca75f"><div class="ttname"><a href="class_q_printer.html#a509a29d41475b2c6bd3b0a23a0aca75f">QPrinter.outputFormat</a></div><div class="ttdeci">OutputFormat outputFormat() </div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00084">QPrinter.xcsm:84</a></div></div>
+<div class="ttc" id="class_q_printer_html_a9be3eb76433a88762198f856a95c8e6b"><div class="ttname"><a href="class_q_printer.html#a9be3eb76433a88762198f856a95c8e6b">QPrinter.need_delloc</a></div><div class="ttdeci">bool need_delloc</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00005">QPrinter.xcsm:5</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_paper_source_html_acfabbcb2242d56c4c2f20a1ec8b51a2a"><div class="ttname"><a href="enum_q_printer_1_1_paper_source.html#acfabbcb2242d56c4c2f20a1ec8b51a2a">QPrinter.PaperSource.FormSource</a></div><div class="ttdeci">FormSource</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00026">QPrinter.xcsm:26</a></div></div>
+<div class="ttc" id="class_q_printer_html_a32d626626eee0bc4ade146973f6abb1c"><div class="ttname"><a href="class_q_printer.html#a32d626626eee0bc4ade146973f6abb1c">QPrinter.finalize</a></div><div class="ttdeci">void finalize()</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00088">QPrinter.xcsm:88</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_unit_html_a169008488bf216d620a30130f220b755"><div class="ttname"><a href="enum_q_printer_1_1_unit.html#a169008488bf216d620a30130f220b755">QPrinter.Unit.Cicero</a></div><div class="ttdeci">Cicero</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00047">QPrinter.xcsm:47</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_page_order_html_a910e98ecd3e69938acd4c04ce9af92ac"><div class="ttname"><a href="enum_q_printer_1_1_page_order.html#a910e98ecd3e69938acd4c04ce9af92ac">QPrinter.PageOrder.FirstPageFirst</a></div><div class="ttdeci">FirstPageFirst</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00008">QPrinter.xcsm:8</a></div></div>
+<div class="ttc" id="class_q_printer_html"><div class="ttname"><a href="class_q_printer.html">QPrinter</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00003">QPrinter.xcsm:3</a></div></div>
+<div class="ttc" id="class_q_x_core_html_a0dfdb10444a7cb8b246bd73506e7f7a4"><div class="ttname"><a href="class_q_x_core.html#a0dfdb10444a7cb8b246bd73506e7f7a4">QXCore.PAINTERTYPE</a></div><div class="ttdeci">static const int PAINTERTYPE</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00387">QXCore.xcsm:387</a></div></div>
+<div class="ttc" id="class_q_paged_paint_device_html"><div class="ttname"><a href="class_q_paged_paint_device.html">QPagedPaintDevice</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_paged_paint_device_8xcsm_source.html#l00004">QPagedPaintDevice.xcsm:4</a></div></div>
+<div class="ttc" id="enum_q_printer_1_1_paper_source_html_a828286b69ab6477a135bc7869a8ece19"><div class="ttname"><a href="enum_q_printer_1_1_paper_source.html#a828286b69ab6477a135bc7869a8ece19">QPrinter.PaperSource.OnlyOne</a></div><div class="ttdeci">OnlyOne</div><div class="ttdef"><b>Definition:</b> <a href="_q_printer_8xcsm_source.html#l00014">QPrinter.xcsm:14</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

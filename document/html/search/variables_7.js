@@ -34,5 +34,6 @@ var searchData=
   ['graphicsscenemove',['GraphicsSceneMove',['../class_q_x_event.html#a2ede3bff5ac8b81cff3d6669d09fa3ed',1,'QXEvent']]],
   ['graphicssceneresize',['GraphicsSceneResize',['../class_q_x_event.html#a365ba46a2a12e9c8b6c99e7a9bdb693f',1,'QXEvent']]],
   ['graphicsscenewheel',['GraphicsSceneWheel',['../class_q_x_event.html#ae81b28a6b7f12ae178ba03c64f860636',1,'QXEvent']]],
+  ['grayscale',['GrayScale',['../enum_q_printer_1_1_color_mode.html#a44b34381cc486137f6837bc3a8f9cef1',1,'QPrinter::ColorMode']]],
   ['groupswitchmodifier',['GroupSwitchModifier',['../class_q_x_object.html#a60c4a819662587f655eb72cc8d157c46',1,'QXObject']]]
 ];

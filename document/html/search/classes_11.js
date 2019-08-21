@@ -2,6 +2,8 @@ var searchData=
 [
   ['readwritelock',['ReadWriteLock',['../class_read_write_lock.html',1,'']]],
   ['reentrantlock',['ReentrantLock',['../class_reentrant_lock.html',1,'']]],
+  ['regiontype',['RegionType',['../enum_q_x_widget_1_1_region_type.html',1,'QXWidget']]],
+  ['renderflag',['RenderFlag',['../enum_q_x_widget_1_1_render_flag.html',1,'QXWidget']]],
   ['renderhint',['RenderHint',['../class_q_x_painter_1_1_render_hint.html',1,'QXPainter']]],
   ['result',['Result',['../class_pattern_1_1_result.html',1,'Pattern']]],
   ['runnable',['Runnable',['../class_runnable.html',1,'']]],

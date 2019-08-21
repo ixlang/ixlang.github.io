@@ -118,14 +118,31 @@ class XLANGPlugManager
 
         String astyleExe = "";
         String astyleconf = "";
-        if (_system_.getPlatformId() == 0) {
-            astyleExe = apppath.appendPath("astyle.exe");
-        } else {
-            astyleExe = apppath.appendPath("astyle");
+        
+        String filename = "astyle";
+        
+        int plid = _system_.getPlatformId();
+        if (plid == 0) {
+            filename = filename + ".exe";
+        }else
+        if (plid == 1){
+            if (_system_.getOSBit() == 64){ 
+                filename = filename + "_linux64";
+            }else{
+                filename = filename + "_linux32";
+            }
+        }else
+        if (plid == 2){
+            if (_system_.getOSBit() == 64){ 
+                filename = filename + "_mac64";
+            }else{
+                filename = filename + "_mac32";
+            }
         }
 
+        astyleExe = apppath.appendPath(filename);
         astyleconf  = apppath.appendPath("astyle.conf");
-
+        _system_.chmod(astyleExe,0777);
         Vector<String> arglist = new Vector<String>();
         arglist.add(astyleExe);
         try {

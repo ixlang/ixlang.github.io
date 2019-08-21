@@ -35,18 +35,32 @@
 			"file":	".\\packages\\Logcat1.0.0.0",
 			"icon":	".\\packages\\Logcat1.0.0.0.png"
 		}, {
-			"package":	"Qt5.9.1",
-			"version":	"5.9.1.9",
-			"descr":	"优秀的跨平台界面库",
-			"author":	"https://github.com/ixlang/xlibraries",
-			"file":	".\\packages\\Qt5.9.15.9.1.9",
-			"icon":	".\\packages\\Qt5.9.15.9.1.9.png"
-		}, {
 			"package":	"Runtime",
 			"version":	"1.0.0.3",
 			"descr":	"用于运行时进程相关的处理",
 			"author":	"https://github.com/ixlang/xlibraries",
 			"file":	".\\packages\\Runtime1.0.0.3",
 			"icon":	".\\packages\\Runtime1.0.0.3.png"
+		}, {
+			"package":	"Sql",
+			"version":	"1.0.0.0",
+			"descr":	"数据库操作类,内含Sqlite和Mysql的操作类",
+			"author":	"https://github.com/ixlang/xlibraries",
+			"file":	".\\packages\\Sql1.0.0.0",
+			"icon":	".\\packages\\Sql1.0.0.0.png"
+		}, {
+			"package":	"Qt5.9.1",
+			"version":	"5.9.1.10",
+			"descr":	"优秀的跨平台界面库",
+			"author":	"https://github.com/ixlang/xlibraries",
+			"file":	".\\packages\\Qt5.9.15.9.1.10",
+			"icon":	".\\packages\\Qt5.9.15.9.1.10.png"
+		}, {
+			"package":	"XCImg",
+			"version":	"1.0.0.0",
+			"descr":	"动态生成验证码库",
+			"author":	"https://github.com/ixlang/xlibraries",
+			"file":	".\\packages\\XCImg1.0.0.0",
+			"icon":	".\\packages\\XCImg1.0.0.0.png"
 		}]
 }

@@ -1,11 +1,20 @@
 var searchData=
 [
-  ['vector2d',['Vector2D',['../class_q_x_object.html#a7c69f9abc0dcc54cb9ac5b472189e1e0',1,'QXObject.Vector2D()'],['../class_q_x_variant.html#a7c69f9abc0dcc54cb9ac5b472189e1e0',1,'QXVariant.Vector2D()']]],
-  ['vector3d',['Vector3D',['../class_q_x_object.html#a4243cabb4b2900fd1e66dffd40a9f67f',1,'QXObject.Vector3D()'],['../class_q_x_variant.html#a4243cabb4b2900fd1e66dffd40a9f67f',1,'QXVariant.Vector3D()']]],
-  ['vector4d',['Vector4D',['../class_q_x_object.html#a5f3e6121ef81c3b49a4cd7a2e9f3b894',1,'QXObject.Vector4D()'],['../class_q_x_variant.html#a5f3e6121ef81c3b49a4cd7a2e9f3b894',1,'QXVariant.Vector4D()']]],
-  ['verpattern',['VerPattern',['../enum_q_x_brush_1_1_style.html#a0d256fae58bc9c249374d67d0749411f',1,'QXBrush::Style']]],
-  ['vertical',['Vertical',['../class_q_x_widget.html#af619ad91b60d79e0329717c9ee1f330d',1,'QXWidget']]],
-  ['visible',['VISIBLE',['../class_q_x_core.html#a74c572b947a06a04914d47778597f059',1,'QXCore']]],
-  ['visible_5fslop',['VISIBLE_SLOP',['../class_q_x_sci.html#a1883b2039544f84aff2d24e913353211',1,'QXSci']]],
-  ['visible_5fstrict',['VISIBLE_STRICT',['../class_q_x_sci.html#a5e719e17e1062df48e26357656203b8f',1,'QXSci']]]
+  ['uint',['UInt',['../class_q_x_object.html#a577afba3e3c4fe10ac5bea73d00d46cb',1,'QXObject.UInt()'],['../class_q_x_variant.html#a577afba3e3c4fe10ac5bea73d00d46cb',1,'QXVariant.UInt()']]],
+  ['ulonglong',['ULongLong',['../class_q_x_object.html#a64f27588b18c94d5717621c54e43ac94',1,'QXObject.ULongLong()'],['../class_q_x_variant.html#a64f27588b18c94d5717621c54e43ac94',1,'QXVariant.ULongLong()']]],
+  ['unbuffered',['Unbuffered',['../class_q_x_buffer.html#a55454cd4651c3b8b0137af75f92169f3',1,'QXBuffer']]],
+  ['undo_5fmay_5fcoalesce',['UNDO_MAY_COALESCE',['../class_q_x_sci.html#ad8d6c0c079314f374e2a50bf41fcd900',1,'QXSci']]],
+  ['ungrabkeyboard',['UngrabKeyboard',['../class_q_x_event.html#a90560c828bb3970cca993357482637ce',1,'QXEvent']]],
+  ['ungrabmouse',['UngrabMouse',['../class_q_x_event.html#a7a1ada1ac44db803280cc09456b99dab',1,'QXEvent']]],
+  ['unsi_5ftcp',['UNSI_TCP',['../class_unsi.html#a6a0d2505a4255a6645dd022fe5c4b183',1,'Unsi']]],
+  ['unsi_5fudp',['UNSI_UDP',['../class_unsi.html#a9054e268dcc9880c0e3156c643a8d538',1,'Unsi']]],
+  ['uparrowcursor',['UpArrowCursor',['../class_q_x_object.html#a279542774fe9744cee7d7e91dd9b0653',1,'QXObject']]],
+  ['update',['UPDATE',['../class_q_x_core.html#ab4ea9483362f8e7d95fe2166bacc4f9f',1,'QXCore']]],
+  ['updateenable',['UPDATEENABLE',['../class_q_x_core.html#a71e303591780dab8e2e1a8c185f860fe',1,'QXCore']]],
+  ['updatelater',['UpdateLater',['../class_q_x_event.html#a94755638e526b33400c1acacfc075e66',1,'QXEvent']]],
+  ['updaterequest',['UpdateRequest',['../class_q_x_event.html#a0bcc5f800e73b065b227b988e7c17a11',1,'QXEvent']]],
+  ['url',['Url',['../class_q_x_object.html#a2dbdb3932e27305a32f100b0313c2356',1,'QXObject.Url()'],['../class_q_x_variant.html#a2dbdb3932e27305a32f100b0313c2356',1,'QXVariant.Url()']]],
+  ['user',['User',['../class_q_x_event.html#a7c652ee43700e88625f66af0f1e588c0',1,'QXEvent']]],
+  ['usertype',['UserType',['../class_q_x_object.html#a3ff84d2c6adeaf688b941e06654f91f7',1,'QXObject.UserType()'],['../class_q_x_variant.html#a3ff84d2c6adeaf688b941e06654f91f7',1,'QXVariant.UserType()']]],
+  ['uuid',['Uuid',['../class_q_x_object.html#ad86a80211b68bbf5203653573ec9fd1b',1,'QXObject.Uuid()'],['../class_q_x_variant.html#ad86a80211b68bbf5203653573ec9fd1b',1,'QXVariant.Uuid()']]]
 ];

@@ -20,5 +20,7 @@ var searchData=
   ['ontreeviewitemevent',['onTreeViewItemEvent',['../class_q_x_object_1_1on_tree_view_item_event.html',1,'QXObject']]],
   ['onupdatelistener',['onUpdateListener',['../class_q_x_object_1_1on_update_listener.html',1,'QXObject']]],
   ['operator',['Operator',['../class_file_system_1_1_operator.html',1,'FileSystem']]],
-  ['outofmemoryexception',['OutOfMemoryException',['../class_out_of_memory_exception.html',1,'']]]
+  ['orientation',['Orientation',['../enum_q_printer_1_1_orientation.html',1,'QPrinter']]],
+  ['outofmemoryexception',['OutOfMemoryException',['../class_out_of_memory_exception.html',1,'']]],
+  ['outputformat',['OutputFormat',['../enum_q_printer_1_1_output_format.html',1,'QPrinter']]]
 ];

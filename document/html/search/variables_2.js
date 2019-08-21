@@ -1,5 +1,18 @@
 var searchData=
 [
+  ['b0',['B0',['../enum_q_paged_paint_device_1_1_page_size.html#a90ad4bd5b920bf33a857dacf0ff8f520',1,'QPagedPaintDevice::PageSize']]],
+  ['b1',['B1',['../enum_q_paged_paint_device_1_1_page_size.html#a7348a6279e293d432fda1e37bbd1c6c9',1,'QPagedPaintDevice::PageSize']]],
+  ['b10',['B10',['../enum_q_paged_paint_device_1_1_page_size.html#ad608d5369101d5c4a16e7265d61b3e71',1,'QPagedPaintDevice::PageSize']]],
+  ['b2',['B2',['../enum_q_paged_paint_device_1_1_page_size.html#a65921faced121b45b2d215722c20f0b1',1,'QPagedPaintDevice::PageSize']]],
+  ['b3',['B3',['../enum_q_paged_paint_device_1_1_page_size.html#adccd26c8c2f2f1f2313c5b02745b523e',1,'QPagedPaintDevice::PageSize']]],
+  ['b4',['B4',['../enum_q_paged_paint_device_1_1_page_size.html#a6d4e67330f4d6f7f5b31aa01bddfa2e6',1,'QPagedPaintDevice::PageSize']]],
+  ['b5',['B5',['../enum_q_paged_paint_device_1_1_page_size.html#a27d44939ad451307f5764253049cbd55',1,'QPagedPaintDevice::PageSize']]],
+  ['b5extra',['B5Extra',['../enum_q_paged_paint_device_1_1_page_size.html#a0fb85438b9f0f6c10dcdd07fdf91099a',1,'QPagedPaintDevice::PageSize']]],
+  ['b6',['B6',['../enum_q_paged_paint_device_1_1_page_size.html#aa8fd055bbaccf6d07b40c9aaf41529e4',1,'QPagedPaintDevice::PageSize']]],
+  ['b7',['B7',['../enum_q_paged_paint_device_1_1_page_size.html#a20b97f8f2a571bf10dd546f8ea265df0',1,'QPagedPaintDevice::PageSize']]],
+  ['b8',['B8',['../enum_q_paged_paint_device_1_1_page_size.html#ac038f0bbe9c13788a6c98e2a42bc2a69',1,'QPagedPaintDevice::PageSize']]],
+  ['b9',['B9',['../enum_q_paged_paint_device_1_1_page_size.html#a504d335fecf7b8352ba06b3c924514c1',1,'QPagedPaintDevice::PageSize']]],
+  ['backbutton',['BackButton',['../class_q_x_object.html#ac7c0e5a7d9f630b0e4448ee09c44f6e8',1,'QXObject']]],
   ['background',['Background',['../class_color_role.html#a3d7d266be21ebcb669d1718ef225900e',1,'ColorRole']]],
   ['base',['Base',['../class_color_role.html#a93e1a70d740d93d47247bb427bd36a71',1,'ColorRole']]],
   ['bdiagpattern',['BDiagPattern',['../enum_q_x_brush_1_1_style.html#ac57454a467fa208ebdf80037880b51e4',1,'QXBrush::Style']]],

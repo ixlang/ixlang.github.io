@@ -23,6 +23,7 @@ typedef void* xptr;
 class XObject;
 class XMethod;
 class XContext;
+class XObjectId;
 
 #if  defined(_WIN32)||defined(_DRIVER)
 typedef 	__int32				xint;
@@ -35,6 +36,7 @@ typedef 	signed	long long   xlong;
 typedef		unsigned char		xbyte;
 typedef 	unsigned short		xchar;
 #endif
+
 
 class XNLEnv {
 public:
@@ -105,6 +107,13 @@ public:
 	virtual XObject * referenceObject( XObject * obj) = 0;
 	virtual void dereferenceObject(XObject * obj) = 0;
 
+	// 获取xlang中的对象ID,该ID不占用资源,无需释放, 但需要自己保障有效, 即上层finalize时 要使该对象失效
+	virtual XObjectId*  getObjectId(XObject * _class) = 0;
+
+	//根据ID 获取xlang上层的对象, 注意 返回值的对象指针不用的时候需要使用dereferenceObject进行释放 否则会占用资源
+	//该方法不核查id的有效性， 错误的ID将导致问题
+	virtual XObject * refObjectById(XObjectId * id) = 0;
+
 	//设置对象的值
 	virtual void setValue(XObject * object, xbyte byteValue) = 0;
 	virtual void setValue(XObject * object, xchar charValue) = 0;
@@ -128,6 +137,7 @@ public:
 
 	virtual bool isArray(XObject * object) = 0;
 	virtual xlong getLengthOfArray(XObject * object) = 0;
+	virtual xptr getPointerOfArray(XObject * object) = 0;
 	//创建一个对象
 	virtual XObject * createObject() = 0;
 
@@ -264,6 +274,25 @@ public:
 		return bret;
 	}
 
+	bool bool_invoke(XContext * context, XObject * pthis, int virtualMethodId) {
+		bool bret = false;
+
+		if (virtualMethodId == -1) {
+			assert(0 && "invalid MethodId");
+			return 0;
+		}
+		XMethod * m = getVirtualMethod(pthis, virtualMethodId);
+		if (m == 0) {
+			assert(0 && "invalid VirtualMethod");
+			return 0;
+		}
+		XObject * ret = invoke(context, pthis, m, 0);
+		if (ret) {
+			getBoolValue(ret, &bret);
+			dereferenceObject(ret);
+		}
+		return bret;
+	}
 	template<typename _FIRST, typename... _LIST>
 	xint int_invoke(XContext * context, XObject * pthis, int virtualMethodId, _FIRST _Var, _LIST... arg) {
 		xint nret = 0;
@@ -285,6 +314,25 @@ public:
 		return nret;
 	}
 
+	xint int_invoke(XContext * context, XObject * pthis, int virtualMethodId) {
+		xint nret = 0;
+
+		if (virtualMethodId == -1) {
+			assert(0 && "invalid MethodId");
+			return 0;
+		}
+		XMethod * m = getVirtualMethod(pthis, virtualMethodId);
+		if (m == 0) {
+			assert(0 && "invalid VirtualMethod");
+			return 0;
+		}
+		XObject * ret = invoke(context, pthis, m, 0);
+		if (ret) {
+			getIntValue(ret, &nret);
+			dereferenceObject(ret);
+		}
+		return nret;
+	}
 	template<typename _FIRST, typename... _LIST>
 	xchar char_invoke(XContext * context, XObject * pthis, int virtualMethodId, _FIRST _Var, _LIST... arg) {
 		xchar cret = 0;
@@ -306,6 +354,25 @@ public:
 		return cret;
 	}
 
+	xchar char_invoke(XContext * context, XObject * pthis, int virtualMethodId) {
+		xchar cret = 0;
+
+		if (virtualMethodId == -1) {
+			assert(0 && "invalid MethodId");
+			return 0;
+		}
+		XMethod * m = getVirtualMethod(pthis, virtualMethodId);
+		if (m == 0) {
+			assert(0 && "invalid VirtualMethod");
+			return 0;
+		}
+		XObject * ret = invoke(context, pthis, m, 0);
+		if (ret) {
+			getCharValue(ret, &cret);
+			dereferenceObject(ret);
+		}
+		return cret;
+	}
 	template<typename _FIRST, typename... _LIST>
 	xbyte byte_invoke(XContext * context, XObject * pthis, int virtualMethodId, _FIRST _Var, _LIST... arg) {
 		xbyte cbret = 0;
@@ -327,6 +394,25 @@ public:
 		return cbret;
 	}
 
+	xbyte byte_invoke(XContext * context, XObject * pthis, int virtualMethodId) {
+		xbyte cbret = 0;
+
+		if (virtualMethodId == -1) {
+			assert(0 && "invalid MethodId");
+			return 0;
+		}
+		XMethod * m = getVirtualMethod(pthis, virtualMethodId);
+		if (m == 0) {
+			assert(0 && "invalid VirtualMethod");
+			return 0;
+		}
+		XObject * ret = invoke(context, pthis, m, 0);
+		if (ret) {
+			getByteValue(ret, &cbret);
+			dereferenceObject(ret);
+		}
+		return cbret;
+	}
 	template<typename _FIRST, typename... _LIST>
 	xlong long_invoke(XContext * context, XObject * pthis, int virtualMethodId, _FIRST _Var, _LIST... arg) {
 		xlong lret = 0;
@@ -348,6 +434,25 @@ public:
 		return lret;
 	}
 
+	xlong long_invoke(XContext * context, XObject * pthis, int virtualMethodId) {
+		xlong lret = 0;
+
+		if (virtualMethodId == -1) {
+			assert(0 && "invalid MethodId");
+			return 0;
+		}
+		XMethod * m = getVirtualMethod(pthis, virtualMethodId);
+		if (m == 0) {
+			assert(0 && "invalid VirtualMethod");
+			return 0;
+		}
+		XObject * ret = invoke(context, pthis, m, 0);
+		if (ret) {
+			getLongValue(ret, &lret);
+			dereferenceObject(ret);
+		}
+		return lret;
+	}
 	template<typename _FIRST, typename... _LIST>
 	void void_invoke(XContext * context, XObject * pthis, XMethod * method, _FIRST _Var, _LIST... arg) {
 		XObject * ret = invoke(context, pthis, method, push_Args(context, _Var, arg...));
@@ -535,3 +640,10 @@ private:
 	}
 
 };
+
+/*
+entry:
+	XNLEXPORT xint XI_STDCALL XNLMain(XNLEnv * env, xint version);
+exit:
+	XNLEXPORT xint XI_STDCALL XNLExit(XNLEnv * env);
+*/

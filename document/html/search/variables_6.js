@@ -1,5 +1,8 @@
 var searchData=
 [
+  ['fanfoldgerman',['FanFoldGerman',['../enum_q_paged_paint_device_1_1_page_size.html#a2b0b36364dcf042fa01cfcf96778d25f',1,'QPagedPaintDevice::PageSize']]],
+  ['fanfoldgermanlegal',['FanFoldGermanLegal',['../enum_q_paged_paint_device_1_1_page_size.html#ac3fceeb6388aa37cfcff538ab8077338',1,'QPagedPaintDevice::PageSize']]],
+  ['fanfoldus',['FanFoldUS',['../enum_q_paged_paint_device_1_1_page_size.html#ab1b4011aa71e21d81c23924c42ded2e2',1,'QPagedPaintDevice::PageSize']]],
   ['fdiagpattern',['FDiagPattern',['../enum_q_x_brush_1_1_style.html#afbdc1818351043e183a874a8dd86efff',1,'QXBrush::Style']]],
   ['file_5fattribute_5fdirectory',['FILE_ATTRIBUTE_DIRECTORY',['../class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a4854233e40506430e7baac2de91a9f63',1,'FileSystem::Operator::WIN32_FIND_DATA']]],
   ['fileopen',['FileOpen',['../class_q_x_event.html#a00e383cfb94f665a6a00c55f565e1643',1,'QXEvent']]],
@@ -7,6 +10,7 @@ var searchData=
   ['fill_5fand_5fstroke',['FILL_AND_STROKE',['../class_q_x_painter_1_1_paint.html#a2f60305d45ea2e055cd53cbcef5a85f2',1,'QXPainter::Paint']]],
   ['fillrect',['FILLRECT',['../class_q_x_core.html#ad8abe4581248eddae99a7907a0f04fd9',1,'QXCore']]],
   ['firstbutton',['FirstButton',['../class_q_x_message_box.html#a9ace97a66229508f89efb99d9e50b456',1,'QXMessageBox']]],
+  ['firstpagefirst',['FirstPageFirst',['../enum_q_printer_1_1_page_order.html#a910e98ecd3e69938acd4c04ce9af92ac',1,'QPrinter::PageOrder']]],
   ['fixedheight',['FIXEDHEIGHT',['../class_q_x_core.html#a9ce7065e6253931a92e47b2e4deb6127',1,'QXCore']]],
   ['fixedsize',['FIXEDSIZE',['../class_q_x_core.html#a8a7c800d2936415abfe0e7a428642257',1,'QXCore']]],
   ['fixedwidth',['FIXEDWIDTH',['../class_q_x_core.html#adbc51395824d473466d60fdb7f85f60a',1,'QXCore']]],
@@ -16,6 +20,7 @@ var searchData=
   ['focusin',['FocusIn',['../class_q_x_event.html#afed9d00f738daa53c49fc6a4418b21a4',1,'QXEvent']]],
   ['focusout',['FocusOut',['../class_q_x_event.html#ae180563e6fb51c2ebfff1366f77b5bea',1,'QXEvent']]],
   ['folder',['FOLDER',['../class_q_x_core.html#a67228e5520e6d0ba92f5eab9c395b27f',1,'QXCore']]],
+  ['folio',['Folio',['../enum_q_paged_paint_device_1_1_page_size.html#a25c49a3b70d6aa01227b6abbabb4ae82',1,'QPagedPaintDevice::PageSize']]],
   ['font',['Font',['../class_q_x_object.html#ae21effd19cf9b200c6871d9325592929',1,'QXObject.Font()'],['../class_q_x_variant.html#ae21effd19cf9b200c6871d9325592929',1,'QXVariant.Font()']]],
   ['fontascent',['FONTASCENT',['../class_q_x_core.html#a3952d4b1a244a63edadfeed29d29ccc1',1,'QXCore']]],
   ['fontchange',['FontChange',['../class_q_x_event.html#af77c6f8facfba2e58638a1a15bbf7117',1,'QXEvent']]],
@@ -52,6 +57,8 @@ var searchData=
   ['format_5frgba8888',['Format_RGBA8888',['../class_q_x_image.html#adfb2d3635a3582ffd7c4f5237aae7dca',1,'QXImage']]],
   ['format_5frgba8888_5fpremultiplied',['Format_RGBA8888_Premultiplied',['../class_q_x_image.html#a3f21c320f0f37216cafa72ff6a38ede5',1,'QXImage']]],
   ['format_5frgbx8888',['Format_RGBX8888',['../class_q_x_image.html#ad8d6dd8e6657e71521870b6e81760ad5',1,'QXImage']]],
+  ['formsource',['FormSource',['../enum_q_printer_1_1_paper_source.html#acfabbcb2242d56c4c2f20a1ec8b51a2a',1,'QPrinter::PaperSource']]],
+  ['forwardbutton',['ForwardButton',['../class_q_x_object.html#af2b8ef86a06c2f5bc6286eb38def1b52',1,'QXObject']]],
   ['framelesswindowhint',['FramelessWindowHint',['../class_q_x_widget.html#ab3ae1474b2a00965ef69164db1ad42d6',1,'QXWidget']]],
   ['fswaddfile',['FSWADDFILE',['../class_q_x_core.html#aa502b638ff4b7559e6ebf187f24e9b08',1,'QXCore']]],
   ['fswremfile',['FSWREMFILE',['../class_q_x_core.html#a88c3b65331a7ff8bd19587775ab68faf',1,'QXCore']]],

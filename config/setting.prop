@@ -113,6 +113,14 @@
 			"type":	"keysequence",
 			"value":	"F12"
 		},
+		"编辑(E)->转为大写(&U):actionupper":	{
+			"type":	"keysequence",
+			"value":	"F12"
+		},
+		"编辑(E)->转为小写(&L):actionlower":	{
+			"type":	"keysequence",
+			"value":	"F12"
+		},
 		"编辑(E)->匹配括号(&M):actionmatchbrace":	{
 			"type":	"keysequence",
 			"value":	"F2"
@@ -148,6 +156,46 @@
 		"编辑(E)->转到行:actiongoto":	{
 			"type":	"keysequence",
 			"value":	"Ctrl+G"
+		},
+		"编辑(E)->键盘操作->游标上移:actioncurup":	{
+			"type":	"keysequence",
+			"value":	"Up"
+		},
+		"编辑(E)->键盘操作->游标左移:actioncurleft":	{
+			"type":	"keysequence",
+			"value":	"Left"
+		},
+		"编辑(E)->键盘操作->游标右移:actioncurright":	{
+			"type":	"keysequence",
+			"value":	"Right"
+		},
+		"编辑(E)->键盘操作->游标下移:actioncurdown":	{
+			"type":	"keysequence",
+			"value":	"Down"
+		},
+		"编辑(E)->键盘操作->游标至行首:actionlinebegin":	{
+			"type":	"keysequence",
+			"value":	"Home"
+		},
+		"编辑(E)->键盘操作->游标至行尾:actionlineend":	{
+			"type":	"keysequence",
+			"value":	"End"
+		},
+		"编辑(E)->键盘操作->向上翻页:actionprepage":	{
+			"type":	"keysequence",
+			"value":	"PageUp"
+		},
+		"编辑(E)->键盘操作->向下翻页:actionnextpage":	{
+			"type":	"keysequence",
+			"value":	"PageDown"
+		},
+		"编辑(E)->键盘操作->到顶部:actiontotop":	{
+			"type":	"keysequence",
+			"value":	""
+		},
+		"编辑(E)->键盘操作->到底部:actiontobottom":	{
+			"type":	"keysequence",
+			"value":	""
 		},
 		"编辑(E)->向前(&F):actiontofront":	{
 			"type":	"keysequence",
@@ -294,6 +342,72 @@
 			]
 		}
 	},
+	"文本编辑器配色":{
+		"配色方案:style_color":{
+			"type":"stringlist",
+			"list":[
+				"自动",
+				"自定义",
+				"浅色",
+				"深色"
+			]
+		},
+		"默认背景色:defaultbackcolor":{"type":	"color"},
+		"默认前景色:defaultforecolor":{"type":	"color"},
+		"选中背景色:selectedbackcolor":{"type":	"color"},
+		"选中前景色:selectedforecolor":{"type":	"color"},
+		"断点背景色:breakpointbackcolor":{"type":	"color"},
+		"断点前景色:breakpointforecolor":{"type":	"color"},
+		"保存标记背景色:markpointbackcolor":{"type":	"color"},
+		"保存标记前景色:markpointforecolor":{"type":	"color"},
+		"修改标记背景色:modifiedmarkbackcolor":{"type":	"color"},
+		"修改标记前景色:modifiedmarkforecolor":{"type":	"color"},
+		"保存标记背景色:savedmarkbackcolor":{"type":	"color"},
+		"保存标记前景色:savedmarkforecolor":{"type":	"color"},
+		"缩进参考线:indentguidecolor":{"type":	"color"},
+		"行号背景色:linenumberbackcolor":{"type":	"color"},
+		"行号前景色:linenumberforecolor":{"type":	"color"},
+		"配对高亮背景色:matchedbracebackcolor":{"type":	"color"},
+		"配对高亮前景色:matchedbraceforecolor":{"type":	"color"},
+		"注释文档前景色:doccommentkeyforecolor":{"type":	"color"},
+		"注释文档错误字前景色:doccommenterrforeforecolor":{"type":	"color"},
+		"全局类前景色:globalclassforecolor":{"type":	"color"},
+		"操作符字体色:operatorforecolor":{"type":	"color"},
+		"字符串错误色:stringeolcolor":{"type":	"color"},
+		"关键字颜色:wordforecolor":{"type":	"color"},
+		"关键字背景颜色:wordbackcolor":{"type":	"color"},
+		"动态关键字背景色:word2backcolor":{"type":	"color"},
+		"动态关键字色:word2forecolor":{"type":	"color"},
+		"字符串颜色:stringforecolor":{"type":	"color"},
+		"数字颜色:numberforecolor":{"type":	"color"},
+		"字符颜色:charforecolor":{"type":	"color"},
+		"预处理器颜色:preprocessorforecolor":{"type":	"color"},
+		"注释颜色:commentforecolor":{"type":	"color"},
+		"行注释眼色:commentlineforecolor":{"type":	"color"},
+		"文档注释颜色:doccommentforecolor":{"type":	"color"},
+		"提示信息字体色:calltipsforecolor":{"type":	"color"},
+		"提示信息背景色:calltipsbackcolor":{"type":	"color"},
+		"光标颜色:caretcolor":{"type":	"color"},
+		"光标所在行背景色:caretlinebackcolor":{"type":	"color"},
+		"折叠边栏颜色:foldmargincolor":{"type":	"color"},
+		"折叠边高亮色:foldmarginhicolor":{"type":	"color"},
+		"折叠标记背景颜色:folderbackcolor":{"type":	"color"},
+		"折叠标记颜色:folderforecolor":{"type":	"color"},
+		"折叠标记(未折叠状态)背景色:folderopenbackcolor":{"type":	"color"},
+		"折叠标记(未折叠状态)颜色:folderopenforecolor":{"type":	"color"},
+		"折叠标记(end状态)背景色:folderendbackcolor":{"type":	"color"},
+		"折叠标记(end状态)颜色:folderendforecolor":{"type":	"color"},
+		"折叠标记(中段状态)背景色:foldermidbackcolor":{"type":	"color"},
+		"折叠标记(中段状态)颜色:foldermidforecolor":{"type":	"color"},
+		"折叠标记(中段末尾状态)背景色:foldermidtailbackcolor":{"type":	"color"},
+		"折叠标记(中段末尾状态)颜色:foldermidtailforecolor":{"type":	"color"},
+		"折叠标记(子段)背景色:foldersubbackcolor":{"type":	"color"},
+		"折叠标记(子段)颜色:foldersubforecolor":{"type":	"color"},
+		"折叠标记(尾部)背景色:foldertailbackcolor":{"type":	"color"},
+		"折叠标记(尾部)颜色:foldertailforecolor":{"type":	"color"},
+		"待输入标记前景色:indicforecolor":{"type":	"color"},
+		"待输入标记背景色:indicbackcolor":{"type":	"color"}
+	},
 	"版本管理":{
 		"版本控制系统:verc":{
 			"type":"stringlist",
@@ -405,6 +519,20 @@
 			"list":[
 				"$(workspace)",
 				"浏览目录..."
+			]
+		},
+		"启动时打开首页:welcomeonstart":{
+			"type":"stringlist",
+			"list":[
+				"关闭",
+				"开启"
+			]
+		},
+		"关闭项目时打开首页:welcomeonclose":{
+			"type":"stringlist",
+			"list":[
+				"关闭",
+				"开启"
 			]
 		}
 	},

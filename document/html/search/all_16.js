@@ -8,7 +8,7 @@ var searchData=
   ['vector4d',['Vector4D',['../class_q_x_object.html#a5f3e6121ef81c3b49a4cd7a2e9f3b894',1,'QXObject.Vector4D()'],['../class_q_x_variant.html#a5f3e6121ef81c3b49a4cd7a2e9f3b894',1,'QXVariant.Vector4D()']]],
   ['verpattern',['VerPattern',['../enum_q_x_brush_1_1_style.html#a0d256fae58bc9c249374d67d0749411f',1,'QXBrush::Style']]],
   ['vertical',['Vertical',['../class_q_x_widget.html#af619ad91b60d79e0329717c9ee1f330d',1,'QXWidget']]],
-  ['viewport',['viewPort',['../class_q_x_sci.html#a0c7f789152124d43e8f4294d350314d2',1,'QXSci.viewPort()'],['../class_q_x_tree_view.html#a0c7f789152124d43e8f4294d350314d2',1,'QXTreeView.viewPort()']]],
+  ['viewport',['viewPort',['../class_q_x_sci.html#ac57a7714fedec5eb568893eedd954458',1,'QXSci.viewPort()'],['../class_q_x_tree_view.html#a0c7f789152124d43e8f4294d350314d2',1,'QXTreeView.viewPort()']]],
   ['visible',['VISIBLE',['../class_q_x_core.html#a74c572b947a06a04914d47778597f059',1,'QXCore']]],
   ['visible_5fslop',['VISIBLE_SLOP',['../class_q_x_sci.html#a1883b2039544f84aff2d24e913353211',1,'QXSci']]],
   ['visible_5fstrict',['VISIBLE_STRICT',['../class_q_x_sci.html#a5e719e17e1062df48e26357656203b8f',1,'QXSci']]]

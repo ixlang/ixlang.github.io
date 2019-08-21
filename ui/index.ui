@@ -639,7 +639,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;xlang是一门支持多设备平台以及在java中运行的新生语言.能生成操作系统支持运行的可执行文件,也可以生成'一次编译,处处运行'的字节码文件...&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;xlang是一门支持多设备平台的新生语言.能生成操作系统支持运行的可执行文件,也可以生成'一次编译,处处运行'的字节码文件...&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
    <property name="wordWrap">
     <bool>true</bool>

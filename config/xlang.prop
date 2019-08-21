@@ -73,6 +73,9 @@
 				"禁用(nilptr)"
 			]
 		},
+		"忽略指定警告:ignorewl":{
+			"type":"string"
+		},
 		"压缩目标代码以减小体积:compdest":{
 			"type":"stringlist",
 			"list":[
