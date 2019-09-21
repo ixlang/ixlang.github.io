@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.6 Release</span>
+   &#160;<span id="projectnumber">v2.7 Release</span>
    </div>
    <div id="projectbrief">项目介绍</div>
   </td>
@@ -295,26 +295,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QFileSystemWatcher&quot;</span>)){</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_file_system_watcher.html">QXFileSystemWatcher</a>(<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">return</span> nilptr;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QDateTimeEdit&quot;</span>)){</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_date_time_edit.html">QXDateTimeEdit</a>(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QDateEdit&quot;</span>)){</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_date_edit.html">QXDateEdit</a>(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QTimeEdit&quot;</span>)){</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_time_edit.html">QXTimeEdit</a>(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">if</span> (objectClass.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;QTextEdit&quot;</span>)){</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_q_x_text_edit.html">QXTextEdit</a>(<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="ttc" id="class_q_x_time_edit_html"><div class="ttname"><a href="class_q_x_time_edit.html">QXTimeEdit</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_time_edit_8xcsm_source.html#l00004">QXTimeEdit.xcsm:4</a></div></div>
 <div class="ttc" id="class_q_x_widget_html"><div class="ttname"><a href="class_q_x_widget.html">QXWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_widget_8xcsm_source.html#l00006">QXWidget.xcsm:6</a></div></div>
 <div class="ttc" id="class_q_x_dialog_html"><div class="ttname"><a href="class_q_x_dialog.html">QXDialog</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_dialog_8xcsm_source.html#l00002">QXDialog.xcsm:2</a></div></div>
 <div class="ttc" id="class_q_x_check_box_html"><div class="ttname"><a href="class_q_x_check_box.html">QXCheckBox</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_check_box_8xcsm_source.html#l00001">QXCheckBox.xcsm:1</a></div></div>
 <div class="ttc" id="class_q_x_push_button_html"><div class="ttname"><a href="class_q_x_push_button.html">QXPushButton</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_push_button_8xcsm_source.html#l00001">QXPushButton.xcsm:1</a></div></div>
 <div class="ttc" id="class_q_x_mdi_area_html"><div class="ttname"><a href="class_q_x_mdi_area.html">QXMdiArea</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_mdi_area_8xcsm_source.html#l00001">QXMdiArea.xcsm:1</a></div></div>
 <div class="ttc" id="class_q_x_label_html"><div class="ttname"><a href="class_q_x_label.html">QXLabel</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_label_8xcsm_source.html#l00002">QXLabel.xcsm:2</a></div></div>
+<div class="ttc" id="class_q_x_text_edit_html"><div class="ttname"><a href="class_q_x_text_edit.html">QXTextEdit</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_text_edit_8xcsm_source.html#l00004">QXTextEdit.xcsm:4</a></div></div>
 <div class="ttc" id="class_q_x_dock_widget_html"><div class="ttname"><a href="class_q_x_dock_widget.html">QXDockWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_dock_widget_8xcsm_source.html#l00002">QXDockWidget.xcsm:2</a></div></div>
 <div class="ttc" id="class_q_x_menu_html"><div class="ttname"><a href="class_q_x_menu.html">QXMenu</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_menu_8xcsm_source.html#l00001">QXMenu.xcsm:1</a></div></div>
 <div class="ttc" id="class_q_x_combo_box_html"><div class="ttname"><a href="class_q_x_combo_box.html">QXComboBox</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_combo_box_8xcsm_source.html#l00002">QXComboBox.xcsm:2</a></div></div>
 <div class="ttc" id="class_q_x_line_edit_html"><div class="ttname"><a href="class_q_x_line_edit.html">QXLineEdit</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_line_edit_8xcsm_source.html#l00002">QXLineEdit.xcsm:2</a></div></div>
 <div class="ttc" id="class_string_html_a6658a49f6ae8d217501c31f372610be4"><div class="ttname"><a href="class_string.html#a6658a49f6ae8d217501c31f372610be4">String.equals</a></div><div class="ttdeci">bool equals(String other)</div><div class="ttdoc">测试两个串是否相等 </div></div>
 <div class="ttc" id="class_q_x_tool_bar_html"><div class="ttname"><a href="class_q_x_tool_bar.html">QXToolBar</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_tool_bar_8xcsm_source.html#l00004">QXToolBar.xcsm:4</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_html"><div class="ttname"><a href="class_q_x_date_time_edit.html">QXDateTimeEdit</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00004">QXDateTimeEdit.xcsm:4</a></div></div>
 <div class="ttc" id="class_q_x_tree_view_html"><div class="ttname"><a href="class_q_x_tree_view.html">QXTreeView</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_tree_view_8xcsm_source.html#l00001">QXTreeView.xcsm:1</a></div></div>
 <div class="ttc" id="class_q_x_table_widget_html"><div class="ttname"><a href="class_q_x_table_widget.html">QXTableWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_table_widget_8xcsm_source.html#l00004">QXTableWidget.xcsm:4</a></div></div>
 <div class="ttc" id="class_q_x_file_system_watcher_html"><div class="ttname"><a href="class_q_x_file_system_watcher.html">QXFileSystemWatcher</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_file_system_watcher_8xcsm_source.html#l00004">QXFileSystemWatcher.xcsm:4</a></div></div>
 <div class="ttc" id="class_q_x_status_bar_html"><div class="ttname"><a href="class_q_x_status_bar.html">QXStatusBar</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_status_bar_8xcs_source.html#l00003">QXStatusBar.xcs:3</a></div></div>
 <div class="ttc" id="class_q_x_action_html"><div class="ttname"><a href="class_q_x_action.html">QXAction</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_action_8xcsm_source.html#l00001">QXAction.xcsm:1</a></div></div>
 <div class="ttc" id="class_q_x_menu_bar_html"><div class="ttname"><a href="class_q_x_menu_bar.html">QXMenuBar</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_menu_bar_8xcsm_source.html#l00001">QXMenuBar.xcsm:1</a></div></div>
+<div class="ttc" id="class_q_x_date_edit_html"><div class="ttname"><a href="class_q_x_date_edit.html">QXDateEdit</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_edit_8xcsm_source.html#l00004">QXDateEdit.xcsm:4</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -7,6 +7,7 @@ var searchData=
   ['data',['data',['../class_file_system_1_1_operator_1_1_w_i_n32___f_i_n_d___d_a_t_a.html#a0ad80c378fb4b5fe4bc8a855302c4ae1',1,'FileSystem::Operator::WIN32_FIND_DATA']]],
   ['date',['Date',['../class_q_x_object.html#a3ff2567dc57aab4dae6fd9506be8c7b7',1,'QXObject.Date()'],['../class_q_x_variant.html#a3ff2567dc57aab4dae6fd9506be8c7b7',1,'QXVariant.Date()']]],
   ['datetime',['DateTime',['../class_q_x_object.html#a3567c97c312b2688d1f502edf77e08ae',1,'QXObject.DateTime()'],['../class_q_x_variant.html#a3567c97c312b2688d1f502edf77e08ae',1,'QXVariant.DateTime()']]],
+  ['day',['day',['../class_q_x_date_time_edit_1_1_q_date.html#a4c11afc03fc3ee49bab660def6558f2a',1,'QXDateTimeEdit::QDate']]],
   ['deactivatecontrol',['DeactivateControl',['../class_q_x_event.html#a93cb7ef177b664c179406d7c579e15a3',1,'QXEvent']]],
   ['debugging_5fcursor_5fpos',['DEBUGGING_CURSOR_POS',['../class_q_x_sci.html#a6b6c1f271a2c315e7d086f1b61570d35',1,'QXSci']]],
   ['default',['Default',['../class_q_x_message_box.html#a0bd1955b8d1e437c493270c04de31b03',1,'QXMessageBox']]],

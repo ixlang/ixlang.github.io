@@ -7,6 +7,7 @@ var searchData=
   ['papersource',['PaperSource',['../enum_q_printer_1_1_paper_source.html',1,'QPrinter']]],
   ['pattern',['Pattern',['../class_pattern.html',1,'']]],
   ['penstyle',['PenStyle',['../enum_q_x_painter_1_1_pen_style.html',1,'QXPainter']]],
+  ['previewhint',['PreviewHint',['../enum_report_engine_1_1_preview_hint.html',1,'ReportEngine']]],
   ['printdialogoption',['PrintDialogOption',['../enum_q_abstract_print_dialog_1_1_print_dialog_option.html',1,'QAbstractPrintDialog']]],
   ['printermode',['PrinterMode',['../enum_q_printer_1_1_printer_mode.html',1,'QPrinter']]],
   ['printerstate',['PrinterState',['../enum_q_printer_1_1_printer_state.html',1,'QPrinter']]],

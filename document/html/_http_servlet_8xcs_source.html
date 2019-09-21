@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.6 Release</span>
+   &#160;<span id="projectnumber">v2.7 Release</span>
    </div>
    <div id="projectbrief">项目介绍</div>
   </td>
@@ -95,15 +95,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_http_servlet.html">    6</a></span>&#160;<span class="keyword">static</span> <span class="keyword">class </span><a class="code" href="class_http_servlet.html">HttpServlet</a>{</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_http_servlet.html#a6b068fa11138f021f8aa4b1d60e2bc53">HttpServlet</a>(<span class="keywordtype">bool</span> filterPost, <a class="code" href="class_string.html">String</a> pattern);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_http_servlet.html#acbb0464b722fe81da21dd04e9b864863">doGet</a>(HttpServletRequst request, <a class="code" href="class_http_servlet_response.html">HttpServletResponse</a> response);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_http_servlet.html#a576857ab66730c5cb1703ff019462eeb">doPost</a>(HttpServletRequst request, <a class="code" href="class_http_servlet_response.html">HttpServletResponse</a> response);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_http_servlet.html#a5cebc351ce5fff054d77671a3d97e736">onPostStream</a>(HttpServletRequst request, <a class="code" href="class_string.html">String</a> key, <a class="code" href="class_string.html">String</a> filename, <a class="code" href="class_string.html">String</a> contentType, <a class="code" href="class_string.html">String</a> transferEncoding, byte[]data, <span class="keywordtype">long</span> datainOffset);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_http_servlet.html#a32d626626eee0bc4ade146973f6abb1c">finalize</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_http_servlet.html#a6b068fa11138f021f8aa4b1d60e2bc53">HttpServlet</a>(<span class="keywordtype">int</span> httpCode);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_http_servlet.html#acbb0464b722fe81da21dd04e9b864863">doGet</a>(HttpServletRequst request, <a class="code" href="class_http_servlet_response.html">HttpServletResponse</a> response);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_http_servlet.html#a576857ab66730c5cb1703ff019462eeb">doPost</a>(HttpServletRequst request, <a class="code" href="class_http_servlet_response.html">HttpServletResponse</a> response);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_http_servlet.html#a5cebc351ce5fff054d77671a3d97e736">onPostStream</a>(HttpServletRequst request, <a class="code" href="class_string.html">String</a> key, <a class="code" href="class_string.html">String</a> filename, <a class="code" href="class_string.html">String</a> contentType, <a class="code" href="class_string.html">String</a> transferEncoding, byte[]data, <span class="keywordtype">long</span> datainOffset);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_http_servlet.html#a32d626626eee0bc4ade146973f6abb1c">finalize</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
 <div class="ttc" id="class_http_servlet_response_html"><div class="ttname"><a href="class_http_servlet_response.html">HttpServletResponse</a></div><div class="ttdoc">http响应类 </div><div class="ttdef"><b>Definition:</b> <a href="_http_servlet_response_8xcs_source.html#l00006">HttpServletResponse.xcs:6</a></div></div>
 <div class="ttc" id="class_http_servlet_html_a6b068fa11138f021f8aa4b1d60e2bc53"><div class="ttname"><a href="class_http_servlet.html#a6b068fa11138f021f8aa4b1d60e2bc53">HttpServlet.HttpServlet</a></div><div class="ttdeci">HttpServlet(bool filterPost, String pattern)</div><div class="ttdoc">构造 </div></div>
 <div class="ttc" id="class_http_servlet_html"><div class="ttname"><a href="class_http_servlet.html">HttpServlet</a></div><div class="ttdoc">HTTP Servlet 抽象类 </div><div class="ttdef"><b>Definition:</b> <a href="_http_servlet_8xcs_source.html#l00006">HttpServlet.xcs:6</a></div></div>

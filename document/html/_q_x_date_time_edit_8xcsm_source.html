@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/XStudio/qt5/widgets/QXDateTimeEdit.xcsm 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v2.7 Release</span>
+   </div>
+   <div id="projectbrief">项目介绍</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_735e24decaf1c49b6a1919196d463802.html">XStudio</a></li><li class="navelem"><a class="el" href="dir_bf5f207b5684b49bd4be31a45c20b08f.html">qt5</a></li><li class="navelem"><a class="el" href="dir_d764631b0f579dfcfd22963eb2f03413.html">widgets</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">QXDateTimeEdit.xcsm</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_q_x_date_time_edit_8xcsm.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//xlang Source, Name:QDateTimeEdit.xcsm </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//Date: Thu Sep 20:14:47 2019 </span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_q_x_date_time_edit.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_q_x_date_time_edit.html">QXDateTimeEdit</a> : <a class="code" href="class_q_x_widget.html">QXWidget</a>{</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_q_x_date_time_edit.html#a83563dcbf9f42fe9b72f37dd16d700a7">    6</a></span>&#160;    onDateTimeChangeListener <a class="code" href="class_q_x_date_time_edit.html#a83563dcbf9f42fe9b72f37dd16d700a7">lis</a> = nilptr;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_q_x_date_time_edit_1_1_q_time.html">    8</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">class </span>QTime{</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_q_x_date_time_edit_1_1_q_time.html#a90c2ace84e5523d06b7162ea5928acc1">    9</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_q_x_date_time_edit_1_1_q_time.html#a15df9ba285cfd842f284025f904edc9c">hour</a>,  <a class="code" href="class_q_x_date_time_edit_1_1_q_time.html#a3e202b201e6255d975cd6d3aff1f5a4d">min</a>,  <a class="code" href="class_q_x_date_time_edit_1_1_q_time.html#a90c2ace84e5523d06b7162ea5928acc1">sec</a>,  <a class="code" href="class_q_x_date_time_edit_1_1_q_time.html#ad957f34cd6e8272740bc231865080b22">msec</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_q_x_date_time_edit_1_1_q_time.html#a6b78342f158ab6a1df50d7cf76ef9697">   10</a></span>&#160;        <a class="code" href="class_q_x_date_time_edit_1_1_q_time.html#a6b78342f158ab6a1df50d7cf76ef9697">QTime</a>(<span class="keywordtype">int</span> h, <span class="keywordtype">int</span> m, <span class="keywordtype">int</span> s,<span class="keywordtype">int</span> ms){</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;            hour = h;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;            min = m;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;            sec = s; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            msec = ms;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        }</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    };</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_q_x_date_time_edit_1_1_q_date.html">   18</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">class </span>QDate{</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_q_x_date_time_edit_1_1_q_date.html#abeac221e38b7b9ce7df8722c842bf671">   19</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_q_x_date_time_edit_1_1_q_date.html#abeac221e38b7b9ce7df8722c842bf671">year</a>,  <a class="code" href="class_q_x_date_time_edit_1_1_q_date.html#a25b602fa15f03b01f61a900f1f68a67d">mon</a>,  <a class="code" href="class_q_x_date_time_edit_1_1_q_date.html#a4c11afc03fc3ee49bab660def6558f2a">day</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_q_x_date_time_edit_1_1_q_date.html#a594b19bf0d8e9dd73358daebb81451e3">   20</a></span>&#160;        <a class="code" href="class_q_x_date_time_edit_1_1_q_date.html#a594b19bf0d8e9dd73358daebb81451e3">QDate</a>(<span class="keywordtype">int</span> <a class="code" href="class_q_x_widget.html#ad8624297a2255651b8ad720b967aa0d6">y</a>, <span class="keywordtype">int</span> m, <span class="keywordtype">int</span> d){</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            year = <a class="code" href="class_q_x_widget.html#ad8624297a2255651b8ad720b967aa0d6">y</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            mon = m;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            day = d; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    };</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_q_x_date_time_edit.html#a25e152f4d2664e0c5b6d6bbc5cd1e8a2">   27</a></span>&#160;    <a class="code" href="class_q_x_date_time_edit.html#a25e152f4d2664e0c5b6d6bbc5cd1e8a2">QXDateTimeEdit</a>() {<span class="comment">//构造</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="comment">//TODO: </span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_q_x_date_time_edit.html#ac8fb0746a6ff2553025b72a244173873">   31</a></span>&#160;    <a class="code" href="class_q_x_date_time_edit.html#ac8fb0746a6ff2553025b72a244173873">QXDateTimeEdit</a>(<span class="keywordtype">long</span> h) {<span class="comment">//构造</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        super(h);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_q_x_date_time_edit.html#a183d7a8794eeba09aa2fe814af1a90bc">   35</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_q_x_date_time_edit.html#a183d7a8794eeba09aa2fe814af1a90bc">create</a>(){</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a> = createQObject(<a class="code" href="class_q_type.html">QType</a>.<a class="code" href="class_q_type.html#ac5a8eaa80d26c76f3a5047c355a0136a">qtDateTimeEdit</a>, <span class="keyword">this</span>, 0);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a> == 0){</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_q_x_date_time_edit.html#aa66d027b4d8c7972332df51fe806748d">   43</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_q_x_date_time_edit.html#aa66d027b4d8c7972332df51fe806748d">create</a>(<a class="code" href="class_q_x_widget.html">QXWidget</a> parent){</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a> = createQObject(<a class="code" href="class_q_type.html">QType</a>.<a class="code" href="class_q_type.html#ac5a8eaa80d26c76f3a5047c355a0136a">qtDateTimeEdit</a>, <span class="keyword">this</span>, parent.nativehandle);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a> == 0){</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }    </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_q_x_date_time_edit_1_1on_date_time_change_listener.html">   51</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">class </span>onDateTimeChangeListener{</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_q_x_date_time_edit_1_1on_date_time_change_listener.html#a5ae380359240fd8dacfb6569a2bbd2de">   52</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_q_x_date_time_edit_1_1on_date_time_change_listener.html#a5ae380359240fd8dacfb6569a2bbd2de">onDateTimeChange</a>(<a class="code" href="class_q_x_date_time_edit.html">QXDateTimeEdit</a>, <span class="keywordtype">long</span>){</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_q_x_date_time_edit_1_1on_date_time_change_listener.html#a0474d44b86d3e6d35a328724919ca92f">   56</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_q_x_date_time_edit_1_1on_date_time_change_listener.html#a0474d44b86d3e6d35a328724919ca92f">onDateChange</a>(<a class="code" href="class_q_x_date_time_edit.html">QXDateTimeEdit</a>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>){</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_q_x_date_time_edit_1_1on_date_time_change_listener.html#a75092bd8e8f5333c732161db03a54cef">   60</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_q_x_date_time_edit_1_1on_date_time_change_listener.html#a75092bd8e8f5333c732161db03a54cef">onTimeChange</a>(<a class="code" href="class_q_x_date_time_edit.html">QXDateTimeEdit</a>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>){</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    };</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_q_x_date_time_edit.html#a69b37aced7bd60b256ac0e88f46ceda2">   65</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_x_date_time_edit.html#a69b37aced7bd60b256ac0e88f46ceda2">onDateTimeChange</a>(<span class="keywordtype">long</span> dateTime){</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">if</span> (lis != nilptr){</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            lis.onDateTimeChange(<span class="keyword">this</span>, dateTime);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_q_x_date_time_edit.html#af0e281950835cfedef73f03d64d98661">   71</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_x_date_time_edit.html#af0e281950835cfedef73f03d64d98661">onDateChange</a>(<span class="keywordtype">int</span> year,<span class="keywordtype">int</span> month,<span class="keywordtype">int</span> day){</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">if</span> (lis != nilptr){</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            lis.onDateChange(<span class="keyword">this</span>, year, month, day);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_q_x_date_time_edit.html#a9ea23e9fdae0b855ca96fa14bc6c66e3">   77</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_x_date_time_edit.html#a9ea23e9fdae0b855ca96fa14bc6c66e3">onTimeChange</a>(<span class="keywordtype">int</span> hour ,<span class="keywordtype">int</span> min ,<span class="keywordtype">int</span> sec,<span class="keywordtype">int</span> msec){</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">if</span> (lis != nilptr){</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            lis.onTimeChange(<span class="keyword">this</span>, hour, min, sec, msec);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_q_x_date_time_edit.html#a9f93b855ec087f6fe703030bc008e5f0">   83</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_x_date_time_edit.html#a9f93b855ec087f6fe703030bc008e5f0">setDateTime</a>(<span class="keywordtype">long</span> milliSecond){</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        widget_set_native_value(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a4351875cc607b4723adaec974cbbcd14">SETDATETIME</a>, milliSecond);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_q_x_date_time_edit.html#a5af10280783b7832a07f6016c2d35636">   87</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_x_date_time_edit.html#a5af10280783b7832a07f6016c2d35636">setDate</a>(<span class="keywordtype">int</span> year, <span class="keywordtype">int</span> mon, <span class="keywordtype">int</span> day){</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordtype">int</span> [] params = {year, mon, day};</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        widget_set_object_value(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a1c11f7eb52769aee25753ca20400e23b">SETDATE</a>, params);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_q_x_date_time_edit.html#aba4b8b621e364744e1b00c811bf3bfd0">   92</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_x_date_time_edit.html#aba4b8b621e364744e1b00c811bf3bfd0">setTime</a>(<span class="keywordtype">int</span> hour, <span class="keywordtype">int</span> min, <span class="keywordtype">int</span> sec, <span class="keywordtype">int</span> msec){</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordtype">int</span> [] params = {hour, min, sec, msec};</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        widget_set_object_value(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#ad769d1f0fef83fb1136851d1be323234">SETTIME</a>, params);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_q_x_date_time_edit.html#a689e1b088b130250fb684cd486a19e9b">   97</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_q_x_date_time_edit.html#a689e1b088b130250fb684cd486a19e9b">getDateTime</a>(){</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">return</span> long_get(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a13ee598229af17930553cdb72c65bcc7">GETDATETIME</a>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_q_x_date_time_edit.html#a23a977e2ddfdd4a72e45c68f47df6e7f">  101</a></span>&#160;    QTime <a class="code" href="class_q_x_date_time_edit.html#a23a977e2ddfdd4a72e45c68f47df6e7f">getTime</a>(){</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordtype">int</span> [] params = <span class="keyword">new</span> <span class="keywordtype">int</span> [4];</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        widget_set_object_value(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a871ec2c918e7b56dcfb7d24667318b1c">GETTIME</a>, params);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> QTime(params[0], params[1], params[2], params[3]);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="class_q_x_date_time_edit.html#ac316f8cc63601fe7ce20678c0b150d51">  107</a></span>&#160;    QDate <a class="code" href="class_q_x_date_time_edit.html#ac316f8cc63601fe7ce20678c0b150d51">getDate</a>(){</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordtype">int</span> [] params = <span class="keyword">new</span> <span class="keywordtype">int</span> [3];</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        widget_set_object_value(<a class="code" href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">nativehandle</a>, <a class="code" href="class_q_x_core.html#a7100e2d88cccb51bacfeca9b867c2004">GETDATE</a>, params);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> QDate(params[0], params[1], params[2]);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;};</div>
+<div class="ttc" id="class_q_x_date_time_edit_html_ac316f8cc63601fe7ce20678c0b150d51"><div class="ttname"><a href="class_q_x_date_time_edit.html#ac316f8cc63601fe7ce20678c0b150d51">QXDateTimeEdit.getDate</a></div><div class="ttdeci">QDate getDate()</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00107">QXDateTimeEdit.xcsm:107</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_html_a69b37aced7bd60b256ac0e88f46ceda2"><div class="ttname"><a href="class_q_x_date_time_edit.html#a69b37aced7bd60b256ac0e88f46ceda2">QXDateTimeEdit.onDateTimeChange</a></div><div class="ttdeci">void onDateTimeChange(long dateTime)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00065">QXDateTimeEdit.xcsm:65</a></div></div>
+<div class="ttc" id="class_q_x_core_html_ad769d1f0fef83fb1136851d1be323234"><div class="ttname"><a href="class_q_x_core.html#ad769d1f0fef83fb1136851d1be323234">QXCore.SETTIME</a></div><div class="ttdeci">static const int SETTIME</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00408">QXCore.xcsm:408</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_1_1_q_date_html_a25b602fa15f03b01f61a900f1f68a67d"><div class="ttname"><a href="class_q_x_date_time_edit_1_1_q_date.html#a25b602fa15f03b01f61a900f1f68a67d">QXDateTimeEdit.QDate.mon</a></div><div class="ttdeci">int mon</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00019">QXDateTimeEdit.xcsm:19</a></div></div>
+<div class="ttc" id="class_q_x_native_html_adc4b3fd5b05624dfe6705339748b8aab"><div class="ttname"><a href="class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab">QXNative.nativehandle</a></div><div class="ttdeci">long nativehandle</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_native_8xcsm_source.html#l00003">QXNative.xcsm:3</a></div></div>
+<div class="ttc" id="class_q_x_widget_html"><div class="ttname"><a href="class_q_x_widget.html">QXWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_widget_8xcsm_source.html#l00006">QXWidget.xcsm:6</a></div></div>
+<div class="ttc" id="class_q_type_html"><div class="ttname"><a href="class_q_type.html">QType</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_types_8xcsm_source.html#l00001">QXTypes.xcsm:1</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_1_1_q_time_html_a90c2ace84e5523d06b7162ea5928acc1"><div class="ttname"><a href="class_q_x_date_time_edit_1_1_q_time.html#a90c2ace84e5523d06b7162ea5928acc1">QXDateTimeEdit.QTime.sec</a></div><div class="ttdeci">int sec</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00009">QXDateTimeEdit.xcsm:9</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_html_af0e281950835cfedef73f03d64d98661"><div class="ttname"><a href="class_q_x_date_time_edit.html#af0e281950835cfedef73f03d64d98661">QXDateTimeEdit.onDateChange</a></div><div class="ttdeci">void onDateChange(int year,int month,int day)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00071">QXDateTimeEdit.xcsm:71</a></div></div>
+<div class="ttc" id="class_q_x_core_html_a13ee598229af17930553cdb72c65bcc7"><div class="ttname"><a href="class_q_x_core.html#a13ee598229af17930553cdb72c65bcc7">QXCore.GETDATETIME</a></div><div class="ttdeci">static const int GETDATETIME</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00409">QXCore.xcsm:409</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_html_a183d7a8794eeba09aa2fe814af1a90bc"><div class="ttname"><a href="class_q_x_date_time_edit.html#a183d7a8794eeba09aa2fe814af1a90bc">QXDateTimeEdit.create</a></div><div class="ttdeci">bool create()</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00035">QXDateTimeEdit.xcsm:35</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_html_a83563dcbf9f42fe9b72f37dd16d700a7"><div class="ttname"><a href="class_q_x_date_time_edit.html#a83563dcbf9f42fe9b72f37dd16d700a7">QXDateTimeEdit.lis</a></div><div class="ttdeci">onDateTimeChangeListener lis</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00006">QXDateTimeEdit.xcsm:6</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_1_1on_date_time_change_listener_html_a75092bd8e8f5333c732161db03a54cef"><div class="ttname"><a href="class_q_x_date_time_edit_1_1on_date_time_change_listener.html#a75092bd8e8f5333c732161db03a54cef">QXDateTimeEdit.onDateTimeChangeListener.onTimeChange</a></div><div class="ttdeci">void onTimeChange(QXDateTimeEdit, int, int, int, int)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00060">QXDateTimeEdit.xcsm:60</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_html_a25e152f4d2664e0c5b6d6bbc5cd1e8a2"><div class="ttname"><a href="class_q_x_date_time_edit.html#a25e152f4d2664e0c5b6d6bbc5cd1e8a2">QXDateTimeEdit.QXDateTimeEdit</a></div><div class="ttdeci">QXDateTimeEdit() </div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00027">QXDateTimeEdit.xcsm:27</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_1_1_q_time_html_a15df9ba285cfd842f284025f904edc9c"><div class="ttname"><a href="class_q_x_date_time_edit_1_1_q_time.html#a15df9ba285cfd842f284025f904edc9c">QXDateTimeEdit.QTime.hour</a></div><div class="ttdeci">int hour</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00009">QXDateTimeEdit.xcsm:9</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_html_ac8fb0746a6ff2553025b72a244173873"><div class="ttname"><a href="class_q_x_date_time_edit.html#ac8fb0746a6ff2553025b72a244173873">QXDateTimeEdit.QXDateTimeEdit</a></div><div class="ttdeci">QXDateTimeEdit(long h) </div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00031">QXDateTimeEdit.xcsm:31</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_1_1_q_time_html_ad957f34cd6e8272740bc231865080b22"><div class="ttname"><a href="class_q_x_date_time_edit_1_1_q_time.html#ad957f34cd6e8272740bc231865080b22">QXDateTimeEdit.QTime.msec</a></div><div class="ttdeci">int msec</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00009">QXDateTimeEdit.xcsm:9</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_1_1on_date_time_change_listener_html_a0474d44b86d3e6d35a328724919ca92f"><div class="ttname"><a href="class_q_x_date_time_edit_1_1on_date_time_change_listener.html#a0474d44b86d3e6d35a328724919ca92f">QXDateTimeEdit.onDateTimeChangeListener.onDateChange</a></div><div class="ttdeci">void onDateChange(QXDateTimeEdit, int, int, int)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00056">QXDateTimeEdit.xcsm:56</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_html_a9f93b855ec087f6fe703030bc008e5f0"><div class="ttname"><a href="class_q_x_date_time_edit.html#a9f93b855ec087f6fe703030bc008e5f0">QXDateTimeEdit.setDateTime</a></div><div class="ttdeci">void setDateTime(long milliSecond)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00083">QXDateTimeEdit.xcsm:83</a></div></div>
+<div class="ttc" id="class_q_type_html_ac5a8eaa80d26c76f3a5047c355a0136a"><div class="ttname"><a href="class_q_type.html#ac5a8eaa80d26c76f3a5047c355a0136a">QType.qtDateTimeEdit</a></div><div class="ttdeci">static const int qtDateTimeEdit</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_types_8xcsm_source.html#l00062">QXTypes.xcsm:62</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_html_a689e1b088b130250fb684cd486a19e9b"><div class="ttname"><a href="class_q_x_date_time_edit.html#a689e1b088b130250fb684cd486a19e9b">QXDateTimeEdit.getDateTime</a></div><div class="ttdeci">long getDateTime()</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00097">QXDateTimeEdit.xcsm:97</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_html_a23a977e2ddfdd4a72e45c68f47df6e7f"><div class="ttname"><a href="class_q_x_date_time_edit.html#a23a977e2ddfdd4a72e45c68f47df6e7f">QXDateTimeEdit.getTime</a></div><div class="ttdeci">QTime getTime()</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00101">QXDateTimeEdit.xcsm:101</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_html_a9ea23e9fdae0b855ca96fa14bc6c66e3"><div class="ttname"><a href="class_q_x_date_time_edit.html#a9ea23e9fdae0b855ca96fa14bc6c66e3">QXDateTimeEdit.onTimeChange</a></div><div class="ttdeci">void onTimeChange(int hour ,int min ,int sec,int msec)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00077">QXDateTimeEdit.xcsm:77</a></div></div>
+<div class="ttc" id="class_q_x_core_html_a871ec2c918e7b56dcfb7d24667318b1c"><div class="ttname"><a href="class_q_x_core.html#a871ec2c918e7b56dcfb7d24667318b1c">QXCore.GETTIME</a></div><div class="ttdeci">static const int GETTIME</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00411">QXCore.xcsm:411</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_html"><div class="ttname"><a href="class_q_x_date_time_edit.html">QXDateTimeEdit</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00004">QXDateTimeEdit.xcsm:4</a></div></div>
+<div class="ttc" id="class_q_x_core_html_a1c11f7eb52769aee25753ca20400e23b"><div class="ttname"><a href="class_q_x_core.html#a1c11f7eb52769aee25753ca20400e23b">QXCore.SETDATE</a></div><div class="ttdeci">static const int SETDATE</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00407">QXCore.xcsm:407</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_1_1_q_time_html_a3e202b201e6255d975cd6d3aff1f5a4d"><div class="ttname"><a href="class_q_x_date_time_edit_1_1_q_time.html#a3e202b201e6255d975cd6d3aff1f5a4d">QXDateTimeEdit.QTime.min</a></div><div class="ttdeci">int min</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00009">QXDateTimeEdit.xcsm:9</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_html_a5af10280783b7832a07f6016c2d35636"><div class="ttname"><a href="class_q_x_date_time_edit.html#a5af10280783b7832a07f6016c2d35636">QXDateTimeEdit.setDate</a></div><div class="ttdeci">void setDate(int year, int mon, int day)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00087">QXDateTimeEdit.xcsm:87</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_html_aba4b8b621e364744e1b00c811bf3bfd0"><div class="ttname"><a href="class_q_x_date_time_edit.html#aba4b8b621e364744e1b00c811bf3bfd0">QXDateTimeEdit.setTime</a></div><div class="ttdeci">void setTime(int hour, int min, int sec, int msec)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00092">QXDateTimeEdit.xcsm:92</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_1_1_q_date_html_a594b19bf0d8e9dd73358daebb81451e3"><div class="ttname"><a href="class_q_x_date_time_edit_1_1_q_date.html#a594b19bf0d8e9dd73358daebb81451e3">QXDateTimeEdit.QDate.QDate</a></div><div class="ttdeci">QDate(int y, int m, int d)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00020">QXDateTimeEdit.xcsm:20</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_1_1_q_date_html_abeac221e38b7b9ce7df8722c842bf671"><div class="ttname"><a href="class_q_x_date_time_edit_1_1_q_date.html#abeac221e38b7b9ce7df8722c842bf671">QXDateTimeEdit.QDate.year</a></div><div class="ttdeci">int year</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00019">QXDateTimeEdit.xcsm:19</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_1_1on_date_time_change_listener_html_a5ae380359240fd8dacfb6569a2bbd2de"><div class="ttname"><a href="class_q_x_date_time_edit_1_1on_date_time_change_listener.html#a5ae380359240fd8dacfb6569a2bbd2de">QXDateTimeEdit.onDateTimeChangeListener.onDateTimeChange</a></div><div class="ttdeci">void onDateTimeChange(QXDateTimeEdit, long)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00052">QXDateTimeEdit.xcsm:52</a></div></div>
+<div class="ttc" id="class_q_x_widget_html_ad8624297a2255651b8ad720b967aa0d6"><div class="ttname"><a href="class_q_x_widget.html#ad8624297a2255651b8ad720b967aa0d6">QXWidget.y</a></div><div class="ttdeci">int y() </div><div class="ttdef"><b>Definition:</b> <a href="_q_x_widget_8xcsm_source.html#l00427">QXWidget.xcsm:427</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_html_aa66d027b4d8c7972332df51fe806748d"><div class="ttname"><a href="class_q_x_date_time_edit.html#aa66d027b4d8c7972332df51fe806748d">QXDateTimeEdit.create</a></div><div class="ttdeci">bool create(QXWidget parent)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00043">QXDateTimeEdit.xcsm:43</a></div></div>
+<div class="ttc" id="class_q_x_core_html_a7100e2d88cccb51bacfeca9b867c2004"><div class="ttname"><a href="class_q_x_core.html#a7100e2d88cccb51bacfeca9b867c2004">QXCore.GETDATE</a></div><div class="ttdeci">static const int GETDATE</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00410">QXCore.xcsm:410</a></div></div>
+<div class="ttc" id="class_q_x_core_html_a4351875cc607b4723adaec974cbbcd14"><div class="ttname"><a href="class_q_x_core.html#a4351875cc607b4723adaec974cbbcd14">QXCore.SETDATETIME</a></div><div class="ttdeci">static const int SETDATETIME</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_core_8xcsm_source.html#l00406">QXCore.xcsm:406</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_1_1_q_date_html_a4c11afc03fc3ee49bab660def6558f2a"><div class="ttname"><a href="class_q_x_date_time_edit_1_1_q_date.html#a4c11afc03fc3ee49bab660def6558f2a">QXDateTimeEdit.QDate.day</a></div><div class="ttdeci">int day</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00019">QXDateTimeEdit.xcsm:19</a></div></div>
+<div class="ttc" id="class_q_x_date_time_edit_1_1_q_time_html_a6b78342f158ab6a1df50d7cf76ef9697"><div class="ttname"><a href="class_q_x_date_time_edit_1_1_q_time.html#a6b78342f158ab6a1df50d7cf76ef9697">QXDateTimeEdit.QTime.QTime</a></div><div class="ttdeci">QTime(int h, int m, int s,int ms)</div><div class="ttdef"><b>Definition:</b> <a href="_q_x_date_time_edit_8xcsm_source.html#l00010">QXDateTimeEdit.xcsm:10</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

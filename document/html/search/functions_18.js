@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['所有空白字符以及空行',['所有空白字符以及空行',['../mainpage_8xcs.html#aac771258c6dae5bec752c86799b49dc3',1,'mainpage.xcs']]]
+  ['zoomin',['zoomIn',['../class_q_x_text_edit.html#a6366631a8c6ecc88c308f679982e8cba',1,'QXTextEdit']]],
+  ['zoomout',['zoomOut',['../class_q_x_text_edit.html#a588b8e3c72a297156165eb1b039b8b87',1,'QXTextEdit']]]
 ];

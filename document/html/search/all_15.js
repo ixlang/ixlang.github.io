@@ -4,7 +4,7 @@ var searchData=
   ['ulonglong',['ULongLong',['../class_q_x_object.html#a64f27588b18c94d5717621c54e43ac94',1,'QXObject.ULongLong()'],['../class_q_x_variant.html#a64f27588b18c94d5717621c54e43ac94',1,'QXVariant.ULongLong()']]],
   ['unbindinternalshortcut',['unbindInternalShortcut',['../class_q_x_sci.html#ae90fdabfa6b011c5b910bcc90e22abc6',1,'QXSci']]],
   ['unbuffered',['Unbuffered',['../class_q_x_buffer.html#a55454cd4651c3b8b0137af75f92169f3',1,'QXBuffer']]],
-  ['undo',['Undo',['../class_q_x_sci.html#a650f14e72bb33e6d44bdc39e633497f1',1,'QXSci']]],
+  ['undo',['Undo',['../class_q_x_sci.html#a650f14e72bb33e6d44bdc39e633497f1',1,'QXSci.Undo()'],['../class_q_x_text_edit.html#a0e1e7804a53f6d62efc72c9bdbec8571',1,'QXTextEdit.undo()']]],
   ['undo_5fmay_5fcoalesce',['UNDO_MAY_COALESCE',['../class_q_x_sci.html#ad8d6c0c079314f374e2a50bf41fcd900',1,'QXSci']]],
   ['ungrabkeyboard',['UngrabKeyboard',['../class_q_x_event.html#a90560c828bb3970cca993357482637ce',1,'QXEvent']]],
   ['ungrabmouse',['UngrabMouse',['../class_q_x_event.html#a7a1ada1ac44db803280cc09456b99dab',1,'QXEvent']]],

@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/std/Crypto.xcs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v2.7 Release</span>
+   </div>
+   <div id="projectbrief">项目介绍</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_5bbea4f6f42367ca41f67f1d806c748d.html">std</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Crypto.xcs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_crypto_8xcs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;@Declare </div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_crypto.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_crypto.html">Crypto</a>{</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_crypto.html#abd3f868ddfb49f72cf9f15c27886ad8f">    7</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_crypto.html#abd3f868ddfb49f72cf9f15c27886ad8f">NoPadding</a> = 0,</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_crypto.html#a4f2c1faf380199b493c1068587f4a92e">    8</a></span>&#160;                     <a class="code" href="class_crypto.html#a4f2c1faf380199b493c1068587f4a92e">PKCS1Padding</a> = 1,</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_crypto.html#a8ce9088dcbc643062ddd98b9bbf95cc3">    9</a></span>&#160;                     <a class="code" href="class_crypto.html#a8ce9088dcbc643062ddd98b9bbf95cc3">PKCS5Padding</a> = 2,</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_crypto.html#a958e5dc897b107fed49ea9649660a004">   10</a></span>&#160;                     <a class="code" href="class_crypto.html#a958e5dc897b107fed49ea9649660a004">SSLV23Padding</a> = 3,</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_crypto.html#a828b27cbd4f64670a21296ad06a46902">   11</a></span>&#160;                     <a class="code" href="class_crypto.html#a828b27cbd4f64670a21296ad06a46902">ZerosPadding</a> = 4;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">long</span> <a class="code" href="class_crypto.html#a731771d2e140a4c1d08857c34173e2ac">Md5Init</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_crypto.html#a6a2ec770ae34efe34ece717bbb4c9997">Md5Update</a>(<span class="keywordtype">long</span> hmd5, byte [] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_crypto.html#a074f55920d4d0f3af95fad0d115ba078">MD5Final</a>(<span class="keywordtype">long</span> hmd5);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">static</span> byte[] <a class="code" href="class_crypto.html#a996db052e370ea369d0ec83406783bc4">MD5Get</a>(<span class="keywordtype">long</span> hmd5);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_crypto.html#a4d31b5821702bcc03ea43796d3e4b0d8">MD5Close</a>(<span class="keywordtype">long</span> hmd5);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">long</span> <a class="code" href="class_crypto.html#a1fcd5e8a404aad142d33d63af49cc59b">SHA1Init</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_crypto.html#a526fda8f25e4818290eaee4ecad3b6c4">SHA1Update</a>(<span class="keywordtype">long</span> hsha1, byte [] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_crypto.html#ab8171511fcce3c6bd035b0a59c722fd6">SHA1Final</a>(<span class="keywordtype">long</span> hsha1);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">static</span> byte[] <a class="code" href="class_crypto.html#a233167164736801c84707b0e9528a21f">SHA1Get</a>(<span class="keywordtype">long</span> hsha1);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_crypto.html#a38f3f82a3f2841095fb17056877ac470">SHA1Close</a>(<span class="keywordtype">long</span> hsha1);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">long</span> <a class="code" href="class_crypto.html#ae11cc00128929e69c28b0f42202e107d">RSA1Init</a>();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_crypto.html#aa06405c75559c293da3af351f2cea4fc">RSALoadFromPublicKey</a>(<span class="keywordtype">long</span> hrsa, byte [] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_crypto.html#ae0b5fa0eca7a0baccc65d1777b0d6939">RSALoadFromPrivateKey</a>(<span class="keywordtype">long</span> hrsa, byte [] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_crypto.html#af737f3053e8133f270957827e9606318">RSACreate</a>(<span class="keywordtype">long</span> hrsa, <span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keyword">static</span> byte[] <a class="code" href="class_crypto.html#a34f8cfbd3dff720ac373a61571fb6a5d">RSAPublicEncrypto</a>(<span class="keywordtype">long</span> hrsa, byte [] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> length, <span class="keywordtype">int</span> padding);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keyword">static</span> byte[] <a class="code" href="class_crypto.html#a34f8cfbd3dff720ac373a61571fb6a5d">RSAPublicEncrypto</a>(<span class="keywordtype">long</span> hrsa, byte [] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> length, <span class="keywordtype">int</span> padding);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keyword">static</span> byte[] <a class="code" href="class_crypto.html#a234fdfe14c6b0ed6204e36f8128678c4">RSAPrivateEncrypto</a>(<span class="keywordtype">long</span> hrsa, byte [] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> length, <span class="keywordtype">int</span> padding);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keyword">static</span> byte[] <a class="code" href="class_crypto.html#aca6cbdcf26028734dde67d349bd1f72c">RSAPublicDecrypto</a>(<span class="keywordtype">long</span> hrsa, byte [] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> length, <span class="keywordtype">int</span> padding);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keyword">static</span> byte [] <a class="code" href="class_crypto.html#a33c1bb4475e4eee8a261ea582bf4a126">RSAGetPrivateKey</a>(<span class="keywordtype">long</span> hrsa);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keyword">static</span> byte [] <a class="code" href="class_crypto.html#af6c9b275c2ceddc3a507822d68f102be">RSAGetPublicKey</a>(<span class="keywordtype">long</span> hrsa);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_crypto.html#a963ef44354b637208789884c1c7cd303">RSADecryptoMaxSize</a>(<span class="keywordtype">long</span> hrsa);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_crypto.html#aa7bd2ee0668d8e7014565213206ac68e">RSAEncryptoMaxSize</a>(<span class="keywordtype">long</span> hrsa);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_crypto.html#a73393c5562faa0f8c5cb5eafb0413512">RSAClose</a>(<span class="keywordtype">long</span> hrsa);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;};</div>
+<div class="ttc" id="class_crypto_html_af737f3053e8133f270957827e9606318"><div class="ttname"><a href="class_crypto.html#af737f3053e8133f270957827e9606318">Crypto.RSACreate</a></div><div class="ttdeci">static bool RSACreate(long hrsa, int length)</div><div class="ttdoc">产生一个模为length位的密钥对 创建RSA对象 </div></div>
+<div class="ttc" id="class_crypto_html_a963ef44354b637208789884c1c7cd303"><div class="ttname"><a href="class_crypto.html#a963ef44354b637208789884c1c7cd303">Crypto.RSADecryptoMaxSize</a></div><div class="ttdeci">static int RSADecryptoMaxSize(long hrsa)</div><div class="ttdoc">获取可以解密的密文的最大数据长度 </div></div>
+<div class="ttc" id="class_crypto_html_abd3f868ddfb49f72cf9f15c27886ad8f"><div class="ttname"><a href="class_crypto.html#abd3f868ddfb49f72cf9f15c27886ad8f">Crypto.NoPadding</a></div><div class="ttdeci">static const int NoPadding</div><div class="ttdef"><b>Definition:</b> <a href="_crypto_8xcs_source.html#l00007">Crypto.xcs:7</a></div></div>
+<div class="ttc" id="class_crypto_html_af6c9b275c2ceddc3a507822d68f102be"><div class="ttname"><a href="class_crypto.html#af6c9b275c2ceddc3a507822d68f102be">Crypto.RSAGetPublicKey</a></div><div class="ttdeci">static byte [] RSAGetPublicKey(long hrsa)</div><div class="ttdoc">获取公钥 </div></div>
+<div class="ttc" id="class_crypto_html_aa06405c75559c293da3af351f2cea4fc"><div class="ttname"><a href="class_crypto.html#aa06405c75559c293da3af351f2cea4fc">Crypto.RSALoadFromPublicKey</a></div><div class="ttdeci">static bool RSALoadFromPublicKey(long hrsa, byte [] buffer, int pos, int length)</div><div class="ttdoc">使用公钥初始化一个RSA对象 </div></div>
+<div class="ttc" id="class_crypto_html_a4d31b5821702bcc03ea43796d3e4b0d8"><div class="ttname"><a href="class_crypto.html#a4d31b5821702bcc03ea43796d3e4b0d8">Crypto.MD5Close</a></div><div class="ttdeci">static void MD5Close(long hmd5)</div><div class="ttdoc">关闭MD5对象句柄 </div></div>
+<div class="ttc" id="class_crypto_html_a996db052e370ea369d0ec83406783bc4"><div class="ttname"><a href="class_crypto.html#a996db052e370ea369d0ec83406783bc4">Crypto.MD5Get</a></div><div class="ttdeci">static byte [] MD5Get(long hmd5)</div><div class="ttdoc">获取MD5结果 </div></div>
+<div class="ttc" id="class_crypto_html_a4f2c1faf380199b493c1068587f4a92e"><div class="ttname"><a href="class_crypto.html#a4f2c1faf380199b493c1068587f4a92e">Crypto.PKCS1Padding</a></div><div class="ttdeci">static const int PKCS1Padding</div><div class="ttdef"><b>Definition:</b> <a href="_crypto_8xcs_source.html#l00008">Crypto.xcs:8</a></div></div>
+<div class="ttc" id="class_crypto_html_a73393c5562faa0f8c5cb5eafb0413512"><div class="ttname"><a href="class_crypto.html#a73393c5562faa0f8c5cb5eafb0413512">Crypto.RSAClose</a></div><div class="ttdeci">static void RSAClose(long hrsa)</div><div class="ttdoc">关闭RSA对象 </div></div>
+<div class="ttc" id="class_crypto_html_a8ce9088dcbc643062ddd98b9bbf95cc3"><div class="ttname"><a href="class_crypto.html#a8ce9088dcbc643062ddd98b9bbf95cc3">Crypto.PKCS5Padding</a></div><div class="ttdeci">static const int PKCS5Padding</div><div class="ttdef"><b>Definition:</b> <a href="_crypto_8xcs_source.html#l00009">Crypto.xcs:9</a></div></div>
+<div class="ttc" id="class_crypto_html_a34f8cfbd3dff720ac373a61571fb6a5d"><div class="ttname"><a href="class_crypto.html#a34f8cfbd3dff720ac373a61571fb6a5d">Crypto.RSAPublicEncrypto</a></div><div class="ttdeci">static byte [] RSAPublicEncrypto(long hrsa, byte [] buffer, int pos, int length, int padding)</div><div class="ttdoc">使用公钥加密数据 </div></div>
+<div class="ttc" id="class_crypto_html_a234fdfe14c6b0ed6204e36f8128678c4"><div class="ttname"><a href="class_crypto.html#a234fdfe14c6b0ed6204e36f8128678c4">Crypto.RSAPrivateEncrypto</a></div><div class="ttdeci">static byte [] RSAPrivateEncrypto(long hrsa, byte [] buffer, int pos, int length, int padding)</div><div class="ttdoc">使用私钥加密数据 </div></div>
+<div class="ttc" id="class_crypto_html_a233167164736801c84707b0e9528a21f"><div class="ttname"><a href="class_crypto.html#a233167164736801c84707b0e9528a21f">Crypto.SHA1Get</a></div><div class="ttdeci">static byte [] SHA1Get(long hsha1)</div><div class="ttdoc">获取SHA1结果 </div></div>
+<div class="ttc" id="class_crypto_html_ae11cc00128929e69c28b0f42202e107d"><div class="ttname"><a href="class_crypto.html#ae11cc00128929e69c28b0f42202e107d">Crypto.RSA1Init</a></div><div class="ttdeci">static long RSA1Init()</div><div class="ttdoc">创建 一个RSA加密的对象句柄 </div></div>
+<div class="ttc" id="class_crypto_html_ae0b5fa0eca7a0baccc65d1777b0d6939"><div class="ttname"><a href="class_crypto.html#ae0b5fa0eca7a0baccc65d1777b0d6939">Crypto.RSALoadFromPrivateKey</a></div><div class="ttdeci">static bool RSALoadFromPrivateKey(long hrsa, byte [] buffer, int pos, int length)</div><div class="ttdoc">使用私钥初始化一个RSA对象 </div></div>
+<div class="ttc" id="class_crypto_html"><div class="ttname"><a href="class_crypto.html">Crypto</a></div><div class="ttdoc">密码处理类 </div><div class="ttdef"><b>Definition:</b> <a href="_crypto_8xcs_source.html#l00006">Crypto.xcs:6</a></div></div>
+<div class="ttc" id="class_crypto_html_a526fda8f25e4818290eaee4ecad3b6c4"><div class="ttname"><a href="class_crypto.html#a526fda8f25e4818290eaee4ecad3b6c4">Crypto.SHA1Update</a></div><div class="ttdeci">static void SHA1Update(long hsha1, byte [] buffer, int pos, int length)</div><div class="ttdoc">更新SHA1内容 </div></div>
+<div class="ttc" id="class_crypto_html_aa7bd2ee0668d8e7014565213206ac68e"><div class="ttname"><a href="class_crypto.html#aa7bd2ee0668d8e7014565213206ac68e">Crypto.RSAEncryptoMaxSize</a></div><div class="ttdeci">static int RSAEncryptoMaxSize(long hrsa)</div><div class="ttdoc">获取可以加密的密文的最大数据长度 </div></div>
+<div class="ttc" id="class_crypto_html_a6a2ec770ae34efe34ece717bbb4c9997"><div class="ttname"><a href="class_crypto.html#a6a2ec770ae34efe34ece717bbb4c9997">Crypto.Md5Update</a></div><div class="ttdeci">static void Md5Update(long hmd5, byte [] buffer, int pos, int length)</div><div class="ttdoc">更新MD5内容 </div></div>
+<div class="ttc" id="class_crypto_html_a074f55920d4d0f3af95fad0d115ba078"><div class="ttname"><a href="class_crypto.html#a074f55920d4d0f3af95fad0d115ba078">Crypto.MD5Final</a></div><div class="ttdeci">static void MD5Final(long hmd5)</div><div class="ttdoc">MD5更新结束 </div></div>
+<div class="ttc" id="class_crypto_html_a33c1bb4475e4eee8a261ea582bf4a126"><div class="ttname"><a href="class_crypto.html#a33c1bb4475e4eee8a261ea582bf4a126">Crypto.RSAGetPrivateKey</a></div><div class="ttdeci">static byte [] RSAGetPrivateKey(long hrsa)</div><div class="ttdoc">获取私钥 </div></div>
+<div class="ttc" id="class_crypto_html_ab8171511fcce3c6bd035b0a59c722fd6"><div class="ttname"><a href="class_crypto.html#ab8171511fcce3c6bd035b0a59c722fd6">Crypto.SHA1Final</a></div><div class="ttdeci">static void SHA1Final(long hsha1)</div><div class="ttdoc">SHA1更新结束 </div></div>
+<div class="ttc" id="class_crypto_html_aca6cbdcf26028734dde67d349bd1f72c"><div class="ttname"><a href="class_crypto.html#aca6cbdcf26028734dde67d349bd1f72c">Crypto.RSAPublicDecrypto</a></div><div class="ttdeci">static byte [] RSAPublicDecrypto(long hrsa, byte [] buffer, int pos, int length, int padding)</div><div class="ttdoc">使用公钥解密数据 </div></div>
+<div class="ttc" id="class_crypto_html_a38f3f82a3f2841095fb17056877ac470"><div class="ttname"><a href="class_crypto.html#a38f3f82a3f2841095fb17056877ac470">Crypto.SHA1Close</a></div><div class="ttdeci">static void SHA1Close(long hsha1)</div><div class="ttdoc">关闭SHA1对象句柄 </div></div>
+<div class="ttc" id="class_crypto_html_a1fcd5e8a404aad142d33d63af49cc59b"><div class="ttname"><a href="class_crypto.html#a1fcd5e8a404aad142d33d63af49cc59b">Crypto.SHA1Init</a></div><div class="ttdeci">static long SHA1Init()</div><div class="ttdoc">创建 一个SHA1加密的对象句柄 </div></div>
+<div class="ttc" id="class_crypto_html_a958e5dc897b107fed49ea9649660a004"><div class="ttname"><a href="class_crypto.html#a958e5dc897b107fed49ea9649660a004">Crypto.SSLV23Padding</a></div><div class="ttdeci">static const int SSLV23Padding</div><div class="ttdef"><b>Definition:</b> <a href="_crypto_8xcs_source.html#l00010">Crypto.xcs:10</a></div></div>
+<div class="ttc" id="class_crypto_html_a828b27cbd4f64670a21296ad06a46902"><div class="ttname"><a href="class_crypto.html#a828b27cbd4f64670a21296ad06a46902">Crypto.ZerosPadding</a></div><div class="ttdeci">static const int ZerosPadding</div><div class="ttdef"><b>Definition:</b> <a href="_crypto_8xcs_source.html#l00011">Crypto.xcs:11</a></div></div>
+<div class="ttc" id="class_crypto_html_a731771d2e140a4c1d08857c34173e2ac"><div class="ttname"><a href="class_crypto.html#a731771d2e140a4c1d08857c34173e2ac">Crypto.Md5Init</a></div><div class="ttdeci">static long Md5Init()</div><div class="ttdoc">创建 一个MD5加密的对象句柄 </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

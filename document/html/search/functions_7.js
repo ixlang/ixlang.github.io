@@ -8,7 +8,7 @@ var searchData=
   ['heightmm',['heightMM',['../class_q_paint_device.html#a41a0e68c0774921ea3e19447a006a4ea',1,'QPaintDevice']]],
   ['hide',['hide',['../class_q_x_widget.html#a67a71135a6f6d2d913782498e9b5c086',1,'QXWidget']]],
   ['httpserver',['HttpServer',['../class_http_server.html#ae3a207f1d3c0c12d1455b67ae2288200',1,'HttpServer']]],
-  ['httpservlet',['HttpServlet',['../class_http_servlet.html#a6b068fa11138f021f8aa4b1d60e2bc53',1,'HttpServlet']]],
+  ['httpservlet',['HttpServlet',['../class_http_servlet.html#a6b068fa11138f021f8aa4b1d60e2bc53',1,'HttpServlet.HttpServlet(bool filterPost, String pattern)'],['../class_http_servlet.html#a4af91ed7d4de13bdb02dc6d640c53988',1,'HttpServlet.HttpServlet(int httpCode)']]],
   ['httpservletrequest',['HttpServletRequest',['../class_http_servlet_request.html#a7df98ee7eee9a2c0fc2cb97c9f748ef9',1,'HttpServletRequest']]],
   ['httpservletresponse',['HttpServletResponse',['../class_http_servlet_response.html#a6ddcabae1989c313f5b2ce2e5df4f9d6',1,'HttpServletResponse']]]
 ];

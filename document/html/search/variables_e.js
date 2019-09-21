@@ -8,6 +8,7 @@ var searchData=
   ['need_5fdelloc',['need_delloc',['../class_q_printer.html#a9be3eb76433a88762198f856a95c8e6b',1,'QPrinter']]],
   ['networkreplyupdated',['NetworkReplyUpdated',['../class_q_x_event.html#ad65c0ebd95f856dd07e6045674917224',1,'QXEvent']]],
   ['new_5fui_5ftask_5fnid',['NEW_UI_TASK_NID',['../class_q_x_widget.html#a28ff0346872156089533e1f870ee4f4d',1,'QXWidget']]],
+  ['next',['Next',['../enum_report_engine_1_1_change_pos_type.html#a2f76e88828a6b8514d2fa31f12c5515c',1,'ReportEngine::ChangePosType']]],
   ['nimageformats',['NImageFormats',['../class_q_x_image.html#a7a98264010400f78a235d3116ea565fa',1,'QXImage']]],
   ['no',['No',['../class_q_x_message_box.html#a8b7b3b3f9c9c81501e71dec0a381d645',1,'QXMessageBox']]],
   ['noall',['NoAll',['../class_q_x_message_box.html#aa5a0309a8b3a904984e4bf8f696a5189',1,'QXMessageBox']]],
@@ -29,11 +30,13 @@ var searchData=
   ['noncosmeticdefaultpen',['NonCosmeticDefaultPen',['../class_q_x_painter_1_1_render_hint.html#a4b1cca7ea5ba956e8e72a4564a051c7e',1,'QXPainter::RenderHint']]],
   ['none',['None',['../enum_q_abstract_print_dialog_1_1_print_dialog_option.html#ac7485dcc8d256a6f197ed7802687f252',1,'QAbstractPrintDialog.PrintDialogOption.None()'],['../class_q_x_event.html#a3f378f294d4ba1d4ad3b0e473ed5e206',1,'QXEvent.None()'],['../class_q_type.html#a3f378f294d4ba1d4ad3b0e473ed5e206',1,'QType.None()']]],
   ['noopaquedetection',['NoOpaqueDetection',['../class_q_x_painter_1_1_image_conversion_flag.html#af2a98ec4e720ed053ada0bd3ea4796cf',1,'QXPainter::ImageConversionFlag']]],
+  ['nopadding',['NoPadding',['../class_crypto.html#abd3f868ddfb49f72cf9f15c27886ad8f',1,'Crypto']]],
   ['nopen',['NoPen',['../enum_q_x_painter_1_1_pen_style.html#adb1c28e05135317f73b0e0e735310bef',1,'QXPainter::PenStyle']]],
   ['normal',['Normal',['../class_q_x_line_edit.html#ab298167a57917e19505c862051fce3e0',1,'QXLineEdit']]],
   ['norole',['NoRole',['../class_color_role.html#ae9df675e1cc2644f5d0f508dfc28a39b',1,'ColorRole']]],
   ['note',['Note',['../enum_q_paged_paint_device_1_1_page_size.html#a133274d390ac226cb82aa9d32b98d6ce',1,'QPagedPaintDevice::PageSize']]],
   ['notoall',['NoToAll',['../class_q_x_message_box.html#ae0ab8db756358d6ce7cc4c78a3b43965',1,'QXMessageBox']]],
   ['notopen',['NotOpen',['../class_q_x_buffer.html#a4c8a6b70d1d50ad88eadc101804d43ce',1,'QXBuffer']]],
+  ['nowrap',['NoWrap',['../enum_q_x_text_edit_1_1_wrap_mode.html#a221dbeaf2bb87e10564eb4827007b91e',1,'QXTextEdit.WrapMode.NoWrap()'],['../enum_q_x_text_edit_1_1_line_wrap_mode.html#a221dbeaf2bb87e10564eb4827007b91e',1,'QXTextEdit.LineWrapMode.NoWrap()']]],
   ['nstyle',['nstyle',['../class_q_x_brush_1_1_gradient.html#a23477d65a9dbdca347a60b1b883a9ade',1,'QXBrush::Gradient']]]
 ];

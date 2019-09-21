@@ -349,7 +349,7 @@ XStudio改善健壮性
 增加Sql包
 更新版本号 Release 2.6
 
-下一版：
+2019年8月20日
 增加多文件可合并的package语法特性。
 修订package规范
 改善编译器在特殊情况下多个同名对象不会自动选择的问题。
@@ -371,3 +371,19 @@ XStudio改善健壮性
 增加sql库 支持sqlite、mysql
 增加xcimg库，支持多平台下生成图片验证码
 增加Qt库打印机相关支持。
+
+2019年9月3日
+取消了qt库在linux系统下对输入法的支持(因其不稳定)
+增加了mysql在macos平台的支持
+完善sql包
+完善http服务器接口
+
+
+2019年9月9月
+更改机制finalize中的异常机制(finalize中的异常不再会被外层调用捕获,需要独立的SEH).
+新增Native调用的参数类型ObjectRef
+修订ObjectPtr类型的传参规则
+新增sqlServer数据库的连接支持（仅支持Windows）
+新增zxing二维码生成和识别库
+增加WebSite对异常响应的Servlet接口支持
+增加Qt库部分组件和报表功能

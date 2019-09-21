@@ -23,6 +23,7 @@ var searchData=
   ['rectangle',['Rectangle',['../enum_q_x_widget_1_1_region_type.html#ab9fc0a013a1543dcc52bc5ef878e6d81',1,'QXWidget::RegionType']]],
   ['rectf',['RectF',['../class_q_x_object.html#a4e301d403999b7adf360492f5b2dc0bd',1,'QXObject.RectF()'],['../class_q_x_variant.html#a4e301d403999b7adf360492f5b2dc0bd',1,'QXVariant.RectF()']]],
   ['reflectspread',['ReflectSpread',['../enum_q_x_brush_1_1_spread.html#a0df001a01f145c75a794dba5073cd6b1',1,'QXBrush::Spread']]],
+  ['regdatasource',['REGDATASOURCE',['../class_q_x_core.html#a83356b840c4373e497e00761f2a512f2',1,'QXCore']]],
   ['regexp',['RegExp',['../class_q_x_object.html#a6ae251cd979d625c54e0aa23d164ea04',1,'QXObject.RegExp()'],['../class_q_x_variant.html#a6ae251cd979d625c54e0aa23d164ea04',1,'QXVariant.RegExp()']]],
   ['region',['Region',['../class_q_x_object.html#a6aa545229e65efffff2fb883503995be',1,'QXObject.Region()'],['../class_q_x_variant.html#a6aa545229e65efffff2fb883503995be',1,'QXVariant.Region()']]],
   ['regularexpression',['RegularExpression',['../class_q_x_object.html#a6533af40876bc9489d582856620965ea',1,'QXObject.RegularExpression()'],['../class_q_x_variant.html#a6533af40876bc9489d582856620965ea',1,'QXVariant.RegularExpression()']]],
@@ -39,5 +40,6 @@ var searchData=
   ['right',['right',['../class_q_x_rect.html#a2f54f8b71f0d765e2b7dbd9a8b9774ff',1,'QXRect']]],
   ['rightbutton',['RightButton',['../class_q_x_object.html#a868ad999d1f3372473c21d82852b61d7',1,'QXObject']]],
   ['roundedrect',['ROUNDEDRECT',['../class_q_x_core.html#ad85d3453246ad75b2cdd4bb380f0317c',1,'QXCore']]],
-  ['roundrect',['ROUNDRECT',['../class_q_x_core.html#a22a960ab22820e4a3c7fee63bf13e510',1,'QXCore']]]
+  ['roundrect',['ROUNDRECT',['../class_q_x_core.html#a22a960ab22820e4a3c7fee63bf13e510',1,'QXCore']]],
+  ['rowcount',['RowCount',['../enum_report_engine_1_1_data_type.html#a24a9f9425afcbec4f3abdab758eea3fb',1,'ReportEngine::DataType']]]
 ];

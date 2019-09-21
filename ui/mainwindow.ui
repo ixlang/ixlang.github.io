@@ -222,6 +222,9 @@
     <addaction name="actionclean"/>
     <addaction name="actiongenerateNativeSrc"/>
     <addaction name="separator"/>
+    <addaction name="actiondeploy"/>
+    <addaction name="actiondeployto"/>
+    <addaction name="separator"/>
     <addaction name="actiongenmake"/>
     <addaction name="separator"/>
     <addaction name="actioncomment"/>
@@ -2090,6 +2093,16 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+P</string>
+   </property>
+  </action>
+  <action name="actiondeploy">
+   <property name="text">
+    <string>部署依赖包</string>
+   </property>
+  </action>
+  <action name="actiondeployto">
+   <property name="text">
+    <string>部署到路径...</string>
    </property>
   </action>
  </widget>

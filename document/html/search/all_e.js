@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['nativefinalize',['NATIVEFINALIZE',['../class_q_x_core.html#a94a5e9fd15b387ec8f0bdc1803d5495d',1,'QXCore.NATIVEFINALIZE()'],['../class_q_x_object.html#aaa23f6347ddafd6e570979bbb7db957b',1,'QXObject.nativeFinalize()']]],
+  ['nativefinalize',['nativeFinalize',['../class_q_x_object.html#aaa23f6347ddafd6e570979bbb7db957b',1,'QXObject.nativeFinalize()'],['../class_q_x_core.html#a94a5e9fd15b387ec8f0bdc1803d5495d',1,'QXCore.NATIVEFINALIZE()']]],
   ['nativeformat',['NativeFormat',['../enum_q_printer_1_1_output_format.html#a17350d00cbd15dfc5732d70755099e9c',1,'QPrinter::OutputFormat']]],
   ['nativegesture',['NativeGesture',['../class_q_x_event.html#a1191895670d52e071fccbb14af847fcc',1,'QXEvent']]],
   ['nativehandle',['nativehandle',['../class_q_x_native.html#adc4b3fd5b05624dfe6705339748b8aab',1,'QXNative']]],
@@ -9,7 +9,7 @@ var searchData=
   ['networkreplyupdated',['NetworkReplyUpdated',['../class_q_x_event.html#ad65c0ebd95f856dd07e6045674917224',1,'QXEvent']]],
   ['new_5fui_5ftask_5fnid',['NEW_UI_TASK_NID',['../class_q_x_widget.html#a28ff0346872156089533e1f870ee4f4d',1,'QXWidget']]],
   ['newinstance',['newInstance',['../interface_async_input.html#a4b6624836576b70ad1a602a295d71ffc',1,'AsyncInput.newInstance()'],['../interface_async_output.html#a664e72231f6feb46720302b074cf0cea',1,'AsyncOutput.newInstance()']]],
-  ['next',['next',['../class_json_object.html#ae7cfd0bef4e233ee686797e3b0f63d4c',1,'JsonObject.next()'],['../class_list_1_1_iterator.html#a041249f802c5bf4c2deae666610e03c4',1,'List.Iterator.next()'],['../class_map_1_1_iterator.html#a041249f802c5bf4c2deae666610e03c4',1,'Map.Iterator.next()'],['../class_x_dom_node.html#ad6a1db0bb90021ac736cbd21c2dd400d',1,'XDomNode.next()']]],
+  ['next',['Next',['../enum_report_engine_1_1_change_pos_type.html#a2f76e88828a6b8514d2fa31f12c5515c',1,'ReportEngine.ChangePosType.Next()'],['../class_json_object.html#ae7cfd0bef4e233ee686797e3b0f63d4c',1,'JsonObject.next()'],['../class_list_1_1_iterator.html#a041249f802c5bf4c2deae666610e03c4',1,'List.Iterator.next()'],['../class_map_1_1_iterator.html#a041249f802c5bf4c2deae666610e03c4',1,'Map.Iterator.next()'],['../class_x_dom_node.html#ad6a1db0bb90021ac736cbd21c2dd400d',1,'XDomNode.next()']]],
   ['nimageformats',['NImageFormats',['../class_q_x_image.html#a7a98264010400f78a235d3116ea565fa',1,'QXImage']]],
   ['no',['No',['../class_q_x_message_box.html#a8b7b3b3f9c9c81501e71dec0a381d645',1,'QXMessageBox']]],
   ['noall',['NoAll',['../class_q_x_message_box.html#aa5a0309a8b3a904984e4bf8f696a5189',1,'QXMessageBox']]],
@@ -31,13 +31,15 @@ var searchData=
   ['noncosmeticdefaultpen',['NonCosmeticDefaultPen',['../class_q_x_painter_1_1_render_hint.html#a4b1cca7ea5ba956e8e72a4564a051c7e',1,'QXPainter::RenderHint']]],
   ['none',['None',['../enum_q_abstract_print_dialog_1_1_print_dialog_option.html#ac7485dcc8d256a6f197ed7802687f252',1,'QAbstractPrintDialog.PrintDialogOption.None()'],['../class_q_x_event.html#a3f378f294d4ba1d4ad3b0e473ed5e206',1,'QXEvent.None()'],['../class_q_type.html#a3f378f294d4ba1d4ad3b0e473ed5e206',1,'QType.None()']]],
   ['noopaquedetection',['NoOpaqueDetection',['../class_q_x_painter_1_1_image_conversion_flag.html#af2a98ec4e720ed053ada0bd3ea4796cf',1,'QXPainter::ImageConversionFlag']]],
+  ['nopadding',['NoPadding',['../class_crypto.html#abd3f868ddfb49f72cf9f15c27886ad8f',1,'Crypto']]],
   ['nopen',['NoPen',['../enum_q_x_painter_1_1_pen_style.html#adb1c28e05135317f73b0e0e735310bef',1,'QXPainter::PenStyle']]],
   ['normal',['Normal',['../class_q_x_line_edit.html#ab298167a57917e19505c862051fce3e0',1,'QXLineEdit']]],
   ['norole',['NoRole',['../class_color_role.html#ae9df675e1cc2644f5d0f508dfc28a39b',1,'ColorRole']]],
   ['note',['Note',['../enum_q_paged_paint_device_1_1_page_size.html#a133274d390ac226cb82aa9d32b98d6ce',1,'QPagedPaintDevice::PageSize']]],
-  ['notify',['Notify',['../class_q_x_core.html#ac06245f4aea023776291fab859809336',1,'QXCore.Notify()'],['../interface_async_input.html#aa2c2c9eef81bf51c21a6e777367ffb10',1,'AsyncInput.notify()']]],
+  ['notify',['notify',['../interface_async_input.html#aa2c2c9eef81bf51c21a6e777367ffb10',1,'AsyncInput.notify()'],['../class_q_x_core.html#ac06245f4aea023776291fab859809336',1,'QXCore.Notify()']]],
   ['notoall',['NoToAll',['../class_q_x_message_box.html#ae0ab8db756358d6ce7cc4c78a3b43965',1,'QXMessageBox']]],
   ['notopen',['NotOpen',['../class_q_x_buffer.html#a4c8a6b70d1d50ad88eadc101804d43ce',1,'QXBuffer']]],
+  ['nowrap',['NoWrap',['../enum_q_x_text_edit_1_1_wrap_mode.html#a221dbeaf2bb87e10564eb4827007b91e',1,'QXTextEdit.WrapMode.NoWrap()'],['../enum_q_x_text_edit_1_1_line_wrap_mode.html#a221dbeaf2bb87e10564eb4827007b91e',1,'QXTextEdit.LineWrapMode.NoWrap()']]],
   ['nstyle',['nstyle',['../class_q_x_brush_1_1_gradient.html#a23477d65a9dbdca347a60b1b883a9ade',1,'QXBrush::Gradient']]],
   ['nullpointerexception',['NullPointerException',['../class_null_pointer_exception.html',1,'NullPointerException'],['../class_null_pointer_exception.html#a323d62453fa1b0e8ff073028aa2ddcac',1,'NullPointerException.NullPointerException()'],['../class_null_pointer_exception.html#a41a4d97149deeee5515086b1669efbc5',1,'NullPointerException.NullPointerException(String message)']]]
 ];

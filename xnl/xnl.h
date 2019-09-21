@@ -122,7 +122,7 @@ public:
 	virtual void setValue(XObject * object, xlong longValue) = 0;
 	virtual void setValue(XObject * object, double doubleValue) = 0;
 	virtual void setValue(XObject * object, bool boolValue) = 0;
-	virtual void setValue(XContext * context, XObject * object, const char * stringValue, int length) = 0;
+	virtual bool setValue(XContext * context, XObject * object, const char * stringValue, int length) = 0;
 	virtual void setValue(XObject * object, XObject * value) = 0;
 
 	//获取对象的值
@@ -494,44 +494,57 @@ public:
 		XObject * pret = 0;
 
 		if (typeid(_Var) == typeid(bool)) {
-			XObject * param = CreateXObject((xbool)_Var);
+            XObject * param = CreateXObject((bool)_Var);
 			pushParam(context, param);
 			pret = Invoke_helper(context, pthis, method, helper_cnt + 1, arg...);
 			dereferenceObject(param);
 		}else
 		if (typeid(_Var) == typeid(unsigned char)) {
-			XObject * param = CreateXObject((xbyte)_Var);
+            XObject * param = CreateXObject((xbyte)(size_t)_Var);
 			pushParam(context, param);
 			pret = Invoke_helper(context, pthis, method, helper_cnt + 1, arg...);
 			dereferenceObject(param);
 		}else
 		if (typeid(_Var) == typeid(char) || typeid(_Var) == typeid(wchar_t) || typeid(_Var) == typeid(unsigned short)){
-			XObject * param = CreateXObject((xchar)_Var);
+            XObject * param = CreateXObject((xchar)(size_t)_Var);
 			pushParam(context, param);
 			pret = Invoke_helper(context, pthis, method, helper_cnt + 1, arg...);
 			dereferenceObject(param);
 		}else
 		if (typeid(_Var) == typeid(short) || typeid(_Var) == typeid(signed short)) {
-			XObject * param = CreateXObject((short)_Var);
+            XObject * param = CreateXObject((short)(size_t)_Var);
 			pushParam(context, param);
 			pret = Invoke_helper(context, pthis, method, helper_cnt + 1, arg...);
 			dereferenceObject(param);
 		}else
 		if (typeid(_Var) == typeid(int) || typeid(_Var) == typeid(signed int) || typeid(_Var) == typeid(unsigned int)) {
-			XObject * param = CreateXObject((xint)_Var);
+            XObject * param = CreateXObject((xint)(size_t)_Var);
 			pushParam(context, param);
 			pret = Invoke_helper(context, pthis, method, helper_cnt + 1, arg...);
 			dereferenceObject(param);
 		}else
 		if (typeid(_Var) == typeid(long long) || typeid(_Var) == typeid(signed long long) || typeid(_Var) == typeid(unsigned long long)) {
-			XObject * param = CreateXObject((xlong)_Var);
+            XObject * param = CreateXObject((xlong)_Var);
 			pushParam(context, param);
 			pret = Invoke_helper(context, pthis, method, helper_cnt + 1, arg...);
 			dereferenceObject(param);
 		}
 		else
 		if (typeid(_Var) == typeid(double) || typeid(_Var) == typeid(float) || typeid(_Var) == typeid(long double)) {
-			XObject * param = CreateXObject((double)_Var);
+
+			double dv = 0;
+			if (typeid(_Var) == typeid(double)) {
+				dv = *(double*)&_Var;
+			}else
+			if (typeid(_Var) == typeid(float)) {
+				dv = *(float*)&_Var;
+			}
+			else
+			if (typeid(_Var) == typeid(long double)) {
+				dv = *(long double*)&_Var;
+			}
+			
+			XObject * param = CreateXObject(dv);
 			pushParam(context, param);
 			pret = Invoke_helper(context, pthis, method, helper_cnt + 1, arg...);
 			dereferenceObject(param);

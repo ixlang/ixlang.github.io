@@ -28,8 +28,8 @@ var searchData=
   ['addtonamelist',['addToNamelist',['../class_unsi.html#a2f0b67c8c393c173ec868ac92830614d',1,'Unsi']]],
   ['addwebsite',['addWebsite',['../class_http_server.html#a31bdb84b15a73fa6eef25598c172ae29',1,'HttpServer']]],
   ['addwidget',['addWidget',['../class_q_x_status_bar.html#ad51dadc2203eb18db848d1a4a1c26a59',1,'QXStatusBar.addWidget()'],['../class_q_x_tool_bar.html#ab4e9ecddbd59ea53d401ecb206fdbf74',1,'QXToolBar.addWidget()']]],
-  ['alignment',['alignment',['../class_q_x_progress_bar.html#a29634a34030f02c54ed1060e7e0a0e13',1,'QXProgressBar']]],
-  ['append',['append',['../class_string.html#a3ae200bae00237852b00e9499a0b905c',1,'String.append(String sub)'],['../class_string.html#a5769c406470b2ae8dcc80697d8f18385',1,'String.append(char sub)']]],
+  ['alignment',['alignment',['../class_q_x_progress_bar.html#a29634a34030f02c54ed1060e7e0a0e13',1,'QXProgressBar.alignment()'],['../class_q_x_text_edit.html#a3627234da2c46c47728355bdf3c70f63',1,'QXTextEdit.alignment()']]],
+  ['append',['append',['../class_string.html#a3ae200bae00237852b00e9499a0b905c',1,'String.append(String sub)'],['../class_string.html#a5769c406470b2ae8dcc80697d8f18385',1,'String.append(char sub)'],['../class_q_x_text_edit.html#a4da452e71babbb198f4d8fb6dfd0a248',1,'QXTextEdit.append()']]],
   ['appendpath',['appendPath',['../class_string.html#a06b3307f453b0d7d725c2ce0ca0094a9',1,'String']]],
   ['appendtext',['appendText',['../class_q_x_sci.html#aff163dee3a6d2bc162bba926585889e6',1,'QXSci']]],
   ['applyindic',['applyIndic',['../class_q_x_sci.html#aa9536622f983092d8d5bfea0aacf5380',1,'QXSci']]],
@@ -45,6 +45,7 @@ var searchData=
   ['attach',['attach',['../class_q_x_object.html#abbe3e2713706a21440c7e24d5afad0ad',1,'QXObject']]],
   ['attachbyname',['attachByName',['../class_q_x_object.html#a172cf733dd6ee40600fdf744703a543d',1,'QXObject']]],
   ['attribute',['attribute',['../class_x_dom_node.html#a9d92be1d9d2eba2461fe5ad55628ace7',1,'XDomNode']]],
+  ['autoformatting',['autoFormatting',['../class_q_x_text_edit.html#ad1eac92f8053f42b005a05acdf89c6f2',1,'QXTextEdit']]],
   ['autoshow',['autoShow',['../class_q_x_sci.html#abef190f214c00a4bc4f17443ee230d2a',1,'QXSci']]],
   ['available',['available',['../class_dgram_socket.html#aa62d7ee316aa8566e0ef1107ac0a603e',1,'DgramSocket.available()'],['../class_http_request.html#aa62d7ee316aa8566e0ef1107ac0a603e',1,'HttpRequest.available()'],['../interface_stream.html#aa62d7ee316aa8566e0ef1107ac0a603e',1,'Stream.available()'],['../class_stream_socket.html#aa62d7ee316aa8566e0ef1107ac0a603e',1,'StreamSocket.available()']]]
 ];

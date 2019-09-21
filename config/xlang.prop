@@ -61,6 +61,9 @@
 		"动态链接库:links":{
 			"type":"string"
 		},
+		"依赖包:depends":{
+			"type":"string"
+		},
 		"引用目录:incspath":{
 			"type":"string"
 		}

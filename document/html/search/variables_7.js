@@ -2,6 +2,8 @@ var searchData=
 [
   ['gesture',['Gesture',['../class_q_x_event.html#a8b42fe0710de6141337adc33c480e4a2',1,'QXEvent']]],
   ['gestureoverride',['GestureOverride',['../class_q_x_event.html#ac48e45cd658ce3e84f255351f11bf502',1,'QXEvent']]],
+  ['getdate',['GETDATE',['../class_q_x_core.html#a7100e2d88cccb51bacfeca9b867c2004',1,'QXCore']]],
+  ['getdatetime',['GETDATETIME',['../class_q_x_core.html#a13ee598229af17930553cdb72c65bcc7',1,'QXCore']]],
   ['getfont',['GETFONT',['../class_q_x_core.html#a09eb7d10e6682da12c65f6cb94800162',1,'QXCore']]],
   ['getfontdescription',['GETFONTDESCRIPTION',['../class_q_x_core.html#a09abc39d2e13d2361214e5dc806600ae',1,'QXCore']]],
   ['getfontname',['GETFONTNAME',['../class_q_x_core.html#a821f321c732093031ab03cdda816ddbf',1,'QXCore']]],
@@ -11,6 +13,7 @@ var searchData=
   ['getstylesheey',['GETSTYLESHEEY',['../class_q_x_core.html#ace24e0f2e19f196925ac8792b88ced90',1,'QXCore']]],
   ['gettag',['GETTAG',['../class_q_x_core.html#a433306fc0a08bbb2c24b82dfe80b53bc',1,'QXCore']]],
   ['gettext',['GETTEXT',['../class_q_x_core.html#a206ad3bfc5dd64623b483f69692f9ef2',1,'QXCore']]],
+  ['gettime',['GETTIME',['../class_q_x_core.html#a871ec2c918e7b56dcfb7d24667318b1c',1,'QXCore']]],
   ['gettooltips',['GETTOOLTIPS',['../class_q_x_core.html#ace016bdbffce48886775d35df4fdd7d9',1,'QXCore']]],
   ['gettopitem',['GETTOPITEM',['../class_q_x_core.html#a823d5abcb274bb8b3cc3396f6f295d4b',1,'QXCore']]],
   ['getviewport',['GETVIEWPORT',['../class_q_x_core.html#aab9033a83750693ba16572ebfa9b5f0a',1,'QXCore']]],
