@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.7 Release</span>
+   &#160;<span id="projectnumber">v3.6 Release</span>
    </div>
-   <div id="projectbrief">项目介绍</div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
   </td>
  </tr>
  </tbody>
@@ -86,8 +87,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pac-methods">包函数</a> &#124;
-<a href="#pac-attribs">包属性</a>  </div>
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="#pac-static-attribs">静态包属性</a>  </div>
   <div class="headertitle">
 <div class="title">Process类 参考</div>  </div>
 </div><!--header-->
@@ -96,11 +99,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <p>进程类  
  <a href="class_process.html#details">更多...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
-包函数</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
-包属性</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-attribs"></a>
+静态包属性</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>进程类 </p>
@@ -110,9 +119,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <a class="anchor" id="addb3512b89371a1e0dc7b611f5af2db9"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_process.html">Process</a> </td>
@@ -122,11 +128,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>构造 </p>
@@ -142,9 +143,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <a class="anchor" id="a33b927d039f6a0d069130ad029dd1e50"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_process.html">Process</a> </td>
@@ -164,11 +162,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>构造 </p>
@@ -183,48 +176,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div>
 </div>
 <h2 class="groupheader">成员函数说明</h2>
-<a class="anchor" id="a7ac11a47192f1e9726b831ac118827a3"></a>
+<a class="anchor" id="ab206fb52cee41d91bfa3724a0e79b523"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool create </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>visible</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>stdread</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>stdwrite</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>newConsole</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>创建进程 </p>
@@ -241,12 +204,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 </div>
 </div>
+<a class="anchor" id="ac6d13852f25c2591293a8d461f371c8f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool exit </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>exitCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>退出 (SIGKILL) </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a67b16bc2e4e6e4c6e64cee6890852f3b"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int getExitCode </td>
@@ -255,11 +234,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>获取退出代码 </p>
@@ -267,7 +241,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 </div>
 </div>
-<a class="anchor" id="a1beac25449ea47b8d8a666da21429c33"></a>
+<a class="anchor" id="a13c6a813f30db0b98d30c2a2703cb309"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -275,60 +249,92 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">setWorkDirectory </td>
+          <td class="memname">static long getId </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
-          <td class="paramname"><em>dir</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>设置进程工作目录 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dir</td><td>目录路径 </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>获取当前进程ID </p>
+<dl class="section return"><dt>返回</dt><dd>id </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a67d54ad8b312a2f4f93f4c7b98679613"></a>
+<a class="anchor" id="a912887c5fe73e39a0463019d92107ab0"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool waitFor </td>
+          <td class="memname">long id </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取ID </p>
+<dl class="section return"><dt>返回</dt><dd>id </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a59bdd4dc68c329466e9c6a70bf6f929d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void raise </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>millis</em></td><td>)</td>
+          <td class="paramname"><em>sig</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>等待进程退出 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">mills</td><td>等待超时 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>超时返回false; 等待成功返回true  <a class="el" href="class_illegal_argument_exception.html" title="参数异常 ">IllegalArgumentException</a> 参数异常 进程可能已退出 读取标准输出数据 </dd></dl>
+<p>向进程发送信号 </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adf4ee6bd8e54e18bdeacc20bda65232d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int read </td>
+          <td>(</td>
+          <td class="paramtype">byte   []&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取标准输出数据 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffer</td><td>缓冲区 </td></tr>
@@ -341,12 +347,101 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 </div>
 </div>
+<a class="anchor" id="afdc745dcef3c48ef056f93a711dba13e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int readError </td>
+          <td>(</td>
+          <td class="paramtype">byte   []&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取错误输出数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>缓冲区 </td></tr>
+    <tr><td class="paramname">pos</td><td>位置 </td></tr>
+    <tr><td class="paramname">length</td><td>长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>读取长度 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1beac25449ea47b8d8a666da21429c33"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">setWorkDirectory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>dir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置进程工作目录 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dir</td><td>目录路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2bff5623212e86601ba471dee3e9cb74"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool waitFor </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>millis</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>等待进程退出 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mills</td><td>等待超时 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>超时返回false; 等待成功返回true  <a class="el" href="class_illegal_argument_exception.html" title="参数异常 ">IllegalArgumentException</a> 参数异常 进程可能已退出 </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a7bc3c3e59293fb955b1add3921b44d38"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int write </td>
@@ -372,11 +467,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>写入标准输入数据 </p>
@@ -393,7 +483,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div>
 </div>
 <h2 class="groupheader">结构体成员变量说明</h2>
-<a class="anchor" id="ae9a8e7afda2a262a4182e05aba9eff39"></a>
+<a class="anchor" id="a0bd1955b8d1e437c493270c04de31b03"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -401,21 +491,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool int int length</td>
+          <td class="memname">const int Default = 0</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_process_8xcs_source.html">Process.xcs</a> 第 <a class="el" href="_process_8xcs_source.html#l00054">54</a> 行定义.</p>
+<p>在文件 <a class="el" href="_process_8xcs_source.html">Process.xcs</a> 第 <a class="el" href="_process_8xcs_source.html#l00007">7</a> 行定义.</p>
 
 </div>
 </div>
-<a class="anchor" id="af76e930d95c828196c6c4979e44c7af7"></a>
+<a class="anchor" id="af0472acfbe1f81e92041c9d9e9b859f3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -423,17 +513,127 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool int pos</td>
+          <td class="memname">const int NewConsole = 0x20</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>在文件 <a class="el" href="_process_8xcs_source.html">Process.xcs</a> 第 <a class="el" href="_process_8xcs_source.html#l00054">54</a> 行定义.</p>
+<p>在文件 <a class="el" href="_process_8xcs_source.html">Process.xcs</a> 第 <a class="el" href="_process_8xcs_source.html#l00013">13</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa5e40bc56bf86d9204e2a26a67ff4c54"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int RedirectStdErr = 0x10</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_process_8xcs_source.html">Process.xcs</a> 第 <a class="el" href="_process_8xcs_source.html#l00012">12</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaa258b22ef9de4bd002772213591f91d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int StdErr = 8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_process_8xcs_source.html">Process.xcs</a> 第 <a class="el" href="_process_8xcs_source.html#l00011">11</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0d2d29d6e61e65bc83ad1c9134caaefd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int StdIn = 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_process_8xcs_source.html">Process.xcs</a> 第 <a class="el" href="_process_8xcs_source.html#l00010">10</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad7e480649732c3202a0ffc7b77ca2ab5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int StdOut = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_process_8xcs_source.html">Process.xcs</a> 第 <a class="el" href="_process_8xcs_source.html#l00009">9</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a09d4df425ed99145c993981c6ce73592"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Visible = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_process_8xcs_source.html">Process.xcs</a> 第 <a class="el" href="_process_8xcs_source.html#l00008">8</a> 行定义.</p>
 
 </div>
 </div>

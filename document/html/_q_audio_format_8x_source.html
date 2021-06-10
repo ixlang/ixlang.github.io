@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/xlibrarys/QT&amp;XLIB/QXLibrary/qt5/multimedia/QAudioFormat.x 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v3.6 Release</span>
+   </div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c26b241c633baa98de380b3fd590c11c.html">xlibrarys</a></li><li class="navelem"><a class="el" href="dir_5666ad1a9fdeb818d224f872b324982b.html">QT&amp;XLIB</a></li><li class="navelem"><a class="el" href="dir_7961984395364fe113330b5319164161.html">QXLibrary</a></li><li class="navelem"><a class="el" href="dir_0d599f6f40044cb1083515dc54bda2af.html">qt5</a></li><li class="navelem"><a class="el" href="dir_8d6d44b6ba3428758353cd9c41304cf7.html">multimedia</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">QAudioFormat.x</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_q_audio_format_8x.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//xlang Source, Name:qt5/multimedia/QAudioFormat.x </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//Date: Fri Mar 21:27:28 2021 </span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">package </span>Qt{</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_format.html">    5</a></span>&#160;    public class QAudioFormat  : QCore{</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_audio_format_1_1_sample_type.html#a1631f6daa0cc31041f8d35b937c1cd2a">    6</a></span>&#160;        public enum SampleType { Unknown, SignedInt, UnSignedInt, Float };</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_audio_format_1_1_endian.html#a3cd57e18217bacdce78907497d0ed61c">    7</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">enum</span> Endian { BigEndian , LittleEndian};</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_format.html#ad10c8c1f2ee085d556be8b7625e816ea">    9</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_qt_1_1_q_audio_format.html#ad10c8c1f2ee085d556be8b7625e816ea">QAudioFormat</a>(<span class="keywordtype">long</span> h){</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;            super(h);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        }</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_format.html#a69e537417a6b3c343089a0c5403179be">   12</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_qt_1_1_q_audio_format.html#a69e537417a6b3c343089a0c5403179be">QAudioFormat</a>(){</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;            nativehandle = QtXnl.createNObject(QType.qtAudioFormat, 0);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            <span class="keywordflow">if</span> (nativehandle == 0){</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="class_illegal_argument_exception.html">IllegalArgumentException</a>(<span class="stringliteral">&quot;can not new QAudioFormat&quot;</span>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            }</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        }</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_format.html#aafdc4a60e4d7fbacf50f4d7149a01dea">   19</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_qt_1_1_q_audio_format.html#aafdc4a60e4d7fbacf50f4d7149a01dea">isvalid</a>(){</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_bool_value(nativehandle, Constant.QAUDIOFORMAT_ISVALID);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_format.html#a5f21752e21bb8e92d0584e4f4325c676">   23</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_audio_format.html#a5f21752e21bb8e92d0584e4f4325c676">setSampleRate</a>(<span class="keywordtype">int</span> sampleRate){</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            QtXnl.widget_set_vint_value(nativehandle, Constant.QAUDIOFORMAT_SETSAMPLERATE, sampleRate);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_format.html#adc7abe34bc536b07cf274aacc10b4fb1">   27</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_audio_format.html#adc7abe34bc536b07cf274aacc10b4fb1">sampleRate</a>() {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_int_value(nativehandle, Constant.QAUDIOFORMAT_SAMPLERATE);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_format.html#a9b16c05f12b7b37e623624c0bf081f39">   31</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_audio_format.html#a9b16c05f12b7b37e623624c0bf081f39">setChannelCount</a>(<span class="keywordtype">int</span> channelCount){</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            QtXnl.widget_set_vint_value(nativehandle, Constant.QAUDIOFORMAT_SETCHANNELCOUNT, channelCount);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_format.html#abd9c5bad5f5b500a011c794b5299e93d">   35</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_audio_format.html#abd9c5bad5f5b500a011c794b5299e93d">channelCount</a>(){</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_int_value(nativehandle, Constant.QAUDIOFORMAT_CHANNELCOUNT);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_format.html#a76aa09168c807c88c9b320d3ba608ffb">   39</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_audio_format.html#a76aa09168c807c88c9b320d3ba608ffb">setSampleSize</a>(<span class="keywordtype">int</span> sampleSize){</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            QtXnl.widget_set_vint_value(nativehandle, Constant.QAUDIOFORMAT_SETSAMPLESIZE, sampleSize);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_format.html#a0692367f37a35aef0dc6d6c6eb6a6b84">   43</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_audio_format.html#a0692367f37a35aef0dc6d6c6eb6a6b84">sampleSize</a>() {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_int_value(nativehandle, Constant.QAUDIOFORMAT_SAMPLESIZE);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_format.html#a613378a6eaf6c99523bc2afdc81f8262">   47</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_audio_format.html#a613378a6eaf6c99523bc2afdc81f8262">setCodec</a>(<a class="code" href="class_string.html">String</a> codec){</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            QtXnl.widget_slot_string(nativehandle, Constant.QAUDIOFORMAT_SETCODEC, codec);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_format.html#a97a946c2c5ee96d7c1858256f7c9e31c">   51</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_qt_1_1_q_audio_format.html#a97a946c2c5ee96d7c1858256f7c9e31c">codec</a>() {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">return</span> (<a class="code" href="class_string.html">String</a>)QtXnl.core_getString(nativehandle, Constant.QAUDIOFORMAT_CODEC);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_format.html#a0bb876c435bd4452280f78a05ad79b7f">   55</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_audio_format.html#a0bb876c435bd4452280f78a05ad79b7f">setByteOrder</a>(Endian byteOrder){</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            QtXnl.widget_set_vint_value(nativehandle, Constant.QAUDIOFORMAT_SETBYTEORDER, byteOrder);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_format.html#ac2c978757282b2157c74604b9bed172f">   59</a></span>&#160;        <span class="keyword">public</span> Endian <a class="code" href="class_qt_1_1_q_audio_format.html#ac2c978757282b2157c74604b9bed172f">byteOrder</a>() {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">return</span> (Endian)QtXnl.widget_get_int_value(nativehandle, Constant.QAUDIOFORMAT_BYTEORDER);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_format.html#aeab13519bcf774491a9a78ab80015889">   63</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_audio_format.html#aeab13519bcf774491a9a78ab80015889">setSampleType</a>(SampleType sampleType){</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            QtXnl.widget_set_vint_value(nativehandle, Constant.QAUDIOFORMAT_SETSAMPLETYPE, sampleType);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_format.html#ae81db5dc33bce5dcaf8138368f1baf06">   67</a></span>&#160;        <span class="keyword">public</span> SampleType <a class="code" href="class_qt_1_1_q_audio_format.html#ae81db5dc33bce5dcaf8138368f1baf06">sampleType</a>() {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">return</span> (SampleType)QtXnl.widget_get_int_value(nativehandle, Constant.QAUDIOFORMAT_SAMPLETYPE);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="comment">// Helper functions</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_format.html#ad8557696d0266780c4ad8c28358f4e7f">   72</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_audio_format.html#ad8557696d0266780c4ad8c28358f4e7f">bytesForDuration</a>(<span class="keywordtype">long</span> duration) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">return</span> QtXnl.core_getintlong(nativehandle, Constant.QAUDIOFORMAT_BYTESFORDURATION, duration);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_format.html#a8e523704ca25ad2f83b9738d626da76e">   76</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code" href="class_qt_1_1_q_audio_format.html#a8e523704ca25ad2f83b9738d626da76e">durationForBytes</a>(<span class="keywordtype">int</span> byteCount) {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">return</span> QtXnl.object_get_long_int(nativehandle, Constant.QAUDIOFORMAT_DURATIONFORBYTES, 0, byteCount);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_format.html#a626ab831ef0df9c267092fa4af6e682b">   80</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_audio_format.html#a626ab831ef0df9c267092fa4af6e682b">bytesForFrames</a>(<span class="keywordtype">int</span> frameCount){</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_set_bint_value(nativehandle, Constant.QAUDIOFORMAT_BYTESFORFRAMES, frameCount);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_format.html#ae2f7bc33ea19382210d8174319bfc67c">   84</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_audio_format.html#ae2f7bc33ea19382210d8174319bfc67c">framesForBytes</a>(<span class="keywordtype">int</span> byteCount) {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_set_bint_value(nativehandle, Constant.QAUDIOFORMAT_FRAMESFORBYTES, byteCount);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_format.html#a19af40c7b55d6b3e476b80bba4585d3c">   88</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_audio_format.html#a19af40c7b55d6b3e476b80bba4585d3c">framesForDuration</a>(<span class="keywordtype">long</span> duration){</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">return</span> QtXnl.core_getintlong(nativehandle, Constant.QAUDIOFORMAT_FRAMESFORDURATION, duration);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_format.html#a623b16c058d7729be88bc49656af1d10">   92</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code" href="class_qt_1_1_q_audio_format.html#a623b16c058d7729be88bc49656af1d10">durationForFrames</a>(<span class="keywordtype">int</span> frameCount) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">return</span> QtXnl.object_get_long_int(nativehandle, Constant.QAUDIOFORMAT_DURATIONFORFRAMES, 0, frameCount);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_format.html#ae31bd1b6d3b9ae76f85be192fbe00980">   96</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_audio_format.html#ae31bd1b6d3b9ae76f85be192fbe00980">bytesPerFrame</a>() {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_int_value(nativehandle, Constant.QAUDIOFORMAT_BYTESPERFRAME);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_format.html#a32d626626eee0bc4ade146973f6abb1c">   99</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_audio_format.html#a32d626626eee0bc4ade146973f6abb1c">finalize</a>(){</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            QtXnl.widget_slot(nativehandle, Constant.QAUDIOFORMAT_FINALIZE);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    };</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
+<div class="ttc" id="class_qt_1_1_q_audio_format_html_a0bb876c435bd4452280f78a05ad79b7f"><div class="ttname"><a href="class_qt_1_1_q_audio_format.html#a0bb876c435bd4452280f78a05ad79b7f">Qt.QAudioFormat.setByteOrder</a></div><div class="ttdeci">void setByteOrder(Endian byteOrder)</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_format_8x_source.html#l00055">QAudioFormat.x:55</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_format_html_a76aa09168c807c88c9b320d3ba608ffb"><div class="ttname"><a href="class_qt_1_1_q_audio_format.html#a76aa09168c807c88c9b320d3ba608ffb">Qt.QAudioFormat.setSampleSize</a></div><div class="ttdeci">void setSampleSize(int sampleSize)</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_format_8x_source.html#l00039">QAudioFormat.x:39</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_format_html_a9b16c05f12b7b37e623624c0bf081f39"><div class="ttname"><a href="class_qt_1_1_q_audio_format.html#a9b16c05f12b7b37e623624c0bf081f39">Qt.QAudioFormat.setChannelCount</a></div><div class="ttdeci">void setChannelCount(int channelCount)</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_format_8x_source.html#l00031">QAudioFormat.x:31</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_format_html_adc7abe34bc536b07cf274aacc10b4fb1"><div class="ttname"><a href="class_qt_1_1_q_audio_format.html#adc7abe34bc536b07cf274aacc10b4fb1">Qt.QAudioFormat.sampleRate</a></div><div class="ttdeci">int sampleRate() </div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_format_8x_source.html#l00027">QAudioFormat.x:27</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_format_html_ae2f7bc33ea19382210d8174319bfc67c"><div class="ttname"><a href="class_qt_1_1_q_audio_format.html#ae2f7bc33ea19382210d8174319bfc67c">Qt.QAudioFormat.framesForBytes</a></div><div class="ttdeci">int framesForBytes(int byteCount) </div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_format_8x_source.html#l00084">QAudioFormat.x:84</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_format_html_ad10c8c1f2ee085d556be8b7625e816ea"><div class="ttname"><a href="class_qt_1_1_q_audio_format.html#ad10c8c1f2ee085d556be8b7625e816ea">Qt.QAudioFormat.QAudioFormat</a></div><div class="ttdeci">QAudioFormat(long h)</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_format_8x_source.html#l00009">QAudioFormat.x:9</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_format_html_ae81db5dc33bce5dcaf8138368f1baf06"><div class="ttname"><a href="class_qt_1_1_q_audio_format.html#ae81db5dc33bce5dcaf8138368f1baf06">Qt.QAudioFormat.sampleType</a></div><div class="ttdeci">SampleType sampleType() </div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_format_8x_source.html#l00067">QAudioFormat.x:67</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_format_html_abd9c5bad5f5b500a011c794b5299e93d"><div class="ttname"><a href="class_qt_1_1_q_audio_format.html#abd9c5bad5f5b500a011c794b5299e93d">Qt.QAudioFormat.channelCount</a></div><div class="ttdeci">int channelCount()</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_format_8x_source.html#l00035">QAudioFormat.x:35</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_format_html_a97a946c2c5ee96d7c1858256f7c9e31c"><div class="ttname"><a href="class_qt_1_1_q_audio_format.html#a97a946c2c5ee96d7c1858256f7c9e31c">Qt.QAudioFormat.codec</a></div><div class="ttdeci">String codec() </div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_format_8x_source.html#l00051">QAudioFormat.x:51</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_format_html_aafdc4a60e4d7fbacf50f4d7149a01dea"><div class="ttname"><a href="class_qt_1_1_q_audio_format.html#aafdc4a60e4d7fbacf50f4d7149a01dea">Qt.QAudioFormat.isvalid</a></div><div class="ttdeci">bool isvalid()</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_format_8x_source.html#l00019">QAudioFormat.x:19</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_format_html_ad8557696d0266780c4ad8c28358f4e7f"><div class="ttname"><a href="class_qt_1_1_q_audio_format.html#ad8557696d0266780c4ad8c28358f4e7f">Qt.QAudioFormat.bytesForDuration</a></div><div class="ttdeci">int bytesForDuration(long duration) </div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_format_8x_source.html#l00072">QAudioFormat.x:72</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_format_html_a69e537417a6b3c343089a0c5403179be"><div class="ttname"><a href="class_qt_1_1_q_audio_format.html#a69e537417a6b3c343089a0c5403179be">Qt.QAudioFormat.QAudioFormat</a></div><div class="ttdeci">QAudioFormat()</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_format_8x_source.html#l00012">QAudioFormat.x:12</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_format_html_ac2c978757282b2157c74604b9bed172f"><div class="ttname"><a href="class_qt_1_1_q_audio_format.html#ac2c978757282b2157c74604b9bed172f">Qt.QAudioFormat.byteOrder</a></div><div class="ttdeci">Endian byteOrder() </div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_format_8x_source.html#l00059">QAudioFormat.x:59</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_format_html_a626ab831ef0df9c267092fa4af6e682b"><div class="ttname"><a href="class_qt_1_1_q_audio_format.html#a626ab831ef0df9c267092fa4af6e682b">Qt.QAudioFormat.bytesForFrames</a></div><div class="ttdeci">int bytesForFrames(int frameCount)</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_format_8x_source.html#l00080">QAudioFormat.x:80</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_format_html_a8e523704ca25ad2f83b9738d626da76e"><div class="ttname"><a href="class_qt_1_1_q_audio_format.html#a8e523704ca25ad2f83b9738d626da76e">Qt.QAudioFormat.durationForBytes</a></div><div class="ttdeci">long durationForBytes(int byteCount) </div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_format_8x_source.html#l00076">QAudioFormat.x:76</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_format_html_a5f21752e21bb8e92d0584e4f4325c676"><div class="ttname"><a href="class_qt_1_1_q_audio_format.html#a5f21752e21bb8e92d0584e4f4325c676">Qt.QAudioFormat.setSampleRate</a></div><div class="ttdeci">void setSampleRate(int sampleRate)</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_format_8x_source.html#l00023">QAudioFormat.x:23</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_format_html_a613378a6eaf6c99523bc2afdc81f8262"><div class="ttname"><a href="class_qt_1_1_q_audio_format.html#a613378a6eaf6c99523bc2afdc81f8262">Qt.QAudioFormat.setCodec</a></div><div class="ttdeci">void setCodec(String codec)</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_format_8x_source.html#l00047">QAudioFormat.x:47</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_format_html_a623b16c058d7729be88bc49656af1d10"><div class="ttname"><a href="class_qt_1_1_q_audio_format.html#a623b16c058d7729be88bc49656af1d10">Qt.QAudioFormat.durationForFrames</a></div><div class="ttdeci">long durationForFrames(int frameCount) </div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_format_8x_source.html#l00092">QAudioFormat.x:92</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_format_html_a0692367f37a35aef0dc6d6c6eb6a6b84"><div class="ttname"><a href="class_qt_1_1_q_audio_format.html#a0692367f37a35aef0dc6d6c6eb6a6b84">Qt.QAudioFormat.sampleSize</a></div><div class="ttdeci">int sampleSize() </div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_format_8x_source.html#l00043">QAudioFormat.x:43</a></div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_format_html_ae31bd1b6d3b9ae76f85be192fbe00980"><div class="ttname"><a href="class_qt_1_1_q_audio_format.html#ae31bd1b6d3b9ae76f85be192fbe00980">Qt.QAudioFormat.bytesPerFrame</a></div><div class="ttdeci">int bytesPerFrame() </div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_format_8x_source.html#l00096">QAudioFormat.x:96</a></div></div>
+<div class="ttc" id="class_illegal_argument_exception_html"><div class="ttname"><a href="class_illegal_argument_exception.html">IllegalArgumentException</a></div><div class="ttdoc">参数异常 </div><div class="ttdef"><b>Definition:</b> <a href="_exception_8xcs_source.html#l00174">Exception.xcs:174</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_format_html_a19af40c7b55d6b3e476b80bba4585d3c"><div class="ttname"><a href="class_qt_1_1_q_audio_format.html#a19af40c7b55d6b3e476b80bba4585d3c">Qt.QAudioFormat.framesForDuration</a></div><div class="ttdeci">int framesForDuration(long duration)</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_format_8x_source.html#l00088">QAudioFormat.x:88</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_format_html_a32d626626eee0bc4ade146973f6abb1c"><div class="ttname"><a href="class_qt_1_1_q_audio_format.html#a32d626626eee0bc4ade146973f6abb1c">Qt.QAudioFormat.finalize</a></div><div class="ttdeci">void finalize()</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_format_8x_source.html#l00099">QAudioFormat.x:99</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_format_html_aeab13519bcf774491a9a78ab80015889"><div class="ttname"><a href="class_qt_1_1_q_audio_format.html#aeab13519bcf774491a9a78ab80015889">Qt.QAudioFormat.setSampleType</a></div><div class="ttdeci">void setSampleType(SampleType sampleType)</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_format_8x_source.html#l00063">QAudioFormat.x:63</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

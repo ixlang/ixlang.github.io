@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/xlibrarys/xsql/SqlServer.xcsm 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v3.6 Release</span>
+   </div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c26b241c633baa98de380b3fd590c11c.html">xlibrarys</a></li><li class="navelem"><a class="el" href="dir_5e0503feaba35c895940d0574c061a6d.html">xsql</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">SqlServer.xcsm</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_sql_server_8xcsm.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//xlang Source, Name:SqlServer.xcsm </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//Date: Sat Sep 21:23:09 2019 </span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_sql_server.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_sql_server.html">SqlServer</a> : <a class="code" href="class_ado_connector.html">AdoConnector</a>{</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_sql_server.html#a2a941d4fbbf5cb3b535c48ac7b0c039f">    6</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_sql_server.html#a2a941d4fbbf5cb3b535c48ac7b0c039f">SqlServer</a>(){</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        <a class="code" href="class_ado_connector.html#a3e379b800bcd9a88c97b6c1d4d47e413">setDriver</a>(<span class="stringliteral">&quot;SQL SERVER&quot;</span>);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    }</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_sql_server_1_1_sql_server_register.html">    9</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span>SqlServerRegister : <a class="code" href="namespace_sql.html">Sql</a>.ConnectionRegister{</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_sql_server_1_1_sql_server_register.html#af0ca04d588e70845255e7020caf46415">   10</a></span>&#160;        <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="interface_sql_1_1_connection.html">Connection</a> <a class="code" href="class_sql_server_1_1_sql_server_register.html#af0ca04d588e70845255e7020caf46415">allocConnection</a>(<a class="code" href="class_string.html">String</a> drivername)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;            <span class="keywordflow">if</span> (drivername.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;sqlserver&quot;</span>)){</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_sql_server.html#a2a941d4fbbf5cb3b535c48ac7b0c039f">SqlServer</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;            }</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        }</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    };</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_sql_server.html#aed67f9a784ee7c39eb9d14d80e88a745">   18</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_sql_server.html#aed67f9a784ee7c39eb9d14d80e88a745">registry</a>(){</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">if</span> (Helper.init()){</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database.html">Database</a>.<a class="code" href="class_sql_1_1_database.html#a71854546a939f222b617f97f92f5f51a">reigstry</a>(<span class="stringliteral">&quot;sqlserver&quot;</span>, <span class="keyword">new</span> SqlServerRegister());</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_sql_server.html#af2d96d8fe2042b7cb63d0549dc1c568f">   28</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_sql_server.html#af2d96d8fe2042b7cb63d0549dc1c568f">registried</a> = <a class="code" href="class_sql_server.html#aed67f9a784ee7c39eb9d14d80e88a745">registry</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="ttc" id="class_sql_server_1_1_sql_server_register_html_af0ca04d588e70845255e7020caf46415"><div class="ttname"><a href="class_sql_server_1_1_sql_server_register.html#af0ca04d588e70845255e7020caf46415">SqlServer.SqlServerRegister.allocConnection</a></div><div class="ttdeci">Sql.Connection allocConnection(String drivername) override </div><div class="ttdef"><b>Definition:</b> <a href="_sql_server_8xcsm_source.html#l00010">SqlServer.xcsm:10</a></div></div>
+<div class="ttc" id="class_ado_connector_html"><div class="ttname"><a href="class_ado_connector.html">AdoConnector</a></div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00004">AdoConnector.xcsm:4</a></div></div>
+<div class="ttc" id="class_sql_server_html_af2d96d8fe2042b7cb63d0549dc1c568f"><div class="ttname"><a href="class_sql_server.html#af2d96d8fe2042b7cb63d0549dc1c568f">SqlServer.registried</a></div><div class="ttdeci">static bool registried</div><div class="ttdef"><b>Definition:</b> <a href="_sql_server_8xcsm_source.html#l00028">SqlServer.xcsm:28</a></div></div>
+<div class="ttc" id="class_sql_server_html_aed67f9a784ee7c39eb9d14d80e88a745"><div class="ttname"><a href="class_sql_server.html#aed67f9a784ee7c39eb9d14d80e88a745">SqlServer.registry</a></div><div class="ttdeci">static bool registry()</div><div class="ttdef"><b>Definition:</b> <a href="_sql_server_8xcsm_source.html#l00018">SqlServer.xcsm:18</a></div></div>
+<div class="ttc" id="interface_sql_1_1_connection_html"><div class="ttname"><a href="interface_sql_1_1_connection.html">Sql.Connection</a></div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00239">xsql.xcs:239</a></div></div>
+<div class="ttc" id="class_sql_server_html_a2a941d4fbbf5cb3b535c48ac7b0c039f"><div class="ttname"><a href="class_sql_server.html#a2a941d4fbbf5cb3b535c48ac7b0c039f">SqlServer.SqlServer</a></div><div class="ttdeci">SqlServer()</div><div class="ttdef"><b>Definition:</b> <a href="_sql_server_8xcsm_source.html#l00006">SqlServer.xcsm:6</a></div></div>
+<div class="ttc" id="namespace_sql_html"><div class="ttname"><a href="namespace_sql.html">Sql</a></div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00003">xsql.xcs:3</a></div></div>
+<div class="ttc" id="class_ado_connector_html_a3e379b800bcd9a88c97b6c1d4d47e413"><div class="ttname"><a href="class_ado_connector.html#a3e379b800bcd9a88c97b6c1d4d47e413">AdoConnector.setDriver</a></div><div class="ttdeci">void setDriver(String strDrv)</div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00308">AdoConnector.xcsm:308</a></div></div>
+<div class="ttc" id="class_string_html_a6658a49f6ae8d217501c31f372610be4"><div class="ttname"><a href="class_string.html#a6658a49f6ae8d217501c31f372610be4">String.equals</a></div><div class="ttdeci">bool equals(String other)</div><div class="ttdoc">测试两个串是否相等 </div></div>
+<div class="ttc" id="class_sql_server_html"><div class="ttname"><a href="class_sql_server.html">SqlServer</a></div><div class="ttdef"><b>Definition:</b> <a href="_sql_server_8xcsm_source.html#l00004">SqlServer.xcsm:4</a></div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="class_sql_1_1_database_html"><div class="ttname"><a href="class_sql_1_1_database.html">Sql.Database</a></div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00207">xsql.xcs:207</a></div></div>
+<div class="ttc" id="class_sql_1_1_database_html_a71854546a939f222b617f97f92f5f51a"><div class="ttname"><a href="class_sql_1_1_database.html#a71854546a939f222b617f97f92f5f51a">Sql.Database.reigstry</a></div><div class="ttdeci">static bool reigstry(String name, ConnectionRegister reg)</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00210">xsql.xcs:210</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

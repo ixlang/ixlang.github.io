@@ -1,0 +1,824 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/xlibrarys/xsql/xsql.xcs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v3.6 Release</span>
+   </div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c26b241c633baa98de380b3fd590c11c.html">xlibrarys</a></li><li class="navelem"><a class="el" href="dir_5e0503feaba35c895940d0574c061a6d.html">xsql</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">xsql.xcs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="xsql_8xcs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//xlang </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="namespace_sql.html">    3</a></span>&#160;<span class="keyword">package </span>Sql{</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_sql_1_1_sql_exception.html">    4</a></span>&#160;    public class SqlException : Exception{</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_sql_1_1_sql_exception.html#acf0fb4a29d82655d30975c6652530ae3">    5</a></span>&#160;        public SqlException(){</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;            </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        }</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_sql_1_1_sql_exception.html#ace08811705a1ca60071502c48f373967">    8</a></span>&#160;        public SqlException(int err, String sqlmessage){</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;            errcode = err;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;            message = sqlmessage;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        }</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    };</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_sql_1_1_database_not_support_exception.html">   14</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span>DatabaseNotSupportException : SqlException{</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_sql_1_1_database_not_support_exception.html#a87eb9884f36c0f0a03b991d7c2f9e32b">   15</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_sql_1_1_database_not_support_exception.html#a87eb9884f36c0f0a03b991d7c2f9e32b">DatabaseNotSupportException</a>(<a class="code" href="class_string.html">String</a> sqlmessage){</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            errcode = 0;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            message = <span class="stringliteral">&quot;not support method:&quot;</span> + sqlmessage;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        }</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    };</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="interface_sql_1_1_conn_pool_callback.html">   21</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">interface </span>ConnPoolCallback{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        Connection createConnection();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">bool</span> alive(Connection conn);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    };</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_sql_1_1_connection_pool.html">   26</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span>ConnectionPool{</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_sql_1_1_connection_pool_1_1connector_mgr.html">   27</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">class </span>connectorMgr{</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_sql_1_1_connection_pool_1_1connector_mgr.html#a01de8bd6ee8025c859373192147e9bff">   28</a></span>&#160;            <span class="keyword">public</span> Connection <a class="code" href="class_sql_1_1_connection_pool_1_1connector_mgr.html#a01de8bd6ee8025c859373192147e9bff">pconnection</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_sql_1_1_connection_pool_1_1connector_mgr.html#ac5deed89768140dbc80dbc6529a5e14a">   29</a></span>&#160;            <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code" href="class_sql_1_1_connection_pool_1_1connector_mgr.html#ac5deed89768140dbc80dbc6529a5e14a">timestamp</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        };</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_sql_1_1_connection_pool.html#a194697ac7a28153cabba09f68e07955a">   32</a></span>&#160;        <a class="code" href="class_list.html">List&lt;connectorMgr&gt;</a> _pool = <span class="keyword">new</span> <a class="code" href="class_list.html">List&lt;connectorMgr&gt;</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_sql_1_1_connection_pool.html#af00a42ad58f2f65a85759852db795cc4">   33</a></span>&#160;        <a class="code" href="class_map.html">Map&lt;int, bool&gt;</a> _error_map = <span class="keyword">new</span> <a class="code" href="class_map.html">Map&lt;int, bool&gt;</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_sql_1_1_connection_pool.html#aed4ca21ea4e81b25b54770f5588eb440">   35</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> TIMEOU_LIMIT = 300000;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_sql_1_1_connection_pool.html#a07e1414ce83fe7fdf63d5da65ec67b87">   37</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_sql_1_1_connection_pool.html#a07e1414ce83fe7fdf63d5da65ec67b87">_maxConnect</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_sql_1_1_connection_pool.html#a0e6c4476a22cc9189bfcc9c630a05d28">   38</a></span>&#160;        <span class="keywordtype">int</span> _active_cnt, <a class="code" href="class_sql_1_1_connection_pool.html#a0e6c4476a22cc9189bfcc9c630a05d28">_wait_time</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_sql_1_1_connection_pool.html#a8a7d7330a764daade44a208eca35b1c3">   39</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_sql_1_1_connection_pool.html#a8a7d7330a764daade44a208eca35b1c3">_validtesttime</a>, _maxIdleTime, _maxIdle;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_sql_1_1_connection_pool.html#a42401f756c3db7d021847d6301c4ac8e">   41</a></span>&#160;        ConnPoolCallback <a class="code" href="class_sql_1_1_connection_pool.html#a42401f756c3db7d021847d6301c4ac8e">callback</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_sql_1_1_connection_pool.html#ac6c388c1f287613e3eaebdd7bc7eb7c7">   44</a></span>&#160;        Connection <a class="code" href="class_sql_1_1_connection_pool.html#ac6c388c1f287613e3eaebdd7bc7eb7c7">allocate</a>(){</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            Connection connector = callback.createConnection();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">if</span> (connector != nilptr){</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                _active_cnt++;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">return</span> connector;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_sql_1_1_connection_pool.html#af56abc6ba121b4d4ac5514b0c2b271e7">   52</a></span>&#160;        <span class="keyword">public</span> Connection <a class="code" href="class_sql_1_1_connection_pool.html#af56abc6ba121b4d4ac5514b0c2b271e7">getConnector</a>(){</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            Connection connector = nilptr;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordtype">long</span> lastactive = 0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keyword">synchronized</span>(_pool){</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <span class="keywordflow">if</span> (_maxConnect != 0){</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                    <span class="keywordflow">while</span> ((_pool.<a class="code" href="class_list.html#af4b57d21919c42d55af03391f91a1c08">size</a>() == 0) &amp;&amp; (_active_cnt &gt;= _maxConnect)){</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                        _pool.wait();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <span class="keywordflow">do</span>{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                    <span class="keywordflow">if</span> (connector != nilptr){</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                        _active_cnt--;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                        connector.close();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                        connector = nilptr;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                    }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                    </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                    lastactive = 0;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                    <a class="code" href="class_list.html">List</a>.<a class="code" href="class_list_1_1_iterator.html">Iterator</a>&lt;connectorMgr&gt; iter = _pool.<a class="code" href="class_list.html#a6d73326f2404a3df917a7e4b951f9177">iterator</a>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                    <span class="keywordflow">if</span> (iter.hasNext()){</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                        connectorMgr mgr = iter.get();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                        connector = mgr.pconnection;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                        lastactive = mgr.timestamp;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                        _pool.<a class="code" href="class_list.html#a3ab1df7a495a5b4ea39e7321496db60e">remove</a>(iter);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                    }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                    }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                } <span class="keywordflow">while</span> (test(connector, lastactive) == <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                <span class="keywordflow">if</span> (connector == nilptr){</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                    <span class="keywordflow">if</span> ((_maxConnect == 0) || (_active_cnt &lt; _maxConnect)){</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                        connector = allocate();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">return</span> connector;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="class_sql_1_1_connection_pool.html#af98bbb982d36af0e01001394925799ac">   93</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_sql_1_1_connection_pool.html#af98bbb982d36af0e01001394925799ac">test</a>(Connection conn, <span class="keywordtype">long</span> lastactive){</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">if</span> ( (<a class="code" href="class__system__.html">_system_</a>.<a class="code" href="class__system__.html#ae2577c522d61ec6f231d1965385e6dba">currentTimeMillis</a>() - lastactive) &gt; _validtesttime){</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                <span class="keywordflow">return</span> callback.alive(conn);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="class_sql_1_1_connection_pool.html#a00a9910e29f50b579451cd485d9383ed">  100</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_sql_1_1_connection_pool.html#a00a9910e29f50b579451cd485d9383ed">recycle</a>(Connection connection){</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordtype">int</span> mysql_error = connection.getErrorCode();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordflow">if</span> (_error_map.<a class="code" href="class_map.html#a47e67a8191aafd1a6173b7819b4a3fed">containsKey</a>(mysql_error) == <span class="keyword">false</span>){</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <span class="keyword">synchronized</span>(_pool){</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                    connectorMgr mgr = <span class="keyword">new</span> connectorMgr();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                    mgr.pconnection = connection;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                    mgr.timestamp = <a class="code" href="class__system__.html">_system_</a>.<a class="code" href="class__system__.html#ae2577c522d61ec6f231d1965385e6dba">currentTimeMillis</a>();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                    <span class="keywordflow">if</span> (_maxIdleTime != 0){</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                        <a class="code" href="class_list.html">List</a>.<a class="code" href="class_list_1_1_iterator.html">Iterator</a>&lt;connectorMgr&gt; it = _pool.<a class="code" href="class_list.html#a6d73326f2404a3df917a7e4b951f9177">iterator</a>();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                        <span class="keywordflow">while</span> (it != nilptr &amp;&amp; it.hasNext()){</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                            <a class="code" href="class_list.html">List</a>.<a class="code" href="class_list_1_1_iterator.html">Iterator</a>&lt;connectorMgr&gt; tmp = it.getNext();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                            connectorMgr pmt = it.get();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                            </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                            <span class="keywordflow">if</span> ((mgr.timestamp - pmt.timestamp) &gt; _maxIdleTime){</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                                pmt.pconnection.close();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                                _pool.<a class="code" href="class_list.html#a3ab1df7a495a5b4ea39e7321496db60e">remove</a>(it);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                                _active_cnt--;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                            }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                            it = tmp;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                        }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                    }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                    </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                    <span class="keywordflow">if</span> (_maxIdle != 0){</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                        <span class="keywordflow">while</span> (_pool.<a class="code" href="class_list.html#af4b57d21919c42d55af03391f91a1c08">size</a>() &gt; _maxIdle){</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                            <a class="code" href="class_list.html">List</a>.<a class="code" href="class_list_1_1_iterator.html">Iterator</a>&lt;connectorMgr&gt; tmp = _pool.<a class="code" href="class_list.html#a6d73326f2404a3df917a7e4b951f9177">iterator</a>();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                            connectorMgr pmt = tmp.get();</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                            pmt.pconnection.close();</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                            _pool.<a class="code" href="class_list.html#a3ab1df7a495a5b4ea39e7321496db60e">remove</a>(tmp);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                            _active_cnt--;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                        }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                    }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                    _pool.<a class="code" href="class_list.html#a7aadda5fed3baf7dd2702adf4ac2363c">add</a>(mgr);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                    _pool.notify();</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            } <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                connection.close();</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                <span class="keyword">synchronized</span>(_pool){</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                    _active_cnt--;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                }</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            }</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="class_sql_1_1_connection_pool.html#ab4ca60fb15533bd8d0e2499badf9ac10">  159</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_sql_1_1_connection_pool.html#ab4ca60fb15533bd8d0e2499badf9ac10">config</a>(ConnPoolCallback _callback, <a class="code" href="class_string.html">String</a> reset_error, <span class="keywordtype">int</span> maxWait, <span class="keywordtype">int</span> maxConnect, <span class="keywordtype">int</span> maxIdle, <span class="keywordtype">int</span> maxIdleTime, <span class="keywordtype">int</span> validtesttime){</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keywordflow">if</span> (maxIdle != 0 &amp;&amp; maxConnect != 0 &amp;&amp; maxIdle &gt;= maxConnect){</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="class_illegal_argument_exception.html">IllegalArgumentException</a>(<span class="stringliteral">&quot;Connector config failed : maxIdle &gt;= maxConnect\n&quot;</span>);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            }</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <span class="keywordflow">if</span> (_callback == nilptr){</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            }</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            callback = _callback;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            _validtesttime = validtesttime;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <span class="keywordflow">if</span> (reset_error != nilptr){</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                <a class="code" href="class_string.html">String</a> err_list = reset_error;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                <a class="code" href="class_string.html">String</a>[] elist = err_list.<a class="code" href="class_string.html#a5339bc7d29e9e803c81f2caefb32bc59">split</a>(<span class="charliteral">&#39;,&#39;</span>);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; elist.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>; i++){</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                    <a class="code" href="class_string.html">String</a> str = elist[i];</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                    str.<a class="code" href="class_string.html#a24053e961f5f1b3dafea27a7c98538b7">trim</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                    _error_map.<a class="code" href="class_map.html#a33af8b798de2f23e13214901787a89f5">put</a>(str.<a class="code" href="class_string.html#af80be582b73dff63922eb860218a4095">parseInt</a>(), <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            }</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <span class="keywordflow">if</span> (maxWait != -1){</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                _wait_time = maxWait;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            _maxIdle = maxIdle;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            _maxConnect = maxConnect;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            _maxIdleTime = maxIdleTime;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        }</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="class_sql_1_1_connection_pool.html#ac8bb3912a3ce86b15842e79d0b421204">  194</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_sql_1_1_connection_pool.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a>(){</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <span class="keyword">synchronized</span>(_pool){</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                _pool.<a class="code" href="class_list.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a>();</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                _error_map.<a class="code" href="class_map.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a>();</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                _wait_time = 0;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                _maxConnect = 0;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                _maxIdle = 0;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                _active_cnt = 0;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                _maxIdleTime = TIMEOU_LIMIT;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            }</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        }</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    };</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    </div>
+<div class="line"><a name="l00207"></a><span class="lineno"><a class="line" href="class_sql_1_1_database.html">  207</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span>Database{</div>
+<div class="line"><a name="l00208"></a><span class="lineno"><a class="line" href="class_sql_1_1_database.html#afb35f10624379edb918490107a7a849e">  208</a></span>&#160;        <span class="keyword">static</span> <a class="code" href="class_map.html">Map&lt;String, ConnectionRegister&gt;</a> _database = <span class="keyword">new</span> <a class="code" href="class_map.html">Map&lt;String, ConnectionRegister&gt;</a>();</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        </div>
+<div class="line"><a name="l00210"></a><span class="lineno"><a class="line" href="class_sql_1_1_database.html#a71854546a939f222b617f97f92f5f51a">  210</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_sql_1_1_database.html#a71854546a939f222b617f97f92f5f51a">reigstry</a>(<a class="code" href="class_string.html">String</a> name, ConnectionRegister reg){</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            <span class="keyword">synchronized</span>(_database){</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                <span class="keywordflow">if</span> (_database.<a class="code" href="class_map.html#a47e67a8191aafd1a6173b7819b4a3fed">containsKey</a>(name) == <span class="keyword">false</span>){</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                    _database.<a class="code" href="class_map.html#a33af8b798de2f23e13214901787a89f5">put</a>(name, reg);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                }</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            }</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        }</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        </div>
+<div class="line"><a name="l00220"></a><span class="lineno"><a class="line" href="class_sql_1_1_database.html#ad40cdb6db738bbf26ed7298d91675613">  220</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> Connection <a class="code" href="class_sql_1_1_database.html#ad40cdb6db738bbf26ed7298d91675613">getConnection</a>(<a class="code" href="class_string.html">String</a> driverName){</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            <span class="keyword">synchronized</span>(_database){</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                    ConnectionRegister cr = _database.<a class="code" href="class_map.html#a97f0c790faf91d4bc8515cd12bfb90ea">get</a>(driverName);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                    <span class="keywordflow">return</span> cr.allocConnection(driverName);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                }<span class="keywordflow">catch</span>(<a class="code" href="class_exception.html">Exception</a> e){</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                </div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                }</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            }</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        }</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        </div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    };</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    </div>
+<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="interface_sql_1_1_connection_register.html">  235</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">interface </span>ConnectionRegister{</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        Connection allocConnection(<a class="code" href="class_string.html">String</a> drivername);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    };</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    </div>
+<div class="line"><a name="l00239"></a><span class="lineno"><a class="line" href="interface_sql_1_1_connection.html">  239</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">interface </span>Connection{</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordtype">void</span> create(<a class="code" href="class_string.html">String</a> uri, <a class="code" href="class_string.html">String</a> username, <a class="code" href="class_string.html">String</a> pwd);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        </div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="keywordtype">void</span> setOption(<span class="keywordtype">int</span> opt, Object option);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        </div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        Object getOption(<span class="keywordtype">int</span> opt);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        </div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        PreparedStatement prepareStatement(<a class="code" href="class_string.html">String</a> sql);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        </div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        Statement createStatement();</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        </div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keywordtype">int</span> getErrorCode();</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <a class="code" href="class_string.html">String</a> getError();</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        </div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keywordtype">bool</span> isClosed();</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        </div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <span class="keywordtype">void</span> close();</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    };</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    </div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    </div>
+<div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="interface_sql_1_1_result_set.html">  268</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">interface </span>ResultSet{</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keywordtype">bool</span> first();</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keywordtype">bool</span> last();</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keywordtype">bool</span> next();</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordtype">bool</span> previous();</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keywordtype">bool</span> isFirst();</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        <span class="keywordtype">bool</span> isLast();</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="keywordtype">bool</span> isEof();</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <span class="keywordtype">bool</span> isValid();</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        </div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <span class="keywordtype">int</span> getInt(<a class="code" href="class_string.html">String</a> columnlabel);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <span class="keywordtype">long</span> getLong(<a class="code" href="class_string.html">String</a> columnlabel);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <span class="keywordtype">double</span> getDouble(<a class="code" href="class_string.html">String</a> columnlabel);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        byte getByte(<a class="code" href="class_string.html">String</a> columnlabel);</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        <span class="keywordtype">bool</span> getBoolean(<a class="code" href="class_string.html">String</a> columnlabel);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        <a class="code" href="class_string.html">String</a> getString(<a class="code" href="class_string.html">String</a> columnlabel);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        <span class="keywordtype">int</span> getInt(<span class="keywordtype">int</span> columnIndex);</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="keywordtype">long</span> getLong(<span class="keywordtype">int</span> columnIndex);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="keywordtype">double</span> getDouble(<span class="keywordtype">int</span> columnIndex);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        byte getByte(<span class="keywordtype">int</span> columnIndex);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="keywordtype">bool</span> getBoolean(<span class="keywordtype">int</span> columnIndex);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <a class="code" href="class_string.html">String</a> getString(<span class="keywordtype">int</span> columnIndex);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <span class="keywordtype">int</span> findColumn(<a class="code" href="class_string.html">String</a>);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="keywordtype">long</span> getRowCount();</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordtype">int</span> getRow();</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <span class="keywordtype">void</span> close();</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    };</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    </div>
+<div class="line"><a name="l00300"></a><span class="lineno"><a class="line" href="interface_sql_1_1_statement.html">  300</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">interface </span>Statement{</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="keywordtype">int</span> execute(<a class="code" href="class_string.html">String</a> sql);</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        </div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        ResultSet executeQuery(<a class="code" href="class_string.html">String</a> sql);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        </div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="keywordtype">int</span> executeUpdate(<a class="code" href="class_string.html">String</a> sql);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        </div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        ResultSet getResult();</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        </div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <span class="keywordtype">void</span> close();</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    };</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    </div>
+<div class="line"><a name="l00312"></a><span class="lineno"><a class="line" href="class_sql_1_1_prepared_statement.html">  312</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span>PreparedStatement : Statement{</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    </div>
+<div class="line"><a name="l00314"></a><span class="lineno"><a class="line" href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">  314</a></span>&#160;        <a class="code" href="class_string.html">String</a> <a class="code" href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">textSql</a>;</div>
+<div class="line"><a name="l00315"></a><span class="lineno"><a class="line" href="class_sql_1_1_prepared_statement.html#a7f4b2859cc4d400b2df2e47188ab403e">  315</a></span>&#160;        <a class="code" href="class_string.html">String</a> []<a class="code" href="class_sql_1_1_prepared_statement.html#a7f4b2859cc4d400b2df2e47188ab403e">strsplit</a>;</div>
+<div class="line"><a name="l00316"></a><span class="lineno"><a class="line" href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">  316</a></span>&#160;        <a class="code" href="class_string.html">String</a> []<a class="code" href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">strparams</a>;</div>
+<div class="line"><a name="l00317"></a><span class="lineno"><a class="line" href="class_sql_1_1_prepared_statement.html#a37b81588fd9e65308ee1159d034f0314">  317</a></span>&#160;        <span class="keywordtype">int</span> paramid = 0;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        </div>
+<div class="line"><a name="l00319"></a><span class="lineno"><a class="line" href="class_sql_1_1_prepared_statement.html#a471b160258ae3771d4b76d0e9ee50d42">  319</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_sql_1_1_prepared_statement.html#a471b160258ae3771d4b76d0e9ee50d42">PreparedStatement</a>(<a class="code" href="class_string.html">String</a> sql){</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            textSql = <span class="stringliteral">&quot; &quot;</span> + sql + <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            strsplit = textSql.<a class="code" href="class_string.html#a5339bc7d29e9e803c81f2caefb32bc59">split</a>(<span class="charliteral">&#39;?&#39;</span>);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            <span class="keywordflow">if</span> (strsplit.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a> == 0){</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="class_illegal_argument_exception.html">IllegalArgumentException</a>(<span class="stringliteral">&quot;invalid sql&quot;</span>);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;            }</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            strparams = <span class="keyword">new</span> <a class="code" href="class_string.html">String</a>[strsplit.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a> - 1];</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        }</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        </div>
+<div class="line"><a name="l00328"></a><span class="lineno"><a class="line" href="class_sql_1_1_prepared_statement.html#a5c6b452555b71001fe31d2b794244fdd">  328</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_sql_1_1_prepared_statement.html#a5c6b452555b71001fe31d2b794244fdd">safety</a>(<a class="code" href="class_string.html">String</a> str){</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            str = str.<a class="code" href="class_string.html#a93e090d87c912ac6b497ec2616bb1e2d">replace</a>(<span class="stringliteral">&quot;\\&quot;</span>, <span class="stringliteral">&quot;\\\\&quot;</span>);</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            str = str.<a class="code" href="class_string.html#a93e090d87c912ac6b497ec2616bb1e2d">replace</a>(<span class="stringliteral">&quot;\&quot;&quot;</span>, <span class="stringliteral">&quot;\\\&quot;&quot;</span>);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            str = str.<a class="code" href="class_string.html#a93e090d87c912ac6b497ec2616bb1e2d">replace</a>(<span class="stringliteral">&quot;\&#39;&quot;</span>, <span class="stringliteral">&quot;\\\&#39;&quot;</span>);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            str = str.<a class="code" href="class_string.html#a93e090d87c912ac6b497ec2616bb1e2d">replace</a>(<span class="stringliteral">&quot;\`&quot;</span>, <span class="stringliteral">&quot;\\\`&quot;</span>);</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;            <span class="keywordflow">return</span> <span class="stringliteral">&quot;&#39;&quot;</span> + str + <span class="stringliteral">&quot;&#39;&quot;</span>;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        }</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        </div>
+<div class="line"><a name="l00336"></a><span class="lineno"><a class="line" href="class_sql_1_1_prepared_statement.html#a1482759d1e5a47290e33809d3664da13">  336</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_sql_1_1_prepared_statement.html#a1482759d1e5a47290e33809d3664da13">execute</a>(){</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;            <span class="keywordflow">return</span> execute(getSql());</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        }</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        </div>
+<div class="line"><a name="l00340"></a><span class="lineno"><a class="line" href="class_sql_1_1_prepared_statement.html#a5710636b6fe02e1f8960e73490fba65f">  340</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_sql_1_1_prepared_statement.html#a5710636b6fe02e1f8960e73490fba65f">getSql</a>(){</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            <a class="code" href="class_string.html">String</a> sqlout = strsplit[0];</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            <span class="keywordtype">int</span> i = 1, c = strsplit.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            <span class="keywordflow">for</span> (; i &lt; c; i++){</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                sqlout = sqlout + (strparams[i - 1] + strsplit[i]);</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            }</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;            <span class="keywordflow">return</span> sqlout;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        }</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        </div>
+<div class="line"><a name="l00349"></a><span class="lineno"><a class="line" href="class_sql_1_1_prepared_statement.html#acb9b9bceea8dc7a28b3e3292a1fcfd85">  349</a></span>&#160;        <span class="keyword">public</span> ResultSet <a class="code" href="class_sql_1_1_prepared_statement.html#acb9b9bceea8dc7a28b3e3292a1fcfd85">executeQuery</a>(){</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;            <span class="keywordflow">return</span> executeQuery(getSql());</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        }</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        </div>
+<div class="line"><a name="l00353"></a><span class="lineno"><a class="line" href="class_sql_1_1_prepared_statement.html#aa0c49e931a593f674b2ffe31816b49a0">  353</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_sql_1_1_prepared_statement.html#aa0c49e931a593f674b2ffe31816b49a0">executeUpdate</a>(){</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            <span class="keywordflow">return</span> executeUpdate(getSql());</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        }</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        </div>
+<div class="line"><a name="l00357"></a><span class="lineno"><a class="line" href="class_sql_1_1_prepared_statement.html#a558b4954a71ddde0e77222a887fcc830">  357</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_sql_1_1_prepared_statement.html#a558b4954a71ddde0e77222a887fcc830">setValue</a>(<a class="code" href="class_string.html">String</a> value){</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            <span class="keywordflow">if</span> (paramid &lt; strparams.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>){</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                strparams[paramid++] = safety(value);</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> SqlException(-1, <span class="stringliteral">&quot;sql &quot;</span> +textSql + <span class="stringliteral">&quot; dont need value:&quot;</span> + value);</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;            }</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        }</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        </div>
+<div class="line"><a name="l00365"></a><span class="lineno"><a class="line" href="class_sql_1_1_prepared_statement.html#a23d79e21b8ed72e19278ca31d47b8c87">  365</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_sql_1_1_prepared_statement.html#a23d79e21b8ed72e19278ca31d47b8c87">setValue</a>(<span class="keywordtype">int</span> value){</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;            <span class="keywordflow">if</span> (paramid &lt; strparams.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>){</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                strparams[paramid++] = <a class="code" href="class_string.html">String</a>.<a class="code" href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">format</a>(<span class="stringliteral">&quot;%d&quot;</span>,value);</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> SqlException(-1, <span class="stringliteral">&quot;sql &quot;</span> +textSql + <span class="stringliteral">&quot; dont need value:&quot;</span> + value);</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            }</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        }</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        </div>
+<div class="line"><a name="l00373"></a><span class="lineno"><a class="line" href="class_sql_1_1_prepared_statement.html#ae364c18149785f28d2204a39a538b4a1">  373</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_sql_1_1_prepared_statement.html#ae364c18149785f28d2204a39a538b4a1">setValue</a>(<span class="keywordtype">long</span> value){</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;            <span class="keywordflow">if</span> (paramid &lt; strparams.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>){</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                strparams[paramid++] = <a class="code" href="class_string.html">String</a>.<a class="code" href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">format</a>(<span class="stringliteral">&quot;%d&quot;</span>,value);</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> SqlException(-1, <span class="stringliteral">&quot;sql &quot;</span> +textSql + <span class="stringliteral">&quot; dont need value:&quot;</span> + value);</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;            }</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        }</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        </div>
+<div class="line"><a name="l00381"></a><span class="lineno"><a class="line" href="class_sql_1_1_prepared_statement.html#a227e5ed9ff9f1a742647e5bb1699d2fc">  381</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_sql_1_1_prepared_statement.html#a227e5ed9ff9f1a742647e5bb1699d2fc">setValue</a>(byte value){</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            <span class="keywordflow">if</span> (paramid &lt; strparams.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>){</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                strparams[paramid++] = <a class="code" href="class_string.html">String</a>.<a class="code" href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">format</a>(<span class="stringliteral">&quot;%02u&quot;</span>,value &amp; 0xff);</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> SqlException(-1, <span class="stringliteral">&quot;sql &quot;</span> +textSql + <span class="stringliteral">&quot; dont need value:&quot;</span> + value);</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            }</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        }</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        </div>
+<div class="line"><a name="l00389"></a><span class="lineno"><a class="line" href="class_sql_1_1_prepared_statement.html#a1a31743bc7def7cf7fdad044c84d9268">  389</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_sql_1_1_prepared_statement.html#a1a31743bc7def7cf7fdad044c84d9268">setValue</a>(<span class="keywordtype">double</span> value){</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;            <span class="keywordflow">if</span> (paramid &lt; strparams.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>){</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                strparams[paramid++] = <a class="code" href="class_string.html">String</a>.<a class="code" href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">format</a>(<span class="stringliteral">&quot;%f&quot;</span>,value);</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> SqlException(-1, <span class="stringliteral">&quot;sql &quot;</span> +textSql + <span class="stringliteral">&quot; dont need value:&quot;</span> + value);</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            }</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        }</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        </div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        </div>
+<div class="line"><a name="l00398"></a><span class="lineno"><a class="line" href="class_sql_1_1_prepared_statement.html#a4543975fbe98bd1962d52a5ff4846446">  398</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_sql_1_1_prepared_statement.html#a4543975fbe98bd1962d52a5ff4846446">setValue</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <a class="code" href="class_string.html">String</a> value){</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;            <span class="keywordflow">if</span> ((<span class="keywordtype">id</span> &gt; 0) &amp;&amp; (<span class="keywordtype">id</span> - 1 &lt; strparams.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>)){</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                strparams[<span class="keywordtype">id</span> - 1] = safety(value);</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> SqlException(-1, <span class="stringliteral">&quot;sql &quot;</span> +textSql + <span class="stringliteral">&quot; dont need value:&quot;</span> + value);</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;            }      </div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        }</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        </div>
+<div class="line"><a name="l00406"></a><span class="lineno"><a class="line" href="class_sql_1_1_prepared_statement.html#a6abecbef72d2d1ef5635d0dadc3ec05d">  406</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_sql_1_1_prepared_statement.html#a6abecbef72d2d1ef5635d0dadc3ec05d">setValue</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">int</span> value){</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;            <span class="keywordflow">if</span> ((<span class="keywordtype">id</span> &gt; 0) &amp;&amp; (<span class="keywordtype">id</span> - 1 &lt; strparams.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>)){</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                strparams[<span class="keywordtype">id</span> - 1] = <a class="code" href="class_string.html">String</a>.<a class="code" href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">format</a>(<span class="stringliteral">&quot;%d&quot;</span>,value);</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> SqlException(-1, <span class="stringliteral">&quot;sql &quot;</span> +textSql + <span class="stringliteral">&quot; dont need value:&quot;</span> + value);</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;            }  </div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;        }</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        </div>
+<div class="line"><a name="l00414"></a><span class="lineno"><a class="line" href="class_sql_1_1_prepared_statement.html#af790b177f3dad002bd4d5e153676b1d1">  414</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_sql_1_1_prepared_statement.html#af790b177f3dad002bd4d5e153676b1d1">setValue</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">long</span> value){</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;            <span class="keywordflow">if</span> ((<span class="keywordtype">id</span> &gt; 0) &amp;&amp; (<span class="keywordtype">id</span> - 1 &lt; strparams.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>)){</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;                strparams[<span class="keywordtype">id</span> - 1] = <a class="code" href="class_string.html">String</a>.<a class="code" href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">format</a>(<span class="stringliteral">&quot;%d&quot;</span>,value);</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> SqlException(-1, <span class="stringliteral">&quot;sql &quot;</span> +textSql + <span class="stringliteral">&quot; dont need value:&quot;</span> + value);</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;            }  </div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        }</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        </div>
+<div class="line"><a name="l00422"></a><span class="lineno"><a class="line" href="class_sql_1_1_prepared_statement.html#a753cdef62fb1b8193ef2fbdfbeb28b0d">  422</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_sql_1_1_prepared_statement.html#a753cdef62fb1b8193ef2fbdfbeb28b0d">setValue</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, byte value){</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;            <span class="keywordflow">if</span> ((<span class="keywordtype">id</span> &gt; 0) &amp;&amp; (<span class="keywordtype">id</span> - 1 &lt; strparams.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>)){</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;                strparams[<span class="keywordtype">id</span> - 1] = <a class="code" href="class_string.html">String</a>.<a class="code" href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">format</a>(<span class="stringliteral">&quot;%02u&quot;</span>,value &amp; 0xff);</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> SqlException(-1, <span class="stringliteral">&quot;sql &quot;</span> +textSql + <span class="stringliteral">&quot; dont need value:&quot;</span> + value);</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;            }  </div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        }</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        </div>
+<div class="line"><a name="l00430"></a><span class="lineno"><a class="line" href="class_sql_1_1_prepared_statement.html#a623abc9f34c45adce62fb26dcc64e6e4">  430</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_sql_1_1_prepared_statement.html#a623abc9f34c45adce62fb26dcc64e6e4">setValue</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">double</span> value){</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;            <span class="keywordflow">if</span> ((<span class="keywordtype">id</span> &gt; 0) &amp;&amp; (<span class="keywordtype">id</span> - 1 &lt; strparams.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>)){</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;                strparams[<span class="keywordtype">id</span> - 1] = <a class="code" href="class_string.html">String</a>.<a class="code" href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">format</a>(<span class="stringliteral">&quot;%f&quot;</span>,value);</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> SqlException(-1, <span class="stringliteral">&quot;sql &quot;</span> +textSql + <span class="stringliteral">&quot; dont need value:&quot;</span> + value);</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;            }  </div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        }</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        </div>
+<div class="line"><a name="l00438"></a><span class="lineno"><a class="line" href="class_sql_1_1_prepared_statement.html#aaa397250b1498fcea970ee6b4cc4f25a">  438</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_sql_1_1_prepared_statement.html#aaa397250b1498fcea970ee6b4cc4f25a">setValues</a>(Object [] args){</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; args.length; i++){</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;                <span class="keywordflow">if</span> (args[i].instanceOf(<a class="code" href="class_string.html">String</a>)){</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;                    setValue((<a class="code" href="class_string.html">String</a>)args[i]);</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;                }<span class="keywordflow">else</span></div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;                <span class="keywordflow">if</span> (args[i].instanceOf(<span class="keywordtype">int</span>)){</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;                    setValue((<span class="keywordtype">int</span>)args[i]);</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;                }<span class="keywordflow">else</span></div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;                <span class="keywordflow">if</span> (args[i].instanceOf(<span class="keywordtype">long</span>)){</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;                    setValue((<span class="keywordtype">long</span>)args[i]);</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;                }<span class="keywordflow">else</span></div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;                <span class="keywordflow">if</span> (args[i].instanceOf(byte)){</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;                    setValue((byte)args[i]);</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;                }<span class="keywordflow">else</span></div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                <span class="keywordflow">if</span> (args[i].instanceOf(<span class="keywordtype">double</span>)){</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;                    setValue((<span class="keywordtype">double</span>)args[i]);</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;                }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> SqlException(-1, <span class="stringliteral">&quot;sql &quot;</span> +textSql + <span class="stringliteral">&quot; dont accept type:&quot;</span> + i);</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;                }</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;            }</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        }</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    };</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;};</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;<span class="comment">void testSql1(){</span></div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;<span class="comment">    Sql.ConnectionPool pool = new Sql.ConnectionPool();</span></div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;<span class="comment">    pool.config(new Sql.ConnPoolCallback(){</span></div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;<span class="comment">    </span></div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;<span class="comment">        Sql.Connection createConnection()override{</span></div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;<span class="comment">            //TODO </span></div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;<span class="comment">            Sql.Connection conn = Sql.Database.getConnection(&quot;sqlserver&quot;);</span></div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;<span class="comment">            if (conn != nilptr){</span></div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;<span class="comment">                conn.create(&quot;192.168.10.128&quot;, &quot;sa&quot;, &quot;233276111&quot;);</span></div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;<span class="comment">            return conn;</span></div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<span class="comment">        }</span></div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;<span class="comment">        </span></div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;<span class="comment">        bool alive(Sql.Connection conn)override{</span></div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;<span class="comment">            //TODO </span></div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;<span class="comment">            Sql.Statement state =  conn.createStatement();</span></div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;<span class="comment">            try{</span></div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;<span class="comment">                state.execute(&quot;select 1;&quot;);</span></div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;<span class="comment">                return true;</span></div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;<span class="comment">            }catch(Exception e){</span></div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;<span class="comment">                </span></div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;<span class="comment">            return false;</span></div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;<span class="comment">        }</span></div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;<span class="comment">    },&quot;2006,2014&quot;,50, 50, 3, 300000, 10000);</span></div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;<span class="comment">    </span></div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;<span class="comment">    for (int i = 0; i &lt; 30; i++){ </span></div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;<span class="comment">        new Thread(){</span></div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;<span class="comment">            void run()override{</span></div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;<span class="comment">                testSqlite(pool);</span></div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;<span class="comment">        }.start();</span></div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;<span class="comment">    }</span></div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;<span class="comment">}</span></div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;<span class="comment">int testSqlite(Sql.ConnectionPool pool){</span></div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;<span class="comment">    Sqlite.registry();</span></div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;<span class="comment">    </span></div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;<span class="comment">    _system_.createConsole();</span></div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;<span class="comment">    </span></div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;<span class="comment">    long before = _system_.currentTimeMillis();</span></div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;<span class="comment">    for (int cx = 0; cx &lt; 100;cx ++){ </span></div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;<span class="comment">        Sql.Connection slite = pool.getConnector();</span></div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;<span class="comment">    </span></div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;<span class="comment">        if (slite != nilptr){</span></div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;<span class="comment">            //slite.create(&quot;sqlite.db&quot;, nilptr, nilptr);</span></div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;<span class="comment">            //slite.create(&quot;127.0.0.1&quot;, &quot;root&quot;, &quot;233276111&quot;);</span></div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;<span class="comment">            </span></div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;<span class="comment">            //slite.setOption(Mysql.MysqlOption.CHARSET,&quot;utf8&quot;);</span></div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;<span class="comment">            </span></div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;<span class="comment">            //slite.setOption(Mysql.MysqlOption.SELECTDB, &quot;test&quot;);</span></div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;<span class="comment">            </span></div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;<span class="comment">            </span></div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;<span class="comment">            // 创建表</span></div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;<span class="comment">            Sql.PreparedStatement stmt = slite.prepareStatement(&quot;CREATE table member(name varchar(32),age int) CHARSET=utf8&quot;);</span></div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;<span class="comment">            </span></div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;<span class="comment">            //_system_.consoleWrite(&quot;time:&quot; + (_system_.currentTimeMillis() - before) + &quot; - 1\n&quot;);</span></div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;<span class="comment">            </span></div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;<span class="comment">            try{</span></div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;<span class="comment">                stmt.execute();</span></div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;<span class="comment">            }catch(Exception e){</span></div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;<span class="comment">                //_system_.consoleWrite(&quot;SqlException:&quot; + e.getErrorCode() + &quot;,&quot; + e.getMessage() + &quot;\n&quot;);</span></div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;<span class="comment">            </span></div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;<span class="comment">            String [] names = {</span></div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;<span class="comment">                &quot;嘉懿&quot;,&quot;煜城&quot;,&quot;懿轩&quot;,&quot;烨伟&quot;,&quot;苑博&quot;,&quot;伟泽&quot;,&quot;熠彤&quot;,&quot;鸿煊&quot;,&quot;博涛&quot;,&quot;烨霖&quot;,&quot;烨华&quot;,&quot;煜祺&quot;,&quot;智宸&quot;,&quot;正豪&quot;,</span></div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;<span class="comment">                &quot;昊然&quot;,&quot;明杰&quot;,&quot;立诚&quot;,&quot;立轩&quot;,&quot;立辉&quot;,&quot;峻熙&quot;,&quot;弘文&quot;,&quot;熠彤&quot;,&quot;鸿煊&quot;,&quot;烨霖&quot;,&quot;哲瀚&quot;,&quot;鑫鹏&quot;,&quot;致远&quot;,&quot;俊驰&quot;</span></div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;<span class="comment">            };</span></div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;<span class="comment">            </span></div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;<span class="comment">            _system_.consoleWrite(&quot;time:&quot; + (_system_.currentTimeMillis() - before) + &quot; - before insert\n&quot;);</span></div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;<span class="comment">            </span></div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;<span class="comment">            try{</span></div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;<span class="comment">                //插入人名  年龄随机</span></div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;<span class="comment">                </span></div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;<span class="comment">                for(int i = 0,  c = names.length; i &lt; c; i ++){</span></div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;<span class="comment">                    stmt = slite.prepareStatement(&quot;insert into member (name,age)VALUES(?, ?)&quot;);</span></div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;<span class="comment">                    stmt.setValue(names[i]);</span></div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;<span class="comment">                    stmt.setValue((int)(Math.random() * 80));</span></div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;<span class="comment">                    stmt.execute();</span></div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;<span class="comment">                }</span></div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;<span class="comment">            }catch(Exception e){</span></div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;<span class="comment">                _system_.consoleWrite(e.getMessage() + &quot;\n&quot;);</span></div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;<span class="comment">            _system_.consoleWrite(&quot;time:&quot; + (_system_.currentTimeMillis() - before) + &quot; - after insert\n&quot;);</span></div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;<span class="comment">        </span></div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;<span class="comment">            stmt = slite.prepareStatement(&quot;select * from member where age &lt; ? limit 10&quot;);</span></div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;<span class="comment">            stmt.setValue(40);</span></div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;<span class="comment">            </span></div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;<span class="comment">            try{</span></div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;<span class="comment">                Sql.ResultSet rs = stmt.executeQuery();</span></div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;<span class="comment">                int c = rs.getRowCount();</span></div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;<span class="comment">                while (rs.next()){</span></div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;<span class="comment">                    //_system_.consoleWrite(new String(rs.getString(&quot;name&quot;).getBytes(&quot;GB18030//IGNORE&quot;)) + &quot;:&quot; + rs.getString(&quot;age&quot;) + &quot;\n&quot;);</span></div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;<span class="comment">                }</span></div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;<span class="comment">            }catch(Exception e){</span></div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;<span class="comment">                _system_.consoleWrite(e.getMessage() + &quot;\n&quot;);</span></div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;<span class="comment">        }</span></div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;<span class="comment">        pool.recycle(slite);</span></div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;<span class="comment">    }</span></div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;<span class="comment">    </span></div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;<span class="comment">    _system_.consoleWrite(&quot;done time:&quot; + (_system_.currentTimeMillis() - before) + &quot; - 4\n&quot;);</span></div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;<span class="comment">    </span></div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;<span class="comment">    Thread.sleep(100);</span></div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;<span class="comment">    </span></div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;<span class="comment">    return 0;</span></div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;<span class="comment">}</span></div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;<span class="comment">void testSql(){</span></div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;<span class="comment">    //SqlServer.registry();</span></div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;<span class="comment">    Sql.ConnectionPool pool = new Sql.ConnectionPool();</span></div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;<span class="comment">    pool.config(new Sql.ConnPoolCallback(){</span></div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;<span class="comment">    </span></div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;<span class="comment">        Sql.Connection createConnection()override{</span></div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;<span class="comment">            //TODO </span></div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;<span class="comment">            Sql.Connection conn = Sql.Database.getConnection(&quot;sqlserver&quot;);</span></div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;<span class="comment">            if (conn != nilptr){</span></div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;<span class="comment">                conn.create(&quot;192.168.10.128&quot;, &quot;sa&quot;, &quot;233276111&quot;);</span></div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;<span class="comment">            return conn;</span></div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;<span class="comment">        }</span></div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;<span class="comment">        </span></div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;<span class="comment">        bool alive(Sql.Connection conn)override{</span></div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;<span class="comment">            //TODO </span></div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;<span class="comment">            Sql.Statement state =  conn.createStatement();</span></div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;<span class="comment">            try{</span></div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;<span class="comment">                state.execute(&quot;select 1;&quot;);</span></div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;<span class="comment">                return true;</span></div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;<span class="comment">            }catch(Exception e){</span></div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;<span class="comment">                </span></div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;<span class="comment">            return false;</span></div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;<span class="comment">        }</span></div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;<span class="comment">    },&quot;2006,2014&quot;,50, 50, 3, 300000, 10000);</span></div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;<span class="comment">    </span></div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;<span class="comment">    for (int i = 0; i &lt; 30; i++){ </span></div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;<span class="comment">        new Thread(){</span></div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;<span class="comment">            void run()override{</span></div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;<span class="comment">                testSqlserver(pool);</span></div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;<span class="comment">        }.start();</span></div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;<span class="comment">    }</span></div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;<span class="comment">}</span></div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;<span class="comment">int testSqlserver(Sql.ConnectionPool pool){</span></div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;<span class="comment">    _system_.createConsole();</span></div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;<span class="comment">   for (int aa = 0;aa &lt; 1000; aa++){</span></div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;<span class="comment">        long before = _system_.currentTimeMillis();</span></div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;<span class="comment">        </span></div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;<span class="comment">        Sql.Connection slite = pool.getConnector();</span></div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;<span class="comment">        if (slite != nilptr){</span></div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;<span class="comment">            Sql.PreparedStatement stmt = slite.prepareStatement(&quot;CREATE table blog..member(name varchar(32),age int)&quot;);</span></div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;<span class="comment">            </span></div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;<span class="comment">            _system_.consoleWrite(&quot;time:&quot; + (_system_.currentTimeMillis() - before) + &quot; - 1\n&quot;);</span></div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;<span class="comment">            </span></div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;<span class="comment">            try{</span></div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;<span class="comment">                stmt.execute();</span></div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;<span class="comment">            }catch(Exception e){</span></div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;<span class="comment">                _system_.consoleWrite(&quot;SqlException:&quot; + e.getErrorCode() + &quot;,&quot; + new String(e.getMessage().getBytes(&quot;GB18030//IGNORE&quot;)) + &quot;\n&quot;);</span></div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;<span class="comment">            </span></div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;<span class="comment">            String [] names = {</span></div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;<span class="comment">                &quot;嘉懿&quot;,&quot;煜城&quot;,&quot;懿轩&quot;,&quot;烨伟&quot;,&quot;苑博&quot;,&quot;伟泽&quot;,&quot;熠彤&quot;,&quot;鸿煊&quot;,&quot;博涛&quot;,&quot;烨霖&quot;,&quot;烨华&quot;,&quot;煜祺&quot;,&quot;智宸&quot;,&quot;正豪&quot;,</span></div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;<span class="comment">                &quot;昊然&quot;,&quot;明杰&quot;,&quot;立诚&quot;,&quot;立轩&quot;,&quot;立辉&quot;,&quot;峻熙&quot;,&quot;弘文&quot;,&quot;熠彤&quot;,&quot;鸿煊&quot;,&quot;烨霖&quot;,&quot;哲瀚&quot;,&quot;鑫鹏&quot;,&quot;致远&quot;,&quot;俊驰&quot;</span></div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;<span class="comment">            };</span></div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;<span class="comment">            </span></div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;<span class="comment">            _system_.consoleWrite(&quot;time:&quot; + (_system_.currentTimeMillis() - before) + &quot; - before insert\n&quot;);</span></div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;<span class="comment">            </span></div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;<span class="comment">            try{</span></div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;<span class="comment">                //插入人名  年龄随机</span></div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;<span class="comment">                </span></div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;<span class="comment">                for(int i = 0,  c = names.length; i &lt; c; i ++){</span></div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;<span class="comment">                    stmt = slite.prepareStatement(&quot;insert into blog..member (name,age)VALUES(?, ?)&quot;);</span></div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;<span class="comment">                    stmt.setValue(names[i]);</span></div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;<span class="comment">                    stmt.setValue((int)(Math.random() * 80));</span></div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;<span class="comment">                    stmt.execute();</span></div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;<span class="comment">                }</span></div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;<span class="comment">            }catch(Exception e){</span></div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;<span class="comment">                _system_.consoleWrite(new String(e.getMessage().getBytes(&quot;GB18030//IGNORE&quot;)) + &quot;\n&quot;);</span></div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;<span class="comment">            _system_.consoleWrite(&quot;time:&quot; + (_system_.currentTimeMillis() - before) + &quot; - after insert\n&quot;);</span></div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;<span class="comment">        </span></div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;<span class="comment">            stmt = slite.prepareStatement(&quot;select top 10 * from blog..member where age &lt; ?&quot;);</span></div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;<span class="comment">            stmt.setValue(40);</span></div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;<span class="comment">            </span></div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;<span class="comment">            try{</span></div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;<span class="comment">                Sql.ResultSet rs = stmt.executeQuery();</span></div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;<span class="comment">                int c = rs.getRowCount();</span></div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;<span class="comment">                while (rs.isEof() == false){</span></div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;<span class="comment">                    _system_.consoleWrite(new String(rs.getString(&quot;name&quot;).getBytes(&quot;GB18030//IGNORE&quot;)) + &quot;:&quot; + rs.getString(&quot;age&quot;) + &quot;\n&quot;);</span></div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;<span class="comment">                    rs.next();</span></div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;<span class="comment">                }</span></div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;<span class="comment">            }catch(Exception e){</span></div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;<span class="comment">                _system_.consoleWrite(new String(e.getMessage().getBytes(&quot;GB18030//IGNORE&quot;)) + &quot;\n&quot;);</span></div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;<span class="comment">            pool.recycle(slite);</span></div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;<span class="comment">        }</span></div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;<span class="comment">        _system_.consoleWrite(&quot;done time:&quot; + (_system_.currentTimeMillis() - before) + &quot; - 4\n&quot;);</span></div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;<span class="comment">   }</span></div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;<span class="comment">    </span></div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;<span class="comment">    Thread.sleep(100);</span></div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;<span class="comment">    return 0;</span></div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;<span class="comment">}</span></div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;<span class="comment">int main(String [] args){</span></div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;<span class="comment">    testSql();</span></div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;<span class="comment">    Thread.sleep(-1);</span></div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;<span class="comment">    return 0;</span></div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;<span class="comment">}</span></div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;<span class="comment">*/</span></div>
+<div class="ttc" id="class_exception_html"><div class="ttname"><a href="class_exception.html">Exception</a></div><div class="ttdoc">异常类 </div><div class="ttdef"><b>Definition:</b> <a href="_exception_8xcs_source.html#l00006">Exception.xcs:6</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a952bd136f8201272eea72bd2efc42714"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">Sql.PreparedStatement.strparams</a></div><div class="ttdeci">String [] strparams</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00316">xsql.xcs:316</a></div></div>
+<div class="ttc" id="class_string_html_a93e090d87c912ac6b497ec2616bb1e2d"><div class="ttname"><a href="class_string.html#a93e090d87c912ac6b497ec2616bb1e2d">String.replace</a></div><div class="ttdeci">String replace(int start, int end, String sub)</div><div class="ttdoc">将串中指定的部分替换为另一个串 </div></div>
+<div class="ttc" id="class_sql_1_1_connection_pool_html_ab4ca60fb15533bd8d0e2499badf9ac10"><div class="ttname"><a href="class_sql_1_1_connection_pool.html#ab4ca60fb15533bd8d0e2499badf9ac10">Sql.ConnectionPool.config</a></div><div class="ttdeci">bool config(ConnPoolCallback _callback, String reset_error, int maxWait, int maxConnect, int maxIdle, int maxIdleTime, int validtesttime)</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00159">xsql.xcs:159</a></div></div>
+<div class="ttc" id="class_sql_1_1_connection_pool_html_a42401f756c3db7d021847d6301c4ac8e"><div class="ttname"><a href="class_sql_1_1_connection_pool.html#a42401f756c3db7d021847d6301c4ac8e">Sql.ConnectionPool.callback</a></div><div class="ttdeci">ConnPoolCallback callback</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00041">xsql.xcs:41</a></div></div>
+<div class="ttc" id="class_string_html_af80be582b73dff63922eb860218a4095"><div class="ttname"><a href="class_string.html#af80be582b73dff63922eb860218a4095">String.parseInt</a></div><div class="ttdeci">int parseInt()</div><div class="ttdoc">解析为int对象 </div></div>
+<div class="ttc" id="class_list_html_a3ab1df7a495a5b4ea39e7321496db60e"><div class="ttname"><a href="class_list.html#a3ab1df7a495a5b4ea39e7321496db60e">List.remove</a></div><div class="ttdeci">void remove(Iterator&lt;_V&gt; iterator)</div><div class="ttdoc">从容器中删除 </div></div>
+<div class="ttc" id="class_sql_1_1_database_html_ad40cdb6db738bbf26ed7298d91675613"><div class="ttname"><a href="class_sql_1_1_database.html#ad40cdb6db738bbf26ed7298d91675613">Sql.Database.getConnection</a></div><div class="ttdeci">static Connection getConnection(String driverName)</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00220">xsql.xcs:220</a></div></div>
+<div class="ttc" id="class_sql_1_1_connection_pool_1_1connector_mgr_html_ac5deed89768140dbc80dbc6529a5e14a"><div class="ttname"><a href="class_sql_1_1_connection_pool_1_1connector_mgr.html#ac5deed89768140dbc80dbc6529a5e14a">Sql.ConnectionPool.connectorMgr.timestamp</a></div><div class="ttdeci">long timestamp</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00029">xsql.xcs:29</a></div></div>
+<div class="ttc" id="class_sql_1_1_connection_pool_html_a8a7d7330a764daade44a208eca35b1c3"><div class="ttname"><a href="class_sql_1_1_connection_pool.html#a8a7d7330a764daade44a208eca35b1c3">Sql.ConnectionPool._validtesttime</a></div><div class="ttdeci">int _validtesttime</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00039">xsql.xcs:39</a></div></div>
+<div class="ttc" id="class_list_1_1_iterator_html"><div class="ttname"><a href="class_list_1_1_iterator.html">List.Iterator</a></div><div class="ttdoc">map的迭代器对象 </div><div class="ttdef"><b>Definition:</b> <a href="_list_8xcs_source.html#l00011">List.xcs:11</a></div></div>
+<div class="ttc" id="class_string_html_a7d733f02d73835e67ce84e15f5b1e5f8"><div class="ttname"><a href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">String.format</a></div><div class="ttdeci">static String format(String format, Object[] args)</div><div class="ttdoc">格式化对象 产生一个新串 </div></div>
+<div class="ttc" id="class_map_html_a47e67a8191aafd1a6173b7819b4a3fed"><div class="ttname"><a href="class_map.html#a47e67a8191aafd1a6173b7819b4a3fed">Map.containsKey</a></div><div class="ttdeci">bool containsKey(_K key)</div><div class="ttdoc">测试是否包含某个key </div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a23d79e21b8ed72e19278ca31d47b8c87"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a23d79e21b8ed72e19278ca31d47b8c87">Sql.PreparedStatement.setValue</a></div><div class="ttdeci">void setValue(int value)</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00365">xsql.xcs:365</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a5c6b452555b71001fe31d2b794244fdd"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a5c6b452555b71001fe31d2b794244fdd">Sql.PreparedStatement.safety</a></div><div class="ttdeci">String safety(String str)</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00328">xsql.xcs:328</a></div></div>
+<div class="ttc" id="class_sql_1_1_connection_pool_html_ac8bb3912a3ce86b15842e79d0b421204"><div class="ttname"><a href="class_sql_1_1_connection_pool.html#ac8bb3912a3ce86b15842e79d0b421204">Sql.ConnectionPool.clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00194">xsql.xcs:194</a></div></div>
+<div class="ttc" id="class_sql_1_1_connection_pool_html_a00a9910e29f50b579451cd485d9383ed"><div class="ttname"><a href="class_sql_1_1_connection_pool.html#a00a9910e29f50b579451cd485d9383ed">Sql.ConnectionPool.recycle</a></div><div class="ttdeci">void recycle(Connection connection)</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00100">xsql.xcs:100</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a5710636b6fe02e1f8960e73490fba65f"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a5710636b6fe02e1f8960e73490fba65f">Sql.PreparedStatement.getSql</a></div><div class="ttdeci">String getSql()</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00340">xsql.xcs:340</a></div></div>
+<div class="ttc" id="class_sql_1_1_connection_pool_html_af56abc6ba121b4d4ac5514b0c2b271e7"><div class="ttname"><a href="class_sql_1_1_connection_pool.html#af56abc6ba121b4d4ac5514b0c2b271e7">Sql.ConnectionPool.getConnector</a></div><div class="ttdeci">Connection getConnector()</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00052">xsql.xcs:52</a></div></div>
+<div class="ttc" id="class_sql_1_1_connection_pool_1_1connector_mgr_html_a01de8bd6ee8025c859373192147e9bff"><div class="ttname"><a href="class_sql_1_1_connection_pool_1_1connector_mgr.html#a01de8bd6ee8025c859373192147e9bff">Sql.ConnectionPool.connectorMgr.pconnection</a></div><div class="ttdeci">Connection pconnection</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00028">xsql.xcs:28</a></div></div>
+<div class="ttc" id="class_map_html_a97f0c790faf91d4bc8515cd12bfb90ea"><div class="ttname"><a href="class_map.html#a97f0c790faf91d4bc8515cd12bfb90ea">Map.get</a></div><div class="ttdeci">_V get(_K key)</div><div class="ttdoc">获取key对应的值 </div></div>
+<div class="ttc" id="class_list_html_a6d73326f2404a3df917a7e4b951f9177"><div class="ttname"><a href="class_list.html#a6d73326f2404a3df917a7e4b951f9177">List.iterator</a></div><div class="ttdeci">Iterator&lt;_V&gt; iterator()</div><div class="ttdoc">获取迭代器 </div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_aa0c49e931a593f674b2ffe31816b49a0"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#aa0c49e931a593f674b2ffe31816b49a0">Sql.PreparedStatement.executeUpdate</a></div><div class="ttdeci">int executeUpdate()</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00353">xsql.xcs:353</a></div></div>
+<div class="ttc" id="class_sql_1_1_database_not_support_exception_html_a87eb9884f36c0f0a03b991d7c2f9e32b"><div class="ttname"><a href="class_sql_1_1_database_not_support_exception.html#a87eb9884f36c0f0a03b991d7c2f9e32b">Sql.DatabaseNotSupportException.DatabaseNotSupportException</a></div><div class="ttdeci">DatabaseNotSupportException(String sqlmessage)</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00015">xsql.xcs:15</a></div></div>
+<div class="ttc" id="class_list_html"><div class="ttname"><a href="class_list.html">List&lt;connectorMgr&gt;</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a227e5ed9ff9f1a742647e5bb1699d2fc"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a227e5ed9ff9f1a742647e5bb1699d2fc">Sql.PreparedStatement.setValue</a></div><div class="ttdeci">void setValue(byte value)</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00381">xsql.xcs:381</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_acb9b9bceea8dc7a28b3e3292a1fcfd85"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#acb9b9bceea8dc7a28b3e3292a1fcfd85">Sql.PreparedStatement.executeQuery</a></div><div class="ttdeci">ResultSet executeQuery()</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00349">xsql.xcs:349</a></div></div>
+<div class="ttc" id="class_string_html_a24053e961f5f1b3dafea27a7c98538b7"><div class="ttname"><a href="class_string.html#a24053e961f5f1b3dafea27a7c98538b7">String.trim</a></div><div class="ttdeci">String trim(bool bc)</div><div class="ttdoc">去除串两端的空白字符 并生成新串 </div></div>
+<div class="ttc" id="class_map_html"><div class="ttname"><a href="class_map.html">Map&lt;int, bool&gt;</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a1a31743bc7def7cf7fdad044c84d9268"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a1a31743bc7def7cf7fdad044c84d9268">Sql.PreparedStatement.setValue</a></div><div class="ttdeci">void setValue(double value)</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00389">xsql.xcs:389</a></div></div>
+<div class="ttc" id="class_list_html_a7aadda5fed3baf7dd2702adf4ac2363c"><div class="ttname"><a href="class_list.html#a7aadda5fed3baf7dd2702adf4ac2363c">List.add</a></div><div class="ttdeci">void add(_V val)</div><div class="ttdoc">插入数据 </div></div>
+<div class="ttc" id="class_sql_1_1_connection_pool_html_ac6c388c1f287613e3eaebdd7bc7eb7c7"><div class="ttname"><a href="class_sql_1_1_connection_pool.html#ac6c388c1f287613e3eaebdd7bc7eb7c7">Sql.ConnectionPool.allocate</a></div><div class="ttdeci">Connection allocate()</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00044">xsql.xcs:44</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a6abecbef72d2d1ef5635d0dadc3ec05d"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a6abecbef72d2d1ef5635d0dadc3ec05d">Sql.PreparedStatement.setValue</a></div><div class="ttdeci">void setValue(int id, int value)</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00406">xsql.xcs:406</a></div></div>
+<div class="ttc" id="class_map_html_ac8bb3912a3ce86b15842e79d0b421204"><div class="ttname"><a href="class_map.html#ac8bb3912a3ce86b15842e79d0b421204">Map.clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">清空容器 </div></div>
+<div class="ttc" id="class_sql_1_1_connection_pool_html_a07e1414ce83fe7fdf63d5da65ec67b87"><div class="ttname"><a href="class_sql_1_1_connection_pool.html#a07e1414ce83fe7fdf63d5da65ec67b87">Sql.ConnectionPool._maxConnect</a></div><div class="ttdeci">int _maxConnect</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00037">xsql.xcs:37</a></div></div>
+<div class="ttc" id="class__system___html"><div class="ttname"><a href="class__system__.html">_system_</a></div><div class="ttdoc">系统和IO相关 </div><div class="ttdef"><b>Definition:</b> <a href="_system_8xcs_source.html#l00006">System.xcs:6</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a753cdef62fb1b8193ef2fbdfbeb28b0d"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a753cdef62fb1b8193ef2fbdfbeb28b0d">Sql.PreparedStatement.setValue</a></div><div class="ttdeci">void setValue(int id, byte value)</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00422">xsql.xcs:422</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_aaa397250b1498fcea970ee6b4cc4f25a"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#aaa397250b1498fcea970ee6b4cc4f25a">Sql.PreparedStatement.setValues</a></div><div class="ttdeci">void setValues(Object [] args)</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00438">xsql.xcs:438</a></div></div>
+<div class="ttc" id="class_map_html_a33af8b798de2f23e13214901787a89f5"><div class="ttname"><a href="class_map.html#a33af8b798de2f23e13214901787a89f5">Map.put</a></div><div class="ttdeci">Iterator&lt;_K, _V&gt; put(_K key, _V val)</div><div class="ttdoc">插入数据 </div></div>
+<div class="ttc" id="class_sql_1_1_connection_pool_html_a0e6c4476a22cc9189bfcc9c630a05d28"><div class="ttname"><a href="class_sql_1_1_connection_pool.html#a0e6c4476a22cc9189bfcc9c630a05d28">Sql.ConnectionPool._wait_time</a></div><div class="ttdeci">int _wait_time</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00038">xsql.xcs:38</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a471b160258ae3771d4b76d0e9ee50d42"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a471b160258ae3771d4b76d0e9ee50d42">Sql.PreparedStatement.PreparedStatement</a></div><div class="ttdeci">PreparedStatement(String sql)</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00319">xsql.xcs:319</a></div></div>
+<div class="ttc" id="class_string_html_a3d0f4ae571310c6ed081daa3985ecb47"><div class="ttname"><a href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length</a></div><div class="ttdeci">int length()</div><div class="ttdoc">获取字串长度 </div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="class_illegal_argument_exception_html"><div class="ttname"><a href="class_illegal_argument_exception.html">IllegalArgumentException</a></div><div class="ttdoc">参数异常 </div><div class="ttdef"><b>Definition:</b> <a href="_exception_8xcs_source.html#l00174">Exception.xcs:174</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a1482759d1e5a47290e33809d3664da13"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a1482759d1e5a47290e33809d3664da13">Sql.PreparedStatement.execute</a></div><div class="ttdeci">int execute()</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00336">xsql.xcs:336</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_af790b177f3dad002bd4d5e153676b1d1"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#af790b177f3dad002bd4d5e153676b1d1">Sql.PreparedStatement.setValue</a></div><div class="ttdeci">void setValue(int id, long value)</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00414">xsql.xcs:414</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a623abc9f34c45adce62fb26dcc64e6e4"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a623abc9f34c45adce62fb26dcc64e6e4">Sql.PreparedStatement.setValue</a></div><div class="ttdeci">void setValue(int id, double value)</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00430">xsql.xcs:430</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_ae364c18149785f28d2204a39a538b4a1"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#ae364c18149785f28d2204a39a538b4a1">Sql.PreparedStatement.setValue</a></div><div class="ttdeci">void setValue(long value)</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00373">xsql.xcs:373</a></div></div>
+<div class="ttc" id="class_list_html_ac8bb3912a3ce86b15842e79d0b421204"><div class="ttname"><a href="class_list.html#ac8bb3912a3ce86b15842e79d0b421204">List.clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">清空容器 </div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a7f4b2859cc4d400b2df2e47188ab403e"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a7f4b2859cc4d400b2df2e47188ab403e">Sql.PreparedStatement.strsplit</a></div><div class="ttdeci">String [] strsplit</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00315">xsql.xcs:315</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a4543975fbe98bd1962d52a5ff4846446"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a4543975fbe98bd1962d52a5ff4846446">Sql.PreparedStatement.setValue</a></div><div class="ttdeci">void setValue(int id, String value)</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00398">xsql.xcs:398</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_af656430d2c76ebd8a9c1c5dc54c3928c"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">Sql.PreparedStatement.textSql</a></div><div class="ttdeci">String textSql</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00314">xsql.xcs:314</a></div></div>
+<div class="ttc" id="class_sql_1_1_database_html_a71854546a939f222b617f97f92f5f51a"><div class="ttname"><a href="class_sql_1_1_database.html#a71854546a939f222b617f97f92f5f51a">Sql.Database.reigstry</a></div><div class="ttdeci">static bool reigstry(String name, ConnectionRegister reg)</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00210">xsql.xcs:210</a></div></div>
+<div class="ttc" id="class_sql_1_1_connection_pool_html_af98bbb982d36af0e01001394925799ac"><div class="ttname"><a href="class_sql_1_1_connection_pool.html#af98bbb982d36af0e01001394925799ac">Sql.ConnectionPool.test</a></div><div class="ttdeci">bool test(Connection conn, long lastactive)</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00093">xsql.xcs:93</a></div></div>
+<div class="ttc" id="class_string_html_a5339bc7d29e9e803c81f2caefb32bc59"><div class="ttname"><a href="class_string.html#a5339bc7d29e9e803c81f2caefb32bc59">String.split</a></div><div class="ttdeci">String [] split(String dim)</div><div class="ttdoc">在串中截取子串 </div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a558b4954a71ddde0e77222a887fcc830"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a558b4954a71ddde0e77222a887fcc830">Sql.PreparedStatement.setValue</a></div><div class="ttdeci">void setValue(String value)</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00357">xsql.xcs:357</a></div></div>
+<div class="ttc" id="class_list_html_af4b57d21919c42d55af03391f91a1c08"><div class="ttname"><a href="class_list.html#af4b57d21919c42d55af03391f91a1c08">List.size</a></div><div class="ttdeci">int size()</div><div class="ttdoc">获取容器内数据数量 </div></div>
+<div class="ttc" id="class__system___html_ae2577c522d61ec6f231d1965385e6dba"><div class="ttname"><a href="class__system__.html#ae2577c522d61ec6f231d1965385e6dba">_system_.currentTimeMillis</a></div><div class="ttdeci">static long currentTimeMillis()</div><div class="ttdoc">获取当前毫秒数 </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

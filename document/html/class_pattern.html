@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.7 Release</span>
+   &#160;<span id="projectnumber">v3.6 Release</span>
    </div>
-   <div id="projectbrief">项目介绍</div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
   </td>
  </tr>
  </tbody>
@@ -137,12 +138,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><div class="memdoc">
 
 <p>构造一个正则表达式对象 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">regex正则表达式</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section return"><dt>返回</dt><dd>regex正则表达式 </dd></dl>
 
 </div>
 </div>
@@ -173,14 +169,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">regex正则表达式</td><td></td></tr>
-    <tr><td class="paramname">正则表达式对象</td><td></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>返回</dt><dd>正则表达式对象 </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="aa47deadc6b876e0c618bc9ec6614bd05"></a>
+<a class="anchor" id="a2164883725c2ad887353b6cb1059d402"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -188,11 +184,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Result match </td>
+          <td class="memname">int match </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
-          <td class="paramname"><em>text</em></td><td>)</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">Result&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>op</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -206,10 +230,72 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">text</td><td>字符串 </td></tr>
-    <tr><td class="paramname">匹配结果</td><td></td></tr>
+    <tr><td class="paramname">result</td><td>匹配结果, 需要事先new出来 </td></tr>
+    <tr><td class="paramname">offset</td><td>字符串的起始位置 </td></tr>
+    <tr><td class="paramname">len</td><td>字符串的长度 ,-1 为默认长度 </td></tr>
+    <tr><td class="paramname">op</td><td>匹配选项 </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>返回</dt><dd>匹配结果 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a26815ac1dec7c341d16b1f0ae04d3206"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Result matchAll </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>op</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>匹配一个字符串 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>字符串 </td></tr>
+    <tr><td class="paramname">offset</td><td>字符串的起始位置 </td></tr>
+    <tr><td class="paramname">len</td><td>字符串的长度 ,-1 为默认长度 </td></tr>
+    <tr><td class="paramname">op</td><td>匹配选项 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>匹配结果 </dd></dl>
 
 </div>
 </div>
@@ -250,10 +336,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <table class="params">
     <tr><td class="paramname">text</td><td>字符串 </td></tr>
     <tr><td class="paramname">regex</td><td>正则表达式 </td></tr>
-    <tr><td class="paramname">是否</td><td></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>返回</dt><dd>是否 </dd></dl>
 
 </div>
 </div>

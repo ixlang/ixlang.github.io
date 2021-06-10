@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/xlibrarys/xcimg/xcimg.xcs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v3.6 Release</span>
+   </div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c26b241c633baa98de380b3fd590c11c.html">xlibrarys</a></li><li class="navelem"><a class="el" href="dir_b5b31dd96e26f519b1baf142fe0a065d.html">xcimg</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">xcimg.xcs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="xcimg_8xcs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//xlang </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno"><a class="line" href="namespace_x_c_img.html">    2</a></span>&#160;<span class="keyword">package </span>XCImg{</div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_x_c_img_1_1_v_code_gen.html">    3</a></span>&#160;    public class VCodeGen : Library{</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_x_c_img_1_1_v_code_gen.html#adc4b3fd5b05624dfe6705339748b8aab">    4</a></span>&#160;        long nativehandle;</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_x_c_img_1_1_v_code_gen.html#a992c70a16169035bc9e2e8f9953d91ed">    5</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> loaded = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_x_c_img_1_1_v_code_gen.html#adcae327be226b9e6d99e0506c20e3986">    6</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_x_c_img_1_1_v_code_gen.html#adcae327be226b9e6d99e0506c20e3986">load</a>(){</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;            <span class="keywordflow">if</span> (loaded == <span class="keyword">false</span>){</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;                <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;                    <span class="keywordtype">int</span> osid = <a class="code" href="class__system__.html">_system_</a>.<a class="code" href="class__system__.html#a0667f38c65ced7dfb0404c062c775299">getPlatformId</a>();</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                    <a class="code" href="class_string.html">String</a> module_name = <span class="stringliteral">&quot;xcimg.dll&quot;</span>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                    <span class="keywordflow">if</span> (osid == 1){</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                        module_name = (<span class="stringliteral">&quot;xcimg.so&quot;</span>);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                    }<span class="keywordflow">else</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                    <span class="keywordflow">if</span> (osid == 2){</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                        module_name = (<span class="stringliteral">&quot;xcimg.dylib&quot;</span>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                    }</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                    loadLibrary(module_name);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                    loaded = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                }<span class="keywordflow">catch</span>(<a class="code" href="class_exception.html">Exception</a> e){</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                    <a class="code" href="class__system__.html">_system_</a>.output(e.<a class="code" href="class_exception.html#afafd068b736520af1e24269a284980a9">getMessage</a>());</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keywordflow">return</span> loaded;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">import</span>{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            Pointer cdecl alloc_vcode(<a class="code" href="class_string.html">String</a> text, <span class="keywordtype">int</span> length,  <span class="keywordtype">int</span> height);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordtype">int</span> cdecl get_buffer_req(Pointer img);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordtype">int</span> cdecl get_data(Pointer img, ObjectPtr, <span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordtype">void</span> cdecl delloc_vcode(Pointer img);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        };</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">public</span> VCodeGen(<a class="code" href="class_string.html">String</a> text, <span class="keywordtype">int</span> length,  <span class="keywordtype">int</span> height){</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordflow">if</span> (load()){</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                nativehandle = alloc_vcode(text, length, height);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="class_illegal_argument_exception.html">IllegalArgumentException</a>(<span class="stringliteral">&quot;can not load Native Module: xcimg&quot;</span>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">void</span> finalize(){</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            delloc_vcode(nativehandle);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">public</span> byte[] getData(){</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordtype">int</span> length = get_buffer_req(nativehandle);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            byte[] data = <span class="keyword">new</span> byte[length];</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            get_data(nativehandle, data, length);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordflow">return</span> data;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> length(){</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordflow">return</span> get_buffer_req(nativehandle);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    };</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">int main(String[] args){</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">    //TODO:...</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">    XCImg.VCodeGen gen  = new XCImg.VCodeGen(&quot;dcsr&quot;, 160, 40);</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">    byte[] data = gen.getData();</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">    return 0;</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">}</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">*/</span></div>
+<div class="ttc" id="class_exception_html"><div class="ttname"><a href="class_exception.html">Exception</a></div><div class="ttdoc">异常类 </div><div class="ttdef"><b>Definition:</b> <a href="_exception_8xcs_source.html#l00006">Exception.xcs:6</a></div></div>
+<div class="ttc" id="class_x_c_img_1_1_v_code_gen_html_adcae327be226b9e6d99e0506c20e3986"><div class="ttname"><a href="class_x_c_img_1_1_v_code_gen.html#adcae327be226b9e6d99e0506c20e3986">XCImg.VCodeGen.load</a></div><div class="ttdeci">static bool load()</div><div class="ttdef"><b>Definition:</b> <a href="xcimg_8xcs_source.html#l00006">xcimg.xcs:6</a></div></div>
+<div class="ttc" id="class__system___html_a0667f38c65ced7dfb0404c062c775299"><div class="ttname"><a href="class__system__.html#a0667f38c65ced7dfb0404c062c775299">_system_.getPlatformId</a></div><div class="ttdeci">static int getPlatformId()</div><div class="ttdoc">获取平台操作系统ID 0 WINDOWS 1 LINUX 2 MAC OSX 3 iPhone 模拟器 4 iPhone 5 unix 6 其他poxis环境 ...</div></div>
+<div class="ttc" id="class__system___html"><div class="ttname"><a href="class__system__.html">_system_</a></div><div class="ttdoc">系统和IO相关 </div><div class="ttdef"><b>Definition:</b> <a href="_system_8xcs_source.html#l00006">System.xcs:6</a></div></div>
+<div class="ttc" id="class_exception_html_afafd068b736520af1e24269a284980a9"><div class="ttname"><a href="class_exception.html#afafd068b736520af1e24269a284980a9">Exception.getMessage</a></div><div class="ttdeci">String getMessage()</div><div class="ttdoc">读取异常消息 </div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="class_illegal_argument_exception_html"><div class="ttname"><a href="class_illegal_argument_exception.html">IllegalArgumentException</a></div><div class="ttdoc">参数异常 </div><div class="ttdef"><b>Definition:</b> <a href="_exception_8xcs_source.html#l00174">Exception.xcs:174</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

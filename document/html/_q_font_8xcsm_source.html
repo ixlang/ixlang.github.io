@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/xlibrarys/QT&amp;XLIB/QXLibrary/qt5/widgets/QFont.xcsm 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v3.6 Release</span>
+   </div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c26b241c633baa98de380b3fd590c11c.html">xlibrarys</a></li><li class="navelem"><a class="el" href="dir_5666ad1a9fdeb818d224f872b324982b.html">QT&amp;XLIB</a></li><li class="navelem"><a class="el" href="dir_7961984395364fe113330b5319164161.html">QXLibrary</a></li><li class="navelem"><a class="el" href="dir_0d599f6f40044cb1083515dc54bda2af.html">qt5</a></li><li class="navelem"><a class="el" href="dir_cfcbf8b0d8f6d8bd829feb69f92de4d5.html">widgets</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">QFont.xcsm</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_q_font_8xcsm.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">package </span>Qt{</div>
+<div class="line"><a name="l00002"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_font.html">    2</a></span>&#160;    public class QFont : QCore{</div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_font.html#a3cd994157dcc63d997bc27bf1113195a">    3</a></span>&#160;       public  QFont(String fontName) throws IllegalArgumentException{</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;            nativehandle = QtXnl.createNObject(QType.qtFont, 0);</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;            <span class="keywordflow">if</span> (nativehandle == 0){</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="class_illegal_argument_exception.html">IllegalArgumentException</a>(<span class="stringliteral">&quot;can not new QFont&quot;</span>);</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;            }</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;            QtXnl.widget_slot_string(nativehandle, Constant.FONTSETFAMILY, fontName);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        }</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_font.html#aa76b990aba960978369fc29ec14cec07">   11</a></span>&#160;       <span class="keyword">public</span>  <span class="keyword">static</span> QFont <a class="code" href="class_qt_1_1_q_font.html#aa76b990aba960978369fc29ec14cec07">loadFromString</a>(<a class="code" href="class_string.html">String</a> <span class="keywordtype">string</span>){</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;            <span class="keywordtype">long</span> h = QtXnl.long_string2(0, Constant.LOADFONTDESCRIPTION, <span class="keywordtype">string</span>, nilptr);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;            <span class="keywordflow">if</span> (h != 0){</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> QFont(h);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            }</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        }</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_font.html#ac235c54448770ee8a472f999b2963ce7">   20</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> QFont <a class="code" href="class_qt_1_1_q_font.html#ac235c54448770ee8a472f999b2963ce7">loadFromFile</a>(<a class="code" href="class_string.html">String</a> file, <a class="code" href="class_string.html">String</a> subName){</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keywordtype">long</span> h = QtXnl.long_string2(0, Constant.LOADFONT, file, subName);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keywordflow">if</span> (h != 0){</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> QFont(h);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;         </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_font.html#acea467dbe1c23478912478132a80a545">   29</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_qt_1_1_q_font.html#acea467dbe1c23478912478132a80a545">QFont</a>(<a class="code" href="class_string.html">String</a> fontName, <span class="keywordtype">int</span> size, <span class="keywordtype">bool</span> ptsize){</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            nativehandle = QtXnl.createNObject(QType.qtFont, 0);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            QtXnl.widget_slot_string(nativehandle, Constant.FONTSETFAMILY, fontName);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordflow">if</span> (ptsize){</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                QtXnl.widget_set_vint_value(nativehandle, Constant.FONTPTSIZE, size);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                QtXnl.widget_set_vint_value(nativehandle, Constant.FONTPXSIZE, size);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_font.html#a4cbb82d2c68f64ec44c44d04b8d76213">   39</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_qt_1_1_q_font.html#a4cbb82d2c68f64ec44c44d04b8d76213">QFont</a>(<span class="keywordtype">long</span> handle){</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            nativehandle = handle; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_font.html#a86b7e9146734523935a419cf6d6af7fe">   43</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_qt_1_1_q_font.html#a86b7e9146734523935a419cf6d6af7fe">QFont</a>(){</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            nativehandle = QtXnl.createNObject(QType.qtFont, 0);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_font.html#ae6d102bd7e37d7369113a7acdc3a64ef">   46</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_font.html#ae6d102bd7e37d7369113a7acdc3a64ef">ascent</a>(){</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_int_value(nativehandle, Constant.FONTASCENT);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_font.html#a72ae1c4457fff3ac0f635c5c331a9cb9">   49</a></span>&#160;       <span class="keyword">public</span>  <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_font.html#a72ae1c4457fff3ac0f635c5c331a9cb9">descent</a>(){</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_int_value(nativehandle, Constant.FONTDESCENT);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_font.html#a695fa6aee82a7494d2d4e7a1c2b9328e">   52</a></span>&#160;       <span class="keyword">public</span>  <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_font.html#a695fa6aee82a7494d2d4e7a1c2b9328e">setFont</a>(<a class="code" href="class_string.html">String</a> fontName){</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            QtXnl.widget_slot_string(nativehandle, Constant.FONTSETFAMILY, fontName);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_font.html#a323e49ad14bbb82cf68d2340f9f8d36e">   56</a></span>&#160;       <span class="keyword">public</span>  <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_font.html#a323e49ad14bbb82cf68d2340f9f8d36e">setPointSize</a>(<span class="keywordtype">int</span> ptSize){</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            QtXnl.widget_set_vint_value(nativehandle, Constant.FONTPTSIZE, ptSize);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_font.html#a3a641ac7cfeeb244f00af3df3c4aee91">   60</a></span>&#160;       <span class="keyword">public</span>  <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_font.html#a3a641ac7cfeeb244f00af3df3c4aee91">setPixelSize</a>(<span class="keywordtype">int</span> pxSize){</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            QtXnl.widget_set_vint_value(nativehandle, Constant.FONTPXSIZE, pxSize);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_font.html#a32d626626eee0bc4ade146973f6abb1c">   64</a></span>&#160;      <span class="keyword">public</span>   <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_font.html#a32d626626eee0bc4ade146973f6abb1c">finalize</a>(){</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            QtXnl.widget_slot(nativehandle, Constant.FONTCTOR);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_font.html#aa4389eccaad973229b5e134c8f1b3107">   68</a></span>&#160;       <span class="keyword">public</span>  <a class="code" href="class_string.html">String</a> <a class="code" href="class_qt_1_1_q_font.html#aa4389eccaad973229b5e134c8f1b3107">familyName</a>(){</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">return</span> (<a class="code" href="class_string.html">String</a>)QtXnl.core_getString(nativehandle, Constant.GETFONTNAME);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_font.html#ae6abb21a2fd1695f51e39c425c3202c1">   72</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_font.html#ae6abb21a2fd1695f51e39c425c3202c1">pointSize</a>(){</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_int_value(nativehandle, Constant.GETFONTPTSIZE);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_font.html#ac636eacd71132380bbd111fdbf0a3599">   76</a></span>&#160;       <span class="keyword">public</span>  <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_font.html#ac636eacd71132380bbd111fdbf0a3599">pixelSize</a>(){</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_int_value(nativehandle, Constant.GETFONTPIXELSIZE);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_font.html#a91553dd66b441b71813b5bbef62c036e">   80</a></span>&#160;       <span class="keyword">public</span> @NotNilptr QRect <a class="code" href="class_qt_1_1_q_font.html#a91553dd66b441b71813b5bbef62c036e">measure</a>(<a class="code" href="class_string.html">String</a> text){</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            QRect qr = <span class="keyword">new</span> QRect();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordtype">long</span> v = QtXnl.long_longstring(nativehandle, Constant.MEASURETEXT, 0, text);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            qr.left = qr.top = 0;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            qr.right = (v &gt;&gt; 32) &amp; 0xffffffff;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            qr.bottom = v &amp; 0xffffffff;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">return</span> qr;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    };</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
+<div class="ttc" id="class_qt_1_1_q_font_html_a72ae1c4457fff3ac0f635c5c331a9cb9"><div class="ttname"><a href="class_qt_1_1_q_font.html#a72ae1c4457fff3ac0f635c5c331a9cb9">Qt.QFont.descent</a></div><div class="ttdeci">int descent()</div><div class="ttdef"><b>Definition:</b> <a href="_q_font_8xcsm_source.html#l00049">QFont.xcsm:49</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_font_html_a86b7e9146734523935a419cf6d6af7fe"><div class="ttname"><a href="class_qt_1_1_q_font.html#a86b7e9146734523935a419cf6d6af7fe">Qt.QFont.QFont</a></div><div class="ttdeci">QFont()</div><div class="ttdef"><b>Definition:</b> <a href="_q_font_8xcsm_source.html#l00043">QFont.xcsm:43</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_font_html_a32d626626eee0bc4ade146973f6abb1c"><div class="ttname"><a href="class_qt_1_1_q_font.html#a32d626626eee0bc4ade146973f6abb1c">Qt.QFont.finalize</a></div><div class="ttdeci">void finalize()</div><div class="ttdef"><b>Definition:</b> <a href="_q_font_8xcsm_source.html#l00064">QFont.xcsm:64</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_font_html_a91553dd66b441b71813b5bbef62c036e"><div class="ttname"><a href="class_qt_1_1_q_font.html#a91553dd66b441b71813b5bbef62c036e">Qt.QFont.measure</a></div><div class="ttdeci">QRect measure(String text)</div><div class="ttdef"><b>Definition:</b> <a href="_q_font_8xcsm_source.html#l00080">QFont.xcsm:80</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_font_html_a4cbb82d2c68f64ec44c44d04b8d76213"><div class="ttname"><a href="class_qt_1_1_q_font.html#a4cbb82d2c68f64ec44c44d04b8d76213">Qt.QFont.QFont</a></div><div class="ttdeci">QFont(long handle)</div><div class="ttdef"><b>Definition:</b> <a href="_q_font_8xcsm_source.html#l00039">QFont.xcsm:39</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_font_html_acea467dbe1c23478912478132a80a545"><div class="ttname"><a href="class_qt_1_1_q_font.html#acea467dbe1c23478912478132a80a545">Qt.QFont.QFont</a></div><div class="ttdeci">QFont(String fontName, int size, bool ptsize)</div><div class="ttdef"><b>Definition:</b> <a href="_q_font_8xcsm_source.html#l00029">QFont.xcsm:29</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_font_html_a695fa6aee82a7494d2d4e7a1c2b9328e"><div class="ttname"><a href="class_qt_1_1_q_font.html#a695fa6aee82a7494d2d4e7a1c2b9328e">Qt.QFont.setFont</a></div><div class="ttdeci">void setFont(String fontName)</div><div class="ttdef"><b>Definition:</b> <a href="_q_font_8xcsm_source.html#l00052">QFont.xcsm:52</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_font_html_ac636eacd71132380bbd111fdbf0a3599"><div class="ttname"><a href="class_qt_1_1_q_font.html#ac636eacd71132380bbd111fdbf0a3599">Qt.QFont.pixelSize</a></div><div class="ttdeci">int pixelSize()</div><div class="ttdef"><b>Definition:</b> <a href="_q_font_8xcsm_source.html#l00076">QFont.xcsm:76</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_font_html_a3a641ac7cfeeb244f00af3df3c4aee91"><div class="ttname"><a href="class_qt_1_1_q_font.html#a3a641ac7cfeeb244f00af3df3c4aee91">Qt.QFont.setPixelSize</a></div><div class="ttdeci">void setPixelSize(int pxSize)</div><div class="ttdef"><b>Definition:</b> <a href="_q_font_8xcsm_source.html#l00060">QFont.xcsm:60</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_font_html_ae6abb21a2fd1695f51e39c425c3202c1"><div class="ttname"><a href="class_qt_1_1_q_font.html#ae6abb21a2fd1695f51e39c425c3202c1">Qt.QFont.pointSize</a></div><div class="ttdeci">int pointSize()</div><div class="ttdef"><b>Definition:</b> <a href="_q_font_8xcsm_source.html#l00072">QFont.xcsm:72</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_font_html_aa4389eccaad973229b5e134c8f1b3107"><div class="ttname"><a href="class_qt_1_1_q_font.html#aa4389eccaad973229b5e134c8f1b3107">Qt.QFont.familyName</a></div><div class="ttdeci">String familyName()</div><div class="ttdef"><b>Definition:</b> <a href="_q_font_8xcsm_source.html#l00068">QFont.xcsm:68</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_font_html_aa76b990aba960978369fc29ec14cec07"><div class="ttname"><a href="class_qt_1_1_q_font.html#aa76b990aba960978369fc29ec14cec07">Qt.QFont.loadFromString</a></div><div class="ttdeci">static QFont loadFromString(String string)</div><div class="ttdef"><b>Definition:</b> <a href="_q_font_8xcsm_source.html#l00011">QFont.xcsm:11</a></div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_font_html_a323e49ad14bbb82cf68d2340f9f8d36e"><div class="ttname"><a href="class_qt_1_1_q_font.html#a323e49ad14bbb82cf68d2340f9f8d36e">Qt.QFont.setPointSize</a></div><div class="ttdeci">void setPointSize(int ptSize)</div><div class="ttdef"><b>Definition:</b> <a href="_q_font_8xcsm_source.html#l00056">QFont.xcsm:56</a></div></div>
+<div class="ttc" id="class_illegal_argument_exception_html"><div class="ttname"><a href="class_illegal_argument_exception.html">IllegalArgumentException</a></div><div class="ttdoc">参数异常 </div><div class="ttdef"><b>Definition:</b> <a href="_exception_8xcs_source.html#l00174">Exception.xcs:174</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_font_html_ae6d102bd7e37d7369113a7acdc3a64ef"><div class="ttname"><a href="class_qt_1_1_q_font.html#ae6d102bd7e37d7369113a7acdc3a64ef">Qt.QFont.ascent</a></div><div class="ttdeci">int ascent()</div><div class="ttdef"><b>Definition:</b> <a href="_q_font_8xcsm_source.html#l00046">QFont.xcsm:46</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_font_html_ac235c54448770ee8a472f999b2963ce7"><div class="ttname"><a href="class_qt_1_1_q_font.html#ac235c54448770ee8a472f999b2963ce7">Qt.QFont.loadFromFile</a></div><div class="ttdeci">static QFont loadFromFile(String file, String subName)</div><div class="ttdef"><b>Definition:</b> <a href="_q_font_8xcsm_source.html#l00020">QFont.xcsm:20</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

@@ -1,0 +1,560 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/xlibrarys/xsql/AdoConnector.xcsm 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v3.6 Release</span>
+   </div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c26b241c633baa98de380b3fd590c11c.html">xlibrarys</a></li><li class="navelem"><a class="el" href="dir_5e0503feaba35c895940d0574c061a6d.html">xsql</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">AdoConnector.xcsm</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_ado_connector_8xcsm.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//xlang Source, Name:SqlServer.xcsm </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//Date: Sat Sep 12:06:04 2019 </span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_ado_connector.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_ado_connector.html">AdoConnector</a> : <a class="code" href="namespace_sql.html">Sql</a>.Connection{</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_ado_connector.html#ace95e37eaf2cf200c7fdf57cffc35b55">    6</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_ado_connector.html#ace95e37eaf2cf200c7fdf57cffc35b55">hAdo</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_ado_connector.html#a63c89c04d1feae07ca35558055155ffb">    8</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_ado_connector.html#a63c89c04d1feae07ca35558055155ffb">port</a> = 1433;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_ado_connector.html#a493b57f443cc38b3d3df9c1e584d9d82">    9</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_ado_connector.html#a493b57f443cc38b3d3df9c1e584d9d82">timeout</a> = 0;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="enum_ado_connector_1_1_mysql_option.html">   11</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">enum</span> MysqlOption{</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="enum_ado_connector_1_1_mysql_option.html#a6dde884e19bdc8f342ffec8fc17e7c91">   12</a></span>&#160;        <a class="code" href="enum_ado_connector_1_1_mysql_option.html#a6dde884e19bdc8f342ffec8fc17e7c91">PORT</a>,</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="enum_ado_connector_1_1_mysql_option.html#a8711b1474f4c3ddace10b21c45dcd212">   13</a></span>&#160;        <a class="code" href="enum_ado_connector_1_1_mysql_option.html#a8711b1474f4c3ddace10b21c45dcd212">TIMEOUT</a>,</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="enum_ado_connector_1_1_mysql_option.html#aec0c42fb0a2429786e1bcd73ffe276b8">   14</a></span>&#160;        <a class="code" href="enum_ado_connector_1_1_mysql_option.html#aec0c42fb0a2429786e1bcd73ffe276b8">CHARSET</a>,</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="enum_ado_connector_1_1_mysql_option.html#af6ec1282d8b475a64c02b4d9973fc36a">   15</a></span>&#160;        SELECTDB</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    };</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_ado_connector.html#a94a72daf9bf1293e6c001c6c1c3ddd9a">   18</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_ado_connector.html#a94a72daf9bf1293e6c001c6c1c3ddd9a">AdoConnector</a>(){</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class__system__.html">_system_</a>.<a class="code" href="class__system__.html#a0667f38c65ced7dfb0404c062c775299">getPlatformId</a>() != 0){</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="class_illegal_argument_exception.html">IllegalArgumentException</a>(<span class="stringliteral">&quot;ADO not support this Operating System!&quot;</span>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">/*static class MysqlRegister : Sql.ConnectionRegister{</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">        Sql.Connection allocConnection(String drivername){</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">            if (drivername.equals(&quot;mysql&quot;)){</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">                return new AdoConnector();</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">            return nilptr;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">        }</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">    };</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">    </span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">    static bool registry(){</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">        if (Helper.init()){</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">            Sql.Database.reigstry(DRIVERNAME, new MysqlRegister());</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">            return true;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">        }</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">        return false;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">    }</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">       */</span> </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_helper.html">   40</a></span>&#160;    <span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">class </span>Helper :<a class="code" href="class_library.html">Library</a> {</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_helper.html#abfbfac65cdbba0b2297a9bd65e4d601e">   41</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_ado_connector_1_1_helper.html#abfbfac65cdbba0b2297a9bd65e4d601e">bloaded</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_helper.html#a6114a57ee5a0170c6492f2f7ca3d2ffe">   42</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_ado_connector_1_1_helper.html#a6114a57ee5a0170c6492f2f7ca3d2ffe">init</a>(){ </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">if</span> (bloaded == <span class="keyword">false</span>){</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                    loadLibrary(<span class="stringliteral">&quot;adohelper&quot;</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                    bloaded = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                }<span class="keywordflow">catch</span>(<a class="code" href="class_exception.html">Exception</a> e){</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                    <a class="code" href="class__system__.html">_system_</a>.output(e.<a class="code" href="class_exception.html#afafd068b736520af1e24269a284980a9">getMessage</a>());</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_ado_connector_1_1_helper.html#abfbfac65cdbba0b2297a9bd65e4d601e">bloaded</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">public</span> <span class="keyword">import</span>{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            Pointer cdecl ado_alloc(<a class="code" href="class_string.html">String</a> <a class="code" href="class_ado_connector.html#aaf19957c23b1943b1361fefc665e9242">driver</a>, <a class="code" href="class_string.html">String</a> host, <span class="keywordtype">int</span> port, <a class="code" href="class_string.html">String</a> name, <a class="code" href="class_string.html">String</a> pwd, <span class="keywordtype">int</span> timeout, ObjectPtr, ObjectRef);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordtype">void</span> cdecl ado_delloc(Pointer);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            Pointer cdecl ado_execute(Pointer, <a class="code" href="class_string.html">String</a> sql, <span class="keywordtype">bool</span> needrs, ObjectPtr, ObjectRef);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordtype">void</span> cdecl ado_delloc_rs(Pointer);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordtype">bool</span> cdecl ado_rs_next(Pointer);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordtype">bool</span> cdecl ado_rs_prev(Pointer);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordtype">bool</span> cdecl ado_rs_first(Pointer);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordtype">bool</span> cdecl ado_rs_last(Pointer);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordtype">int</span> cdecl ado_rs_count(Pointer);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordtype">bool</span> cdecl ado_rs_iseof(Pointer);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            Object cdecl ado_rs_getValue(Pointer, <a class="code" href="class_string.html">String</a>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordtype">int</span> cdecl ado_rs_getValueI(Pointer, <a class="code" href="class_string.html">String</a>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordtype">long</span> cdecl ado_rs_getValueL(Pointer, <a class="code" href="class_string.html">String</a>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keywordtype">double</span> cdecl ado_rs_getValueD(Pointer, <a class="code" href="class_string.html">String</a>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            Object cdecl ado_rs_getIValue(Pointer, <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordtype">int</span> cdecl ado_rs_getIValueI(Pointer, <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordtype">long</span> cdecl ado_rs_getIValueL(Pointer, <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordtype">double</span> cdecl ado_rs_getIValueD(Pointer, <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        };</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    };</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html">   81</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span>AdoResultSet : <a class="code" href="namespace_sql.html">Sql</a>.ResultSet{</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#a043344406e0f05e0b3666befeca72f18">   82</a></span>&#160;        <span class="keywordtype">long</span> <a class="code" href="class_ado_connector_1_1_ado_result_set.html#a043344406e0f05e0b3666befeca72f18">hres</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#a0c45abcffabd65bf9f7b7386f838bf33">   84</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_ado_connector_1_1_ado_result_set.html#a0c45abcffabd65bf9f7b7386f838bf33">AdoResultSet</a>(<span class="keywordtype">long</span> r){</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            hres = r;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        </div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#a93912a30d7fc5a9871fca859565aa0b3">   88</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_ado_connector_1_1_ado_result_set.html#a93912a30d7fc5a9871fca859565aa0b3">first</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">return</span> Helper.ado_rs_first(hres);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#ad3e817259471d3c46ddcd0ce8b476795">   92</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_ado_connector_1_1_ado_result_set.html#ad3e817259471d3c46ddcd0ce8b476795">last</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">return</span> Helper.ado_rs_last(hres);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#a12dedc6ff47170c4e21d8d4c0c4e4926">   96</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_ado_connector_1_1_ado_result_set.html#a12dedc6ff47170c4e21d8d4c0c4e4926">next</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">return</span> Helper.ado_rs_next(hres);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#aae988b41f7d8e26974897ba310d8fa41">  100</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_ado_connector_1_1_ado_result_set.html#aae988b41f7d8e26974897ba310d8fa41">previous</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">return</span> Helper.ado_rs_prev(hres);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#a1185d4ed0f219df011d18b63060962ab">  104</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_ado_connector_1_1_ado_result_set.html#a1185d4ed0f219df011d18b63060962ab">isFirst</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;isFirst&quot;</span>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        </div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#a2c4a4a5ffd68f9cf21eb128933a7c797">  109</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_ado_connector_1_1_ado_result_set.html#a2c4a4a5ffd68f9cf21eb128933a7c797">isLast</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;isLast&quot;</span>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#a7a7cffe58c68d8f64928dc0ebfc65c17">  114</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_ado_connector_1_1_ado_result_set.html#a7a7cffe58c68d8f64928dc0ebfc65c17">isEof</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordflow">return</span> Helper.ado_rs_iseof(hres);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        </div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#a24ce09a923c3677f6da47de247b41d04">  118</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_ado_connector_1_1_ado_result_set.html#a24ce09a923c3677f6da47de247b41d04">isValid</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="keywordflow">return</span> hres != 0;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        </div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#a71958f7ac761e367d19435d6b5202be9">  122</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_ado_connector_1_1_ado_result_set.html#a71958f7ac761e367d19435d6b5202be9">getInt</a>(<a class="code" href="class_string.html">String</a> columnlabel)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordflow">return</span> Helper.ado_rs_getValueI(hres, columnlabel);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        </div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#add6ccb7420966926cd05732607bc830c">  126</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code" href="class_ado_connector_1_1_ado_result_set.html#add6ccb7420966926cd05732607bc830c">getLong</a>(<a class="code" href="class_string.html">String</a> columnlabel)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="keywordflow">return</span> Helper.ado_rs_getValueL(hres, columnlabel);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        </div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#a542b0e2ab3bdd61619c7dbca3efbcc6d">  130</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code" href="class_ado_connector_1_1_ado_result_set.html#a542b0e2ab3bdd61619c7dbca3efbcc6d">getDouble</a>(<a class="code" href="class_string.html">String</a> columnlabel)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keywordflow">return</span> Helper.ado_rs_getValueD(hres, columnlabel);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        </div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#adaf9a89e415686ff19083ce589cd043a">  134</a></span>&#160;        <span class="keyword">public</span> byte <a class="code" href="class_ado_connector_1_1_ado_result_set.html#adaf9a89e415686ff19083ce589cd043a">getByte</a>(<a class="code" href="class_string.html">String</a> columnlabel)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <span class="keywordflow">return</span> Helper.ado_rs_getValueI(hres, columnlabel);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        </div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#af353cd91799f827fbeab543763063ffa">  138</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_ado_connector_1_1_ado_result_set.html#af353cd91799f827fbeab543763063ffa">getBoolean</a>(<a class="code" href="class_string.html">String</a> columnlabel)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <span class="keywordflow">return</span> Helper.ado_rs_getValueI(hres, columnlabel) != 0;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        </div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#a07e2073df34fa4d673fa0fb4d6504d00">  142</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_ado_connector_1_1_ado_result_set.html#a07e2073df34fa4d673fa0fb4d6504d00">getString</a>(<a class="code" href="class_string.html">String</a> columnlabel)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="keywordflow">return</span> (<a class="code" href="class_string.html">String</a>)Helper.ado_rs_getValue(hres, columnlabel);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        }</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#af81bdc69c1e0ba3d62357003fd1cc0a6">  146</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_ado_connector_1_1_ado_result_set.html#af81bdc69c1e0ba3d62357003fd1cc0a6">getInt</a>(<span class="keywordtype">int</span> columnIndex)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keywordflow">return</span> Helper.ado_rs_getIValueI(hres, columnIndex);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        </div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#a87edb5898a228825a7659b3af09b437d">  150</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code" href="class_ado_connector_1_1_ado_result_set.html#a87edb5898a228825a7659b3af09b437d">getLong</a>(<span class="keywordtype">int</span> columnIndex)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="keywordflow">return</span> Helper.ado_rs_getIValueL(hres, columnIndex);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        }</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        </div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#aa9ee5f395a9e2daab5415f6773db293b">  154</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code" href="class_ado_connector_1_1_ado_result_set.html#aa9ee5f395a9e2daab5415f6773db293b">getDouble</a>(<span class="keywordtype">int</span> columnIndex)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keywordflow">return</span> Helper.ado_rs_getIValueD(hres, columnIndex);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        }</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        </div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#af45b4e5a32b98bec3ab8e7564086e314">  158</a></span>&#160;        <span class="keyword">public</span> byte <a class="code" href="class_ado_connector_1_1_ado_result_set.html#af45b4e5a32b98bec3ab8e7564086e314">getByte</a>(<span class="keywordtype">int</span> columnIndex)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="keywordflow">return</span> Helper.ado_rs_getIValueI(hres, columnIndex);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        }</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        </div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#a0de786b862e2b20e1bd6fdcab3a9a416">  162</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_ado_connector_1_1_ado_result_set.html#a0de786b862e2b20e1bd6fdcab3a9a416">getBoolean</a>(<span class="keywordtype">int</span> columnIndex)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <span class="keywordflow">return</span> Helper.ado_rs_getIValueI(hres, columnIndex) != 0;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        }</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        </div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#a00e7572159c117d7bad8948be40bc3bf">  166</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_ado_connector_1_1_ado_result_set.html#a00e7572159c117d7bad8948be40bc3bf">getString</a>(<span class="keywordtype">int</span> columnIndex)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <span class="keywordflow">return</span> (<a class="code" href="class_string.html">String</a>)Helper.ado_rs_getIValue(hres, columnIndex);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        }</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#a8800d3079142f6f15de374ac56e5cd3c">  170</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_ado_connector_1_1_ado_result_set.html#a8800d3079142f6f15de374ac56e5cd3c">findColumn</a>(<a class="code" href="class_string.html">String</a>)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;findColumn&quot;</span>);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        </div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#a66cb3e904079ae4581ed0207d4e53392">  175</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code" href="class_ado_connector_1_1_ado_result_set.html#a66cb3e904079ae4581ed0207d4e53392">getRowCount</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keywordflow">return</span> Helper.ado_rs_count(hres);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        }</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        </div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#a2135a919f901124d1a80fb6302d9f571">  179</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_ado_connector_1_1_ado_result_set.html#a2135a919f901124d1a80fb6302d9f571">getRow</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;getRow&quot;</span>);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        }</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        </div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#a24283120ebd7442f265aaab4c46caef6">  184</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_ado_connector_1_1_ado_result_set.html#a24283120ebd7442f265aaab4c46caef6">close</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <span class="keywordflow">if</span> (hres != 0){</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                Helper.ado_delloc_rs(hres);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                hres = 0;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            }</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        </div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_result_set.html#a32d626626eee0bc4ade146973f6abb1c">  191</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_ado_connector_1_1_ado_result_set.html#a32d626626eee0bc4ade146973f6abb1c">finalize</a>(){</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            <a class="code" href="class_ado_connector_1_1_ado_result_set.html#a24283120ebd7442f265aaab4c46caef6">close</a>();</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        }</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    };</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    </div>
+<div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_statement.html">  196</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">class </span>AdoStatement : <a class="code" href="namespace_sql.html">Sql</a>.Statement{</div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_statement.html#a8d804e132097412c17c17ba58b632b32">  197</a></span>&#160;        <a class="code" href="class_ado_connector.html">AdoConnector</a> <a class="code" href="class_ado_connector_1_1_ado_statement.html#a8d804e132097412c17c17ba58b632b32">__ado</a>;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        </div>
+<div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_statement.html#ab7f575747b180d8a1b8a8da1df313ca6">  199</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_ado_connector_1_1_ado_statement.html#ab7f575747b180d8a1b8a8da1df313ca6">AdoStatement</a>(<a class="code" href="class_ado_connector.html">AdoConnector</a> m){</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            __ado = m;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        }</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        </div>
+<div class="line"><a name="l00203"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_statement.html#a3964ce135a59976676402f9df97d000e">  203</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_ado_connector_1_1_ado_statement.html#a3964ce135a59976676402f9df97d000e">execute</a>(<a class="code" href="class_string.html">String</a> sql)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            <span class="keywordtype">int</span> errcode = 0;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <a class="code" href="class_string.html">String</a> errmsg = nilptr;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            </div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            <span class="keywordtype">long</span> hrs = Helper.ado_execute(__ado.<a class="code" href="class_ado_connector.html#ace95e37eaf2cf200c7fdf57cffc35b55">hAdo</a>,sql, <span class="keyword">false</span>, errcode, errmsg);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            <span class="keywordflow">if</span> (0 == hrs){</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_sql_exception.html">SqlException</a>(errcode, errmsg);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;              Helper.ado_delloc_rs(hrs);  </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            }</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        }</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        </div>
+<div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_statement.html#a777f503eb3d365e7f59e3db8a4413f04">  216</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="interface_sql_1_1_result_set.html">ResultSet</a> <a class="code" href="class_ado_connector_1_1_ado_statement.html#a777f503eb3d365e7f59e3db8a4413f04">executeQuery</a>(<a class="code" href="class_string.html">String</a> sql)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            <span class="keywordtype">int</span> errcode = 0;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            <a class="code" href="class_string.html">String</a> errmsg = nilptr;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            <span class="keywordtype">long</span> hrs = Helper.ado_execute(__ado.<a class="code" href="class_ado_connector.html#ace95e37eaf2cf200c7fdf57cffc35b55">hAdo</a>,sql, <span class="keyword">true</span>, errcode, errmsg);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            <span class="keywordflow">if</span> (0 == hrs){</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_sql_exception.html">SqlException</a>(errcode, errmsg);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            }</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> AdoResultSet(hrs);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        }</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        </div>
+<div class="line"><a name="l00226"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_statement.html#a94205f29b423121e7907ba0d035e2690">  226</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_ado_connector_1_1_ado_statement.html#a94205f29b423121e7907ba0d035e2690">executeUpdate</a>(<a class="code" href="class_string.html">String</a> sql)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            <span class="keywordtype">int</span> errcode = 0;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            <a class="code" href="class_string.html">String</a> errmsg = nilptr;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            <span class="keywordtype">long</span> hrs = Helper.ado_execute(__ado.<a class="code" href="class_ado_connector.html#ace95e37eaf2cf200c7fdf57cffc35b55">hAdo</a>,sql, <span class="keyword">false</span>, errcode, errmsg);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            <span class="keywordflow">if</span> (0 == hrs){</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_sql_exception.html">SqlException</a>(errcode, errmsg);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;              Helper.ado_delloc_rs(hrs);  </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            }</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        }</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        </div>
+<div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_statement.html#abdd9786f302141dd3cd6d77ae4fb8b94">  238</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="interface_sql_1_1_result_set.html">ResultSet</a> <a class="code" href="class_ado_connector_1_1_ado_statement.html#abdd9786f302141dd3cd6d77ae4fb8b94">getResult</a>()<span class="keyword">override</span>{ <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;getResult&quot;</span>); <span class="keywordflow">return</span> nilptr;     }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        </div>
+<div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_statement.html#a24283120ebd7442f265aaab4c46caef6">  240</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_ado_connector_1_1_ado_statement.html#a24283120ebd7442f265aaab4c46caef6">close</a>()<span class="keyword">override</span>{ }</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    };</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    </div>
+<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_prepared_statement.html">  244</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span>AdoPreparedStatement : <a class="code" href="namespace_sql.html">Sql</a>.PreparedStatement{</div>
+<div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_prepared_statement.html#a8d804e132097412c17c17ba58b632b32">  245</a></span>&#160;        <a class="code" href="class_ado_connector.html">AdoConnector</a> <a class="code" href="class_ado_connector_1_1_ado_prepared_statement.html#a8d804e132097412c17c17ba58b632b32">__ado</a>;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        </div>
+<div class="line"><a name="l00247"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_prepared_statement.html#a424ba0b300f1b9ddaa114b6d017e1a2d">  247</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_ado_connector_1_1_ado_prepared_statement.html#a424ba0b300f1b9ddaa114b6d017e1a2d">AdoPreparedStatement</a>(<a class="code" href="class_ado_connector.html">AdoConnector</a> m, <a class="code" href="class_string.html">String</a> sql){</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            super(sql);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            __ado = m;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        }</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        </div>
+<div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_prepared_statement.html#a3964ce135a59976676402f9df97d000e">  252</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_ado_connector_1_1_ado_prepared_statement.html#a3964ce135a59976676402f9df97d000e">execute</a>(<a class="code" href="class_string.html">String</a> sql)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            <span class="keywordtype">int</span> errcode = 0;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            <a class="code" href="class_string.html">String</a> errmsg = nilptr;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            <span class="keywordtype">long</span> hrs = Helper.ado_execute(__ado.<a class="code" href="class_ado_connector.html#ace95e37eaf2cf200c7fdf57cffc35b55">hAdo</a>,sql, <span class="keyword">false</span>, errcode, errmsg);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            <span class="keywordflow">if</span> (0 == hrs){</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_sql_exception.html">SqlException</a>(errcode, errmsg);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;              Helper.ado_delloc_rs(hrs);  </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            }</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        </div>
+<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_prepared_statement.html#a777f503eb3d365e7f59e3db8a4413f04">  264</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="interface_sql_1_1_result_set.html">ResultSet</a> <a class="code" href="class_ado_connector_1_1_ado_prepared_statement.html#a777f503eb3d365e7f59e3db8a4413f04">executeQuery</a>(<a class="code" href="class_string.html">String</a> sql)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            <span class="keywordtype">int</span> errcode = 0;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            <a class="code" href="class_string.html">String</a> errmsg = nilptr;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            <span class="keywordtype">long</span> hrs = Helper.ado_execute(__ado.<a class="code" href="class_ado_connector.html#ace95e37eaf2cf200c7fdf57cffc35b55">hAdo</a>,sql, <span class="keyword">false</span>, errcode, errmsg);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            <span class="keywordflow">if</span> (0 == hrs){</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_sql_exception.html">SqlException</a>(errcode, errmsg);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            }</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> AdoResultSet(hrs);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        }</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        </div>
+<div class="line"><a name="l00274"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_prepared_statement.html#a94205f29b423121e7907ba0d035e2690">  274</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_ado_connector_1_1_ado_prepared_statement.html#a94205f29b423121e7907ba0d035e2690">executeUpdate</a>(<a class="code" href="class_string.html">String</a> sql)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            <span class="keywordtype">int</span> errcode = 0;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            <a class="code" href="class_string.html">String</a> errmsg = nilptr;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            <span class="keywordtype">long</span> hrs = Helper.ado_execute(__ado.<a class="code" href="class_ado_connector.html#ace95e37eaf2cf200c7fdf57cffc35b55">hAdo</a>,sql, <span class="keyword">false</span>, errcode, errmsg);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            <span class="keywordflow">if</span> (0 == hrs){</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_sql_exception.html">SqlException</a>(errcode, errmsg);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;              Helper.ado_delloc_rs(hrs);  </div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            }</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        }</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        </div>
+<div class="line"><a name="l00286"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_prepared_statement.html#abdd9786f302141dd3cd6d77ae4fb8b94">  286</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="interface_sql_1_1_result_set.html">ResultSet</a> <a class="code" href="class_ado_connector_1_1_ado_prepared_statement.html#abdd9786f302141dd3cd6d77ae4fb8b94">getResult</a>()<span class="keyword">override</span>{           <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;getResult&quot;</span>); <span class="keywordflow">return</span> nilptr;        }</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        </div>
+<div class="line"><a name="l00288"></a><span class="lineno"><a class="line" href="class_ado_connector_1_1_ado_prepared_statement.html#a24283120ebd7442f265aaab4c46caef6">  288</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_ado_connector_1_1_ado_prepared_statement.html#a24283120ebd7442f265aaab4c46caef6">close</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        </div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        }</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    };</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    </div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    </div>
+<div class="line"><a name="l00294"></a><span class="lineno"><a class="line" href="class_ado_connector.html#a24283120ebd7442f265aaab4c46caef6">  294</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_ado_connector.html#a24283120ebd7442f265aaab4c46caef6">close</a>()<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="comment">//TODO: </span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordflow">if</span> (hAdo != 0){</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;            Helper.ado_delloc(hAdo);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            hAdo = 0;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        }</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    }</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
+<div class="line"><a name="l00302"></a><span class="lineno"><a class="line" href="class_ado_connector.html#a32d626626eee0bc4ade146973f6abb1c">  302</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_ado_connector.html#a32d626626eee0bc4ade146973f6abb1c">finalize</a>(){</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <a class="code" href="class_ado_connector.html#a24283120ebd7442f265aaab4c46caef6">close</a>();</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    }</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    </div>
+<div class="line"><a name="l00306"></a><span class="lineno"><a class="line" href="class_ado_connector.html#aaf19957c23b1943b1361fefc665e9242">  306</a></span>&#160;    <a class="code" href="class_string.html">String</a> <a class="code" href="class_ado_connector.html#aaf19957c23b1943b1361fefc665e9242">driver</a>;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
+<div class="line"><a name="l00308"></a><span class="lineno"><a class="line" href="class_ado_connector.html#a3e379b800bcd9a88c97b6c1d4d47e413">  308</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_ado_connector.html#a3e379b800bcd9a88c97b6c1d4d47e413">setDriver</a>(<a class="code" href="class_string.html">String</a> strDrv){</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        driver = strDrv;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    }</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    </div>
+<div class="line"><a name="l00312"></a><span class="lineno"><a class="line" href="class_ado_connector.html#a24285b03307ae66ae30988f2f6d14ddc">  312</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_ado_connector.html#a24285b03307ae66ae30988f2f6d14ddc">create</a>(<a class="code" href="class_string.html">String</a> uri, <a class="code" href="class_string.html">String</a> username, <a class="code" href="class_string.html">String</a> pwd)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        <span class="keywordflow">if</span> (driver == nilptr){</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_sql_exception.html">SqlException</a>(-1, <span class="stringliteral">&quot;driver is nilptr&quot;</span>);</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        }</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <span class="keywordtype">int</span> errcode = 0;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <a class="code" href="class_string.html">String</a> errmsg = nilptr;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;            </div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        hAdo = Helper.ado_alloc(driver, uri, port, username, pwd, timeout, errcode, errmsg);</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        </div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="keywordflow">if</span> (0l == hAdo){</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_sql_exception.html">SqlException</a>(errcode, errmsg);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        }</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    }</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
+<div class="line"><a name="l00327"></a><span class="lineno"><a class="line" href="class_ado_connector.html#a4f0eaa77c46b051776bd50414447422e">  327</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_ado_connector.html#a4f0eaa77c46b051776bd50414447422e">isClosed</a>()<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <span class="comment">//TODO: </span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordflow">return</span> hAdo != 0;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    }</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
+<div class="line"><a name="l00333"></a><span class="lineno"><a class="line" href="class_ado_connector.html#a03973e015747285e3bdd01b87d124fb3">  333</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_ado_connector.html#a03973e015747285e3bdd01b87d124fb3">getErrorCode</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <span class="comment">//throw new Sql.DatabaseNotSupportException(&quot;getErrorCode&quot;);</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    }</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    </div>
+<div class="line"><a name="l00338"></a><span class="lineno"><a class="line" href="class_ado_connector.html#aeb1ef3b1759bb00775d39c77e670bdd0">  338</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_ado_connector.html#aeb1ef3b1759bb00775d39c77e670bdd0">getError</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;getError&quot;</span>);</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    }</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    </div>
+<div class="line"><a name="l00343"></a><span class="lineno"><a class="line" href="class_ado_connector.html#a5ac06d5572672c9e3c042a3027f8cd98">  343</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_ado_connector.html#a5ac06d5572672c9e3c042a3027f8cd98">getSqlState</a>(){</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;getSqlState&quot;</span>);</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    }</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    </div>
+<div class="line"><a name="l00348"></a><span class="lineno"><a class="line" href="class_ado_connector.html#a6fe51d063363fbb41c0a562964a002f7">  348</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_ado_connector.html#a6fe51d063363fbb41c0a562964a002f7">getInfo</a>(){</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;getInfo&quot;</span>);</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    }</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    </div>
+<div class="line"><a name="l00353"></a><span class="lineno"><a class="line" href="class_ado_connector.html#a25bc7d9d05a180769e38ef30c26f0408">  353</a></span>&#160;    <span class="keyword">public</span> Object <a class="code" href="class_ado_connector.html#a25bc7d9d05a180769e38ef30c26f0408">getOption</a>(<span class="keywordtype">int</span> opt)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <span class="comment">//TODO: </span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;getOption&quot;</span>);</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    }</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
+<div class="line"><a name="l00359"></a><span class="lineno"><a class="line" href="class_ado_connector.html#adf2d952ba41a1ebd626afb88f13a8f89">  359</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_ado_connector.html#adf2d952ba41a1ebd626afb88f13a8f89">setOption</a>(<span class="keywordtype">int</span> opt, Object option)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <span class="keywordflow">switch</span>(opt){</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;            <span class="keywordflow">case</span> MysqlOption.PORT:</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                port = (int)option;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            <span class="keywordflow">case</span> MysqlOption.TIMEOUT:</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                timeout = (int)option;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;            <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;getOption&quot;</span>);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        }</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    }</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
+<div class="line"><a name="l00373"></a><span class="lineno"><a class="line" href="class_ado_connector.html#acd826b80350573c3c739b9064382e8a6">  373</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="interface_sql_1_1_statement.html">Statement</a> <a class="code" href="class_ado_connector.html#acd826b80350573c3c739b9064382e8a6">createStatement</a>()<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> AdoStatement(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    }</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
+<div class="line"><a name="l00377"></a><span class="lineno"><a class="line" href="class_ado_connector.html#ad15221891552b43863477936111ada40">  377</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_prepared_statement.html">PreparedStatement</a> <a class="code" href="class_ado_connector.html#ad15221891552b43863477936111ada40">prepareStatement</a>(<a class="code" href="class_string.html">String</a> sql)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> AdoPreparedStatement(<span class="keyword">this</span>, sql);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    }</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;};</div>
+<div class="ttc" id="class_exception_html"><div class="ttname"><a href="class_exception.html">Exception</a></div><div class="ttdoc">异常类 </div><div class="ttdef"><b>Definition:</b> <a href="_exception_8xcs_source.html#l00006">Exception.xcs:6</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_a12dedc6ff47170c4e21d8d4c0c4e4926"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#a12dedc6ff47170c4e21d8d4c0c4e4926">AdoConnector.AdoResultSet.next</a></div><div class="ttdeci">bool next() override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00096">AdoConnector.xcsm:96</a></div></div>
+<div class="ttc" id="class_ado_connector_html"><div class="ttname"><a href="class_ado_connector.html">AdoConnector</a></div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00004">AdoConnector.xcsm:4</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_a8800d3079142f6f15de374ac56e5cd3c"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#a8800d3079142f6f15de374ac56e5cd3c">AdoConnector.AdoResultSet.findColumn</a></div><div class="ttdeci">int findColumn(String) override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00170">AdoConnector.xcsm:170</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_statement_html_a777f503eb3d365e7f59e3db8a4413f04"><div class="ttname"><a href="class_ado_connector_1_1_ado_statement.html#a777f503eb3d365e7f59e3db8a4413f04">AdoConnector.AdoStatement.executeQuery</a></div><div class="ttdeci">Sql.ResultSet executeQuery(String sql) override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00216">AdoConnector.xcsm:216</a></div></div>
+<div class="ttc" id="class_ado_connector_html_a493b57f443cc38b3d3df9c1e584d9d82"><div class="ttname"><a href="class_ado_connector.html#a493b57f443cc38b3d3df9c1e584d9d82">AdoConnector.timeout</a></div><div class="ttdeci">int timeout</div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00009">AdoConnector.xcsm:9</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_af353cd91799f827fbeab543763063ffa"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#af353cd91799f827fbeab543763063ffa">AdoConnector.AdoResultSet.getBoolean</a></div><div class="ttdeci">bool getBoolean(String columnlabel) override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00138">AdoConnector.xcsm:138</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_helper_html_abfbfac65cdbba0b2297a9bd65e4d601e"><div class="ttname"><a href="class_ado_connector_1_1_helper.html#abfbfac65cdbba0b2297a9bd65e4d601e">AdoConnector.Helper.bloaded</a></div><div class="ttdeci">static bool bloaded</div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00041">AdoConnector.xcsm:41</a></div></div>
+<div class="ttc" id="class_ado_connector_html_a63c89c04d1feae07ca35558055155ffb"><div class="ttname"><a href="class_ado_connector.html#a63c89c04d1feae07ca35558055155ffb">AdoConnector.port</a></div><div class="ttdeci">int port</div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00008">AdoConnector.xcsm:8</a></div></div>
+<div class="ttc" id="class_ado_connector_html_a32d626626eee0bc4ade146973f6abb1c"><div class="ttname"><a href="class_ado_connector.html#a32d626626eee0bc4ade146973f6abb1c">AdoConnector.finalize</a></div><div class="ttdeci">void finalize()</div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00302">AdoConnector.xcsm:302</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_adaf9a89e415686ff19083ce589cd043a"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#adaf9a89e415686ff19083ce589cd043a">AdoConnector.AdoResultSet.getByte</a></div><div class="ttdeci">byte getByte(String columnlabel) override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00134">AdoConnector.xcsm:134</a></div></div>
+<div class="ttc" id="class_ado_connector_html_a24285b03307ae66ae30988f2f6d14ddc"><div class="ttname"><a href="class_ado_connector.html#a24285b03307ae66ae30988f2f6d14ddc">AdoConnector.create</a></div><div class="ttdeci">void create(String uri, String username, String pwd) override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00312">AdoConnector.xcsm:312</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_a7a7cffe58c68d8f64928dc0ebfc65c17"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#a7a7cffe58c68d8f64928dc0ebfc65c17">AdoConnector.AdoResultSet.isEof</a></div><div class="ttdeci">bool isEof() override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00114">AdoConnector.xcsm:114</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_a66cb3e904079ae4581ed0207d4e53392"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#a66cb3e904079ae4581ed0207d4e53392">AdoConnector.AdoResultSet.getRowCount</a></div><div class="ttdeci">long getRowCount() override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00175">AdoConnector.xcsm:175</a></div></div>
+<div class="ttc" id="enum_ado_connector_1_1_mysql_option_html_aec0c42fb0a2429786e1bcd73ffe276b8"><div class="ttname"><a href="enum_ado_connector_1_1_mysql_option.html#aec0c42fb0a2429786e1bcd73ffe276b8">AdoConnector.MysqlOption.CHARSET</a></div><div class="ttdeci">CHARSET</div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00014">AdoConnector.xcsm:14</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_a32d626626eee0bc4ade146973f6abb1c"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#a32d626626eee0bc4ade146973f6abb1c">AdoConnector.AdoResultSet.finalize</a></div><div class="ttdeci">void finalize()</div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00191">AdoConnector.xcsm:191</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_aae988b41f7d8e26974897ba310d8fa41"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#aae988b41f7d8e26974897ba310d8fa41">AdoConnector.AdoResultSet.previous</a></div><div class="ttdeci">bool previous() override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00100">AdoConnector.xcsm:100</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_a542b0e2ab3bdd61619c7dbca3efbcc6d"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#a542b0e2ab3bdd61619c7dbca3efbcc6d">AdoConnector.AdoResultSet.getDouble</a></div><div class="ttdeci">double getDouble(String columnlabel) override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00130">AdoConnector.xcsm:130</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_a24ce09a923c3677f6da47de247b41d04"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#a24ce09a923c3677f6da47de247b41d04">AdoConnector.AdoResultSet.isValid</a></div><div class="ttdeci">bool isValid() override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00118">AdoConnector.xcsm:118</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_helper_html_a6114a57ee5a0170c6492f2f7ca3d2ffe"><div class="ttname"><a href="class_ado_connector_1_1_helper.html#a6114a57ee5a0170c6492f2f7ca3d2ffe">AdoConnector.Helper.init</a></div><div class="ttdeci">static bool init()</div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00042">AdoConnector.xcsm:42</a></div></div>
+<div class="ttc" id="class_ado_connector_html_acd826b80350573c3c739b9064382e8a6"><div class="ttname"><a href="class_ado_connector.html#acd826b80350573c3c739b9064382e8a6">AdoConnector.createStatement</a></div><div class="ttdeci">Sql.Statement createStatement() override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00373">AdoConnector.xcsm:373</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_add6ccb7420966926cd05732607bc830c"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#add6ccb7420966926cd05732607bc830c">AdoConnector.AdoResultSet.getLong</a></div><div class="ttdeci">long getLong(String columnlabel) override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00126">AdoConnector.xcsm:126</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_a87edb5898a228825a7659b3af09b437d"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#a87edb5898a228825a7659b3af09b437d">AdoConnector.AdoResultSet.getLong</a></div><div class="ttdeci">long getLong(int columnIndex) override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00150">AdoConnector.xcsm:150</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_a71958f7ac761e367d19435d6b5202be9"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#a71958f7ac761e367d19435d6b5202be9">AdoConnector.AdoResultSet.getInt</a></div><div class="ttdeci">int getInt(String columnlabel) override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00122">AdoConnector.xcsm:122</a></div></div>
+<div class="ttc" id="interface_sql_1_1_statement_html"><div class="ttname"><a href="interface_sql_1_1_statement.html">Sql.Statement</a></div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00300">xsql.xcs:300</a></div></div>
+<div class="ttc" id="class_ado_connector_html_aaf19957c23b1943b1361fefc665e9242"><div class="ttname"><a href="class_ado_connector.html#aaf19957c23b1943b1361fefc665e9242">AdoConnector.driver</a></div><div class="ttdeci">String driver</div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00306">AdoConnector.xcsm:306</a></div></div>
+<div class="ttc" id="interface_sql_1_1_result_set_html"><div class="ttname"><a href="interface_sql_1_1_result_set.html">Sql.ResultSet</a></div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00268">xsql.xcs:268</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_a2c4a4a5ffd68f9cf21eb128933a7c797"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#a2c4a4a5ffd68f9cf21eb128933a7c797">AdoConnector.AdoResultSet.isLast</a></div><div class="ttdeci">bool isLast() override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00109">AdoConnector.xcsm:109</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_prepared_statement_html_a8d804e132097412c17c17ba58b632b32"><div class="ttname"><a href="class_ado_connector_1_1_ado_prepared_statement.html#a8d804e132097412c17c17ba58b632b32">AdoConnector.AdoPreparedStatement.__ado</a></div><div class="ttdeci">AdoConnector __ado</div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00245">AdoConnector.xcsm:245</a></div></div>
+<div class="ttc" id="class_ado_connector_html_a6fe51d063363fbb41c0a562964a002f7"><div class="ttname"><a href="class_ado_connector.html#a6fe51d063363fbb41c0a562964a002f7">AdoConnector.getInfo</a></div><div class="ttdeci">String getInfo()</div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00348">AdoConnector.xcsm:348</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_a043344406e0f05e0b3666befeca72f18"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#a043344406e0f05e0b3666befeca72f18">AdoConnector.AdoResultSet.hres</a></div><div class="ttdeci">long hres</div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00082">AdoConnector.xcsm:82</a></div></div>
+<div class="ttc" id="class_ado_connector_html_a24283120ebd7442f265aaab4c46caef6"><div class="ttname"><a href="class_ado_connector.html#a24283120ebd7442f265aaab4c46caef6">AdoConnector.close</a></div><div class="ttdeci">void close() override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00294">AdoConnector.xcsm:294</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_a2135a919f901124d1a80fb6302d9f571"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#a2135a919f901124d1a80fb6302d9f571">AdoConnector.AdoResultSet.getRow</a></div><div class="ttdeci">int getRow() override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00179">AdoConnector.xcsm:179</a></div></div>
+<div class="ttc" id="class_ado_connector_html_a94a72daf9bf1293e6c001c6c1c3ddd9a"><div class="ttname"><a href="class_ado_connector.html#a94a72daf9bf1293e6c001c6c1c3ddd9a">AdoConnector.AdoConnector</a></div><div class="ttdeci">AdoConnector()</div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00018">AdoConnector.xcsm:18</a></div></div>
+<div class="ttc" id="namespace_sql_html"><div class="ttname"><a href="namespace_sql.html">Sql</a></div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00003">xsql.xcs:3</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_a1185d4ed0f219df011d18b63060962ab"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#a1185d4ed0f219df011d18b63060962ab">AdoConnector.AdoResultSet.isFirst</a></div><div class="ttdeci">bool isFirst() override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00104">AdoConnector.xcsm:104</a></div></div>
+<div class="ttc" id="enum_ado_connector_1_1_mysql_option_html_a8711b1474f4c3ddace10b21c45dcd212"><div class="ttname"><a href="enum_ado_connector_1_1_mysql_option.html#a8711b1474f4c3ddace10b21c45dcd212">AdoConnector.MysqlOption.TIMEOUT</a></div><div class="ttdeci">TIMEOUT</div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00013">AdoConnector.xcsm:13</a></div></div>
+<div class="ttc" id="class_sql_1_1_database_not_support_exception_html"><div class="ttname"><a href="class_sql_1_1_database_not_support_exception.html">Sql.DatabaseNotSupportException</a></div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00014">xsql.xcs:14</a></div></div>
+<div class="ttc" id="class_ado_connector_html_ad15221891552b43863477936111ada40"><div class="ttname"><a href="class_ado_connector.html#ad15221891552b43863477936111ada40">AdoConnector.prepareStatement</a></div><div class="ttdeci">Sql.PreparedStatement prepareStatement(String sql) override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00377">AdoConnector.xcsm:377</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_prepared_statement_html_a424ba0b300f1b9ddaa114b6d017e1a2d"><div class="ttname"><a href="class_ado_connector_1_1_ado_prepared_statement.html#a424ba0b300f1b9ddaa114b6d017e1a2d">AdoConnector.AdoPreparedStatement.AdoPreparedStatement</a></div><div class="ttdeci">AdoPreparedStatement(AdoConnector m, String sql)</div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00247">AdoConnector.xcsm:247</a></div></div>
+<div class="ttc" id="class_ado_connector_html_a4f0eaa77c46b051776bd50414447422e"><div class="ttname"><a href="class_ado_connector.html#a4f0eaa77c46b051776bd50414447422e">AdoConnector.isClosed</a></div><div class="ttdeci">bool isClosed() override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00327">AdoConnector.xcsm:327</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_a00e7572159c117d7bad8948be40bc3bf"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#a00e7572159c117d7bad8948be40bc3bf">AdoConnector.AdoResultSet.getString</a></div><div class="ttdeci">String getString(int columnIndex) override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00166">AdoConnector.xcsm:166</a></div></div>
+<div class="ttc" id="class_ado_connector_html_a3e379b800bcd9a88c97b6c1d4d47e413"><div class="ttname"><a href="class_ado_connector.html#a3e379b800bcd9a88c97b6c1d4d47e413">AdoConnector.setDriver</a></div><div class="ttdeci">void setDriver(String strDrv)</div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00308">AdoConnector.xcsm:308</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_ad3e817259471d3c46ddcd0ce8b476795"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#ad3e817259471d3c46ddcd0ce8b476795">AdoConnector.AdoResultSet.last</a></div><div class="ttdeci">bool last() override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00092">AdoConnector.xcsm:92</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_statement_html_ab7f575747b180d8a1b8a8da1df313ca6"><div class="ttname"><a href="class_ado_connector_1_1_ado_statement.html#ab7f575747b180d8a1b8a8da1df313ca6">AdoConnector.AdoStatement.AdoStatement</a></div><div class="ttdeci">AdoStatement(AdoConnector m)</div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00199">AdoConnector.xcsm:199</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_statement_html_a8d804e132097412c17c17ba58b632b32"><div class="ttname"><a href="class_ado_connector_1_1_ado_statement.html#a8d804e132097412c17c17ba58b632b32">AdoConnector.AdoStatement.__ado</a></div><div class="ttdeci">AdoConnector __ado</div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00197">AdoConnector.xcsm:197</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_statement_html_abdd9786f302141dd3cd6d77ae4fb8b94"><div class="ttname"><a href="class_ado_connector_1_1_ado_statement.html#abdd9786f302141dd3cd6d77ae4fb8b94">AdoConnector.AdoStatement.getResult</a></div><div class="ttdeci">Sql.ResultSet getResult() override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00238">AdoConnector.xcsm:238</a></div></div>
+<div class="ttc" id="class__system___html_a0667f38c65ced7dfb0404c062c775299"><div class="ttname"><a href="class__system__.html#a0667f38c65ced7dfb0404c062c775299">_system_.getPlatformId</a></div><div class="ttdeci">static int getPlatformId()</div><div class="ttdoc">获取平台操作系统ID 0 WINDOWS 1 LINUX 2 MAC OSX 3 iPhone 模拟器 4 iPhone 5 unix 6 其他poxis环境 ...</div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_statement_html_a3964ce135a59976676402f9df97d000e"><div class="ttname"><a href="class_ado_connector_1_1_ado_statement.html#a3964ce135a59976676402f9df97d000e">AdoConnector.AdoStatement.execute</a></div><div class="ttdeci">int execute(String sql) override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00203">AdoConnector.xcsm:203</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_af81bdc69c1e0ba3d62357003fd1cc0a6"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#af81bdc69c1e0ba3d62357003fd1cc0a6">AdoConnector.AdoResultSet.getInt</a></div><div class="ttdeci">int getInt(int columnIndex) override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00146">AdoConnector.xcsm:146</a></div></div>
+<div class="ttc" id="class_ado_connector_html_ace95e37eaf2cf200c7fdf57cffc35b55"><div class="ttname"><a href="class_ado_connector.html#ace95e37eaf2cf200c7fdf57cffc35b55">AdoConnector.hAdo</a></div><div class="ttdeci">long hAdo</div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00006">AdoConnector.xcsm:6</a></div></div>
+<div class="ttc" id="class_ado_connector_html_a25bc7d9d05a180769e38ef30c26f0408"><div class="ttname"><a href="class_ado_connector.html#a25bc7d9d05a180769e38ef30c26f0408">AdoConnector.getOption</a></div><div class="ttdeci">Object getOption(int opt) override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00353">AdoConnector.xcsm:353</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_a0c45abcffabd65bf9f7b7386f838bf33"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#a0c45abcffabd65bf9f7b7386f838bf33">AdoConnector.AdoResultSet.AdoResultSet</a></div><div class="ttdeci">AdoResultSet(long r)</div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00084">AdoConnector.xcsm:84</a></div></div>
+<div class="ttc" id="class__system___html"><div class="ttname"><a href="class__system__.html">_system_</a></div><div class="ttdoc">系统和IO相关 </div><div class="ttdef"><b>Definition:</b> <a href="_system_8xcs_source.html#l00006">System.xcs:6</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_a07e2073df34fa4d673fa0fb4d6504d00"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#a07e2073df34fa4d673fa0fb4d6504d00">AdoConnector.AdoResultSet.getString</a></div><div class="ttdeci">String getString(String columnlabel) override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00142">AdoConnector.xcsm:142</a></div></div>
+<div class="ttc" id="class_ado_connector_html_aeb1ef3b1759bb00775d39c77e670bdd0"><div class="ttname"><a href="class_ado_connector.html#aeb1ef3b1759bb00775d39c77e670bdd0">AdoConnector.getError</a></div><div class="ttdeci">String getError() override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00338">AdoConnector.xcsm:338</a></div></div>
+<div class="ttc" id="enum_ado_connector_1_1_mysql_option_html_a6dde884e19bdc8f342ffec8fc17e7c91"><div class="ttname"><a href="enum_ado_connector_1_1_mysql_option.html#a6dde884e19bdc8f342ffec8fc17e7c91">AdoConnector.MysqlOption.PORT</a></div><div class="ttdeci">PORT</div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00012">AdoConnector.xcsm:12</a></div></div>
+<div class="ttc" id="class_exception_html_afafd068b736520af1e24269a284980a9"><div class="ttname"><a href="class_exception.html#afafd068b736520af1e24269a284980a9">Exception.getMessage</a></div><div class="ttdeci">String getMessage()</div><div class="ttdoc">读取异常消息 </div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_prepared_statement_html_a3964ce135a59976676402f9df97d000e"><div class="ttname"><a href="class_ado_connector_1_1_ado_prepared_statement.html#a3964ce135a59976676402f9df97d000e">AdoConnector.AdoPreparedStatement.execute</a></div><div class="ttdeci">int execute(String sql) override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00252">AdoConnector.xcsm:252</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_aa9ee5f395a9e2daab5415f6773db293b"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#aa9ee5f395a9e2daab5415f6773db293b">AdoConnector.AdoResultSet.getDouble</a></div><div class="ttdeci">double getDouble(int columnIndex) override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00154">AdoConnector.xcsm:154</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_prepared_statement_html_abdd9786f302141dd3cd6d77ae4fb8b94"><div class="ttname"><a href="class_ado_connector_1_1_ado_prepared_statement.html#abdd9786f302141dd3cd6d77ae4fb8b94">AdoConnector.AdoPreparedStatement.getResult</a></div><div class="ttdeci">Sql.ResultSet getResult() override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00286">AdoConnector.xcsm:286</a></div></div>
+<div class="ttc" id="class_ado_connector_html_a5ac06d5572672c9e3c042a3027f8cd98"><div class="ttname"><a href="class_ado_connector.html#a5ac06d5572672c9e3c042a3027f8cd98">AdoConnector.getSqlState</a></div><div class="ttdeci">String getSqlState()</div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00343">AdoConnector.xcsm:343</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_prepared_statement_html_a777f503eb3d365e7f59e3db8a4413f04"><div class="ttname"><a href="class_ado_connector_1_1_ado_prepared_statement.html#a777f503eb3d365e7f59e3db8a4413f04">AdoConnector.AdoPreparedStatement.executeQuery</a></div><div class="ttdeci">Sql.ResultSet executeQuery(String sql) override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00264">AdoConnector.xcsm:264</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_a93912a30d7fc5a9871fca859565aa0b3"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#a93912a30d7fc5a9871fca859565aa0b3">AdoConnector.AdoResultSet.first</a></div><div class="ttdeci">bool first() override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00088">AdoConnector.xcsm:88</a></div></div>
+<div class="ttc" id="class_sql_1_1_sql_exception_html"><div class="ttname"><a href="class_sql_1_1_sql_exception.html">Sql.SqlException</a></div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00004">xsql.xcs:4</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html">Sql.PreparedStatement</a></div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00312">xsql.xcs:312</a></div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_a0de786b862e2b20e1bd6fdcab3a9a416"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#a0de786b862e2b20e1bd6fdcab3a9a416">AdoConnector.AdoResultSet.getBoolean</a></div><div class="ttdeci">bool getBoolean(int columnIndex) override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00162">AdoConnector.xcsm:162</a></div></div>
+<div class="ttc" id="class_illegal_argument_exception_html"><div class="ttname"><a href="class_illegal_argument_exception.html">IllegalArgumentException</a></div><div class="ttdoc">参数异常 </div><div class="ttdef"><b>Definition:</b> <a href="_exception_8xcs_source.html#l00174">Exception.xcs:174</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_a24283120ebd7442f265aaab4c46caef6"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#a24283120ebd7442f265aaab4c46caef6">AdoConnector.AdoResultSet.close</a></div><div class="ttdeci">void close() override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00184">AdoConnector.xcsm:184</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_result_set_html_af45b4e5a32b98bec3ab8e7564086e314"><div class="ttname"><a href="class_ado_connector_1_1_ado_result_set.html#af45b4e5a32b98bec3ab8e7564086e314">AdoConnector.AdoResultSet.getByte</a></div><div class="ttdeci">byte getByte(int columnIndex) override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00158">AdoConnector.xcsm:158</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_prepared_statement_html_a94205f29b423121e7907ba0d035e2690"><div class="ttname"><a href="class_ado_connector_1_1_ado_prepared_statement.html#a94205f29b423121e7907ba0d035e2690">AdoConnector.AdoPreparedStatement.executeUpdate</a></div><div class="ttdeci">int executeUpdate(String sql) override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00274">AdoConnector.xcsm:274</a></div></div>
+<div class="ttc" id="class_ado_connector_html_adf2d952ba41a1ebd626afb88f13a8f89"><div class="ttname"><a href="class_ado_connector.html#adf2d952ba41a1ebd626afb88f13a8f89">AdoConnector.setOption</a></div><div class="ttdeci">void setOption(int opt, Object option) override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00359">AdoConnector.xcsm:359</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_statement_html_a94205f29b423121e7907ba0d035e2690"><div class="ttname"><a href="class_ado_connector_1_1_ado_statement.html#a94205f29b423121e7907ba0d035e2690">AdoConnector.AdoStatement.executeUpdate</a></div><div class="ttdeci">int executeUpdate(String sql) override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00226">AdoConnector.xcsm:226</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_statement_html_a24283120ebd7442f265aaab4c46caef6"><div class="ttname"><a href="class_ado_connector_1_1_ado_statement.html#a24283120ebd7442f265aaab4c46caef6">AdoConnector.AdoStatement.close</a></div><div class="ttdeci">void close() override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00240">AdoConnector.xcsm:240</a></div></div>
+<div class="ttc" id="class_library_html"><div class="ttname"><a href="class_library.html">Library</a></div></div>
+<div class="ttc" id="class_ado_connector_html_a03973e015747285e3bdd01b87d124fb3"><div class="ttname"><a href="class_ado_connector.html#a03973e015747285e3bdd01b87d124fb3">AdoConnector.getErrorCode</a></div><div class="ttdeci">int getErrorCode() override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00333">AdoConnector.xcsm:333</a></div></div>
+<div class="ttc" id="class_ado_connector_1_1_ado_prepared_statement_html_a24283120ebd7442f265aaab4c46caef6"><div class="ttname"><a href="class_ado_connector_1_1_ado_prepared_statement.html#a24283120ebd7442f265aaab4c46caef6">AdoConnector.AdoPreparedStatement.close</a></div><div class="ttdeci">void close() override </div><div class="ttdef"><b>Definition:</b> <a href="_ado_connector_8xcsm_source.html#l00288">AdoConnector.xcsm:288</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

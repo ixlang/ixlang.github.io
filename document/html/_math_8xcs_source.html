@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.7 Release</span>
+   &#160;<span id="projectnumber">v3.6 Release</span>
    </div>
-   <div id="projectbrief">项目介绍</div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
   </td>
  </tr>
  </tbody>
@@ -156,12 +157,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    </div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="class_math.html#aac8d6672f1410a44932c82c5f2504426">isINF</a>(<span class="keywordtype">double</span> x);</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    </div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="class_math.html#ae973c5c5509930288194fd922e61b7b5">longBitsToDouble</a>(<span class="keywordtype">long</span> v);</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    </div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="class_math.html#a242f585a7ae86b736a6b069b0abfbd09">intBitsToDouble</a>(<span class="keywordtype">int</span> v);</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    </div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">long</span> <a class="code" href="class_math.html#a242f585a7ae86b736a6b069b0abfbd09">intBitsToDouble</a>(<span class="keywordtype">double</span> v);</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;};</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="class_math.html#aeb3cce0756a1579a68963a1bd5298feb">parseFloat</a>(<a class="code" href="class_string.html">String</a> x);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    </div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="class_math.html#a9802acad26b58cbe16396be43a2ea33d">parseDouble</a>(<a class="code" href="class_string.html">String</a> x);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="class_math.html#ae973c5c5509930288194fd922e61b7b5">longBitsToDouble</a>(<span class="keywordtype">long</span> v);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    </div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="class_math.html#a242f585a7ae86b736a6b069b0abfbd09">intBitsToDouble</a>(<span class="keywordtype">int</span> v);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">long</span> <a class="code" href="class_math.html#a242f585a7ae86b736a6b069b0abfbd09">intBitsToDouble</a>(<span class="keywordtype">double</span> v);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_math.html#a16bed4bfa1e572571416f24d61c6f51d">doubleBitsToInt</a>(<span class="keywordtype">double</span> v);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_math.html#a792f97f780cfb5da608465c4b845d821">floatBitsToInt</a>(<span class="keywordtype">float</span> v);</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="class_math.html#a1701a1c487a11798038160494b19bf79">intBitsToFloat</a>(<span class="keywordtype">int</span> v);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;};</div>
+<div class="ttc" id="class_math_html_a1701a1c487a11798038160494b19bf79"><div class="ttname"><a href="class_math.html#a1701a1c487a11798038160494b19bf79">Math.intBitsToFloat</a></div><div class="ttdeci">static float intBitsToFloat(int v)</div><div class="ttdoc">int按数据位转float </div></div>
 <div class="ttc" id="class_math_html_a7adcaca0d84e9fa58ae1977a150e8c66"><div class="ttname"><a href="class_math.html#a7adcaca0d84e9fa58ae1977a150e8c66">Math.exp</a></div><div class="ttdeci">static double exp(double v)</div><div class="ttdoc">求e为底的指数 </div></div>
 <div class="ttc" id="class_math_html_aea6cbe93f7719213e00b91d1e2495be8"><div class="ttname"><a href="class_math.html#aea6cbe93f7719213e00b91d1e2495be8">Math.asin</a></div><div class="ttdeci">static double asin(double v)</div><div class="ttdoc">反正弦函数 </div></div>
 <div class="ttc" id="class_math_html_ae4973f9921bf17f35846ac98cb664ec1"><div class="ttname"><a href="class_math.html#ae4973f9921bf17f35846ac98cb664ec1">Math.floorDiv</a></div><div class="ttdeci">static int floorDiv(int y, int v)</div><div class="ttdoc">地板除 </div></div>
@@ -173,20 +186,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="class_math_html_a097917484e4b0ba0dfad071499168d55"><div class="ttname"><a href="class_math.html#a097917484e4b0ba0dfad071499168d55">Math.abs</a></div><div class="ttdeci">static int abs(int v)</div><div class="ttdoc">取绝对值 </div></div>
 <div class="ttc" id="class_math_html_a4db1b4c0525b75611b40d4d71d6da049"><div class="ttname"><a href="class_math.html#a4db1b4c0525b75611b40d4d71d6da049">Math.cbrt</a></div><div class="ttdeci">static double cbrt(double v)</div><div class="ttdoc">求立方根 </div></div>
 <div class="ttc" id="class_math_html_a371769b570811b562cfccd4c023c4f53"><div class="ttname"><a href="class_math.html#a371769b570811b562cfccd4c023c4f53">Math.acos</a></div><div class="ttdeci">static double acos(double v)</div><div class="ttdoc">反余弦函数 </div></div>
+<div class="ttc" id="class_math_html_a16bed4bfa1e572571416f24d61c6f51d"><div class="ttname"><a href="class_math.html#a16bed4bfa1e572571416f24d61c6f51d">Math.doubleBitsToInt</a></div><div class="ttdeci">static int doubleBitsToInt(double v)</div><div class="ttdoc">double按数据位转int </div></div>
 <div class="ttc" id="class_math_html_a3a07f5ec8da04e05e20433eeabc0a948"><div class="ttname"><a href="class_math.html#a3a07f5ec8da04e05e20433eeabc0a948">Math.pow</a></div><div class="ttdeci">static double pow(double a, double b)</div><div class="ttdoc">计算乘方 </div></div>
 <div class="ttc" id="class_math_html_a41cdd4cbfa8c119c01ae3117dfff9dc0"><div class="ttname"><a href="class_math.html#a41cdd4cbfa8c119c01ae3117dfff9dc0">Math.log</a></div><div class="ttdeci">static double log(double x)</div><div class="ttdoc">计算指定的底数的数字的对数 </div></div>
+<div class="ttc" id="class_math_html_a792f97f780cfb5da608465c4b845d821"><div class="ttname"><a href="class_math.html#a792f97f780cfb5da608465c4b845d821">Math.floatBitsToInt</a></div><div class="ttdeci">static int floatBitsToInt(float v)</div><div class="ttdoc">float按数据位转int </div></div>
 <div class="ttc" id="class_math_html_affc038f8e272e07a8bd3cf104ff14d42"><div class="ttname"><a href="class_math.html#affc038f8e272e07a8bd3cf104ff14d42">Math.floor</a></div><div class="ttdeci">static double floor(double v)</div><div class="ttdoc">将数字向下舍入到基数的最接近倍数 </div></div>
 <div class="ttc" id="class_math_html"><div class="ttname"><a href="class_math.html">Math</a></div><div class="ttdoc">Math类 </div><div class="ttdef"><b>Definition:</b> <a href="_math_8xcs_source.html#l00006">Math.xcs:6</a></div></div>
 <div class="ttc" id="class_math_html_ab1957eadd01a90cd41cab9e7a03e78fa"><div class="ttname"><a href="class_math.html#ab1957eadd01a90cd41cab9e7a03e78fa">Math.cosh</a></div><div class="ttdeci">static double cosh(double v)</div><div class="ttdoc">双曲余弦函数 </div></div>
 <div class="ttc" id="class_math_html_a920b5422a4d466861db13591b2865159"><div class="ttname"><a href="class_math.html#a920b5422a4d466861db13591b2865159">Math.isNan</a></div><div class="ttdeci">static double isNan(double x)</div><div class="ttdoc">判断是不是有效数字 </div></div>
 <div class="ttc" id="class_math_html_ae973c5c5509930288194fd922e61b7b5"><div class="ttname"><a href="class_math.html#ae973c5c5509930288194fd922e61b7b5">Math.longBitsToDouble</a></div><div class="ttdeci">static double longBitsToDouble(long v)</div><div class="ttdoc">long按数据位转double </div></div>
+<div class="ttc" id="class_math_html_aeb3cce0756a1579a68963a1bd5298feb"><div class="ttname"><a href="class_math.html#aeb3cce0756a1579a68963a1bd5298feb">Math.parseFloat</a></div><div class="ttdeci">static float parseFloat(String x)</div><div class="ttdoc">将字符串解析为float </div></div>
 <div class="ttc" id="class_math_html_ae02efefadd3ceb9f200111f0ff0fdbb6"><div class="ttname"><a href="class_math.html#ae02efefadd3ceb9f200111f0ff0fdbb6">Math.atan</a></div><div class="ttdeci">static double atan(double v)</div><div class="ttdoc">反正切函数 </div></div>
 <div class="ttc" id="class_math_html_a258d26f01bf1d88771fdb7647b203918"><div class="ttname"><a href="class_math.html#a258d26f01bf1d88771fdb7647b203918">Math.cos</a></div><div class="ttdeci">static double cos(double v)</div><div class="ttdoc">余弦函数 </div></div>
 <div class="ttc" id="class_math_html_acd49d8beb3d91927958140f32250a02d"><div class="ttname"><a href="class_math.html#acd49d8beb3d91927958140f32250a02d">Math.round</a></div><div class="ttdeci">static long round(double x)</div><div class="ttdoc">四舍五入 </div></div>
 <div class="ttc" id="class_math_html_a242f585a7ae86b736a6b069b0abfbd09"><div class="ttname"><a href="class_math.html#a242f585a7ae86b736a6b069b0abfbd09">Math.intBitsToDouble</a></div><div class="ttdeci">static double intBitsToDouble(int v)</div><div class="ttdoc">int按数据位转double </div></div>
 <div class="ttc" id="class_math_html_ae9cb9eb3ee0cbcd21bf98b6a3b001f97"><div class="ttname"><a href="class_math.html#ae9cb9eb3ee0cbcd21bf98b6a3b001f97">Math.ceil</a></div><div class="ttdeci">static double ceil(double v)</div><div class="ttdoc">向上取整 </div></div>
 <div class="ttc" id="class_math_html_a480b441d493fd14da1e78a9bf213a52e"><div class="ttname"><a href="class_math.html#a480b441d493fd14da1e78a9bf213a52e">Math.tanh</a></div><div class="ttdeci">static double tanh(double v)</div><div class="ttdoc">双曲正切函数 </div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
 <div class="ttc" id="class_math_html_a517878947d28b4191c0d016560248efe"><div class="ttname"><a href="class_math.html#a517878947d28b4191c0d016560248efe">Math.expm1</a></div><div class="ttdeci">static double expm1(double v)</div><div class="ttdoc">计算参数的以 e 为底的指数，减去 1 </div></div>
+<div class="ttc" id="class_math_html_a9802acad26b58cbe16396be43a2ea33d"><div class="ttname"><a href="class_math.html#a9802acad26b58cbe16396be43a2ea33d">Math.parseDouble</a></div><div class="ttdeci">static double parseDouble(String x)</div><div class="ttdoc">将字符串解析为double </div></div>
 <div class="ttc" id="class_math_html_a2f2bf96d77a187bd4446b4ba3864470d"><div class="ttname"><a href="class_math.html#a2f2bf96d77a187bd4446b4ba3864470d">Math.min</a></div><div class="ttdeci">static int min(int a, int b)</div><div class="ttdoc">取最小 </div></div>
 <div class="ttc" id="class_math_html_aa5d960354774dc177393b360c0f90aa9"><div class="ttname"><a href="class_math.html#aa5d960354774dc177393b360c0f90aa9">Math.max</a></div><div class="ttdeci">static int max(int a, int b)</div><div class="ttdoc">取最大 </div></div>
 </div><!-- fragment --></div><!-- contents -->

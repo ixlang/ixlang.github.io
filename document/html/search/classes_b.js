@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['linewrapmode',['LineWrapMode',['../enum_q_x_text_edit_1_1_line_wrap_mode.html',1,'QXTextEdit']]],
-  ['list',['List',['../class_list.html',1,'']]],
-  ['list_3crunnable_3e',['List&lt;Runnable&gt;',['../class_list.html',1,'']]],
-  ['lock',['Lock',['../interface_lock.html',1,'']]]
+  ['kernel32',['Kernel32',['../class_runtime_1_1_win32_api_1_1_kernel32.html',1,'Runtime::Win32Api']]]
 ];

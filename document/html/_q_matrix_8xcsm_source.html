@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/xlibrarys/QT&amp;XLIB/QXLibrary/qt5/widgets/QMatrix.xcsm 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v3.6 Release</span>
+   </div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c26b241c633baa98de380b3fd590c11c.html">xlibrarys</a></li><li class="navelem"><a class="el" href="dir_5666ad1a9fdeb818d224f872b324982b.html">QT&amp;XLIB</a></li><li class="navelem"><a class="el" href="dir_7961984395364fe113330b5319164161.html">QXLibrary</a></li><li class="navelem"><a class="el" href="dir_0d599f6f40044cb1083515dc54bda2af.html">qt5</a></li><li class="navelem"><a class="el" href="dir_cfcbf8b0d8f6d8bd829feb69f92de4d5.html">widgets</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">QMatrix.xcsm</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_q_matrix_8xcsm.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//xlang Source, Name:QMatrix.xcsm </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//Date: Mon Oct 23:07:48 2018 </span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">package </span>Qt{</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_matrix.html">    4</a></span>&#160;    public class QMatrix : QCore{</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_matrix.html#aae0643fa848977e20c09af9d68cb12cc">    5</a></span>&#160;        public QMatrix(){</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;            nativehandle = QtXnl.createNObject(QType.qtMatrix, 0);</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        }</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_matrix.html#a1d153669547729a8e9d59a4a7b0f7fd3">    9</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_qt_1_1_q_matrix.html#a1d153669547729a8e9d59a4a7b0f7fd3">QMatrix</a>(<span class="keywordtype">long</span> h){</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;            nativehandle = h;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        }</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_matrix.html#a5182ef134c6f97b4bb84802a4dfc89f3">   13</a></span>&#160;        <span class="keyword">public</span> QPoint <a class="code" href="class_qt_1_1_q_matrix.html#a5182ef134c6f97b4bb84802a4dfc89f3">mapPoint</a>(@NotNilptr QPoint p){</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            <span class="keywordtype">long</span> v = QtXnl.object_get_long_int(nativehandle, Constant.MATRIXMAPPOINT, p.x, p.y);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> QPoint((<span class="keywordtype">int</span>)(v &gt;&gt; 32) &amp; 0xffffffff, (<span class="keywordtype">int</span>)v &amp; 0xffffffff);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        }</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_matrix.html#a2aba3ca0642ea6a470a51bb6eafb82a5">   18</a></span>&#160;        <span class="keyword">public</span> QRect <a class="code" href="class_qt_1_1_q_matrix.html#a2aba3ca0642ea6a470a51bb6eafb82a5">mapRect</a>(@NotNilptr QRect r){</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keywordtype">long</span> lt = QtXnl.object_get_long_int(nativehandle, Constant.MATRIXMAPPOINT, r.left, r.top);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keywordtype">long</span> rb = QtXnl.object_get_long_int(nativehandle, Constant.MATRIXMAPPOINT, r.right, r.bottom);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keywordtype">long</span> lb = QtXnl.object_get_long_int(nativehandle, Constant.MATRIXMAPPOINT, r.left, r.bottom);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keywordtype">long</span> rt = QtXnl.object_get_long_int(nativehandle, Constant.MATRIXMAPPOINT, r.right, r.top);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keywordtype">int</span> x1 = (int)(lt &gt;&gt; 32) &amp; 0xffffffff,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                x2 = (int)(rb &gt;&gt; 32) &amp; 0xffffffff,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                x3 = (int)(lb &gt;&gt; 32) &amp; 0xffffffff,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                x4 = (int)(rt &gt;&gt; 32) &amp; 0xffffffff;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordtype">int</span> y1 = (int)lt &amp; 0xffffffff,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                y2 = (<span class="keywordtype">int</span>)rb &amp; 0xffffffff,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                y3 = (int)lb &amp; 0xffffffff,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                y4 = (<span class="keywordtype">int</span>)rt &amp; 0xffffffff;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                    </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> QRect(</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <a class="code" href="class_math.html">Math</a>.<a class="code" href="class_math.html#a2f2bf96d77a187bd4446b4ba3864470d">min</a>(x1,<a class="code" href="class_math.html">Math</a>.<a class="code" href="class_math.html#a2f2bf96d77a187bd4446b4ba3864470d">min</a>(x2,<a class="code" href="class_math.html">Math</a>.<a class="code" href="class_math.html#a2f2bf96d77a187bd4446b4ba3864470d">min</a>(x3,x4))), <a class="code" href="class_math.html">Math</a>.<a class="code" href="class_math.html#a2f2bf96d77a187bd4446b4ba3864470d">min</a>(y1,<a class="code" href="class_math.html">Math</a>.<a class="code" href="class_math.html#a2f2bf96d77a187bd4446b4ba3864470d">min</a>(y2,<a class="code" href="class_math.html">Math</a>.<a class="code" href="class_math.html#a2f2bf96d77a187bd4446b4ba3864470d">min</a>(y3,y4))),</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <a class="code" href="class_math.html">Math</a>.<a class="code" href="class_math.html#aa5d960354774dc177393b360c0f90aa9">max</a>(x1,<a class="code" href="class_math.html">Math</a>.<a class="code" href="class_math.html#aa5d960354774dc177393b360c0f90aa9">max</a>(x2,<a class="code" href="class_math.html">Math</a>.<a class="code" href="class_math.html#aa5d960354774dc177393b360c0f90aa9">max</a>(x3,x4))), <a class="code" href="class_math.html">Math</a>.<a class="code" href="class_math.html#aa5d960354774dc177393b360c0f90aa9">max</a>(y1,<a class="code" href="class_math.html">Math</a>.<a class="code" href="class_math.html#aa5d960354774dc177393b360c0f90aa9">max</a>(y2,<a class="code" href="class_math.html">Math</a>.<a class="code" href="class_math.html#aa5d960354774dc177393b360c0f90aa9">max</a>(y3,y4)))</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                );</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_matrix.html#a2f3f5da4afc672eff0c928bfad44e267">   40</a></span>&#160;        <span class="keyword">public</span> QMatrix <a class="code" href="class_qt_1_1_q_matrix.html#a2f3f5da4afc672eff0c928bfad44e267">translate</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y){</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> QMatrix(QtXnl.long_double2(nativehandle, Constant.MATRIXTRANSLATE, x, y));</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_matrix.html#a718f66afe5a121f6e048542e3b35009e">   44</a></span>&#160;        <span class="keyword">public</span> QMatrix <a class="code" href="class_qt_1_1_q_matrix.html#a718f66afe5a121f6e048542e3b35009e">scale</a>(<span class="keywordtype">double</span> sx, <span class="keywordtype">double</span> sy){</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> QMatrix(QtXnl.long_double2(nativehandle, Constant.MATRIXSCALE, sx, sy));</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_matrix.html#a3ef1113b8a3e1297f8d031a86d507e62">   48</a></span>&#160;        <span class="keyword">public</span> QMatrix <a class="code" href="class_qt_1_1_q_matrix.html#a3ef1113b8a3e1297f8d031a86d507e62">shear</a>(<span class="keywordtype">double</span> sh, <span class="keywordtype">double</span> sv){</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> QMatrix(QtXnl.long_double2(nativehandle, Constant.MATRIXSHEAR, sh, sv));</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_matrix.html#a32de8e7d3f553952f1fedd6dd30bad45">   52</a></span>&#160;        <span class="keyword">public</span> QMatrix <a class="code" href="class_qt_1_1_q_matrix.html#a32de8e7d3f553952f1fedd6dd30bad45">rotate</a>(<span class="keywordtype">double</span> a){</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> QMatrix(QtXnl.long_double2(nativehandle, Constant.MATRIXROTATE, a, 0));</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_matrix.html#a8c9e1237284487fe02005822173f8fa5">   56</a></span>&#160;        <span class="keyword">public</span> QMatrix <a class="code" href="class_qt_1_1_q_matrix.html#a8c9e1237284487fe02005822173f8fa5">operator *</a>(@NotNilptr QMatrix m){</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> QMatrix(QtXnl.object_get_long_int(nativehandle, Constant.MATRIXMUL, m.nativehandle, 0));</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_matrix.html#a32d626626eee0bc4ade146973f6abb1c">   60</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_matrix.html#a32d626626eee0bc4ade146973f6abb1c">finalize</a>(){</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">if</span> (nativehandle != 0){</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                QtXnl.widget_slot(nativehandle, Constant.MATRIXDTOR);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    };</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
+<div class="ttc" id="class_qt_1_1_q_matrix_html_a5182ef134c6f97b4bb84802a4dfc89f3"><div class="ttname"><a href="class_qt_1_1_q_matrix.html#a5182ef134c6f97b4bb84802a4dfc89f3">Qt.QMatrix.mapPoint</a></div><div class="ttdeci">QPoint mapPoint(@NotNilptr QPoint p)</div><div class="ttdef"><b>Definition:</b> <a href="_q_matrix_8xcsm_source.html#l00013">QMatrix.xcsm:13</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_matrix_html_a1d153669547729a8e9d59a4a7b0f7fd3"><div class="ttname"><a href="class_qt_1_1_q_matrix.html#a1d153669547729a8e9d59a4a7b0f7fd3">Qt.QMatrix.QMatrix</a></div><div class="ttdeci">QMatrix(long h)</div><div class="ttdef"><b>Definition:</b> <a href="_q_matrix_8xcsm_source.html#l00009">QMatrix.xcsm:9</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_matrix_html_a8c9e1237284487fe02005822173f8fa5"><div class="ttname"><a href="class_qt_1_1_q_matrix.html#a8c9e1237284487fe02005822173f8fa5">Qt.QMatrix.operator *</a></div><div class="ttdeci">QMatrix operator *(@NotNilptr QMatrix m)</div><div class="ttdef"><b>Definition:</b> <a href="_q_matrix_8xcsm_source.html#l00056">QMatrix.xcsm:56</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_matrix_html_a32d626626eee0bc4ade146973f6abb1c"><div class="ttname"><a href="class_qt_1_1_q_matrix.html#a32d626626eee0bc4ade146973f6abb1c">Qt.QMatrix.finalize</a></div><div class="ttdeci">void finalize()</div><div class="ttdef"><b>Definition:</b> <a href="_q_matrix_8xcsm_source.html#l00060">QMatrix.xcsm:60</a></div></div>
+<div class="ttc" id="class_math_html"><div class="ttname"><a href="class_math.html">Math</a></div><div class="ttdoc">Math类 </div><div class="ttdef"><b>Definition:</b> <a href="_math_8xcs_source.html#l00006">Math.xcs:6</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_matrix_html_a2aba3ca0642ea6a470a51bb6eafb82a5"><div class="ttname"><a href="class_qt_1_1_q_matrix.html#a2aba3ca0642ea6a470a51bb6eafb82a5">Qt.QMatrix.mapRect</a></div><div class="ttdeci">QRect mapRect(@NotNilptr QRect r)</div><div class="ttdef"><b>Definition:</b> <a href="_q_matrix_8xcsm_source.html#l00018">QMatrix.xcsm:18</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_matrix_html_a32de8e7d3f553952f1fedd6dd30bad45"><div class="ttname"><a href="class_qt_1_1_q_matrix.html#a32de8e7d3f553952f1fedd6dd30bad45">Qt.QMatrix.rotate</a></div><div class="ttdeci">QMatrix rotate(double a)</div><div class="ttdef"><b>Definition:</b> <a href="_q_matrix_8xcsm_source.html#l00052">QMatrix.xcsm:52</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_matrix_html_a3ef1113b8a3e1297f8d031a86d507e62"><div class="ttname"><a href="class_qt_1_1_q_matrix.html#a3ef1113b8a3e1297f8d031a86d507e62">Qt.QMatrix.shear</a></div><div class="ttdeci">QMatrix shear(double sh, double sv)</div><div class="ttdef"><b>Definition:</b> <a href="_q_matrix_8xcsm_source.html#l00048">QMatrix.xcsm:48</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_matrix_html_a718f66afe5a121f6e048542e3b35009e"><div class="ttname"><a href="class_qt_1_1_q_matrix.html#a718f66afe5a121f6e048542e3b35009e">Qt.QMatrix.scale</a></div><div class="ttdeci">QMatrix scale(double sx, double sy)</div><div class="ttdef"><b>Definition:</b> <a href="_q_matrix_8xcsm_source.html#l00044">QMatrix.xcsm:44</a></div></div>
+<div class="ttc" id="class_math_html_a2f2bf96d77a187bd4446b4ba3864470d"><div class="ttname"><a href="class_math.html#a2f2bf96d77a187bd4446b4ba3864470d">Math.min</a></div><div class="ttdeci">static int min(int a, int b)</div><div class="ttdoc">取最小 </div></div>
+<div class="ttc" id="class_qt_1_1_q_matrix_html_a2f3f5da4afc672eff0c928bfad44e267"><div class="ttname"><a href="class_qt_1_1_q_matrix.html#a2f3f5da4afc672eff0c928bfad44e267">Qt.QMatrix.translate</a></div><div class="ttdeci">QMatrix translate(double x, double y)</div><div class="ttdef"><b>Definition:</b> <a href="_q_matrix_8xcsm_source.html#l00040">QMatrix.xcsm:40</a></div></div>
+<div class="ttc" id="class_math_html_aa5d960354774dc177393b360c0f90aa9"><div class="ttname"><a href="class_math.html#aa5d960354774dc177393b360c0f90aa9">Math.max</a></div><div class="ttdeci">static int max(int a, int b)</div><div class="ttdoc">取最大 </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

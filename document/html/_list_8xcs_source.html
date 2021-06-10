@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.7 Release</span>
+   &#160;<span id="projectnumber">v3.6 Release</span>
    </div>
-   <div id="projectbrief">项目介绍</div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
   </td>
  </tr>
  </tbody>
@@ -115,25 +116,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_list.html#a7aadda5fed3baf7dd2702adf4ac2363c">add</a>(_V val);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_list.html#a30cd5fc5f4b89f45c29eef4ceb892e71">insert</a>(_V val);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <span class="keyword">remove</span>(Iterator&lt;_V&gt; <a class="code" href="class_list.html#a6d73326f2404a3df917a7e4b951f9177">iterator</a>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_list.html#a35442e8da63abda1f340bfdd4de01c8d">addAll</a>(_V []val);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_list.html#a30cd5fc5f4b89f45c29eef4ceb892e71">insert</a>(_V val);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_list.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> <span class="keyword">remove</span>(Iterator&lt;_V&gt; <a class="code" href="class_list.html#a6d73326f2404a3df917a7e4b951f9177">iterator</a>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    Iterator&lt;_V&gt; <a class="code" href="class_list.html#a6d73326f2404a3df917a7e4b951f9177">iterator</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_list.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    _V <a class="code" href="class_list.html#af0cbf3c56720840bf32e0eeb1fc9c886">pollLast</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    Iterator&lt;_V&gt; <a class="code" href="class_list.html#a6d73326f2404a3df917a7e4b951f9177">iterator</a>();</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    _V <a class="code" href="class_list.html#a3dfbaa28497ec96c87455bcb6d932313">pollHead</a>();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    _V <a class="code" href="class_list.html#af0cbf3c56720840bf32e0eeb1fc9c886">pollLast</a>();</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    _V [] <a class="code" href="class_list.html#a9af415234a91ad0b28b4cd79451c1f39">toArray</a>(_V [] array);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_list.html#a32d626626eee0bc4ade146973f6abb1c">finalize</a>();</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;};</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    _V <a class="code" href="class_list.html#a3dfbaa28497ec96c87455bcb6d932313">pollHead</a>();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    _V [] <a class="code" href="class_list.html#a9af415234a91ad0b28b4cd79451c1f39">toArray</a>(_V [] array);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_list.html#a32d626626eee0bc4ade146973f6abb1c">finalize</a>();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;};</div>
 <div class="ttc" id="class_list_html_a32d626626eee0bc4ade146973f6abb1c"><div class="ttname"><a href="class_list.html#a32d626626eee0bc4ade146973f6abb1c">List.finalize</a></div><div class="ttdeci">void finalize()</div><div class="ttdoc">析构处理  注意 重写finalize时必须使用 super.finalize(); 否则会造成泄露 </div></div>
 <div class="ttc" id="class_list_1_1_iterator_html_a0a1669537ffc0ee6b27131e333ac57d5"><div class="ttname"><a href="class_list_1_1_iterator.html#a0a1669537ffc0ee6b27131e333ac57d5">List.Iterator.set</a></div><div class="ttdeci">void set(_V v)</div><div class="ttdoc">设置数据 </div></div>
 <div class="ttc" id="class_list_1_1_iterator_html_a634d758e1811c32295f5665e4f8a0178"><div class="ttname"><a href="class_list_1_1_iterator.html#a634d758e1811c32295f5665e4f8a0178">List.Iterator.hasNext</a></div><div class="ttdeci">bool hasNext()</div><div class="ttdoc">是否有下一个 </div></div>
@@ -146,6 +149,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="class_list_html_af0cbf3c56720840bf32e0eeb1fc9c886"><div class="ttname"><a href="class_list.html#af0cbf3c56720840bf32e0eeb1fc9c886">List.pollLast</a></div><div class="ttdeci">_V pollLast()</div><div class="ttdoc">获取并删除最后一个元素 </div></div>
 <div class="ttc" id="class_list_html_a3dfbaa28497ec96c87455bcb6d932313"><div class="ttname"><a href="class_list.html#a3dfbaa28497ec96c87455bcb6d932313">List.pollHead</a></div><div class="ttdeci">_V pollHead()</div><div class="ttdoc">获取并删除第一个元素 </div></div>
 <div class="ttc" id="class_list_html_a7aadda5fed3baf7dd2702adf4ac2363c"><div class="ttname"><a href="class_list.html#a7aadda5fed3baf7dd2702adf4ac2363c">List.add</a></div><div class="ttdeci">void add(_V val)</div><div class="ttdoc">插入数据 </div></div>
+<div class="ttc" id="class_list_html_a35442e8da63abda1f340bfdd4de01c8d"><div class="ttname"><a href="class_list.html#a35442e8da63abda1f340bfdd4de01c8d">List.addAll</a></div><div class="ttdeci">void addAll(_V []val)</div><div class="ttdoc">插入数据数组 </div></div>
 <div class="ttc" id="class_list_html_ac8bb3912a3ce86b15842e79d0b421204"><div class="ttname"><a href="class_list.html#ac8bb3912a3ce86b15842e79d0b421204">List.clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">清空容器 </div></div>
 <div class="ttc" id="class_list_html_af4b57d21919c42d55af03391f91a1c08"><div class="ttname"><a href="class_list.html#af4b57d21919c42d55af03391f91a1c08">List.size</a></div><div class="ttdeci">int size()</div><div class="ttdoc">获取容器内数据数量 </div></div>
 </div><!-- fragment --></div><!-- contents -->

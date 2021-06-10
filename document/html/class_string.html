@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.7 Release</span>
+   &#160;<span id="projectnumber">v3.6 Release</span>
    </div>
-   <div id="projectbrief">项目介绍</div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
   </td>
  </tr>
  </tbody>
@@ -520,6 +521,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </dl>
 <dl class="section return"><dt>返回</dt><dd>结果 </dd></dl>
 
+<p>参考自 <a class="el" href="_file_stream_8xcs_source.html#l00032">FileInputStream.FileInputStream()</a>, <a class="el" href="_file_stream_8xcs_source.html#l00148">FileOutputStream.FileOutputStream()</a> , 以及 <a class="el" href="_runtime_8xcs_source.html#l00268">OSProcess.getProcessListUnix()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ae76fa3a0d78763e77b69be80d699b0a2"></a>
@@ -545,6 +548,59 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><div class="memdoc">
 
 <p>获取字符串指定位置的字符 </p>
+<dl class="section return"><dt>返回</dt><dd>结果 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a49d5975cc436d983a6ac2040fc4958b8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_string.html">String</a> charset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>检测字符集 </p>
+<dl class="section return"><dt>返回</dt><dd>结果 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0c0853dae6b24207794a4dfa7d9e7a77"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int compare </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>比较字符串 </p>
 <dl class="section return"><dt>返回</dt><dd>结果 </dd></dl>
 
 </div>
@@ -648,6 +704,102 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 </div>
 </div>
+<a class="anchor" id="aba47c108ae6785cd55a30b06d93f8c7f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_string.html">String</a> decodeURI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将URI转换为字符串 </p>
+<dl class="section return"><dt>返回</dt><dd>结果 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a69981f0569bdb848809b1f958057ec3b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_string.html">String</a> detectCharset </td>
+          <td>(</td>
+          <td class="paramtype">byte   []&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>检测字符集 </p>
+<dl class="section return"><dt>返回</dt><dd>结果 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3a1f34de70af56f8a05aa7faf412695a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_string.html">String</a> encodeURI </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bComponent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>转换为URI </p>
+<dl class="section return"><dt>返回</dt><dd>结果 </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="adace9b0a18a75540d40cc1c6d8f28a8f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -712,7 +864,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </dl>
 <dl class="section return"><dt>返回</dt><dd>比较结果 </dd></dl>
 
-<p>参考自 <a class="el" href="_q_x_application_8xcsm_source.html#l00035">QXApplication.onCreateXObject()</a>.</p>
+<p>参考自 <a class="el" href="_sql_server_8xcsm_source.html#l00010">SqlServer.SqlServerRegister.allocConnection()</a>, <a class="el" href="_sqlite_8xcsm_source.html#l00018">Sqlite.SqliteRegister.allocConnection()</a> , 以及 <a class="el" href="_mysql_8xcsm_source.html#l00020">Mysql.MysqlRegister.allocConnection()</a>.</p>
 
 </div>
 </div>
@@ -1087,7 +1239,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <p>格式化对象 产生一个新串 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">format</td><td>格式 int %[n]d long %[n]d double %[.[n]]f char %(c|C) <a class="el" href="class_string.html" title="字符串类 ">String</a> s </td></tr>
+    <tr><td class="paramname">format</td><td>格式 int %[n]d|p <br />
+ long %[n]d|p <br />
+ double %[.[n]]f|e|g <br />
+ char %(c|C) <br />
+ <a class="el" href="class_string.html" title="字符串类 ">String</a> s <br />
+ </td></tr>
   </table>
   </dd>
 </dl>
@@ -1098,6 +1255,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   </dd>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>新串 </dd></dl>
+
+<p>参考自 <a class="el" href="_dock_panel_manager_8x_source.html#l00058">DockPanelManager.addDockPanel()</a>, <a class="el" href="_dock_main_window_8x_source.html#l00099">DockMainWindow.addDockPanel()</a> , 以及 <a class="el" href="xsql_8xcs_source.html#l00365">PreparedStatement.setValue()</a>.</p>
 
 </div>
 </div>
@@ -1136,7 +1295,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <p>格式化日期字符串 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fmt</td><td>格式 Y年 m月 d日 H时 M分 S 秒 可用格式如下 a: abbreviated weekday name A: full name of the weekday b: abbreviated month name B: full name of month c: locale's date and time reprensentation d: day of the month (01-31) H: hour of the day (00-23) I: hour of the day (01-12) j: day of the year (001-366) m: month of the year (01-12) M: minute (00-59) p: locale's version of AM or PM S: seconds (00-59) U: week number of the year (00-53) with Sunday as the first day of the week w: weekday (Sunday = 0 to Saturday = 6) W: week number of the year (00-53) with Monday as the first day of the week x: locale's date representation X: locale's time representation y: two-digit year representation (00-99) Y: four-digit year representation Z: time zone name  毫秒数 </td></tr>
+    <tr><td class="paramname">fmt</td><td>格式 Y年 m月 d日 H时 M分 S 秒 可用格式如下 a: abbreviated weekday name <br />
+ A: full name of the weekday <br />
+ b: abbreviated month name <br />
+ B: full name of month <br />
+ c: locale's date and time reprensentation <br />
+ d: day of the month (01-31) <br />
+ H: hour of the day (00-23) <br />
+ I: hour of the day (01-12) <br />
+ j: day of the year (001-366)<br />
+ m: month of the year (01-12)<br />
+ M: minute (00-59)<br />
+ p: locale's version of AM or PM<br />
+ S: seconds (00-59)<br />
+ U: week number of the year (00-53) with Sunday as the first day of the week<br />
+ w: weekday (Sunday = 0 to Saturday = 6)<br />
+ W: week number of the year (00-53) with Monday as the first day of the week<br />
+ x: locale's date representation <br />
+ X: locale's time representation<br />
+ y: two-digit year representation (00-99)<br />
+ Y: four-digit year representation<br />
+ Z: time zone name<br />
+  毫秒数 </td></tr>
   </table>
   </dd>
 </dl>
@@ -1288,6 +1468,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   </dd>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>位置, 找不到返回-1 </dd></dl>
+
+<p>参考自 <a class="el" href="_runtime_8xcs_source.html#l00268">OSProcess.getProcessListUnix()</a>.</p>
 
 </div>
 </div>
@@ -1447,6 +1629,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <p>测试串是否数字 </p>
 <dl class="section return"><dt>返回</dt><dd>是/否 </dd></dl>
 
+<p>参考自 <a class="el" href="_runtime_8xcs_source.html#l00268">OSProcess.getProcessListUnix()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab49e8827dc3a58fe88b29980805c629e"></a>
@@ -1587,7 +1771,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <p>获取字串长度 </p>
 <dl class="section return"><dt>返回</dt><dd>长度 </dd></dl>
 
-<p>参考自 <a class="el" href="_q_x_sci_8xcsm_source.html#l02302">QXSci.appendText()</a> , 以及 <a class="el" href="_q_x_sci_8xcsm_source.html#l02305">QXSci.setText()</a>.</p>
+<p>参考自 <a class="el" href="xsql_8xcs_source.html#l00159">ConnectionPool.config()</a>, <a class="el" href="_runtime_8xcs_source.html#l00268">OSProcess.getProcessListUnix()</a>, <a class="el" href="xsql_8xcs_source.html#l00340">PreparedStatement.getSql()</a>, <a class="el" href="xsql_8xcs_source.html#l00319">PreparedStatement.PreparedStatement()</a> , 以及 <a class="el" href="xsql_8xcs_source.html#l00357">PreparedStatement.setValue()</a>.</p>
 
 </div>
 </div>
@@ -1646,6 +1830,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>返回</dt><dd>结果 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a65cddcaaa1353a8a6e4201b83d07191d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator != </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>比较字符串不相等 </p>
 <dl class="section return"><dt>返回</dt><dd>结果 </dd></dl>
 
 </div>
@@ -1881,6 +2092,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 </div>
 </div>
+<a class="anchor" id="a9ea6b1d32ac31e5591e29689bd0c072f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator == </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>比较字符串相等 </p>
+<dl class="section return"><dt>返回</dt><dd>结果 </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ad2ffdcf347acca6441e1843d8290f3d8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1903,7 +2141,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><div class="memdoc">
 
 <p>解析为bool对象 </p>
-<dl class="section return"><dt>返回</dt><dd>解析结果, 失败返回false </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>解析结果, 失败返回false, 需要抛出异常的请使用Math类方法 </dd></dl>
 
 </div>
 </div>
@@ -1929,7 +2167,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><div class="memdoc">
 
 <p>解析为double对象 </p>
-<dl class="section return"><dt>返回</dt><dd>解析结果, 失败返回0 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>解析结果, 失败返回0, 需要抛出异常的请使用Math类方法 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a327a9ae2bfcaf84ddd69477839507ca7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float parseFloat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>解析为float对象 </p>
+<dl class="section return"><dt>返回</dt><dd>解析结果, 失败返回0, 需要抛出异常的请使用Math类方法 </dd></dl>
 
 </div>
 </div>
@@ -1955,7 +2219,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><div class="memdoc">
 
 <p>解析为十六进制long对象 </p>
-<dl class="section return"><dt>返回</dt><dd>解析结果, 失败返回0 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>解析结果, 失败返回0, 需要抛出异常的请使用Math类方法 </dd></dl>
 
 </div>
 </div>
@@ -1981,7 +2245,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><div class="memdoc">
 
 <p>解析为int对象 </p>
-<dl class="section return"><dt>返回</dt><dd>解析结果, 失败返回0 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>解析结果, 失败返回0, 需要抛出异常的请使用Math类方法 </dd></dl>
+
+<p>参考自 <a class="el" href="xsql_8xcs_source.html#l00159">ConnectionPool.config()</a> , 以及 <a class="el" href="_runtime_8xcs_source.html#l00268">OSProcess.getProcessListUnix()</a>.</p>
 
 </div>
 </div>
@@ -2007,7 +2273,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><div class="memdoc">
 
 <p>解析为long对象 </p>
-<dl class="section return"><dt>返回</dt><dd>解析结果, 失败返回0 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>解析结果, 失败返回0, 需要抛出异常的请使用Math类方法 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acf9a8726d5874b172b8ceb590704b5c5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_string.html">String</a> parseMarkdown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将一个markdown字符串转换为HTML字符串 </p>
+<dl class="section return"><dt>返回</dt><dd>结果 </dd></dl>
 
 </div>
 </div>
@@ -2085,6 +2377,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   </dd>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>新串 </dd></dl>
+
+<p>参考自 <a class="el" href="xsql_8xcs_source.html#l00328">PreparedStatement.safety()</a>.</p>
 
 </div>
 </div>
@@ -2295,6 +2589,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </dl>
 <dl class="section return"><dt>返回</dt><dd>分割后的字符串数组 </dd></dl>
 
+<p>参考自 <a class="el" href="xsql_8xcs_source.html#l00159">ConnectionPool.config()</a> , 以及 <a class="el" href="xsql_8xcs_source.html#l00319">PreparedStatement.PreparedStatement()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aa6078aae44f67b7a48831c17cb75ce26"></a>
@@ -2404,6 +2700,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   </dd>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>新串 </dd></dl>
+
+<p>参考自 <a class="el" href="_runtime_8xcs_source.html#l00268">OSProcess.getProcessListUnix()</a>.</p>
 
 </div>
 </div>
@@ -2553,6 +2851,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   </dd>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>结果 </dd></dl>
+
+<p>参考自 <a class="el" href="xsql_8xcs_source.html#l00159">ConnectionPool.config()</a> , 以及 <a class="el" href="_runtime_8xcs_source.html#l00268">OSProcess.getProcessListUnix()</a>.</p>
 
 </div>
 </div>

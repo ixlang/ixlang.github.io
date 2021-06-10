@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.7 Release</span>
+   &#160;<span id="projectnumber">v3.6 Release</span>
    </div>
-   <div id="projectbrief">项目介绍</div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
   </td>
  </tr>
  </tbody>
@@ -102,19 +103,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_pattern_1_1_result.html#a882067407682fbb5472b9ebaed581708">end</a>();</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_pattern_1_1_result.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    };</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_pattern.html#a329ce5a3c41ffe60af12413b5c6d48a3">Pattern</a>(<a class="code" href="class_string.html">String</a> regex);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_pattern.html">Pattern</a> <a class="code" href="class_pattern.html#a3cdf29434f359be10bb097026627b79c">Compile</a>(<a class="code" href="class_string.html">String</a> regex);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    Result <a class="code" href="class_pattern.html#aa47deadc6b876e0c618bc9ec6614bd05">match</a>(<a class="code" href="class_string.html">String</a> text);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_pattern.html#a6d9f79bd1fbe9b99e824b715050857bf">test</a>(<a class="code" href="class_string.html">String</a> text, <a class="code" href="class_string.html">String</a> regex);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_pattern_1_1_result.html#ac437a2924b411f264609336eed8eb729">errorCode</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    };</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_pattern.html#a329ce5a3c41ffe60af12413b5c6d48a3">Pattern</a>(<a class="code" href="class_string.html">String</a> regex);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_pattern.html">Pattern</a> <a class="code" href="class_pattern.html#a3cdf29434f359be10bb097026627b79c">Compile</a>(<a class="code" href="class_string.html">String</a> regex);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_pattern.html#a2164883725c2ad887353b6cb1059d402">match</a>(<a class="code" href="class_string.html">String</a> text, Result result,  <span class="keywordtype">int</span> offset, <span class="keywordtype">int</span> len, <span class="keywordtype">int</span> op);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    Result <a class="code" href="class_pattern.html#a26815ac1dec7c341d16b1f0ae04d3206">matchAll</a>(<a class="code" href="class_string.html">String</a> text, <span class="keywordtype">int</span> offset, <span class="keywordtype">int</span> len, <span class="keywordtype">int</span> op);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_pattern.html#a6d9f79bd1fbe9b99e824b715050857bf">test</a>(<a class="code" href="class_string.html">String</a> text, <a class="code" href="class_string.html">String</a> regex);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
 <div class="ttc" id="class_pattern_1_1_result_html_a3d0f4ae571310c6ed081daa3985ecb47"><div class="ttname"><a href="class_pattern_1_1_result.html#a3d0f4ae571310c6ed081daa3985ecb47">Pattern.Result.length</a></div><div class="ttdeci">int length()</div><div class="ttdoc">获取匹配结果的总数 </div></div>
-<div class="ttc" id="class_pattern_html_aa47deadc6b876e0c618bc9ec6614bd05"><div class="ttname"><a href="class_pattern.html#aa47deadc6b876e0c618bc9ec6614bd05">Pattern.match</a></div><div class="ttdeci">Result match(String text)</div><div class="ttdoc">匹配一个字符串 </div></div>
+<div class="ttc" id="class_pattern_html_a2164883725c2ad887353b6cb1059d402"><div class="ttname"><a href="class_pattern.html#a2164883725c2ad887353b6cb1059d402">Pattern.match</a></div><div class="ttdeci">int match(String text, Result result, int offset, int len, int op)</div><div class="ttdoc">匹配一个字符串 </div></div>
+<div class="ttc" id="class_pattern_1_1_result_html_ac437a2924b411f264609336eed8eb729"><div class="ttname"><a href="class_pattern_1_1_result.html#ac437a2924b411f264609336eed8eb729">Pattern.Result.errorCode</a></div><div class="ttdeci">int errorCode()</div><div class="ttdoc">获取错误码, </div></div>
 <div class="ttc" id="class_pattern_1_1_result_html_a882067407682fbb5472b9ebaed581708"><div class="ttname"><a href="class_pattern_1_1_result.html#a882067407682fbb5472b9ebaed581708">Pattern.Result.end</a></div><div class="ttdeci">int end()</div><div class="ttdoc">获取匹配结果在源串中的结束位置 </div></div>
 <div class="ttc" id="class_pattern_html_a329ce5a3c41ffe60af12413b5c6d48a3"><div class="ttname"><a href="class_pattern.html#a329ce5a3c41ffe60af12413b5c6d48a3">Pattern.Pattern</a></div><div class="ttdeci">Pattern(String regex)</div><div class="ttdoc">构造一个正则表达式对象 </div></div>
 <div class="ttc" id="class_pattern_html_a6d9f79bd1fbe9b99e824b715050857bf"><div class="ttname"><a href="class_pattern.html#a6d9f79bd1fbe9b99e824b715050857bf">Pattern.test</a></div><div class="ttdeci">static bool test(String text, String regex)</div><div class="ttdoc">测试一个串是否满足一个正则表达式 </div></div>
@@ -122,6 +127,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
 <div class="ttc" id="class_pattern_html_a3cdf29434f359be10bb097026627b79c"><div class="ttname"><a href="class_pattern.html#a3cdf29434f359be10bb097026627b79c">Pattern.Compile</a></div><div class="ttdeci">static Pattern Compile(String regex)</div><div class="ttdoc">构造一个正则表达式对象 </div></div>
 <div class="ttc" id="class_pattern_html"><div class="ttname"><a href="class_pattern.html">Pattern</a></div><div class="ttdoc">正则表达式 </div><div class="ttdef"><b>Definition:</b> <a href="_pattern_8xcs_source.html#l00005">Pattern.xcs:5</a></div></div>
+<div class="ttc" id="class_pattern_html_a26815ac1dec7c341d16b1f0ae04d3206"><div class="ttname"><a href="class_pattern.html#a26815ac1dec7c341d16b1f0ae04d3206">Pattern.matchAll</a></div><div class="ttdeci">Result matchAll(String text, int offset, int len, int op)</div><div class="ttdoc">匹配一个字符串 </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

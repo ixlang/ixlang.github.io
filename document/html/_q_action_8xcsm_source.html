@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/xlibrarys/QT&amp;XLIB/QXLibrary/qt5/widgets/QAction.xcsm 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v3.6 Release</span>
+   </div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c26b241c633baa98de380b3fd590c11c.html">xlibrarys</a></li><li class="navelem"><a class="el" href="dir_5666ad1a9fdeb818d224f872b324982b.html">QT&amp;XLIB</a></li><li class="navelem"><a class="el" href="dir_7961984395364fe113330b5319164161.html">QXLibrary</a></li><li class="navelem"><a class="el" href="dir_0d599f6f40044cb1083515dc54bda2af.html">qt5</a></li><li class="navelem"><a class="el" href="dir_cfcbf8b0d8f6d8bd829feb69f92de4d5.html">widgets</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">QAction.xcsm</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_q_action_8xcsm.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">package </span>Qt{</div>
+<div class="line"><a name="l00002"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_action.html">    2</a></span>&#160;    public class QAction : QObject{</div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_action.html#a55e6290cef930e7c959e7e88481615cc">    3</a></span>&#160;        public QAction(){</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;        }</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_action.html#a183d7a8794eeba09aa2fe814af1a90bc">    5</a></span>&#160;        public bool create(){</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;            nativehandle = QtXnl.createQObject(QType.qtAction, this, 0);</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;            <span class="keywordflow">if</span> (nativehandle == 0){</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;            }</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        }</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_action.html#a3e6c583c55d38cf9e97baa5cb441129b">   13</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_qt_1_1_q_action.html#a3e6c583c55d38cf9e97baa5cb441129b">create</a>(@NotNilptr QWidget parent){</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            nativehandle = QtXnl.createQObject(QType.qtAction, <span class="keyword">this</span>, parent.nativehandle);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <span class="keywordflow">if</span> (nativehandle == 0){</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            }</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_action.html#a18fb345dc3f0d3b4027958a437020c7b">   21</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_qt_1_1_q_action.html#a18fb345dc3f0d3b4027958a437020c7b">QAction</a>(<span class="keywordtype">long</span> handle){</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            super(handle);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_action.html#a0d7233ce19d5bef78805bef12ecbfe70">   25</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_action.html#a0d7233ce19d5bef78805bef12ecbfe70">setMenu</a>(@NotNilptr QMenu menu){</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            QtXnl.widget_set_native_value(nativehandle, Constant.SETMENU, menu.nativehandle);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_action.html#aa3134f7557bf42c3adc3b36b4fd5cdbd">   29</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_action.html#aa3134f7557bf42c3adc3b36b4fd5cdbd">setSeparator</a>(<span class="keywordtype">bool</span> b){</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            QtXnl.widget_set_bool_value(nativehandle, Constant.SETSEP, b);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_action.html#a8cd169028f8f0a887f9380a52ee0f455">   33</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_qt_1_1_q_action.html#a8cd169028f8f0a887f9380a52ee0f455">isSeparator</a>(){</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_bool_value(nativehandle, Constant.ISSEP);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_action.html#a05adc48e85a8cf8a264543610ce8c3b3">   37</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_action.html#a05adc48e85a8cf8a264543610ce8c3b3">setShortcut</a>(<a class="code" href="class_string.html">String</a> shortcutKey){</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            QtXnl.widget_slot_string(nativehandle, Constant.SETSHRCUT, shortcutKey);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_action.html#a5eeba7c80468e73826d9949be63f6f34">   41</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_action.html#a5eeba7c80468e73826d9949be63f6f34">setShortcut</a>(<span class="keywordtype">int</span> StandardKey){</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            QtXnl.widget_set_vint_value(nativehandle, Constant.SETSHRCUT, StandardKey);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_action.html#a1f0025961cc745f47ae48ba98ffad7bf">   45</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_action.html#a1f0025961cc745f47ae48ba98ffad7bf">setText</a>(<a class="code" href="class_string.html">String</a> text){</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            QtXnl.widget_slot_string(nativehandle, Constant.ACTSETTEXT, text);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_action.html#afab766445043570e6a82c14851366933">   49</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_qt_1_1_q_action.html#afab766445043570e6a82c14851366933">getText</a>(){</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordflow">return</span> (<a class="code" href="class_string.html">String</a>)QtXnl.core_getString(nativehandle, Constant.ACTGETTEXT);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_action.html#a24ac33e8d9017dd745867cbc8ff4e552">   53</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_action.html#a24ac33e8d9017dd745867cbc8ff4e552">setEnable</a>(<span class="keywordtype">bool</span> b){</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            QtXnl.widget_set_bool_value(nativehandle, Constant.ACTENABLED, b);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_action.html#aad8a918d3d5aefdd221ec96b07b9bf2c">   56</a></span>&#160;        <span class="keyword">public</span> QMenu <a class="code" href="class_qt_1_1_q_action.html#aad8a918d3d5aefdd221ec96b07b9bf2c">getMenu</a>(){</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">return</span> (QMenu)QtXnl.widget_get_object(nativehandle, Constant.GETMENU);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_action.html#a439af2609a89f6cc0564dc0d175a9cef">   60</a></span>&#160;        <span class="keyword">public</span> QWidget <a class="code" href="class_qt_1_1_q_action.html#a439af2609a89f6cc0564dc0d175a9cef">parentWidget</a>(){</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">return</span> (QWidget)QtXnl.widget_get_object(nativehandle, Constant.PARENTWIDGET);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_action.html#ab0554cb7241c0b72d34402f0bb419462">   64</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_action.html#ab0554cb7241c0b72d34402f0bb419462">trigger</a>(){</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            QtXnl.widget_slot(nativehandle, Constant.TRIGGER);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_action.html#a1a1a0bd6bbe494562a772083d0f33f7d">   68</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_action.html#a1a1a0bd6bbe494562a772083d0f33f7d">setChecked</a>(<span class="keywordtype">bool</span> b){</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            QtXnl.widget_set_bool_value(nativehandle, Constant.CHECKED, b);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_action.html#a225bef32ce2ecc3ec4b771f0e7f3214d">   72</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_qt_1_1_q_action.html#a225bef32ce2ecc3ec4b771f0e7f3214d">getChecked</a>(){</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_bool_value(nativehandle, Constant.CHECKED);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_action.html#aba50dc987d16fd79bd73cd28225129ac">   76</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_action.html#aba50dc987d16fd79bd73cd28225129ac">setCheckable</a>(<span class="keywordtype">bool</span> b){</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            QtXnl.widget_set_bool_value(nativehandle, Constant.CHECKABLE, b);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_action.html#ac92a573bc5ec5124257503da7b165f73">   80</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_qt_1_1_q_action.html#ac92a573bc5ec5124257503da7b165f73">getCheckable</a>(){</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_bool_value(nativehandle, Constant.CHECKABLE);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    };</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
+<div class="ttc" id="class_qt_1_1_q_action_html_a5eeba7c80468e73826d9949be63f6f34"><div class="ttname"><a href="class_qt_1_1_q_action.html#a5eeba7c80468e73826d9949be63f6f34">Qt.QAction.setShortcut</a></div><div class="ttdeci">void setShortcut(int StandardKey)</div><div class="ttdef"><b>Definition:</b> <a href="_q_action_8xcsm_source.html#l00041">QAction.xcsm:41</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_action_html_a3e6c583c55d38cf9e97baa5cb441129b"><div class="ttname"><a href="class_qt_1_1_q_action.html#a3e6c583c55d38cf9e97baa5cb441129b">Qt.QAction.create</a></div><div class="ttdeci">bool create(@NotNilptr QWidget parent)</div><div class="ttdef"><b>Definition:</b> <a href="_q_action_8xcsm_source.html#l00013">QAction.xcsm:13</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_action_html_a24ac33e8d9017dd745867cbc8ff4e552"><div class="ttname"><a href="class_qt_1_1_q_action.html#a24ac33e8d9017dd745867cbc8ff4e552">Qt.QAction.setEnable</a></div><div class="ttdeci">void setEnable(bool b)</div><div class="ttdef"><b>Definition:</b> <a href="_q_action_8xcsm_source.html#l00053">QAction.xcsm:53</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_action_html_a225bef32ce2ecc3ec4b771f0e7f3214d"><div class="ttname"><a href="class_qt_1_1_q_action.html#a225bef32ce2ecc3ec4b771f0e7f3214d">Qt.QAction.getChecked</a></div><div class="ttdeci">bool getChecked()</div><div class="ttdef"><b>Definition:</b> <a href="_q_action_8xcsm_source.html#l00072">QAction.xcsm:72</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_action_html_afab766445043570e6a82c14851366933"><div class="ttname"><a href="class_qt_1_1_q_action.html#afab766445043570e6a82c14851366933">Qt.QAction.getText</a></div><div class="ttdeci">String getText()</div><div class="ttdef"><b>Definition:</b> <a href="_q_action_8xcsm_source.html#l00049">QAction.xcsm:49</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_action_html_a1a1a0bd6bbe494562a772083d0f33f7d"><div class="ttname"><a href="class_qt_1_1_q_action.html#a1a1a0bd6bbe494562a772083d0f33f7d">Qt.QAction.setChecked</a></div><div class="ttdeci">void setChecked(bool b)</div><div class="ttdef"><b>Definition:</b> <a href="_q_action_8xcsm_source.html#l00068">QAction.xcsm:68</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_action_html_ab0554cb7241c0b72d34402f0bb419462"><div class="ttname"><a href="class_qt_1_1_q_action.html#ab0554cb7241c0b72d34402f0bb419462">Qt.QAction.trigger</a></div><div class="ttdeci">void trigger()</div><div class="ttdef"><b>Definition:</b> <a href="_q_action_8xcsm_source.html#l00064">QAction.xcsm:64</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_action_html_a1f0025961cc745f47ae48ba98ffad7bf"><div class="ttname"><a href="class_qt_1_1_q_action.html#a1f0025961cc745f47ae48ba98ffad7bf">Qt.QAction.setText</a></div><div class="ttdeci">void setText(String text)</div><div class="ttdef"><b>Definition:</b> <a href="_q_action_8xcsm_source.html#l00045">QAction.xcsm:45</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_action_html_a18fb345dc3f0d3b4027958a437020c7b"><div class="ttname"><a href="class_qt_1_1_q_action.html#a18fb345dc3f0d3b4027958a437020c7b">Qt.QAction.QAction</a></div><div class="ttdeci">QAction(long handle)</div><div class="ttdef"><b>Definition:</b> <a href="_q_action_8xcsm_source.html#l00021">QAction.xcsm:21</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_action_html_aa3134f7557bf42c3adc3b36b4fd5cdbd"><div class="ttname"><a href="class_qt_1_1_q_action.html#aa3134f7557bf42c3adc3b36b4fd5cdbd">Qt.QAction.setSeparator</a></div><div class="ttdeci">void setSeparator(bool b)</div><div class="ttdef"><b>Definition:</b> <a href="_q_action_8xcsm_source.html#l00029">QAction.xcsm:29</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_action_html_a05adc48e85a8cf8a264543610ce8c3b3"><div class="ttname"><a href="class_qt_1_1_q_action.html#a05adc48e85a8cf8a264543610ce8c3b3">Qt.QAction.setShortcut</a></div><div class="ttdeci">void setShortcut(String shortcutKey)</div><div class="ttdef"><b>Definition:</b> <a href="_q_action_8xcsm_source.html#l00037">QAction.xcsm:37</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_action_html_ac92a573bc5ec5124257503da7b165f73"><div class="ttname"><a href="class_qt_1_1_q_action.html#ac92a573bc5ec5124257503da7b165f73">Qt.QAction.getCheckable</a></div><div class="ttdeci">bool getCheckable()</div><div class="ttdef"><b>Definition:</b> <a href="_q_action_8xcsm_source.html#l00080">QAction.xcsm:80</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_action_html_a0d7233ce19d5bef78805bef12ecbfe70"><div class="ttname"><a href="class_qt_1_1_q_action.html#a0d7233ce19d5bef78805bef12ecbfe70">Qt.QAction.setMenu</a></div><div class="ttdeci">void setMenu(@NotNilptr QMenu menu)</div><div class="ttdef"><b>Definition:</b> <a href="_q_action_8xcsm_source.html#l00025">QAction.xcsm:25</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_action_html_a8cd169028f8f0a887f9380a52ee0f455"><div class="ttname"><a href="class_qt_1_1_q_action.html#a8cd169028f8f0a887f9380a52ee0f455">Qt.QAction.isSeparator</a></div><div class="ttdeci">bool isSeparator()</div><div class="ttdef"><b>Definition:</b> <a href="_q_action_8xcsm_source.html#l00033">QAction.xcsm:33</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_action_html_aad8a918d3d5aefdd221ec96b07b9bf2c"><div class="ttname"><a href="class_qt_1_1_q_action.html#aad8a918d3d5aefdd221ec96b07b9bf2c">Qt.QAction.getMenu</a></div><div class="ttdeci">QMenu getMenu()</div><div class="ttdef"><b>Definition:</b> <a href="_q_action_8xcsm_source.html#l00056">QAction.xcsm:56</a></div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_action_html_a439af2609a89f6cc0564dc0d175a9cef"><div class="ttname"><a href="class_qt_1_1_q_action.html#a439af2609a89f6cc0564dc0d175a9cef">Qt.QAction.parentWidget</a></div><div class="ttdeci">QWidget parentWidget()</div><div class="ttdef"><b>Definition:</b> <a href="_q_action_8xcsm_source.html#l00060">QAction.xcsm:60</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_action_html_aba50dc987d16fd79bd73cd28225129ac"><div class="ttname"><a href="class_qt_1_1_q_action.html#aba50dc987d16fd79bd73cd28225129ac">Qt.QAction.setCheckable</a></div><div class="ttdeci">void setCheckable(bool b)</div><div class="ttdef"><b>Definition:</b> <a href="_q_action_8xcsm_source.html#l00076">QAction.xcsm:76</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

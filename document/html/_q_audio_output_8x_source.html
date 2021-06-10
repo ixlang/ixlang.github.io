@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/xlibrarys/QT&amp;XLIB/QXLibrary/qt5/multimedia/QAudioOutput.x 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v3.6 Release</span>
+   </div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c26b241c633baa98de380b3fd590c11c.html">xlibrarys</a></li><li class="navelem"><a class="el" href="dir_5666ad1a9fdeb818d224f872b324982b.html">QT&amp;XLIB</a></li><li class="navelem"><a class="el" href="dir_7961984395364fe113330b5319164161.html">QXLibrary</a></li><li class="navelem"><a class="el" href="dir_0d599f6f40044cb1083515dc54bda2af.html">qt5</a></li><li class="navelem"><a class="el" href="dir_8d6d44b6ba3428758353cd9c41304cf7.html">multimedia</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">QAudioOutput.x</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_q_audio_output_8x.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//xlang Source, Name:qt5/multimedia/QAudioOutput.x </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//Date: Fri Mar 21:12:34 2021 </span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">package </span>Qt{</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html">    5</a></span>&#160;    public class QAudioOutput : QObject{</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#a62acf8b9ef083aaa8c229a5d37d7df88">    6</a></span>&#160;        public QAudioOutput(){</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        }</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#ae5da6c85b91f6fef9bc6ce1159752cde">    9</a></span>&#160;        public QAudioOutput(long handle){</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;            super(handle);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        }</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#a70194fc14dbfe4468dffdbdc20c7639a">   13</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_qt_1_1_q_audio_output.html#a70194fc14dbfe4468dffdbdc20c7639a">create</a>(@NotNilptr QObject parent, QAudioFormat f) {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            nativehandle = QtXnl.createQPObject(QType.qtAudioOutput, <span class="keyword">this</span>, parent == nilptr ? 0l : parent.nativehandle, f == nilptr ? 0l : f.nativehandle, 0l, 0l, 0l);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <span class="keywordflow">if</span> (nativehandle == 0){</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            }</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        } </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#a2675aa794f93cc4055ca592b2d794fbb">   21</a></span>&#160;        <span class="keyword">public</span> QAudioFormat <a class="code" href="class_qt_1_1_q_audio_output.html#a2675aa794f93cc4055ca592b2d794fbb">format</a>() {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> QAudioFormat(QtXnl.long_get(nativehandle, Constant.QAUDIOOUTPUT_FORMAT));</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#a3e63c46e5a9f2f8be6445892a7761cd2">   25</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code" href="class_qt_1_1_q_audio_output.html#a3e63c46e5a9f2f8be6445892a7761cd2">write</a>(Object [] data, <span class="keywordtype">int</span> ofst, <span class="keywordtype">int</span> len){</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_set_int2_object_value(nativehandle, Constant.QAUDIOOUTPUT_WRITE, ofst, len, data);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#a60de64d75454385b23995437f1d72669">   29</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_audio_output.html#a60de64d75454385b23995437f1d72669">start</a>(){</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            QtXnl.widget_slot(nativehandle, Constant.QAUDIOOUTPUT_START);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#a8c528baf37154d347366083f0f816846">   33</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_audio_output.html#a8c528baf37154d347366083f0f816846">stop</a>(){</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            QtXnl.widget_slot(nativehandle, Constant.QAUDIOOUTPUT_STOP);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#ad20897c5c8bd47f5d4005989bead0e55">   37</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_audio_output.html#ad20897c5c8bd47f5d4005989bead0e55">reset</a>(){</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            QtXnl.widget_slot(nativehandle, Constant.QAUDIOOUTPUT_RESET);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#a3605b58fb45d69d498721bc2f2a14b1c">   41</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_audio_output.html#a3605b58fb45d69d498721bc2f2a14b1c">suspend</a>(){</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            QtXnl.widget_slot(nativehandle, Constant.QAUDIOOUTPUT_SUSPEND);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#a41de8150eff044a237990c271d57ea27">   45</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_audio_output.html#a41de8150eff044a237990c271d57ea27">resume</a>(){</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            QtXnl.widget_slot(nativehandle, Constant.QAUDIOOUTPUT_RESUME);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#af8cc3a0f2e0fb5aeacecfac6b5536fa5">   49</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_audio_output.html#af8cc3a0f2e0fb5aeacecfac6b5536fa5">setBufferSize</a>(<span class="keywordtype">int</span> bytes){</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            QtXnl.widget_set_vint_value(nativehandle, Constant.QAUDIOOUTPUT_SETBUFFERSIZE, bytes);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#a743668a447d734fc00211f10e6fdb580">   53</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_audio_output.html#a743668a447d734fc00211f10e6fdb580">bufferSize</a>() {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_int_value(nativehandle, Constant.QAUDIOOUTPUT_BUFFERSIZE);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#a8d0577f5e0b945aab6d7da511e35d71f">   57</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_audio_output.html#a8d0577f5e0b945aab6d7da511e35d71f">bytesFree</a>() {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_int_value(nativehandle, Constant.QAUDIOOUTPUT_BYTESFREE);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#a6d00aeeb43532f1bd79028751389ef31">   61</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_audio_output.html#a6d00aeeb43532f1bd79028751389ef31">periodSize</a>() {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_int_value(nativehandle, Constant.QAUDIOOUTPUT_PERIODSIZE);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#a8dd54258258ea605ec5fbad1b84eb93c">   65</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_audio_output.html#a8dd54258258ea605ec5fbad1b84eb93c">setNotifyInterval</a>(<span class="keywordtype">int</span> milliSeconds){</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            QtXnl.widget_set_vint_value(nativehandle, Constant.QAUDIOOUTPUT_SETNOTIFYINTERVAL, milliSeconds);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#ad8e89dfd8ec382052b393ea212ce95e8">   69</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_audio_output.html#ad8e89dfd8ec382052b393ea212ce95e8">notifyInterval</a>(){</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_int_value(nativehandle, Constant.QAUDIOOUTPUT_NOTIFYINTERVAL);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#aafdaa46b3c4ee04ba8d8b99e9114d499">   73</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code" href="class_qt_1_1_q_audio_output.html#aafdaa46b3c4ee04ba8d8b99e9114d499">processedUSecs</a>() {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">return</span> QtXnl.long_get(nativehandle, Constant.QAUDIOOUTPUT_PROCESSEDUSECS);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#a9a0fc97ed946145fd3cb62c7d4a3776b">   77</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code" href="class_qt_1_1_q_audio_output.html#a9a0fc97ed946145fd3cb62c7d4a3776b">elapsedUSecs</a>() {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">return</span> QtXnl.long_get(nativehandle, Constant.QAUDIOOUTPUT_ELAPSEDUSECS);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#a3930929d03236bdafeb0aafee5325598">   81</a></span>&#160;        <span class="keyword">public</span> QAudio.Error <a class="code" href="class_qt_1_1_q_audio_output.html#a3930929d03236bdafeb0aafee5325598">error</a>() {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">return</span> (QAudio.Error)QtXnl.widget_get_int_value(nativehandle, Constant.QAUDIOOUTPUT_ERROR);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#a086a3ce03b5eebc2ce7a245e46798591">   85</a></span>&#160;        <span class="keyword">public</span> QAudio.State <a class="code" href="class_qt_1_1_q_audio_output.html#a086a3ce03b5eebc2ce7a245e46798591">state</a>() {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">return</span> (QAudio.State)QtXnl.widget_get_int_value(nativehandle, Constant.QAUDIOOUTPUT_STATE);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#a6d3ebfed69c38cbadc03eb91133ad4b0">   89</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_audio_output.html#a6d3ebfed69c38cbadc03eb91133ad4b0">setVolume</a>(<span class="keywordtype">double</span> v){</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            QtXnl.widget_set_double_value(nativehandle, Constant.QAUDIOOUTPUT_SETVOLUME, v);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#a3d8a8f2b1b424af310af90a2ae19645a">   93</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code" href="class_qt_1_1_q_audio_output.html#a3d8a8f2b1b424af310af90a2ae19645a">volume</a>() {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_double_value(nativehandle, Constant.QAUDIOOUTPUT_VOLUME);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="comment">//signal </span></div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#a75c7cc75e99126437434eafc40c2a6e9">   98</a></span>&#160;        onAudioOutputListener <a class="code" href="class_qt_1_1_q_audio_output.html#a75c7cc75e99126437434eafc40c2a6e9">_lis</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#a7582a3cc759c4f6a3c0b68f2d594bb67">   99</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_audio_output.html#a7582a3cc759c4f6a3c0b68f2d594bb67">setOnAudioOutputListener</a>(onAudioOutputListener l ){</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            _lis = l;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#a19d508b1dc2f8934c165a3112d6c37ae">  102</a></span>&#160;        <span class="keyword">public</span> onAudioOutputListener <a class="code" href="class_qt_1_1_q_audio_output.html#a19d508b1dc2f8934c165a3112d6c37ae">getOnAudioOutputListener</a>(){</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordflow">return</span> _lis;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        </div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#ad9f447a34f159d67ee4ce2ef9e106e23">  106</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_audio_output.html#ad9f447a34f159d67ee4ce2ef9e106e23">stateChanged</a>(QAudio.State s){</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordflow">if</span> (_lis != nilptr){</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                _lis.stateChanged(<span class="keyword">this</span>, s);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        </div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio_output.html#a7ff19734eb024bd6f3e2ad95647b1b27">  112</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_audio_output.html#a7ff19734eb024bd6f3e2ad95647b1b27">notify</a>(){</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordflow">if</span> (_lis != nilptr){</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                _lis.notify(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    };</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;};</div>
+<div class="ttc" id="class_qt_1_1_q_audio_output_html_a3e63c46e5a9f2f8be6445892a7761cd2"><div class="ttname"><a href="class_qt_1_1_q_audio_output.html#a3e63c46e5a9f2f8be6445892a7761cd2">Qt.QAudioOutput.write</a></div><div class="ttdeci">long write(Object [] data, int ofst, int len)</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_output_8x_source.html#l00025">QAudioOutput.x:25</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_output_html_a41de8150eff044a237990c271d57ea27"><div class="ttname"><a href="class_qt_1_1_q_audio_output.html#a41de8150eff044a237990c271d57ea27">Qt.QAudioOutput.resume</a></div><div class="ttdeci">void resume()</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_output_8x_source.html#l00045">QAudioOutput.x:45</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_output_html_a70194fc14dbfe4468dffdbdc20c7639a"><div class="ttname"><a href="class_qt_1_1_q_audio_output.html#a70194fc14dbfe4468dffdbdc20c7639a">Qt.QAudioOutput.create</a></div><div class="ttdeci">bool create(@NotNilptr QObject parent, QAudioFormat f) </div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_output_8x_source.html#l00013">QAudioOutput.x:13</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_output_html_a8c528baf37154d347366083f0f816846"><div class="ttname"><a href="class_qt_1_1_q_audio_output.html#a8c528baf37154d347366083f0f816846">Qt.QAudioOutput.stop</a></div><div class="ttdeci">void stop()</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_output_8x_source.html#l00033">QAudioOutput.x:33</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_output_html_aafdaa46b3c4ee04ba8d8b99e9114d499"><div class="ttname"><a href="class_qt_1_1_q_audio_output.html#aafdaa46b3c4ee04ba8d8b99e9114d499">Qt.QAudioOutput.processedUSecs</a></div><div class="ttdeci">long processedUSecs() </div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_output_8x_source.html#l00073">QAudioOutput.x:73</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_output_html_a19d508b1dc2f8934c165a3112d6c37ae"><div class="ttname"><a href="class_qt_1_1_q_audio_output.html#a19d508b1dc2f8934c165a3112d6c37ae">Qt.QAudioOutput.getOnAudioOutputListener</a></div><div class="ttdeci">onAudioOutputListener getOnAudioOutputListener()</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_output_8x_source.html#l00102">QAudioOutput.x:102</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_output_html_a3605b58fb45d69d498721bc2f2a14b1c"><div class="ttname"><a href="class_qt_1_1_q_audio_output.html#a3605b58fb45d69d498721bc2f2a14b1c">Qt.QAudioOutput.suspend</a></div><div class="ttdeci">void suspend()</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_output_8x_source.html#l00041">QAudioOutput.x:41</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_output_html_a743668a447d734fc00211f10e6fdb580"><div class="ttname"><a href="class_qt_1_1_q_audio_output.html#a743668a447d734fc00211f10e6fdb580">Qt.QAudioOutput.bufferSize</a></div><div class="ttdeci">int bufferSize() </div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_output_8x_source.html#l00053">QAudioOutput.x:53</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_output_html_a7582a3cc759c4f6a3c0b68f2d594bb67"><div class="ttname"><a href="class_qt_1_1_q_audio_output.html#a7582a3cc759c4f6a3c0b68f2d594bb67">Qt.QAudioOutput.setOnAudioOutputListener</a></div><div class="ttdeci">void setOnAudioOutputListener(onAudioOutputListener l )</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_output_8x_source.html#l00099">QAudioOutput.x:99</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_output_html_a2675aa794f93cc4055ca592b2d794fbb"><div class="ttname"><a href="class_qt_1_1_q_audio_output.html#a2675aa794f93cc4055ca592b2d794fbb">Qt.QAudioOutput.format</a></div><div class="ttdeci">QAudioFormat format() </div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_output_8x_source.html#l00021">QAudioOutput.x:21</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_output_html_af8cc3a0f2e0fb5aeacecfac6b5536fa5"><div class="ttname"><a href="class_qt_1_1_q_audio_output.html#af8cc3a0f2e0fb5aeacecfac6b5536fa5">Qt.QAudioOutput.setBufferSize</a></div><div class="ttdeci">void setBufferSize(int bytes)</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_output_8x_source.html#l00049">QAudioOutput.x:49</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_output_html_a9a0fc97ed946145fd3cb62c7d4a3776b"><div class="ttname"><a href="class_qt_1_1_q_audio_output.html#a9a0fc97ed946145fd3cb62c7d4a3776b">Qt.QAudioOutput.elapsedUSecs</a></div><div class="ttdeci">long elapsedUSecs() </div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_output_8x_source.html#l00077">QAudioOutput.x:77</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_output_html_a75c7cc75e99126437434eafc40c2a6e9"><div class="ttname"><a href="class_qt_1_1_q_audio_output.html#a75c7cc75e99126437434eafc40c2a6e9">Qt.QAudioOutput._lis</a></div><div class="ttdeci">onAudioOutputListener _lis</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_output_8x_source.html#l00098">QAudioOutput.x:98</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_output_html_a6d00aeeb43532f1bd79028751389ef31"><div class="ttname"><a href="class_qt_1_1_q_audio_output.html#a6d00aeeb43532f1bd79028751389ef31">Qt.QAudioOutput.periodSize</a></div><div class="ttdeci">int periodSize() </div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_output_8x_source.html#l00061">QAudioOutput.x:61</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_output_html_ad8e89dfd8ec382052b393ea212ce95e8"><div class="ttname"><a href="class_qt_1_1_q_audio_output.html#ad8e89dfd8ec382052b393ea212ce95e8">Qt.QAudioOutput.notifyInterval</a></div><div class="ttdeci">int notifyInterval()</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_output_8x_source.html#l00069">QAudioOutput.x:69</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_output_html_a8dd54258258ea605ec5fbad1b84eb93c"><div class="ttname"><a href="class_qt_1_1_q_audio_output.html#a8dd54258258ea605ec5fbad1b84eb93c">Qt.QAudioOutput.setNotifyInterval</a></div><div class="ttdeci">void setNotifyInterval(int milliSeconds)</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_output_8x_source.html#l00065">QAudioOutput.x:65</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_output_html_a60de64d75454385b23995437f1d72669"><div class="ttname"><a href="class_qt_1_1_q_audio_output.html#a60de64d75454385b23995437f1d72669">Qt.QAudioOutput.start</a></div><div class="ttdeci">void start()</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_output_8x_source.html#l00029">QAudioOutput.x:29</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_output_html_a8d0577f5e0b945aab6d7da511e35d71f"><div class="ttname"><a href="class_qt_1_1_q_audio_output.html#a8d0577f5e0b945aab6d7da511e35d71f">Qt.QAudioOutput.bytesFree</a></div><div class="ttdeci">int bytesFree() </div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_output_8x_source.html#l00057">QAudioOutput.x:57</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_output_html_a3d8a8f2b1b424af310af90a2ae19645a"><div class="ttname"><a href="class_qt_1_1_q_audio_output.html#a3d8a8f2b1b424af310af90a2ae19645a">Qt.QAudioOutput.volume</a></div><div class="ttdeci">double volume() </div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_output_8x_source.html#l00093">QAudioOutput.x:93</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_output_html_a7ff19734eb024bd6f3e2ad95647b1b27"><div class="ttname"><a href="class_qt_1_1_q_audio_output.html#a7ff19734eb024bd6f3e2ad95647b1b27">Qt.QAudioOutput.notify</a></div><div class="ttdeci">void notify()</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_output_8x_source.html#l00112">QAudioOutput.x:112</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_output_html_a086a3ce03b5eebc2ce7a245e46798591"><div class="ttname"><a href="class_qt_1_1_q_audio_output.html#a086a3ce03b5eebc2ce7a245e46798591">Qt.QAudioOutput.state</a></div><div class="ttdeci">QAudio.State state() </div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_output_8x_source.html#l00085">QAudioOutput.x:85</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_output_html_ad9f447a34f159d67ee4ce2ef9e106e23"><div class="ttname"><a href="class_qt_1_1_q_audio_output.html#ad9f447a34f159d67ee4ce2ef9e106e23">Qt.QAudioOutput.stateChanged</a></div><div class="ttdeci">void stateChanged(QAudio.State s)</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_output_8x_source.html#l00106">QAudioOutput.x:106</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_output_html_a3930929d03236bdafeb0aafee5325598"><div class="ttname"><a href="class_qt_1_1_q_audio_output.html#a3930929d03236bdafeb0aafee5325598">Qt.QAudioOutput.error</a></div><div class="ttdeci">QAudio.Error error() </div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_output_8x_source.html#l00081">QAudioOutput.x:81</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_output_html_ad20897c5c8bd47f5d4005989bead0e55"><div class="ttname"><a href="class_qt_1_1_q_audio_output.html#ad20897c5c8bd47f5d4005989bead0e55">Qt.QAudioOutput.reset</a></div><div class="ttdeci">void reset()</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_output_8x_source.html#l00037">QAudioOutput.x:37</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_audio_output_html_a6d3ebfed69c38cbadc03eb91133ad4b0"><div class="ttname"><a href="class_qt_1_1_q_audio_output.html#a6d3ebfed69c38cbadc03eb91133ad4b0">Qt.QAudioOutput.setVolume</a></div><div class="ttdeci">void setVolume(double v)</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_output_8x_source.html#l00089">QAudioOutput.x:89</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

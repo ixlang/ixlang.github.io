@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.7 Release</span>
+   &#160;<span id="projectnumber">v3.6 Release</span>
    </div>
-   <div id="projectbrief">项目介绍</div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
   </td>
  </tr>
  </tbody>
@@ -122,14 +123,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_http_server.html#ae1823765fe4dfbc8c9037ac913c79103">startServer</a>(<span class="keywordtype">int</span> flags, <span class="keywordtype">int</span> port);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_http_server.html#a32d626626eee0bc4ade146973f6abb1c">finalize</a>();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_http_server.html#a1e02a5246cc11ee6f1c69f501e2bb012">configHttps</a>(<span class="keywordtype">bool</span> enable, <a class="code" href="class_string.html">String</a> cert, <a class="code" href="class_string.html">String</a> key);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_http_server.html#a32d626626eee0bc4ade146973f6abb1c">finalize</a>();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
 <div class="ttc" id="class_http_server_html_a31bdb84b15a73fa6eef25598c172ae29"><div class="ttname"><a href="class_http_server.html#a31bdb84b15a73fa6eef25598c172ae29">HttpServer.addWebsite</a></div><div class="ttdeci">int addWebsite(String domains, Website website)</div><div class="ttdoc">添加网站 </div></div>
 <div class="ttc" id="class_http_server_html_a985bdfae0a7b95d22d3564cb8de1eaff"><div class="ttname"><a href="class_http_server.html#a985bdfae0a7b95d22d3564cb8de1eaff">HttpServer.setThreadPoolSize</a></div><div class="ttdeci">bool setThreadPoolSize(int n)</div><div class="ttdoc">设置线程池的预备大小 </div></div>
 <div class="ttc" id="class_http_server_html_a46c58539460a34a362389d3473e6eed3"><div class="ttname"><a href="class_http_server.html#a46c58539460a34a362389d3473e6eed3">HttpServer.DEFAULT_MODEL</a></div><div class="ttdeci">static const int DEFAULT_MODEL</div><div class="ttdoc">默认网络模型运行, 一般为EPOLL_MODEL </div><div class="ttdef"><b>Definition:</b> <a href="_http_server_8xcs_source.html#l00011">HttpServer.xcs:11</a></div></div>
 <div class="ttc" id="class_website_html"><div class="ttname"><a href="class_website.html">Website</a></div><div class="ttdoc">http 站点类 </div><div class="ttdef"><b>Definition:</b> <a href="_website_8xcs_source.html#l00006">Website.xcs:6</a></div></div>
 <div class="ttc" id="class_http_server_html_aabe90b7041b94c26647a5e08f194718b"><div class="ttname"><a href="class_http_server.html#aabe90b7041b94c26647a5e08f194718b">HttpServer.quiesce</a></div><div class="ttdeci">void quiesce()</div><div class="ttdoc">停止服务器接受新的链接, 但不影响已有链接 </div></div>
 <div class="ttc" id="class_http_server_html_ae3a207f1d3c0c12d1455b67ae2288200"><div class="ttname"><a href="class_http_server.html#ae3a207f1d3c0c12d1455b67ae2288200">HttpServer.HttpServer</a></div><div class="ttdeci">HttpServer()</div><div class="ttdoc">构造 </div></div>
+<div class="ttc" id="class_http_server_html_a1e02a5246cc11ee6f1c69f501e2bb012"><div class="ttname"><a href="class_http_server.html#a1e02a5246cc11ee6f1c69f501e2bb012">HttpServer.configHttps</a></div><div class="ttdeci">bool configHttps(bool enable, String cert, String key)</div><div class="ttdoc">设置启用https </div></div>
 <div class="ttc" id="class_http_server_html_a9d8cbe7b5e46d287de9341b173963375"><div class="ttname"><a href="class_http_server.html#a9d8cbe7b5e46d287de9341b173963375">HttpServer.SELECT_MODEL</a></div><div class="ttdeci">static const int SELECT_MODEL</div><div class="ttdoc">以select网络模型运行 </div><div class="ttdef"><b>Definition:</b> <a href="_http_server_8xcs_source.html#l00016">HttpServer.xcs:16</a></div></div>
 <div class="ttc" id="class_http_server_html_a3bee5fe5685a0df3830dea4548e7ba87"><div class="ttname"><a href="class_http_server.html#a3bee5fe5685a0df3830dea4548e7ba87">HttpServer.setConnectionTimeout</a></div><div class="ttdeci">bool setConnectionTimeout(int millisec)</div><div class="ttdoc">限制链接的最大超时 小于等于0 为不限制 </div></div>
 <div class="ttc" id="class_http_server_html_ae1823765fe4dfbc8c9037ac913c79103"><div class="ttname"><a href="class_http_server.html#ae1823765fe4dfbc8c9037ac913c79103">HttpServer.startServer</a></div><div class="ttdeci">bool startServer(int flags, int port)</div><div class="ttdoc">开启服务器 </div></div>

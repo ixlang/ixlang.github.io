@@ -1,0 +1,799 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: PreparedStatement类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v3.6 Release</span>
+   </div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li class="current"><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li><a href="classes.html"><span>数据类型</span></a></li>
+      <li><a href="hierarchy.html"><span>Design&#160;Unit&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>数据项</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_sql.html">Sql</a></li><li class="navelem"><a class="el" href="class_sql_1_1_prepared_statement.html">PreparedStatement</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pac-attribs">包属性</a>  </div>
+  <div class="headertitle">
+<div class="title">PreparedStatement类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 PreparedStatement 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_sql_1_1_prepared_statement.png" usemap="#PreparedStatement_map" alt=""/>
+  <map id="PreparedStatement_map" name="PreparedStatement_map">
+<area href="interface_sql_1_1_statement.html" alt="Statement" shape="rect" coords="238,0,466,24"/>
+<area href="class_ado_connector_1_1_ado_prepared_statement.html" alt="AdoConnector.AdoPreparedStatement" shape="rect" coords="0,112,228,136"/>
+<area href="class_mysql_1_1_mysql_prepared_statement.html" alt="Mysql.MysqlPreparedStatement" shape="rect" coords="238,112,466,136"/>
+<area href="class_sqlite_1_1_sqlite_prepared_statement.html" alt="Sqlite.SqlitePreparedStatement" shape="rect" coords="476,112,704,136"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
+包属性</h2></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p>在文件 <a class="el" href="xsql_8xcs_source.html">xsql.xcs</a> 第 <a class="el" href="xsql_8xcs_source.html#l00312">312</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a471b160258ae3771d4b76d0e9ee50d42"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PreparedStatement </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>sql</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xsql_8xcs_source.html">xsql.xcs</a> 第 <a class="el" href="xsql_8xcs_source.html#l00319">319</a> 行定义.</p>
+
+<p>参考 <a class="el" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length()</a> , 以及 <a class="el" href="class_string.html#a5339bc7d29e9e803c81f2caefb32bc59">String.split()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                                            {</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            <a class="code" href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">textSql</a> = <span class="stringliteral">&quot; &quot;</span> + sql + <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            <a class="code" href="class_sql_1_1_prepared_statement.html#a7f4b2859cc4d400b2df2e47188ab403e">strsplit</a> = <a class="code" href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">textSql</a>.<a class="code" href="class_string.html#a5339bc7d29e9e803c81f2caefb32bc59">split</a>(<span class="charliteral">&#39;?&#39;</span>);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_sql_1_1_prepared_statement.html#a7f4b2859cc4d400b2df2e47188ab403e">strsplit</a>.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a> == 0){</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="class_illegal_argument_exception.html">IllegalArgumentException</a>(<span class="stringliteral">&quot;invalid sql&quot;</span>);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;            }</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            <a class="code" href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">strparams</a> = <span class="keyword">new</span> <a class="code" href="class_string.html">String</a>[<a class="code" href="class_sql_1_1_prepared_statement.html#a7f4b2859cc4d400b2df2e47188ab403e">strsplit</a>.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a> - 1];</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        }</div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a952bd136f8201272eea72bd2efc42714"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">Sql.PreparedStatement.strparams</a></div><div class="ttdeci">String [] strparams</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00316">xsql.xcs:316</a></div></div>
+<div class="ttc" id="class_string_html_a3d0f4ae571310c6ed081daa3985ecb47"><div class="ttname"><a href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length</a></div><div class="ttdeci">int length()</div><div class="ttdoc">获取字串长度 </div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="class_illegal_argument_exception_html"><div class="ttname"><a href="class_illegal_argument_exception.html">IllegalArgumentException</a></div><div class="ttdoc">参数异常 </div><div class="ttdef"><b>Definition:</b> <a href="_exception_8xcs_source.html#l00174">Exception.xcs:174</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a7f4b2859cc4d400b2df2e47188ab403e"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a7f4b2859cc4d400b2df2e47188ab403e">Sql.PreparedStatement.strsplit</a></div><div class="ttdeci">String [] strsplit</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00315">xsql.xcs:315</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_af656430d2c76ebd8a9c1c5dc54c3928c"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">Sql.PreparedStatement.textSql</a></div><div class="ttdeci">String textSql</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00314">xsql.xcs:314</a></div></div>
+<div class="ttc" id="class_string_html_a5339bc7d29e9e803c81f2caefb32bc59"><div class="ttname"><a href="class_string.html#a5339bc7d29e9e803c81f2caefb32bc59">String.split</a></div><div class="ttdeci">String [] split(String dim)</div><div class="ttdoc">在串中截取子串 </div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a1482759d1e5a47290e33809d3664da13"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int execute </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xsql_8xcs_source.html">xsql.xcs</a> 第 <a class="el" href="xsql_8xcs_source.html#l00336">336</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                            {</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_sql_1_1_prepared_statement.html#a1482759d1e5a47290e33809d3664da13">execute</a>(<a class="code" href="class_sql_1_1_prepared_statement.html#a5710636b6fe02e1f8960e73490fba65f">getSql</a>());</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        }</div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a5710636b6fe02e1f8960e73490fba65f"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a5710636b6fe02e1f8960e73490fba65f">Sql.PreparedStatement.getSql</a></div><div class="ttdeci">String getSql()</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00340">xsql.xcs:340</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a1482759d1e5a47290e33809d3664da13"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a1482759d1e5a47290e33809d3664da13">Sql.PreparedStatement.execute</a></div><div class="ttdeci">int execute()</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00336">xsql.xcs:336</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="acb9b9bceea8dc7a28b3e3292a1fcfd85"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResultSet executeQuery </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xsql_8xcs_source.html">xsql.xcs</a> 第 <a class="el" href="xsql_8xcs_source.html#l00349">349</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                                       {</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_sql_1_1_prepared_statement.html#acb9b9bceea8dc7a28b3e3292a1fcfd85">executeQuery</a>(<a class="code" href="class_sql_1_1_prepared_statement.html#a5710636b6fe02e1f8960e73490fba65f">getSql</a>());</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        }</div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a5710636b6fe02e1f8960e73490fba65f"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a5710636b6fe02e1f8960e73490fba65f">Sql.PreparedStatement.getSql</a></div><div class="ttdeci">String getSql()</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00340">xsql.xcs:340</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_acb9b9bceea8dc7a28b3e3292a1fcfd85"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#acb9b9bceea8dc7a28b3e3292a1fcfd85">Sql.PreparedStatement.executeQuery</a></div><div class="ttdeci">ResultSet executeQuery()</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00349">xsql.xcs:349</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aa0c49e931a593f674b2ffe31816b49a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int executeUpdate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xsql_8xcs_source.html">xsql.xcs</a> 第 <a class="el" href="xsql_8xcs_source.html#l00353">353</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                                  {</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_sql_1_1_prepared_statement.html#aa0c49e931a593f674b2ffe31816b49a0">executeUpdate</a>(<a class="code" href="class_sql_1_1_prepared_statement.html#a5710636b6fe02e1f8960e73490fba65f">getSql</a>());</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        }</div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a5710636b6fe02e1f8960e73490fba65f"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a5710636b6fe02e1f8960e73490fba65f">Sql.PreparedStatement.getSql</a></div><div class="ttdeci">String getSql()</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00340">xsql.xcs:340</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_aa0c49e931a593f674b2ffe31816b49a0"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#aa0c49e931a593f674b2ffe31816b49a0">Sql.PreparedStatement.executeUpdate</a></div><div class="ttdeci">int executeUpdate()</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00353">xsql.xcs:353</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5710636b6fe02e1f8960e73490fba65f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_string.html">String</a> getSql </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xsql_8xcs_source.html">xsql.xcs</a> 第 <a class="el" href="xsql_8xcs_source.html#l00340">340</a> 行定义.</p>
+
+<p>参考 <a class="el" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                              {</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            <a class="code" href="class_string.html">String</a> sqlout = <a class="code" href="class_sql_1_1_prepared_statement.html#a7f4b2859cc4d400b2df2e47188ab403e">strsplit</a>[0];</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            <span class="keywordtype">int</span> i = 1, c = <a class="code" href="class_sql_1_1_prepared_statement.html#a7f4b2859cc4d400b2df2e47188ab403e">strsplit</a>.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            <span class="keywordflow">for</span> (; i &lt; c; i++){</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                sqlout = sqlout + (<a class="code" href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">strparams</a>[i - 1] + <a class="code" href="class_sql_1_1_prepared_statement.html#a7f4b2859cc4d400b2df2e47188ab403e">strsplit</a>[i]);</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            }</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;            <span class="keywordflow">return</span> sqlout;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        }</div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a952bd136f8201272eea72bd2efc42714"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">Sql.PreparedStatement.strparams</a></div><div class="ttdeci">String [] strparams</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00316">xsql.xcs:316</a></div></div>
+<div class="ttc" id="class_string_html_a3d0f4ae571310c6ed081daa3985ecb47"><div class="ttname"><a href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length</a></div><div class="ttdeci">int length()</div><div class="ttdoc">获取字串长度 </div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a7f4b2859cc4d400b2df2e47188ab403e"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a7f4b2859cc4d400b2df2e47188ab403e">Sql.PreparedStatement.strsplit</a></div><div class="ttdeci">String [] strsplit</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00315">xsql.xcs:315</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5c6b452555b71001fe31d2b794244fdd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_string.html">String</a> safety </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xsql_8xcs_source.html">xsql.xcs</a> 第 <a class="el" href="xsql_8xcs_source.html#l00328">328</a> 行定义.</p>
+
+<p>参考 <a class="el" href="class_string.html#a93e090d87c912ac6b497ec2616bb1e2d">String.replace()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                                        {</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            str = str.<a class="code" href="class_string.html#a93e090d87c912ac6b497ec2616bb1e2d">replace</a>(<span class="stringliteral">&quot;\\&quot;</span>, <span class="stringliteral">&quot;\\\\&quot;</span>);</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            str = str.<a class="code" href="class_string.html#a93e090d87c912ac6b497ec2616bb1e2d">replace</a>(<span class="stringliteral">&quot;\&quot;&quot;</span>, <span class="stringliteral">&quot;\\\&quot;&quot;</span>);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            str = str.<a class="code" href="class_string.html#a93e090d87c912ac6b497ec2616bb1e2d">replace</a>(<span class="stringliteral">&quot;\&#39;&quot;</span>, <span class="stringliteral">&quot;\\\&#39;&quot;</span>);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            str = str.<a class="code" href="class_string.html#a93e090d87c912ac6b497ec2616bb1e2d">replace</a>(<span class="stringliteral">&quot;\`&quot;</span>, <span class="stringliteral">&quot;\\\`&quot;</span>);</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;            <span class="keywordflow">return</span> <span class="stringliteral">&quot;&#39;&quot;</span> + str + <span class="stringliteral">&quot;&#39;&quot;</span>;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        }</div>
+<div class="ttc" id="class_string_html_a93e090d87c912ac6b497ec2616bb1e2d"><div class="ttname"><a href="class_string.html#a93e090d87c912ac6b497ec2616bb1e2d">String.replace</a></div><div class="ttdeci">String replace(int start, int end, String sub)</div><div class="ttdoc">将串中指定的部分替换为另一个串 </div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a558b4954a71ddde0e77222a887fcc830"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xsql_8xcs_source.html">xsql.xcs</a> 第 <a class="el" href="xsql_8xcs_source.html#l00357">357</a> 行定义.</p>
+
+<p>参考 <a class="el" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                                          {</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_sql_1_1_prepared_statement.html#a37b81588fd9e65308ee1159d034f0314">paramid</a> &lt; <a class="code" href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">strparams</a>.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>){</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                <a class="code" href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">strparams</a>[<a class="code" href="class_sql_1_1_prepared_statement.html#a37b81588fd9e65308ee1159d034f0314">paramid</a>++] = <a class="code" href="class_sql_1_1_prepared_statement.html#a5c6b452555b71001fe31d2b794244fdd">safety</a>(value);</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> SqlException(-1, <span class="stringliteral">&quot;sql &quot;</span> +<a class="code" href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">textSql</a> + <span class="stringliteral">&quot; dont need value:&quot;</span> + value);</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;            }</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        }</div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a952bd136f8201272eea72bd2efc42714"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">Sql.PreparedStatement.strparams</a></div><div class="ttdeci">String [] strparams</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00316">xsql.xcs:316</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a5c6b452555b71001fe31d2b794244fdd"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a5c6b452555b71001fe31d2b794244fdd">Sql.PreparedStatement.safety</a></div><div class="ttdeci">String safety(String str)</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00328">xsql.xcs:328</a></div></div>
+<div class="ttc" id="class_string_html_a3d0f4ae571310c6ed081daa3985ecb47"><div class="ttname"><a href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length</a></div><div class="ttdeci">int length()</div><div class="ttdoc">获取字串长度 </div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a37b81588fd9e65308ee1159d034f0314"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a37b81588fd9e65308ee1159d034f0314">Sql.PreparedStatement.paramid</a></div><div class="ttdeci">int paramid</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00317">xsql.xcs:317</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_af656430d2c76ebd8a9c1c5dc54c3928c"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">Sql.PreparedStatement.textSql</a></div><div class="ttdeci">String textSql</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00314">xsql.xcs:314</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a23d79e21b8ed72e19278ca31d47b8c87"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setValue </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xsql_8xcs_source.html">xsql.xcs</a> 第 <a class="el" href="xsql_8xcs_source.html#l00365">365</a> 行定义.</p>
+
+<p>参考 <a class="el" href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">String.format()</a> , 以及 <a class="el" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                                       {</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_sql_1_1_prepared_statement.html#a37b81588fd9e65308ee1159d034f0314">paramid</a> &lt; <a class="code" href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">strparams</a>.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>){</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                <a class="code" href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">strparams</a>[<a class="code" href="class_sql_1_1_prepared_statement.html#a37b81588fd9e65308ee1159d034f0314">paramid</a>++] = <a class="code" href="class_string.html">String</a>.<a class="code" href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">format</a>(<span class="stringliteral">&quot;%d&quot;</span>,value);</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> SqlException(-1, <span class="stringliteral">&quot;sql &quot;</span> +<a class="code" href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">textSql</a> + <span class="stringliteral">&quot; dont need value:&quot;</span> + value);</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            }</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        }</div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a952bd136f8201272eea72bd2efc42714"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">Sql.PreparedStatement.strparams</a></div><div class="ttdeci">String [] strparams</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00316">xsql.xcs:316</a></div></div>
+<div class="ttc" id="class_string_html_a7d733f02d73835e67ce84e15f5b1e5f8"><div class="ttname"><a href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">String.format</a></div><div class="ttdeci">static String format(String format, Object[] args)</div><div class="ttdoc">格式化对象 产生一个新串 </div></div>
+<div class="ttc" id="class_string_html_a3d0f4ae571310c6ed081daa3985ecb47"><div class="ttname"><a href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length</a></div><div class="ttdeci">int length()</div><div class="ttdoc">获取字串长度 </div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a37b81588fd9e65308ee1159d034f0314"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a37b81588fd9e65308ee1159d034f0314">Sql.PreparedStatement.paramid</a></div><div class="ttdeci">int paramid</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00317">xsql.xcs:317</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_af656430d2c76ebd8a9c1c5dc54c3928c"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">Sql.PreparedStatement.textSql</a></div><div class="ttdeci">String textSql</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00314">xsql.xcs:314</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ae364c18149785f28d2204a39a538b4a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setValue </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xsql_8xcs_source.html">xsql.xcs</a> 第 <a class="el" href="xsql_8xcs_source.html#l00373">373</a> 行定义.</p>
+
+<p>参考 <a class="el" href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">String.format()</a> , 以及 <a class="el" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                                        {</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_sql_1_1_prepared_statement.html#a37b81588fd9e65308ee1159d034f0314">paramid</a> &lt; <a class="code" href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">strparams</a>.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>){</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                <a class="code" href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">strparams</a>[<a class="code" href="class_sql_1_1_prepared_statement.html#a37b81588fd9e65308ee1159d034f0314">paramid</a>++] = <a class="code" href="class_string.html">String</a>.<a class="code" href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">format</a>(<span class="stringliteral">&quot;%d&quot;</span>,value);</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> SqlException(-1, <span class="stringliteral">&quot;sql &quot;</span> +<a class="code" href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">textSql</a> + <span class="stringliteral">&quot; dont need value:&quot;</span> + value);</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;            }</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        }</div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a952bd136f8201272eea72bd2efc42714"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">Sql.PreparedStatement.strparams</a></div><div class="ttdeci">String [] strparams</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00316">xsql.xcs:316</a></div></div>
+<div class="ttc" id="class_string_html_a7d733f02d73835e67ce84e15f5b1e5f8"><div class="ttname"><a href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">String.format</a></div><div class="ttdeci">static String format(String format, Object[] args)</div><div class="ttdoc">格式化对象 产生一个新串 </div></div>
+<div class="ttc" id="class_string_html_a3d0f4ae571310c6ed081daa3985ecb47"><div class="ttname"><a href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length</a></div><div class="ttdeci">int length()</div><div class="ttdoc">获取字串长度 </div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a37b81588fd9e65308ee1159d034f0314"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a37b81588fd9e65308ee1159d034f0314">Sql.PreparedStatement.paramid</a></div><div class="ttdeci">int paramid</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00317">xsql.xcs:317</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_af656430d2c76ebd8a9c1c5dc54c3928c"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">Sql.PreparedStatement.textSql</a></div><div class="ttdeci">String textSql</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00314">xsql.xcs:314</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a227e5ed9ff9f1a742647e5bb1699d2fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setValue </td>
+          <td>(</td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xsql_8xcs_source.html">xsql.xcs</a> 第 <a class="el" href="xsql_8xcs_source.html#l00381">381</a> 行定义.</p>
+
+<p>参考 <a class="el" href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">String.format()</a> , 以及 <a class="el" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                                        {</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_sql_1_1_prepared_statement.html#a37b81588fd9e65308ee1159d034f0314">paramid</a> &lt; <a class="code" href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">strparams</a>.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>){</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                <a class="code" href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">strparams</a>[<a class="code" href="class_sql_1_1_prepared_statement.html#a37b81588fd9e65308ee1159d034f0314">paramid</a>++] = <a class="code" href="class_string.html">String</a>.<a class="code" href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">format</a>(<span class="stringliteral">&quot;%02u&quot;</span>,value &amp; 0xff);</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> SqlException(-1, <span class="stringliteral">&quot;sql &quot;</span> +<a class="code" href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">textSql</a> + <span class="stringliteral">&quot; dont need value:&quot;</span> + value);</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            }</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        }</div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a952bd136f8201272eea72bd2efc42714"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">Sql.PreparedStatement.strparams</a></div><div class="ttdeci">String [] strparams</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00316">xsql.xcs:316</a></div></div>
+<div class="ttc" id="class_string_html_a7d733f02d73835e67ce84e15f5b1e5f8"><div class="ttname"><a href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">String.format</a></div><div class="ttdeci">static String format(String format, Object[] args)</div><div class="ttdoc">格式化对象 产生一个新串 </div></div>
+<div class="ttc" id="class_string_html_a3d0f4ae571310c6ed081daa3985ecb47"><div class="ttname"><a href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length</a></div><div class="ttdeci">int length()</div><div class="ttdoc">获取字串长度 </div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a37b81588fd9e65308ee1159d034f0314"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a37b81588fd9e65308ee1159d034f0314">Sql.PreparedStatement.paramid</a></div><div class="ttdeci">int paramid</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00317">xsql.xcs:317</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_af656430d2c76ebd8a9c1c5dc54c3928c"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">Sql.PreparedStatement.textSql</a></div><div class="ttdeci">String textSql</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00314">xsql.xcs:314</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a1a31743bc7def7cf7fdad044c84d9268"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setValue </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xsql_8xcs_source.html">xsql.xcs</a> 第 <a class="el" href="xsql_8xcs_source.html#l00389">389</a> 行定义.</p>
+
+<p>参考 <a class="el" href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">String.format()</a> , 以及 <a class="el" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                                          {</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_sql_1_1_prepared_statement.html#a37b81588fd9e65308ee1159d034f0314">paramid</a> &lt; <a class="code" href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">strparams</a>.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>){</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                <a class="code" href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">strparams</a>[<a class="code" href="class_sql_1_1_prepared_statement.html#a37b81588fd9e65308ee1159d034f0314">paramid</a>++] = <a class="code" href="class_string.html">String</a>.<a class="code" href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">format</a>(<span class="stringliteral">&quot;%f&quot;</span>,value);</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> SqlException(-1, <span class="stringliteral">&quot;sql &quot;</span> +<a class="code" href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">textSql</a> + <span class="stringliteral">&quot; dont need value:&quot;</span> + value);</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            }</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        }</div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a952bd136f8201272eea72bd2efc42714"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">Sql.PreparedStatement.strparams</a></div><div class="ttdeci">String [] strparams</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00316">xsql.xcs:316</a></div></div>
+<div class="ttc" id="class_string_html_a7d733f02d73835e67ce84e15f5b1e5f8"><div class="ttname"><a href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">String.format</a></div><div class="ttdeci">static String format(String format, Object[] args)</div><div class="ttdoc">格式化对象 产生一个新串 </div></div>
+<div class="ttc" id="class_string_html_a3d0f4ae571310c6ed081daa3985ecb47"><div class="ttname"><a href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length</a></div><div class="ttdeci">int length()</div><div class="ttdoc">获取字串长度 </div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a37b81588fd9e65308ee1159d034f0314"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a37b81588fd9e65308ee1159d034f0314">Sql.PreparedStatement.paramid</a></div><div class="ttdeci">int paramid</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00317">xsql.xcs:317</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_af656430d2c76ebd8a9c1c5dc54c3928c"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">Sql.PreparedStatement.textSql</a></div><div class="ttdeci">String textSql</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00314">xsql.xcs:314</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a4543975fbe98bd1962d52a5ff4846446"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setValue </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xsql_8xcs_source.html">xsql.xcs</a> 第 <a class="el" href="xsql_8xcs_source.html#l00398">398</a> 行定义.</p>
+
+<p>参考 <a class="el" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                                                  {</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;            <span class="keywordflow">if</span> ((<span class="keywordtype">id</span> &gt; 0) &amp;&amp; (<span class="keywordtype">id</span> - 1 &lt; <a class="code" href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">strparams</a>.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>)){</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                <a class="code" href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">strparams</a>[<span class="keywordtype">id</span> - 1] = <a class="code" href="class_sql_1_1_prepared_statement.html#a5c6b452555b71001fe31d2b794244fdd">safety</a>(value);</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> SqlException(-1, <span class="stringliteral">&quot;sql &quot;</span> +<a class="code" href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">textSql</a> + <span class="stringliteral">&quot; dont need value:&quot;</span> + value);</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;            }      </div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        }</div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a952bd136f8201272eea72bd2efc42714"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">Sql.PreparedStatement.strparams</a></div><div class="ttdeci">String [] strparams</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00316">xsql.xcs:316</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a5c6b452555b71001fe31d2b794244fdd"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a5c6b452555b71001fe31d2b794244fdd">Sql.PreparedStatement.safety</a></div><div class="ttdeci">String safety(String str)</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00328">xsql.xcs:328</a></div></div>
+<div class="ttc" id="class_string_html_a3d0f4ae571310c6ed081daa3985ecb47"><div class="ttname"><a href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length</a></div><div class="ttdeci">int length()</div><div class="ttdoc">获取字串长度 </div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_af656430d2c76ebd8a9c1c5dc54c3928c"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">Sql.PreparedStatement.textSql</a></div><div class="ttdeci">String textSql</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00314">xsql.xcs:314</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a6abecbef72d2d1ef5635d0dadc3ec05d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setValue </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xsql_8xcs_source.html">xsql.xcs</a> 第 <a class="el" href="xsql_8xcs_source.html#l00406">406</a> 行定义.</p>
+
+<p>参考 <a class="el" href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">String.format()</a> , 以及 <a class="el" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                                               {</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;            <span class="keywordflow">if</span> ((<span class="keywordtype">id</span> &gt; 0) &amp;&amp; (<span class="keywordtype">id</span> - 1 &lt; <a class="code" href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">strparams</a>.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>)){</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                <a class="code" href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">strparams</a>[<span class="keywordtype">id</span> - 1] = <a class="code" href="class_string.html">String</a>.<a class="code" href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">format</a>(<span class="stringliteral">&quot;%d&quot;</span>,value);</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> SqlException(-1, <span class="stringliteral">&quot;sql &quot;</span> +<a class="code" href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">textSql</a> + <span class="stringliteral">&quot; dont need value:&quot;</span> + value);</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;            }  </div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;        }</div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a952bd136f8201272eea72bd2efc42714"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">Sql.PreparedStatement.strparams</a></div><div class="ttdeci">String [] strparams</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00316">xsql.xcs:316</a></div></div>
+<div class="ttc" id="class_string_html_a7d733f02d73835e67ce84e15f5b1e5f8"><div class="ttname"><a href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">String.format</a></div><div class="ttdeci">static String format(String format, Object[] args)</div><div class="ttdoc">格式化对象 产生一个新串 </div></div>
+<div class="ttc" id="class_string_html_a3d0f4ae571310c6ed081daa3985ecb47"><div class="ttname"><a href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length</a></div><div class="ttdeci">int length()</div><div class="ttdoc">获取字串长度 </div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_af656430d2c76ebd8a9c1c5dc54c3928c"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">Sql.PreparedStatement.textSql</a></div><div class="ttdeci">String textSql</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00314">xsql.xcs:314</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="af790b177f3dad002bd4d5e153676b1d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setValue </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xsql_8xcs_source.html">xsql.xcs</a> 第 <a class="el" href="xsql_8xcs_source.html#l00414">414</a> 行定义.</p>
+
+<p>参考 <a class="el" href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">String.format()</a> , 以及 <a class="el" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                                                {</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;            <span class="keywordflow">if</span> ((<span class="keywordtype">id</span> &gt; 0) &amp;&amp; (<span class="keywordtype">id</span> - 1 &lt; <a class="code" href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">strparams</a>.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>)){</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;                <a class="code" href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">strparams</a>[<span class="keywordtype">id</span> - 1] = <a class="code" href="class_string.html">String</a>.<a class="code" href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">format</a>(<span class="stringliteral">&quot;%d&quot;</span>,value);</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> SqlException(-1, <span class="stringliteral">&quot;sql &quot;</span> +<a class="code" href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">textSql</a> + <span class="stringliteral">&quot; dont need value:&quot;</span> + value);</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;            }  </div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        }</div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a952bd136f8201272eea72bd2efc42714"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">Sql.PreparedStatement.strparams</a></div><div class="ttdeci">String [] strparams</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00316">xsql.xcs:316</a></div></div>
+<div class="ttc" id="class_string_html_a7d733f02d73835e67ce84e15f5b1e5f8"><div class="ttname"><a href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">String.format</a></div><div class="ttdeci">static String format(String format, Object[] args)</div><div class="ttdoc">格式化对象 产生一个新串 </div></div>
+<div class="ttc" id="class_string_html_a3d0f4ae571310c6ed081daa3985ecb47"><div class="ttname"><a href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length</a></div><div class="ttdeci">int length()</div><div class="ttdoc">获取字串长度 </div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_af656430d2c76ebd8a9c1c5dc54c3928c"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">Sql.PreparedStatement.textSql</a></div><div class="ttdeci">String textSql</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00314">xsql.xcs:314</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a753cdef62fb1b8193ef2fbdfbeb28b0d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setValue </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xsql_8xcs_source.html">xsql.xcs</a> 第 <a class="el" href="xsql_8xcs_source.html#l00422">422</a> 行定义.</p>
+
+<p>参考 <a class="el" href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">String.format()</a> , 以及 <a class="el" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;                                                {</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;            <span class="keywordflow">if</span> ((<span class="keywordtype">id</span> &gt; 0) &amp;&amp; (<span class="keywordtype">id</span> - 1 &lt; <a class="code" href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">strparams</a>.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>)){</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;                <a class="code" href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">strparams</a>[<span class="keywordtype">id</span> - 1] = <a class="code" href="class_string.html">String</a>.<a class="code" href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">format</a>(<span class="stringliteral">&quot;%02u&quot;</span>,value &amp; 0xff);</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> SqlException(-1, <span class="stringliteral">&quot;sql &quot;</span> +<a class="code" href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">textSql</a> + <span class="stringliteral">&quot; dont need value:&quot;</span> + value);</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;            }  </div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        }</div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a952bd136f8201272eea72bd2efc42714"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">Sql.PreparedStatement.strparams</a></div><div class="ttdeci">String [] strparams</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00316">xsql.xcs:316</a></div></div>
+<div class="ttc" id="class_string_html_a7d733f02d73835e67ce84e15f5b1e5f8"><div class="ttname"><a href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">String.format</a></div><div class="ttdeci">static String format(String format, Object[] args)</div><div class="ttdoc">格式化对象 产生一个新串 </div></div>
+<div class="ttc" id="class_string_html_a3d0f4ae571310c6ed081daa3985ecb47"><div class="ttname"><a href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length</a></div><div class="ttdeci">int length()</div><div class="ttdoc">获取字串长度 </div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_af656430d2c76ebd8a9c1c5dc54c3928c"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">Sql.PreparedStatement.textSql</a></div><div class="ttdeci">String textSql</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00314">xsql.xcs:314</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a623abc9f34c45adce62fb26dcc64e6e4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setValue </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xsql_8xcs_source.html">xsql.xcs</a> 第 <a class="el" href="xsql_8xcs_source.html#l00430">430</a> 行定义.</p>
+
+<p>参考 <a class="el" href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">String.format()</a> , 以及 <a class="el" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;                                                  {</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;            <span class="keywordflow">if</span> ((<span class="keywordtype">id</span> &gt; 0) &amp;&amp; (<span class="keywordtype">id</span> - 1 &lt; <a class="code" href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">strparams</a>.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>)){</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;                <a class="code" href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">strparams</a>[<span class="keywordtype">id</span> - 1] = <a class="code" href="class_string.html">String</a>.<a class="code" href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">format</a>(<span class="stringliteral">&quot;%f&quot;</span>,value);</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> SqlException(-1, <span class="stringliteral">&quot;sql &quot;</span> +<a class="code" href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">textSql</a> + <span class="stringliteral">&quot; dont need value:&quot;</span> + value);</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;            }  </div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        }</div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a952bd136f8201272eea72bd2efc42714"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a952bd136f8201272eea72bd2efc42714">Sql.PreparedStatement.strparams</a></div><div class="ttdeci">String [] strparams</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00316">xsql.xcs:316</a></div></div>
+<div class="ttc" id="class_string_html_a7d733f02d73835e67ce84e15f5b1e5f8"><div class="ttname"><a href="class_string.html#a7d733f02d73835e67ce84e15f5b1e5f8">String.format</a></div><div class="ttdeci">static String format(String format, Object[] args)</div><div class="ttdoc">格式化对象 产生一个新串 </div></div>
+<div class="ttc" id="class_string_html_a3d0f4ae571310c6ed081daa3985ecb47"><div class="ttname"><a href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length</a></div><div class="ttdeci">int length()</div><div class="ttdoc">获取字串长度 </div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_af656430d2c76ebd8a9c1c5dc54c3928c"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">Sql.PreparedStatement.textSql</a></div><div class="ttdeci">String textSql</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00314">xsql.xcs:314</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aaa397250b1498fcea970ee6b4cc4f25a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setValues </td>
+          <td>(</td>
+          <td class="paramtype">Object   []&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xsql_8xcs_source.html">xsql.xcs</a> 第 <a class="el" href="xsql_8xcs_source.html#l00438">438</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;                                             {</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; args.length; i++){</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;                <span class="keywordflow">if</span> (args[i].instanceOf(<a class="code" href="class_string.html">String</a>)){</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;                    <a class="code" href="class_sql_1_1_prepared_statement.html#a558b4954a71ddde0e77222a887fcc830">setValue</a>((<a class="code" href="class_string.html">String</a>)args[i]);</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;                }<span class="keywordflow">else</span></div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;                <span class="keywordflow">if</span> (args[i].instanceOf(<span class="keywordtype">int</span>)){</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;                    <a class="code" href="class_sql_1_1_prepared_statement.html#a558b4954a71ddde0e77222a887fcc830">setValue</a>((<span class="keywordtype">int</span>)args[i]);</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;                }<span class="keywordflow">else</span></div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;                <span class="keywordflow">if</span> (args[i].instanceOf(<span class="keywordtype">long</span>)){</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;                    <a class="code" href="class_sql_1_1_prepared_statement.html#a558b4954a71ddde0e77222a887fcc830">setValue</a>((<span class="keywordtype">long</span>)args[i]);</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;                }<span class="keywordflow">else</span></div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;                <span class="keywordflow">if</span> (args[i].instanceOf(byte)){</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;                    <a class="code" href="class_sql_1_1_prepared_statement.html#a558b4954a71ddde0e77222a887fcc830">setValue</a>((byte)args[i]);</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;                }<span class="keywordflow">else</span></div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                <span class="keywordflow">if</span> (args[i].instanceOf(<span class="keywordtype">double</span>)){</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;                    <a class="code" href="class_sql_1_1_prepared_statement.html#a558b4954a71ddde0e77222a887fcc830">setValue</a>((<span class="keywordtype">double</span>)args[i]);</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;                }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> SqlException(-1, <span class="stringliteral">&quot;sql &quot;</span> +<a class="code" href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">textSql</a> + <span class="stringliteral">&quot; dont accept type:&quot;</span> + i);</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;                }</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;            }</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        }</div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_af656430d2c76ebd8a9c1c5dc54c3928c"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">Sql.PreparedStatement.textSql</a></div><div class="ttdeci">String textSql</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00314">xsql.xcs:314</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html_a558b4954a71ddde0e77222a887fcc830"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html#a558b4954a71ddde0e77222a887fcc830">Sql.PreparedStatement.setValue</a></div><div class="ttdeci">void setValue(String value)</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00357">xsql.xcs:357</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">结构体成员变量说明</h2>
+<a class="anchor" id="a37b81588fd9e65308ee1159d034f0314"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int paramid = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xsql_8xcs_source.html">xsql.xcs</a> 第 <a class="el" href="xsql_8xcs_source.html#l00317">317</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a952bd136f8201272eea72bd2efc42714"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_string.html">String</a> [] strparams</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xsql_8xcs_source.html">xsql.xcs</a> 第 <a class="el" href="xsql_8xcs_source.html#l00316">316</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7f4b2859cc4d400b2df2e47188ab403e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_string.html">String</a> [] strsplit</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xsql_8xcs_source.html">xsql.xcs</a> 第 <a class="el" href="xsql_8xcs_source.html#l00315">315</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af656430d2c76ebd8a9c1c5dc54c3928c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_string.html">String</a> textSql</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xsql_8xcs_source.html">xsql.xcs</a> 第 <a class="el" href="xsql_8xcs_source.html#l00314">314</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

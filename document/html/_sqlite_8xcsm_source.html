@@ -1,0 +1,574 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/xlibrarys/xsql/Sqlite.xcsm 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v3.6 Release</span>
+   </div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c26b241c633baa98de380b3fd590c11c.html">xlibrarys</a></li><li class="navelem"><a class="el" href="dir_5e0503feaba35c895940d0574c061a6d.html">xsql</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Sqlite.xcsm</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_sqlite_8xcsm.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//xlang Source, Name:Sqlite.xcsm </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//Date: Wed Mar 00:26:43 2019 </span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_sqlite.html">    5</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_sqlite.html">Sqlite</a> : <a class="code" href="namespace_sql.html">Sql</a>.Connection{</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_sqlite.html#a541891bee14184591d402b410d15c1c7">    6</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_sqlite.html#a541891bee14184591d402b410d15c1c7">DRIVERNAME</a> = <span class="stringliteral">&quot;sqlite&quot;</span>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;            </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_sqlite.html#aed67f9a784ee7c39eb9d14d80e88a745">    8</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_sqlite.html#aed67f9a784ee7c39eb9d14d80e88a745">registry</a>(){</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <span class="keywordflow">if</span> (Native.init()){</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;            <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database.html">Database</a>.<a class="code" href="class_sql_1_1_database.html#a71854546a939f222b617f97f92f5f51a">reigstry</a>(DRIVERNAME, <span class="keyword">new</span> SqliteRegister());</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        }</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;      </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_register.html">   17</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">class </span>SqliteRegister : <a class="code" href="namespace_sql.html">Sql</a>.ConnectionRegister{</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_register.html#af0ca04d588e70845255e7020caf46415">   18</a></span>&#160;        <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="interface_sql_1_1_connection.html">Connection</a> <a class="code" href="class_sqlite_1_1_sqlite_register.html#af0ca04d588e70845255e7020caf46415">allocConnection</a>(<a class="code" href="class_string.html">String</a> drivername)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keywordflow">if</span> (drivername.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;sqlite&quot;</span>)){</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_sqlite.html">Sqlite</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    };</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_c_s_t_d_native.html">   27</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">class </span>CSTDNative : <a class="code" href="class_library.html">Library</a>{</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_c_s_t_d_native.html#a992c70a16169035bc9e2e8f9953d91ed">   28</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_sqlite_1_1_c_s_t_d_native.html#a992c70a16169035bc9e2e8f9953d91ed">loaded</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_c_s_t_d_native.html#adcae327be226b9e6d99e0506c20e3986">   29</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_sqlite_1_1_c_s_t_d_native.html#adcae327be226b9e6d99e0506c20e3986">load</a>(){</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordflow">if</span> (loaded == <span class="keyword">false</span>){</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="keywordtype">int</span> cstd_os = <a class="code" href="class__system__.html">_system_</a>.<a class="code" href="class__system__.html#a0667f38c65ced7dfb0404c062c775299">getPlatformId</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                    <span class="keywordflow">if</span> (cstd_os == <a class="code" href="class__system__.html">_system_</a>.<a class="code" href="class__system__.html#a795d5a74b041aaf42cd39822fdc2d35c">PLATFORM_WINDOWS</a>){</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                        loadLibrary(<span class="stringliteral">&quot;ntdll.dll&quot;</span>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                    }<span class="keywordflow">else</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                    <span class="keywordflow">if</span> (cstd_os == <a class="code" href="class__system__.html">_system_</a>.<a class="code" href="class__system__.html#a8cdef8aff40d8c06f966b768f7ed3fe3">PLATFORM_LINUX</a>){</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                        loadLibrary(<span class="stringliteral">&quot;libc.so.6&quot;</span>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                    }<span class="keywordflow">else</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                    <span class="keywordflow">if</span> (cstd_os == <a class="code" href="class__system__.html">_system_</a>.<a class="code" href="class__system__.html#a697942d44a27bd20c5c9e86ed50bb62f">PLATFORM_MACOSX</a>){</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                        loadLibrary(<span class="stringliteral">&quot;libc.dylib&quot;</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                    loaded = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                }<span class="keywordflow">catch</span>(<a class="code" href="class_exception.html">Exception</a> e){</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                    <a class="code" href="class__system__.html">_system_</a>.output(e.<a class="code" href="class_exception.html#afafd068b736520af1e24269a284980a9">getMessage</a>());</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_sqlite_1_1_c_s_t_d_native.html#a992c70a16169035bc9e2e8f9953d91ed">loaded</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">public</span> <span class="keyword">import</span>{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            Pointer cdecl memcpy(ObjectPtr dest, Pointer src, Pointer n);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            Pointer cdecl strcpy(ObjectPtr dest, ObjectPtr src);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            Pointer cdecl strlen(Pointer);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        };</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    };</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_native.html">   55</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">class </span>Native : <a class="code" href="class_library.html">Library</a>{</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_native.html#abfbfac65cdbba0b2297a9bd65e4d601e">   56</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_sqlite_1_1_native.html#abfbfac65cdbba0b2297a9bd65e4d601e">bloaded</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_native.html#a6114a57ee5a0170c6492f2f7ca3d2ffe">   58</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_sqlite_1_1_native.html#a6114a57ee5a0170c6492f2f7ca3d2ffe">init</a>(){</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">if</span> (bloaded == <span class="keyword">false</span>){</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="keywordflow">if</span> (CSTDNative.load()){</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                    <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                        loadLibrary(<span class="stringliteral">&quot;sqlite3&quot;</span>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                        bloaded = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                    }<span class="keywordflow">catch</span>(<a class="code" href="class_exception.html">Exception</a> e){</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                        <a class="code" href="class__system__.html">_system_</a>.output(e.<a class="code" href="class_exception.html#afafd068b736520af1e24269a284980a9">getMessage</a>());</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_sqlite_1_1_native.html#abfbfac65cdbba0b2297a9bd65e4d601e">bloaded</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keyword">public</span> <span class="keyword">import</span> {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordtype">int</span> cdecl sqlite3_open(</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                  <a class="code" href="class_string.html">String</a> filename,   <span class="comment">/* Database filename (UTF-8) */</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                  ObjectPtr ppDb          <span class="comment">/* OUT: SQLite db handle */</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                );</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="comment">/*int cdecl sqlite3_key(</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">              Pointer db,                   /* Database to be rekeyed * /</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">              String pKey, int nKey     /* The key * /</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">            );*/</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordtype">int</span> cdecl sqlite3_close(</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;              Pointer db);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordtype">int</span> cdecl sqlite3_step(<span class="keywordtype">long</span> pStmt);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordtype">int</span> cdecl sqlite3_exec(</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;              Pointer db,                                  <span class="comment">/* An open database */</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;              <a class="code" href="class_string.html">String</a> sql,                           <span class="comment">/* SQL to be evaluated */</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;              Pointer ,  <span class="comment">/* Callback function */</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;              Pointer ,                                    <span class="comment">/* 1st argument to callback */</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;              ObjectPtr msg                              <span class="comment">/* Error msg written here */</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            );</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordtype">int</span> cdecl sqlite3_prepare(</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;              Pointer db,              <span class="comment">/* Database handle. */</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;              <a class="code" href="class_string.html">String</a> zSql,         <span class="comment">/* UTF-8 encoded SQL statement. */</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;              <span class="keywordtype">int</span> nBytes,               <span class="comment">/* Length of zSql in bytes. */</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;              ObjectPtr ppStmt,    <span class="comment">/* OUT: A pointer to the prepared statement */</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;              ObjectPtr pzTail       <span class="comment">/* OUT: End of parsed string */</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            );</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordtype">int</span> cdecl sqlite3_column_int(Pointer pStmt, <span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordtype">double</span> cdecl sqlite3_column_double(Pointer pStmt, <span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordtype">long</span> cdecl sqlite3_column_int64(Pointer pStmt, <span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <a class="code" href="class_string.html">String</a> cdecl sqlite3_column_text(Pointer pStmt, <span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordtype">int</span> cdecl sqlite3_column_count(Pointer pStmt);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <a class="code" href="class_string.html">String</a> cdecl sqlite3_column_name(Pointer pStmt, <span class="keywordtype">int</span> N);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <a class="code" href="class_string.html">String</a> cdecl sqlite3_column_decltype(Pointer pStmt, <span class="keywordtype">int</span> N);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordtype">int</span> cdecl sqlite3_finalize(Pointer pStmt);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        };</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    };</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="class_sqlite.html#af2d96d8fe2042b7cb63d0549dc1c568f">  111</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_sqlite.html#af2d96d8fe2042b7cb63d0549dc1c568f">registried</a> = <a class="code" href="class_sqlite.html#aed67f9a784ee7c39eb9d14d80e88a745">registry</a>();</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="class_sqlite.html#a4070b6e77b0a18867e5580d846ff2967">  112</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_sqlite.html#a4070b6e77b0a18867e5580d846ff2967">hdb</a> = 0;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="class_sqlite.html#a24285b03307ae66ae30988f2f6d14ddc">  114</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_sqlite.html#a24285b03307ae66ae30988f2f6d14ddc">create</a>(<a class="code" href="class_string.html">String</a> uri, <a class="code" href="class_string.html">String</a> username, <a class="code" href="class_string.html">String</a> pwd)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordtype">int</span> err = Native.sqlite3_open(uri, hdb);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">if</span> (err != 0){</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_sql_exception.html">SqlException</a>(err, <span class="stringliteral">&quot;can not open database:&quot;</span> + uri);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="comment">/*if (pwd != nilptr){</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">            err = Native.sqlite3_key(hdb, pwd, pwd.length());</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">            if (err != 0){</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">                throw new Sql.SqlException(err, &quot;password incorrect&quot;);</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">        }*/</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    </div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="class_sqlite.html#adf2d952ba41a1ebd626afb88f13a8f89">  131</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_sqlite.html#adf2d952ba41a1ebd626afb88f13a8f89">setOption</a>(<span class="keywordtype">int</span> opt, Object option)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;setOption&quot;</span>);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    </div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="class_sqlite.html#a03973e015747285e3bdd01b87d124fb3">  135</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_sqlite.html#a03973e015747285e3bdd01b87d124fb3">getErrorCode</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    </div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="class_sqlite.html#aeb1ef3b1759bb00775d39c77e670bdd0">  139</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_sqlite.html#aeb1ef3b1759bb00775d39c77e670bdd0">getError</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    </div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="class_sqlite.html#a25bc7d9d05a180769e38ef30c26f0408">  143</a></span>&#160;    <span class="keyword">public</span> Object <a class="code" href="class_sqlite.html#a25bc7d9d05a180769e38ef30c26f0408">getOption</a>(<span class="keywordtype">int</span> opt)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;getOption&quot;</span>);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    </div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="class_sqlite.html#ad15221891552b43863477936111ada40">  148</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_prepared_statement.html">PreparedStatement</a> <a class="code" href="class_sqlite.html#ad15221891552b43863477936111ada40">prepareStatement</a>(<a class="code" href="class_string.html">String</a> sql)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> SqlitePreparedStatement(<span class="keyword">this</span>, sql);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    </div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="class_sqlite.html#acd826b80350573c3c739b9064382e8a6">  152</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="interface_sql_1_1_statement.html">Statement</a> <a class="code" href="class_sqlite.html#acd826b80350573c3c739b9064382e8a6">createStatement</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> SqlitePreparedStatement(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    </div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="class_sqlite.html#a4f0eaa77c46b051776bd50414447422e">  156</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_sqlite.html#a4f0eaa77c46b051776bd50414447422e">isClosed</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">return</span> hdb != 0;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    }</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    </div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="class_sqlite.html#a24283120ebd7442f265aaab4c46caef6">  161</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_sqlite.html#a24283120ebd7442f265aaab4c46caef6">close</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">if</span> (hdb != 0){</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            Native.sqlite3_close(hdb);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            hdb = 0;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    </div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="class_sqlite.html#a32d626626eee0bc4ade146973f6abb1c">  168</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sqlite.html#a32d626626eee0bc4ade146973f6abb1c">finalize</a>(){</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <a class="code" href="class_sqlite.html#a24283120ebd7442f265aaab4c46caef6">close</a>();</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    </div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="class_sqlite.html#afc714b472b2bed6caf0c6da13e792b66">  174</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_sqlite.html#afc714b472b2bed6caf0c6da13e792b66">generateErrorText</a>(<span class="keywordtype">long</span> herr, <a class="code" href="class_string.html">String</a> fallback){</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordflow">if</span> (herr != 0){</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keywordtype">long</span> len = CSTDNative.strlen(herr);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            byte [] data = <span class="keyword">new</span> byte[len + 1];</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            CSTDNative.memcpy(data, herr, len);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_string.html">String</a>(data, 0, len);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        }</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">return</span> fallback;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    }</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    </div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="class_sqlite.html#a470628bb270823117b1ec1b66a3251f1">  184</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_sqlite.html#a470628bb270823117b1ec1b66a3251f1">execute</a>(<a class="code" href="class_string.html">String</a> stmt){</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordflow">if</span> (hdb != 0){</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <span class="keywordtype">long</span> msg = 0;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <span class="keywordtype">int</span> err = Native.sqlite3_exec(hdb, stmt, (<span class="keywordtype">long</span>)0, (<span class="keywordtype">long</span>)0, msg);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <span class="keywordflow">if</span> (err != 0){</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_sql_exception.html">SqlException</a>(err, <span class="stringliteral">&quot;Sqlite execute error :&quot;</span> + <a class="code" href="class_sqlite.html#afc714b472b2bed6caf0c6da13e792b66">generateErrorText</a>(msg, <span class="stringliteral">&quot;execute failed&quot;</span>));</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            <span class="keywordflow">return</span> err;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        }</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_sql_exception.html">SqlException</a>(-1, <span class="stringliteral">&quot;database not opened&quot;</span>);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    </div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="class_sqlite.html#a9e2222795d0c8dbe6dcb183128c4f29b">  197</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code" href="class_sqlite.html#a9e2222795d0c8dbe6dcb183128c4f29b">prepare</a>(<a class="code" href="class_string.html">String</a> sql){</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordtype">long</span> nstmt = 0;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordflow">if</span> (hdb != 0){</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            <span class="keywordtype">long</span> msg = 0;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            <span class="keywordtype">int</span> err = Native.sqlite3_prepare(hdb, sql, -1, nstmt, msg);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            <span class="keywordflow">if</span> (err != 0){</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_sql_exception.html">SqlException</a>(err, <span class="stringliteral">&quot;Sqlite execute error :&quot;</span> +  <a class="code" href="class_sqlite.html#afc714b472b2bed6caf0c6da13e792b66">generateErrorText</a>(msg, <span class="stringliteral">&quot;execute failed&quot;</span>));</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            }</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <span class="keywordflow">return</span> nstmt;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        }</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_sql_exception.html">SqlException</a>(-1, <span class="stringliteral">&quot;database not opened&quot;</span>);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keywordflow">return</span> nstmt;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    }</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    </div>
+<div class="line"><a name="l00211"></a><span class="lineno"><a class="line" href="class_sqlite.html#a1e7ff13579d5e69f2fe6bedf98646947">  211</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code" href="class_sqlite.html#a1e7ff13579d5e69f2fe6bedf98646947">getDb</a>(){</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_sqlite.html#a4070b6e77b0a18867e5580d846ff2967">hdb</a>;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    }</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_prepared_statement.html">  216</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span>SqlitePreparedStatement : <a class="code" href="namespace_sql.html">Sql</a>.PreparedStatement{</div>
+<div class="line"><a name="l00217"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_prepared_statement.html#a7b1cb6d65a93d926bef5621dc1d822e1">  217</a></span>&#160;        <a class="code" href="class_sqlite.html">Sqlite</a> <a class="code" href="class_sqlite_1_1_sqlite_prepared_statement.html#a7b1cb6d65a93d926bef5621dc1d822e1">sqlite</a>;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        </div>
+<div class="line"><a name="l00219"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_prepared_statement.html#a0f7c48621989ca2c095e13100d2f8c82">  219</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_sqlite_1_1_sqlite_prepared_statement.html#a0f7c48621989ca2c095e13100d2f8c82">SqlitePreparedStatement</a>(<a class="code" href="class_sqlite.html">Sqlite</a> db, <a class="code" href="class_string.html">String</a> sql){</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            super(sql);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            sqlite = db;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        }</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        </div>
+<div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_prepared_statement.html#aa1d3118ad75c2c3708a7529dd1aac5bf">  224</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_sqlite_1_1_sqlite_prepared_statement.html#aa1d3118ad75c2c3708a7529dd1aac5bf">SqlitePreparedStatement</a>(<a class="code" href="class_sqlite.html">Sqlite</a> db){</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            super(nilptr);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            sqlite = db;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        }</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        </div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_prepared_statement.html#a3964ce135a59976676402f9df97d000e">  229</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_sqlite_1_1_sqlite_prepared_statement.html#a3964ce135a59976676402f9df97d000e">execute</a>(<a class="code" href="class_string.html">String</a> sql)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            </div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            <span class="keywordflow">return</span> sqlite.<a class="code" href="class_sqlite.html#a470628bb270823117b1ec1b66a3251f1">execute</a>(sql);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        }</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        </div>
+<div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_prepared_statement.html#a777f503eb3d365e7f59e3db8a4413f04">  234</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="interface_sql_1_1_result_set.html">ResultSet</a> <a class="code" href="class_sqlite_1_1_sqlite_prepared_statement.html#a777f503eb3d365e7f59e3db8a4413f04">executeQuery</a>(<a class="code" href="class_string.html">String</a> sql)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            <span class="keywordtype">long</span> nstmt = sqlite.<a class="code" href="class_sqlite.html#a9e2222795d0c8dbe6dcb183128c4f29b">prepare</a>(sql);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> SqliteResultSet(sqlite, nstmt);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        </div>
+<div class="line"><a name="l00239"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_prepared_statement.html#a94205f29b423121e7907ba0d035e2690">  239</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_sqlite_1_1_sqlite_prepared_statement.html#a94205f29b423121e7907ba0d035e2690">executeUpdate</a>(<a class="code" href="class_string.html">String</a> sql)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            <span class="keywordflow">return</span> sqlite.<a class="code" href="class_sqlite.html#a470628bb270823117b1ec1b66a3251f1">execute</a>(sql);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        }</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        </div>
+<div class="line"><a name="l00243"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_prepared_statement.html#abdd9786f302141dd3cd6d77ae4fb8b94">  243</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="interface_sql_1_1_result_set.html">ResultSet</a> <a class="code" href="class_sqlite_1_1_sqlite_prepared_statement.html#abdd9786f302141dd3cd6d77ae4fb8b94">getResult</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;getResult&quot;</span>);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        }</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        </div>
+<div class="line"><a name="l00248"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_prepared_statement.html#a24283120ebd7442f265aaab4c46caef6">  248</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_sqlite_1_1_sqlite_prepared_statement.html#a24283120ebd7442f265aaab4c46caef6">close</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            sqlite = nilptr;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        }</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    };</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    </div>
+<div class="line"><a name="l00253"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html">  253</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span>SqliteResultSet : <a class="code" href="namespace_sql.html">Sql</a>.ResultSet{</div>
+<div class="line"><a name="l00254"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#a043344406e0f05e0b3666befeca72f18">  254</a></span>&#160;        <span class="keywordtype">long</span> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a043344406e0f05e0b3666befeca72f18">hres</a>;</div>
+<div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#a7b1cb6d65a93d926bef5621dc1d822e1">  255</a></span>&#160;        <a class="code" href="class_sqlite.html">Sqlite</a> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a7b1cb6d65a93d926bef5621dc1d822e1">sqlite</a>;</div>
+<div class="line"><a name="l00256"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#a6b4a2903de845ead20e7563cae330eb7">  256</a></span>&#160;        <a class="code" href="class_map.html">Map&lt;String, int&gt;</a> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a6b4a2903de845ead20e7563cae330eb7">__fields_Map</a> = <span class="keyword">new</span> <a class="code" href="class_map.html">Map&lt;String, int&gt;</a>();</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        </div>
+<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#a833f77938d30d70cdb5796dcbede7653">  258</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a833f77938d30d70cdb5796dcbede7653">SqliteResultSet</a>(<a class="code" href="class_sqlite.html">Sqlite</a> db, <span class="keywordtype">long</span> res){</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            sqlite = db;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            hres = res;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a95c4bba6e07a2159507d75d60c92f172">parseResult</a>();</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        </div>
+<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#a95c4bba6e07a2159507d75d60c92f172">  264</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a95c4bba6e07a2159507d75d60c92f172">parseResult</a>(){</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            <span class="keywordtype">int</span> ncolumn = Native.sqlite3_column_count(hres);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; ncolumn; i++){</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                <a class="code" href="class_string.html">String</a> colutext = Native.sqlite3_column_name(hres, i);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                __fields_Map.<a class="code" href="class_map.html#a33af8b798de2f23e13214901787a89f5">put</a>(colutext, i);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            }</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        }</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        </div>
+<div class="line"><a name="l00272"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#a642895706143ce6e22a1b3846e7dcde9">  272</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a642895706143ce6e22a1b3846e7dcde9">label2idx</a>(<a class="code" href="class_string.html">String</a> label){</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            <span class="keywordflow">return</span> __fields_Map.<a class="code" href="class_map.html#a97f0c790faf91d4bc8515cd12bfb90ea">get</a>(label);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        }</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        </div>
+<div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#a93912a30d7fc5a9871fca859565aa0b3">  276</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a93912a30d7fc5a9871fca859565aa0b3">first</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;first&quot;</span>);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        }</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        </div>
+<div class="line"><a name="l00281"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#ad3e817259471d3c46ddcd0ce8b476795">  281</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#ad3e817259471d3c46ddcd0ce8b476795">last</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;last&quot;</span>);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        }</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
+<div class="line"><a name="l00286"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#a12dedc6ff47170c4e21d8d4c0c4e4926">  286</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a12dedc6ff47170c4e21d8d4c0c4e4926">next</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            <span class="keywordflow">return</span> 100 == Native.sqlite3_step(hres);</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        }</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        </div>
+<div class="line"><a name="l00290"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#aae988b41f7d8e26974897ba310d8fa41">  290</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#aae988b41f7d8e26974897ba310d8fa41">previous</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;previous&quot;</span>);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        }</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        </div>
+<div class="line"><a name="l00295"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#a1185d4ed0f219df011d18b63060962ab">  295</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a1185d4ed0f219df011d18b63060962ab">isFirst</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;isFirst&quot;</span>);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        }</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        </div>
+<div class="line"><a name="l00300"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#a2c4a4a5ffd68f9cf21eb128933a7c797">  300</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a2c4a4a5ffd68f9cf21eb128933a7c797">isLast</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;isLast&quot;</span>);</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        }</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        </div>
+<div class="line"><a name="l00305"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#a24ce09a923c3677f6da47de247b41d04">  305</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a24ce09a923c3677f6da47de247b41d04">isValid</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;            <span class="keywordflow">return</span> hres != 0;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        }</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        </div>
+<div class="line"><a name="l00309"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#a7a7cffe58c68d8f64928dc0ebfc65c17">  309</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a7a7cffe58c68d8f64928dc0ebfc65c17">isEof</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;isEof&quot;</span>);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        }</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        </div>
+<div class="line"><a name="l00314"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#a71958f7ac761e367d19435d6b5202be9">  314</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a71958f7ac761e367d19435d6b5202be9">getInt</a>(<a class="code" href="class_string.html">String</a> columnlabel)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;            <span class="keywordflow">return</span> Native.sqlite3_column_int(hres, <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a642895706143ce6e22a1b3846e7dcde9">label2idx</a>(columnlabel));</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        }</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        </div>
+<div class="line"><a name="l00318"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#add6ccb7420966926cd05732607bc830c">  318</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#add6ccb7420966926cd05732607bc830c">getLong</a>(<a class="code" href="class_string.html">String</a> columnlabel)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;            <span class="keywordflow">return</span> Native.sqlite3_column_int64(hres, <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a642895706143ce6e22a1b3846e7dcde9">label2idx</a>(columnlabel));</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        }</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        </div>
+<div class="line"><a name="l00322"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#a542b0e2ab3bdd61619c7dbca3efbcc6d">  322</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a542b0e2ab3bdd61619c7dbca3efbcc6d">getDouble</a>(<a class="code" href="class_string.html">String</a> columnlabel)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;            <span class="keywordflow">return</span> Native.sqlite3_column_double(hres, <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a642895706143ce6e22a1b3846e7dcde9">label2idx</a>(columnlabel));</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        }</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        </div>
+<div class="line"><a name="l00326"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#adaf9a89e415686ff19083ce589cd043a">  326</a></span>&#160;        <span class="keyword">public</span> byte <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#adaf9a89e415686ff19083ce589cd043a">getByte</a>(<a class="code" href="class_string.html">String</a> columnlabel)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            <span class="keywordflow">return</span> Native.sqlite3_column_int(hres, <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a642895706143ce6e22a1b3846e7dcde9">label2idx</a>(columnlabel));</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        }</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        </div>
+<div class="line"><a name="l00330"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#af353cd91799f827fbeab543763063ffa">  330</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#af353cd91799f827fbeab543763063ffa">getBoolean</a>(<a class="code" href="class_string.html">String</a> columnlabel)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            <span class="keywordflow">return</span> Native.sqlite3_column_int(hres, <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a642895706143ce6e22a1b3846e7dcde9">label2idx</a>(columnlabel)) != 0;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        }</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        </div>
+<div class="line"><a name="l00334"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#a07e2073df34fa4d673fa0fb4d6504d00">  334</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a07e2073df34fa4d673fa0fb4d6504d00">getString</a>(<a class="code" href="class_string.html">String</a> columnlabel)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;            <span class="keywordflow">return</span> Native.sqlite3_column_text(hres, <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a642895706143ce6e22a1b3846e7dcde9">label2idx</a>(columnlabel));</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        }</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        </div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
+<div class="line"><a name="l00339"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#af81bdc69c1e0ba3d62357003fd1cc0a6">  339</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#af81bdc69c1e0ba3d62357003fd1cc0a6">getInt</a>(<span class="keywordtype">int</span> columnIndex)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            <span class="keywordflow">return</span> Native.sqlite3_column_int(hres, columnIndex);</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        }</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        </div>
+<div class="line"><a name="l00343"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#a87edb5898a228825a7659b3af09b437d">  343</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a87edb5898a228825a7659b3af09b437d">getLong</a>(<span class="keywordtype">int</span> columnIndex)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            <span class="keywordflow">return</span> Native.sqlite3_column_int64(hres, columnIndex);</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        }</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        </div>
+<div class="line"><a name="l00347"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#aa9ee5f395a9e2daab5415f6773db293b">  347</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#aa9ee5f395a9e2daab5415f6773db293b">getDouble</a>(<span class="keywordtype">int</span> columnIndex)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;            <span class="keywordflow">return</span> Native.sqlite3_column_double(hres, columnIndex);</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        }</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        </div>
+<div class="line"><a name="l00351"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#af45b4e5a32b98bec3ab8e7564086e314">  351</a></span>&#160;        <span class="keyword">public</span> byte <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#af45b4e5a32b98bec3ab8e7564086e314">getByte</a>(<span class="keywordtype">int</span> columnIndex)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;            <span class="keywordflow">return</span> Native.sqlite3_column_int(hres, columnIndex);</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        }</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        </div>
+<div class="line"><a name="l00355"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#a0de786b862e2b20e1bd6fdcab3a9a416">  355</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a0de786b862e2b20e1bd6fdcab3a9a416">getBoolean</a>(<span class="keywordtype">int</span> columnIndex)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;            <span class="keywordflow">return</span> Native.sqlite3_column_int(hres, columnIndex)!= 0;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        }</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        </div>
+<div class="line"><a name="l00359"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#a00e7572159c117d7bad8948be40bc3bf">  359</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a00e7572159c117d7bad8948be40bc3bf">getString</a>(<span class="keywordtype">int</span> columnIndex)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;            <span class="keywordflow">return</span> Native.sqlite3_column_text(hres, columnIndex);</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        }</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        </div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        </div>
+<div class="line"><a name="l00365"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#afd658295936bf1672b564b4b9df32113">  365</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#afd658295936bf1672b564b4b9df32113">findColumn</a>(<a class="code" href="class_string.html">String</a> label)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a642895706143ce6e22a1b3846e7dcde9">label2idx</a>(label);</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        }</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        </div>
+<div class="line"><a name="l00369"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#a66cb3e904079ae4581ed0207d4e53392">  369</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a66cb3e904079ae4581ed0207d4e53392">getRowCount</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;getRow&quot;</span>);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        }</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        </div>
+<div class="line"><a name="l00374"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#a2135a919f901124d1a80fb6302d9f571">  374</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a2135a919f901124d1a80fb6302d9f571">getRow</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;getRow&quot;</span>);</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        }</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        </div>
+<div class="line"><a name="l00379"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#a24283120ebd7442f265aaab4c46caef6">  379</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a24283120ebd7442f265aaab4c46caef6">close</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;            <span class="keywordflow">if</span> (hres != 0){</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                Native.sqlite3_finalize(hres);</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;                hres = 0;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            }</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        }</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        </div>
+<div class="line"><a name="l00386"></a><span class="lineno"><a class="line" href="class_sqlite_1_1_sqlite_result_set.html#a32d626626eee0bc4ade146973f6abb1c">  386</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a32d626626eee0bc4ade146973f6abb1c">finalize</a>(){</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            <a class="code" href="class_sqlite_1_1_sqlite_result_set.html#a24283120ebd7442f265aaab4c46caef6">close</a>();</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;            sqlite = nilptr;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        }</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    };</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;};</div>
+<div class="ttc" id="class_sqlite_html_a32d626626eee0bc4ade146973f6abb1c"><div class="ttname"><a href="class_sqlite.html#a32d626626eee0bc4ade146973f6abb1c">Sqlite.finalize</a></div><div class="ttdeci">void finalize()</div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00168">Sqlite.xcsm:168</a></div></div>
+<div class="ttc" id="class_exception_html"><div class="ttname"><a href="class_exception.html">Exception</a></div><div class="ttdoc">异常类 </div><div class="ttdef"><b>Definition:</b> <a href="_exception_8xcs_source.html#l00006">Exception.xcs:6</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_a93912a30d7fc5a9871fca859565aa0b3"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#a93912a30d7fc5a9871fca859565aa0b3">Sqlite.SqliteResultSet.first</a></div><div class="ttdeci">bool first() override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00276">Sqlite.xcsm:276</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_c_s_t_d_native_html_adcae327be226b9e6d99e0506c20e3986"><div class="ttname"><a href="class_sqlite_1_1_c_s_t_d_native.html#adcae327be226b9e6d99e0506c20e3986">Sqlite.CSTDNative.load</a></div><div class="ttdeci">static bool load()</div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00029">Sqlite.xcsm:29</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_a2135a919f901124d1a80fb6302d9f571"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#a2135a919f901124d1a80fb6302d9f571">Sqlite.SqliteResultSet.getRow</a></div><div class="ttdeci">int getRow() override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00374">Sqlite.xcsm:374</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_prepared_statement_html_abdd9786f302141dd3cd6d77ae4fb8b94"><div class="ttname"><a href="class_sqlite_1_1_sqlite_prepared_statement.html#abdd9786f302141dd3cd6d77ae4fb8b94">Sqlite.SqlitePreparedStatement.getResult</a></div><div class="ttdeci">Sql.ResultSet getResult() override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00243">Sqlite.xcsm:243</a></div></div>
+<div class="ttc" id="class_sqlite_html_ad15221891552b43863477936111ada40"><div class="ttname"><a href="class_sqlite.html#ad15221891552b43863477936111ada40">Sqlite.prepareStatement</a></div><div class="ttdeci">Sql.PreparedStatement prepareStatement(String sql) override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00148">Sqlite.xcsm:148</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_a95c4bba6e07a2159507d75d60c92f172"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#a95c4bba6e07a2159507d75d60c92f172">Sqlite.SqliteResultSet.parseResult</a></div><div class="ttdeci">void parseResult()</div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00264">Sqlite.xcsm:264</a></div></div>
+<div class="ttc" id="class__system___html_a795d5a74b041aaf42cd39822fdc2d35c"><div class="ttname"><a href="class__system__.html#a795d5a74b041aaf42cd39822fdc2d35c">_system_.PLATFORM_WINDOWS</a></div><div class="ttdeci">static const int PLATFORM_WINDOWS</div><div class="ttdef"><b>Definition:</b> <a href="_system_8xcs_source.html#l00465">System.xcs:465</a></div></div>
+<div class="ttc" id="class_sqlite_html_a25bc7d9d05a180769e38ef30c26f0408"><div class="ttname"><a href="class_sqlite.html#a25bc7d9d05a180769e38ef30c26f0408">Sqlite.getOption</a></div><div class="ttdeci">Object getOption(int opt) override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00143">Sqlite.xcsm:143</a></div></div>
+<div class="ttc" id="class_sqlite_html_a9e2222795d0c8dbe6dcb183128c4f29b"><div class="ttname"><a href="class_sqlite.html#a9e2222795d0c8dbe6dcb183128c4f29b">Sqlite.prepare</a></div><div class="ttdeci">long prepare(String sql)</div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00197">Sqlite.xcsm:197</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_a24283120ebd7442f265aaab4c46caef6"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#a24283120ebd7442f265aaab4c46caef6">Sqlite.SqliteResultSet.close</a></div><div class="ttdeci">void close() override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00379">Sqlite.xcsm:379</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_af45b4e5a32b98bec3ab8e7564086e314"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#af45b4e5a32b98bec3ab8e7564086e314">Sqlite.SqliteResultSet.getByte</a></div><div class="ttdeci">byte getByte(int columnIndex) override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00351">Sqlite.xcsm:351</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_prepared_statement_html_aa1d3118ad75c2c3708a7529dd1aac5bf"><div class="ttname"><a href="class_sqlite_1_1_sqlite_prepared_statement.html#aa1d3118ad75c2c3708a7529dd1aac5bf">Sqlite.SqlitePreparedStatement.SqlitePreparedStatement</a></div><div class="ttdeci">SqlitePreparedStatement(Sqlite db)</div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00224">Sqlite.xcsm:224</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_a542b0e2ab3bdd61619c7dbca3efbcc6d"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#a542b0e2ab3bdd61619c7dbca3efbcc6d">Sqlite.SqliteResultSet.getDouble</a></div><div class="ttdeci">double getDouble(String columnlabel) override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00322">Sqlite.xcsm:322</a></div></div>
+<div class="ttc" id="class_sqlite_html_a4070b6e77b0a18867e5580d846ff2967"><div class="ttname"><a href="class_sqlite.html#a4070b6e77b0a18867e5580d846ff2967">Sqlite.hdb</a></div><div class="ttdeci">long hdb</div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00112">Sqlite.xcsm:112</a></div></div>
+<div class="ttc" id="class_sqlite_html_a24285b03307ae66ae30988f2f6d14ddc"><div class="ttname"><a href="class_sqlite.html#a24285b03307ae66ae30988f2f6d14ddc">Sqlite.create</a></div><div class="ttdeci">void create(String uri, String username, String pwd) override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00114">Sqlite.xcsm:114</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_prepared_statement_html_a777f503eb3d365e7f59e3db8a4413f04"><div class="ttname"><a href="class_sqlite_1_1_sqlite_prepared_statement.html#a777f503eb3d365e7f59e3db8a4413f04">Sqlite.SqlitePreparedStatement.executeQuery</a></div><div class="ttdeci">Sql.ResultSet executeQuery(String sql) override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00234">Sqlite.xcsm:234</a></div></div>
+<div class="ttc" id="interface_sql_1_1_connection_html"><div class="ttname"><a href="interface_sql_1_1_connection.html">Sql.Connection</a></div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00239">xsql.xcs:239</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_a2c4a4a5ffd68f9cf21eb128933a7c797"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#a2c4a4a5ffd68f9cf21eb128933a7c797">Sqlite.SqliteResultSet.isLast</a></div><div class="ttdeci">bool isLast() override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00300">Sqlite.xcsm:300</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_prepared_statement_html_a24283120ebd7442f265aaab4c46caef6"><div class="ttname"><a href="class_sqlite_1_1_sqlite_prepared_statement.html#a24283120ebd7442f265aaab4c46caef6">Sqlite.SqlitePreparedStatement.close</a></div><div class="ttdeci">void close() override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00248">Sqlite.xcsm:248</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_register_html_af0ca04d588e70845255e7020caf46415"><div class="ttname"><a href="class_sqlite_1_1_sqlite_register.html#af0ca04d588e70845255e7020caf46415">Sqlite.SqliteRegister.allocConnection</a></div><div class="ttdeci">Sql.Connection allocConnection(String drivername) override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00018">Sqlite.xcsm:18</a></div></div>
+<div class="ttc" id="class__system___html_a8cdef8aff40d8c06f966b768f7ed3fe3"><div class="ttname"><a href="class__system__.html#a8cdef8aff40d8c06f966b768f7ed3fe3">_system_.PLATFORM_LINUX</a></div><div class="ttdeci">static const int PLATFORM_LINUX</div><div class="ttdef"><b>Definition:</b> <a href="_system_8xcs_source.html#l00466">System.xcs:466</a></div></div>
+<div class="ttc" id="class_map_html_a97f0c790faf91d4bc8515cd12bfb90ea"><div class="ttname"><a href="class_map.html#a97f0c790faf91d4bc8515cd12bfb90ea">Map.get</a></div><div class="ttdeci">_V get(_K key)</div><div class="ttdoc">获取key对应的值 </div></div>
+<div class="ttc" id="interface_sql_1_1_statement_html"><div class="ttname"><a href="interface_sql_1_1_statement.html">Sql.Statement</a></div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00300">xsql.xcs:300</a></div></div>
+<div class="ttc" id="class_sqlite_html_a03973e015747285e3bdd01b87d124fb3"><div class="ttname"><a href="class_sqlite.html#a03973e015747285e3bdd01b87d124fb3">Sqlite.getErrorCode</a></div><div class="ttdeci">int getErrorCode() override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00135">Sqlite.xcsm:135</a></div></div>
+<div class="ttc" id="interface_sql_1_1_result_set_html"><div class="ttname"><a href="interface_sql_1_1_result_set.html">Sql.ResultSet</a></div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00268">xsql.xcs:268</a></div></div>
+<div class="ttc" id="class_sqlite_html_a1e7ff13579d5e69f2fe6bedf98646947"><div class="ttname"><a href="class_sqlite.html#a1e7ff13579d5e69f2fe6bedf98646947">Sqlite.getDb</a></div><div class="ttdeci">long getDb()</div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00211">Sqlite.xcsm:211</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_a7b1cb6d65a93d926bef5621dc1d822e1"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#a7b1cb6d65a93d926bef5621dc1d822e1">Sqlite.SqliteResultSet.sqlite</a></div><div class="ttdeci">Sqlite sqlite</div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00255">Sqlite.xcsm:255</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_c_s_t_d_native_html_a992c70a16169035bc9e2e8f9953d91ed"><div class="ttname"><a href="class_sqlite_1_1_c_s_t_d_native.html#a992c70a16169035bc9e2e8f9953d91ed">Sqlite.CSTDNative.loaded</a></div><div class="ttdeci">static bool loaded</div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00028">Sqlite.xcsm:28</a></div></div>
+<div class="ttc" id="class_sqlite_html_adf2d952ba41a1ebd626afb88f13a8f89"><div class="ttname"><a href="class_sqlite.html#adf2d952ba41a1ebd626afb88f13a8f89">Sqlite.setOption</a></div><div class="ttdeci">void setOption(int opt, Object option) override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00131">Sqlite.xcsm:131</a></div></div>
+<div class="ttc" id="class_sqlite_html_a470628bb270823117b1ec1b66a3251f1"><div class="ttname"><a href="class_sqlite.html#a470628bb270823117b1ec1b66a3251f1">Sqlite.execute</a></div><div class="ttdeci">int execute(String stmt)</div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00184">Sqlite.xcsm:184</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_prepared_statement_html_a7b1cb6d65a93d926bef5621dc1d822e1"><div class="ttname"><a href="class_sqlite_1_1_sqlite_prepared_statement.html#a7b1cb6d65a93d926bef5621dc1d822e1">Sqlite.SqlitePreparedStatement.sqlite</a></div><div class="ttdeci">Sqlite sqlite</div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00217">Sqlite.xcsm:217</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_add6ccb7420966926cd05732607bc830c"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#add6ccb7420966926cd05732607bc830c">Sqlite.SqliteResultSet.getLong</a></div><div class="ttdeci">long getLong(String columnlabel) override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00318">Sqlite.xcsm:318</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_a87edb5898a228825a7659b3af09b437d"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#a87edb5898a228825a7659b3af09b437d">Sqlite.SqliteResultSet.getLong</a></div><div class="ttdeci">long getLong(int columnIndex) override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00343">Sqlite.xcsm:343</a></div></div>
+<div class="ttc" id="namespace_sql_html"><div class="ttname"><a href="namespace_sql.html">Sql</a></div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00003">xsql.xcs:3</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_a24ce09a923c3677f6da47de247b41d04"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#a24ce09a923c3677f6da47de247b41d04">Sqlite.SqliteResultSet.isValid</a></div><div class="ttdeci">bool isValid() override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00305">Sqlite.xcsm:305</a></div></div>
+<div class="ttc" id="class_sql_1_1_database_not_support_exception_html"><div class="ttname"><a href="class_sql_1_1_database_not_support_exception.html">Sql.DatabaseNotSupportException</a></div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00014">xsql.xcs:14</a></div></div>
+<div class="ttc" id="class_sqlite_html_af2d96d8fe2042b7cb63d0549dc1c568f"><div class="ttname"><a href="class_sqlite.html#af2d96d8fe2042b7cb63d0549dc1c568f">Sqlite.registried</a></div><div class="ttdeci">static bool registried</div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00111">Sqlite.xcsm:111</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_a32d626626eee0bc4ade146973f6abb1c"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#a32d626626eee0bc4ade146973f6abb1c">Sqlite.SqliteResultSet.finalize</a></div><div class="ttdeci">void finalize()</div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00386">Sqlite.xcsm:386</a></div></div>
+<div class="ttc" id="class_sqlite_html_a4f0eaa77c46b051776bd50414447422e"><div class="ttname"><a href="class_sqlite.html#a4f0eaa77c46b051776bd50414447422e">Sqlite.isClosed</a></div><div class="ttdeci">bool isClosed() override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00156">Sqlite.xcsm:156</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_a7a7cffe58c68d8f64928dc0ebfc65c17"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#a7a7cffe58c68d8f64928dc0ebfc65c17">Sqlite.SqliteResultSet.isEof</a></div><div class="ttdeci">bool isEof() override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00309">Sqlite.xcsm:309</a></div></div>
+<div class="ttc" id="class_map_html"><div class="ttname"><a href="class_map.html">Map&lt;String, int&gt;</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_afd658295936bf1672b564b4b9df32113"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#afd658295936bf1672b564b4b9df32113">Sqlite.SqliteResultSet.findColumn</a></div><div class="ttdeci">int findColumn(String label) override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00365">Sqlite.xcsm:365</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_aae988b41f7d8e26974897ba310d8fa41"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#aae988b41f7d8e26974897ba310d8fa41">Sqlite.SqliteResultSet.previous</a></div><div class="ttdeci">bool previous() override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00290">Sqlite.xcsm:290</a></div></div>
+<div class="ttc" id="class_sqlite_html_afc714b472b2bed6caf0c6da13e792b66"><div class="ttname"><a href="class_sqlite.html#afc714b472b2bed6caf0c6da13e792b66">Sqlite.generateErrorText</a></div><div class="ttdeci">String generateErrorText(long herr, String fallback)</div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00174">Sqlite.xcsm:174</a></div></div>
+<div class="ttc" id="class__system___html_a0667f38c65ced7dfb0404c062c775299"><div class="ttname"><a href="class__system__.html#a0667f38c65ced7dfb0404c062c775299">_system_.getPlatformId</a></div><div class="ttdeci">static int getPlatformId()</div><div class="ttdoc">获取平台操作系统ID 0 WINDOWS 1 LINUX 2 MAC OSX 3 iPhone 模拟器 4 iPhone 5 unix 6 其他poxis环境 ...</div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_prepared_statement_html_a3964ce135a59976676402f9df97d000e"><div class="ttname"><a href="class_sqlite_1_1_sqlite_prepared_statement.html#a3964ce135a59976676402f9df97d000e">Sqlite.SqlitePreparedStatement.execute</a></div><div class="ttdeci">int execute(String sql) override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00229">Sqlite.xcsm:229</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_a07e2073df34fa4d673fa0fb4d6504d00"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#a07e2073df34fa4d673fa0fb4d6504d00">Sqlite.SqliteResultSet.getString</a></div><div class="ttdeci">String getString(String columnlabel) override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00334">Sqlite.xcsm:334</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_a71958f7ac761e367d19435d6b5202be9"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#a71958f7ac761e367d19435d6b5202be9">Sqlite.SqliteResultSet.getInt</a></div><div class="ttdeci">int getInt(String columnlabel) override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00314">Sqlite.xcsm:314</a></div></div>
+<div class="ttc" id="class__system___html"><div class="ttname"><a href="class__system__.html">_system_</a></div><div class="ttdoc">系统和IO相关 </div><div class="ttdef"><b>Definition:</b> <a href="_system_8xcs_source.html#l00006">System.xcs:6</a></div></div>
+<div class="ttc" id="class__system___html_a697942d44a27bd20c5c9e86ed50bb62f"><div class="ttname"><a href="class__system__.html#a697942d44a27bd20c5c9e86ed50bb62f">_system_.PLATFORM_MACOSX</a></div><div class="ttdeci">static const int PLATFORM_MACOSX</div><div class="ttdef"><b>Definition:</b> <a href="_system_8xcs_source.html#l00467">System.xcs:467</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_a6b4a2903de845ead20e7563cae330eb7"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#a6b4a2903de845ead20e7563cae330eb7">Sqlite.SqliteResultSet.__fields_Map</a></div><div class="ttdeci">Map&lt;String, int&gt; __fields_Map</div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00256">Sqlite.xcsm:256</a></div></div>
+<div class="ttc" id="class_sqlite_html_acd826b80350573c3c739b9064382e8a6"><div class="ttname"><a href="class_sqlite.html#acd826b80350573c3c739b9064382e8a6">Sqlite.createStatement</a></div><div class="ttdeci">Sql.Statement createStatement() override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00152">Sqlite.xcsm:152</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_a043344406e0f05e0b3666befeca72f18"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#a043344406e0f05e0b3666befeca72f18">Sqlite.SqliteResultSet.hres</a></div><div class="ttdeci">long hres</div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00254">Sqlite.xcsm:254</a></div></div>
+<div class="ttc" id="class_string_html_a6658a49f6ae8d217501c31f372610be4"><div class="ttname"><a href="class_string.html#a6658a49f6ae8d217501c31f372610be4">String.equals</a></div><div class="ttdeci">bool equals(String other)</div><div class="ttdoc">测试两个串是否相等 </div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_a00e7572159c117d7bad8948be40bc3bf"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#a00e7572159c117d7bad8948be40bc3bf">Sqlite.SqliteResultSet.getString</a></div><div class="ttdeci">String getString(int columnIndex) override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00359">Sqlite.xcsm:359</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_a0de786b862e2b20e1bd6fdcab3a9a416"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#a0de786b862e2b20e1bd6fdcab3a9a416">Sqlite.SqliteResultSet.getBoolean</a></div><div class="ttdeci">bool getBoolean(int columnIndex) override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00355">Sqlite.xcsm:355</a></div></div>
+<div class="ttc" id="class_exception_html_afafd068b736520af1e24269a284980a9"><div class="ttname"><a href="class_exception.html#afafd068b736520af1e24269a284980a9">Exception.getMessage</a></div><div class="ttdeci">String getMessage()</div><div class="ttdoc">读取异常消息 </div></div>
+<div class="ttc" id="class_map_html_a33af8b798de2f23e13214901787a89f5"><div class="ttname"><a href="class_map.html#a33af8b798de2f23e13214901787a89f5">Map.put</a></div><div class="ttdeci">Iterator&lt;_K, _V&gt; put(_K key, _V val)</div><div class="ttdoc">插入数据 </div></div>
+<div class="ttc" id="class_sqlite_1_1_native_html_a6114a57ee5a0170c6492f2f7ca3d2ffe"><div class="ttname"><a href="class_sqlite_1_1_native.html#a6114a57ee5a0170c6492f2f7ca3d2ffe">Sqlite.Native.init</a></div><div class="ttdeci">static bool init()</div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00058">Sqlite.xcsm:58</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_a833f77938d30d70cdb5796dcbede7653"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#a833f77938d30d70cdb5796dcbede7653">Sqlite.SqliteResultSet.SqliteResultSet</a></div><div class="ttdeci">SqliteResultSet(Sqlite db, long res)</div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00258">Sqlite.xcsm:258</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_native_html_abfbfac65cdbba0b2297a9bd65e4d601e"><div class="ttname"><a href="class_sqlite_1_1_native.html#abfbfac65cdbba0b2297a9bd65e4d601e">Sqlite.Native.bloaded</a></div><div class="ttdeci">static bool bloaded</div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00056">Sqlite.xcsm:56</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_prepared_statement_html_a0f7c48621989ca2c095e13100d2f8c82"><div class="ttname"><a href="class_sqlite_1_1_sqlite_prepared_statement.html#a0f7c48621989ca2c095e13100d2f8c82">Sqlite.SqlitePreparedStatement.SqlitePreparedStatement</a></div><div class="ttdeci">SqlitePreparedStatement(Sqlite db, String sql)</div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00219">Sqlite.xcsm:219</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_af81bdc69c1e0ba3d62357003fd1cc0a6"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#af81bdc69c1e0ba3d62357003fd1cc0a6">Sqlite.SqliteResultSet.getInt</a></div><div class="ttdeci">int getInt(int columnIndex) override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00339">Sqlite.xcsm:339</a></div></div>
+<div class="ttc" id="class_sqlite_html"><div class="ttname"><a href="class_sqlite.html">Sqlite</a></div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00005">Sqlite.xcsm:5</a></div></div>
+<div class="ttc" id="class_sqlite_html_a541891bee14184591d402b410d15c1c7"><div class="ttname"><a href="class_sqlite.html#a541891bee14184591d402b410d15c1c7">Sqlite.DRIVERNAME</a></div><div class="ttdeci">static const String DRIVERNAME</div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00006">Sqlite.xcsm:6</a></div></div>
+<div class="ttc" id="class_sql_1_1_sql_exception_html"><div class="ttname"><a href="class_sql_1_1_sql_exception.html">Sql.SqlException</a></div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00004">xsql.xcs:4</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html">Sql.PreparedStatement</a></div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00312">xsql.xcs:312</a></div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_ad3e817259471d3c46ddcd0ce8b476795"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#ad3e817259471d3c46ddcd0ce8b476795">Sqlite.SqliteResultSet.last</a></div><div class="ttdeci">bool last() override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00281">Sqlite.xcsm:281</a></div></div>
+<div class="ttc" id="class_sql_1_1_database_html"><div class="ttname"><a href="class_sql_1_1_database.html">Sql.Database</a></div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00207">xsql.xcs:207</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_a642895706143ce6e22a1b3846e7dcde9"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#a642895706143ce6e22a1b3846e7dcde9">Sqlite.SqliteResultSet.label2idx</a></div><div class="ttdeci">int label2idx(String label)</div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00272">Sqlite.xcsm:272</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_af353cd91799f827fbeab543763063ffa"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#af353cd91799f827fbeab543763063ffa">Sqlite.SqliteResultSet.getBoolean</a></div><div class="ttdeci">bool getBoolean(String columnlabel) override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00330">Sqlite.xcsm:330</a></div></div>
+<div class="ttc" id="class_sqlite_html_aeb1ef3b1759bb00775d39c77e670bdd0"><div class="ttname"><a href="class_sqlite.html#aeb1ef3b1759bb00775d39c77e670bdd0">Sqlite.getError</a></div><div class="ttdeci">String getError() override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00139">Sqlite.xcsm:139</a></div></div>
+<div class="ttc" id="class_sql_1_1_database_html_a71854546a939f222b617f97f92f5f51a"><div class="ttname"><a href="class_sql_1_1_database.html#a71854546a939f222b617f97f92f5f51a">Sql.Database.reigstry</a></div><div class="ttdeci">static bool reigstry(String name, ConnectionRegister reg)</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00210">xsql.xcs:210</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_adaf9a89e415686ff19083ce589cd043a"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#adaf9a89e415686ff19083ce589cd043a">Sqlite.SqliteResultSet.getByte</a></div><div class="ttdeci">byte getByte(String columnlabel) override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00326">Sqlite.xcsm:326</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_prepared_statement_html_a94205f29b423121e7907ba0d035e2690"><div class="ttname"><a href="class_sqlite_1_1_sqlite_prepared_statement.html#a94205f29b423121e7907ba0d035e2690">Sqlite.SqlitePreparedStatement.executeUpdate</a></div><div class="ttdeci">int executeUpdate(String sql) override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00239">Sqlite.xcsm:239</a></div></div>
+<div class="ttc" id="class_library_html"><div class="ttname"><a href="class_library.html">Library</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_a1185d4ed0f219df011d18b63060962ab"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#a1185d4ed0f219df011d18b63060962ab">Sqlite.SqliteResultSet.isFirst</a></div><div class="ttdeci">bool isFirst() override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00295">Sqlite.xcsm:295</a></div></div>
+<div class="ttc" id="class_sqlite_html_aed67f9a784ee7c39eb9d14d80e88a745"><div class="ttname"><a href="class_sqlite.html#aed67f9a784ee7c39eb9d14d80e88a745">Sqlite.registry</a></div><div class="ttdeci">static bool registry()</div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00008">Sqlite.xcsm:8</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_aa9ee5f395a9e2daab5415f6773db293b"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#aa9ee5f395a9e2daab5415f6773db293b">Sqlite.SqliteResultSet.getDouble</a></div><div class="ttdeci">double getDouble(int columnIndex) override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00347">Sqlite.xcsm:347</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_a12dedc6ff47170c4e21d8d4c0c4e4926"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#a12dedc6ff47170c4e21d8d4c0c4e4926">Sqlite.SqliteResultSet.next</a></div><div class="ttdeci">bool next() override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00286">Sqlite.xcsm:286</a></div></div>
+<div class="ttc" id="class_sqlite_1_1_sqlite_result_set_html_a66cb3e904079ae4581ed0207d4e53392"><div class="ttname"><a href="class_sqlite_1_1_sqlite_result_set.html#a66cb3e904079ae4581ed0207d4e53392">Sqlite.SqliteResultSet.getRowCount</a></div><div class="ttdeci">long getRowCount() override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00369">Sqlite.xcsm:369</a></div></div>
+<div class="ttc" id="class_sqlite_html_a24283120ebd7442f265aaab4c46caef6"><div class="ttname"><a href="class_sqlite.html#a24283120ebd7442f265aaab4c46caef6">Sqlite.close</a></div><div class="ttdeci">void close() override </div><div class="ttdef"><b>Definition:</b> <a href="_sqlite_8xcsm_source.html#l00161">Sqlite.xcsm:161</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

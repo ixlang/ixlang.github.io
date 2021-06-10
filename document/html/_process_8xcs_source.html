@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.7 Release</span>
+   &#160;<span id="projectnumber">v3.6 Release</span>
    </div>
-   <div id="projectbrief">项目介绍</div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
   </td>
  </tr>
  </tbody>
@@ -93,32 +94,61 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <a href="_process_8xcs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;@Declare</div>
 <div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_process.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_process.html">Process</a>{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;   <a class="code" href="class_process.html#addb3512b89371a1e0dc7b611f5af2db9">Process</a>(<a class="code" href="class_string.html">String</a> command);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;   </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;   <a class="code" href="class_process.html#addb3512b89371a1e0dc7b611f5af2db9">Process</a>(<a class="code" href="class_string.html">String</a> command, <a class="code" href="class_string.html">String</a> [] args);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;   </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;   <a class="code" href="class_process.html#a1beac25449ea47b8d8a666da21429c33">setWorkDirectory</a>(<a class="code" href="class_string.html">String</a> dir);</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_process.html#a0bd1955b8d1e437c493270c04de31b03">    7</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_process.html#a0bd1955b8d1e437c493270c04de31b03">Default</a> = 0,</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_process.html#a09d4df425ed99145c993981c6ce73592">    8</a></span>&#160;        <a class="code" href="class_process.html#a09d4df425ed99145c993981c6ce73592">Visible</a> = 1,</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_process.html#ad7e480649732c3202a0ffc7b77ca2ab5">    9</a></span>&#160;        <a class="code" href="class_process.html#ad7e480649732c3202a0ffc7b77ca2ab5">StdOut</a> = 2,</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_process.html#a0d2d29d6e61e65bc83ad1c9134caaefd">   10</a></span>&#160;        <a class="code" href="class_process.html#a0d2d29d6e61e65bc83ad1c9134caaefd">StdIn</a> = 4,</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_process.html#aaa258b22ef9de4bd002772213591f91d">   11</a></span>&#160;        <a class="code" href="class_process.html#aaa258b22ef9de4bd002772213591f91d">StdErr</a> = 8,</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_process.html#aa5e40bc56bf86d9204e2a26a67ff4c54">   12</a></span>&#160;        <a class="code" href="class_process.html#aa5e40bc56bf86d9204e2a26a67ff4c54">RedirectStdErr</a> = 0x10,</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_process.html#af0472acfbe1f81e92041c9d9e9b859f3">   13</a></span>&#160;        <a class="code" href="class_process.html#af0472acfbe1f81e92041c9d9e9b859f3">NewConsole</a> = 0x20;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;   <span class="keyword">public</span> <a class="code" href="class_process.html#addb3512b89371a1e0dc7b611f5af2db9">Process</a>(<a class="code" href="class_string.html">String</a> command);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;   </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;   <span class="keyword">public</span> <a class="code" href="class_process.html#addb3512b89371a1e0dc7b611f5af2db9">Process</a>(<a class="code" href="class_string.html">String</a> command, <a class="code" href="class_string.html">String</a> [] args);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;   </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;   <span class="keywordtype">bool</span> <a class="code" href="class_process.html#a7ac11a47192f1e9726b831ac118827a3">create</a>(<span class="keywordtype">bool</span> visible, <span class="keywordtype">bool</span> stdread, <span class="keywordtype">bool</span> stdwrite, <span class="keywordtype">bool</span> newConsole);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;   </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;   <span class="keywordtype">bool</span> <a class="code" href="class_process.html#a67d54ad8b312a2f4f93f4c7b98679613">waitFor</a>(<span class="keywordtype">int</span> millis)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;   </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_process.html#af76e930d95c828196c6c4979e44c7af7">   54</a></span>&#160;    int read(byte [] buffer, <span class="keywordtype">int</span> <a class="code" href="class_process.html#af76e930d95c828196c6c4979e44c7af7">pos</a>, <span class="keywordtype">int</span> <a class="code" href="class_process.html#ae9a8e7afda2a262a4182e05aba9eff39">length</a>);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_process.html#a7bc3c3e59293fb955b1add3921b44d38">write</a>(byte [] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> length);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_process.html#a67b16bc2e4e6e4c6e64cee6890852f3b">getExitCode</a>();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
-<div class="ttc" id="class_process_html_af76e930d95c828196c6c4979e44c7af7"><div class="ttname"><a href="class_process.html#af76e930d95c828196c6c4979e44c7af7">Process.pos</a></div><div class="ttdeci">bool int pos</div><div class="ttdef"><b>Definition:</b> <a href="_process_8xcs_source.html#l00054">Process.xcs:54</a></div></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;   <span class="keyword">public</span> <a class="code" href="class_process.html#a1beac25449ea47b8d8a666da21429c33">setWorkDirectory</a>(<a class="code" href="class_string.html">String</a> dir);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;   </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;   <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_process.html#ab206fb52cee41d91bfa3724a0e79b523">create</a>(<span class="keywordtype">int</span> flags);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;   </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;   <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_process.html#a2bff5623212e86601ba471dee3e9cb74">waitFor</a>(<span class="keywordtype">int</span> millis);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;   </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_process.html#adf4ee6bd8e54e18bdeacc20bda65232d">read</a>(byte [] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_process.html#a7bc3c3e59293fb955b1add3921b44d38">write</a>(byte [] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_process.html#a67b16bc2e4e6e4c6e64cee6890852f3b">getExitCode</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_process.html#ac6d13852f25c2591293a8d461f371c8f">exit</a>(<span class="keywordtype">int</span> exitCode);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code" href="class_process.html#a912887c5fe73e39a0463019d92107ab0">id</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">long</span> <a class="code" href="class_process.html#a13c6a813f30db0b98d30c2a2703cb309">getId</a>();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <span class="keyword">raise</span>(<span class="keywordtype">int</span> sig);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_process.html#afdc745dcef3c48ef056f93a711dba13e">readError</a>(byte [] buffer, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;};</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="ttc" id="class_process_html_afdc745dcef3c48ef056f93a711dba13e"><div class="ttname"><a href="class_process.html#afdc745dcef3c48ef056f93a711dba13e">Process.readError</a></div><div class="ttdeci">int readError(byte [] buffer, int pos, int length)</div><div class="ttdoc">读取错误输出数据 </div></div>
+<div class="ttc" id="class_process_html_ab206fb52cee41d91bfa3724a0e79b523"><div class="ttname"><a href="class_process.html#ab206fb52cee41d91bfa3724a0e79b523">Process.create</a></div><div class="ttdeci">bool create(int flags)</div><div class="ttdoc">创建进程 </div></div>
+<div class="ttc" id="class_process_html_a0d2d29d6e61e65bc83ad1c9134caaefd"><div class="ttname"><a href="class_process.html#a0d2d29d6e61e65bc83ad1c9134caaefd">Process.StdIn</a></div><div class="ttdeci">static const int StdIn</div><div class="ttdef"><b>Definition:</b> <a href="_process_8xcs_source.html#l00010">Process.xcs:10</a></div></div>
+<div class="ttc" id="class_process_html_ac6d13852f25c2591293a8d461f371c8f"><div class="ttname"><a href="class_process.html#ac6d13852f25c2591293a8d461f371c8f">Process.exit</a></div><div class="ttdeci">bool exit(int exitCode)</div><div class="ttdoc">退出 (SIGKILL) </div></div>
+<div class="ttc" id="class_process_html_a0bd1955b8d1e437c493270c04de31b03"><div class="ttname"><a href="class_process.html#a0bd1955b8d1e437c493270c04de31b03">Process.Default</a></div><div class="ttdeci">static const int Default</div><div class="ttdef"><b>Definition:</b> <a href="_process_8xcs_source.html#l00007">Process.xcs:7</a></div></div>
+<div class="ttc" id="class_process_html_a09d4df425ed99145c993981c6ce73592"><div class="ttname"><a href="class_process.html#a09d4df425ed99145c993981c6ce73592">Process.Visible</a></div><div class="ttdeci">static const int Visible</div><div class="ttdef"><b>Definition:</b> <a href="_process_8xcs_source.html#l00008">Process.xcs:8</a></div></div>
 <div class="ttc" id="class_process_html_a67b16bc2e4e6e4c6e64cee6890852f3b"><div class="ttname"><a href="class_process.html#a67b16bc2e4e6e4c6e64cee6890852f3b">Process.getExitCode</a></div><div class="ttdeci">int getExitCode()</div><div class="ttdoc">获取退出代码 </div></div>
-<div class="ttc" id="class_process_html_ae9a8e7afda2a262a4182e05aba9eff39"><div class="ttname"><a href="class_process.html#ae9a8e7afda2a262a4182e05aba9eff39">Process.length</a></div><div class="ttdeci">bool int int length</div><div class="ttdef"><b>Definition:</b> <a href="_process_8xcs_source.html#l00054">Process.xcs:54</a></div></div>
+<div class="ttc" id="class_process_html_aaa258b22ef9de4bd002772213591f91d"><div class="ttname"><a href="class_process.html#aaa258b22ef9de4bd002772213591f91d">Process.StdErr</a></div><div class="ttdeci">static const int StdErr</div><div class="ttdef"><b>Definition:</b> <a href="_process_8xcs_source.html#l00011">Process.xcs:11</a></div></div>
+<div class="ttc" id="class_process_html_a2bff5623212e86601ba471dee3e9cb74"><div class="ttname"><a href="class_process.html#a2bff5623212e86601ba471dee3e9cb74">Process.waitFor</a></div><div class="ttdeci">bool waitFor(int millis)</div><div class="ttdoc">等待进程退出 </div></div>
 <div class="ttc" id="class_process_html_a7bc3c3e59293fb955b1add3921b44d38"><div class="ttname"><a href="class_process.html#a7bc3c3e59293fb955b1add3921b44d38">Process.write</a></div><div class="ttdeci">int write(byte [] buffer, int pos, int length)</div><div class="ttdoc">写入标准输入数据 </div></div>
 <div class="ttc" id="class_process_html_a1beac25449ea47b8d8a666da21429c33"><div class="ttname"><a href="class_process.html#a1beac25449ea47b8d8a666da21429c33">Process.setWorkDirectory</a></div><div class="ttdeci">setWorkDirectory(String dir)</div><div class="ttdoc">设置进程工作目录 </div></div>
-<div class="ttc" id="class_process_html_a7ac11a47192f1e9726b831ac118827a3"><div class="ttname"><a href="class_process.html#a7ac11a47192f1e9726b831ac118827a3">Process.create</a></div><div class="ttdeci">bool create(bool visible, bool stdread, bool stdwrite, bool newConsole)</div><div class="ttdoc">创建进程 </div></div>
-<div class="ttc" id="class_process_html_a67d54ad8b312a2f4f93f4c7b98679613"><div class="ttname"><a href="class_process.html#a67d54ad8b312a2f4f93f4c7b98679613">Process.waitFor</a></div><div class="ttdeci">bool waitFor(int millis)  int read(byte [] buffer</div><div class="ttdoc">等待进程退出 </div></div>
+<div class="ttc" id="class_process_html_ad7e480649732c3202a0ffc7b77ca2ab5"><div class="ttname"><a href="class_process.html#ad7e480649732c3202a0ffc7b77ca2ab5">Process.StdOut</a></div><div class="ttdeci">static const int StdOut</div><div class="ttdef"><b>Definition:</b> <a href="_process_8xcs_source.html#l00009">Process.xcs:9</a></div></div>
+<div class="ttc" id="class_process_html_adf4ee6bd8e54e18bdeacc20bda65232d"><div class="ttname"><a href="class_process.html#adf4ee6bd8e54e18bdeacc20bda65232d">Process.read</a></div><div class="ttdeci">int read(byte [] buffer, int pos, int length)</div><div class="ttdoc">读取标准输出数据 </div></div>
+<div class="ttc" id="class_process_html_a13c6a813f30db0b98d30c2a2703cb309"><div class="ttname"><a href="class_process.html#a13c6a813f30db0b98d30c2a2703cb309">Process.getId</a></div><div class="ttdeci">static long getId()</div><div class="ttdoc">获取当前进程ID </div></div>
+<div class="ttc" id="class_process_html_af0472acfbe1f81e92041c9d9e9b859f3"><div class="ttname"><a href="class_process.html#af0472acfbe1f81e92041c9d9e9b859f3">Process.NewConsole</a></div><div class="ttdeci">static const int NewConsole</div><div class="ttdef"><b>Definition:</b> <a href="_process_8xcs_source.html#l00013">Process.xcs:13</a></div></div>
+<div class="ttc" id="class_process_html_aa5e40bc56bf86d9204e2a26a67ff4c54"><div class="ttname"><a href="class_process.html#aa5e40bc56bf86d9204e2a26a67ff4c54">Process.RedirectStdErr</a></div><div class="ttdeci">static const int RedirectStdErr</div><div class="ttdef"><b>Definition:</b> <a href="_process_8xcs_source.html#l00012">Process.xcs:12</a></div></div>
+<div class="ttc" id="class_process_html_a912887c5fe73e39a0463019d92107ab0"><div class="ttname"><a href="class_process.html#a912887c5fe73e39a0463019d92107ab0">Process.id</a></div><div class="ttdeci">long id()</div><div class="ttdoc">获取ID </div></div>
 <div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
 <div class="ttc" id="class_process_html_addb3512b89371a1e0dc7b611f5af2db9"><div class="ttname"><a href="class_process.html#addb3512b89371a1e0dc7b611f5af2db9">Process.Process</a></div><div class="ttdeci">Process(String command)</div><div class="ttdoc">构造 </div></div>
 <div class="ttc" id="class_process_html"><div class="ttname"><a href="class_process.html">Process</a></div><div class="ttdoc">进程类 </div><div class="ttdef"><b>Definition:</b> <a href="_process_8xcs_source.html#l00006">Process.xcs:6</a></div></div>

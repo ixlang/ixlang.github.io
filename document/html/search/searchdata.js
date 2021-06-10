@@ -1,11 +1,12 @@
 var indexSectionsWithContent =
 {
   0: "_abcdefghijklmnopqrstuvwxyz",
-  1: "_abcdefghijlmnopqrstuvwx",
-  2: "f",
-  3: "abcdefhijlmpqrstuvwx",
-  4: "abcdefghijlmnopqrstuvwxyz",
-  5: "_abcdefghijklmnopqrstuvwxyz"
+  1: "_abcdefghijklmnopqrstuvwxz",
+  2: "fqrsx",
+  3: "abcdefhijlmpqrstuvwxz",
+  4: "_abcdefghijklmnopqrstuvwxyz",
+  5: "_abcdefghijklmnopqrstuvwxyz",
+  6: "t"
 };
 
 var indexSectionNames =
@@ -15,7 +16,8 @@ var indexSectionNames =
   2: "namespaces",
   3: "files",
   4: "functions",
-  5: "variables"
+  5: "variables",
+  6: "typedefs"
 };
 
 var indexSectionLabels =
@@ -25,6 +27,7 @@ var indexSectionLabels =
   2: "命名空间",
   3: "文件",
   4: "函数",
-  5: "变量"
+  5: "变量",
+  6: "类型定义"
 };
 

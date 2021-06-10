@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.7 Release</span>
+   &#160;<span id="projectnumber">v3.6 Release</span>
    </div>
-   <div id="projectbrief">项目介绍</div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
   </td>
  </tr>
  </tbody>
@@ -135,6 +136,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <p>清空容器 </p>
 <dl class="section return"><dt>返回</dt><dd></dd></dl>
 
+<p>参考自 <a class="el" href="xsql_8xcs_source.html#l00194">ConnectionPool.clear()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a47e67a8191aafd1a6173b7819b4a3fed"></a>
@@ -162,6 +165,82 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <p>测试是否包含某个key </p>
 <dl class="section return"><dt>返回</dt><dd>是/否 </dd></dl>
 
+<p>参考自 <a class="el" href="xsql_8xcs_source.html#l00100">ConnectionPool.recycle()</a> , 以及 <a class="el" href="xsql_8xcs_source.html#l00210">Database.reigstry()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adc0157d649e20f1cd9540d3a9ab353f8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_V findAsc </td>
+          <td>(</td>
+          <td class="paramtype">_K&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bIgnoreEqu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>升序 </p>
+<dl class="section return"><dt>返回</dt><dd>数据 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a13489a6ce842c73c4bb433856e642f60"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_V findDesc </td>
+          <td>(</td>
+          <td class="paramtype">_K&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bIgnoreEqu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>降序查找 </p>
+<dl class="section return"><dt>返回</dt><dd>数据 </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a97f0c790faf91d4bc8515cd12bfb90ea"></a>
@@ -188,6 +267,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <p>获取key对应的值 </p>
 <dl class="section return"><dt>返回</dt><dd>值 </dd></dl>
+
+<p>参考自 <a class="el" href="xsql_8xcs_source.html#l00220">Database.getConnection()</a> , 以及 <a class="el" href="_sqlite_8xcsm_source.html#l00272">Sqlite.SqliteResultSet.label2idx()</a>.</p>
 
 </div>
 </div>
@@ -217,7 +298,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 </div>
 </div>
-<a class="anchor" id="ab5e2378adae65cd06b6928eebc4cca42"></a>
+<a class="anchor" id="a6cfb4038e87565f55a8f841cb3121c63"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -225,7 +306,71 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void put </td>
+          <td class="memname">_V operator [] </td>
+          <td>(</td>
+          <td class="paramtype">_K&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取数据 </p>
+<dl class="section return"><dt>返回</dt><dd>数据 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a48810d435742062973ef30d181b818eb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_V operator [] </td>
+          <td>(</td>
+          <td class="paramtype">_K&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">_V&#160;</td>
+          <td class="paramname"><em>newValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>更新数据 </p>
+<dl class="section return"><dt>返回</dt><dd>数据 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a33af8b798de2f23e13214901787a89f5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Iterator&lt;_K, _V&gt; put </td>
           <td>(</td>
           <td class="paramtype">_K&#160;</td>
           <td class="paramname"><em>key</em>, </td>
@@ -250,9 +395,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><div class="memdoc">
 
 <p>插入数据 </p>
-<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="section return"><dt>返回</dt><dd>迭代器 </dd></dl>
 
-<p>参考自 <a class="el" href="_q_x_property_browser_8xcsm_source.html#l00050">QXPropertyBrowser.PropertyManager.setPropertyEventListener()</a>.</p>
+<p>参考自 <a class="el" href="xsql_8xcs_source.html#l00159">ConnectionPool.config()</a>, <a class="el" href="_sqlite_8xcsm_source.html#l00264">Sqlite.SqliteResultSet.parseResult()</a> , 以及 <a class="el" href="xsql_8xcs_source.html#l00210">Database.reigstry()</a>.</p>
 
 </div>
 </div>
@@ -280,8 +425,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <p>从容器中删除某个键值对 </p>
 <dl class="section return"><dt>返回</dt><dd></dd></dl>
-
-<p>参考自 <a class="el" href="_q_x_property_browser_8xcsm_source.html#l00050">QXPropertyBrowser.PropertyManager.setPropertyEventListener()</a>.</p>
 
 </div>
 </div>

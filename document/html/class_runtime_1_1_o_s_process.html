@@ -1,0 +1,708 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: OSProcess类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v3.6 Release</span>
+   </div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li class="current"><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li><a href="classes.html"><span>数据类型</span></a></li>
+      <li><a href="hierarchy.html"><span>Design&#160;Unit&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>数据项</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_runtime.html">Runtime</a></li><li class="navelem"><a class="el" href="class_runtime_1_1_o_s_process.html">OSProcess</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pac-methods">包函数</a> &#124;
+<a href="#pac-static-methods">静态包函数</a> &#124;
+<a href="#pac-attribs">包属性</a>  </div>
+  <div class="headertitle">
+<div class="title">OSProcess类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
+包函数</h2></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-methods"></a>
+静态包函数</h2></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
+包属性</h2></td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p>在文件 <a class="el" href="_runtime_8xcs_source.html">Runtime.xcs</a> 第 <a class="el" href="_runtime_8xcs_source.html#l00165">165</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a9d8fe0d54a7fe72a7946d4553216b9fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OSProcess </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_runtime_8xcs_source.html">Runtime.xcs</a> 第 <a class="el" href="_runtime_8xcs_source.html#l00166">166</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                          {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ac9f31102869f2a184deab098cb4d015b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OSProcess </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>Id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_runtime_8xcs_source.html">Runtime.xcs</a> 第 <a class="el" href="_runtime_8xcs_source.html#l00168">168</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                                {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <a class="code" href="class_runtime_1_1_o_s_process.html#a1aabd66fd7d043d3718d58261b91ee8a">processId</a> = Id;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        }</div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a1aabd66fd7d043d3718d58261b91ee8a"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a1aabd66fd7d043d3718d58261b91ee8a">Runtime.OSProcess.processId</a></div><div class="ttdeci">int processId</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00183">Runtime.xcs:183</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a47cc8cdbf9fb7dcbc2eff39528e3e0e8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">OSProcess </td>
+          <td>(</td>
+          <td class="paramtype">byte  []&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td> throws <a class="el" href="class_index_out_of_bounds_exception.html">IndexOutOfBoundsException</a>	,<a class="el" href="class_array_store_exception.html">ArrayStoreException</a>,<a class="el" href="class_null_pointer_exception.html">NullPointerException</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_runtime_8xcs_source.html">Runtime.xcs</a> 第 <a class="el" href="_runtime_8xcs_source.html#l00171">171</a> 行定义.</p>
+
+<p>参考 <a class="el" href="class__system__.html#a9ee75e93c2c7e9f5176382cbef6c0745">_system_.arrayCopy()</a> , 以及 <a class="el" href="class__system__.html#a0ed297e3d49cab302e8c8902c9c06cce">_system_.getOSBit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                                                                                                         {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i =0; i &lt;4; i ++){</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                <a class="code" href="class_runtime_1_1_o_s_process.html#a1aabd66fd7d043d3718d58261b91ee8a">processId</a> = (<a class="code" href="class_runtime_1_1_o_s_process.html#a1aabd66fd7d043d3718d58261b91ee8a">processId</a> &lt;&lt; 8) | data[8 + 3 -i];</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            byte[] paths = <span class="keyword">new</span> byte[Win32Api.Kernel32.MAX_PATH];</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <a class="code" href="class__system__.html">_system_</a>.<a class="code" href="class__system__.html#a9ee75e93c2c7e9f5176382cbef6c0745">arrayCopy</a>(data,<a class="code" href="class__system__.html">_system_</a>.<a class="code" href="class__system__.html#a0ed297e3d49cab302e8c8902c9c06cce">getOSBit</a>() == 32 ? 36 : 44,paths,0,Win32Api.Kernel32.MAX_PATH);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            <span class="keywordtype">int</span> len = Win32Api.Kernel32.lstrlenA(paths);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            <a class="code" href="class_runtime_1_1_o_s_process.html#a9a2326f35466e54c36c070829245c557">name</a> = <span class="keyword">new</span> <a class="code" href="class_string.html">String</a>(paths, 0, len);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        }</div>
+<div class="ttc" id="class__system___html_a9ee75e93c2c7e9f5176382cbef6c0745"><div class="ttname"><a href="class__system__.html#a9ee75e93c2c7e9f5176382cbef6c0745">_system_.arrayCopy</a></div><div class="ttdeci">static void arrayCopy(Object[] src,long srcpos, Object[] dst,long dstpos, long length)</div><div class="ttdoc">复制数组对象内容,要求类型匹配 </div></div>
+<div class="ttc" id="class__system___html_a0ed297e3d49cab302e8c8902c9c06cce"><div class="ttname"><a href="class__system__.html#a0ed297e3d49cab302e8c8902c9c06cce">_system_.getOSBit</a></div><div class="ttdeci">static int getOSBit()</div><div class="ttdoc">获取操作系统位数 </div></div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a9a2326f35466e54c36c070829245c557"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a9a2326f35466e54c36c070829245c557">Runtime.OSProcess.name</a></div><div class="ttdeci">String name</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00184">Runtime.xcs:184</a></div></div>
+<div class="ttc" id="class__system___html"><div class="ttname"><a href="class__system__.html">_system_</a></div><div class="ttdoc">系统和IO相关 </div><div class="ttdef"><b>Definition:</b> <a href="_system_8xcs_source.html#l00006">System.xcs:6</a></div></div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a1aabd66fd7d043d3718d58261b91ee8a"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a1aabd66fd7d043d3718d58261b91ee8a">Runtime.OSProcess.processId</a></div><div class="ttdeci">int processId</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00183">Runtime.xcs:183</a></div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="abca1537c7195c0bfad6bb75643def296"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void closeHandle </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_runtime_8xcs_source.html">Runtime.xcs</a> 第 <a class="el" href="_runtime_8xcs_source.html#l00233">233</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                                            {</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            Win32Api.Kernel32.CloseHandle(handle);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a67283be3f45257d1e0c474c563ebb6b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_runtime_8xcs_source.html">Runtime.xcs</a> 第 <a class="el" href="_runtime_8xcs_source.html#l00187">187</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                          {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_runtime_1_1_o_s_process.html#a1aabd66fd7d043d3718d58261b91ee8a">processId</a>;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        }</div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a1aabd66fd7d043d3718d58261b91ee8a"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a1aabd66fd7d043d3718d58261b91ee8a">Runtime.OSProcess.processId</a></div><div class="ttdeci">int processId</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00183">Runtime.xcs:183</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a78ee178b6a73658d65ca60da4d1e6683"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_string.html">String</a> getName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_runtime_8xcs_source.html">Runtime.xcs</a> 第 <a class="el" href="_runtime_8xcs_source.html#l00191">191</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                               {</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_runtime_1_1_o_s_process.html#a9a2326f35466e54c36c070829245c557">name</a>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        }</div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a9a2326f35466e54c36c070829245c557"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a9a2326f35466e54c36c070829245c557">Runtime.OSProcess.name</a></div><div class="ttdeci">String name</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00184">Runtime.xcs:184</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a6779d0f135fcec6c7f8a8ee49d7af165"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_string.html">String</a> getPath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_runtime_8xcs_source.html">Runtime.xcs</a> 第 <a class="el" href="_runtime_8xcs_source.html#l00195">195</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                               {</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <span class="comment">//PROCESS_QUERY_INFORMATION </span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_runtime_1_1_o_s_process.html#a5f4dd69acf9d95c07f378027b150d8db">exepath</a> == nilptr){</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                <span class="keywordflow">if</span> (rtlp.rtl_osid == 0){</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                    <span class="keywordflow">if</span> (<span class="keyword">false</span> == Win32Api.Psapi32.load()){</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                        <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                    }</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                    <span class="keywordtype">long</span> handle = <a class="code" href="class_runtime_1_1_o_s_process.html#a986999407f8bc01d97f23e72f168f0ce">open</a>();</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                    <span class="keywordflow">if</span> (handle &gt; 0){</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                        byte [] path = <span class="keyword">new</span> byte[Win32Api.Kernel32.MAX_PATH];</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                        <span class="keywordtype">int</span> [] pl = <span class="keyword">new</span> <span class="keywordtype">int</span>[1];</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                        <span class="keywordtype">long</span> [] hm = <span class="keyword">new</span> <span class="keywordtype">long</span>[1];</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                        </div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                        pl[0] = Win32Api.Kernel32.MAX_PATH;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                        <span class="keywordtype">int</span> up = 0;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                        <span class="keywordflow">if</span> (Win32Api.Psapi32.EnumProcessModules(handle, hm, 8, up)){</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                            <span class="keywordtype">int</span> len = Win32Api.Psapi32.GetModuleFileNameExA(handle, hm[0], path, Win32Api.Kernel32.MAX_PATH);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                            <span class="keywordflow">if</span> (len &gt; 0){</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                                <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                                    <a class="code" href="class_runtime_1_1_o_s_process.html#a5f4dd69acf9d95c07f378027b150d8db">exepath</a> = <span class="keyword">new</span> <a class="code" href="class_string.html">String</a>(path, 0, len);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                                }<span class="keywordflow">catch</span>(<a class="code" href="class_exception.html">Exception</a> e){</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                                    </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                                }</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                            }</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                        }</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                        <a class="code" href="class_runtime_1_1_o_s_process.html#abca1537c7195c0bfad6bb75643def296">closeHandle</a>(handle);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                    }</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                }</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            }</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_runtime_1_1_o_s_process.html#a5f4dd69acf9d95c07f378027b150d8db">exepath</a>;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        }</div>
+<div class="ttc" id="class_exception_html"><div class="ttname"><a href="class_exception.html">Exception</a></div><div class="ttdoc">异常类 </div><div class="ttdef"><b>Definition:</b> <a href="_exception_8xcs_source.html#l00006">Exception.xcs:6</a></div></div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a986999407f8bc01d97f23e72f168f0ce"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a986999407f8bc01d97f23e72f168f0ce">Runtime.OSProcess.open</a></div><div class="ttdeci">long open()</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00229">Runtime.xcs:229</a></div></div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_abca1537c7195c0bfad6bb75643def296"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#abca1537c7195c0bfad6bb75643def296">Runtime.OSProcess.closeHandle</a></div><div class="ttdeci">void closeHandle(long handle)</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00233">Runtime.xcs:233</a></div></div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a5f4dd69acf9d95c07f378027b150d8db"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a5f4dd69acf9d95c07f378027b150d8db">Runtime.OSProcess.exepath</a></div><div class="ttdeci">String exepath</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00185">Runtime.xcs:185</a></div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a0f1a3df86581c9b00419e557f1279133"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_list.html">List</a>&lt;<a class="el" href="class_runtime_1_1_o_s_process.html#a9d8fe0d54a7fe72a7946d4553216b9fe">OSProcess</a>&gt; getProcessListUnix </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_runtime_8xcs_source.html">Runtime.xcs</a> 第 <a class="el" href="_runtime_8xcs_source.html#l00268">268</a> 行定义.</p>
+
+<p>参考 <a class="el" href="class_list.html#a7aadda5fed3baf7dd2702adf4ac2363c">List&lt;_V&gt;.add()</a>, <a class="el" href="class_string.html#a06b3307f453b0d7d725c2ce0ca0094a9">String.appendPath()</a>, <a class="el" href="class_f_s_object.html#aafa72d17fade0de3ff4e890c2c224186">FSObject.closeDir()</a>, <a class="el" href="class_f_s_object.html#affbc3ea6ad5bfba1c862999c827f00e3">FSObject.findObject()</a>, <a class="el" href="class_f_s_object.html#a78ee178b6a73658d65ca60da4d1e6683">FSObject.getName()</a>, <a class="el" href="class_f_s_object.html#a6779d0f135fcec6c7f8a8ee49d7af165">FSObject.getPath()</a>, <a class="el" href="class_string.html#a48446b7c30c8cfafa64385ed99b478d7">String.indexOf()</a>, <a class="el" href="class_string.html#a4f2a28d6dcee91832eb4cad334d0bca5">String.isDigit()</a>, <a class="el" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length()</a>, <a class="el" href="class_f_s_object.html#aa04415b61d2a7233d2f558b939bdf74c">FSObject.openDir()</a>, <a class="el" href="class_string.html#af80be582b73dff63922eb860218a4095">String.parseInt()</a>, <a class="el" href="class_string.html#a3b8d67a9c727bf3cb232920b488d4248">String.substring()</a> , 以及 <a class="el" href="class_string.html#a24053e961f5f1b3dafea27a7c98538b7">String.trim()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                                            {</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            <a class="code" href="class_list.html">List&lt;OSProcess&gt;</a> plist = nilptr;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            </div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            <span class="keywordflow">if</span> (<span class="keyword">false</span> == UnixlikeApi.load()){</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            }</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            </div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            plist = <span class="keyword">new</span> <a class="code" href="class_list.html">List&lt;OSProcess&gt;</a>();</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            </div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                <a class="code" href="class_f_s_object.html">FSObject</a> file = <span class="keyword">new</span> <a class="code" href="class_f_s_object.html">FSObject</a> (<span class="stringliteral">&quot;/proc&quot;</span>);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                <span class="keywordtype">long</span> hfind = file.<a class="code" href="class_f_s_object.html#aa04415b61d2a7233d2f558b939bdf74c">openDir</a>();</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                <span class="keywordflow">if</span> (hfind != 0){</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                </div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                    <a class="code" href="class_f_s_object.html">FSObject</a> pf = <span class="keyword">new</span> <a class="code" href="class_f_s_object.html">FSObject</a>();</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;          </div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                    <span class="keywordflow">while</span> (file.<a class="code" href="class_f_s_object.html#affbc3ea6ad5bfba1c862999c827f00e3">findObject</a>(hfind,pf)){</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                        <a class="code" href="class_string.html">String</a> pname = pf.<a class="code" href="class_f_s_object.html#a78ee178b6a73658d65ca60da4d1e6683">getName</a>();</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                        <span class="keywordflow">if</span> (pname != nilptr &amp;&amp; pname.<a class="code" href="class_string.html#a4f2a28d6dcee91832eb4cad334d0bca5">isDigit</a>()){</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                            <a class="code" href="class_runtime_1_1_o_s_process.html#a9d8fe0d54a7fe72a7946d4553216b9fe">OSProcess</a> process = <span class="keyword">new</span> <a class="code" href="class_runtime_1_1_o_s_process.html#a9d8fe0d54a7fe72a7946d4553216b9fe">OSProcess</a>();</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                            <a class="code" href="class_string.html">String</a> fppath = pf.<a class="code" href="class_f_s_object.html#a6779d0f135fcec6c7f8a8ee49d7af165">getPath</a>();</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                            <span class="keywordflow">if</span> (fppath != nilptr){</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                                <a class="code" href="class_string.html">String</a> namepath = fppath.<a class="code" href="class_string.html#a06b3307f453b0d7d725c2ce0ca0094a9">appendPath</a>(<span class="stringliteral">&quot;status&quot;</span>);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                                </div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                                <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                                    <a class="code" href="namespace_file_stream.html">FileStream</a>.<a class="code" href="class_file_stream_1_1_file_input_stream.html">FileInputStream</a> fis = <span class="keyword">new</span> <a class="code" href="namespace_file_stream.html">FileStream</a>.<a class="code" href="class_file_stream_1_1_file_input_stream.html">FileInputStream</a> (namepath);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                                    </div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                                    <a class="code" href="class_string.html">String</a> txtstatus = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                                    </div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                                    byte []status = <span class="keyword">new</span> byte[1024];</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                                    <span class="keywordtype">int</span> rd = 0;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                                    <span class="keywordflow">while</span> ((rd = fis.read(status, 0, 1024)) &gt; 0){</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                                        txtstatus = txtstatus + <span class="keyword">new</span> <a class="code" href="class_string.html">String</a>(status, 0, rd);</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                                    }</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                                    </div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                                    fis.close();</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                                    <span class="keywordtype">int</span> pos = txtstatus.<a class="code" href="class_string.html#a48446b7c30c8cfafa64385ed99b478d7">indexOf</a>(<span class="stringliteral">&quot;Name:&quot;</span>);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                                    <span class="keywordflow">if</span> (pos != -1){</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                                        <span class="keywordtype">int</span> le = txtstatus.<a class="code" href="class_string.html#a48446b7c30c8cfafa64385ed99b478d7">indexOf</a>(<span class="stringliteral">&quot;\n&quot;</span>, pos);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                                        <span class="keywordflow">if</span> (le == -1){</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                                            le = txtstatus.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>();</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                                        }</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                                        process.name = txtstatus.<a class="code" href="class_string.html#a3b8d67a9c727bf3cb232920b488d4248">substring</a>(pos + 5, le).<a class="code" href="class_string.html#a24053e961f5f1b3dafea27a7c98538b7">trim</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                                    }</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                                }<span class="keywordflow">catch</span>(<a class="code" href="class_exception.html">Exception</a> e){</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                                </div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                                }</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                                <a class="code" href="class_string.html">String</a> expath = fppath.<a class="code" href="class_string.html#a06b3307f453b0d7d725c2ce0ca0094a9">appendPath</a>(<span class="stringliteral">&quot;exe&quot;</span>);</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                                </div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                                byte [] fullpath = <span class="keyword">new</span> byte[4096];</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                                <span class="keywordtype">long</span> length = UnixlikeApi.readlink(expath,fullpath,(<span class="keywordtype">long</span>)4096);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                                <span class="keywordflow">if</span> (length != -1){</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                                    process.exepath = <span class="keyword">new</span> <a class="code" href="class_string.html">String</a> (fullpath, 0, (<span class="keywordtype">int</span>)length);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                                }</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                                process.processId = pname.<a class="code" href="class_string.html#af80be582b73dff63922eb860218a4095">parseInt</a>();</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                                plist.<a class="code" href="class_list.html#a7aadda5fed3baf7dd2702adf4ac2363c">add</a>(process);</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                            }</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                        }</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                    }</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                   file.<a class="code" href="class_f_s_object.html#aafa72d17fade0de3ff4e890c2c224186">closeDir</a>(hfind); </div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                }</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            }<span class="keywordflow">catch</span>(<a class="code" href="class_exception.html">Exception</a> e){</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                </div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            }</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;            </div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;            <span class="keywordflow">return</span> plist;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        }</div>
+<div class="ttc" id="class_exception_html"><div class="ttname"><a href="class_exception.html">Exception</a></div><div class="ttdoc">异常类 </div><div class="ttdef"><b>Definition:</b> <a href="_exception_8xcs_source.html#l00006">Exception.xcs:6</a></div></div>
+<div class="ttc" id="class_f_s_object_html_affbc3ea6ad5bfba1c862999c827f00e3"><div class="ttname"><a href="class_f_s_object.html#affbc3ea6ad5bfba1c862999c827f00e3">FSObject.findObject</a></div><div class="ttdeci">bool findObject(long hdir, FSObject object)</div><div class="ttdoc">查找文件系统对象 </div></div>
+<div class="ttc" id="class_f_s_object_html_aafa72d17fade0de3ff4e890c2c224186"><div class="ttname"><a href="class_f_s_object.html#aafa72d17fade0de3ff4e890c2c224186">FSObject.closeDir</a></div><div class="ttdeci">void closeDir(long hdir)</div><div class="ttdoc">关闭一个查找ID </div></div>
+<div class="ttc" id="class_string_html_af80be582b73dff63922eb860218a4095"><div class="ttname"><a href="class_string.html#af80be582b73dff63922eb860218a4095">String.parseInt</a></div><div class="ttdeci">int parseInt()</div><div class="ttdoc">解析为int对象 </div></div>
+<div class="ttc" id="class_file_stream_1_1_file_input_stream_html"><div class="ttname"><a href="class_file_stream_1_1_file_input_stream.html">FileStream.FileInputStream</a></div><div class="ttdef"><b>Definition:</b> <a href="_file_stream_8xcs_source.html#l00004">FileStream.xcs:4</a></div></div>
+<div class="ttc" id="class_string_html_a06b3307f453b0d7d725c2ce0ca0094a9"><div class="ttname"><a href="class_string.html#a06b3307f453b0d7d725c2ce0ca0094a9">String.appendPath</a></div><div class="ttdeci">String appendPath(String str)</div><div class="ttdoc">连接路径,该方法会按照平台使用不同的\的/来连接路径串 </div></div>
+<div class="ttc" id="class_string_html_a48446b7c30c8cfafa64385ed99b478d7"><div class="ttname"><a href="class_string.html#a48446b7c30c8cfafa64385ed99b478d7">String.indexOf</a></div><div class="ttdeci">int indexOf(String sub, int pos)</div><div class="ttdoc">从串的前面查找另一个穿的位置 </div></div>
+<div class="ttc" id="class_string_html_a3b8d67a9c727bf3cb232920b488d4248"><div class="ttname"><a href="class_string.html#a3b8d67a9c727bf3cb232920b488d4248">String.substring</a></div><div class="ttdeci">String substring(int start, int end)</div><div class="ttdoc">在串中截取子串 </div></div>
+<div class="ttc" id="class_list_html"><div class="ttname"><a href="class_list.html">List</a></div><div class="ttdoc">map容器 </div><div class="ttdef"><b>Definition:</b> <a href="_list_8xcs_source.html#l00006">List.xcs:6</a></div></div>
+<div class="ttc" id="class_string_html_a24053e961f5f1b3dafea27a7c98538b7"><div class="ttname"><a href="class_string.html#a24053e961f5f1b3dafea27a7c98538b7">String.trim</a></div><div class="ttdeci">String trim(bool bc)</div><div class="ttdoc">去除串两端的空白字符 并生成新串 </div></div>
+<div class="ttc" id="class_list_html_a7aadda5fed3baf7dd2702adf4ac2363c"><div class="ttname"><a href="class_list.html#a7aadda5fed3baf7dd2702adf4ac2363c">List.add</a></div><div class="ttdeci">void add(_V val)</div><div class="ttdoc">插入数据 </div></div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a9d8fe0d54a7fe72a7946d4553216b9fe"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a9d8fe0d54a7fe72a7946d4553216b9fe">Runtime.OSProcess.OSProcess</a></div><div class="ttdeci">OSProcess()</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00166">Runtime.xcs:166</a></div></div>
+<div class="ttc" id="class_string_html_a4f2a28d6dcee91832eb4cad334d0bca5"><div class="ttname"><a href="class_string.html#a4f2a28d6dcee91832eb4cad334d0bca5">String.isDigit</a></div><div class="ttdeci">bool isDigit()</div><div class="ttdoc">测试串是否数字 </div></div>
+<div class="ttc" id="class_f_s_object_html"><div class="ttname"><a href="class_f_s_object.html">FSObject</a></div><div class="ttdoc">文件系统对象 3.1新增 </div><div class="ttdef"><b>Definition:</b> <a href="_f_s_object_8xcs_source.html#l00006">FSObject.xcs:6</a></div></div>
+<div class="ttc" id="class_f_s_object_html_aa04415b61d2a7233d2f558b939bdf74c"><div class="ttname"><a href="class_f_s_object.html#aa04415b61d2a7233d2f558b939bdf74c">FSObject.openDir</a></div><div class="ttdeci">long openDir()</div><div class="ttdoc">打开文件夹 </div></div>
+<div class="ttc" id="class_f_s_object_html_a78ee178b6a73658d65ca60da4d1e6683"><div class="ttname"><a href="class_f_s_object.html#a78ee178b6a73658d65ca60da4d1e6683">FSObject.getName</a></div><div class="ttdeci">String getName()</div><div class="ttdoc">获取文件系统对象的名称 </div></div>
+<div class="ttc" id="class_f_s_object_html_a6779d0f135fcec6c7f8a8ee49d7af165"><div class="ttname"><a href="class_f_s_object.html#a6779d0f135fcec6c7f8a8ee49d7af165">FSObject.getPath</a></div><div class="ttdeci">String getPath()</div><div class="ttdoc">获取文件系统对象的路径 </div></div>
+<div class="ttc" id="class_string_html_a3d0f4ae571310c6ed081daa3985ecb47"><div class="ttname"><a href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length</a></div><div class="ttdeci">int length()</div><div class="ttdoc">获取字串长度 </div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="namespace_file_stream_html"><div class="ttname"><a href="namespace_file_stream.html">FileStream</a></div><div class="ttdef"><b>Definition:</b> <a href="_file_stream_8xcs_source.html#l00001">FileStream.xcs:1</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a9d3c961ca24e5697d4fbe375ed99fee2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_list.html">List</a>&lt;<a class="el" href="class_runtime_1_1_o_s_process.html#a9d8fe0d54a7fe72a7946d4553216b9fe">OSProcess</a>&gt; getProcessListWin32 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_runtime_8xcs_source.html">Runtime.xcs</a> 第 <a class="el" href="_runtime_8xcs_source.html#l00338">338</a> 行定义.</p>
+
+<p>参考 <a class="el" href="class_list.html#a7aadda5fed3baf7dd2702adf4ac2363c">List&lt;_V&gt;.add()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                                             {</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            <a class="code" href="class_list.html">List&lt;OSProcess&gt;</a> plist = nilptr;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        </div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            <span class="keywordflow">if</span> (<span class="keyword">false</span> == Win32Api.Kernel32.load()){</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            }</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            byte[] <span class="keyword">struct </span>= new byte[356];</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;            <span class="keyword">struct</span>[0] = 08;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            <span class="keyword">struct</span>[1] = 12;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;            plist = <span class="keyword">new</span> <a class="code" href="class_list.html">List&lt;OSProcess&gt;</a>();</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            </div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;            <span class="keywordtype">long</span> snopt = Win32Api.Kernel32.CreateToolhelp32Snapshot(</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                Win32Api.Kernel32.TH32CS_SNAPALL,</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                0);</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            </div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                <span class="keywordflow">if</span> (snopt &gt; 0){</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                    <span class="keywordtype">bool</span> succ = Win32Api.Kernel32.Process32First(snopt,<span class="keyword">struct</span>);</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                    <span class="keywordflow">while</span> (succ){</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                        plist.<a class="code" href="class_list.html#a7aadda5fed3baf7dd2702adf4ac2363c">add</a>(<span class="keyword">new</span> <a class="code" href="class_runtime_1_1_o_s_process.html#a9d8fe0d54a7fe72a7946d4553216b9fe">OSProcess</a>(<span class="keyword">struct</span>));</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                        succ = Win32Api.Kernel32.Process32Next(snopt,<span class="keyword">struct</span>);</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                    }</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                    </div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                    Win32Api.Kernel32.CloseHandle(snopt);</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                }</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            }<span class="keywordflow">catch</span>(<a class="code" href="class_exception.html">Exception</a> e){</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                </div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;            }</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;            <span class="keywordflow">return</span> plist;     </div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        }</div>
+<div class="ttc" id="class_exception_html"><div class="ttname"><a href="class_exception.html">Exception</a></div><div class="ttdoc">异常类 </div><div class="ttdef"><b>Definition:</b> <a href="_exception_8xcs_source.html#l00006">Exception.xcs:6</a></div></div>
+<div class="ttc" id="class_list_html"><div class="ttname"><a href="class_list.html">List</a></div><div class="ttdoc">map容器 </div><div class="ttdef"><b>Definition:</b> <a href="_list_8xcs_source.html#l00006">List.xcs:6</a></div></div>
+<div class="ttc" id="class_list_html_a7aadda5fed3baf7dd2702adf4ac2363c"><div class="ttname"><a href="class_list.html#a7aadda5fed3baf7dd2702adf4ac2363c">List.add</a></div><div class="ttdeci">void add(_V val)</div><div class="ttdoc">插入数据 </div></div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a9d8fe0d54a7fe72a7946d4553216b9fe"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a9d8fe0d54a7fe72a7946d4553216b9fe">Runtime.OSProcess.OSProcess</a></div><div class="ttdeci">OSProcess()</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00166">Runtime.xcs:166</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a6eb393eaefb30ee2686c14451bc18378"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool kill </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>code</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_runtime_8xcs_source.html">Runtime.xcs</a> 第 <a class="el" href="_runtime_8xcs_source.html#l00240">240</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                                  {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            <span class="keywordtype">bool</span> r = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            <span class="keywordflow">if</span> (rtlp.rtl_osid == 0){</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                <span class="keywordtype">long</span> h = <a class="code" href="class_runtime_1_1_o_s_process.html#a986999407f8bc01d97f23e72f168f0ce">open</a>();</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                <span class="keywordflow">if</span> (h &gt; 0){</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                    r = Win32Api.Kernel32.TerminateProcess(h, code);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                    Win32Api.Kernel32.CloseHandle(h);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                }</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                r = 0 == UnixlikeApi.kill(<a class="code" href="class_runtime_1_1_o_s_process.html#a1aabd66fd7d043d3718d58261b91ee8a">processId</a>, 15);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            }</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            <span class="keywordflow">return</span> r;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        }</div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a986999407f8bc01d97f23e72f168f0ce"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a986999407f8bc01d97f23e72f168f0ce">Runtime.OSProcess.open</a></div><div class="ttdeci">long open()</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00229">Runtime.xcs:229</a></div></div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a1aabd66fd7d043d3718d58261b91ee8a"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a1aabd66fd7d043d3718d58261b91ee8a">Runtime.OSProcess.processId</a></div><div class="ttdeci">int processId</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00183">Runtime.xcs:183</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a2dbd1b919cab7991065bea6018b407b8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_list.html">List</a>&lt;<a class="el" href="class_runtime_1_1_o_s_process.html#a9d8fe0d54a7fe72a7946d4553216b9fe">OSProcess</a>&gt; listProcesses </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_runtime_8xcs_source.html">Runtime.xcs</a> 第 <a class="el" href="_runtime_8xcs_source.html#l00256">256</a> 行定义.</p>
+
+<p>参考 <a class="el" href="class__system__.html#a0667f38c65ced7dfb0404c062c775299">_system_.getPlatformId()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                                       {</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            <span class="keywordtype">int</span> osid = <a class="code" href="class__system__.html">_system_</a>.<a class="code" href="class__system__.html#a0667f38c65ced7dfb0404c062c775299">getPlatformId</a>();</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <span class="keywordflow">if</span> (osid == 0){</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="class_runtime_1_1_o_s_process.html#a9d3c961ca24e5697d4fbe375ed99fee2">getProcessListWin32</a>();</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            }<span class="keywordflow">else</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            <span class="keywordflow">if</span> (osid == 1 || osid == 2){</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="class_runtime_1_1_o_s_process.html#a0f1a3df86581c9b00419e557f1279133">getProcessListUnix</a>();</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            }</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        }</div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a0f1a3df86581c9b00419e557f1279133"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a0f1a3df86581c9b00419e557f1279133">Runtime.OSProcess.getProcessListUnix</a></div><div class="ttdeci">static List&lt;OSProcess&gt; getProcessListUnix()</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00268">Runtime.xcs:268</a></div></div>
+<div class="ttc" id="class__system___html_a0667f38c65ced7dfb0404c062c775299"><div class="ttname"><a href="class__system__.html#a0667f38c65ced7dfb0404c062c775299">_system_.getPlatformId</a></div><div class="ttdeci">static int getPlatformId()</div><div class="ttdoc">获取平台操作系统ID 0 WINDOWS 1 LINUX 2 MAC OSX 3 iPhone 模拟器 4 iPhone 5 unix 6 其他poxis环境 ...</div></div>
+<div class="ttc" id="class__system___html"><div class="ttname"><a href="class__system__.html">_system_</a></div><div class="ttdoc">系统和IO相关 </div><div class="ttdef"><b>Definition:</b> <a href="_system_8xcs_source.html#l00006">System.xcs:6</a></div></div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a9d3c961ca24e5697d4fbe375ed99fee2"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a9d3c961ca24e5697d4fbe375ed99fee2">Runtime.OSProcess.getProcessListWin32</a></div><div class="ttdeci">static List&lt;OSProcess&gt; getProcessListWin32()</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00338">Runtime.xcs:338</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a986999407f8bc01d97f23e72f168f0ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long open </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_runtime_8xcs_source.html">Runtime.xcs</a> 第 <a class="el" href="_runtime_8xcs_source.html#l00229">229</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                          {</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            <span class="keywordflow">return</span> Win32Api.Kernel32.OpenProcess(0x001fffff, <span class="keyword">false</span>, <a class="code" href="class_runtime_1_1_o_s_process.html#a1aabd66fd7d043d3718d58261b91ee8a">processId</a>);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        }</div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a1aabd66fd7d043d3718d58261b91ee8a"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a1aabd66fd7d043d3718d58261b91ee8a">Runtime.OSProcess.processId</a></div><div class="ttdeci">int processId</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00183">Runtime.xcs:183</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a24087786507fa9d4bb3ae40011d1640a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long open </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_runtime_8xcs_source.html">Runtime.xcs</a> 第 <a class="el" href="_runtime_8xcs_source.html#l00236">236</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                                           {</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            <span class="keywordflow">return</span> Win32Api.Kernel32.OpenProcess(flag, bi, <a class="code" href="class_runtime_1_1_o_s_process.html#a1aabd66fd7d043d3718d58261b91ee8a">processId</a>);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        }</div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a1aabd66fd7d043d3718d58261b91ee8a"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a1aabd66fd7d043d3718d58261b91ee8a">Runtime.OSProcess.processId</a></div><div class="ttdeci">int processId</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00183">Runtime.xcs:183</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">结构体成员变量说明</h2>
+<a class="anchor" id="a5f4dd69acf9d95c07f378027b150d8db"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_string.html">String</a> exepath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_runtime_8xcs_source.html">Runtime.xcs</a> 第 <a class="el" href="_runtime_8xcs_source.html#l00185">185</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9a2326f35466e54c36c070829245c557"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_string.html">String</a> name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_runtime_8xcs_source.html">Runtime.xcs</a> 第 <a class="el" href="_runtime_8xcs_source.html#l00184">184</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1aabd66fd7d043d3718d58261b91ee8a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int processId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_runtime_8xcs_source.html">Runtime.xcs</a> 第 <a class="el" href="_runtime_8xcs_source.html#l00183">183</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

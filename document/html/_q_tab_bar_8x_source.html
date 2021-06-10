@@ -1,0 +1,450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/xlibrarys/QT&amp;XLIB/QXLibrary/qt5/widgets/QTabBar.x 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v3.6 Release</span>
+   </div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c26b241c633baa98de380b3fd590c11c.html">xlibrarys</a></li><li class="navelem"><a class="el" href="dir_5666ad1a9fdeb818d224f872b324982b.html">QT&amp;XLIB</a></li><li class="navelem"><a class="el" href="dir_7961984395364fe113330b5319164161.html">QXLibrary</a></li><li class="navelem"><a class="el" href="dir_0d599f6f40044cb1083515dc54bda2af.html">qt5</a></li><li class="navelem"><a class="el" href="dir_cfcbf8b0d8f6d8bd829feb69f92de4d5.html">widgets</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">QTabBar.x</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_q_tab_bar_8x.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//xlang Source, Name:qt5/QXSlider.x </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//Date: Thu Oct 16:38:58 2020 </span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">package </span>Qt{</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html">    5</a></span>&#160;    public class QTabBar : QAbstractSlider{</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#abb16c9895354891d0a67eab6c698de4e">    7</a></span>&#160;        public QTabBar(){</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        }</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a7a6681ef4a8875a20ece1f6f32c13f9c">   11</a></span>&#160;        public QTabBar(long handle){</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;            super(handle);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        }</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a5ed14e142d54ed69888ce16f9e7244e4">   15</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a5ed14e142d54ed69888ce16f9e7244e4">create</a>()<span class="keyword">override </span>{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            nativehandle = QtXnl.createQObject(QType.qtTabBar, <span class="keyword">this</span>, 0);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <span class="keywordflow">if</span> (nativehandle == 0){</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a982062cd6a29a737cef52fbae701d3d6">   23</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a982062cd6a29a737cef52fbae701d3d6">create</a>(@NotNilptr QWidget parent)<span class="keyword">override </span>{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            nativehandle = QtXnl.createQObject(QType.qtTabBar, <span class="keyword">this</span>, parent.nativehandle);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordflow">if</span> (nativehandle == 0){</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }    </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_tab_bar_1_1_shape.html#ac736f142db3af1a43c874889de6d6a32">   31</a></span>&#160;        <span class="keyword">enum</span> Shape { RoundedNorth, RoundedSouth, <a class="code" href="enum_qt_1_1_q_tab_bar_1_1_shape.html#ac736f142db3af1a43c874889de6d6a32">RoundedWest</a>, RoundedEast,</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_tab_bar_1_1_shape.html#a5798ccca1b6f78fbb8cc3f557ab61009">   32</a></span>&#160;                     TriangularNorth, TriangularSouth, <a class="code" href="enum_qt_1_1_q_tab_bar_1_1_shape.html#a5798ccca1b6f78fbb8cc3f557ab61009">TriangularWest</a>, TriangularEast</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        };</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_tab_bar_1_1_button_position.html">   36</a></span>&#160;        <span class="keyword">enum</span> ButtonPosition {</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_tab_bar_1_1_button_position.html#a7854856036b90896106eaca0f503830f">   37</a></span>&#160;            <a class="code" href="enum_qt_1_1_q_tab_bar_1_1_button_position.html#a7854856036b90896106eaca0f503830f">LeftSide</a>,</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_tab_bar_1_1_button_position.html#ae2ad23203c0326b9d6ea61645c999f5b">   38</a></span>&#160;            RightSide</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        };</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_tab_bar_1_1_selection_behavior.html">   41</a></span>&#160;        <span class="keyword">enum</span> SelectionBehavior {</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_tab_bar_1_1_selection_behavior.html#aa5ce39d8b4193fd6eb673218e042d264">   42</a></span>&#160;            <a class="code" href="enum_qt_1_1_q_tab_bar_1_1_selection_behavior.html#aa5ce39d8b4193fd6eb673218e042d264">SelectLeftTab</a>,</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_tab_bar_1_1_selection_behavior.html#ad8dd2e2a747925ab2ac97c304400fb5a">   43</a></span>&#160;            <a class="code" href="enum_qt_1_1_q_tab_bar_1_1_selection_behavior.html#ad8dd2e2a747925ab2ac97c304400fb5a">SelectRightTab</a>,</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_tab_bar_1_1_selection_behavior.html#afbd3c4988f2468c9cbb22a5aa9fb247b">   44</a></span>&#160;            SelectPreviousTab</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        };</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="comment">// callback</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#aa5b27daeabfdb9f208ea931249968c2e">   48</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#aa5b27daeabfdb9f208ea931249968c2e">currentChanged</a>(<span class="keywordtype">int</span> index){</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a5d3accf5016aa53e46d551b7149b6f8c">   52</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a5d3accf5016aa53e46d551b7149b6f8c">tabCloseRequested</a>(<span class="keywordtype">int</span> index){</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a4448ae0fd5f5c073ecfb0f86d1248209">   56</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a4448ae0fd5f5c073ecfb0f86d1248209">tabMoved</a>(<span class="keywordtype">int</span> from, <span class="keywordtype">int</span> to){</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#af06636febfc22b2d001cccf7fe8aff9b">   60</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#af06636febfc22b2d001cccf7fe8aff9b">tabBarClicked</a>(<span class="keywordtype">int</span> index){</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#ad37d5a4a90bc4efca2f3cc8f39164a3d">   64</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#ad37d5a4a90bc4efca2f3cc8f39164a3d">tabBarDoubleClicked</a>(<span class="keywordtype">int</span> index){</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">// methods</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a8be9caf80b70af3eecb3cd577eede3d4">   69</a></span>&#160;        <span class="keyword">public</span> Shape <a class="code" href="class_qt_1_1_q_tab_bar.html#a8be9caf80b70af3eecb3cd577eede3d4">shape</a>() {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">return</span> (Shape)QtXnl.widget_get_int_value(nativehandle, Constant.TABBARSHAPE);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a39216c02064ec0c2d598aa12266bd499">   73</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a39216c02064ec0c2d598aa12266bd499">setShape</a>(Shape shape){</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            QtXnl.widget_set_vint_value(nativehandle, Constant.TABBARSETSHAPE, shape);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#ac8956058c4225257380f252d2091bbf4">   77</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#ac8956058c4225257380f252d2091bbf4">addTab</a>( <a class="code" href="class_string.html">String</a> text){</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_set_intstring_value(nativehandle, Constant.TABBARADDTAB, 0, text);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a9ff4ce8d4ad8eb6eb74ebc8ee99c3b54">   80</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a9ff4ce8d4ad8eb6eb74ebc8ee99c3b54">addTab</a>( QIcon icon,  <a class="code" href="class_string.html">String</a> text){</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">return</span> QtXnl.long_longstring(nativehandle, Constant.TABBARADDTAB, icon.nativehandle, text);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a977bf4c4f61404bca53d5c0e217cece3">   84</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a977bf4c4f61404bca53d5c0e217cece3">insertTab</a>(<span class="keywordtype">int</span> index,  <a class="code" href="class_string.html">String</a> text){</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_set_intstring_value(nativehandle, Constant.TABBARINSERTTAB, index, text);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a3db02b4de6fd223be5f8b74ad4370611">   88</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a3db02b4de6fd223be5f8b74ad4370611">removeTab</a>(<span class="keywordtype">int</span> index){</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            QtXnl.widget_set_vint_value(nativehandle, Constant.TABBARREMOVETAB, index);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a011212fecf42379b8d0e5dcbbcb6a313">   91</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a011212fecf42379b8d0e5dcbbcb6a313">moveTab</a>(<span class="keywordtype">int</span> from, <span class="keywordtype">int</span> to){</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            QtXnl.widget_set_v2int_value(nativehandle, Constant.TABBARMOVETAB, from, to);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a420f912fc34c6efb59319788609781a0">   95</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a420f912fc34c6efb59319788609781a0">isTabEnabled</a>(<span class="keywordtype">int</span> index) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_int_bool(nativehandle, Constant.TABBARISTABENABLED, index);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a4aa14a60daca12aa447df080d4a7a3ea">   99</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a4aa14a60daca12aa447df080d4a7a3ea">setTabEnabled</a>(<span class="keywordtype">int</span> index, <span class="keywordtype">bool</span> b){</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            QtXnl.widget_set_int_bool_value(nativehandle, Constant.TABBARSETTABENABLED, index, b);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a238e91006f575b757d9c526c4884a46f">  103</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_qt_1_1_q_tab_bar.html#a238e91006f575b757d9c526c4884a46f">tabText</a>(<span class="keywordtype">int</span> index) {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordflow">return</span> (<a class="code" href="class_string.html">String</a>)QtXnl.core_getStringlongint(nativehandle, Constant.TABBARTABTEXT, 0, index);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a9f1a68f361de9fed9529fc9af8b47834">  107</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a9f1a68f361de9fed9529fc9af8b47834">setTabText</a>(<span class="keywordtype">int</span> index,  <a class="code" href="class_string.html">String</a> text){</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            QtXnl.widget_set_intstring_value(nativehandle, Constant.TABBARSETTABTEXT, index, text);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a8e1b2db6614f766c314253b4cbf2d5ea">  111</a></span>&#160;        <span class="keywordtype">long</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a8e1b2db6614f766c314253b4cbf2d5ea">tabTextColor</a>(<span class="keywordtype">int</span> index) {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordflow">return</span> QtXnl.long_intlong(nativehandle, Constant.TABBARTABTEXTCOLOR, index);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        </div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a9c3972ae28178ff798ca082c1f9347c8">  115</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a9c3972ae28178ff798ca082c1f9347c8">setTabTextColor</a>(<span class="keywordtype">int</span> index,  <span class="keywordtype">long</span> color){</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            QtXnl.void_long2(nativehandle, Constant.TABBARSETTABTEXTCOLOR, index, color);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        </div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a0cd80a0deb5b9dce416132c1ea6e59d3">  119</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a0cd80a0deb5b9dce416132c1ea6e59d3">setTabIcon</a>(<span class="keywordtype">int</span> index,  QIcon icon){</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            QtXnl.object_set_long_int_long(nativehandle, Constant.TABBARSETTABICON, 0, index, icon.nativehandle);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a14465935687a3bf9108fd3c8a807f6f9">  123</a></span>&#160;        <span class="keyword">public</span> TextElideMode <a class="code" href="class_qt_1_1_q_tab_bar.html#a14465935687a3bf9108fd3c8a807f6f9">elideMode</a>() {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="keywordflow">return</span> (TextElideMode)QtXnl.widget_get_int_value(nativehandle, Constant.TABBARELIDEMODE);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        </div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a9c4c7a67f6bec1ef2524c87c744c10aa">  127</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a9c4c7a67f6bec1ef2524c87c744c10aa">setElideMode</a>(TextElideMode tem){</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            QtXnl.widget_set_vint_value(nativehandle, Constant.TABBARSETELIDEMODE, tem);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a54a1f3994813aeb484908c73bb7c71d2">  132</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a54a1f3994813aeb484908c73bb7c71d2">setTabToolTip</a>(<span class="keywordtype">int</span> index,  <a class="code" href="class_string.html">String</a> tip){</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            QtXnl.widget_set_intstring_value(nativehandle, Constant.TABBARSETTABTOOLTIP, index, tip);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        </div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#aeeb2a7d1db3031c7dd9d318970c73c2f">  136</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_qt_1_1_q_tab_bar.html#aeeb2a7d1db3031c7dd9d318970c73c2f">tabToolTip</a>(<span class="keywordtype">int</span> index) {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <span class="keywordflow">return</span> (<a class="code" href="class_string.html">String</a>)QtXnl.core_getStringlongint(nativehandle, Constant.TABBARTABTOOLTIP, 0, index);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        }</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#aeb1863ff40080e3e00d9fd6b852c3e19">  140</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#aeb1863ff40080e3e00d9fd6b852c3e19">setTabWhatsThis</a>(<span class="keywordtype">int</span> index,  <a class="code" href="class_string.html">String</a> text){</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            QtXnl.widget_set_intstring_value(nativehandle, Constant.TABBARSETTABWHATSTHIS, index, text);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        }</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        </div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#abc13188fb42173f02b3cc42251b4224a">  144</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_qt_1_1_q_tab_bar.html#abc13188fb42173f02b3cc42251b4224a">tabWhatsThis</a>(<span class="keywordtype">int</span> index) {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="keywordflow">return</span> (<a class="code" href="class_string.html">String</a>)QtXnl.core_getStringlongint(nativehandle, Constant.TABBARTABWHATSTHIS, 0, index);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="comment">/*public void setTabData(int index,  QVariant data){</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment">            </span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">        }</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">        </span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">        public QVariant tabData(int index) {</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment">            </span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment">        }</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment">        public QRect tabRect(int index) {</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment">            </span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment">        }*/</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        </div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a048c564da9d444e887ef2ef772d59e94">  161</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a048c564da9d444e887ef2ef772d59e94">tabAt</a>( QPoint pos) {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_set_v2int_value(nativehandle, Constant.TABBARTABAT, pos.x, pos.y);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a89cf528c3e53736b292693249e6b68eb">  165</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a89cf528c3e53736b292693249e6b68eb">currentIndex</a>() {</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_int_value(nativehandle, Constant.TABBARCURRENTINDEX);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        </div>
+<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a0ad7fb1f19128d63e4b48bbd7a5a0c07">  169</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a0ad7fb1f19128d63e4b48bbd7a5a0c07">count</a>() {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_int_value(nativehandle, Constant.TABBARCOUNT);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#ac39e5fe7ac775e769afb1b63e16466d2">  173</a></span>&#160;        <span class="keyword">public</span> QSize <a class="code" href="class_qt_1_1_q_tab_bar.html#ac39e5fe7ac775e769afb1b63e16466d2">sizeHint</a>(){</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <span class="keywordtype">long</span> lsize = QtXnl.long_get(nativehandle, Constant.TABBARSIZEHINT);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> QSize(lsize &gt;&gt; 32 &amp; 0xffffffff, lsize  &amp; 0xffffffff);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        </div>
+<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a32ea6070dcf24461c49f3abe926ea776">  178</a></span>&#160;        <span class="keyword">public</span> QSize <a class="code" href="class_qt_1_1_q_tab_bar.html#a32ea6070dcf24461c49f3abe926ea776">minimumSizeHint</a>(){</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            <span class="keywordtype">long</span> lsize = QtXnl.long_get(nativehandle, Constant.TABBARMINIMUMSIZEHINT);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> QSize(lsize &gt;&gt; 32 &amp; 0xffffffff, lsize  &amp; 0xffffffff);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a1aee5c757fbf2024a77c0b15ffee24ec">  183</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a1aee5c757fbf2024a77c0b15ffee24ec">setDrawBase</a>(<span class="keywordtype">bool</span> drawTheBase){</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            QtXnl.widget_set_bool_value(nativehandle, Constant.TABBARSETDRAWBASE, drawTheBase);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        </div>
+<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a341d6700270e4b05871b7c2efeb890d6">  187</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a341d6700270e4b05871b7c2efeb890d6">drawBase</a>(){</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_bool_value(nativehandle,Constant.TABBARDRAWBASE);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a25896bdb592f3991a83eb397675e4348">  191</a></span>&#160;        <span class="keyword">public</span> QSize <a class="code" href="class_qt_1_1_q_tab_bar.html#a25896bdb592f3991a83eb397675e4348">iconSize</a>(){</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            <span class="keywordtype">long</span> lsize = QtXnl.long_get(nativehandle, Constant.TABBARICONSIZE);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span>  QSize(lsize &gt;&gt; 32 &amp; 0xffffffff, lsize  &amp; 0xffffffff);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        }</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        </div>
+<div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a3609303dd22f3acb12ca7fc75440cfd3">  196</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a3609303dd22f3acb12ca7fc75440cfd3">setIconSize</a>( QSize size){</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            QtXnl.widget_set_v2int_value(nativehandle, Constant.TABBARSETICONSIZE, size.cx, size.cy);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#ad1f5479e4fddbda88baa30995fba9553">  200</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#ad1f5479e4fddbda88baa30995fba9553">usesScrollButtons</a>() {</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_bool_value(nativehandle,Constant.TABBARUSESSCROLLBUTTONS);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        }</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        </div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a8f347f8f8743a7e55866e00c7b721038">  204</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a8f347f8f8743a7e55866e00c7b721038">setUsesScrollButtons</a>(<span class="keywordtype">bool</span> useButtons){</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            QtXnl.widget_set_bool_value(nativehandle, Constant.TABBARUSEBUTTONS, useButtons);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        }</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#acef66032e76ab724b130b63d695727f3">  208</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#acef66032e76ab724b130b63d695727f3">tabsClosable</a>() {</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_bool_value(nativehandle,Constant.TABBARTABSCLOSABLE);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        }</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        </div>
+<div class="line"><a name="l00212"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a64e99f40d6d8f4e2cb42a5f2a632e748">  212</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a64e99f40d6d8f4e2cb42a5f2a632e748">setTabsClosable</a>(<span class="keywordtype">bool</span> closable){</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            QtXnl.widget_set_bool_value(nativehandle, Constant.TABBARSETTABSCLOSABLE, closable);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        }</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a6768e8be5e6280802e8cda40d751bf06">  216</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a6768e8be5e6280802e8cda40d751bf06">setTabButton</a>(<span class="keywordtype">int</span> index, ButtonPosition position, QWidget widget){</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            QtXnl.object_set_long_int_long(nativehandle, Constant.TABBARSETTABBUTTON, index, position, widget.nativehandle);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        }</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        </div>
+<div class="line"><a name="l00220"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a6ce770a1dbe741abcd6dd5dbe24af433">  220</a></span>&#160;        <span class="keyword">public</span> QWidget <a class="code" href="class_qt_1_1_q_tab_bar.html#a6ce770a1dbe741abcd6dd5dbe24af433">tabButton</a>(<span class="keywordtype">int</span> index, ButtonPosition position) {</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            <span class="keywordflow">return</span> (QWidget)QtXnl.object_get_handle2(nativehandle, Constant.TABBARTABBUTTON, index, position);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        }</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#adeb611b51da5b7464c0b004ccdc97612">  224</a></span>&#160;        <span class="keyword">public</span> SelectionBehavior <a class="code" href="class_qt_1_1_q_tab_bar.html#adeb611b51da5b7464c0b004ccdc97612">selectionBehaviorOnRemove</a>() {</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <span class="keywordflow">return</span> (SelectionBehavior)QtXnl.widget_get_int_value(nativehandle, Constant.TABBARSELECTIONBEHAVIORONREMOVE);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        }</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        </div>
+<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#ae6e8e08d0bea7728f62a143187640948">  228</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#ae6e8e08d0bea7728f62a143187640948">setSelectionBehaviorOnRemove</a>(SelectionBehavior behavior){</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            QtXnl.widget_set_vint_value(nativehandle, Constant.TABBARSETSELECTIONBEHAVIORONREMOVE, behavior);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        }</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a547fbffc7f90b98c05ed8ae9ef4970d5">  232</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a547fbffc7f90b98c05ed8ae9ef4970d5">expanding</a>() {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_bool_value(nativehandle,Constant.TABBAREXPANDING);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        }</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        </div>
+<div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#ae981f6caf911169af74b7aefa4a7c79c">  236</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#ae981f6caf911169af74b7aefa4a7c79c">setExpanding</a>(<span class="keywordtype">bool</span> enabled){</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            QtXnl.widget_set_bool_value(nativehandle, Constant.TABBARSETEXPANDING, enabled);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#aa8bb8c4ce44ed8055c2dd2aff4e537c6">  240</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#aa8bb8c4ce44ed8055c2dd2aff4e537c6">isMovable</a>() {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_bool_value(nativehandle,Constant.TABBARISMOVABLE);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        }</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        </div>
+<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#afb9b12f9534b37b3765a6efa8cd73583">  244</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#afb9b12f9534b37b3765a6efa8cd73583">setMovable</a>(<span class="keywordtype">bool</span> movable){</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            QtXnl.widget_set_bool_value(nativehandle, Constant.TABBARSETMOVABLE, movable);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        }</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a1787aeaa9f0dc2c6b59b4a73c790bca1">  248</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a1787aeaa9f0dc2c6b59b4a73c790bca1">documentMode</a>() {</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_bool_value(nativehandle,Constant.TABBARDOCUMENTMODE);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        }</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        </div>
+<div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a0018370f96e34b51f6f21de69d2fadaa">  252</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a0018370f96e34b51f6f21de69d2fadaa">setDocumentMode</a>(<span class="keywordtype">bool</span> set){</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            QtXnl.widget_set_bool_value(nativehandle, Constant.TABBARSETDOCUMENTMODE, set);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        }</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a89ac0a4984549f15161bfe8cd31a7915">  256</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a89ac0a4984549f15161bfe8cd31a7915">autoHide</a>() {</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_bool_value(nativehandle,Constant.TABBARAUTOHIDE);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        }</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        </div>
+<div class="line"><a name="l00260"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#ab264ee81f581fab35226012c67f10f09">  260</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#ab264ee81f581fab35226012c67f10f09">setAutoHide</a>(<span class="keywordtype">bool</span> hide){</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            QtXnl.widget_set_bool_value(nativehandle, Constant.TABBARSETAUTOHIDE, hide);</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a5f66b48550e65a717752c40a6d87db3b">  264</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a5f66b48550e65a717752c40a6d87db3b">changeCurrentOnDrag</a>() {</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_bool_value(nativehandle,Constant.TABBARCHANGECURRENTONDRAG);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        }</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        </div>
+<div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#aa9f9443f1b78b914911910a62211db02">  268</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#aa9f9443f1b78b914911910a62211db02">setChangeCurrentOnDrag</a>(<span class="keywordtype">bool</span> change){</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            QtXnl.widget_set_bool_value(nativehandle, Constant.TABBARSETCHANGECURRENTONDRAG, change);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        }</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
+<div class="line"><a name="l00273"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a0550e2a015ea9b0243ceb7bca885f037">  273</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_qt_1_1_q_tab_bar.html#a0550e2a015ea9b0243ceb7bca885f037">accessibleTabName</a>(<span class="keywordtype">int</span> index) {</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            <span class="keywordflow">return</span> (<a class="code" href="class_string.html">String</a>)QtXnl.object_get_handle(nativehandle, Constant.TABBARACCESSIBLETABNAME, index);</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        }</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        </div>
+<div class="line"><a name="l00277"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#ad37ca1ca397b9e7f461de5ba17f47384">  277</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#ad37ca1ca397b9e7f461de5ba17f47384">setAccessibleTabName</a>(<span class="keywordtype">int</span> index,  <a class="code" href="class_string.html">String</a> name){</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            QtXnl.widget_set_intstring_value(nativehandle, Constant.TABBARSETACCESSIBLETABNAME, index, name);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        }</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
+<div class="line"><a name="l00281"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_tab_bar.html#a0962bc84f032b51b712a16dd0541039b">  281</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_tab_bar.html#a0962bc84f032b51b712a16dd0541039b">setCurrentIndex</a>(<span class="keywordtype">int</span> index){</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            QtXnl.widget_set_vint_value(nativehandle, Constant.TABBARSETCURRENTINDEX, index);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        }</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    };</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;};</div>
+<div class="ttc" id="enum_qt_1_1_q_tab_bar_1_1_selection_behavior_html_aa5ce39d8b4193fd6eb673218e042d264"><div class="ttname"><a href="enum_qt_1_1_q_tab_bar_1_1_selection_behavior.html#aa5ce39d8b4193fd6eb673218e042d264">Qt.QTabBar.SelectionBehavior.SelectLeftTab</a></div><div class="ttdeci">SelectLeftTab</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00042">QTabBar.x:42</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_ad37ca1ca397b9e7f461de5ba17f47384"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#ad37ca1ca397b9e7f461de5ba17f47384">Qt.QTabBar.setAccessibleTabName</a></div><div class="ttdeci">void setAccessibleTabName(int index, String name)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00277">QTabBar.x:277</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a9c3972ae28178ff798ca082c1f9347c8"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a9c3972ae28178ff798ca082c1f9347c8">Qt.QTabBar.setTabTextColor</a></div><div class="ttdeci">void setTabTextColor(int index, long color)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00115">QTabBar.x:115</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a9c4c7a67f6bec1ef2524c87c744c10aa"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a9c4c7a67f6bec1ef2524c87c744c10aa">Qt.QTabBar.setElideMode</a></div><div class="ttdeci">void setElideMode(TextElideMode tem)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00127">QTabBar.x:127</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_abc13188fb42173f02b3cc42251b4224a"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#abc13188fb42173f02b3cc42251b4224a">Qt.QTabBar.tabWhatsThis</a></div><div class="ttdeci">String tabWhatsThis(int index) </div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00144">QTabBar.x:144</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_aeeb2a7d1db3031c7dd9d318970c73c2f"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#aeeb2a7d1db3031c7dd9d318970c73c2f">Qt.QTabBar.tabToolTip</a></div><div class="ttdeci">String tabToolTip(int index) </div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00136">QTabBar.x:136</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a1aee5c757fbf2024a77c0b15ffee24ec"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a1aee5c757fbf2024a77c0b15ffee24ec">Qt.QTabBar.setDrawBase</a></div><div class="ttdeci">void setDrawBase(bool drawTheBase)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00183">QTabBar.x:183</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_ae981f6caf911169af74b7aefa4a7c79c"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#ae981f6caf911169af74b7aefa4a7c79c">Qt.QTabBar.setExpanding</a></div><div class="ttdeci">void setExpanding(bool enabled)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00236">QTabBar.x:236</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_af06636febfc22b2d001cccf7fe8aff9b"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#af06636febfc22b2d001cccf7fe8aff9b">Qt.QTabBar.tabBarClicked</a></div><div class="ttdeci">void tabBarClicked(int index)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00060">QTabBar.x:60</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a977bf4c4f61404bca53d5c0e217cece3"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a977bf4c4f61404bca53d5c0e217cece3">Qt.QTabBar.insertTab</a></div><div class="ttdeci">int insertTab(int index, String text)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00084">QTabBar.x:84</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a547fbffc7f90b98c05ed8ae9ef4970d5"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a547fbffc7f90b98c05ed8ae9ef4970d5">Qt.QTabBar.expanding</a></div><div class="ttdeci">bool expanding() </div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00232">QTabBar.x:232</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a4aa14a60daca12aa447df080d4a7a3ea"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a4aa14a60daca12aa447df080d4a7a3ea">Qt.QTabBar.setTabEnabled</a></div><div class="ttdeci">void setTabEnabled(int index, bool b)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00099">QTabBar.x:99</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a1787aeaa9f0dc2c6b59b4a73c790bca1"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a1787aeaa9f0dc2c6b59b4a73c790bca1">Qt.QTabBar.documentMode</a></div><div class="ttdeci">bool documentMode() </div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00248">QTabBar.x:248</a></div></div>
+<div class="ttc" id="enum_qt_1_1_q_tab_bar_1_1_selection_behavior_html_ad8dd2e2a747925ab2ac97c304400fb5a"><div class="ttname"><a href="enum_qt_1_1_q_tab_bar_1_1_selection_behavior.html#ad8dd2e2a747925ab2ac97c304400fb5a">Qt.QTabBar.SelectionBehavior.SelectRightTab</a></div><div class="ttdeci">SelectRightTab</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00043">QTabBar.x:43</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a420f912fc34c6efb59319788609781a0"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a420f912fc34c6efb59319788609781a0">Qt.QTabBar.isTabEnabled</a></div><div class="ttdeci">bool isTabEnabled(int index) </div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00095">QTabBar.x:95</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a54a1f3994813aeb484908c73bb7c71d2"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a54a1f3994813aeb484908c73bb7c71d2">Qt.QTabBar.setTabToolTip</a></div><div class="ttdeci">void setTabToolTip(int index, String tip)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00132">QTabBar.x:132</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a5f66b48550e65a717752c40a6d87db3b"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a5f66b48550e65a717752c40a6d87db3b">Qt.QTabBar.changeCurrentOnDrag</a></div><div class="ttdeci">bool changeCurrentOnDrag() </div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00264">QTabBar.x:264</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a25896bdb592f3991a83eb397675e4348"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a25896bdb592f3991a83eb397675e4348">Qt.QTabBar.iconSize</a></div><div class="ttdeci">QSize iconSize()</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00191">QTabBar.x:191</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a5ed14e142d54ed69888ce16f9e7244e4"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a5ed14e142d54ed69888ce16f9e7244e4">Qt.QTabBar.create</a></div><div class="ttdeci">bool create() override </div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00015">QTabBar.x:15</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a982062cd6a29a737cef52fbae701d3d6"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a982062cd6a29a737cef52fbae701d3d6">Qt.QTabBar.create</a></div><div class="ttdeci">bool create(@NotNilptr QWidget parent) override </div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00023">QTabBar.x:23</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_aeb1863ff40080e3e00d9fd6b852c3e19"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#aeb1863ff40080e3e00d9fd6b852c3e19">Qt.QTabBar.setTabWhatsThis</a></div><div class="ttdeci">void setTabWhatsThis(int index, String text)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00140">QTabBar.x:140</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a64e99f40d6d8f4e2cb42a5f2a632e748"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a64e99f40d6d8f4e2cb42a5f2a632e748">Qt.QTabBar.setTabsClosable</a></div><div class="ttdeci">void setTabsClosable(bool closable)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00212">QTabBar.x:212</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_ab264ee81f581fab35226012c67f10f09"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#ab264ee81f581fab35226012c67f10f09">Qt.QTabBar.setAutoHide</a></div><div class="ttdeci">void setAutoHide(bool hide)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00260">QTabBar.x:260</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_afb9b12f9534b37b3765a6efa8cd73583"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#afb9b12f9534b37b3765a6efa8cd73583">Qt.QTabBar.setMovable</a></div><div class="ttdeci">void setMovable(bool movable)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00244">QTabBar.x:244</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a6768e8be5e6280802e8cda40d751bf06"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a6768e8be5e6280802e8cda40d751bf06">Qt.QTabBar.setTabButton</a></div><div class="ttdeci">void setTabButton(int index, ButtonPosition position, QWidget widget)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00216">QTabBar.x:216</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a3609303dd22f3acb12ca7fc75440cfd3"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a3609303dd22f3acb12ca7fc75440cfd3">Qt.QTabBar.setIconSize</a></div><div class="ttdeci">void setIconSize( QSize size)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00196">QTabBar.x:196</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a011212fecf42379b8d0e5dcbbcb6a313"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a011212fecf42379b8d0e5dcbbcb6a313">Qt.QTabBar.moveTab</a></div><div class="ttdeci">void moveTab(int from, int to)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00091">QTabBar.x:91</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_aa5b27daeabfdb9f208ea931249968c2e"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#aa5b27daeabfdb9f208ea931249968c2e">Qt.QTabBar.currentChanged</a></div><div class="ttdeci">void currentChanged(int index)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00048">QTabBar.x:48</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_ad1f5479e4fddbda88baa30995fba9553"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#ad1f5479e4fddbda88baa30995fba9553">Qt.QTabBar.usesScrollButtons</a></div><div class="ttdeci">bool usesScrollButtons() </div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00200">QTabBar.x:200</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a0962bc84f032b51b712a16dd0541039b"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a0962bc84f032b51b712a16dd0541039b">Qt.QTabBar.setCurrentIndex</a></div><div class="ttdeci">void setCurrentIndex(int index)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00281">QTabBar.x:281</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a89cf528c3e53736b292693249e6b68eb"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a89cf528c3e53736b292693249e6b68eb">Qt.QTabBar.currentIndex</a></div><div class="ttdeci">int currentIndex() </div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00165">QTabBar.x:165</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a32ea6070dcf24461c49f3abe926ea776"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a32ea6070dcf24461c49f3abe926ea776">Qt.QTabBar.minimumSizeHint</a></div><div class="ttdeci">QSize minimumSizeHint()</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00178">QTabBar.x:178</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_ad37d5a4a90bc4efca2f3cc8f39164a3d"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#ad37d5a4a90bc4efca2f3cc8f39164a3d">Qt.QTabBar.tabBarDoubleClicked</a></div><div class="ttdeci">void tabBarDoubleClicked(int index)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00064">QTabBar.x:64</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_acef66032e76ab724b130b63d695727f3"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#acef66032e76ab724b130b63d695727f3">Qt.QTabBar.tabsClosable</a></div><div class="ttdeci">bool tabsClosable() </div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00208">QTabBar.x:208</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a341d6700270e4b05871b7c2efeb890d6"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a341d6700270e4b05871b7c2efeb890d6">Qt.QTabBar.drawBase</a></div><div class="ttdeci">bool drawBase()</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00187">QTabBar.x:187</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a9ff4ce8d4ad8eb6eb74ebc8ee99c3b54"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a9ff4ce8d4ad8eb6eb74ebc8ee99c3b54">Qt.QTabBar.addTab</a></div><div class="ttdeci">int addTab( QIcon icon, String text)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00080">QTabBar.x:80</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a048c564da9d444e887ef2ef772d59e94"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a048c564da9d444e887ef2ef772d59e94">Qt.QTabBar.tabAt</a></div><div class="ttdeci">int tabAt( QPoint pos) </div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00161">QTabBar.x:161</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_ae6e8e08d0bea7728f62a143187640948"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#ae6e8e08d0bea7728f62a143187640948">Qt.QTabBar.setSelectionBehaviorOnRemove</a></div><div class="ttdeci">void setSelectionBehaviorOnRemove(SelectionBehavior behavior)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00228">QTabBar.x:228</a></div></div>
+<div class="ttc" id="enum_qt_1_1_q_tab_bar_1_1_button_position_html_a7854856036b90896106eaca0f503830f"><div class="ttname"><a href="enum_qt_1_1_q_tab_bar_1_1_button_position.html#a7854856036b90896106eaca0f503830f">Qt.QTabBar.ButtonPosition.LeftSide</a></div><div class="ttdeci">LeftSide</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00037">QTabBar.x:37</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a8f347f8f8743a7e55866e00c7b721038"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a8f347f8f8743a7e55866e00c7b721038">Qt.QTabBar.setUsesScrollButtons</a></div><div class="ttdeci">void setUsesScrollButtons(bool useButtons)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00204">QTabBar.x:204</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a238e91006f575b757d9c526c4884a46f"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a238e91006f575b757d9c526c4884a46f">Qt.QTabBar.tabText</a></div><div class="ttdeci">String tabText(int index) </div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00103">QTabBar.x:103</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a8e1b2db6614f766c314253b4cbf2d5ea"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a8e1b2db6614f766c314253b4cbf2d5ea">Qt.QTabBar.tabTextColor</a></div><div class="ttdeci">long tabTextColor(int index) </div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00111">QTabBar.x:111</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a0ad7fb1f19128d63e4b48bbd7a5a0c07"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a0ad7fb1f19128d63e4b48bbd7a5a0c07">Qt.QTabBar.count</a></div><div class="ttdeci">int count() </div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00169">QTabBar.x:169</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a9f1a68f361de9fed9529fc9af8b47834"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a9f1a68f361de9fed9529fc9af8b47834">Qt.QTabBar.setTabText</a></div><div class="ttdeci">void setTabText(int index, String text)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00107">QTabBar.x:107</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_aa9f9443f1b78b914911910a62211db02"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#aa9f9443f1b78b914911910a62211db02">Qt.QTabBar.setChangeCurrentOnDrag</a></div><div class="ttdeci">void setChangeCurrentOnDrag(bool change)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00268">QTabBar.x:268</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a6ce770a1dbe741abcd6dd5dbe24af433"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a6ce770a1dbe741abcd6dd5dbe24af433">Qt.QTabBar.tabButton</a></div><div class="ttdeci">QWidget tabButton(int index, ButtonPosition position) </div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00220">QTabBar.x:220</a></div></div>
+<div class="ttc" id="enum_qt_1_1_q_tab_bar_1_1_shape_html_ac736f142db3af1a43c874889de6d6a32"><div class="ttname"><a href="enum_qt_1_1_q_tab_bar_1_1_shape.html#ac736f142db3af1a43c874889de6d6a32">Qt.QTabBar.Shape.RoundedWest</a></div><div class="ttdeci">RoundedWest</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00031">QTabBar.x:31</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a0cd80a0deb5b9dce416132c1ea6e59d3"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a0cd80a0deb5b9dce416132c1ea6e59d3">Qt.QTabBar.setTabIcon</a></div><div class="ttdeci">void setTabIcon(int index, QIcon icon)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00119">QTabBar.x:119</a></div></div>
+<div class="ttc" id="enum_qt_1_1_q_tab_bar_1_1_shape_html_a5798ccca1b6f78fbb8cc3f557ab61009"><div class="ttname"><a href="enum_qt_1_1_q_tab_bar_1_1_shape.html#a5798ccca1b6f78fbb8cc3f557ab61009">Qt.QTabBar.Shape.TriangularWest</a></div><div class="ttdeci">TriangularWest</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00032">QTabBar.x:32</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a89ac0a4984549f15161bfe8cd31a7915"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a89ac0a4984549f15161bfe8cd31a7915">Qt.QTabBar.autoHide</a></div><div class="ttdeci">bool autoHide() </div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00256">QTabBar.x:256</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_ac8956058c4225257380f252d2091bbf4"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#ac8956058c4225257380f252d2091bbf4">Qt.QTabBar.addTab</a></div><div class="ttdeci">int addTab( String text)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00077">QTabBar.x:77</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_adeb611b51da5b7464c0b004ccdc97612"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#adeb611b51da5b7464c0b004ccdc97612">Qt.QTabBar.selectionBehaviorOnRemove</a></div><div class="ttdeci">SelectionBehavior selectionBehaviorOnRemove() </div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00224">QTabBar.x:224</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a0018370f96e34b51f6f21de69d2fadaa"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a0018370f96e34b51f6f21de69d2fadaa">Qt.QTabBar.setDocumentMode</a></div><div class="ttdeci">void setDocumentMode(bool set)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00252">QTabBar.x:252</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a5d3accf5016aa53e46d551b7149b6f8c"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a5d3accf5016aa53e46d551b7149b6f8c">Qt.QTabBar.tabCloseRequested</a></div><div class="ttdeci">void tabCloseRequested(int index)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00052">QTabBar.x:52</a></div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_ac39e5fe7ac775e769afb1b63e16466d2"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#ac39e5fe7ac775e769afb1b63e16466d2">Qt.QTabBar.sizeHint</a></div><div class="ttdeci">QSize sizeHint()</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00173">QTabBar.x:173</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a8be9caf80b70af3eecb3cd577eede3d4"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a8be9caf80b70af3eecb3cd577eede3d4">Qt.QTabBar.shape</a></div><div class="ttdeci">Shape shape() </div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00069">QTabBar.x:69</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a3db02b4de6fd223be5f8b74ad4370611"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a3db02b4de6fd223be5f8b74ad4370611">Qt.QTabBar.removeTab</a></div><div class="ttdeci">void removeTab(int index)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00088">QTabBar.x:88</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a14465935687a3bf9108fd3c8a807f6f9"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a14465935687a3bf9108fd3c8a807f6f9">Qt.QTabBar.elideMode</a></div><div class="ttdeci">TextElideMode elideMode() </div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00123">QTabBar.x:123</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a0550e2a015ea9b0243ceb7bca885f037"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a0550e2a015ea9b0243ceb7bca885f037">Qt.QTabBar.accessibleTabName</a></div><div class="ttdeci">String accessibleTabName(int index) </div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00273">QTabBar.x:273</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_aa8bb8c4ce44ed8055c2dd2aff4e537c6"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#aa8bb8c4ce44ed8055c2dd2aff4e537c6">Qt.QTabBar.isMovable</a></div><div class="ttdeci">bool isMovable() </div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00240">QTabBar.x:240</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a4448ae0fd5f5c073ecfb0f86d1248209"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a4448ae0fd5f5c073ecfb0f86d1248209">Qt.QTabBar.tabMoved</a></div><div class="ttdeci">void tabMoved(int from, int to)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00056">QTabBar.x:56</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_tab_bar_html_a39216c02064ec0c2d598aa12266bd499"><div class="ttname"><a href="class_qt_1_1_q_tab_bar.html#a39216c02064ec0c2d598aa12266bd499">Qt.QTabBar.setShape</a></div><div class="ttdeci">void setShape(Shape shape)</div><div class="ttdef"><b>Definition:</b> <a href="_q_tab_bar_8x_source.html#l00073">QTabBar.x:73</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

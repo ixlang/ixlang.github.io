@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.7 Release</span>
+   &#160;<span id="projectnumber">v3.6 Release</span>
    </div>
-   <div id="projectbrief">项目介绍</div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
   </td>
  </tr>
  </tbody>
@@ -82,9 +83,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="intro"></a>
-简介</h1>
-<p>此项目为C++编写的跨平台语言(含编译器+虚拟机).<br />
- 编译器并没有生成机器码, 而是生成了在虚拟机运行的字节码.<br />
+Xlang 程序开发语言 简介</h1>
+<p>更新日志<br />
  2018年6月6日发布Alpha V1.0版本.<br />
  2018年7月5日发布Beta V1.0版本.<br />
  2018年12月15日发布Release V1.0版本.<br />
@@ -100,17 +100,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
  2019年7月20日发布Release V2.5版本.<br />
  2019年8月20日发布Release V2.6版本.<br />
  2019年9月3日发布Release V2.6.1版本.<br />
+ 2019年9月20日发布Release V2.7版本.<br />
+ 2019年10月7日发布Release V2.8版本.<br />
+ 2019年11月20日发布Release V2.9版本.<br />
+ 2019年11月29日发布Release V3.0版本.<br />
+ 2019年12月16日发布Release V3.1版本.<br />
+ 2020年5月20日发布Release V3.2版本.<br />
+ 2020年9月1日发布Release V3.3版本.<br />
+ 2020年11月28日发布Release V3.4版本.<br />
+ 2021年4月4日发布Release V3.5版本.<br />
+ 2021年6月6日发布Release V3.6版本.<br />
  </p>
 <h2><a class="anchor" id="tx"></a>
 介绍:</h2>
-<p>源文件扩展名: *.xcs(源文件) *.xcsm(模块源文件)<br />
+<p>源文件扩展名: *.x(源文件)(3.1新增) *.xcs(源文件) *.xcsm(模块源文件)<br />
  目标文件扩展名: *.exc(x可执行文件,需安装xre[X运行环境]) *.lix(x静态库)<br />
+ 共享库扩展名: *.slx(2.3新增)<br />
+ 链接库扩展名: *.xl(2.3新增)<br />
  开发环境XStudio(1.11.20版本更名), 使用xlang开发, 底层使用了QT界面库.<br />
- 支持调试,代码高亮等一般集成开发环境都具有的特性<br />
  XStudio为开源软件,开源地址为: <a href="http://ixlang.github.io/">http://ixlang.github.io/</a><br />
- XStudio现仅支持开发xlang app.<br />
+ XStudio现已支持开发xlang app 和跨平台的 C/C++项目开发(需要安装扩展).<br />
  XStudio使用C++开发的智能提示和辅助输入.<br />
- <b>注意:在版本变更中有存在极少部分信息与文档不符,如确实需要请联系.</b><br />
+ <b>注意:在版本变更中有存在极少部分信息与文档不符,如需要请联系.</b><br />
  </p>
 <h2><a class="anchor" id="cc"></a>
 编译器: XStudio目录/bin/xlang(.exe) (v2.3更名为xlang,旧名为xcross)</h2>
@@ -177,7 +188,7 @@ int main(String [] args){ <br />
 <tr>
 <td>1</td><td>无论class还是interface,都只能单继承, 不允许多重继承. </td></tr>
 <tr>
-<td>2</td><td>没有enum数据类型(暂时用不到,可能后面考虑添加) </td></tr>
+<td>2</td><td>enum数据类型 </td></tr>
 <tr>
 <td>3</td><td>增强了native api的功能调用,只需要声明 import "**.dll/so" 就可以调用native函数 </td></tr>
 <tr>
@@ -219,7 +230,7 @@ int main(String [] args){ <br />
  interface定义同class<br />
  Object类型可用于任何类型,需要强转<br />
  native定义为 import "模块名"{ native函数列表 };<br />
- native函数声明中用到的类型只有int long byte short double <a class="el" href="class_string.html" title="字符串类 ">String</a> bool Object ObjectPtr 九种类型. ObjectPtr表示取地址, 其他为取对象(String默认取地址)<br />
+ native函数声明中用到的类型有int long byte short double <a class="el" href="class_string.html" title="字符串类 ">String</a> bool Object ObjectPtr float. ObjectPtr 或者 &amp; * 表示取地址(仅用于XNL调用), 其他为取对象(String默认取地址)<br />
  include和require语法: include("文件1", "文件2",..."文件N")<br />
  using语法: using{包1; 包2; 包1.小包1;... 包N};<br />
  类继承语法: a继承b = class a : b { };<br />
@@ -281,7 +292,9 @@ int main(String [] args){ <br />
 <tr>
 <td><em>注意</em> </td><td><em>应该注意数值溢出(超过其表示范围)造成的错误问题.</em> </td></tr>
 <tr>
-<td>double </td><td>双精度浮点数类型(1.7E+10-308~1.7E+10+308) </td></tr>
+<td>float </td><td>单精度浮点数类型(-3.4*10^38 ~ 3.4*10^38) (3.5新增类型) </td></tr>
+<tr>
+<td>double </td><td>双精度浮点数类型(-1.7*10^308 ~ 1.7*10^308) </td></tr>
 <tr>
 <td>bool </td><td>布尔类型(true,false) </td></tr>
 <tr>
@@ -297,7 +310,7 @@ int main(String [] args){ <br />
 <tr>
 <td><a class="el" href="class_exception.html" title="异常类 ">Exception</a> </td><td>异常 </td></tr>
 <tr>
-<td>nilptr </td><td>空指针,可以与任意类进行,但不可以与byte short char int long bool double互相操作 </td></tr>
+<td>nilptr </td><td>空指针,可以与任意类进行,但不可以与byte short char int long bool float double互相操作 </td></tr>
 <tr>
 <td><b>扩展的内置对象</b></td><td>14个 </td></tr>
 <tr>
@@ -340,6 +353,20 @@ int main(String [] args){ <br />
 <td><a class="el" href="class_unreentrant_lock.html" title="Lock 不可重入锁 ">UnreentrantLock</a> </td><td>不可重入锁(2.0新增) </td></tr>
 <tr>
 <td><a class="el" href="class_read_write_lock.html" title="读写锁 ">ReadWriteLock</a> </td><td>读写锁(2.0新增) </td></tr>
+<tr>
+<td><a class="el" href="class_f_s_object.html" title="文件系统对象 3.1新增 ">FSObject</a> </td><td>文件系统对象(3.1新增) </td></tr>
+<tr>
+<td><a class="el" href="class_website.html" title="http 站点类 ">Website</a> </td><td>网站类(2.4新增) </td></tr>
+<tr>
+<td><a class="el" href="class_http_server.html" title="HTTP 服务器 ">HttpServer</a> </td><td>Http服务器类(2.4新增) </td></tr>
+<tr>
+<td><a class="el" href="class_http_server.html" title="HTTP 服务器 ">HttpServer</a> </td><td>Http服务器类(2.4新增) </td></tr>
+<tr>
+<td><a class="el" href="class_http_servlet.html" title="HTTP Servlet 抽象类 ">HttpServlet</a> </td><td>Http Servlet接口(2.4新增) </td></tr>
+<tr>
+<td><a class="el" href="class_http_servlet_request.html" title="http请求类 ">HttpServletRequest</a> </td><td>Http Servlet Request类(2.4新增) </td></tr>
+<tr>
+<td><a class="el" href="class_http_servlet_response.html" title="http响应类 ">HttpServletResponse</a> </td><td>Http Servlet Response类(2.4新增) </td></tr>
 <tr>
 <td>备注</td><td><b>部分新增类未作详细归纳</b> </td></tr>
 </table>
@@ -387,7 +414,7 @@ examples文件夹介绍:</h2>
 <p><b>import cdecl stdcall fastcall pascal operator for while do try catch if break continue</b><br />
  <b>default interface class package static const throw switch case else return new</b><br />
  <b>include using require finally final synchronized_read synchronized_write synchronized</b><br />
- <b> override</b><br />
+ <b> override enum(v3.1新增) public(v3.3新增) protected(v3.3新增) private(v3.3新增) (v3.3新增)</b><br />
 </p>
 <h2><a class="anchor" id="cm1"></a>
 2.注释</h2>
@@ -433,7 +460,7 @@ examples文件夹介绍:</h2>
 <tr>
 <td>（4）</td><td>变量值：在存储单元中放的就是变量值（如果是基本类型放的就是具体值，如果是引用类型放的是内存地址，如果nilptr，表示不指向任何对象） </td></tr>
 <tr>
-<td>（5）</td><td>变量的声明格式：类型 变量名；或者 类型 变量名 = 变量值, 可以同时声明多个变量,多个变量名之间必须用[,]分隔(不含方括号), 如 int a , b, c； </td></tr>
+<td>（5）</td><td>变量的声明格式：类型 变量名；或者 类型 变量名 = 变量值, 可以同时声明多个变量,多个变量名之间必须用[,]分隔(不含方括号), 如 int a , b, c；public, private, protected 对类所在域进行访问控制, 默认private(3.3新增) </td></tr>
 <tr>
 <td>（6）</td><td>变量数组声明时不能有数组长度.<br />
  例: <br />
@@ -463,7 +490,7 @@ examples文件夹介绍:</h2>
 <tr>
 <td>（2）</td><td>成员方法的修饰符 static , final, 非成员方法无效<br />
  static 声明是静态方法, 使用前不需要实例化<br />
- final 只对非static的成员方法有效, 表明该方法不可被派生类重写 </td></tr>
+ final 只对非static的成员方法有效, 表明该方法不可被派生类重写, public, private, protected 对类所在域进行访问控制, 默认private(3.3新增) </td></tr>
 <tr>
 <td>（3）</td><td>非void的方法必须有返回语句. void类型的方法不可有return语句 </td></tr>
 <tr>
@@ -495,7 +522,7 @@ return 返回值;<br />
 <tr>
 <td>（2）</td><td>类的修饰符<br />
  static 声明是静态方法, 使用前不需要实例化, 非成员类使用无效<br />
- final 声明该方法不可被继承 </td></tr>
+ final 声明该方法不可被继承, public, private, protected 对类所在域进行访问控制, 默认private(3.3新增) </td></tr>
 <tr>
 <td>（3）</td><td>基类型:<br />
  基类型可以是任意不被final限定的类, 以及模板类 </td></tr>
@@ -556,12 +583,12 @@ return 返回值;<br />
  </td></tr>
 <tr>
 <td>（13）</td><td>类的继承:<br />
- 一个类可以只允许继承自另外的一个类或者接口, 不允许多重继承 </td></tr>
+ 一个类可以只允许继承自另外的一个类或者接口, 不允许多重继承, 使用访问控制关键字对基类可见性进行控制,默认为private (3.3新增) </td></tr>
 <tr>
 <td>（14）</td><td>类的定义形式<br />
  普通类:<br />
  class 类名{ 类主体 };<br />
- class 类名 : 基类型{ 类主体 };<br />
+ class 类名 : public 基类型{ 类主体 };<br />
  class 类名&lt;模板参数类型1,模板参数类型2....&gt; : 基类型{ 类主体 }; </td></tr>
 </table>
 <h2><a class="anchor" id="fbop"></a>
@@ -726,7 +753,7 @@ import "libxxx"{<br />
  };<br />
 注:旧的import "xxx.dll"形式已在v6.0beta弃用<br />
  动态链接(必须在类中声明):<br />
- class MyNative : Library { <br />
+ class MyNative : <a class="el" href="class_library.html">Library</a> { <br />
  import "libxxx"{<br />
  void stdcall MessageBoxA(int hWnd,String msg, String caption, int flag);<br />
  }; <br />

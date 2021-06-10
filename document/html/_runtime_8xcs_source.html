@@ -1,0 +1,561 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/xlibrarys/Runtime/Runtime.xcs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v3.6 Release</span>
+   </div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c26b241c633baa98de380b3fd590c11c.html">xlibrarys</a></li><li class="navelem"><a class="el" href="dir_a375a9c53296af781587a3fd785e9b3c.html">Runtime</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Runtime.xcs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_runtime_8xcs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//xlang </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="namespace_runtime.html">    3</a></span>&#160;<span class="keyword">package </span>Runtime{</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_runtime_1_1rtlp.html">    5</a></span>&#160;    class rtlp{</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_runtime_1_1rtlp.html#a7beb92705efdb7c35bd4ed7ca135d1e7">    6</a></span>&#160;        public static int rtl_osid = _system_.getPlatformId();</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    };</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_runtime_1_1_unixlike_api.html">    9</a></span>&#160;    <span class="keyword">class </span>UnixlikeApi : <a class="code" href="class_library.html">Library</a>{</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_runtime_1_1_unixlike_api.html#a992c70a16169035bc9e2e8f9953d91ed">   10</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> loaded = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_runtime_1_1_unixlike_api.html#a6fdd5644fade29d344384e33f3f18421">   12</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_runtime_1_1_unixlike_api.html#a6fdd5644fade29d344384e33f3f18421">load_linux</a>(){</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;            <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                loadLibrary(<span class="stringliteral">&quot;libc.so.6&quot;</span>);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            }<span class="keywordflow">catch</span>(<a class="code" href="class_exception.html">Exception</a> e){</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                <a class="code" href="class__system__.html">_system_</a>.output(e.<a class="code" href="class_exception.html#afafd068b736520af1e24269a284980a9">getMessage</a>());</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                    loadLibrary(<span class="stringliteral">&quot;libc.so&quot;</span>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                }<span class="keywordflow">catch</span>(<a class="code" href="class_exception.html">Exception</a> e){</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                    <a class="code" href="class__system__.html">_system_</a>.output(e.<a class="code" href="class_exception.html#afafd068b736520af1e24269a284980a9">getMessage</a>());</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_runtime_1_1_unixlike_api.html#adcae327be226b9e6d99e0506c20e3986">   28</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_runtime_1_1_unixlike_api.html#adcae327be226b9e6d99e0506c20e3986">load</a>(){</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">if</span> (loaded == <span class="keyword">false</span>){</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                <span class="keywordflow">if</span> (rtlp.rtl_osid == 1){</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                    loaded = load_linux();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                    <span class="keywordflow">if</span> (loaded == <span class="keyword">false</span>){</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                        <a class="code" href="class__system__.html">_system_</a>.output(<span class="stringliteral">&quot;can not load libc&quot;</span>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                    }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                    <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                        loadLibrary(<span class="stringliteral">&quot;libc.dylib&quot;</span>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                        loaded = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                    }<span class="keywordflow">catch</span>(<a class="code" href="class_exception.html">Exception</a> e){</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                        <a class="code" href="class__system__.html">_system_</a>.output(e.<a class="code" href="class_exception.html#afafd068b736520af1e24269a284980a9">getMessage</a>());</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">return</span> loaded;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">public</span> <span class="keyword">import</span>{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;             Pointer cdecl readlink (<a class="code" href="class_string.html">String</a> __path,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;             ObjectPtr __buf, Pointer __len);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;             <span class="keywordtype">int</span> cdecl kill(<span class="keywordtype">int</span> pid, <span class="keywordtype">int</span> sig);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        };</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    };</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_runtime_1_1_win32_api.html">   53</a></span>&#160;    <span class="keyword">class </span>Win32Api{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_runtime_1_1_win32_api_1_1_psapi32.html">   55</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span>Psapi32 : <a class="code" href="class_library.html">Library</a>{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_runtime_1_1_win32_api_1_1_psapi32.html#a992c70a16169035bc9e2e8f9953d91ed">   57</a></span>&#160;            <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> loaded = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_runtime_1_1_win32_api_1_1_psapi32.html#adcae327be226b9e6d99e0506c20e3986">   59</a></span>&#160;            <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_runtime_1_1_win32_api_1_1_psapi32.html#adcae327be226b9e6d99e0506c20e3986">load</a>(){</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="keywordflow">if</span> (loaded == <span class="keyword">false</span>){</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                    <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                        loadLibrary(<span class="stringliteral">&quot;psapi.dll&quot;</span>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                        loaded = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                    }<span class="keywordflow">catch</span>(<a class="code" href="class_exception.html">Exception</a> e){</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                        </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <span class="keywordflow">return</span> loaded;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keyword">public</span> <span class="keyword">import</span> {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <span class="keywordtype">int</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                stdcall</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                GetProcessImageFileNameA(</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                    Pointer hProcess,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                    ObjectPtr lpExeName,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                    ObjectPtr lpdwSize</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                    );</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                    </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                <span class="keywordtype">bool</span> stdcall EnumProcessModules(</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                  Pointer  hProcess,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                  ObjectPtr lphModule,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                  <span class="keywordtype">int</span>   cb,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                  ObjectPtr lpcbNeeded</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                );</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <span class="keywordtype">int</span> stdcall GetModuleFileNameExA(</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                  Pointer  hProcess,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                  Pointer hModule,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                  ObjectPtr   lpFilename,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                  <span class="keywordtype">int</span>   nSize</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                );</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            };</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        };</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="class_runtime_1_1_win32_api_1_1_kernel32.html">   96</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span>Kernel32 : <a class="code" href="class_library.html">Library</a>{</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class_runtime_1_1_win32_api_1_1_kernel32.html#a992c70a16169035bc9e2e8f9953d91ed">   98</a></span>&#160;            <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> loaded = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="class_runtime_1_1_win32_api_1_1_kernel32.html#adcae327be226b9e6d99e0506c20e3986">  100</a></span>&#160;            <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_runtime_1_1_win32_api_1_1_kernel32.html#adcae327be226b9e6d99e0506c20e3986">load</a>(){</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                <span class="keywordflow">if</span> (loaded == <span class="keyword">false</span>){</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                    <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                        loadLibrary(<span class="stringliteral">&quot;kernel32.dll&quot;</span>);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                        loaded = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                    }<span class="keywordflow">catch</span>(<a class="code" href="class_exception.html">Exception</a> e){</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                        </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <span class="keywordflow">return</span> loaded;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            </div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="class_runtime_1_1_win32_api_1_1_kernel32.html#acf8490b671e5a065dcc473ae486e9cb4">  112</a></span>&#160;            <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> MAX_PATH = 260,</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="class_runtime_1_1_win32_api_1_1_kernel32.html#aad9e16fe7d0ac8f4b4018d8a2ae87692">  113</a></span>&#160;            TH32CS_SNAPHEAPLIST     = 1,</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="class_runtime_1_1_win32_api_1_1_kernel32.html#a56ddafcd80901d47796c6604f38bf6d2">  114</a></span>&#160;            TH32CS_SNAPPROCESS      = 2,</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="class_runtime_1_1_win32_api_1_1_kernel32.html#a87afec090e3923d8ddd50b75799b6a10">  115</a></span>&#160;            TH32CS_SNAPTHREAD       = 4,</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="class_runtime_1_1_win32_api_1_1_kernel32.html#aba48bf4fe270328b909c54d667d3190b">  116</a></span>&#160;            TH32CS_SNAPMODULE       = 8,</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="class_runtime_1_1_win32_api_1_1_kernel32.html#a586295af958cf4f99feaee3ded53affc">  117</a></span>&#160;            TH32CS_SNAPALL          = TH32CS_SNAPHEAPLIST | TH32CS_SNAPPROCESS | TH32CS_SNAPTHREAD | TH32CS_SNAPMODULE;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="keyword">public</span> <span class="keyword">import</span> {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                Pointer stdcall CreateToolhelp32Snapshot(</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                    <span class="keywordtype">int</span> dwFlags,</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                    <span class="keywordtype">int</span> th32ProcessID</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                );</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                <span class="comment">//结构体356个字节</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                <span class="keywordtype">bool</span> stdcall Process32First(</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                  Pointer hSnapshot,</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                  ObjectPtr lppe</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                );</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                <span class="keywordtype">bool</span> stdcall Process32Next(</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                  Pointer           hSnapshot,</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                  ObjectPtr lppe</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                );</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                <span class="keywordtype">int</span> stdcall lstrlenA(</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                  ObjectPtr lpString</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                );</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                <span class="keywordtype">bool</span> stdcall CloseHandle(</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                    Pointer hObject</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                );</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                <span class="keywordtype">bool</span> stdcall QueryFullProcessImageNameA(</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                  ObjectPtr hProcess,</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                  <span class="keywordtype">int</span>  dwFlags,</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                  ObjectPtr  lpExeName,</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                  ObjectPtr lpdwSize</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                );</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                Pointer stdcall OpenProcess(</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                    <span class="keywordtype">int</span> dwDesiredAccess,</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                    <span class="keywordtype">bool</span> bInheritHandle,</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                    <span class="keywordtype">int</span> dwProcessId);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                    </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                <span class="keywordtype">bool</span> stdcall TerminateProcess(</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                  Pointer hProcess,</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                  <span class="keywordtype">int</span>   uExitCode</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                );</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            };</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        };</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    };</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    </div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="class_runtime_1_1_o_s_process.html">  165</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span>OSProcess{</div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="class_runtime_1_1_o_s_process.html#a9d8fe0d54a7fe72a7946d4553216b9fe">  166</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_runtime_1_1_o_s_process.html#a9d8fe0d54a7fe72a7946d4553216b9fe">OSProcess</a>(){</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        }</div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="class_runtime_1_1_o_s_process.html#ac9f31102869f2a184deab098cb4d015b">  168</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_runtime_1_1_o_s_process.html#ac9f31102869f2a184deab098cb4d015b">OSProcess</a>(<span class="keywordtype">int</span> Id){</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            processId = Id;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        }</div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="class_runtime_1_1_o_s_process.html#a47cc8cdbf9fb7dcbc2eff39528e3e0e8">  171</a></span>&#160;        <a class="code" href="class_runtime_1_1_o_s_process.html#a47cc8cdbf9fb7dcbc2eff39528e3e0e8">OSProcess</a>(byte[] data) <span class="keywordflow">throws</span> <a class="code" href="class_index_out_of_bounds_exception.html">IndexOutOfBoundsException</a> ,<a class="code" href="class_array_store_exception.html">ArrayStoreException</a>,<a class="code" href="class_null_pointer_exception.html">NullPointerException</a>{</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i =0; i &lt;4; i ++){</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                processId = (processId &lt;&lt; 8) | data[8 + 3 -i];</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            byte[] paths = <span class="keyword">new</span> byte[Win32Api.Kernel32.MAX_PATH];</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <a class="code" href="class__system__.html">_system_</a>.<a class="code" href="class__system__.html#a9ee75e93c2c7e9f5176382cbef6c0745">arrayCopy</a>(data,<a class="code" href="class__system__.html">_system_</a>.<a class="code" href="class__system__.html#a0ed297e3d49cab302e8c8902c9c06cce">getOSBit</a>() == 32 ? 36 : 44,paths,0,Win32Api.Kernel32.MAX_PATH);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            <span class="keywordtype">int</span> len = Win32Api.Kernel32.lstrlenA(paths);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            name = <span class="keyword">new</span> <a class="code" href="class_string.html">String</a>(paths, 0, len);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="class_runtime_1_1_o_s_process.html#a1aabd66fd7d043d3718d58261b91ee8a">  183</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_runtime_1_1_o_s_process.html#a1aabd66fd7d043d3718d58261b91ee8a">processId</a>;</div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="class_runtime_1_1_o_s_process.html#a9a2326f35466e54c36c070829245c557">  184</a></span>&#160;        <a class="code" href="class_string.html">String</a> <a class="code" href="class_runtime_1_1_o_s_process.html#a9a2326f35466e54c36c070829245c557">name</a>;</div>
+<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="class_runtime_1_1_o_s_process.html#a5f4dd69acf9d95c07f378027b150d8db">  185</a></span>&#160;        <a class="code" href="class_string.html">String</a> <a class="code" href="class_runtime_1_1_o_s_process.html#a5f4dd69acf9d95c07f378027b150d8db">exepath</a>;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        </div>
+<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="class_runtime_1_1_o_s_process.html#a67283be3f45257d1e0c474c563ebb6b6">  187</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_runtime_1_1_o_s_process.html#a67283be3f45257d1e0c474c563ebb6b6">getId</a>(){</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <span class="keywordflow">return</span> processId;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        </div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="class_runtime_1_1_o_s_process.html#a78ee178b6a73658d65ca60da4d1e6683">  191</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_runtime_1_1_o_s_process.html#a78ee178b6a73658d65ca60da4d1e6683">getName</a>(){</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            <span class="keywordflow">return</span> name;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        }</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        </div>
+<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="class_runtime_1_1_o_s_process.html#a6779d0f135fcec6c7f8a8ee49d7af165">  195</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_runtime_1_1_o_s_process.html#a6779d0f135fcec6c7f8a8ee49d7af165">getPath</a>(){</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <span class="comment">//PROCESS_QUERY_INFORMATION </span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            <span class="keywordflow">if</span> (exepath == nilptr){</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                <span class="keywordflow">if</span> (rtlp.rtl_osid == 0){</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                    <span class="keywordflow">if</span> (<span class="keyword">false</span> == Win32Api.Psapi32.load()){</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                        <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                    }</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                    <span class="keywordtype">long</span> handle = open();</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                    <span class="keywordflow">if</span> (handle &gt; 0){</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                        byte [] path = <span class="keyword">new</span> byte[Win32Api.Kernel32.MAX_PATH];</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                        <span class="keywordtype">int</span> [] pl = <span class="keyword">new</span> <span class="keywordtype">int</span>[1];</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                        <span class="keywordtype">long</span> [] hm = <span class="keyword">new</span> <span class="keywordtype">long</span>[1];</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                        </div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                        pl[0] = Win32Api.Kernel32.MAX_PATH;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                        <span class="keywordtype">int</span> up = 0;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                        <span class="keywordflow">if</span> (Win32Api.Psapi32.EnumProcessModules(handle, hm, 8, up)){</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                            <span class="keywordtype">int</span> len = Win32Api.Psapi32.GetModuleFileNameExA(handle, hm[0], path, Win32Api.Kernel32.MAX_PATH);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                            <span class="keywordflow">if</span> (len &gt; 0){</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                                <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                                    exepath = <span class="keyword">new</span> <a class="code" href="class_string.html">String</a>(path, 0, len);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                                }<span class="keywordflow">catch</span>(<a class="code" href="class_exception.html">Exception</a> e){</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                                    </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                                }</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                            }</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                        }</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                        closeHandle(handle);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                    }</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                }</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            }</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            <span class="keywordflow">return</span> exepath;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        }</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        </div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="class_runtime_1_1_o_s_process.html#a986999407f8bc01d97f23e72f168f0ce">  229</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code" href="class_runtime_1_1_o_s_process.html#a986999407f8bc01d97f23e72f168f0ce">open</a>(){</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            <span class="keywordflow">return</span> Win32Api.Kernel32.OpenProcess(0x001fffff, <span class="keyword">false</span>, processId);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        }</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        </div>
+<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="class_runtime_1_1_o_s_process.html#abca1537c7195c0bfad6bb75643def296">  233</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_runtime_1_1_o_s_process.html#abca1537c7195c0bfad6bb75643def296">closeHandle</a>(<span class="keywordtype">long</span> handle){</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            Win32Api.Kernel32.CloseHandle(handle);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        }</div>
+<div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="class_runtime_1_1_o_s_process.html#a24087786507fa9d4bb3ae40011d1640a">  236</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code" href="class_runtime_1_1_o_s_process.html#a24087786507fa9d4bb3ae40011d1640a">open</a>(<span class="keywordtype">int</span> flag, <span class="keywordtype">bool</span> bi){</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            <span class="keywordflow">return</span> Win32Api.Kernel32.OpenProcess(flag, bi, processId);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        </div>
+<div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="class_runtime_1_1_o_s_process.html#a6eb393eaefb30ee2686c14451bc18378">  240</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_runtime_1_1_o_s_process.html#a6eb393eaefb30ee2686c14451bc18378">kill</a>(<span class="keywordtype">int</span> code){</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            <span class="keywordtype">bool</span> r = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            <span class="keywordflow">if</span> (rtlp.rtl_osid == 0){</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                <span class="keywordtype">long</span> h = open();</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                <span class="keywordflow">if</span> (h &gt; 0){</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                    r = Win32Api.Kernel32.TerminateProcess(h, code);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                    Win32Api.Kernel32.CloseHandle(h);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                }</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                r = 0 == UnixlikeApi.kill(processId, 15);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            }</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            <span class="keywordflow">return</span> r;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        }</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        </div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> </div>
+<div class="line"><a name="l00256"></a><span class="lineno"><a class="line" href="class_runtime_1_1_o_s_process.html#a2dbd1b919cab7991065bea6018b407b8">  256</a></span>&#160;        <a class="code" href="class_list.html">List&lt;OSProcess&gt;</a> <a class="code" href="class_runtime_1_1_o_s_process.html#a2dbd1b919cab7991065bea6018b407b8">listProcesses</a>(){</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            <span class="keywordtype">int</span> osid = <a class="code" href="class__system__.html">_system_</a>.<a class="code" href="class__system__.html#a0667f38c65ced7dfb0404c062c775299">getPlatformId</a>();</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <span class="keywordflow">if</span> (osid == 0){</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                <span class="keywordflow">return</span> getProcessListWin32();</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            }<span class="keywordflow">else</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            <span class="keywordflow">if</span> (osid == 1 || osid == 2){</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                <span class="keywordflow">return</span> getProcessListUnix();</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            }</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        }</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        </div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keyword">static</span> </div>
+<div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="class_runtime_1_1_o_s_process.html#a0f1a3df86581c9b00419e557f1279133">  268</a></span>&#160;        <a class="code" href="class_list.html">List&lt;OSProcess&gt;</a> <a class="code" href="class_runtime_1_1_o_s_process.html#a0f1a3df86581c9b00419e557f1279133">getProcessListUnix</a>(){</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            <a class="code" href="class_list.html">List&lt;OSProcess&gt;</a> plist = nilptr;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            </div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            <span class="keywordflow">if</span> (<span class="keyword">false</span> == UnixlikeApi.load()){</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            }</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            </div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            plist = <span class="keyword">new</span> <a class="code" href="class_list.html">List&lt;OSProcess&gt;</a>();</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            </div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                <a class="code" href="class_f_s_object.html">FSObject</a> file = <span class="keyword">new</span> <a class="code" href="class_f_s_object.html">FSObject</a> (<span class="stringliteral">&quot;/proc&quot;</span>);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                <span class="keywordtype">long</span> hfind = file.<a class="code" href="class_f_s_object.html#aa04415b61d2a7233d2f558b939bdf74c">openDir</a>();</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                <span class="keywordflow">if</span> (hfind != 0){</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                </div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                    <a class="code" href="class_f_s_object.html">FSObject</a> pf = <span class="keyword">new</span> <a class="code" href="class_f_s_object.html">FSObject</a>();</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;          </div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                    <span class="keywordflow">while</span> (file.<a class="code" href="class_f_s_object.html#affbc3ea6ad5bfba1c862999c827f00e3">findObject</a>(hfind,pf)){</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                        <a class="code" href="class_string.html">String</a> pname = pf.<a class="code" href="class_f_s_object.html#a78ee178b6a73658d65ca60da4d1e6683">getName</a>();</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                        <span class="keywordflow">if</span> (pname != nilptr &amp;&amp; pname.<a class="code" href="class_string.html#a4f2a28d6dcee91832eb4cad334d0bca5">isDigit</a>()){</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                            OSProcess process = <span class="keyword">new</span> OSProcess();</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                            <a class="code" href="class_string.html">String</a> fppath = pf.<a class="code" href="class_f_s_object.html#a6779d0f135fcec6c7f8a8ee49d7af165">getPath</a>();</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                            <span class="keywordflow">if</span> (fppath != nilptr){</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                                <a class="code" href="class_string.html">String</a> namepath = fppath.<a class="code" href="class_string.html#a06b3307f453b0d7d725c2ce0ca0094a9">appendPath</a>(<span class="stringliteral">&quot;status&quot;</span>);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                                </div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                                <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                                    <a class="code" href="namespace_file_stream.html">FileStream</a>.<a class="code" href="class_file_stream_1_1_file_input_stream.html">FileInputStream</a> fis = <span class="keyword">new</span> <a class="code" href="namespace_file_stream.html">FileStream</a>.<a class="code" href="class_file_stream_1_1_file_input_stream.html">FileInputStream</a> (namepath);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                                    </div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                                    <a class="code" href="class_string.html">String</a> txtstatus = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                                    </div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                                    byte []status = <span class="keyword">new</span> byte[1024];</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                                    <span class="keywordtype">int</span> rd = 0;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                                    <span class="keywordflow">while</span> ((rd = fis.read(status, 0, 1024)) &gt; 0){</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                                        txtstatus = txtstatus + <span class="keyword">new</span> <a class="code" href="class_string.html">String</a>(status, 0, rd);</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                                    }</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                                    </div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                                    fis.close();</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                                    <span class="keywordtype">int</span> pos = txtstatus.<a class="code" href="class_string.html#a48446b7c30c8cfafa64385ed99b478d7">indexOf</a>(<span class="stringliteral">&quot;Name:&quot;</span>);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                                    <span class="keywordflow">if</span> (pos != -1){</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                                        <span class="keywordtype">int</span> le = txtstatus.<a class="code" href="class_string.html#a48446b7c30c8cfafa64385ed99b478d7">indexOf</a>(<span class="stringliteral">&quot;\n&quot;</span>, pos);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                                        <span class="keywordflow">if</span> (le == -1){</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                                            le = txtstatus.<a class="code" href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">length</a>();</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                                        }</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                                        process.name = txtstatus.<a class="code" href="class_string.html#a3b8d67a9c727bf3cb232920b488d4248">substring</a>(pos + 5, le).<a class="code" href="class_string.html#a24053e961f5f1b3dafea27a7c98538b7">trim</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                                    }</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                                }<span class="keywordflow">catch</span>(<a class="code" href="class_exception.html">Exception</a> e){</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                                </div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                                }</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                                <a class="code" href="class_string.html">String</a> expath = fppath.<a class="code" href="class_string.html#a06b3307f453b0d7d725c2ce0ca0094a9">appendPath</a>(<span class="stringliteral">&quot;exe&quot;</span>);</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                                </div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                                byte [] fullpath = <span class="keyword">new</span> byte[4096];</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                                <span class="keywordtype">long</span> length = UnixlikeApi.readlink(expath,fullpath,(<span class="keywordtype">long</span>)4096);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                                <span class="keywordflow">if</span> (length != -1){</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                                    process.exepath = <span class="keyword">new</span> <a class="code" href="class_string.html">String</a> (fullpath, 0, (<span class="keywordtype">int</span>)length);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                                }</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                                process.processId = pname.<a class="code" href="class_string.html#af80be582b73dff63922eb860218a4095">parseInt</a>();</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                                plist.<a class="code" href="class_list.html#a7aadda5fed3baf7dd2702adf4ac2363c">add</a>(process);</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                            }</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                        }</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                    }</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                   file.<a class="code" href="class_f_s_object.html#aafa72d17fade0de3ff4e890c2c224186">closeDir</a>(hfind); </div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                }</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            }<span class="keywordflow">catch</span>(<a class="code" href="class_exception.html">Exception</a> e){</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                </div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            }</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;            </div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;            <span class="keywordflow">return</span> plist;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        }</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        </div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="keyword">static</span> </div>
+<div class="line"><a name="l00338"></a><span class="lineno"><a class="line" href="class_runtime_1_1_o_s_process.html#a9d3c961ca24e5697d4fbe375ed99fee2">  338</a></span>&#160;        <a class="code" href="class_list.html">List&lt;OSProcess&gt;</a> <a class="code" href="class_runtime_1_1_o_s_process.html#a9d3c961ca24e5697d4fbe375ed99fee2">getProcessListWin32</a>(){</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            <a class="code" href="class_list.html">List&lt;OSProcess&gt;</a> plist = nilptr;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        </div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            <span class="keywordflow">if</span> (<span class="keyword">false</span> == Win32Api.Kernel32.load()){</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            }</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            byte[] <span class="keyword">struct </span>= new byte[356];</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;            <span class="keyword">struct</span>[0] = 08;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            <span class="keyword">struct</span>[1] = 12;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;            plist = <span class="keyword">new</span> <a class="code" href="class_list.html">List&lt;OSProcess&gt;</a>();</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            </div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;            <span class="keywordtype">long</span> snopt = Win32Api.Kernel32.CreateToolhelp32Snapshot(</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                Win32Api.Kernel32.TH32CS_SNAPALL,</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                0);</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            </div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                <span class="keywordflow">if</span> (snopt &gt; 0){</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                    <span class="keywordtype">bool</span> succ = Win32Api.Kernel32.Process32First(snopt,<span class="keyword">struct</span>);</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                    <span class="keywordflow">while</span> (succ){</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                        plist.<a class="code" href="class_list.html#a7aadda5fed3baf7dd2702adf4ac2363c">add</a>(<span class="keyword">new</span> OSProcess(<span class="keyword">struct</span>));</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                        succ = Win32Api.Kernel32.Process32Next(snopt,<span class="keyword">struct</span>);</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                    }</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                    </div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                    Win32Api.Kernel32.CloseHandle(snopt);</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                }</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            }<span class="keywordflow">catch</span>(<a class="code" href="class_exception.html">Exception</a> e){</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                </div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;            }</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;            <span class="keywordflow">return</span> plist;     </div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        }</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    };</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;};</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="comment">package System{</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="comment">    public class out{</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="comment">        public static int println(String text){</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="comment">            return _system_.consoleWrite(text + &quot;\n&quot;);</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="comment">        }</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="comment">        public static int print(String text){</span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="comment">            return _system_.consoleWrite(text);</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="comment">        }</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="comment">    };</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="comment">    </span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="comment">    public class Console{</span></div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="comment">        public Console(){</span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="comment">            _system_.createConsole();</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="comment">        }</span></div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="comment">    };</span></div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="comment">};</span></div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="comment">using { System; };</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="comment">int main(String [] args){</span></div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="comment">    new Console();</span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="comment">    List&lt;Runtime.OSProcess&gt; lists =  Runtime.OSProcess.listProcesses();</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="comment">    List.Iterator&lt;Runtime.OSProcess&gt; iter = lists.iterator();</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="comment">    </span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="comment">    while (iter.hasNext()){</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="comment">        Runtime.OSProcess p = iter.next();</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="comment">        System.out.println(p.getName() + &quot;[&quot; + p.getId() +&quot;] &quot; + p.getPath());</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="comment">    }</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="comment">    </span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="comment">    Thread.sleep(-1);</span></div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="comment">    return 0;</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="comment">}</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="comment">*/</span></div>
+<div class="ttc" id="class_runtime_1_1_unixlike_api_html_a6fdd5644fade29d344384e33f3f18421"><div class="ttname"><a href="class_runtime_1_1_unixlike_api.html#a6fdd5644fade29d344384e33f3f18421">Runtime.UnixlikeApi.load_linux</a></div><div class="ttdeci">static bool load_linux()</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00012">Runtime.xcs:12</a></div></div>
+<div class="ttc" id="class_exception_html"><div class="ttname"><a href="class_exception.html">Exception</a></div><div class="ttdoc">异常类 </div><div class="ttdef"><b>Definition:</b> <a href="_exception_8xcs_source.html#l00006">Exception.xcs:6</a></div></div>
+<div class="ttc" id="class_f_s_object_html_affbc3ea6ad5bfba1c862999c827f00e3"><div class="ttname"><a href="class_f_s_object.html#affbc3ea6ad5bfba1c862999c827f00e3">FSObject.findObject</a></div><div class="ttdeci">bool findObject(long hdir, FSObject object)</div><div class="ttdoc">查找文件系统对象 </div></div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_ac9f31102869f2a184deab098cb4d015b"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#ac9f31102869f2a184deab098cb4d015b">Runtime.OSProcess.OSProcess</a></div><div class="ttdeci">OSProcess(int Id)</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00168">Runtime.xcs:168</a></div></div>
+<div class="ttc" id="class_f_s_object_html_aafa72d17fade0de3ff4e890c2c224186"><div class="ttname"><a href="class_f_s_object.html#aafa72d17fade0de3ff4e890c2c224186">FSObject.closeDir</a></div><div class="ttdeci">void closeDir(long hdir)</div><div class="ttdoc">关闭一个查找ID </div></div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a78ee178b6a73658d65ca60da4d1e6683"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a78ee178b6a73658d65ca60da4d1e6683">Runtime.OSProcess.getName</a></div><div class="ttdeci">String getName()</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00191">Runtime.xcs:191</a></div></div>
+<div class="ttc" id="class_string_html_af80be582b73dff63922eb860218a4095"><div class="ttname"><a href="class_string.html#af80be582b73dff63922eb860218a4095">String.parseInt</a></div><div class="ttdeci">int parseInt()</div><div class="ttdoc">解析为int对象 </div></div>
+<div class="ttc" id="class_runtime_1_1_win32_api_1_1_kernel32_html_adcae327be226b9e6d99e0506c20e3986"><div class="ttname"><a href="class_runtime_1_1_win32_api_1_1_kernel32.html#adcae327be226b9e6d99e0506c20e3986">Runtime.Win32Api.Kernel32.load</a></div><div class="ttdeci">static bool load()</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00100">Runtime.xcs:100</a></div></div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a986999407f8bc01d97f23e72f168f0ce"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a986999407f8bc01d97f23e72f168f0ce">Runtime.OSProcess.open</a></div><div class="ttdeci">long open()</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00229">Runtime.xcs:229</a></div></div>
+<div class="ttc" id="class_file_stream_1_1_file_input_stream_html"><div class="ttname"><a href="class_file_stream_1_1_file_input_stream.html">FileStream.FileInputStream</a></div><div class="ttdef"><b>Definition:</b> <a href="_file_stream_8xcs_source.html#l00004">FileStream.xcs:4</a></div></div>
+<div class="ttc" id="class_index_out_of_bounds_exception_html"><div class="ttname"><a href="class_index_out_of_bounds_exception.html">IndexOutOfBoundsException</a></div><div class="ttdoc">下标越界异常 </div><div class="ttdef"><b>Definition:</b> <a href="_exception_8xcs_source.html#l00126">Exception.xcs:126</a></div></div>
+<div class="ttc" id="class__system___html_a9ee75e93c2c7e9f5176382cbef6c0745"><div class="ttname"><a href="class__system__.html#a9ee75e93c2c7e9f5176382cbef6c0745">_system_.arrayCopy</a></div><div class="ttdeci">static void arrayCopy(Object[] src,long srcpos, Object[] dst,long dstpos, long length)</div><div class="ttdoc">复制数组对象内容,要求类型匹配 </div></div>
+<div class="ttc" id="class__system___html_a0ed297e3d49cab302e8c8902c9c06cce"><div class="ttname"><a href="class__system__.html#a0ed297e3d49cab302e8c8902c9c06cce">_system_.getOSBit</a></div><div class="ttdeci">static int getOSBit()</div><div class="ttdoc">获取操作系统位数 </div></div>
+<div class="ttc" id="class_string_html_a06b3307f453b0d7d725c2ce0ca0094a9"><div class="ttname"><a href="class_string.html#a06b3307f453b0d7d725c2ce0ca0094a9">String.appendPath</a></div><div class="ttdeci">String appendPath(String str)</div><div class="ttdoc">连接路径,该方法会按照平台使用不同的\的/来连接路径串 </div></div>
+<div class="ttc" id="class_string_html_a48446b7c30c8cfafa64385ed99b478d7"><div class="ttname"><a href="class_string.html#a48446b7c30c8cfafa64385ed99b478d7">String.indexOf</a></div><div class="ttdeci">int indexOf(String sub, int pos)</div><div class="ttdoc">从串的前面查找另一个穿的位置 </div></div>
+<div class="ttc" id="class_string_html_a3b8d67a9c727bf3cb232920b488d4248"><div class="ttname"><a href="class_string.html#a3b8d67a9c727bf3cb232920b488d4248">String.substring</a></div><div class="ttdeci">String substring(int start, int end)</div><div class="ttdoc">在串中截取子串 </div></div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a9a2326f35466e54c36c070829245c557"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a9a2326f35466e54c36c070829245c557">Runtime.OSProcess.name</a></div><div class="ttdeci">String name</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00184">Runtime.xcs:184</a></div></div>
+<div class="ttc" id="class_list_html"><div class="ttname"><a href="class_list.html">List</a></div><div class="ttdoc">map容器 </div><div class="ttdef"><b>Definition:</b> <a href="_list_8xcs_source.html#l00006">List.xcs:6</a></div></div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a6eb393eaefb30ee2686c14451bc18378"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a6eb393eaefb30ee2686c14451bc18378">Runtime.OSProcess.kill</a></div><div class="ttdeci">bool kill(int code)</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00240">Runtime.xcs:240</a></div></div>
+<div class="ttc" id="class_string_html_a24053e961f5f1b3dafea27a7c98538b7"><div class="ttname"><a href="class_string.html#a24053e961f5f1b3dafea27a7c98538b7">String.trim</a></div><div class="ttdeci">String trim(bool bc)</div><div class="ttdoc">去除串两端的空白字符 并生成新串 </div></div>
+<div class="ttc" id="class_list_html_a7aadda5fed3baf7dd2702adf4ac2363c"><div class="ttname"><a href="class_list.html#a7aadda5fed3baf7dd2702adf4ac2363c">List.add</a></div><div class="ttdeci">void add(_V val)</div><div class="ttdoc">插入数据 </div></div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a0f1a3df86581c9b00419e557f1279133"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a0f1a3df86581c9b00419e557f1279133">Runtime.OSProcess.getProcessListUnix</a></div><div class="ttdeci">static List&lt;OSProcess&gt; getProcessListUnix()</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00268">Runtime.xcs:268</a></div></div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a9d8fe0d54a7fe72a7946d4553216b9fe"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a9d8fe0d54a7fe72a7946d4553216b9fe">Runtime.OSProcess.OSProcess</a></div><div class="ttdeci">OSProcess()</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00166">Runtime.xcs:166</a></div></div>
+<div class="ttc" id="class_string_html_a4f2a28d6dcee91832eb4cad334d0bca5"><div class="ttname"><a href="class_string.html#a4f2a28d6dcee91832eb4cad334d0bca5">String.isDigit</a></div><div class="ttdeci">bool isDigit()</div><div class="ttdoc">测试串是否数字 </div></div>
+<div class="ttc" id="class__system___html_a0667f38c65ced7dfb0404c062c775299"><div class="ttname"><a href="class__system__.html#a0667f38c65ced7dfb0404c062c775299">_system_.getPlatformId</a></div><div class="ttdeci">static int getPlatformId()</div><div class="ttdoc">获取平台操作系统ID 0 WINDOWS 1 LINUX 2 MAC OSX 3 iPhone 模拟器 4 iPhone 5 unix 6 其他poxis环境 ...</div></div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a6779d0f135fcec6c7f8a8ee49d7af165"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a6779d0f135fcec6c7f8a8ee49d7af165">Runtime.OSProcess.getPath</a></div><div class="ttdeci">String getPath()</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00195">Runtime.xcs:195</a></div></div>
+<div class="ttc" id="class_runtime_1_1_unixlike_api_html_adcae327be226b9e6d99e0506c20e3986"><div class="ttname"><a href="class_runtime_1_1_unixlike_api.html#adcae327be226b9e6d99e0506c20e3986">Runtime.UnixlikeApi.load</a></div><div class="ttdeci">static bool load()</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00028">Runtime.xcs:28</a></div></div>
+<div class="ttc" id="class_f_s_object_html"><div class="ttname"><a href="class_f_s_object.html">FSObject</a></div><div class="ttdoc">文件系统对象 3.1新增 </div><div class="ttdef"><b>Definition:</b> <a href="_f_s_object_8xcs_source.html#l00006">FSObject.xcs:6</a></div></div>
+<div class="ttc" id="class__system___html"><div class="ttname"><a href="class__system__.html">_system_</a></div><div class="ttdoc">系统和IO相关 </div><div class="ttdef"><b>Definition:</b> <a href="_system_8xcs_source.html#l00006">System.xcs:6</a></div></div>
+<div class="ttc" id="class_runtime_1_1_win32_api_1_1_psapi32_html_adcae327be226b9e6d99e0506c20e3986"><div class="ttname"><a href="class_runtime_1_1_win32_api_1_1_psapi32.html#adcae327be226b9e6d99e0506c20e3986">Runtime.Win32Api.Psapi32.load</a></div><div class="ttdeci">static bool load()</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00059">Runtime.xcs:59</a></div></div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a67283be3f45257d1e0c474c563ebb6b6"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a67283be3f45257d1e0c474c563ebb6b6">Runtime.OSProcess.getId</a></div><div class="ttdeci">int getId()</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00187">Runtime.xcs:187</a></div></div>
+<div class="ttc" id="class_f_s_object_html_aa04415b61d2a7233d2f558b939bdf74c"><div class="ttname"><a href="class_f_s_object.html#aa04415b61d2a7233d2f558b939bdf74c">FSObject.openDir</a></div><div class="ttdeci">long openDir()</div><div class="ttdoc">打开文件夹 </div></div>
+<div class="ttc" id="class_f_s_object_html_a78ee178b6a73658d65ca60da4d1e6683"><div class="ttname"><a href="class_f_s_object.html#a78ee178b6a73658d65ca60da4d1e6683">FSObject.getName</a></div><div class="ttdeci">String getName()</div><div class="ttdoc">获取文件系统对象的名称 </div></div>
+<div class="ttc" id="class_exception_html_afafd068b736520af1e24269a284980a9"><div class="ttname"><a href="class_exception.html#afafd068b736520af1e24269a284980a9">Exception.getMessage</a></div><div class="ttdeci">String getMessage()</div><div class="ttdoc">读取异常消息 </div></div>
+<div class="ttc" id="class_null_pointer_exception_html"><div class="ttname"><a href="class_null_pointer_exception.html">NullPointerException</a></div><div class="ttdoc">空指针异常 </div><div class="ttdef"><b>Definition:</b> <a href="_exception_8xcs_source.html#l00054">Exception.xcs:54</a></div></div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_abca1537c7195c0bfad6bb75643def296"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#abca1537c7195c0bfad6bb75643def296">Runtime.OSProcess.closeHandle</a></div><div class="ttdeci">void closeHandle(long handle)</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00233">Runtime.xcs:233</a></div></div>
+<div class="ttc" id="class_f_s_object_html_a6779d0f135fcec6c7f8a8ee49d7af165"><div class="ttname"><a href="class_f_s_object.html#a6779d0f135fcec6c7f8a8ee49d7af165">FSObject.getPath</a></div><div class="ttdeci">String getPath()</div><div class="ttdoc">获取文件系统对象的路径 </div></div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a1aabd66fd7d043d3718d58261b91ee8a"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a1aabd66fd7d043d3718d58261b91ee8a">Runtime.OSProcess.processId</a></div><div class="ttdeci">int processId</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00183">Runtime.xcs:183</a></div></div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a9d3c961ca24e5697d4fbe375ed99fee2"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a9d3c961ca24e5697d4fbe375ed99fee2">Runtime.OSProcess.getProcessListWin32</a></div><div class="ttdeci">static List&lt;OSProcess&gt; getProcessListWin32()</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00338">Runtime.xcs:338</a></div></div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a5f4dd69acf9d95c07f378027b150d8db"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a5f4dd69acf9d95c07f378027b150d8db">Runtime.OSProcess.exepath</a></div><div class="ttdeci">String exepath</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00185">Runtime.xcs:185</a></div></div>
+<div class="ttc" id="class_string_html_a3d0f4ae571310c6ed081daa3985ecb47"><div class="ttname"><a href="class_string.html#a3d0f4ae571310c6ed081daa3985ecb47">String.length</a></div><div class="ttdeci">int length()</div><div class="ttdoc">获取字串长度 </div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="namespace_file_stream_html"><div class="ttname"><a href="namespace_file_stream.html">FileStream</a></div><div class="ttdef"><b>Definition:</b> <a href="_file_stream_8xcs_source.html#l00001">FileStream.xcs:1</a></div></div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a24087786507fa9d4bb3ae40011d1640a"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a24087786507fa9d4bb3ae40011d1640a">Runtime.OSProcess.open</a></div><div class="ttdeci">long open(int flag, bool bi)</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00236">Runtime.xcs:236</a></div></div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a47cc8cdbf9fb7dcbc2eff39528e3e0e8"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a47cc8cdbf9fb7dcbc2eff39528e3e0e8">Runtime.OSProcess.OSProcess</a></div><div class="ttdeci">OSProcess(byte[] data)</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00171">Runtime.xcs:171</a></div></div>
+<div class="ttc" id="class_runtime_1_1_o_s_process_html_a2dbd1b919cab7991065bea6018b407b8"><div class="ttname"><a href="class_runtime_1_1_o_s_process.html#a2dbd1b919cab7991065bea6018b407b8">Runtime.OSProcess.listProcesses</a></div><div class="ttdeci">static List&lt;OSProcess&gt; listProcesses()</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_8xcs_source.html#l00256">Runtime.xcs:256</a></div></div>
+<div class="ttc" id="class_array_store_exception_html"><div class="ttname"><a href="class_array_store_exception.html">ArrayStoreException</a></div><div class="ttdoc">数组储存异常 </div><div class="ttdef"><b>Definition:</b> <a href="_exception_8xcs_source.html#l00102">Exception.xcs:102</a></div></div>
+<div class="ttc" id="class_library_html"><div class="ttname"><a href="class_library.html">Library</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

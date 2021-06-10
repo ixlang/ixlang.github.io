@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.7 Release</span>
+   &#160;<span id="projectnumber">v3.6 Release</span>
    </div>
-   <div id="projectbrief">项目介绍</div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
   </td>
  </tr>
  </tbody>
@@ -100,44 +101,70 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_map_1_1_iterator.html#a041249f802c5bf4c2deae666610e03c4">next</a>();</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_map_1_1_iterator.html#a0bf831f46c2f7ea955007f59d6fdac2c">hasPrevious</a>();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_map_1_1_iterator.html#a0bf831f46c2f7ea955007f59d6fdac2c">hasPrevious</a>();</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        _K <a class="code" href="class_map_1_1_iterator.html#a7f04061a749b7570799c7d195fde7de8">getKey</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_map_1_1_iterator.html#a0b94021bd4ccd4d8f5d939c8fd7ccfb1">previous</a>();</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        _V <a class="code" href="class_map_1_1_iterator.html#a78727a48b47ee1d919d6ed44e49e70c1">getValue</a>();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    };</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_map.html#af4b57d21919c42d55af03391f91a1c08">size</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        _K <a class="code" href="class_map_1_1_iterator.html#a7f04061a749b7570799c7d195fde7de8">getKey</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        Iterator <a class="code" href="class_map_1_1_iterator.html#abb7fa3cacbd3211b01a9ed16e8af0a20">head</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        Iterator <a class="code" href="class_map_1_1_iterator.html#a862c61a12c05ad7c7bbe6898ed2581e7">tail</a>();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_map.html#ab5e2378adae65cd06b6928eebc4cca42">put</a>(_K key, _V val);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    _V <span class="keyword">get</span>(_K key);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        Iterator <a class="code" href="class_map_1_1_iterator.html#abc3613bf5bf3ea0adecddda35f82a515">clone</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        _V <a class="code" href="class_map_1_1_iterator.html#a78727a48b47ee1d919d6ed44e49e70c1">getValue</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    };</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_map.html#a47e67a8191aafd1a6173b7819b4a3fed">containsKey</a>(_K key);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_map.html#af4b57d21919c42d55af03391f91a1c08">size</a>();</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> <span class="keyword">remove</span>(_K key);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    Iterator&lt;_K, _V&gt; <a class="code" href="class_map.html#a33af8b798de2f23e13214901787a89f5">put</a>(_K key, _V val);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> <span class="keyword">remove</span>(Iterator&lt;_K, _V&gt; <a class="code" href="class_map.html#ade5b7a4fecfe1b38d06f0c8dc825cf5c">iterator</a>);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_map.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a>();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    Iterator&lt;_K, _V&gt; <a class="code" href="class_map.html#ade5b7a4fecfe1b38d06f0c8dc825cf5c">iterator</a>();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    _V <span class="keyword">get</span>(_K key);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_map.html#a47e67a8191aafd1a6173b7819b4a3fed">containsKey</a>(_K key);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> <span class="keyword">remove</span>(_K key);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> <span class="keyword">remove</span>(Iterator&lt;_K, _V&gt; <a class="code" href="class_map.html#ade5b7a4fecfe1b38d06f0c8dc825cf5c">iterator</a>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_map.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a>();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    Iterator&lt;_K, _V&gt; <a class="code" href="class_map.html#ade5b7a4fecfe1b38d06f0c8dc825cf5c">iterator</a>();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    _V <a class="code" href="class_map.html#a6cfb4038e87565f55a8f841cb3121c63">operator []</a>(_K key);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    _V <a class="code" href="class_map.html#a6cfb4038e87565f55a8f841cb3121c63">operator []</a>(_K key, _V newValue);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    _V <a class="code" href="class_map.html#a13489a6ce842c73c4bb433856e642f60">findDesc</a>(_K key, <span class="keywordtype">bool</span> bIgnoreEqu);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    _V <a class="code" href="class_map.html#adc0157d649e20f1cd9540d3a9ab353f8">findAsc</a>(_K key, <span class="keywordtype">bool</span> bIgnoreEqu);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;};</div>
 <div class="ttc" id="class_map_html_af4b57d21919c42d55af03391f91a1c08"><div class="ttname"><a href="class_map.html#af4b57d21919c42d55af03391f91a1c08">Map.size</a></div><div class="ttdeci">int size()</div><div class="ttdoc">获取容器内数据数量 </div></div>
+<div class="ttc" id="class_map_1_1_iterator_html_a862c61a12c05ad7c7bbe6898ed2581e7"><div class="ttname"><a href="class_map_1_1_iterator.html#a862c61a12c05ad7c7bbe6898ed2581e7">Map.Iterator.tail</a></div><div class="ttdeci">Iterator tail()</div><div class="ttdoc">获取迭代器尾部 </div></div>
+<div class="ttc" id="class_map_html_adc0157d649e20f1cd9540d3a9ab353f8"><div class="ttname"><a href="class_map.html#adc0157d649e20f1cd9540d3a9ab353f8">Map.findAsc</a></div><div class="ttdeci">_V findAsc(_K key, bool bIgnoreEqu)</div><div class="ttdoc">升序 </div></div>
 <div class="ttc" id="class_map_html_a47e67a8191aafd1a6173b7819b4a3fed"><div class="ttname"><a href="class_map.html#a47e67a8191aafd1a6173b7819b4a3fed">Map.containsKey</a></div><div class="ttdeci">bool containsKey(_K key)</div><div class="ttdoc">测试是否包含某个key </div></div>
 <div class="ttc" id="class_map_1_1_iterator_html_a041249f802c5bf4c2deae666610e03c4"><div class="ttname"><a href="class_map_1_1_iterator.html#a041249f802c5bf4c2deae666610e03c4">Map.Iterator.next</a></div><div class="ttdeci">void next()</div><div class="ttdoc">下一个 </div></div>
+<div class="ttc" id="class_map_1_1_iterator_html_abb7fa3cacbd3211b01a9ed16e8af0a20"><div class="ttname"><a href="class_map_1_1_iterator.html#abb7fa3cacbd3211b01a9ed16e8af0a20">Map.Iterator.head</a></div><div class="ttdeci">Iterator head()</div><div class="ttdoc">获取迭代器头部 </div></div>
 <div class="ttc" id="class_map_html_ade5b7a4fecfe1b38d06f0c8dc825cf5c"><div class="ttname"><a href="class_map.html#ade5b7a4fecfe1b38d06f0c8dc825cf5c">Map.iterator</a></div><div class="ttdeci">Iterator&lt;_K, _V&gt; iterator()</div><div class="ttdoc">获取迭代器 </div></div>
 <div class="ttc" id="class_map_1_1_iterator_html_a0bf831f46c2f7ea955007f59d6fdac2c"><div class="ttname"><a href="class_map_1_1_iterator.html#a0bf831f46c2f7ea955007f59d6fdac2c">Map.Iterator.hasPrevious</a></div><div class="ttdeci">bool hasPrevious()</div><div class="ttdoc">是否有前一个 </div></div>
 <div class="ttc" id="class_map_html"><div class="ttname"><a href="class_map.html">Map</a></div><div class="ttdoc">map容器 </div><div class="ttdef"><b>Definition:</b> <a href="_map_8xcs_source.html#l00006">Map.xcs:6</a></div></div>
 <div class="ttc" id="class_map_html_ac8bb3912a3ce86b15842e79d0b421204"><div class="ttname"><a href="class_map.html#ac8bb3912a3ce86b15842e79d0b421204">Map.clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">清空容器 </div></div>
-<div class="ttc" id="class_map_html_ab5e2378adae65cd06b6928eebc4cca42"><div class="ttname"><a href="class_map.html#ab5e2378adae65cd06b6928eebc4cca42">Map.put</a></div><div class="ttdeci">void put(_K key, _V val)</div><div class="ttdoc">插入数据 </div></div>
+<div class="ttc" id="class_map_html_a6cfb4038e87565f55a8f841cb3121c63"><div class="ttname"><a href="class_map.html#a6cfb4038e87565f55a8f841cb3121c63">Map.operator []</a></div><div class="ttdeci">_V operator [](_K key)</div><div class="ttdoc">获取数据 </div></div>
+<div class="ttc" id="class_map_html_a33af8b798de2f23e13214901787a89f5"><div class="ttname"><a href="class_map.html#a33af8b798de2f23e13214901787a89f5">Map.put</a></div><div class="ttdeci">Iterator&lt;_K, _V&gt; put(_K key, _V val)</div><div class="ttdoc">插入数据 </div></div>
+<div class="ttc" id="class_map_1_1_iterator_html_a0b94021bd4ccd4d8f5d939c8fd7ccfb1"><div class="ttname"><a href="class_map_1_1_iterator.html#a0b94021bd4ccd4d8f5d939c8fd7ccfb1">Map.Iterator.previous</a></div><div class="ttdeci">void previous()</div><div class="ttdoc">前一个 </div></div>
+<div class="ttc" id="class_map_1_1_iterator_html_abc3613bf5bf3ea0adecddda35f82a515"><div class="ttname"><a href="class_map_1_1_iterator.html#abc3613bf5bf3ea0adecddda35f82a515">Map.Iterator.clone</a></div><div class="ttdeci">Iterator clone()</div><div class="ttdoc">克隆迭代器 </div></div>
+<div class="ttc" id="class_map_html_a13489a6ce842c73c4bb433856e642f60"><div class="ttname"><a href="class_map.html#a13489a6ce842c73c4bb433856e642f60">Map.findDesc</a></div><div class="ttdeci">_V findDesc(_K key, bool bIgnoreEqu)</div><div class="ttdoc">降序查找 </div></div>
 <div class="ttc" id="class_map_1_1_iterator_html_a78727a48b47ee1d919d6ed44e49e70c1"><div class="ttname"><a href="class_map_1_1_iterator.html#a78727a48b47ee1d919d6ed44e49e70c1">Map.Iterator.getValue</a></div><div class="ttdeci">_V getValue()</div><div class="ttdoc">获取当前的值对象 </div></div>
 <div class="ttc" id="class_map_1_1_iterator_html_a7f04061a749b7570799c7d195fde7de8"><div class="ttname"><a href="class_map_1_1_iterator.html#a7f04061a749b7570799c7d195fde7de8">Map.Iterator.getKey</a></div><div class="ttdeci">_K getKey()</div><div class="ttdoc">获取当前的key </div></div>
 <div class="ttc" id="class_map_1_1_iterator_html_a634d758e1811c32295f5665e4f8a0178"><div class="ttname"><a href="class_map_1_1_iterator.html#a634d758e1811c32295f5665e4f8a0178">Map.Iterator.hasNext</a></div><div class="ttdeci">bool hasNext()</div><div class="ttdoc">是否有下一个 </div></div>

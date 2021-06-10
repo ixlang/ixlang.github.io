@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/xlibrarys/QT&amp;XLIB/QXLibrary/qt5/multimedia/QAudio.x 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v3.6 Release</span>
+   </div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c26b241c633baa98de380b3fd590c11c.html">xlibrarys</a></li><li class="navelem"><a class="el" href="dir_5666ad1a9fdeb818d224f872b324982b.html">QT&amp;XLIB</a></li><li class="navelem"><a class="el" href="dir_7961984395364fe113330b5319164161.html">QXLibrary</a></li><li class="navelem"><a class="el" href="dir_0d599f6f40044cb1083515dc54bda2af.html">qt5</a></li><li class="navelem"><a class="el" href="dir_8d6d44b6ba3428758353cd9c41304cf7.html">multimedia</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">QAudio.x</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_q_audio_8x.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//xlang Source, Name:qt5/multimedia/QAudio.x </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//Date: Thu Mar 14:44:27 2021 </span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">package </span>Qt{</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_audio.html">    4</a></span>&#160;    public class QAudio{</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_audio_1_1_error.html#aeaac2ce02a26419ee77982ba31c2f72d">    5</a></span>&#160;        public enum Error { NoError, OpenError, IOError, UnderrunError, FatalError };</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_audio_1_1_state.html#a5fdaf7946bf6e475ac1ccb2bce83bbc5">    6</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">enum</span> State { ActiveState, <a class="code" href="enum_qt_1_1_q_audio_1_1_state.html#a5fdaf7946bf6e475ac1ccb2bce83bbc5">SuspendedState</a>, StoppedState, IdleState };</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_audio_1_1_mode.html#a5ef3a76c5362c0cf4fbedc3ffb26efa1">    7</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">enum</span> Mode { AudioInput, AudioOutput };</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_audio_1_1_role.html">    9</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">enum</span> Role {</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_audio_1_1_role.html#a83d1d93b253205990e2630d5c6842f23">   10</a></span>&#160;            <a class="code" href="enum_qt_1_1_q_audio_1_1_role.html#a83d1d93b253205990e2630d5c6842f23">UnknownRole</a>,</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_audio_1_1_role.html#a3c357040a1be3e6fa045527996b9b889">   11</a></span>&#160;            <a class="code" href="enum_qt_1_1_q_audio_1_1_role.html#a3c357040a1be3e6fa045527996b9b889">MusicRole</a>,</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_audio_1_1_role.html#ac680e63f5eb795707ee47045e31fbe42">   12</a></span>&#160;            <a class="code" href="enum_qt_1_1_q_audio_1_1_role.html#ac680e63f5eb795707ee47045e31fbe42">VideoRole</a>,</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_audio_1_1_role.html#acd2610fc6ce560c466073a5869d5ec86">   13</a></span>&#160;            <a class="code" href="enum_qt_1_1_q_audio_1_1_role.html#acd2610fc6ce560c466073a5869d5ec86">VoiceCommunicationRole</a>,</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_audio_1_1_role.html#a31aac9f6fad90bf1e7bc9669ff325ae2">   14</a></span>&#160;            <a class="code" href="enum_qt_1_1_q_audio_1_1_role.html#a31aac9f6fad90bf1e7bc9669ff325ae2">AlarmRole</a>,</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_audio_1_1_role.html#a506511c35861ca43b651f6e9fefc5005">   15</a></span>&#160;            <a class="code" href="enum_qt_1_1_q_audio_1_1_role.html#a506511c35861ca43b651f6e9fefc5005">NotificationRole</a>,</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_audio_1_1_role.html#aad49184bc29371e8e74428672d813c39">   16</a></span>&#160;            <a class="code" href="enum_qt_1_1_q_audio_1_1_role.html#aad49184bc29371e8e74428672d813c39">RingtoneRole</a>,</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_audio_1_1_role.html#af1349587ab6cac7e882cd63e1976682c">   17</a></span>&#160;            <a class="code" href="enum_qt_1_1_q_audio_1_1_role.html#af1349587ab6cac7e882cd63e1976682c">AccessibilityRole</a>,</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_audio_1_1_role.html#abc4fe03d84e40fde7860b3fb2fa0e970">   18</a></span>&#160;            <a class="code" href="enum_qt_1_1_q_audio_1_1_role.html#abc4fe03d84e40fde7860b3fb2fa0e970">SonificationRole</a>,</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_audio_1_1_role.html#a1499bddfc8e484121e4b563df5e67f76">   19</a></span>&#160;            GameRole</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        };</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_audio_1_1_volume_scale.html">   22</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">enum</span> VolumeScale {</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_audio_1_1_volume_scale.html#a3e52faabacadfa1b201d035c1b39d7cd">   23</a></span>&#160;            <a class="code" href="enum_qt_1_1_q_audio_1_1_volume_scale.html#a3e52faabacadfa1b201d035c1b39d7cd">LinearVolumeScale</a>,</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_audio_1_1_volume_scale.html#ac4c94b2b2e9974357ddbd987781436fc">   24</a></span>&#160;            <a class="code" href="enum_qt_1_1_q_audio_1_1_volume_scale.html#ac4c94b2b2e9974357ddbd987781436fc">CubicVolumeScale</a>,</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_audio_1_1_volume_scale.html#ac9c2b2b6125d16e7140911da92838b4b">   25</a></span>&#160;            <a class="code" href="enum_qt_1_1_q_audio_1_1_volume_scale.html#ac9c2b2b6125d16e7140911da92838b4b">LogarithmicVolumeScale</a>,</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_audio_1_1_volume_scale.html#af3dda7995f1ba2a42f3ac8eb0639585a">   26</a></span>&#160;            DecibelVolumeScale</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        };</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    };</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="ttc" id="enum_qt_1_1_q_audio_1_1_role_html_af1349587ab6cac7e882cd63e1976682c"><div class="ttname"><a href="enum_qt_1_1_q_audio_1_1_role.html#af1349587ab6cac7e882cd63e1976682c">Qt.QAudio.Role.AccessibilityRole</a></div><div class="ttdeci">AccessibilityRole</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_8x_source.html#l00017">QAudio.x:17</a></div></div>
+<div class="ttc" id="enum_qt_1_1_q_audio_1_1_role_html_a31aac9f6fad90bf1e7bc9669ff325ae2"><div class="ttname"><a href="enum_qt_1_1_q_audio_1_1_role.html#a31aac9f6fad90bf1e7bc9669ff325ae2">Qt.QAudio.Role.AlarmRole</a></div><div class="ttdeci">AlarmRole</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_8x_source.html#l00014">QAudio.x:14</a></div></div>
+<div class="ttc" id="enum_qt_1_1_q_audio_1_1_volume_scale_html_ac4c94b2b2e9974357ddbd987781436fc"><div class="ttname"><a href="enum_qt_1_1_q_audio_1_1_volume_scale.html#ac4c94b2b2e9974357ddbd987781436fc">Qt.QAudio.VolumeScale.CubicVolumeScale</a></div><div class="ttdeci">CubicVolumeScale</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_8x_source.html#l00024">QAudio.x:24</a></div></div>
+<div class="ttc" id="enum_qt_1_1_q_audio_1_1_role_html_a506511c35861ca43b651f6e9fefc5005"><div class="ttname"><a href="enum_qt_1_1_q_audio_1_1_role.html#a506511c35861ca43b651f6e9fefc5005">Qt.QAudio.Role.NotificationRole</a></div><div class="ttdeci">NotificationRole</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_8x_source.html#l00015">QAudio.x:15</a></div></div>
+<div class="ttc" id="enum_qt_1_1_q_audio_1_1_role_html_a83d1d93b253205990e2630d5c6842f23"><div class="ttname"><a href="enum_qt_1_1_q_audio_1_1_role.html#a83d1d93b253205990e2630d5c6842f23">Qt.QAudio.Role.UnknownRole</a></div><div class="ttdeci">UnknownRole</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_8x_source.html#l00010">QAudio.x:10</a></div></div>
+<div class="ttc" id="enum_qt_1_1_q_audio_1_1_role_html_abc4fe03d84e40fde7860b3fb2fa0e970"><div class="ttname"><a href="enum_qt_1_1_q_audio_1_1_role.html#abc4fe03d84e40fde7860b3fb2fa0e970">Qt.QAudio.Role.SonificationRole</a></div><div class="ttdeci">SonificationRole</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_8x_source.html#l00018">QAudio.x:18</a></div></div>
+<div class="ttc" id="enum_qt_1_1_q_audio_1_1_state_html_a5fdaf7946bf6e475ac1ccb2bce83bbc5"><div class="ttname"><a href="enum_qt_1_1_q_audio_1_1_state.html#a5fdaf7946bf6e475ac1ccb2bce83bbc5">Qt.QAudio.State.SuspendedState</a></div><div class="ttdeci">SuspendedState</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_8x_source.html#l00006">QAudio.x:6</a></div></div>
+<div class="ttc" id="enum_qt_1_1_q_audio_1_1_role_html_acd2610fc6ce560c466073a5869d5ec86"><div class="ttname"><a href="enum_qt_1_1_q_audio_1_1_role.html#acd2610fc6ce560c466073a5869d5ec86">Qt.QAudio.Role.VoiceCommunicationRole</a></div><div class="ttdeci">VoiceCommunicationRole</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_8x_source.html#l00013">QAudio.x:13</a></div></div>
+<div class="ttc" id="enum_qt_1_1_q_audio_1_1_volume_scale_html_ac9c2b2b6125d16e7140911da92838b4b"><div class="ttname"><a href="enum_qt_1_1_q_audio_1_1_volume_scale.html#ac9c2b2b6125d16e7140911da92838b4b">Qt.QAudio.VolumeScale.LogarithmicVolumeScale</a></div><div class="ttdeci">LogarithmicVolumeScale</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_8x_source.html#l00025">QAudio.x:25</a></div></div>
+<div class="ttc" id="enum_qt_1_1_q_audio_1_1_role_html_ac680e63f5eb795707ee47045e31fbe42"><div class="ttname"><a href="enum_qt_1_1_q_audio_1_1_role.html#ac680e63f5eb795707ee47045e31fbe42">Qt.QAudio.Role.VideoRole</a></div><div class="ttdeci">VideoRole</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_8x_source.html#l00012">QAudio.x:12</a></div></div>
+<div class="ttc" id="enum_qt_1_1_q_audio_1_1_volume_scale_html_a3e52faabacadfa1b201d035c1b39d7cd"><div class="ttname"><a href="enum_qt_1_1_q_audio_1_1_volume_scale.html#a3e52faabacadfa1b201d035c1b39d7cd">Qt.QAudio.VolumeScale.LinearVolumeScale</a></div><div class="ttdeci">LinearVolumeScale</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_8x_source.html#l00023">QAudio.x:23</a></div></div>
+<div class="ttc" id="enum_qt_1_1_q_audio_1_1_role_html_a3c357040a1be3e6fa045527996b9b889"><div class="ttname"><a href="enum_qt_1_1_q_audio_1_1_role.html#a3c357040a1be3e6fa045527996b9b889">Qt.QAudio.Role.MusicRole</a></div><div class="ttdeci">MusicRole</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_8x_source.html#l00011">QAudio.x:11</a></div></div>
+<div class="ttc" id="enum_qt_1_1_q_audio_1_1_role_html_aad49184bc29371e8e74428672d813c39"><div class="ttname"><a href="enum_qt_1_1_q_audio_1_1_role.html#aad49184bc29371e8e74428672d813c39">Qt.QAudio.Role.RingtoneRole</a></div><div class="ttdeci">RingtoneRole</div><div class="ttdef"><b>Definition:</b> <a href="_q_audio_8x_source.html#l00016">QAudio.x:16</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

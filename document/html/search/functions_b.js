@@ -1,28 +1,4 @@
 var searchData=
 [
-  ['mapfromglobal',['mapFromGlobal',['../class_q_x_widget.html#a46d4f1d1d8845a5dadce4029839ddce8',1,'QXWidget']]],
-  ['maplocalpath',['mapLocalPath',['../class_website.html#aaa7b362849b9e8a9c6936e108125c11a',1,'Website']]],
-  ['mappoint',['mapPoint',['../class_q_x_matrix.html#a2086b20c89ec04dcdbeda88598f27cbe',1,'QXMatrix']]],
-  ['maprect',['mapRect',['../class_q_x_matrix.html#ad86a76d1d534711dde6e9192b9008bd6',1,'QXMatrix']]],
-  ['mapserverpath',['mapServerPath',['../class_website.html#a210e2a9325b9d97908598ea804048773',1,'Website']]],
-  ['mapto',['mapTo',['../class_q_x_widget.html#a7760c019d4991054e8e902057e84ba83',1,'QXWidget']]],
-  ['maptoglobal',['mapToGlobal',['../class_q_x_widget.html#ae5b38097fa55b2ec229ff2bd14a0f4e3',1,'QXWidget']]],
-  ['match',['match',['../class_pattern.html#aa47deadc6b876e0c618bc9ec6614bd05',1,'Pattern']]],
-  ['max',['max',['../class_math.html#aa5d960354774dc177393b360c0f90aa9',1,'Math.max(int a, int b)'],['../class_math.html#a048ef06d98f1f926ccbec88d46bd55b0',1,'Math.max(long a, long b)'],['../class_math.html#a42301a09458c62d8640f8ecea884a6a4',1,'Math.max(double a, double b)']]],
-  ['maximized',['maximized',['../class_q_x_widget.html#a3ad7790d61239de4ba311192a9cdd45a',1,'QXWidget']]],
-  ['maximum',['maximum',['../class_q_x_progress_bar.html#afa25dac2ec81611286a2108b33344d15',1,'QXProgressBar']]],
-  ['md5close',['MD5Close',['../class_crypto.html#a4d31b5821702bcc03ea43796d3e4b0d8',1,'Crypto']]],
-  ['md5final',['MD5Final',['../class_crypto.html#a074f55920d4d0f3af95fad0d115ba078',1,'Crypto']]],
-  ['md5get',['MD5Get',['../class_crypto.html#a996db052e370ea369d0ec83406783bc4',1,'Crypto']]],
-  ['md5init',['Md5Init',['../class_crypto.html#a731771d2e140a4c1d08857c34173e2ac',1,'Crypto']]],
-  ['md5update',['Md5Update',['../class_crypto.html#a6a2ec770ae34efe34ece717bbb4c9997',1,'Crypto']]],
-  ['measure',['measure',['../class_q_x_font.html#a88267bd93ab03c16e30d81745e859d21',1,'QXFont']]],
-  ['measuretext',['measureText',['../class_q_x_painter.html#ad396a7eede825e8d157d409a29786b00',1,'QXPainter']]],
-  ['min',['min',['../class_math.html#a2f2bf96d77a187bd4446b4ba3864470d',1,'Math.min(int a, int b)'],['../class_math.html#aae78f234a48742ac10b1a231f771d809',1,'Math.min(long a, long b)'],['../class_math.html#af3a87289fa5f023930c93d80e6375930',1,'Math.min(double a, double b)']]],
-  ['minimized',['minimized',['../class_q_x_widget.html#a400e6ef8eb656897d18e90f055905493',1,'QXWidget']]],
-  ['minimum',['minimum',['../class_q_x_progress_bar.html#a17c124c64514dd5c2a625fd53ff868e7',1,'QXProgressBar']]],
-  ['mkdir',['mkdir',['../class__system__.html#ab872780494ca01109d54fe8e284969f0',1,'_system_']]],
-  ['modifyitemflags',['modifyItemFlags',['../class_q_x_table_widget.html#a26c67e1e3fdc9c8baabc614f72746637',1,'QXTableWidget.modifyItemFlags()'],['../class_q_x_tree_view.html#a26c67e1e3fdc9c8baabc614f72746637',1,'QXTreeView.modifyItemFlags()']]],
-  ['move',['move',['../class_q_x_widget.html#a98bdb50e44140db5557326d17416219d',1,'QXWidget']]],
-  ['moveto',['moveto',['../class_q_x_path.html#a16ee40dea09de9c13cd779004a13514a',1,'QXPath']]]
+  ['kill',['kill',['../class_runtime_1_1_o_s_process.html#a6eb393eaefb30ee2686c14451bc18378',1,'Runtime::OSProcess']]]
 ];

@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.7 Release</span>
+   &#160;<span id="projectnumber">v3.6 Release</span>
    </div>
-   <div id="projectbrief">项目介绍</div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
   </td>
  </tr>
  </tbody>
@@ -74,6 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
       <li><a href="functions.html"><span>全部</span></a></li>
       <li><a href="functions_func.html"><span>函数/子程序</span></a></li>
       <li class="current"><a href="functions_vars.html"><span>变量</span></a></li>
+      <li><a href="functions_type.html"><span>类型定义</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -126,452 +128,854 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 &#160;
 
 <h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
+<li>TABBARACCESSIBLETABNAME
+: <a class="el" href="class_qt_1_1_constant.html#a66d31e40e7ac94b9fc3a85bef4a59f24">Constant</a>
+</li>
+<li>TABBARADDTAB
+: <a class="el" href="class_qt_1_1_constant.html#a2e85e9aae5741daeb181d7dc819c6524">Constant</a>
+</li>
+<li>TABBARAUTOHIDE
+: <a class="el" href="class_qt_1_1_constant.html#ae457a8c8f2e92eb99bb3249700908eb0">Constant</a>
+</li>
+<li>TABBARCHANGECURRENTONDRAG
+: <a class="el" href="class_qt_1_1_constant.html#ac26b822933d7d2d95971becfa5004459">Constant</a>
+</li>
+<li>TABBARCOUNT
+: <a class="el" href="class_qt_1_1_constant.html#a624cfc3f39e8ce5bc307e700a936bcde">Constant</a>
+</li>
+<li>TABBARCURRENTINDEX
+: <a class="el" href="class_qt_1_1_constant.html#ad2937c9656ef7c878b26f64b687e561b">Constant</a>
+</li>
+<li>TABBARDOCUMENTMODE
+: <a class="el" href="class_qt_1_1_constant.html#a2eea27f943dcf7cd62545bbac488027e">Constant</a>
+</li>
+<li>TABBARDRAWBASE
+: <a class="el" href="class_qt_1_1_constant.html#addcac65855b6cc34dfa8689fed6678fc">Constant</a>
+</li>
+<li>TABBARELIDEMODE
+: <a class="el" href="class_qt_1_1_constant.html#a6a5dfb701cfee7481c3c277699d6c40c">Constant</a>
+</li>
+<li>TABBAREXPANDING
+: <a class="el" href="class_qt_1_1_constant.html#a52b5297b76d0a0ab2d853eb758925290">Constant</a>
+</li>
+<li>TABBARICONSIZE
+: <a class="el" href="class_qt_1_1_constant.html#a0422ad31c238133bb5c85f8dbf052e6b">Constant</a>
+</li>
+<li>TABBARINSERTTAB
+: <a class="el" href="class_qt_1_1_constant.html#a750508673f0ed668a6aefb2f085edaeb">Constant</a>
+</li>
+<li>TABBARISMOVABLE
+: <a class="el" href="class_qt_1_1_constant.html#a81feb7b4a4b6cc87075a23f5cbb8afe9">Constant</a>
+</li>
+<li>TABBARISTABENABLED
+: <a class="el" href="class_qt_1_1_constant.html#aadbde40129fe1fbf10f71092328e3cdd">Constant</a>
+</li>
+<li>TABBARMINIMUMSIZEHINT
+: <a class="el" href="class_qt_1_1_constant.html#a8f7b71373322113d9670f0da7680ad0a">Constant</a>
+</li>
+<li>TABBARMOVETAB
+: <a class="el" href="class_qt_1_1_constant.html#a5ddccb49257e66c1c1a2adf287fb651b">Constant</a>
+</li>
+<li>TABBARREMOVETAB
+: <a class="el" href="class_qt_1_1_constant.html#a44dd72905fcaed5c3a30d294a696e667">Constant</a>
+</li>
+<li>TABBARSELECTIONBEHAVIORONREMOVE
+: <a class="el" href="class_qt_1_1_constant.html#a972caa2f6ada159566cc799866fb06a5">Constant</a>
+</li>
+<li>TABBARSETACCESSIBLETABNAME
+: <a class="el" href="class_qt_1_1_constant.html#aca00110ff172e43e5342bf8b279fa83c">Constant</a>
+</li>
+<li>TABBARSETAUTOHIDE
+: <a class="el" href="class_qt_1_1_constant.html#a5b54d3691774264f71f36f198d8221ac">Constant</a>
+</li>
+<li>TABBARSETCHANGECURRENTONDRAG
+: <a class="el" href="class_qt_1_1_constant.html#af68fb04eba59172dd3697a9a95b464ac">Constant</a>
+</li>
+<li>TABBARSETCURRENTINDEX
+: <a class="el" href="class_qt_1_1_constant.html#a189e67702f805ba03d13a706e9032b8b">Constant</a>
+</li>
+<li>TABBARSETDOCUMENTMODE
+: <a class="el" href="class_qt_1_1_constant.html#a15e2c8ea2987a7243db37bdf94889ec7">Constant</a>
+</li>
+<li>TABBARSETDRAWBASE
+: <a class="el" href="class_qt_1_1_constant.html#aacc47c8444dcac5451da9970f45be601">Constant</a>
+</li>
+<li>TABBARSETELIDEMODE
+: <a class="el" href="class_qt_1_1_constant.html#a1e5b843c89e1dd2a374b5fe770d94988">Constant</a>
+</li>
+<li>TABBARSETEXPANDING
+: <a class="el" href="class_qt_1_1_constant.html#ad20178a7d525c4358e49bca2c92b5620">Constant</a>
+</li>
+<li>TABBARSETICONSIZE
+: <a class="el" href="class_qt_1_1_constant.html#a3329542e9dfb4e8748dee5c8428675f8">Constant</a>
+</li>
+<li>TABBARSETMOVABLE
+: <a class="el" href="class_qt_1_1_constant.html#ac0bac2a238292285be455d60ccd7a503">Constant</a>
+</li>
+<li>TABBARSETSELECTIONBEHAVIORONREMOVE
+: <a class="el" href="class_qt_1_1_constant.html#a1729612631a9ba4be82f434314306edc">Constant</a>
+</li>
+<li>TABBARSETSHAPE
+: <a class="el" href="class_qt_1_1_constant.html#a3e8b1bd4d46e923aceb4751ca3675b9f">Constant</a>
+</li>
+<li>TABBARSETTABBUTTON
+: <a class="el" href="class_qt_1_1_constant.html#ae7b83269e59d086f10b1de65568fee3e">Constant</a>
+</li>
+<li>TABBARSETTABENABLED
+: <a class="el" href="class_qt_1_1_constant.html#aa2e9eca79be39ebb9386ca902a6dfedf">Constant</a>
+</li>
+<li>TABBARSETTABICON
+: <a class="el" href="class_qt_1_1_constant.html#a0ec675ea4a220ceed82b0beb4970d2fe">Constant</a>
+</li>
+<li>TABBARSETTABSCLOSABLE
+: <a class="el" href="class_qt_1_1_constant.html#a8ffdcb09898fd17850032269be6aa36f">Constant</a>
+</li>
+<li>TABBARSETTABTEXT
+: <a class="el" href="class_qt_1_1_constant.html#acfa4226216cdb9c185d06ec1dc7d6b53">Constant</a>
+</li>
+<li>TABBARSETTABTEXTCOLOR
+: <a class="el" href="class_qt_1_1_constant.html#a4f86fa5277853734300c213dcf5c0487">Constant</a>
+</li>
+<li>TABBARSETTABTOOLTIP
+: <a class="el" href="class_qt_1_1_constant.html#ab9f8b714b1f067ff0bb88ba3a38f85d1">Constant</a>
+</li>
+<li>TABBARSETTABWHATSTHIS
+: <a class="el" href="class_qt_1_1_constant.html#aeaed5dced61350508250ac0fbe6577a2">Constant</a>
+</li>
+<li>TABBARSHAPE
+: <a class="el" href="class_qt_1_1_constant.html#ad1682ffde2cb3725101948852824621a">Constant</a>
+</li>
+<li>TABBARSIZEHINT
+: <a class="el" href="class_qt_1_1_constant.html#a5ae2d4956381f94df4379cda6ae8a75c">Constant</a>
+</li>
+<li>TABBARTABAT
+: <a class="el" href="class_qt_1_1_constant.html#a4e993a7b3bfa93895cda404788532cac">Constant</a>
+</li>
+<li>TABBARTABBUTTON
+: <a class="el" href="class_qt_1_1_constant.html#aa1b7727220d0bf89bd2b9ea3cf3ff8e7">Constant</a>
+</li>
+<li>TABBARTABSCLOSABLE
+: <a class="el" href="class_qt_1_1_constant.html#a209870ae74ff0bc7d178accdfd1eb4aa">Constant</a>
+</li>
+<li>TABBARTABTEXT
+: <a class="el" href="class_qt_1_1_constant.html#a82dbd69bee4d59256b437155c0d23d12">Constant</a>
+</li>
+<li>TABBARTABTEXTCOLOR
+: <a class="el" href="class_qt_1_1_constant.html#ab319150fce43992df27568af07601f3d">Constant</a>
+</li>
+<li>TABBARTABTOOLTIP
+: <a class="el" href="class_qt_1_1_constant.html#ae09a0c05416327376945fd5e29c851ac">Constant</a>
+</li>
+<li>TABBARTABWHATSTHIS
+: <a class="el" href="class_qt_1_1_constant.html#afa908246d13e8906183517b443fae3ca">Constant</a>
+</li>
+<li>TABBARUSEBUTTONS
+: <a class="el" href="class_qt_1_1_constant.html#a5892fb4b1991fa31caa696d9343491a0">Constant</a>
+</li>
+<li>TABBARUSESSCROLLBUTTONS
+: <a class="el" href="class_qt_1_1_constant.html#aa9b7d5986645ed4f617a9a21c8ad3035">Constant</a>
+</li>
+<li>Tabbed
+: <a class="el" href="enum_qtitan_1_1_layout_type.html#a3476574c8e44a9df98a9fee7415b77fd">LayoutType</a>
+</li>
 <li>TabbedView
-: <a class="el" href="class_q_x_mdi_area.html#a66b4e147fc7da438174f496b7e4e46e7">QXMdiArea</a>
+: <a class="el" href="class_qt_1_1_q_mdi_area.html#a66b4e147fc7da438174f496b7e4e46e7">QMdiArea</a>
 </li>
 <li>TabFocus
-: <a class="el" href="class_q_x_widget.html#aa42b67d1be64eb29083428de4f57cad0">QXWidget</a>
+: <a class="el" href="class_qt_1_1_constant.html#aa42b67d1be64eb29083428de4f57cad0">Constant</a>
+</li>
+<li>TABIFYDOCKWIDGET
+: <a class="el" href="class_qt_1_1_constant.html#adae67974a54eb7a042091fb09c1591e5">Constant</a>
 </li>
 <li>TABITEMGETCHECK
-: <a class="el" href="class_q_x_core.html#ac0aef2f249f8f626f822eb1cf9d11ee5">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#ac0aef2f249f8f626f822eb1cf9d11ee5">Constant</a>
 </li>
 <li>TABITEMGETFLAG
-: <a class="el" href="class_q_x_core.html#a9585d33c0ea2b0c9744dc66d264247cf">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a9585d33c0ea2b0c9744dc66d264247cf">Constant</a>
 </li>
 <li>TABITEMSETCHECK
-: <a class="el" href="class_q_x_core.html#acf2ea1ebc5bed4f43eae00f531693d9e">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#acf2ea1ebc5bed4f43eae00f531693d9e">Constant</a>
 </li>
 <li>TABLECLEAR
-: <a class="el" href="class_q_x_core.html#a932fc6c2d9233c97467ac41471f6402b">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a932fc6c2d9233c97467ac41471f6402b">Constant</a>
 </li>
 <li>TABLECLEARCONTENT
-: <a class="el" href="class_q_x_core.html#aa3c1aa1f591b23904fe6d6e1fe213313">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#aa3c1aa1f591b23904fe6d6e1fe213313">Constant</a>
 </li>
 <li>TABLEGETCELLWIDGET
-: <a class="el" href="class_q_x_core.html#a4e24d840c7217713e2969160d8059538">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a4e24d840c7217713e2969160d8059538">Constant</a>
 </li>
 <li>TABLEGETITEM
-: <a class="el" href="class_q_x_core.html#a8a7ec84ebc9566f4c2eaf90f8b87a899">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a8a7ec84ebc9566f4c2eaf90f8b87a899">Constant</a>
 </li>
 <li>TABLEGETSELITEM
-: <a class="el" href="class_q_x_core.html#ab04e65a401d4c62dcfa279ef1b3fd0b7">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#ab04e65a401d4c62dcfa279ef1b3fd0b7">Constant</a>
 </li>
 <li>TABLEGETSELRANGE
-: <a class="el" href="class_q_x_core.html#a812639e3efa2bc1b9b74db3493df1433">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a812639e3efa2bc1b9b74db3493df1433">Constant</a>
 </li>
 <li>TABLEGETTAG
-: <a class="el" href="class_q_x_core.html#a9d35a0f98d5c0a5279da9f8878d1db9d">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a9d35a0f98d5c0a5279da9f8878d1db9d">Constant</a>
 </li>
 <li>TABLEGETTEXTBYITEM
-: <a class="el" href="class_q_x_core.html#a0ba368b630eec4f23cc54a9358090ede">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a0ba368b630eec4f23cc54a9358090ede">Constant</a>
 </li>
 <li>TABLEGETTEXTBYRC
-: <a class="el" href="class_q_x_core.html#a7259fd8fd5897bc99c7fc8904486cef7">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a7259fd8fd5897bc99c7fc8904486cef7">Constant</a>
 </li>
 <li>TABLEITEMFLAG
-: <a class="el" href="class_q_x_core.html#a512e782f0235aaca00400659dd43851e">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a512e782f0235aaca00400659dd43851e">Constant</a>
 </li>
 <li>TABLEREMOVECOLUMN
-: <a class="el" href="class_q_x_core.html#ac91d1d1b169aa0543b28e5b1f1c0dd7d">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#ac91d1d1b169aa0543b28e5b1f1c0dd7d">Constant</a>
 </li>
 <li>TABLEREMOVEROW
-: <a class="el" href="class_q_x_core.html#abaabedb9c08a798c8c1b95ea7abb8cbb">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#abaabedb9c08a798c8c1b95ea7abb8cbb">Constant</a>
 </li>
 <li>TABLESELECTROW
-: <a class="el" href="class_q_x_core.html#a64a189521cff068a28323108094a679f">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a64a189521cff068a28323108094a679f">Constant</a>
 </li>
 <li>TABLESETCELLWIDGET
-: <a class="el" href="class_q_x_core.html#a2767d9366a8de6ca323899e4bf956213">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a2767d9366a8de6ca323899e4bf956213">Constant</a>
 </li>
 <li>TABLESETCOLUMNCNT
-: <a class="el" href="class_q_x_core.html#acbb42f1887f182268d3df58927d2bdad">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#acbb42f1887f182268d3df58927d2bdad">Constant</a>
 </li>
 <li>TABLESETET
-: <a class="el" href="class_q_x_core.html#a0dc7a21a9ee8cb5410dc63ae9dd8b666">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a0dc7a21a9ee8cb5410dc63ae9dd8b666">Constant</a>
 </li>
 <li>TABLESETHHFH
-: <a class="el" href="class_q_x_core.html#ac60c8e270947ef7edf66ae14064d9e05">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#ac60c8e270947ef7edf66ae14064d9e05">Constant</a>
 </li>
 <li>TABLESETHHLS
-: <a class="el" href="class_q_x_core.html#ac7e563e6f86c6dd2c00530f772f8c31d">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#ac7e563e6f86c6dd2c00530f772f8c31d">Constant</a>
 </li>
 <li>TABLESETHHRS
-: <a class="el" href="class_q_x_core.html#a1df04ae8f0818cff5d25967985cd5a41">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a1df04ae8f0818cff5d25967985cd5a41">Constant</a>
 </li>
 <li>TABLESETITEM
-: <a class="el" href="class_q_x_core.html#a9d73ea73125cef0c15007f8cc6767b65">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a9d73ea73125cef0c15007f8cc6767b65">Constant</a>
 </li>
 <li>TABLESETROWCNT
-: <a class="el" href="class_q_x_core.html#a5e01ebece28090dd326ade76819dccaa">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a5e01ebece28090dd326ade76819dccaa">Constant</a>
 </li>
 <li>TABLESETSB
-: <a class="el" href="class_q_x_core.html#a3b5305af9273bae3f7f7e69fe0f059a5">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a3b5305af9273bae3f7f7e69fe0f059a5">Constant</a>
 </li>
 <li>TABLESETSG
-: <a class="el" href="class_q_x_core.html#a90b5509dd8e3f89c608e8ba4526e710d">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a90b5509dd8e3f89c608e8ba4526e710d">Constant</a>
 </li>
 <li>TABLESETSM
-: <a class="el" href="class_q_x_core.html#a246831b8759d56baa2e125fc9020eab7">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a246831b8759d56baa2e125fc9020eab7">Constant</a>
 </li>
 <li>TABLESETTAG
-: <a class="el" href="class_q_x_core.html#aa018da4eeda7c3360a6914381ee19a1e">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#aa018da4eeda7c3360a6914381ee19a1e">Constant</a>
 </li>
 <li>TABLESETVHDSS
-: <a class="el" href="class_q_x_core.html#a102deec33d7a370270e6e54b69954a64">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a102deec33d7a370270e6e54b69954a64">Constant</a>
 </li>
 <li>TABLESETVHRM
-: <a class="el" href="class_q_x_core.html#a34f12af6f0099240e4e1a97c4cacfbfa">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a34f12af6f0099240e4e1a97c4cacfbfa">Constant</a>
 </li>
 <li>TABLESETVHV
-: <a class="el" href="class_q_x_core.html#accefd3769b1b2aec0a3727e0de728e6a">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#accefd3769b1b2aec0a3727e0de728e6a">Constant</a>
 </li>
 <li>TabletEnterProximity
-: <a class="el" href="class_q_x_event.html#a01ce8c408c69a17b465b12bfd90b78d5">QXEvent</a>
+: <a class="el" href="class_qt_1_1_q_event.html#a01ce8c408c69a17b465b12bfd90b78d5">QEvent</a>
 </li>
 <li>TabletLeaveProximity
-: <a class="el" href="class_q_x_event.html#a9f4ca59cd3b2a82f63365a2344d0ba04">QXEvent</a>
+: <a class="el" href="class_qt_1_1_q_event.html#a9f4ca59cd3b2a82f63365a2344d0ba04">QEvent</a>
 </li>
 <li>TabletMove
-: <a class="el" href="class_q_x_event.html#a3a0fcd1f85229e5124c0b4a9c99ea6bf">QXEvent</a>
+: <a class="el" href="class_qt_1_1_q_event.html#a3a0fcd1f85229e5124c0b4a9c99ea6bf">QEvent</a>
 </li>
 <li>TabletPress
-: <a class="el" href="class_q_x_event.html#a833f0171fe9e1f548c5e2f456c6c97e6">QXEvent</a>
+: <a class="el" href="class_qt_1_1_q_event.html#a833f0171fe9e1f548c5e2f456c6c97e6">QEvent</a>
 </li>
 <li>TabletRelease
-: <a class="el" href="class_q_x_event.html#addd110d6d91961348fbeae7052563c11">QXEvent</a>
+: <a class="el" href="class_qt_1_1_q_event.html#addd110d6d91961348fbeae7052563c11">QEvent</a>
 </li>
 <li>TabletTrackingChange
-: <a class="el" href="class_q_x_event.html#a9ade526abb72cac54e657d0783371332">QXEvent</a>
+: <a class="el" href="class_qt_1_1_q_event.html#a9ade526abb72cac54e657d0783371332">QEvent</a>
 </li>
 <li>Tabloid
-: <a class="el" href="enum_q_paged_paint_device_1_1_page_size.html#a240e4b76992bb448350bbe8a0994c467">QPagedPaintDevice.PageSize</a>
+: <a class="el" href="enum_qt_1_1_q_paged_paint_device_1_1_page_size.html#a240e4b76992bb448350bbe8a0994c467">QPagedPaintDevice.PageSize</a>
 </li>
 <li>TabloidExtra
-: <a class="el" href="enum_q_paged_paint_device_1_1_page_size.html#ac381bdbae06d871caa4f0d79c9c4555f">QPagedPaintDevice.PageSize</a>
+: <a class="el" href="enum_qt_1_1_q_paged_paint_device_1_1_page_size.html#ac381bdbae06d871caa4f0d79c9c4555f">QPagedPaintDevice.PageSize</a>
+</li>
+<li>TABWIDGETADDTAB
+: <a class="el" href="class_qt_1_1_constant.html#ae4ce8d6034f55185bf44e262c7cc4e4d">Constant</a>
+</li>
+<li>TABWIDGETAUTOHIDE
+: <a class="el" href="class_qt_1_1_constant.html#a92a361568061c4dfc08e6a4d74a37b88">Constant</a>
+</li>
+<li>TABWIDGETCLEAR
+: <a class="el" href="class_qt_1_1_constant.html#ad270781e6e20276b654307c9421ce5b6">Constant</a>
+</li>
+<li>TABWIDGETCORNERWIDGET
+: <a class="el" href="class_qt_1_1_constant.html#a14adc54c5b54e084f6f8aa75c6878de3">Constant</a>
+</li>
+<li>TABWIDGETCOUNT
+: <a class="el" href="class_qt_1_1_constant.html#a59ae9c1ecba6d4faf9aede2b3307e037">Constant</a>
+</li>
+<li>TABWIDGETCURRENTINDEX
+: <a class="el" href="class_qt_1_1_constant.html#a128d87ca10928f3696a7bd1423d27220">Constant</a>
+</li>
+<li>TABWIDGETCURRENTWIDGET
+: <a class="el" href="class_qt_1_1_constant.html#a1478ff02c13dc7226c3fae0b90d39eba">Constant</a>
+</li>
+<li>TABWIDGETDOCUMENTMODE
+: <a class="el" href="class_qt_1_1_constant.html#a339abaa5d68fe128b358f11ffad17522">Constant</a>
+</li>
+<li>TABWIDGETELIDEMODE
+: <a class="el" href="class_qt_1_1_constant.html#a2de4b524835a12e170cd6237f8a51739">Constant</a>
+</li>
+<li>TABWIDGETHASHEIGHTFORWIDTH
+: <a class="el" href="class_qt_1_1_constant.html#a78d365630caba666bc5c71aa089b61a6">Constant</a>
+</li>
+<li>TABWIDGETHEIGHTFORWIDTH
+: <a class="el" href="class_qt_1_1_constant.html#a651ee02922ce32ef2c100312ac7d3871">Constant</a>
+</li>
+<li>TABWIDGETICONSIZE
+: <a class="el" href="class_qt_1_1_constant.html#a0ae865e9d99ce8d39bcdca8ea18b9a48">Constant</a>
+</li>
+<li>TABWIDGETINDEXOF
+: <a class="el" href="class_qt_1_1_constant.html#a7c642dee3f49869eb59ad667b595d766">Constant</a>
+</li>
+<li>TABWIDGETINSERTTAB
+: <a class="el" href="class_qt_1_1_constant.html#a909d285d129c9f7a0bdb10824cc74e80">Constant</a>
+</li>
+<li>TABWIDGETINSERTTAB2
+: <a class="el" href="class_qt_1_1_constant.html#ad0c62b170f39c911910b8214c0680d6d">Constant</a>
+</li>
+<li>TABWIDGETISMOVABLE
+: <a class="el" href="class_qt_1_1_constant.html#a90dd27909e55e437ef8d87c0f9164b51">Constant</a>
+</li>
+<li>TABWIDGETISTABENABLED
+: <a class="el" href="class_qt_1_1_constant.html#a6015fd561ba29499f1a4c74e6b08684a">Constant</a>
+</li>
+<li>TABWIDGETMINIMUMSIZEHINT
+: <a class="el" href="class_qt_1_1_constant.html#a0f5fe1556ea8111a062341ef8abd80eb">Constant</a>
+</li>
+<li>TABWIDGETREMOVETAB
+: <a class="el" href="class_qt_1_1_constant.html#a4346c63aa14dc28fd345abeca1a81576">Constant</a>
+</li>
+<li>TABWIDGETSETCORNERWIDGET
+: <a class="el" href="class_qt_1_1_constant.html#a2869d939e597a5ca240c97e53831acbe">Constant</a>
+</li>
+<li>TABWIDGETSETCURRENTINDEX
+: <a class="el" href="class_qt_1_1_constant.html#a32e8201694792b89e75923b7a605ea76">Constant</a>
+</li>
+<li>TABWIDGETSETCURRENTWIDGET
+: <a class="el" href="class_qt_1_1_constant.html#a2c4b6c85c74c6b3e6cbc812075b51e4b">Constant</a>
+</li>
+<li>TABWIDGETSETDOCUMENTMODE
+: <a class="el" href="class_qt_1_1_constant.html#ac47814e3ed1f17ee4ab0e0140fe2ec2e">Constant</a>
+</li>
+<li>TABWIDGETSETELIDEMODE
+: <a class="el" href="class_qt_1_1_constant.html#a8e9070ab70b6ad4b94fe04bb97059d7c">Constant</a>
+</li>
+<li>TABWIDGETSETICONSIZE
+: <a class="el" href="class_qt_1_1_constant.html#a937f77d86858273d4b5357497d5c210c">Constant</a>
+</li>
+<li>TABWIDGETSETMOVABLE
+: <a class="el" href="class_qt_1_1_constant.html#a10ade980af171de9d372fabf58cd5577">Constant</a>
+</li>
+<li>TABWIDGETSETTABBARAUTOHIDE
+: <a class="el" href="class_qt_1_1_constant.html#a1b3d996fe6caac61abb02549f44e6b97">Constant</a>
+</li>
+<li>TABWIDGETSETTABENABLED
+: <a class="el" href="class_qt_1_1_constant.html#a671e865f757b03374397c9e2d60cc188">Constant</a>
+</li>
+<li>TABWIDGETSETTABICON
+: <a class="el" href="class_qt_1_1_constant.html#a6a2d9a6e70e3ce02dd6d90f723de99bb">Constant</a>
+</li>
+<li>TABWIDGETSETTABPOSITION
+: <a class="el" href="class_qt_1_1_constant.html#a69899dd6f767d60360d1126b065213e6">Constant</a>
+</li>
+<li>TABWIDGETSETTABSCLOSABLE
+: <a class="el" href="class_qt_1_1_constant.html#abeb59ab26c86e26ab20885ca1fc091bf">Constant</a>
+</li>
+<li>TABWIDGETSETTABSHAPE
+: <a class="el" href="class_qt_1_1_constant.html#a4680b89a40fdf02a4c912bc7b3698a79">Constant</a>
+</li>
+<li>TABWIDGETSETTABTEXT
+: <a class="el" href="class_qt_1_1_constant.html#ab67b300da08a3d11fcfbae3e99df17d6">Constant</a>
+</li>
+<li>TABWIDGETSETTABTOOLTIP
+: <a class="el" href="class_qt_1_1_constant.html#a5af9ea22a2e66c28756c4fd17b7a8cb3">Constant</a>
+</li>
+<li>TABWIDGETSETTABWHATSTHIS
+: <a class="el" href="class_qt_1_1_constant.html#a29fcc9f6e40b8d630fffc3eed7fddb1c">Constant</a>
+</li>
+<li>TABWIDGETSETUSESSCROLLBUTTONS
+: <a class="el" href="class_qt_1_1_constant.html#a798f933df422965b4c7cf17007ade58f">Constant</a>
+</li>
+<li>TABWIDGETSIZEHINT
+: <a class="el" href="class_qt_1_1_constant.html#a95336116bc1f6420ade2d5d5f3db6ddc">Constant</a>
+</li>
+<li>TABWIDGETTABBAR
+: <a class="el" href="class_qt_1_1_constant.html#aaae0cf61d147952fb3ac666983136573">Constant</a>
+</li>
+<li>TABWIDGETTABPOSITION
+: <a class="el" href="class_qt_1_1_constant.html#ac74a39a9c5cebb68d92385f9e7027e19">Constant</a>
+</li>
+<li>TABWIDGETTABSCLOSABLE
+: <a class="el" href="class_qt_1_1_constant.html#afd6b2055a3a94fd6859f97b8d9e4aef2">Constant</a>
+</li>
+<li>TABWIDGETTABSHAPE
+: <a class="el" href="class_qt_1_1_constant.html#a70fee4ff086201bb73d08b965221e841">Constant</a>
+</li>
+<li>TABWIDGETTABTEXT
+: <a class="el" href="class_qt_1_1_constant.html#a57ad3cdb354f9b0171e2018a19d72689">Constant</a>
+</li>
+<li>TABWIDGETTABTOOLTIP
+: <a class="el" href="class_qt_1_1_constant.html#a2c5902a59a228380f12751a7a584a82e">Constant</a>
+</li>
+<li>TABWIDGETTABWHATSTHIS
+: <a class="el" href="class_qt_1_1_constant.html#a611a06b470b2cd221fcd69612d31f00d">Constant</a>
+</li>
+<li>TABWIDGETUSESSCROLLBUTTONS
+: <a class="el" href="class_qt_1_1_constant.html#a49c7e9d2380fa56144cd5a311bdad919">Constant</a>
+</li>
+<li>TABWIDGETWIDGET
+: <a class="el" href="class_qt_1_1_constant.html#af9e7a423685036c940ae8b712ecfcdef">Constant</a>
 </li>
 <li>TaskButton
-: <a class="el" href="class_q_x_object.html#a6ccdbd35972e21afe8b22c0e895e25d6">QXObject</a>
+: <a class="el" href="class_qt_1_1_constant.html#a6ccdbd35972e21afe8b22c0e895e25d6">Constant</a>
 </li>
 <li>TEAPPEND
-: <a class="el" href="class_q_x_core.html#a21d11b1b306189c8e6fa2cdeba9bb5a8">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a21d11b1b306189c8e6fa2cdeba9bb5a8">Constant</a>
 </li>
 <li>TECLEAR
-: <a class="el" href="class_q_x_core.html#ae3e2ae127a55aa9d031ddcf7a7bb1b5c">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#ae3e2ae127a55aa9d031ddcf7a7bb1b5c">Constant</a>
 </li>
 <li>TECOPY
-: <a class="el" href="class_q_x_core.html#a0f259846bdd23e87e1e84c92becb9905">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a0f259846bdd23e87e1e84c92becb9905">Constant</a>
 </li>
 <li>TECUT
-: <a class="el" href="class_q_x_core.html#a3ff08c367f84fc6949dede7eaf38521f">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a3ff08c367f84fc6949dede7eaf38521f">Constant</a>
 </li>
 <li>TEGETALIGNMENT
-: <a class="el" href="class_q_x_core.html#a56db291c4dc2883a2bf93dfef4c3d55c">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a56db291c4dc2883a2bf93dfef4c3d55c">Constant</a>
 </li>
 <li>TEGETAUTOFORMATTING
-: <a class="el" href="class_q_x_core.html#abad6059b26e1a5183fb5ab8b10ad4662">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#abad6059b26e1a5183fb5ab8b10ad4662">Constant</a>
 </li>
 <li>TEGETPLACEHOLDERTEXT
-: <a class="el" href="class_q_x_core.html#a886dc2c50e0a55f94227eb281431516d">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a886dc2c50e0a55f94227eb281431516d">Constant</a>
 </li>
 <li>TEGETREADONLY
-: <a class="el" href="class_q_x_core.html#ade8575e5474f0e34fa84f4d307005c21">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#ade8575e5474f0e34fa84f4d307005c21">Constant</a>
 </li>
 <li>TEGETWRAPMODE
-: <a class="el" href="class_q_x_core.html#a795b20870396b86932a6d8108989deb7">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a795b20870396b86932a6d8108989deb7">Constant</a>
 </li>
 <li>TEINSERTHTML
-: <a class="el" href="class_q_x_core.html#aa7bdeea64f0dd38a55b4f49030aa8487">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#aa7bdeea64f0dd38a55b4f49030aa8487">Constant</a>
 </li>
 <li>TEINSERTPLAINTEXT
-: <a class="el" href="class_q_x_core.html#a83e6b80fb01676bb17663a98ec41f629">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a83e6b80fb01676bb17663a98ec41f629">Constant</a>
 </li>
 <li>TEPASTE
-: <a class="el" href="class_q_x_core.html#acd6d6d4aece2ace07c59bcb4f0e33066">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#acd6d6d4aece2ace07c59bcb4f0e33066">Constant</a>
 </li>
 <li>TEREDO
-: <a class="el" href="class_q_x_core.html#a757272e315d4d7ad486c06634a9955cb">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a757272e315d4d7ad486c06634a9955cb">Constant</a>
 </li>
 <li>TESCROLLTOANCHOR
-: <a class="el" href="class_q_x_core.html#a8e3edacc45c3b592ab8666d55bf288d3">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a8e3edacc45c3b592ab8666d55bf288d3">Constant</a>
 </li>
 <li>TESELECTALL
-: <a class="el" href="class_q_x_core.html#a1ff122da4b7c6967567db14463f183f1">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a1ff122da4b7c6967567db14463f183f1">Constant</a>
 </li>
 <li>TESETALIGNMENT
-: <a class="el" href="class_q_x_core.html#acec64b9a23353a5b12a7fc99301dcc44">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#acec64b9a23353a5b12a7fc99301dcc44">Constant</a>
 </li>
 <li>TESETAUTOFORMATTING
-: <a class="el" href="class_q_x_core.html#aed0efda1f1c7560fd31c6298215f4e11">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#aed0efda1f1c7560fd31c6298215f4e11">Constant</a>
 </li>
 <li>TESETCURRENTFONT
-: <a class="el" href="class_q_x_core.html#a706f67a6dbeecc4e163b7421e600b299">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a706f67a6dbeecc4e163b7421e600b299">Constant</a>
 </li>
 <li>TESETFONTFAMILY
-: <a class="el" href="class_q_x_core.html#ad6afe81773cde12211bdfb9d870b7c10">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#ad6afe81773cde12211bdfb9d870b7c10">Constant</a>
 </li>
 <li>TESETFONTITALIC
-: <a class="el" href="class_q_x_core.html#abcd8dfcb51b69866422c14d96f41d4e8">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#abcd8dfcb51b69866422c14d96f41d4e8">Constant</a>
 </li>
 <li>TESETFONTPOINTSIZE
-: <a class="el" href="class_q_x_core.html#a06732691092e8ab8af87e2e6f899ea28">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a06732691092e8ab8af87e2e6f899ea28">Constant</a>
 </li>
 <li>TESETFONTUNDERLINE
-: <a class="el" href="class_q_x_core.html#aedfb8383c39a40f7bf8fbe0d624a8516">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#aedfb8383c39a40f7bf8fbe0d624a8516">Constant</a>
 </li>
 <li>TESETFONTWEIGHT
-: <a class="el" href="class_q_x_core.html#a8d185b0057ff83ec8c43745286104879">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a8d185b0057ff83ec8c43745286104879">Constant</a>
 </li>
 <li>TESETHTML
-: <a class="el" href="class_q_x_core.html#ac146daa0dc83e62a8e0b0272fbb28372">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#ac146daa0dc83e62a8e0b0272fbb28372">Constant</a>
 </li>
 <li>TESETLINEWRAPMODE
-: <a class="el" href="class_q_x_core.html#a68e811d76d1d2208dc7296f3028c0258">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a68e811d76d1d2208dc7296f3028c0258">Constant</a>
 </li>
 <li>TESETPLACEHOLDERTEXT
-: <a class="el" href="class_q_x_core.html#a49f2411ea3ba9115f86e33cf4dfb3a9c">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a49f2411ea3ba9115f86e33cf4dfb3a9c">Constant</a>
 </li>
 <li>TESETPLAINTEXT
-: <a class="el" href="class_q_x_core.html#a0b6c4e2cf443a5fcbe19b0ae61510783">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a0b6c4e2cf443a5fcbe19b0ae61510783">Constant</a>
 </li>
 <li>TESETREADONLY
-: <a class="el" href="class_q_x_core.html#a6f1ff7123e48ab3e79aca594a3a59166">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a6f1ff7123e48ab3e79aca594a3a59166">Constant</a>
 </li>
 <li>TESETTABCHANGESFOCUS
-: <a class="el" href="class_q_x_core.html#ac78eb9f02d08369e914365a520e12e93">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#ac78eb9f02d08369e914365a520e12e93">Constant</a>
 </li>
 <li>TESETTEXT
-: <a class="el" href="class_q_x_core.html#a5986f9a207949024991dbf7af51eb7a1">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a5986f9a207949024991dbf7af51eb7a1">Constant</a>
 </li>
 <li>TESETTEXTBACKGROUNDCOLOR
-: <a class="el" href="class_q_x_core.html#ae1106ffd00125d210f6eca15850b03d9">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#ae1106ffd00125d210f6eca15850b03d9">Constant</a>
 </li>
 <li>TESETTEXTCOLOR
-: <a class="el" href="class_q_x_core.html#a37bc802cc5f5db81df6294ddb3fa1e30">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a37bc802cc5f5db81df6294ddb3fa1e30">Constant</a>
 </li>
 <li>TESETWORDWRAPMODE
-: <a class="el" href="class_q_x_core.html#aece92d86b5214c55efe2e2c2bef7c2f0">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#aece92d86b5214c55efe2e2c2bef7c2f0">Constant</a>
 </li>
 <li>TETABCHANGESFOCUS
-: <a class="el" href="class_q_x_core.html#a5757464f86530414b1457035df4d2c65">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a5757464f86530414b1457035df4d2c65">Constant</a>
 </li>
 <li>TETOHTML
-: <a class="el" href="class_q_x_core.html#ad8a5a479f6a757c586f6fa4f2e7993f8">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#ad8a5a479f6a757c586f6fa4f2e7993f8">Constant</a>
 </li>
 <li>TETOPLAINTEXT
-: <a class="el" href="class_q_x_core.html#a4497dfcd54886c6ce3ec4dfb9888696e">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a4497dfcd54886c6ce3ec4dfb9888696e">Constant</a>
 </li>
 <li>TEUNDO
-: <a class="el" href="class_q_x_core.html#a4174f8b38530cd5947f7782a732bbc85">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a4174f8b38530cd5947f7782a732bbc85">Constant</a>
 </li>
 <li>Text
-: <a class="el" href="class_color_role.html#a81117088dc899e9042cb0e6640643bc2">ColorRole</a>
-, <a class="el" href="class_q_x_buffer.html#a81117088dc899e9042cb0e6640643bc2">QXBuffer</a>
+: <a class="el" href="class_qt_1_1_color_role.html#a81117088dc899e9042cb0e6640643bc2">ColorRole</a>
+, <a class="el" href="class_qt_1_1_q_buffer.html#a81117088dc899e9042cb0e6640643bc2">QBuffer</a>
+</li>
+<li>TextAlignmentRole
+: <a class="el" href="enum_qt_1_1_item_data_role.html#a34405521d9f736b89287c779d0aff637">ItemDataRole</a>
 </li>
 <li>TextAntialiasing
-: <a class="el" href="class_q_x_painter_1_1_render_hint.html#a8bc45011be0365ff9496ff4351849d7b">QXPainter.RenderHint</a>
+: <a class="el" href="class_qt_1_1_render_hint.html#a8bc45011be0365ff9496ff4351849d7b">RenderHint</a>
+</li>
+<li>TextColorRole
+: <a class="el" href="enum_qt_1_1_item_data_role.html#af09a22b3f8c2e6662e2f5e156c63d140">ItemDataRole</a>
 </li>
 <li>TextFormat
-: <a class="el" href="class_q_x_object.html#ab84bc4fe14423075779c3471acef2eb6">QXObject</a>
-, <a class="el" href="class_q_x_variant.html#ab84bc4fe14423075779c3471acef2eb6">QXVariant</a>
+: <a class="el" href="class_qt_1_1_constant.html#ab84bc4fe14423075779c3471acef2eb6">Constant</a>
+, <a class="el" href="class_qt_1_1_q_variant.html#ab84bc4fe14423075779c3471acef2eb6">QVariant</a>
 </li>
 <li>TextLength
-: <a class="el" href="class_q_x_object.html#aab8429f1c0784e22d89423b019052378">QXObject</a>
-, <a class="el" href="class_q_x_variant.html#aab8429f1c0784e22d89423b019052378">QXVariant</a>
+: <a class="el" href="class_qt_1_1_constant.html#aab8429f1c0784e22d89423b019052378">Constant</a>
+, <a class="el" href="class_qt_1_1_q_variant.html#aab8429f1c0784e22d89423b019052378">QVariant</a>
 </li>
 <li>textSize
-: <a class="el" href="class_q_x_painter_1_1_paint.html#a45780b627cc68e644654ff164efb78d7">QXPainter.Paint</a>
+: <a class="el" href="class_qt_1_1_q_painter_1_1_paint.html#a45780b627cc68e644654ff164efb78d7">QPainter.Paint</a>
+</li>
+<li>textSql
+: <a class="el" href="class_sql_1_1_prepared_statement.html#af656430d2c76ebd8a9c1c5dc54c3928c">PreparedStatement</a>
 </li>
 <li>TexturePattern
-: <a class="el" href="enum_q_x_brush_1_1_style.html#a2880e73ad6342554bf8b4a37e0d790f5">QXBrush.Style</a>
+: <a class="el" href="enum_qt_1_1_q_brush_1_1_style.html#a2880e73ad6342554bf8b4a37e0d790f5">QBrush.Style</a>
+</li>
+<li>TextureRGFormats
+: <a class="el" href="enum_qt_1_1_q_open_g_l_functions_1_1_open_g_l_feature.html#aabd2e19a2fc54b0e8fbfebdacc58b8a9">QOpenGLFunctions.OpenGLFeature</a>
 </li>
 <li>TEZOOMIN
-: <a class="el" href="class_q_x_core.html#a27f40eed78761dfda505ce67aa571b23">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a27f40eed78761dfda505ce67aa571b23">Constant</a>
 </li>
 <li>TEZOOMOUT
-: <a class="el" href="class_q_x_core.html#a30c206e2d7ff04b3c5a6fc05968add45">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a30c206e2d7ff04b3c5a6fc05968add45">Constant</a>
+</li>
+<li>TH32CS_SNAPALL
+: <a class="el" href="class_runtime_1_1_win32_api_1_1_kernel32.html#a586295af958cf4f99feaee3ded53affc">Win32Api.Kernel32</a>
+</li>
+<li>TH32CS_SNAPHEAPLIST
+: <a class="el" href="class_runtime_1_1_win32_api_1_1_kernel32.html#aad9e16fe7d0ac8f4b4018d8a2ae87692">Win32Api.Kernel32</a>
+</li>
+<li>TH32CS_SNAPMODULE
+: <a class="el" href="class_runtime_1_1_win32_api_1_1_kernel32.html#aba48bf4fe270328b909c54d667d3190b">Win32Api.Kernel32</a>
+</li>
+<li>TH32CS_SNAPPROCESS
+: <a class="el" href="class_runtime_1_1_win32_api_1_1_kernel32.html#a56ddafcd80901d47796c6604f38bf6d2">Win32Api.Kernel32</a>
+</li>
+<li>TH32CS_SNAPTHREAD
+: <a class="el" href="class_runtime_1_1_win32_api_1_1_kernel32.html#a87afec090e3923d8ddd50b75799b6a10">Win32Api.Kernel32</a>
 </li>
 <li>ThemeChange
-: <a class="el" href="class_q_x_event.html#a5f169414d0e0352f1d445f491d2dc2c7">QXEvent</a>
+: <a class="el" href="class_qt_1_1_q_event.html#a5f169414d0e0352f1d445f491d2dc2c7">QEvent</a>
 </li>
 <li>ThreadChange
-: <a class="el" href="class_q_x_event.html#a9e3bc20b5d38078ea4b2d1b3ecfeff35">QXEvent</a>
+: <a class="el" href="class_qt_1_1_q_event.html#a9e3bc20b5d38078ea4b2d1b3ecfeff35">QEvent</a>
 </li>
 <li>ThresholdAlphaDither
-: <a class="el" href="class_q_x_painter_1_1_image_conversion_flag.html#a1d85a76c15d9e99b8a4d25b634c16775">QXPainter.ImageConversionFlag</a>
+: <a class="el" href="class_qt_1_1_image_conversion_flag.html#a1d85a76c15d9e99b8a4d25b634c16775">ImageConversionFlag</a>
 </li>
 <li>ThresholdDither
-: <a class="el" href="class_q_x_painter_1_1_image_conversion_flag.html#a26448101cd756b9fc944ec306204dc6f">QXPainter.ImageConversionFlag</a>
+: <a class="el" href="class_qt_1_1_image_conversion_flag.html#a26448101cd756b9fc944ec306204dc6f">ImageConversionFlag</a>
 </li>
 <li>TILESUBWIN
-: <a class="el" href="class_q_x_core.html#a527f6ba54d1dd01a325beaf978fa68c6">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a527f6ba54d1dd01a325beaf978fa68c6">Constant</a>
 </li>
 <li>Time
-: <a class="el" href="class_q_x_object.html#ac4d1853c6a0e23ec723b1b25ebd6e6f9">QXObject</a>
-, <a class="el" href="class_q_x_variant.html#ac4d1853c6a0e23ec723b1b25ebd6e6f9">QXVariant</a>
+: <a class="el" href="class_qt_1_1_constant.html#ac4d1853c6a0e23ec723b1b25ebd6e6f9">Constant</a>
+, <a class="el" href="class_qt_1_1_q_variant.html#ac4d1853c6a0e23ec723b1b25ebd6e6f9">QVariant</a>
+</li>
+<li>TIMEOU_LIMIT
+: <a class="el" href="class_sql_1_1_connection_pool.html#aed4ca21ea4e81b25b54770f5588eb440">ConnectionPool</a>
+</li>
+<li>TIMEOUT
+: <a class="el" href="enum_ado_connector_1_1_mysql_option.html#a8711b1474f4c3ddace10b21c45dcd212">AdoConnector.MysqlOption</a>
+</li>
+<li>timeout
+: <a class="el" href="class_ado_connector.html#a493b57f443cc38b3d3df9c1e584d9d82">AdoConnector</a>
+</li>
+<li>TIMEOUT
+: <a class="el" href="enum_mysql_1_1_mysql_option.html#a8711b1474f4c3ddace10b21c45dcd212">Mysql.MysqlOption</a>
+</li>
+<li>timeout
+: <a class="el" href="class_mysql.html#a493b57f443cc38b3d3df9c1e584d9d82">Mysql</a>
 </li>
 <li>Timer
-: <a class="el" href="class_q_x_event.html#a218928e2174fe0b1ae476093da3889f1">QXEvent</a>
+: <a class="el" href="class_qt_1_1_q_event.html#a218928e2174fe0b1ae476093da3889f1">QEvent</a>
+</li>
+<li>timestamp
+: <a class="el" href="class_sql_1_1_connection_pool_1_1connector_mgr.html#ac5deed89768140dbc80dbc6529a5e14a">ConnectionPool.connectorMgr</a>
 </li>
 <li>TITLEBAR
-: <a class="el" href="class_q_x_core.html#a521c43cafe62d8e056ded39f0fc2353a">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a521c43cafe62d8e056ded39f0fc2353a">Constant</a>
 </li>
 <li>Tool
-: <a class="el" href="class_q_x_widget.html#a10d3f9316dc8704a37d13e8b561eeddd">QXWidget</a>
+: <a class="el" href="class_qt_1_1_constant.html#a10d3f9316dc8704a37d13e8b561eeddd">Constant</a>
+</li>
+<li>TOOLBARADDACTION
+: <a class="el" href="class_qt_1_1_constant.html#a95450403992542150b86056bdddf7b03">Constant</a>
+</li>
+<li>TOOLBARADDSEPAR
+: <a class="el" href="class_qt_1_1_constant.html#a45119a33a15a98d6fe3bc024e9a842d3">Constant</a>
 </li>
 <li>TOOLBARADDWIDGET
-: <a class="el" href="class_q_x_core.html#a30ce8910be1665540524bf98e26ecebf">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a30ce8910be1665540524bf98e26ecebf">Constant</a>
 </li>
 <li>ToolBarChange
-: <a class="el" href="class_q_x_event.html#aa75efe2265d1852f089c17444b963453">QXEvent</a>
+: <a class="el" href="class_qt_1_1_q_event.html#aa75efe2265d1852f089c17444b963453">QEvent</a>
+</li>
+<li>TOOLBARINSACTION
+: <a class="el" href="class_qt_1_1_constant.html#a241bb9bdfa9242760086aca895004795">Constant</a>
+</li>
+<li>TOOLBARINSSEPAR
+: <a class="el" href="class_qt_1_1_constant.html#ab311dc91ee94f26999a2b921b75d06b4">Constant</a>
 </li>
 <li>TOOLBARINSWIDGET
-: <a class="el" href="class_q_x_core.html#af53b090b941ef6df766d0ed8fee599d8">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#af53b090b941ef6df766d0ed8fee599d8">Constant</a>
+</li>
+<li>TOOLBARREMACTION
+: <a class="el" href="class_qt_1_1_constant.html#a7da9df8e727417795d5fcd6b3aa0fc5a">Constant</a>
 </li>
 <li>ToolTip
-: <a class="el" href="class_q_x_event.html#a468dc4a2b55cca368c9c1d4a4418cd4c">QXEvent</a>
-, <a class="el" href="class_q_x_widget.html#a468dc4a2b55cca368c9c1d4a4418cd4c">QXWidget</a>
+: <a class="el" href="class_qt_1_1_constant.html#a468dc4a2b55cca368c9c1d4a4418cd4c">Constant</a>
+, <a class="el" href="class_qt_1_1_q_event.html#a468dc4a2b55cca368c9c1d4a4418cd4c">QEvent</a>
 </li>
 <li>ToolTipBase
-: <a class="el" href="class_color_role.html#aa0ccba9407f7b170dbc03372cd85d0e5">ColorRole</a>
+: <a class="el" href="class_qt_1_1_color_role.html#aa0ccba9407f7b170dbc03372cd85d0e5">ColorRole</a>
 </li>
 <li>ToolTipChange
-: <a class="el" href="class_q_x_event.html#ad843f5787d6ff99d8585db9e4c436abf">QXEvent</a>
+: <a class="el" href="class_qt_1_1_q_event.html#ad843f5787d6ff99d8585db9e4c436abf">QEvent</a>
+</li>
+<li>ToolTipPropertyRole
+: <a class="el" href="enum_qt_1_1_item_data_role.html#ac55d5800941e17d4fb5916ad12d304e9">ItemDataRole</a>
+</li>
+<li>ToolTipRole
+: <a class="el" href="enum_qt_1_1_item_data_role.html#a438e3fbf802b95122dc92313fe19bfab">ItemDataRole</a>
 </li>
 <li>ToolTipText
-: <a class="el" href="class_color_role.html#ab59063df91a09f53436749b910671e59">ColorRole</a>
+: <a class="el" href="class_qt_1_1_color_role.html#ab59063df91a09f53436749b910671e59">ColorRole</a>
 </li>
 <li>top
-: <a class="el" href="class_q_x_rect.html#af93f4f37fc2ad9c37af4a715423b110c">QXRect</a>
+: <a class="el" href="class_qt_1_1_q_rect.html#af93f4f37fc2ad9c37af4a715423b110c">QRect</a>
+</li>
+<li>TopArea
+: <a class="el" href="enum_qtitan_1_1_layout_area.html#a3d88ab90f9ec0e632373edfb6622d003">LayoutArea</a>
+</li>
+<li>TopDockPanelArea
+: <a class="el" href="enum_qtitan_1_1_dock_panel_area.html#a407d78b2e608cb30e047847642f4e7e7">DockPanelArea</a>
+</li>
+<li>TopDockWidgetArea
+: <a class="el" href="class_qt_1_1_q_dock_widget.html#aeef4b38adc1ef64e7b0b22b20bc330f1">QDockWidget</a>
+</li>
+<li>TopLeftCorner
+: <a class="el" href="enum_qt_1_1_corner.html#a76616d16dabd5546e65bd6489865d289">Corner</a>
+</li>
+<li>TopRightCorner
+: <a class="el" href="enum_qt_1_1_corner.html#a78f63c33c889b46d7d27316f6da1274b">Corner</a>
 </li>
 <li>TopToBottom
-: <a class="el" href="class_q_x_widget.html#ab89a220167444ed68cef71049eef3305">QXWidget</a>
+: <a class="el" href="class_qt_1_1_constant.html#ab89a220167444ed68cef71049eef3305">Constant</a>
 </li>
 <li>TouchBegin
-: <a class="el" href="class_q_x_event.html#a133fc13d40708bbb9c39d80cbc2e21fc">QXEvent</a>
+: <a class="el" href="class_qt_1_1_q_event.html#a133fc13d40708bbb9c39d80cbc2e21fc">QEvent</a>
 </li>
 <li>TouchCancel
-: <a class="el" href="class_q_x_event.html#ac7c44adfa9add8e932e7954b25877698">QXEvent</a>
+: <a class="el" href="class_qt_1_1_q_event.html#ac7c44adfa9add8e932e7954b25877698">QEvent</a>
 </li>
 <li>TouchEnd
-: <a class="el" href="class_q_x_event.html#a44ccc6cf82ca4b6cc5a775c88040cad8">QXEvent</a>
+: <a class="el" href="class_qt_1_1_q_event.html#a44ccc6cf82ca4b6cc5a775c88040cad8">QEvent</a>
 </li>
 <li>TouchUpdate
-: <a class="el" href="class_q_x_event.html#a3184cd0878f530afe5f792bf4c5e7006">QXEvent</a>
+: <a class="el" href="class_qt_1_1_q_event.html#a3184cd0878f530afe5f792bf4c5e7006">QEvent</a>
 </li>
 <li>Tractor
-: <a class="el" href="enum_q_printer_1_1_paper_source.html#a395f73b978683c832a4cb6d70e9033c6">QPrinter.PaperSource</a>
+: <a class="el" href="enum_qt_1_1_q_printer_1_1_paper_source.html#a395f73b978683c832a4cb6d70e9033c6">QPrinter.PaperSource</a>
 </li>
 <li>Transform
-: <a class="el" href="class_q_x_object.html#ad9f72c1301bbb398725df6e26c473287">QXObject</a>
-, <a class="el" href="class_q_x_variant.html#ad9f72c1301bbb398725df6e26c473287">QXVariant</a>
+: <a class="el" href="class_qt_1_1_constant.html#ad9f72c1301bbb398725df6e26c473287">Constant</a>
+, <a class="el" href="class_qt_1_1_q_variant.html#ad9f72c1301bbb398725df6e26c473287">QVariant</a>
 </li>
 <li>TransparentMode
-: <a class="el" href="class_q_x_painter_1_1_background_mode.html#a472547b4df20e0e8cd7c8fc2ddba0716">QXPainter.BackgroundMode</a>
+: <a class="el" href="class_qt_1_1_background_mode.html#a472547b4df20e0e8cd7c8fc2ddba0716">BackgroundMode</a>
 </li>
 <li>TRAUTORESIZE
-: <a class="el" href="class_q_x_core.html#a905577c834a94e4b8f8bfccdfa29c971">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a905577c834a94e4b8f8bfccdfa29c971">Constant</a>
 </li>
 <li>TRCOLUMNSHOW
-: <a class="el" href="class_q_x_core.html#a0f7ff78655ec94f63338f8c279c3b1f9">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a0f7ff78655ec94f63338f8c279c3b1f9">Constant</a>
 </li>
 <li>TREEGETCHILDREN
-: <a class="el" href="class_q_x_core.html#a4859d1aeb80f6d35767c5ff0e99738d7">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a4859d1aeb80f6d35767c5ff0e99738d7">Constant</a>
 </li>
 <li>TREEGETCOUNT
-: <a class="el" href="class_q_x_core.html#aec412ff1d7d8391cae7f1bfc5e299858">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#aec412ff1d7d8391cae7f1bfc5e299858">Constant</a>
 </li>
 <li>TREEGETCURCOL
-: <a class="el" href="class_q_x_core.html#a29eedff570e94f565a9b7f4d3334f033">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a29eedff570e94f565a9b7f4d3334f033">Constant</a>
 </li>
 <li>TREEGETCURROW
-: <a class="el" href="class_q_x_core.html#a74f273ed14be1baa9d3a1362491c7861">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a74f273ed14be1baa9d3a1362491c7861">Constant</a>
 </li>
 <li>TREEGETSELITEM
-: <a class="el" href="class_q_x_core.html#ad24ca4f6c3ecc729a102bee49bd804f0">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#ad24ca4f6c3ecc729a102bee49bd804f0">Constant</a>
 </li>
 <li>TREEGETTOPITEMS
-: <a class="el" href="class_q_x_core.html#a12c6d1dfe5462bddd3f15f6a10407f05">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a12c6d1dfe5462bddd3f15f6a10407f05">Constant</a>
 </li>
 <li>TREEITEMFLAG
-: <a class="el" href="class_q_x_core.html#a9c44cda318353d777042ce514e9c048e">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a9c44cda318353d777042ce514e9c048e">Constant</a>
 </li>
 <li>TREEITEMGETFLAG
-: <a class="el" href="class_q_x_core.html#ad7072fd6658b742d8a399d4f19528c92">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#ad7072fd6658b742d8a399d4f19528c92">Constant</a>
+</li>
+<li>TREEITEMISEXPAND
+: <a class="el" href="class_qt_1_1_constant.html#a14217c07933776165eda27a47d1ad83e">Constant</a>
 </li>
 <li>TREEITEMPARENT
-: <a class="el" href="class_q_x_core.html#a0d0f58714b80a3f6ebca1b0af06c5fd0">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a0d0f58714b80a3f6ebca1b0af06c5fd0">Constant</a>
+</li>
+<li>TREEITEMSELED
+: <a class="el" href="class_qt_1_1_constant.html#af04ea0349a9a64b368773bf9b11ab467">Constant</a>
 </li>
 <li>TREEPROPCLEAR
-: <a class="el" href="class_q_x_core.html#aaca54dbe63fcf3a8c69681a7852c9bdc">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#aaca54dbe63fcf3a8c69681a7852c9bdc">Constant</a>
 </li>
 <li>TREESETCURCOL
-: <a class="el" href="class_q_x_core.html#a3464d151c1b260d7d980e378f81f06e6">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a3464d151c1b260d7d980e378f81f06e6">Constant</a>
 </li>
 <li>TREESETCURITEM
-: <a class="el" href="class_q_x_core.html#a941924e14a2f094668ca31ddaccdd0d0">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a941924e14a2f094668ca31ddaccdd0d0">Constant</a>
 </li>
 <li>TREESETCURROW
-: <a class="el" href="class_q_x_core.html#a8a9fc4b57a118d52f8c86cfea4fe3308">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a8a9fc4b57a118d52f8c86cfea4fe3308">Constant</a>
 </li>
 <li>TREEWIDGETADD
-: <a class="el" href="class_q_x_core.html#a1db2a5a50b09791799a697cee173c0f1">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a1db2a5a50b09791799a697cee173c0f1">Constant</a>
 </li>
 <li>TREEWIDGETCLEAR
-: <a class="el" href="class_q_x_core.html#aad030e80a54a2ca33321fca66bb857db">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#aad030e80a54a2ca33321fca66bb857db">Constant</a>
 </li>
 <li>TREEWIDGETGETSEL
-: <a class="el" href="class_q_x_core.html#a16919f93bc62af45fdac7a7268657da8">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a16919f93bc62af45fdac7a7268657da8">Constant</a>
 </li>
 <li>TREEWIDGETINST
-: <a class="el" href="class_q_x_core.html#aa311b616816680c64737b6c4e59ccf37">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#aa311b616816680c64737b6c4e59ccf37">Constant</a>
 </li>
 <li>TREEWIDGETREM
-: <a class="el" href="class_q_x_core.html#a6fd06846f34d792e5e631a3ad5eecd95">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a6fd06846f34d792e5e631a3ad5eecd95">Constant</a>
 </li>
 <li>TRELIDMODE
-: <a class="el" href="class_q_x_core.html#a97a052fe61ca819736f2424e475c14df">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a97a052fe61ca819736f2424e475c14df">Constant</a>
 </li>
 <li>TRGETITEMTEXT
-: <a class="el" href="class_q_x_core.html#a5f783873ca89f639af7c620dc0fe91f4">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a5f783873ca89f639af7c620dc0fe91f4">Constant</a>
 </li>
 <li>TRHEADERWIDTH
-: <a class="el" href="class_q_x_core.html#ab4a28f8b7d8ee17ea318d86b7cec429c">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#ab4a28f8b7d8ee17ea318d86b7cec429c">Constant</a>
+</li>
+<li>Triangular
+: <a class="el" href="enum_qt_1_1_q_tab_widget_1_1_tab_shape.html#a244616d382b902e2effb64905531f4a5">QTabWidget.TabShape</a>
+</li>
+<li>TriangularEast
+: <a class="el" href="enum_qt_1_1_q_tab_bar_1_1_shape.html#ac5cd1a94909b3565b206d2be741a303f">QTabBar.Shape</a>
+</li>
+<li>TriangularNorth
+: <a class="el" href="enum_qt_1_1_q_tab_bar_1_1_shape.html#a5ddea09400a63d403ad56f49514228b7">QTabBar.Shape</a>
+</li>
+<li>TriangularSouth
+: <a class="el" href="enum_qt_1_1_q_tab_bar_1_1_shape.html#a2f5f04aa0b1f8604c8c2ce554ba60e62">QTabBar.Shape</a>
+</li>
+<li>TriangularWest
+: <a class="el" href="enum_qt_1_1_q_tab_bar_1_1_shape.html#a5798ccca1b6f78fbb8cc3f557ab61009">QTabBar.Shape</a>
 </li>
 <li>TRIEMCLEARCHILD
-: <a class="el" href="class_q_x_core.html#a1370708bca32c2a80e60d8575623c4fa">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a1370708bca32c2a80e60d8575623c4fa">Constant</a>
 </li>
 <li>TRIEMSETEXPAND
-: <a class="el" href="class_q_x_core.html#a2c66f3ddc488db1094362e434d9733e3">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a2c66f3ddc488db1094362e434d9733e3">Constant</a>
 </li>
 <li>TRIEMSETHIDDEN
-: <a class="el" href="class_q_x_core.html#a67fb20d6664590da232cbb9bd98d55bf">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a67fb20d6664590da232cbb9bd98d55bf">Constant</a>
+</li>
+<li>Trigger
+: <a class="el" href="enum_qt_1_1_activation_reason.html#a68dc8420d4850fe68378bc682c360e30">ActivationReason</a>
 </li>
 <li>TRIGGER
-: <a class="el" href="class_q_x_core.html#a313d7b03edbcb97ca67d1aaff946cd82">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a313d7b03edbcb97ca67d1aaff946cd82">Constant</a>
+</li>
+<li>TripleBuffer
+: <a class="el" href="enum_qt_1_1_q_surface_format_1_1_swap_behavior.html#afbbb3c4785f47f501610740645741fb4">QSurfaceFormat.SwapBehavior</a>
 </li>
 <li>TRITEMGETCHECK
-: <a class="el" href="class_q_x_core.html#aa87b7c1f32a94d05a5f2ea7d2ba74e2e">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#aa87b7c1f32a94d05a5f2ea7d2ba74e2e">Constant</a>
 </li>
 <li>TRITEMSETCHECK
-: <a class="el" href="class_q_x_core.html#a3349923abf88b08fda6c4904ebfa3b14">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a3349923abf88b08fda6c4904ebfa3b14">Constant</a>
 </li>
 <li>TRSCROLLBOTTOM
-: <a class="el" href="class_q_x_core.html#a179621adbdea7058430f663147c67be3">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a179621adbdea7058430f663147c67be3">Constant</a>
 </li>
 <li>TRSELECTMODE
-: <a class="el" href="class_q_x_core.html#ad8e8e0564f55205fe1c99ba3a3f18fcd">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#ad8e8e0564f55205fe1c99ba3a3f18fcd">Constant</a>
 </li>
 <li>TRSETBACKBR
-: <a class="el" href="class_q_x_core.html#a5d40192b4ef279b8c9e527dfdd4c9c0d">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a5d40192b4ef279b8c9e527dfdd4c9c0d">Constant</a>
 </li>
 <li>TRSETFOREBR
-: <a class="el" href="class_q_x_core.html#ad675763abbab93dfa84e7140d38ecade">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#ad675763abbab93dfa84e7140d38ecade">Constant</a>
 </li>
 <li>TRSORTENABLE
-: <a class="el" href="class_q_x_core.html#a8b93a881149bc14964ccf9988db7a485">QXCore</a>
+: <a class="el" href="class_qt_1_1_constant.html#a8b93a881149bc14964ccf9988db7a485">Constant</a>
 </li>
 <li>Truncate
-: <a class="el" href="class_q_x_buffer.html#a198da7171d05a01f84e7cdf7df2fad89">QXBuffer</a>
+: <a class="el" href="class_qt_1_1_q_buffer.html#a198da7171d05a01f84e7cdf7df2fad89">QBuffer</a>
+</li>
+<li>TwoPassEncoding
+: <a class="el" href="enum_qt_1_1_encoding_mode.html#afbf28a0c52ee2c07ff5fe33a709ff043">EncodingMode</a>
 </li>
 </ul>
 </div><!-- contents -->

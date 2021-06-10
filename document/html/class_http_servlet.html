@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.7 Release</span>
+   &#160;<span id="projectnumber">v3.6 Release</span>
    </div>
-   <div id="projectbrief">项目介绍</div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
   </td>
  </tr>
  </tbody>
@@ -86,7 +87,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pac-methods">包函数</a>  </div>
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="#pac-static-attribs">静态包属性</a>  </div>
   <div class="headertitle">
 <div class="title">HttpServlet类 参考</div>  </div>
 </div><!--header-->
@@ -95,26 +98,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <p>HTTP Servlet 抽象类  
  <a href="class_http_servlet.html#details">更多...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
-包函数</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-attribs"></a>
+静态包属性</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>HTTP Servlet 抽象类 </p>
 
 <p>在文件 <a class="el" href="_http_servlet_8xcs_source.html">HttpServlet.xcs</a> 第 <a class="el" href="_http_servlet_8xcs_source.html#l00006">6</a> 行定义.</p>
 </div><h2 class="groupheader">构造及析构函数说明</h2>
-<a class="anchor" id="a6b068fa11138f021f8aa4b1d60e2bc53"></a>
+<a class="anchor" id="abd8deb1d95ec4bbc6d63f287e6965f99"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_http_servlet.html">HttpServlet</a> </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>filterPost</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -128,11 +134,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>构造 </p>
@@ -155,9 +156,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <a class="anchor" id="a4af91ed7d4de13bdb02dc6d640c53988"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_http_servlet.html">HttpServlet</a> </td>
@@ -167,11 +165,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>构造 </p>
@@ -188,9 +181,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <a class="anchor" id="acbb0464b722fe81da21dd04e9b864863"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void doGet </td>
@@ -210,11 +200,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>处理get请求 </p>
@@ -231,9 +216,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <a class="anchor" id="a576857ab66730c5cb1703ff019462eeb"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void doPost </td>
@@ -253,11 +235,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>处理post请求 </p>
@@ -274,9 +251,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <a class="anchor" id="a32d626626eee0bc4ade146973f6abb1c"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void finalize </td>
@@ -285,11 +259,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>析构 </p>
@@ -305,9 +274,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <a class="anchor" id="a5cebc351ce5fff054d77671a3d97e736"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void onPostStream </td>
@@ -357,11 +323,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>处理post数据流 </p>
@@ -376,6 +337,51 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">结构体成员变量说明</h2>
+<a class="anchor" id="a872a6d2f3edbbe5d5c07eb4108b433f8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int FLAG_LOGERROR = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_http_servlet_8xcs_source.html">HttpServlet.xcs</a> 第 <a class="el" href="_http_servlet_8xcs_source.html#l00007">7</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae7c28adc6f46864dc76dbe03a069945d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int FLAG_POSTSTREAM = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_http_servlet_8xcs_source.html">HttpServlet.xcs</a> 第 <a class="el" href="_http_servlet_8xcs_source.html#l00008">8</a> 行定义.</p>
 
 </div>
 </div>

@@ -1,10 +1,19 @@
 var searchData=
 [
-  ['scieventlistener',['SciEventListener',['../class_q_x_object_1_1_sci_event_listener.html',1,'QXObject']]],
-  ['spread',['Spread',['../enum_q_x_brush_1_1_spread.html',1,'QXBrush']]],
-  ['stackoverflowexception',['StackOverflowException',['../class_stack_overflow_exception.html',1,'']]],
-  ['stream',['Stream',['../interface_stream.html',1,'']]],
-  ['streamsocket',['StreamSocket',['../class_stream_socket.html',1,'']]],
-  ['string',['String',['../class_string.html',1,'']]],
-  ['style',['Style',['../enum_q_x_brush_1_1_style.html',1,'QXBrush']]]
+  ['readwritelock',['ReadWriteLock',['../class_read_write_lock.html',1,'']]],
+  ['reentrantlock',['ReentrantLock',['../class_reentrant_lock.html',1,'']]],
+  ['regiontype',['RegionType',['../enum_qt_1_1_region_type.html',1,'Qt']]],
+  ['renderabletype',['RenderableType',['../enum_qt_1_1_q_surface_format_1_1_renderable_type.html',1,'Qt::QSurfaceFormat']]],
+  ['renderflag',['RenderFlag',['../enum_qt_1_1_render_flag.html',1,'Qt']]],
+  ['renderhint',['RenderHint',['../class_qt_1_1_render_hint.html',1,'Qt']]],
+  ['renderlistener',['RenderListener',['../interface_qt_1_1_report_engine_1_1_render_listener.html',1,'Qt::ReportEngine']]],
+  ['reportengine',['ReportEngine',['../class_qt_1_1_report_engine.html',1,'Qt']]],
+  ['resizemode',['ResizeMode',['../enum_qt_1_1_resize_mode.html',1,'Qt']]],
+  ['result',['Result',['../class_pattern_1_1_result.html',1,'Pattern']]],
+  ['resultset',['ResultSet',['../interface_sql_1_1_result_set.html',1,'Sql']]],
+  ['role',['Role',['../enum_qt_1_1_q_audio_1_1_role.html',1,'Qt::QAudio']]],
+  ['rtlp',['rtlp',['../class_runtime_1_1rtlp.html',1,'Runtime']]],
+  ['runnable',['Runnable',['../class_qt_1_1_runnable.html',1,'Qt']]],
+  ['runtimeexception',['RuntimeException',['../class_runtime_exception.html',1,'']]],
+  ['rwlock',['RWLock',['../interface_r_w_lock.html',1,'']]]
 ];

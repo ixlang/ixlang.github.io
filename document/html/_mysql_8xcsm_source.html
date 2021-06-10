@@ -1,0 +1,602 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/xlibrarys/xsql/Mysql.xcsm 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v3.6 Release</span>
+   </div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c26b241c633baa98de380b3fd590c11c.html">xlibrarys</a></li><li class="navelem"><a class="el" href="dir_5e0503feaba35c895940d0574c061a6d.html">xsql</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Mysql.xcsm</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_mysql_8xcsm.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//xlang Source, Name:Mysql.xcsm </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//Date: Tue Jul 16:06:32 2019 </span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_mysql.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_mysql.html">Mysql</a> : <a class="code" href="namespace_sql.html">Sql</a>.Connection{</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_mysql.html#a541891bee14184591d402b410d15c1c7">    6</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_mysql.html#a541891bee14184591d402b410d15c1c7">DRIVERNAME</a> = <span class="stringliteral">&quot;mysql&quot;</span>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_mysql.html#a8b778b65e727ad341e76b918f0a2f758">    7</a></span>&#160;    byte [] <a class="code" href="class_mysql.html#a8b778b65e727ad341e76b918f0a2f758">_mysql</a> ;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_mysql.html#a63c89c04d1feae07ca35558055155ffb">    9</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_mysql.html#a63c89c04d1feae07ca35558055155ffb">port</a> = 3306;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_mysql.html#a493b57f443cc38b3d3df9c1e584d9d82">   10</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_mysql.html#a493b57f443cc38b3d3df9c1e584d9d82">timeout</a> = 0;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="enum_mysql_1_1_mysql_option.html">   12</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">enum</span> MysqlOption{</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="enum_mysql_1_1_mysql_option.html#a6dde884e19bdc8f342ffec8fc17e7c91">   13</a></span>&#160;        <a class="code" href="enum_mysql_1_1_mysql_option.html#a6dde884e19bdc8f342ffec8fc17e7c91">PORT</a>,</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="enum_mysql_1_1_mysql_option.html#a8711b1474f4c3ddace10b21c45dcd212">   14</a></span>&#160;        <a class="code" href="enum_mysql_1_1_mysql_option.html#a8711b1474f4c3ddace10b21c45dcd212">TIMEOUT</a>,</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="enum_mysql_1_1_mysql_option.html#aec0c42fb0a2429786e1bcd73ffe276b8">   15</a></span>&#160;        <a class="code" href="enum_mysql_1_1_mysql_option.html#aec0c42fb0a2429786e1bcd73ffe276b8">CHARSET</a>,</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="enum_mysql_1_1_mysql_option.html#af6ec1282d8b475a64c02b4d9973fc36a">   16</a></span>&#160;        SELECTDB</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    };</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_register.html">   19</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">class </span>MysqlRegister : <a class="code" href="namespace_sql.html">Sql</a>.ConnectionRegister{</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_register.html#af0ca04d588e70845255e7020caf46415">   20</a></span>&#160;        <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="interface_sql_1_1_connection.html">Connection</a> <a class="code" href="class_mysql_1_1_mysql_register.html#af0ca04d588e70845255e7020caf46415">allocConnection</a>(<a class="code" href="class_string.html">String</a> drivername)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keywordflow">if</span> (drivername.<a class="code" href="class_string.html#a6658a49f6ae8d217501c31f372610be4">equals</a>(<span class="stringliteral">&quot;mysql&quot;</span>)){</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_mysql.html">Mysql</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    };</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_mysql.html#aed67f9a784ee7c39eb9d14d80e88a745">   28</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_mysql.html#aed67f9a784ee7c39eb9d14d80e88a745">registry</a>(){</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">if</span> (Helper.init()){</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database.html">Database</a>.<a class="code" href="class_sql_1_1_database.html#a71854546a939f222b617f97f92f5f51a">reigstry</a>(DRIVERNAME, <span class="keyword">new</span> MysqlRegister());</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_mysql_1_1_helper.html">   36</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">class </span>Helper :<a class="code" href="class_library.html">Library</a> {</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_mysql_1_1_helper.html#abfbfac65cdbba0b2297a9bd65e4d601e">   37</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_mysql_1_1_helper.html#abfbfac65cdbba0b2297a9bd65e4d601e">bloaded</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_mysql_1_1_helper.html#a6114a57ee5a0170c6492f2f7ca3d2ffe">   39</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_mysql_1_1_helper.html#a6114a57ee5a0170c6492f2f7ca3d2ffe">init</a>(){</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">if</span> (bloaded == <span class="keyword">false</span>){</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                    loadLibrary(<span class="stringliteral">&quot;mysql_helper&quot;</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                    bloaded = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                }<span class="keywordflow">catch</span>(<a class="code" href="class_exception.html">Exception</a> e){</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                    <a class="code" href="class__system__.html">_system_</a>.output(e.<a class="code" href="class_exception.html#afafd068b736520af1e24269a284980a9">getMessage</a>());</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_mysql_1_1_helper.html#abfbfac65cdbba0b2297a9bd65e4d601e">bloaded</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">public</span> <span class="keyword">import</span>{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            Pointer cdecl rs_create(Pointer);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordtype">void</span> cdecl rs_free(Pointer);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordtype">bool</span> cdecl rs_next(Pointer);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordtype">bool</span> cdecl rs_first(Pointer);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordtype">int</span> cdecl rs_label2Index(Pointer, <a class="code" href="class_string.html">String</a>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordtype">long</span> cdecl rs_getRowCount(Pointer);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordtype">bool</span> cdecl rs_last(Pointer);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordtype">bool</span> cdecl rs_isValid(Pointer);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordtype">bool</span> cdecl rs_isLast(Pointer);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <a class="code" href="class_string.html">String</a> cdecl rs_getValue(Pointer, <a class="code" href="class_string.html">String</a>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordtype">int</span> cdecl rs_getValueI(Pointer, <a class="code" href="class_string.html">String</a>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordtype">long</span> cdecl rs_getValueL(Pointer, <a class="code" href="class_string.html">String</a>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordtype">double</span> cdecl rs_getValueD(Pointer, <a class="code" href="class_string.html">String</a>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <a class="code" href="class_string.html">String</a> cdecl rs_getIValue(Pointer, <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordtype">int</span> cdecl rs_getIValueI(Pointer, <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordtype">long</span> cdecl rs_getIValueL(Pointer, <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordtype">double</span> cdecl rs_getIValueD(Pointer, <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            Pointer cdecl x_mysql_init (ObjectPtr );</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                        </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordtype">int</span> cdecl x_mysql_options(ObjectPtr, <span class="keywordtype">int</span> option, ObjectPtr );</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            Pointer cdecl x_mysql_real_connect(ObjectPtr , <a class="code" href="class_string.html">String</a> host,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                       <a class="code" href="class_string.html">String</a> user,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                       <a class="code" href="class_string.html">String</a> passwd,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                       <a class="code" href="class_string.html">String</a> db,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                       <span class="keywordtype">int</span> port,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                       <a class="code" href="class_string.html">String</a> unix_socket,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                       <span class="keywordtype">int</span> clientflag);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                       </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordtype">int</span> cdecl x_mysql_set_character_set(ObjectPtr , <a class="code" href="class_string.html">String</a> csname);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordtype">int</span> cdecl x_mysql_select_db(ObjectPtr , <a class="code" href="class_string.html">String</a> db);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordtype">int</span> cdecl x_mysql_errno(ObjectPtr );</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <a class="code" href="class_string.html">String</a> cdecl x_mysql_info(ObjectPtr );</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <a class="code" href="class_string.html">String</a> cdecl x_mysql_state(ObjectPtr );</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <a class="code" href="class_string.html">String</a> cdecl x_mysql_error(ObjectPtr );</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordtype">int</span> cdecl x_mysql_query(ObjectPtr , <a class="code" href="class_string.html">String</a> );</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordtype">void</span> cdecl x_mysql_close(ObjectPtr);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            Pointer     cdecl x_mysql_store_result(ObjectPtr);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordtype">void</span>        cdecl x_mysql_data_seek(Pointer result,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                    <span class="keywordtype">long</span> offset);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                    </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            Pointer     cdecl x_mysql_row_seek(Pointer result,</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                    <span class="keywordtype">long</span> offset);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                    </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            Pointer cdecl x_mysql_row_tell(Pointer res);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            Pointer cdecl x_mysql_fetch_row(Pointer result);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordtype">long</span> cdecl x_mysql_num_rows(Pointer res);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordtype">void</span> cdecl x_mysql_free_result(Pointer result);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordtype">int</span> cdecl x_mysql_num_fields(Pointer res);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        };</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    };</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    </div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="class_mysql.html#af2d96d8fe2042b7cb63d0549dc1c568f">  116</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_mysql.html#af2d96d8fe2042b7cb63d0549dc1c568f">registried</a> = <a class="code" href="class_mysql.html#aed67f9a784ee7c39eb9d14d80e88a745">registry</a>();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    </div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html">  118</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span>MysqlResultSet : <a class="code" href="namespace_sql.html">Sql</a>.ResultSet{</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#a043344406e0f05e0b3666befeca72f18">  119</a></span>&#160;        <span class="keywordtype">long</span> <a class="code" href="class_mysql_1_1_mysql_result_set.html#a043344406e0f05e0b3666befeca72f18">hres</a>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        </div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#a201ca4f10f8e3006a7a45c9bcfad8647">  121</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_mysql_1_1_mysql_result_set.html#a201ca4f10f8e3006a7a45c9bcfad8647">MysqlResultSet</a>(<span class="keywordtype">long</span> r){</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            hres = Helper.rs_create(r);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        </div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#a93912a30d7fc5a9871fca859565aa0b3">  125</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_mysql_1_1_mysql_result_set.html#a93912a30d7fc5a9871fca859565aa0b3">first</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <span class="keywordflow">return</span> Helper.rs_first(hres);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        </div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#ad3e817259471d3c46ddcd0ce8b476795">  129</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_mysql_1_1_mysql_result_set.html#ad3e817259471d3c46ddcd0ce8b476795">last</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="keywordflow">return</span> Helper.rs_last(hres);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#a12dedc6ff47170c4e21d8d4c0c4e4926">  133</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_mysql_1_1_mysql_result_set.html#a12dedc6ff47170c4e21d8d4c0c4e4926">next</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <span class="keywordflow">return</span> Helper.rs_next(hres);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        </div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#a7a7cffe58c68d8f64928dc0ebfc65c17">  137</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_mysql_1_1_mysql_result_set.html#a7a7cffe58c68d8f64928dc0ebfc65c17">isEof</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;isEof&quot;</span>);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        </div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#aae988b41f7d8e26974897ba310d8fa41">  142</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_mysql_1_1_mysql_result_set.html#aae988b41f7d8e26974897ba310d8fa41">previous</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;previous&quot;</span>);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        }</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#a1185d4ed0f219df011d18b63060962ab">  147</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_mysql_1_1_mysql_result_set.html#a1185d4ed0f219df011d18b63060962ab">isFirst</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;isFirst&quot;</span>);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        </div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#a2c4a4a5ffd68f9cf21eb128933a7c797">  152</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_mysql_1_1_mysql_result_set.html#a2c4a4a5ffd68f9cf21eb128933a7c797">isLast</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <span class="keywordflow">return</span> Helper.rs_isLast(hres);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        </div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#a24ce09a923c3677f6da47de247b41d04">  156</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_mysql_1_1_mysql_result_set.html#a24ce09a923c3677f6da47de247b41d04">isValid</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <span class="keywordflow">return</span> Helper.rs_isValid(hres);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        }</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        </div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#a71958f7ac761e367d19435d6b5202be9">  160</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_mysql_1_1_mysql_result_set.html#a71958f7ac761e367d19435d6b5202be9">getInt</a>(<a class="code" href="class_string.html">String</a> columnlabel)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keywordflow">return</span> Helper.rs_getValueI(hres, columnlabel);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        </div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#add6ccb7420966926cd05732607bc830c">  164</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code" href="class_mysql_1_1_mysql_result_set.html#add6ccb7420966926cd05732607bc830c">getLong</a>(<a class="code" href="class_string.html">String</a> columnlabel)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <span class="keywordflow">return</span> Helper.rs_getValueL(hres, columnlabel);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        </div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#a542b0e2ab3bdd61619c7dbca3efbcc6d">  168</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code" href="class_mysql_1_1_mysql_result_set.html#a542b0e2ab3bdd61619c7dbca3efbcc6d">getDouble</a>(<a class="code" href="class_string.html">String</a> columnlabel)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordflow">return</span> Helper.rs_getValueD(hres, columnlabel);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        </div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#adaf9a89e415686ff19083ce589cd043a">  172</a></span>&#160;        <span class="keyword">public</span> byte <a class="code" href="class_mysql_1_1_mysql_result_set.html#adaf9a89e415686ff19083ce589cd043a">getByte</a>(<a class="code" href="class_string.html">String</a> columnlabel)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <span class="keywordflow">return</span> Helper.rs_getValueI(hres, columnlabel);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        </div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#af353cd91799f827fbeab543763063ffa">  176</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_mysql_1_1_mysql_result_set.html#af353cd91799f827fbeab543763063ffa">getBoolean</a>(<a class="code" href="class_string.html">String</a> columnlabel)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            <span class="keywordflow">return</span> Helper.rs_getValueI(hres, columnlabel) != 0;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        }</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        </div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#a07e2073df34fa4d673fa0fb4d6504d00">  180</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_mysql_1_1_mysql_result_set.html#a07e2073df34fa4d673fa0fb4d6504d00">getString</a>(<a class="code" href="class_string.html">String</a> columnlabel)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            <span class="keywordflow">return</span> Helper.rs_getValue(hres, columnlabel);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        }</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#af81bdc69c1e0ba3d62357003fd1cc0a6">  184</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_mysql_1_1_mysql_result_set.html#af81bdc69c1e0ba3d62357003fd1cc0a6">getInt</a>(<span class="keywordtype">int</span> columnIndex)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <span class="keywordflow">return</span> Helper.rs_getIValueI(hres, columnIndex);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        </div>
+<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#a87edb5898a228825a7659b3af09b437d">  188</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code" href="class_mysql_1_1_mysql_result_set.html#a87edb5898a228825a7659b3af09b437d">getLong</a>(<span class="keywordtype">int</span> columnIndex)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            <span class="keywordflow">return</span> Helper.rs_getIValueL(hres, columnIndex);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        </div>
+<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#aa9ee5f395a9e2daab5415f6773db293b">  192</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code" href="class_mysql_1_1_mysql_result_set.html#aa9ee5f395a9e2daab5415f6773db293b">getDouble</a>(<span class="keywordtype">int</span> columnIndex)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <span class="keywordflow">return</span> Helper.rs_getIValueD(hres, columnIndex);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        }</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        </div>
+<div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#af45b4e5a32b98bec3ab8e7564086e314">  196</a></span>&#160;        <span class="keyword">public</span> byte <a class="code" href="class_mysql_1_1_mysql_result_set.html#af45b4e5a32b98bec3ab8e7564086e314">getByte</a>(<span class="keywordtype">int</span> columnIndex)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            <span class="keywordflow">return</span> Helper.rs_getIValueI(hres, columnIndex);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        </div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#a0de786b862e2b20e1bd6fdcab3a9a416">  200</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_mysql_1_1_mysql_result_set.html#a0de786b862e2b20e1bd6fdcab3a9a416">getBoolean</a>(<span class="keywordtype">int</span> columnIndex)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            <span class="keywordflow">return</span> Helper.rs_getIValueI(hres, columnIndex) != 0;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        }</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        </div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#a00e7572159c117d7bad8948be40bc3bf">  204</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_mysql_1_1_mysql_result_set.html#a00e7572159c117d7bad8948be40bc3bf">getString</a>(<span class="keywordtype">int</span> columnIndex)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <span class="keywordflow">return</span> Helper.rs_getIValue(hres, columnIndex);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        }</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#a8800d3079142f6f15de374ac56e5cd3c">  208</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_mysql_1_1_mysql_result_set.html#a8800d3079142f6f15de374ac56e5cd3c">findColumn</a>(<a class="code" href="class_string.html">String</a>)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;findColumn&quot;</span>);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        }</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        </div>
+<div class="line"><a name="l00213"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#a66cb3e904079ae4581ed0207d4e53392">  213</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code" href="class_mysql_1_1_mysql_result_set.html#a66cb3e904079ae4581ed0207d4e53392">getRowCount</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            <span class="keywordflow">return</span> Helper.rs_getRowCount(hres);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        }</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        </div>
+<div class="line"><a name="l00217"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#a2135a919f901124d1a80fb6302d9f571">  217</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_mysql_1_1_mysql_result_set.html#a2135a919f901124d1a80fb6302d9f571">getRow</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;getRow&quot;</span>);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        }</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        </div>
+<div class="line"><a name="l00222"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#a24283120ebd7442f265aaab4c46caef6">  222</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_mysql_1_1_mysql_result_set.html#a24283120ebd7442f265aaab4c46caef6">close</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            <span class="keywordflow">if</span> (hres != 0){</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                Helper.rs_free(hres);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                hres = 0;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            }</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        }</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        </div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_result_set.html#a32d626626eee0bc4ade146973f6abb1c">  229</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_mysql_1_1_mysql_result_set.html#a32d626626eee0bc4ade146973f6abb1c">finalize</a>(){</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            <a class="code" href="class_mysql_1_1_mysql_result_set.html#a24283120ebd7442f265aaab4c46caef6">close</a>();</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        }</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    };</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    </div>
+<div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_statement.html">  234</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span>MysqlStatement : <a class="code" href="namespace_sql.html">Sql</a>.Statement{</div>
+<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_statement.html#a82c8c66bd9ffddc32ff0584dc986831d">  235</a></span>&#160;        <a class="code" href="class_mysql.html">Mysql</a> <a class="code" href="class_mysql_1_1_mysql_statement.html#a82c8c66bd9ffddc32ff0584dc986831d">mysql</a>;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        </div>
+<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_statement.html#adeeef8942362a3aeefc130de64cc3284">  237</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_mysql_1_1_mysql_statement.html#adeeef8942362a3aeefc130de64cc3284">MysqlStatement</a>(<a class="code" href="class_mysql.html">Mysql</a> m){</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            mysql = m;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        }</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        </div>
+<div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_statement.html#a3964ce135a59976676402f9df97d000e">  241</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_mysql_1_1_mysql_statement.html#a3964ce135a59976676402f9df97d000e">execute</a>(<a class="code" href="class_string.html">String</a> sql)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            <span class="keywordflow">if</span> (0 != Helper.x_mysql_query(mysql.<a class="code" href="class_mysql.html#a8b778b65e727ad341e76b918f0a2f758">_mysql</a>,sql)){</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_sql_exception.html">SqlException</a>(mysql.<a class="code" href="class_mysql.html#a03973e015747285e3bdd01b87d124fb3">getErrorCode</a>(), mysql.<a class="code" href="class_mysql.html#aeb1ef3b1759bb00775d39c77e670bdd0">getError</a>());</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            }</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        }</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        </div>
+<div class="line"><a name="l00248"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_statement.html#a777f503eb3d365e7f59e3db8a4413f04">  248</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="interface_sql_1_1_result_set.html">ResultSet</a> <a class="code" href="class_mysql_1_1_mysql_statement.html#a777f503eb3d365e7f59e3db8a4413f04">executeQuery</a>(<a class="code" href="class_string.html">String</a> sql)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            <span class="keywordflow">if</span> (0 != Helper.x_mysql_query(mysql.<a class="code" href="class_mysql.html#a8b778b65e727ad341e76b918f0a2f758">_mysql</a>,sql)){</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_sql_exception.html">SqlException</a>(mysql.<a class="code" href="class_mysql.html#a03973e015747285e3bdd01b87d124fb3">getErrorCode</a>(), mysql.<a class="code" href="class_mysql.html#aeb1ef3b1759bb00775d39c77e670bdd0">getError</a>());</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            }</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_mysql_1_1_mysql_statement.html#abdd9786f302141dd3cd6d77ae4fb8b94">getResult</a>();</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        }</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        </div>
+<div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_statement.html#a94205f29b423121e7907ba0d035e2690">  255</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_mysql_1_1_mysql_statement.html#a94205f29b423121e7907ba0d035e2690">executeUpdate</a>(<a class="code" href="class_string.html">String</a> sql)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            <span class="keywordflow">if</span> (0 != Helper.x_mysql_query(mysql.<a class="code" href="class_mysql.html#a8b778b65e727ad341e76b918f0a2f758">_mysql</a>,sql)){</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_sql_exception.html">SqlException</a>(mysql.<a class="code" href="class_mysql.html#a03973e015747285e3bdd01b87d124fb3">getErrorCode</a>(), mysql.<a class="code" href="class_mysql.html#aeb1ef3b1759bb00775d39c77e670bdd0">getError</a>());</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            }</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        }</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        </div>
+<div class="line"><a name="l00262"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_statement.html#abdd9786f302141dd3cd6d77ae4fb8b94">  262</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="interface_sql_1_1_result_set.html">ResultSet</a> <a class="code" href="class_mysql_1_1_mysql_statement.html#abdd9786f302141dd3cd6d77ae4fb8b94">getResult</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            <span class="keywordtype">long</span> res = Helper.x_mysql_store_result(mysql.<a class="code" href="class_mysql.html#a8b778b65e727ad341e76b918f0a2f758">_mysql</a>);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            <span class="keywordflow">if</span> (res != 0){</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> MysqlResultSet(res);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            }</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        }</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        </div>
+<div class="line"><a name="l00270"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_statement.html#a24283120ebd7442f265aaab4c46caef6">  270</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_mysql_1_1_mysql_statement.html#a24283120ebd7442f265aaab4c46caef6">close</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        </div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        }</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    };</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    </div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    </div>
+<div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_prepared_statement.html">  276</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span>MysqlPreparedStatement : <a class="code" href="namespace_sql.html">Sql</a>.PreparedStatement{</div>
+<div class="line"><a name="l00277"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_prepared_statement.html#a82c8c66bd9ffddc32ff0584dc986831d">  277</a></span>&#160;        <a class="code" href="class_mysql.html">Mysql</a> <a class="code" href="class_mysql_1_1_mysql_prepared_statement.html#a82c8c66bd9ffddc32ff0584dc986831d">mysql</a>;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        </div>
+<div class="line"><a name="l00279"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_prepared_statement.html#aa4275a161db1981c91f377e483f26eb7">  279</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_mysql_1_1_mysql_prepared_statement.html#aa4275a161db1981c91f377e483f26eb7">MysqlPreparedStatement</a>(<a class="code" href="class_mysql.html">Mysql</a> m, <a class="code" href="class_string.html">String</a> sql){</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            super(sql);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            mysql = m;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        }</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        </div>
+<div class="line"><a name="l00284"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_prepared_statement.html#a3964ce135a59976676402f9df97d000e">  284</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_mysql_1_1_mysql_prepared_statement.html#a3964ce135a59976676402f9df97d000e">execute</a>(<a class="code" href="class_string.html">String</a> sql)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            <span class="keywordflow">if</span> (0 != Helper.x_mysql_query(mysql.<a class="code" href="class_mysql.html#a8b778b65e727ad341e76b918f0a2f758">_mysql</a>,sql)){</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_sql_exception.html">SqlException</a>(mysql.<a class="code" href="class_mysql.html#a03973e015747285e3bdd01b87d124fb3">getErrorCode</a>(), mysql.<a class="code" href="class_mysql.html#aeb1ef3b1759bb00775d39c77e670bdd0">getError</a>());</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            }</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        }</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        </div>
+<div class="line"><a name="l00291"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_prepared_statement.html#a777f503eb3d365e7f59e3db8a4413f04">  291</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="interface_sql_1_1_result_set.html">ResultSet</a> <a class="code" href="class_mysql_1_1_mysql_prepared_statement.html#a777f503eb3d365e7f59e3db8a4413f04">executeQuery</a>(<a class="code" href="class_string.html">String</a> sql)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            <span class="keywordflow">if</span> (0 != Helper.x_mysql_query(mysql.<a class="code" href="class_mysql.html#a8b778b65e727ad341e76b918f0a2f758">_mysql</a>,sql)){</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_sql_exception.html">SqlException</a>(mysql.<a class="code" href="class_mysql.html#a03973e015747285e3bdd01b87d124fb3">getErrorCode</a>(), mysql.<a class="code" href="class_mysql.html#aeb1ef3b1759bb00775d39c77e670bdd0">getError</a>());</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            }</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_mysql_1_1_mysql_prepared_statement.html#abdd9786f302141dd3cd6d77ae4fb8b94">getResult</a>();</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        }</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        </div>
+<div class="line"><a name="l00298"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_prepared_statement.html#a94205f29b423121e7907ba0d035e2690">  298</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_mysql_1_1_mysql_prepared_statement.html#a94205f29b423121e7907ba0d035e2690">executeUpdate</a>(<a class="code" href="class_string.html">String</a> sql)<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;            <span class="keywordflow">if</span> (0 != Helper.x_mysql_query(mysql.<a class="code" href="class_mysql.html#a8b778b65e727ad341e76b918f0a2f758">_mysql</a>,sql)){</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_sql_exception.html">SqlException</a>(mysql.<a class="code" href="class_mysql.html#a03973e015747285e3bdd01b87d124fb3">getErrorCode</a>(), mysql.<a class="code" href="class_mysql.html#aeb1ef3b1759bb00775d39c77e670bdd0">getError</a>());</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;            }</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        }</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        </div>
+<div class="line"><a name="l00305"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_prepared_statement.html#abdd9786f302141dd3cd6d77ae4fb8b94">  305</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="interface_sql_1_1_result_set.html">ResultSet</a> <a class="code" href="class_mysql_1_1_mysql_prepared_statement.html#abdd9786f302141dd3cd6d77ae4fb8b94">getResult</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;            <span class="keywordtype">long</span> res = Helper.x_mysql_store_result(mysql.<a class="code" href="class_mysql.html#a8b778b65e727ad341e76b918f0a2f758">_mysql</a>);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            <span class="keywordflow">if</span> (res != 0){</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> MysqlResultSet(res);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;            }</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;            <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        }</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        </div>
+<div class="line"><a name="l00313"></a><span class="lineno"><a class="line" href="class_mysql_1_1_mysql_prepared_statement.html#a24283120ebd7442f265aaab4c46caef6">  313</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_mysql_1_1_mysql_prepared_statement.html#a24283120ebd7442f265aaab4c46caef6">close</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        </div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        }</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    };</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    </div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    </div>
+<div class="line"><a name="l00319"></a><span class="lineno"><a class="line" href="class_mysql.html#a24283120ebd7442f265aaab4c46caef6">  319</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_mysql.html#a24283120ebd7442f265aaab4c46caef6">close</a>()<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="comment">//TODO: </span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keywordflow">if</span> (_mysql != nilptr){</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            Helper.x_mysql_close(_mysql);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;            _mysql = nilptr;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        }</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    }</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
+<div class="line"><a name="l00327"></a><span class="lineno"><a class="line" href="class_mysql.html#a32d626626eee0bc4ade146973f6abb1c">  327</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mysql.html#a32d626626eee0bc4ade146973f6abb1c">finalize</a>(){</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <a class="code" href="class_mysql.html#a24283120ebd7442f265aaab4c46caef6">close</a>();</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    }</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    </div>
+<div class="line"><a name="l00331"></a><span class="lineno"><a class="line" href="class_mysql.html#a24285b03307ae66ae30988f2f6d14ddc">  331</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_mysql.html#a24285b03307ae66ae30988f2f6d14ddc">create</a>(<a class="code" href="class_string.html">String</a> uri, <a class="code" href="class_string.html">String</a> username, <a class="code" href="class_string.html">String</a> pwd)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <span class="comment">//TODO: </span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        byte [] __mysql = <span class="keyword">new</span> byte[2048];</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        </div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keywordflow">if</span> (0l == Helper.x_mysql_init(__mysql)){</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_sql_exception.html">SqlException</a>(Helper.x_mysql_errno(__mysql), Helper.x_mysql_error(__mysql));</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        }</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        </div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <span class="keywordflow">if</span> (timeout != 0){</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            <span class="keywordflow">if</span> (0 == Helper.x_mysql_options(__mysql,0,timeout)){</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_sql_exception.html">SqlException</a>(Helper.x_mysql_errno(__mysql), Helper.x_mysql_error(__mysql));</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            }</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        }</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        </div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <span class="keywordflow">if</span> (0l == Helper.x_mysql_real_connect(__mysql,uri,username,pwd,nilptr,port,nilptr,0)){</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_sql_exception.html">SqlException</a>(Helper.x_mysql_errno(__mysql), Helper.x_mysql_error(__mysql));</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        }</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        _mysql = __mysql;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    }</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
+<div class="line"><a name="l00352"></a><span class="lineno"><a class="line" href="class_mysql.html#a4f0eaa77c46b051776bd50414447422e">  352</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_mysql.html#a4f0eaa77c46b051776bd50414447422e">isClosed</a>()<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        <span class="comment">//TODO: </span></div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <span class="keywordflow">return</span> _mysql != nilptr;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    }</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
+<div class="line"><a name="l00358"></a><span class="lineno"><a class="line" href="class_mysql.html#a03973e015747285e3bdd01b87d124fb3">  358</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_mysql.html#a03973e015747285e3bdd01b87d124fb3">getErrorCode</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <span class="keywordflow">return</span> Helper.x_mysql_errno(_mysql);</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    }</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    </div>
+<div class="line"><a name="l00362"></a><span class="lineno"><a class="line" href="class_mysql.html#aeb1ef3b1759bb00775d39c77e670bdd0">  362</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_mysql.html#aeb1ef3b1759bb00775d39c77e670bdd0">getError</a>()<span class="keyword">override</span>{</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <span class="keywordflow">return</span> Helper.x_mysql_error(_mysql);</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    }</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    </div>
+<div class="line"><a name="l00366"></a><span class="lineno"><a class="line" href="class_mysql.html#a5ac06d5572672c9e3c042a3027f8cd98">  366</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_mysql.html#a5ac06d5572672c9e3c042a3027f8cd98">getSqlState</a>(){</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <span class="keywordflow">return</span> Helper.x_mysql_state(_mysql);</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    }</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    </div>
+<div class="line"><a name="l00370"></a><span class="lineno"><a class="line" href="class_mysql.html#a6fe51d063363fbb41c0a562964a002f7">  370</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_mysql.html#a6fe51d063363fbb41c0a562964a002f7">getInfo</a>(){</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <span class="keywordflow">return</span> Helper.x_mysql_info(_mysql);</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    }</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    </div>
+<div class="line"><a name="l00374"></a><span class="lineno"><a class="line" href="class_mysql.html#a25bc7d9d05a180769e38ef30c26f0408">  374</a></span>&#160;    <span class="keyword">public</span> Object <a class="code" href="class_mysql.html#a25bc7d9d05a180769e38ef30c26f0408">getOption</a>(<span class="keywordtype">int</span> opt)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <span class="comment">//TODO: </span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;getOption&quot;</span>);</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="keywordflow">return</span> nilptr;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    }</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;</div>
+<div class="line"><a name="l00380"></a><span class="lineno"><a class="line" href="class_mysql.html#adf2d952ba41a1ebd626afb88f13a8f89">  380</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_mysql.html#adf2d952ba41a1ebd626afb88f13a8f89">setOption</a>(<span class="keywordtype">int</span> opt, Object option)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <span class="keywordflow">switch</span>(opt){</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            <span class="keywordflow">case</span> MysqlOption.PORT:</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                port = (int)option;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            <span class="keywordflow">case</span> MysqlOption.TIMEOUT:</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;                timeout = (int)option;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;            <span class="keywordflow">case</span> MysqlOption.CHARSET:</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                <span class="keywordflow">if</span> (_mysql == nilptr){</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_sql_exception.html">SqlException</a>(-1, <span class="stringliteral">&quot;mysql not connected!&quot;</span>);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                }</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                <span class="keywordflow">if</span> (0 != Helper.x_mysql_set_character_set(_mysql, (<a class="code" href="class_string.html">String</a>)option)){</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_sql_exception.html">SqlException</a>(Helper.x_mysql_errno(_mysql), Helper.x_mysql_error(_mysql));</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;                }</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;            <span class="keywordflow">case</span> MysqlOption.SELECTDB:</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                <span class="keywordflow">if</span> (_mysql == nilptr){</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_sql_exception.html">SqlException</a>(-1, <span class="stringliteral">&quot;mysql not connected!&quot;</span>);</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                }</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                <span class="keywordflow">if</span> (0 != Helper.x_mysql_select_db(_mysql, (<a class="code" href="class_string.html">String</a>)option)){</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_sql_exception.html">SqlException</a>(Helper.x_mysql_errno(_mysql), Helper.x_mysql_error(_mysql));</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                }</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;            <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_database_not_support_exception.html">DatabaseNotSupportException</a>(<span class="stringliteral">&quot;setOption:&quot;</span> + opt);</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        }</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    }</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;</div>
+<div class="line"><a name="l00410"></a><span class="lineno"><a class="line" href="class_mysql.html#acd826b80350573c3c739b9064382e8a6">  410</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="interface_sql_1_1_statement.html">Statement</a> <a class="code" href="class_mysql.html#acd826b80350573c3c739b9064382e8a6">createStatement</a>()<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> MysqlStatement(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    }</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;</div>
+<div class="line"><a name="l00414"></a><span class="lineno"><a class="line" href="class_mysql.html#ad15221891552b43863477936111ada40">  414</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="namespace_sql.html">Sql</a>.<a class="code" href="class_sql_1_1_prepared_statement.html">PreparedStatement</a> <a class="code" href="class_mysql.html#ad15221891552b43863477936111ada40">prepareStatement</a>(<a class="code" href="class_string.html">String</a> sql)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> MysqlPreparedStatement(<span class="keyword">this</span>, sql);</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    }</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;};</div>
+<div class="ttc" id="class_exception_html"><div class="ttname"><a href="class_exception.html">Exception</a></div><div class="ttdoc">异常类 </div><div class="ttdef"><b>Definition:</b> <a href="_exception_8xcs_source.html#l00006">Exception.xcs:6</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_a24ce09a923c3677f6da47de247b41d04"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#a24ce09a923c3677f6da47de247b41d04">Mysql.MysqlResultSet.isValid</a></div><div class="ttdeci">bool isValid() override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00156">Mysql.xcsm:156</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_statement_html_a777f503eb3d365e7f59e3db8a4413f04"><div class="ttname"><a href="class_mysql_1_1_mysql_statement.html#a777f503eb3d365e7f59e3db8a4413f04">Mysql.MysqlStatement.executeQuery</a></div><div class="ttdeci">Sql.ResultSet executeQuery(String sql) override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00248">Mysql.xcsm:248</a></div></div>
+<div class="ttc" id="enum_mysql_1_1_mysql_option_html_aec0c42fb0a2429786e1bcd73ffe276b8"><div class="ttname"><a href="enum_mysql_1_1_mysql_option.html#aec0c42fb0a2429786e1bcd73ffe276b8">Mysql.MysqlOption.CHARSET</a></div><div class="ttdeci">CHARSET</div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00015">Mysql.xcsm:15</a></div></div>
+<div class="ttc" id="class_mysql_html_a493b57f443cc38b3d3df9c1e584d9d82"><div class="ttname"><a href="class_mysql.html#a493b57f443cc38b3d3df9c1e584d9d82">Mysql.timeout</a></div><div class="ttdeci">int timeout</div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00010">Mysql.xcsm:10</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_a043344406e0f05e0b3666befeca72f18"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#a043344406e0f05e0b3666befeca72f18">Mysql.MysqlResultSet.hres</a></div><div class="ttdeci">long hres</div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00119">Mysql.xcsm:119</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_statement_html_a94205f29b423121e7907ba0d035e2690"><div class="ttname"><a href="class_mysql_1_1_mysql_statement.html#a94205f29b423121e7907ba0d035e2690">Mysql.MysqlStatement.executeUpdate</a></div><div class="ttdeci">int executeUpdate(String sql) override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00255">Mysql.xcsm:255</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_prepared_statement_html_a24283120ebd7442f265aaab4c46caef6"><div class="ttname"><a href="class_mysql_1_1_mysql_prepared_statement.html#a24283120ebd7442f265aaab4c46caef6">Mysql.MysqlPreparedStatement.close</a></div><div class="ttdeci">void close() override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00313">Mysql.xcsm:313</a></div></div>
+<div class="ttc" id="class_mysql_html_a8b778b65e727ad341e76b918f0a2f758"><div class="ttname"><a href="class_mysql.html#a8b778b65e727ad341e76b918f0a2f758">Mysql._mysql</a></div><div class="ttdeci">byte [] _mysql</div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00007">Mysql.xcsm:7</a></div></div>
+<div class="ttc" id="class_mysql_html_a32d626626eee0bc4ade146973f6abb1c"><div class="ttname"><a href="class_mysql.html#a32d626626eee0bc4ade146973f6abb1c">Mysql.finalize</a></div><div class="ttdeci">void finalize()</div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00327">Mysql.xcsm:327</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_add6ccb7420966926cd05732607bc830c"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#add6ccb7420966926cd05732607bc830c">Mysql.MysqlResultSet.getLong</a></div><div class="ttdeci">long getLong(String columnlabel) override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00164">Mysql.xcsm:164</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_a07e2073df34fa4d673fa0fb4d6504d00"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#a07e2073df34fa4d673fa0fb4d6504d00">Mysql.MysqlResultSet.getString</a></div><div class="ttdeci">String getString(String columnlabel) override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00180">Mysql.xcsm:180</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_af81bdc69c1e0ba3d62357003fd1cc0a6"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#af81bdc69c1e0ba3d62357003fd1cc0a6">Mysql.MysqlResultSet.getInt</a></div><div class="ttdeci">int getInt(int columnIndex) override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00184">Mysql.xcsm:184</a></div></div>
+<div class="ttc" id="interface_sql_1_1_connection_html"><div class="ttname"><a href="interface_sql_1_1_connection.html">Sql.Connection</a></div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00239">xsql.xcs:239</a></div></div>
+<div class="ttc" id="enum_mysql_1_1_mysql_option_html_a8711b1474f4c3ddace10b21c45dcd212"><div class="ttname"><a href="enum_mysql_1_1_mysql_option.html#a8711b1474f4c3ddace10b21c45dcd212">Mysql.MysqlOption.TIMEOUT</a></div><div class="ttdeci">TIMEOUT</div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00014">Mysql.xcsm:14</a></div></div>
+<div class="ttc" id="interface_sql_1_1_statement_html"><div class="ttname"><a href="interface_sql_1_1_statement.html">Sql.Statement</a></div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00300">xsql.xcs:300</a></div></div>
+<div class="ttc" id="interface_sql_1_1_result_set_html"><div class="ttname"><a href="interface_sql_1_1_result_set.html">Sql.ResultSet</a></div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00268">xsql.xcs:268</a></div></div>
+<div class="ttc" id="class_mysql_html_ad15221891552b43863477936111ada40"><div class="ttname"><a href="class_mysql.html#ad15221891552b43863477936111ada40">Mysql.prepareStatement</a></div><div class="ttdeci">Sql.PreparedStatement prepareStatement(String sql) override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00414">Mysql.xcsm:414</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_statement_html_adeeef8942362a3aeefc130de64cc3284"><div class="ttname"><a href="class_mysql_1_1_mysql_statement.html#adeeef8942362a3aeefc130de64cc3284">Mysql.MysqlStatement.MysqlStatement</a></div><div class="ttdeci">MysqlStatement(Mysql m)</div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00237">Mysql.xcsm:237</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_a201ca4f10f8e3006a7a45c9bcfad8647"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#a201ca4f10f8e3006a7a45c9bcfad8647">Mysql.MysqlResultSet.MysqlResultSet</a></div><div class="ttdeci">MysqlResultSet(long r)</div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00121">Mysql.xcsm:121</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_a32d626626eee0bc4ade146973f6abb1c"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#a32d626626eee0bc4ade146973f6abb1c">Mysql.MysqlResultSet.finalize</a></div><div class="ttdeci">void finalize()</div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00229">Mysql.xcsm:229</a></div></div>
+<div class="ttc" id="class_mysql_1_1_helper_html_a6114a57ee5a0170c6492f2f7ca3d2ffe"><div class="ttname"><a href="class_mysql_1_1_helper.html#a6114a57ee5a0170c6492f2f7ca3d2ffe">Mysql.Helper.init</a></div><div class="ttdeci">static bool init()</div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00039">Mysql.xcsm:39</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_statement_html_abdd9786f302141dd3cd6d77ae4fb8b94"><div class="ttname"><a href="class_mysql_1_1_mysql_statement.html#abdd9786f302141dd3cd6d77ae4fb8b94">Mysql.MysqlStatement.getResult</a></div><div class="ttdeci">Sql.ResultSet getResult() override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00262">Mysql.xcsm:262</a></div></div>
+<div class="ttc" id="class_mysql_html_a63c89c04d1feae07ca35558055155ffb"><div class="ttname"><a href="class_mysql.html#a63c89c04d1feae07ca35558055155ffb">Mysql.port</a></div><div class="ttdeci">int port</div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00009">Mysql.xcsm:9</a></div></div>
+<div class="ttc" id="class_mysql_1_1_helper_html_abfbfac65cdbba0b2297a9bd65e4d601e"><div class="ttname"><a href="class_mysql_1_1_helper.html#abfbfac65cdbba0b2297a9bd65e4d601e">Mysql.Helper.bloaded</a></div><div class="ttdeci">static bool bloaded</div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00037">Mysql.xcsm:37</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_a0de786b862e2b20e1bd6fdcab3a9a416"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#a0de786b862e2b20e1bd6fdcab3a9a416">Mysql.MysqlResultSet.getBoolean</a></div><div class="ttdeci">bool getBoolean(int columnIndex) override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00200">Mysql.xcsm:200</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_prepared_statement_html_abdd9786f302141dd3cd6d77ae4fb8b94"><div class="ttname"><a href="class_mysql_1_1_mysql_prepared_statement.html#abdd9786f302141dd3cd6d77ae4fb8b94">Mysql.MysqlPreparedStatement.getResult</a></div><div class="ttdeci">Sql.ResultSet getResult() override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00305">Mysql.xcsm:305</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_a71958f7ac761e367d19435d6b5202be9"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#a71958f7ac761e367d19435d6b5202be9">Mysql.MysqlResultSet.getInt</a></div><div class="ttdeci">int getInt(String columnlabel) override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00160">Mysql.xcsm:160</a></div></div>
+<div class="ttc" id="class_mysql_html_af2d96d8fe2042b7cb63d0549dc1c568f"><div class="ttname"><a href="class_mysql.html#af2d96d8fe2042b7cb63d0549dc1c568f">Mysql.registried</a></div><div class="ttdeci">static bool registried</div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00116">Mysql.xcsm:116</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_prepared_statement_html_a3964ce135a59976676402f9df97d000e"><div class="ttname"><a href="class_mysql_1_1_mysql_prepared_statement.html#a3964ce135a59976676402f9df97d000e">Mysql.MysqlPreparedStatement.execute</a></div><div class="ttdeci">int execute(String sql) override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00284">Mysql.xcsm:284</a></div></div>
+<div class="ttc" id="namespace_sql_html"><div class="ttname"><a href="namespace_sql.html">Sql</a></div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00003">xsql.xcs:3</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_prepared_statement_html_a777f503eb3d365e7f59e3db8a4413f04"><div class="ttname"><a href="class_mysql_1_1_mysql_prepared_statement.html#a777f503eb3d365e7f59e3db8a4413f04">Mysql.MysqlPreparedStatement.executeQuery</a></div><div class="ttdeci">Sql.ResultSet executeQuery(String sql) override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00291">Mysql.xcsm:291</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_a93912a30d7fc5a9871fca859565aa0b3"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#a93912a30d7fc5a9871fca859565aa0b3">Mysql.MysqlResultSet.first</a></div><div class="ttdeci">bool first() override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00125">Mysql.xcsm:125</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_a24283120ebd7442f265aaab4c46caef6"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#a24283120ebd7442f265aaab4c46caef6">Mysql.MysqlResultSet.close</a></div><div class="ttdeci">void close() override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00222">Mysql.xcsm:222</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_a00e7572159c117d7bad8948be40bc3bf"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#a00e7572159c117d7bad8948be40bc3bf">Mysql.MysqlResultSet.getString</a></div><div class="ttdeci">String getString(int columnIndex) override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00204">Mysql.xcsm:204</a></div></div>
+<div class="ttc" id="class_sql_1_1_database_not_support_exception_html"><div class="ttname"><a href="class_sql_1_1_database_not_support_exception.html">Sql.DatabaseNotSupportException</a></div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00014">xsql.xcs:14</a></div></div>
+<div class="ttc" id="enum_mysql_1_1_mysql_option_html_a6dde884e19bdc8f342ffec8fc17e7c91"><div class="ttname"><a href="enum_mysql_1_1_mysql_option.html#a6dde884e19bdc8f342ffec8fc17e7c91">Mysql.MysqlOption.PORT</a></div><div class="ttdeci">PORT</div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00013">Mysql.xcsm:13</a></div></div>
+<div class="ttc" id="class_mysql_html_aeb1ef3b1759bb00775d39c77e670bdd0"><div class="ttname"><a href="class_mysql.html#aeb1ef3b1759bb00775d39c77e670bdd0">Mysql.getError</a></div><div class="ttdeci">String getError() override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00362">Mysql.xcsm:362</a></div></div>
+<div class="ttc" id="class_mysql_html"><div class="ttname"><a href="class_mysql.html">Mysql</a></div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00004">Mysql.xcsm:4</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_a8800d3079142f6f15de374ac56e5cd3c"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#a8800d3079142f6f15de374ac56e5cd3c">Mysql.MysqlResultSet.findColumn</a></div><div class="ttdeci">int findColumn(String) override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00208">Mysql.xcsm:208</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_ad3e817259471d3c46ddcd0ce8b476795"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#ad3e817259471d3c46ddcd0ce8b476795">Mysql.MysqlResultSet.last</a></div><div class="ttdeci">bool last() override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00129">Mysql.xcsm:129</a></div></div>
+<div class="ttc" id="class_mysql_html_a541891bee14184591d402b410d15c1c7"><div class="ttname"><a href="class_mysql.html#a541891bee14184591d402b410d15c1c7">Mysql.DRIVERNAME</a></div><div class="ttdeci">static const String DRIVERNAME</div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00006">Mysql.xcsm:6</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_adaf9a89e415686ff19083ce589cd043a"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#adaf9a89e415686ff19083ce589cd043a">Mysql.MysqlResultSet.getByte</a></div><div class="ttdeci">byte getByte(String columnlabel) override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00172">Mysql.xcsm:172</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_af45b4e5a32b98bec3ab8e7564086e314"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#af45b4e5a32b98bec3ab8e7564086e314">Mysql.MysqlResultSet.getByte</a></div><div class="ttdeci">byte getByte(int columnIndex) override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00196">Mysql.xcsm:196</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_a2135a919f901124d1a80fb6302d9f571"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#a2135a919f901124d1a80fb6302d9f571">Mysql.MysqlResultSet.getRow</a></div><div class="ttdeci">int getRow() override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00217">Mysql.xcsm:217</a></div></div>
+<div class="ttc" id="class_mysql_html_a24283120ebd7442f265aaab4c46caef6"><div class="ttname"><a href="class_mysql.html#a24283120ebd7442f265aaab4c46caef6">Mysql.close</a></div><div class="ttdeci">void close() override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00319">Mysql.xcsm:319</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_statement_html_a24283120ebd7442f265aaab4c46caef6"><div class="ttname"><a href="class_mysql_1_1_mysql_statement.html#a24283120ebd7442f265aaab4c46caef6">Mysql.MysqlStatement.close</a></div><div class="ttdeci">void close() override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00270">Mysql.xcsm:270</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_statement_html_a82c8c66bd9ffddc32ff0584dc986831d"><div class="ttname"><a href="class_mysql_1_1_mysql_statement.html#a82c8c66bd9ffddc32ff0584dc986831d">Mysql.MysqlStatement.mysql</a></div><div class="ttdeci">Mysql mysql</div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00235">Mysql.xcsm:235</a></div></div>
+<div class="ttc" id="class_mysql_html_adf2d952ba41a1ebd626afb88f13a8f89"><div class="ttname"><a href="class_mysql.html#adf2d952ba41a1ebd626afb88f13a8f89">Mysql.setOption</a></div><div class="ttdeci">void setOption(int opt, Object option) override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00380">Mysql.xcsm:380</a></div></div>
+<div class="ttc" id="class_mysql_html_aed67f9a784ee7c39eb9d14d80e88a745"><div class="ttname"><a href="class_mysql.html#aed67f9a784ee7c39eb9d14d80e88a745">Mysql.registry</a></div><div class="ttdeci">static bool registry()</div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00028">Mysql.xcsm:28</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_prepared_statement_html_a94205f29b423121e7907ba0d035e2690"><div class="ttname"><a href="class_mysql_1_1_mysql_prepared_statement.html#a94205f29b423121e7907ba0d035e2690">Mysql.MysqlPreparedStatement.executeUpdate</a></div><div class="ttdeci">int executeUpdate(String sql) override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00298">Mysql.xcsm:298</a></div></div>
+<div class="ttc" id="class__system___html"><div class="ttname"><a href="class__system__.html">_system_</a></div><div class="ttdoc">系统和IO相关 </div><div class="ttdef"><b>Definition:</b> <a href="_system_8xcs_source.html#l00006">System.xcs:6</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_af353cd91799f827fbeab543763063ffa"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#af353cd91799f827fbeab543763063ffa">Mysql.MysqlResultSet.getBoolean</a></div><div class="ttdeci">bool getBoolean(String columnlabel) override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00176">Mysql.xcsm:176</a></div></div>
+<div class="ttc" id="class_string_html_a6658a49f6ae8d217501c31f372610be4"><div class="ttname"><a href="class_string.html#a6658a49f6ae8d217501c31f372610be4">String.equals</a></div><div class="ttdeci">bool equals(String other)</div><div class="ttdoc">测试两个串是否相等 </div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_aa9ee5f395a9e2daab5415f6773db293b"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#aa9ee5f395a9e2daab5415f6773db293b">Mysql.MysqlResultSet.getDouble</a></div><div class="ttdeci">double getDouble(int columnIndex) override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00192">Mysql.xcsm:192</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_register_html_af0ca04d588e70845255e7020caf46415"><div class="ttname"><a href="class_mysql_1_1_mysql_register.html#af0ca04d588e70845255e7020caf46415">Mysql.MysqlRegister.allocConnection</a></div><div class="ttdeci">Sql.Connection allocConnection(String drivername) override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00020">Mysql.xcsm:20</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_statement_html_a3964ce135a59976676402f9df97d000e"><div class="ttname"><a href="class_mysql_1_1_mysql_statement.html#a3964ce135a59976676402f9df97d000e">Mysql.MysqlStatement.execute</a></div><div class="ttdeci">int execute(String sql) override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00241">Mysql.xcsm:241</a></div></div>
+<div class="ttc" id="class_exception_html_afafd068b736520af1e24269a284980a9"><div class="ttname"><a href="class_exception.html#afafd068b736520af1e24269a284980a9">Exception.getMessage</a></div><div class="ttdeci">String getMessage()</div><div class="ttdoc">读取异常消息 </div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_a66cb3e904079ae4581ed0207d4e53392"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#a66cb3e904079ae4581ed0207d4e53392">Mysql.MysqlResultSet.getRowCount</a></div><div class="ttdeci">long getRowCount() override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00213">Mysql.xcsm:213</a></div></div>
+<div class="ttc" id="class_mysql_html_a6fe51d063363fbb41c0a562964a002f7"><div class="ttname"><a href="class_mysql.html#a6fe51d063363fbb41c0a562964a002f7">Mysql.getInfo</a></div><div class="ttdeci">String getInfo()</div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00370">Mysql.xcsm:370</a></div></div>
+<div class="ttc" id="class_mysql_html_acd826b80350573c3c739b9064382e8a6"><div class="ttname"><a href="class_mysql.html#acd826b80350573c3c739b9064382e8a6">Mysql.createStatement</a></div><div class="ttdeci">Sql.Statement createStatement() override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00410">Mysql.xcsm:410</a></div></div>
+<div class="ttc" id="class_mysql_html_a25bc7d9d05a180769e38ef30c26f0408"><div class="ttname"><a href="class_mysql.html#a25bc7d9d05a180769e38ef30c26f0408">Mysql.getOption</a></div><div class="ttdeci">Object getOption(int opt) override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00374">Mysql.xcsm:374</a></div></div>
+<div class="ttc" id="class_mysql_html_a24285b03307ae66ae30988f2f6d14ddc"><div class="ttname"><a href="class_mysql.html#a24285b03307ae66ae30988f2f6d14ddc">Mysql.create</a></div><div class="ttdeci">void create(String uri, String username, String pwd) override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00331">Mysql.xcsm:331</a></div></div>
+<div class="ttc" id="class_sql_1_1_sql_exception_html"><div class="ttname"><a href="class_sql_1_1_sql_exception.html">Sql.SqlException</a></div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00004">xsql.xcs:4</a></div></div>
+<div class="ttc" id="class_sql_1_1_prepared_statement_html"><div class="ttname"><a href="class_sql_1_1_prepared_statement.html">Sql.PreparedStatement</a></div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00312">xsql.xcs:312</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_a7a7cffe58c68d8f64928dc0ebfc65c17"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#a7a7cffe58c68d8f64928dc0ebfc65c17">Mysql.MysqlResultSet.isEof</a></div><div class="ttdeci">bool isEof() override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00137">Mysql.xcsm:137</a></div></div>
+<div class="ttc" id="class_mysql_html_a4f0eaa77c46b051776bd50414447422e"><div class="ttname"><a href="class_mysql.html#a4f0eaa77c46b051776bd50414447422e">Mysql.isClosed</a></div><div class="ttdeci">bool isClosed() override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00352">Mysql.xcsm:352</a></div></div>
+<div class="ttc" id="class_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">字符串类 </div><div class="ttdef"><b>Definition:</b> <a href="_string_8xcs_source.html#l00007">String.xcs:7</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_a1185d4ed0f219df011d18b63060962ab"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#a1185d4ed0f219df011d18b63060962ab">Mysql.MysqlResultSet.isFirst</a></div><div class="ttdeci">bool isFirst() override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00147">Mysql.xcsm:147</a></div></div>
+<div class="ttc" id="class_sql_1_1_database_html"><div class="ttname"><a href="class_sql_1_1_database.html">Sql.Database</a></div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00207">xsql.xcs:207</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_a87edb5898a228825a7659b3af09b437d"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#a87edb5898a228825a7659b3af09b437d">Mysql.MysqlResultSet.getLong</a></div><div class="ttdeci">long getLong(int columnIndex) override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00188">Mysql.xcsm:188</a></div></div>
+<div class="ttc" id="class_mysql_html_a5ac06d5572672c9e3c042a3027f8cd98"><div class="ttname"><a href="class_mysql.html#a5ac06d5572672c9e3c042a3027f8cd98">Mysql.getSqlState</a></div><div class="ttdeci">String getSqlState()</div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00366">Mysql.xcsm:366</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_a2c4a4a5ffd68f9cf21eb128933a7c797"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#a2c4a4a5ffd68f9cf21eb128933a7c797">Mysql.MysqlResultSet.isLast</a></div><div class="ttdeci">bool isLast() override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00152">Mysql.xcsm:152</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_prepared_statement_html_a82c8c66bd9ffddc32ff0584dc986831d"><div class="ttname"><a href="class_mysql_1_1_mysql_prepared_statement.html#a82c8c66bd9ffddc32ff0584dc986831d">Mysql.MysqlPreparedStatement.mysql</a></div><div class="ttdeci">Mysql mysql</div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00277">Mysql.xcsm:277</a></div></div>
+<div class="ttc" id="class_sql_1_1_database_html_a71854546a939f222b617f97f92f5f51a"><div class="ttname"><a href="class_sql_1_1_database.html#a71854546a939f222b617f97f92f5f51a">Sql.Database.reigstry</a></div><div class="ttdeci">static bool reigstry(String name, ConnectionRegister reg)</div><div class="ttdef"><b>Definition:</b> <a href="xsql_8xcs_source.html#l00210">xsql.xcs:210</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_a12dedc6ff47170c4e21d8d4c0c4e4926"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#a12dedc6ff47170c4e21d8d4c0c4e4926">Mysql.MysqlResultSet.next</a></div><div class="ttdeci">bool next() override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00133">Mysql.xcsm:133</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_a542b0e2ab3bdd61619c7dbca3efbcc6d"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#a542b0e2ab3bdd61619c7dbca3efbcc6d">Mysql.MysqlResultSet.getDouble</a></div><div class="ttdeci">double getDouble(String columnlabel) override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00168">Mysql.xcsm:168</a></div></div>
+<div class="ttc" id="class_mysql_html_a03973e015747285e3bdd01b87d124fb3"><div class="ttname"><a href="class_mysql.html#a03973e015747285e3bdd01b87d124fb3">Mysql.getErrorCode</a></div><div class="ttdeci">int getErrorCode() override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00358">Mysql.xcsm:358</a></div></div>
+<div class="ttc" id="class_library_html"><div class="ttname"><a href="class_library.html">Library</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_prepared_statement_html_aa4275a161db1981c91f377e483f26eb7"><div class="ttname"><a href="class_mysql_1_1_mysql_prepared_statement.html#aa4275a161db1981c91f377e483f26eb7">Mysql.MysqlPreparedStatement.MysqlPreparedStatement</a></div><div class="ttdeci">MysqlPreparedStatement(Mysql m, String sql)</div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00279">Mysql.xcsm:279</a></div></div>
+<div class="ttc" id="class_mysql_1_1_mysql_result_set_html_aae988b41f7d8e26974897ba310d8fa41"><div class="ttname"><a href="class_mysql_1_1_mysql_result_set.html#aae988b41f7d8e26974897ba310d8fa41">Mysql.MysqlResultSet.previous</a></div><div class="ttdeci">bool previous() override </div><div class="ttdef"><b>Definition:</b> <a href="_mysql_8xcsm_source.html#l00142">Mysql.xcsm:142</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

@@ -22,11 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">xlang
-   &#160;<span id="projectnumber">v2.7 Release</span>
+   &#160;<span id="projectnumber">v3.6 Release</span>
    </div>
-   <div id="projectbrief">项目介绍</div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
   </td>
  </tr>
  </tbody>
@@ -74,11 +75,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
       <li><a href="functions.html"><span>全部</span></a></li>
       <li class="current"><a href="functions_func.html"><span>函数/子程序</span></a></li>
       <li><a href="functions_vars.html"><span>变量</span></a></li>
+      <li><a href="functions_type.html"><span>类型定义</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
-      <li><a href="functions_func.html#index_a"><span>a</span></a></li>
+      <li><a href="functions_func.html#index__"><span>_</span></a></li>
+      <li><a href="functions_func_a.html#index_a"><span>a</span></a></li>
       <li><a href="functions_func_b.html#index_b"><span>b</span></a></li>
       <li class="current"><a href="functions_func_c.html#index_c"><span>c</span></a></li>
       <li><a href="functions_func_d.html#index_d"><span>d</span></a></li>
@@ -88,6 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
       <li><a href="functions_func_h.html#index_h"><span>h</span></a></li>
       <li><a href="functions_func_i.html#index_i"><span>i</span></a></li>
       <li><a href="functions_func_j.html#index_j"><span>j</span></a></li>
+      <li><a href="functions_func_k.html#index_k"><span>k</span></a></li>
       <li><a href="functions_func_l.html#index_l"><span>l</span></a></li>
       <li><a href="functions_func_m.html#index_m"><span>m</span></a></li>
       <li><a href="functions_func_n.html#index_n"><span>n</span></a></li>
@@ -124,14 +128,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 &#160;
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>calcTitlePosition()
+: <a class="el" href="class_qt_1_1_progress_view.html#a2aa04017940d0e856dae5d651377edeb">ProgressView</a>
+</li>
 <li>cancel()
 : <a class="el" href="class_timer.html#a02d5fa6b14e221f3012a794b905be166">Timer</a>
 </li>
 <li>cancelTips()
-: <a class="el" href="class_q_x_sci.html#a484431d978156821387c7b61d6007518">QXSci</a>
+: <a class="el" href="class_qt_1_1_q_scintilla.html#a484431d978156821387c7b61d6007518">QScintilla</a>
+</li>
+<li>capacity()
+: <a class="el" href="class_string_buffer.html#ad7becd1f37b2db660d2335aec66075c8">StringBuffer</a>
+</li>
+<li>caption()
+: <a class="el" href="class_qtitan_1_1_dock_widget_panel.html#a3fdaa74cb798a81df97989c0a1eb2208">DockWidgetPanel</a>
 </li>
 <li>cascadeSubWindows()
-: <a class="el" href="class_q_x_mdi_area.html#a30b6fe451ad93d36b94bce0b84a55ac9">QXMdiArea</a>
+: <a class="el" href="class_qt_1_1_q_mdi_area.html#a30b6fe451ad93d36b94bce0b84a55ac9">QMdiArea</a>
+</li>
+<li>cascadingSectionResizes()
+: <a class="el" href="class_qt_1_1_q_header_view.html#a067bd7418327dec2310f07ca57455924">QHeaderView</a>
 </li>
 <li>cbrt()
 : <a class="el" href="class_math.html#a4db1b4c0525b75611b40d4d71d6da049">Math</a>
@@ -140,95 +156,191 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 : <a class="el" href="class_math.html#ae9cb9eb3ee0cbcd21bf98b6a3b001f97">Math</a>
 </li>
 <li>centerPoint()
-: <a class="el" href="class_q_x_rect.html#ad6d4915158d4a57aa23c38ddd26c34d9">QXRect</a>
+: <a class="el" href="class_qt_1_1_q_rect.html#a77dc0ccf4926ef8ab1a7f362c260897c">QRect</a>
 </li>
 <li>centerScreen()
-: <a class="el" href="class_q_x_widget.html#a004a3cf1aa7df75948f1dcfce72ae494">QXWidget</a>
+: <a class="el" href="class_qt_1_1_q_widget.html#a004a3cf1aa7df75948f1dcfce72ae494">QWidget</a>
+</li>
+<li>centralLayoutPanel()
+: <a class="el" href="class_qtitan_1_1_dock_panel_manager.html#ad4e51d9b87e8bf881334db468e579b3b">DockPanelManager</a>
+</li>
+<li>centralWidget()
+: <a class="el" href="class_qtitan_1_1_dock_bar_manager.html#aa942274fb90aba0286090024a9042e91">DockBarManager</a>
+, <a class="el" href="class_qtitan_1_1_dock_main_window.html#ae6ec066ad3e25257a75f66a715c1dad9">DockMainWindow</a>
+, <a class="el" href="class_qtitan_1_1_dock_panel_manager.html#aa942274fb90aba0286090024a9042e91">DockPanelManager</a>
+</li>
+<li>changeCurrentOnDrag()
+: <a class="el" href="class_qt_1_1_q_tab_bar.html#a5f66b48550e65a717752c40a6d87db3b">QTabBar</a>
 </li>
 <li>changePos()
-: <a class="el" href="class_report_engine_1_1_i_callback_datasource.html#a4edb6014eb7028bc5e6235cb89b4472c">ReportEngine.ICallbackDatasource</a>
+: <a class="el" href="class_qt_1_1_report_engine_1_1_i_callback_datasource.html#a4edb6014eb7028bc5e6235cb89b4472c">ReportEngine.ICallbackDatasource</a>
+</li>
+<li>channelCount()
+: <a class="el" href="class_qt_1_1_q_audio_format.html#abd9c5bad5f5b500a011c794b5299e93d">QAudioFormat</a>
 </li>
 <li>charAt()
 : <a class="el" href="class_string.html#ae76fa3a0d78763e77b69be80d699b0a2">String</a>
+, <a class="el" href="class_string_buffer.html#ae76fa3a0d78763e77b69be80d699b0a2">StringBuffer</a>
+</li>
+<li>charset()
+: <a class="el" href="class_string.html#a49d5975cc436d983a6ac2040fc4958b8">String</a>
+, <a class="el" href="class_string_buffer.html#a49d5975cc436d983a6ac2040fc4958b8">StringBuffer</a>
 </li>
 <li>chdir()
 : <a class="el" href="class__system__.html#a306c47583629169b79c2cf7e515ec11c">_system_</a>
 </li>
 <li>checkAssociate()
-: <a class="el" href="class_q_x_object.html#ad6babad44f196dc38c603ce532265215">QXObject</a>
+: <a class="el" href="class_qt_1_1_q_object.html#ad6babad44f196dc38c603ce532265215">QObject</a>
+</li>
+<li>checkValid()
+: <a class="el" href="class_file_stream_1_1_file_input_stream.html#ab04eb4f2347f440543da505a112cf040">FileInputStream</a>
+, <a class="el" href="class_file_stream_1_1_file_output_stream.html#ab04eb4f2347f440543da505a112cf040">FileOutputStream</a>
 </li>
 <li>child()
 : <a class="el" href="class_json_object.html#af95431294d48cd645f2b127cf61f7943">JsonObject</a>
 , <a class="el" href="class_x_dom_node.html#a93afac071323d71d72c6c8c182abc8b2">XDomNode</a>
 </li>
+<li>childCount()
+: <a class="el" href="class_qtitan_1_1_dock_layout_panel.html#a172bb92ff7ed724aeb24701296273fc4">DockLayoutPanel</a>
+</li>
 <li>chmod()
 : <a class="el" href="class__system__.html#a279b1facdb9dc1ec2ac06484495b4510">_system_</a>
+, <a class="el" href="class_f_s_object.html#aadd242b7a8fad88ba620e2e1f04e8eb2">FSObject</a>
 </li>
 <li>ClassCastException()
-: <a class="el" href="class_class_cast_exception.html#aa783540fa3fea1d9237d2e9fbcd3252b">ClassCastException</a>
+: <a class="el" href="class_class_cast_exception.html#a532b0f361b9f3f096eeb9c4cde465eac">ClassCastException</a>
 </li>
 <li>clear()
 : <a class="el" href="class_list.html#ac8bb3912a3ce86b15842e79d0b421204">List&lt;_V&gt;</a>
 , <a class="el" href="class_map.html#ac8bb3912a3ce86b15842e79d0b421204">Map&lt;_K,  _V&gt;</a>
-, <a class="el" href="class_q_x_combo_box.html#ac8bb3912a3ce86b15842e79d0b421204">QXComboBox</a>
-, <a class="el" href="class_q_x_menu_bar.html#ac8bb3912a3ce86b15842e79d0b421204">QXMenuBar</a>
-, <a class="el" href="class_q_x_property_browser.html#ac8bb3912a3ce86b15842e79d0b421204">QXPropertyBrowser</a>
-, <a class="el" href="class_q_x_sci.html#ac0b9cf7cfff7452a3973b41b876fae34">QXSci</a>
-, <a class="el" href="class_q_x_table_widget.html#ac8bb3912a3ce86b15842e79d0b421204">QXTableWidget</a>
-, <a class="el" href="class_q_x_text_edit.html#ac8bb3912a3ce86b15842e79d0b421204">QXTextEdit</a>
-, <a class="el" href="class_q_x_tree_view.html#ac8bb3912a3ce86b15842e79d0b421204">QXTreeView</a>
+, <a class="el" href="class_qt_1_1_q_combo_box.html#ac8bb3912a3ce86b15842e79d0b421204">QComboBox</a>
+, <a class="el" href="class_qt_1_1_q_menu_bar.html#ac8bb3912a3ce86b15842e79d0b421204">QMenuBar</a>
+, <a class="el" href="class_qt_1_1_q_property_browser.html#ac8bb3912a3ce86b15842e79d0b421204">QPropertyBrowser</a>
+, <a class="el" href="class_qt_1_1_q_scintilla.html#ac0b9cf7cfff7452a3973b41b876fae34">QScintilla</a>
+, <a class="el" href="class_qt_1_1_q_table_widget.html#ac8bb3912a3ce86b15842e79d0b421204">QTableWidget</a>
+, <a class="el" href="class_qt_1_1_q_tab_widget.html#ac8bb3912a3ce86b15842e79d0b421204">QTabWidget</a>
+, <a class="el" href="class_qt_1_1_q_text_edit.html#ac8bb3912a3ce86b15842e79d0b421204">QTextEdit</a>
+, <a class="el" href="class_qt_1_1_q_tree_widget.html#ac8bb3912a3ce86b15842e79d0b421204">QTreeWidget</a>
+, <a class="el" href="class_sql_1_1_connection_pool.html#ac8bb3912a3ce86b15842e79d0b421204">ConnectionPool</a>
+, <a class="el" href="class_string_buffer.html#ade0d9dc322e93909c15706c89b6f2919">StringBuffer</a>
 , <a class="el" href="class_vector.html#ac8bb3912a3ce86b15842e79d0b421204">Vector&lt;_V&gt;</a>
 </li>
 <li>clearCacher()
 : <a class="el" href="class_website.html#ae4e210f124cf318e1bad505e70619a2c">Website</a>
 </li>
 <li>clearContent()
-: <a class="el" href="class_q_x_table_widget.html#a0761c8cf0283a7b44a7de06a5dac6e45">QXTableWidget</a>
+: <a class="el" href="class_qt_1_1_q_table_widget.html#a0761c8cf0283a7b44a7de06a5dac6e45">QTableWidget</a>
+</li>
+<li>clearDockBars()
+: <a class="el" href="class_qtitan_1_1_dock_bar_manager.html#aeb4fcaf21e4d114163e3c516a77d4c11">DockBarManager</a>
+, <a class="el" href="class_qtitan_1_1_dock_main_window.html#aeb4fcaf21e4d114163e3c516a77d4c11">DockMainWindow</a>
+</li>
+<li>clearDockPanels()
+: <a class="el" href="class_qtitan_1_1_dock_main_window.html#a7a4fcaec69c96385cacb004e39f1702b">DockMainWindow</a>
+, <a class="el" href="class_qtitan_1_1_dock_panel_manager.html#a7a4fcaec69c96385cacb004e39f1702b">DockPanelManager</a>
 </li>
 <li>clearIndic()
-: <a class="el" href="class_q_x_sci.html#a542411bc58dbbf7ea8dd4a4de5b1bb93">QXSci</a>
+: <a class="el" href="class_qt_1_1_q_scintilla.html#a542411bc58dbbf7ea8dd4a4de5b1bb93">QScintilla</a>
 </li>
 <li>clearInternalShortcuts()
-: <a class="el" href="class_q_x_sci.html#a7ad4f85d183dd0bee32109a94d575391">QXSci</a>
+: <a class="el" href="class_qt_1_1_q_scintilla.html#a7ad4f85d183dd0bee32109a94d575391">QScintilla</a>
 </li>
 <li>clearSession()
 : <a class="el" href="class_website.html#a127586b4e8e9c3ce927ec134fd0d03b4">Website</a>
 </li>
+<li>clearSpans()
+: <a class="el" href="class_qt_1_1_q_table_widget.html#a130e9d1931013e902c2f3271af04c44f">QTableWidget</a>
+</li>
 <li>clearUndo()
-: <a class="el" href="class_q_x_sci.html#a45feecf109b9a31879de4e31137da430">QXSci</a>
+: <a class="el" href="class_qt_1_1_q_scintilla.html#a45feecf109b9a31879de4e31137da430">QScintilla</a>
 </li>
 <li>clone()
 : <a class="el" href="class_json_array.html#a0560a37a4768ff105917f635f98d02b6">JsonArray</a>
 , <a class="el" href="class_json_object.html#a0560a37a4768ff105917f635f98d02b6">JsonObject</a>
+, <a class="el" href="class_map_1_1_iterator.html#abc3613bf5bf3ea0adecddda35f82a515">Map&lt;_K,  _V&gt;.Iterator&lt;_K,  _V&gt;</a>
 , <a class="el" href="class_unsi.html#a6ca5700b140000252909fd78da6b2341">Unsi</a>
 </li>
 <li>cloneContext()
 : <a class="el" href="interface_async_output.html#a30fdd442c12e9af0007866abbcf2fa77">AsyncOutput</a>
 </li>
 <li>close()
-: <a class="el" href="class_dgram_socket.html#a5ae591df94fc66ccb85cbb6565368bca">DgramSocket</a>
+: <a class="el" href="class_ado_connector_1_1_ado_prepared_statement.html#a24283120ebd7442f265aaab4c46caef6">AdoConnector.AdoPreparedStatement</a>
+, <a class="el" href="class_ado_connector_1_1_ado_result_set.html#a24283120ebd7442f265aaab4c46caef6">AdoConnector.AdoResultSet</a>
+, <a class="el" href="class_ado_connector_1_1_ado_statement.html#a24283120ebd7442f265aaab4c46caef6">AdoConnector.AdoStatement</a>
+, <a class="el" href="class_ado_connector.html#a24283120ebd7442f265aaab4c46caef6">AdoConnector</a>
+, <a class="el" href="class_dgram_socket.html#a5ae591df94fc66ccb85cbb6565368bca">DgramSocket</a>
+, <a class="el" href="class_file_stream_1_1_file_input_stream.html#a24283120ebd7442f265aaab4c46caef6">FileInputStream</a>
+, <a class="el" href="class_file_stream_1_1_file_output_stream.html#a24283120ebd7442f265aaab4c46caef6">FileOutputStream</a>
 , <a class="el" href="class_http_server.html#a5ae591df94fc66ccb85cbb6565368bca">HttpServer</a>
-, <a class="el" href="class_q_x_widget.html#ace8850cf2f2982a4c0a9bcfbe0823888">QXWidget</a>
+, <a class="el" href="class_mysql.html#a24283120ebd7442f265aaab4c46caef6">Mysql</a>
+, <a class="el" href="class_mysql_1_1_mysql_prepared_statement.html#a24283120ebd7442f265aaab4c46caef6">Mysql.MysqlPreparedStatement</a>
+, <a class="el" href="class_mysql_1_1_mysql_result_set.html#a24283120ebd7442f265aaab4c46caef6">Mysql.MysqlResultSet</a>
+, <a class="el" href="class_mysql_1_1_mysql_statement.html#a24283120ebd7442f265aaab4c46caef6">Mysql.MysqlStatement</a>
+, <a class="el" href="class_qt_1_1_q_widget.html#ace8850cf2f2982a4c0a9bcfbe0823888">QWidget</a>
+, <a class="el" href="interface_sql_1_1_connection.html#a5ae591df94fc66ccb85cbb6565368bca">Connection</a>
+, <a class="el" href="interface_sql_1_1_result_set.html#a5ae591df94fc66ccb85cbb6565368bca">ResultSet</a>
+, <a class="el" href="interface_sql_1_1_statement.html#a5ae591df94fc66ccb85cbb6565368bca">Statement</a>
+, <a class="el" href="class_sqlite.html#a24283120ebd7442f265aaab4c46caef6">Sqlite</a>
+, <a class="el" href="class_sqlite_1_1_sqlite_prepared_statement.html#a24283120ebd7442f265aaab4c46caef6">Sqlite.SqlitePreparedStatement</a>
+, <a class="el" href="class_sqlite_1_1_sqlite_result_set.html#a24283120ebd7442f265aaab4c46caef6">Sqlite.SqliteResultSet</a>
 , <a class="el" href="interface_stream.html#a5ae591df94fc66ccb85cbb6565368bca">Stream</a>
 , <a class="el" href="class_stream_socket.html#a5ae591df94fc66ccb85cbb6565368bca">StreamSocket</a>
+</li>
+<li>closeDir()
+: <a class="el" href="class_f_s_object.html#aafa72d17fade0de3ff4e890c2c224186">FSObject</a>
+</li>
+<li>closeDockPanel()
+: <a class="el" href="class_qtitan_1_1_dock_panel_manager.html#a7fe460d342a7e18aa53c430a5e07794a">DockPanelManager</a>
 </li>
 <li>closeFile()
 : <a class="el" href="class__system__.html#a0aa7c150126463044db37c4f260a3038">_system_</a>
 </li>
+<li>closeHandle()
+: <a class="el" href="class_runtime_1_1_o_s_process.html#abca1537c7195c0bfad6bb75643def296">OSProcess</a>
+</li>
+<li>closePanel()
+: <a class="el" href="class_qtitan_1_1_dock_widget_panel.html#acb7c1185ab5857ac5e56b1948efa4170">DockWidgetPanel</a>
+</li>
 <li>closePipe()
 : <a class="el" href="class__system__.html#aa078785b7f5b4d3891de5e3c7ca6cdb5">_system_</a>
 </li>
+<li>codec()
+: <a class="el" href="class_qt_1_1_q_audio_format.html#a97a946c2c5ee96d7c1858256f7c9e31c">QAudioFormat</a>
+</li>
 <li>colorCount()
-: <a class="el" href="class_q_paint_device.html#a9e4fc55a7bfc439f1f26eb52854eac68">QPaintDevice</a>
+: <a class="el" href="class_qt_1_1_q_paint_device.html#a9e4fc55a7bfc439f1f26eb52854eac68">QPaintDevice</a>
+</li>
+<li>columnAt()
+: <a class="el" href="class_qt_1_1_q_table_widget.html#adfb72db13f70087ca4165424f777804b">QTableWidget</a>
+</li>
+<li>columnSpan()
+: <a class="el" href="class_qt_1_1_q_table_widget.html#a6554799af9bdfe3036b802b5e3421faf">QTableWidget</a>
+</li>
+<li>columnViewportPosition()
+: <a class="el" href="class_qt_1_1_q_table_widget.html#aff6e43ee37bb3f1b160663ed7ae97313">QTableWidget</a>
+</li>
+<li>columnWidth()
+: <a class="el" href="class_qt_1_1_q_table_widget.html#a7ae59abf39fb97b0d153ad16dffb73da">QTableWidget</a>
+</li>
+<li>compare()
+: <a class="el" href="class_string.html#a0c0853dae6b24207794a4dfa7d9e7a77">String</a>
+, <a class="el" href="class_string_buffer.html#a0c0853dae6b24207794a4dfa7d9e7a77">StringBuffer</a>
 </li>
 <li>Compile()
 : <a class="el" href="class_pattern.html#a3cdf29434f359be10bb097026627b79c">Pattern</a>
 </li>
 <li>config()
-: <a class="el" href="class_unsi.html#afb7c18af3c116fc1b43cc3c7d6f0af42">Unsi</a>
+: <a class="el" href="class_sql_1_1_connection_pool.html#ab4ca60fb15533bd8d0e2499badf9ac10">ConnectionPool</a>
+, <a class="el" href="class_unsi.html#afb7c18af3c116fc1b43cc3c7d6f0af42">Unsi</a>
 </li>
 <li>configCacher()
 : <a class="el" href="class_website.html#a44b87822703220dc604f3afe884c8a29">Website</a>
+</li>
+<li>configColor()
+: <a class="el" href="class_qt_1_1_switche.html#a71a5388bb04016f145743f5ae026bfd1">Switche</a>
+</li>
+<li>configHttps()
+: <a class="el" href="class_http_server.html#a1e02a5246cc11ee6f1c69f501e2bb012">HttpServer</a>
 </li>
 <li>configSession()
 : <a class="el" href="class_website.html#aefbe062491f51675a7df8b15a7e0ced9">Website</a>
@@ -240,17 +352,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <li>consoleRead()
 : <a class="el" href="class__system__.html#ad8ed080884845824fe1b64a1d3f4365c">_system_</a>
 </li>
+<li>consoleReadMask()
+: <a class="el" href="class__system__.html#a42b2b3142627c5e076bfb7eda6a6cdd8">_system_</a>
+</li>
 <li>consoleWrite()
 : <a class="el" href="class__system__.html#adfb5bfb8e299a0bcac39aea2630f4f60">_system_</a>
+</li>
+<li>consoleWriteError()
+: <a class="el" href="class__system__.html#acf0b6d157998f9b7941c40cd18061d63">_system_</a>
 </li>
 <li>containsKey()
 : <a class="el" href="class_map.html#a47e67a8191aafd1a6173b7819b4a3fed">Map&lt;_K,  _V&gt;</a>
 </li>
+<li>context()
+: <a class="el" href="class_qt_1_1_q_open_g_l_widget.html#a5d50d028c03d98dedca27fddff14d752">QOpenGLWidget</a>
+</li>
+<li>contextMenu()
+: <a class="el" href="class_qt_1_1_q_system_tray_icon.html#a7732f91b7e4073488055636d758084dc">QSystemTrayIcon</a>
+</li>
+<li>contrast()
+: <a class="el" href="class_qt_1_1_q_video_widget.html#adce122405ca6ab1e7a85155002f8e5a7">QVideoWidget</a>
+</li>
+<li>contrastChanged()
+: <a class="el" href="class_qt_1_1on_video_widget_listener.html#a34300fe177c5ffdf8e112904a0fdda1e">onVideoWidgetListener</a>
+, <a class="el" href="class_qt_1_1_q_video_widget.html#a11d10146a60cb5d570143e75a33d30fa">QVideoWidget</a>
+</li>
 <li>Copy()
-: <a class="el" href="class_q_x_sci.html#adf809e319099e575a43fa13b5b05edc7">QXSci</a>
+: <a class="el" href="class_qt_1_1_q_scintilla.html#adf809e319099e575a43fa13b5b05edc7">QScintilla</a>
 </li>
 <li>copy()
-: <a class="el" href="class_q_x_text_edit.html#aaa6c087511a52e64fc9ad92820c7c0a8">QXTextEdit</a>
+: <a class="el" href="class_qt_1_1_q_text_edit.html#aaa6c087511a52e64fc9ad92820c7c0a8">QTextEdit</a>
+</li>
+<li>cornerWidget()
+: <a class="el" href="class_qt_1_1_q_tab_widget.html#a3ff9d23cda44173dcd9a39fb647db1d5">QTabWidget</a>
 </li>
 <li>cos()
 : <a class="el" href="class_math.html#a258d26f01bf1d88771fdb7647b203918">Math</a>
@@ -258,53 +392,91 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <li>cosh()
 : <a class="el" href="class_math.html#ab1957eadd01a90cd41cab9e7a03e78fa">Math</a>
 </li>
+<li>count()
+: <a class="el" href="class_qt_1_1_q_header_view.html#a0ad7fb1f19128d63e4b48bbd7a5a0c07">QHeaderView</a>
+, <a class="el" href="class_qt_1_1_q_tab_bar.html#a0ad7fb1f19128d63e4b48bbd7a5a0c07">QTabBar</a>
+, <a class="el" href="class_qt_1_1_q_tab_widget.html#a0ad7fb1f19128d63e4b48bbd7a5a0c07">QTabWidget</a>
+</li>
 <li>countChar()
 : <a class="el" href="class_string.html#a5627b070b40a4e774267ff751c6f3e8e">String</a>
+, <a class="el" href="class_string_buffer.html#a5627b070b40a4e774267ff751c6f3e8e">StringBuffer</a>
 </li>
 <li>countOfLine()
-: <a class="el" href="class_q_x_sci.html#a12470996e2128b3742f164153bb72672">QXSci</a>
+: <a class="el" href="class_qt_1_1_q_scintilla.html#a12470996e2128b3742f164153bb72672">QScintilla</a>
 </li>
 <li>countString()
 : <a class="el" href="class_string.html#a6f20df266a73763a0e5b7d74c31c99c7">String</a>
+, <a class="el" href="class_string_buffer.html#a6f20df266a73763a0e5b7d74c31c99c7">StringBuffer</a>
 </li>
 <li>countStringIgnoreCase()
 : <a class="el" href="class_string.html#aa61f9b7a2e13afc784ebde1564167278">String</a>
+, <a class="el" href="class_string_buffer.html#aa61f9b7a2e13afc784ebde1564167278">StringBuffer</a>
 </li>
 <li>create()
-: <a class="el" href="class_process.html#a7ac11a47192f1e9726b831ac118827a3">Process</a>
-, <a class="el" href="class_q_print_dialog.html#a183d7a8794eeba09aa2fe814af1a90bc">QPrintDialog</a>
-, <a class="el" href="class_q_print_preview_dialog.html#a183d7a8794eeba09aa2fe814af1a90bc">QPrintPreviewDialog</a>
-, <a class="el" href="class_q_x_action.html#a183d7a8794eeba09aa2fe814af1a90bc">QXAction</a>
-, <a class="el" href="class_q_x_brush_1_1_gradient.html#ad2457588bd673468807a01f700be99ea">QXBrush.Gradient</a>
-, <a class="el" href="class_q_x_check_box.html#a183d7a8794eeba09aa2fe814af1a90bc">QXCheckBox</a>
-, <a class="el" href="class_q_x_combo_box.html#a183d7a8794eeba09aa2fe814af1a90bc">QXComboBox</a>
-, <a class="el" href="class_q_x_date_edit.html#a183d7a8794eeba09aa2fe814af1a90bc">QXDateEdit</a>
-, <a class="el" href="class_q_x_date_time_edit.html#aa66d027b4d8c7972332df51fe806748d">QXDateTimeEdit</a>
-, <a class="el" href="class_q_x_dialog.html#a183d7a8794eeba09aa2fe814af1a90bc">QXDialog</a>
-, <a class="el" href="class_q_x_file_system_watcher.html#aa66d027b4d8c7972332df51fe806748d">QXFileSystemWatcher</a>
-, <a class="el" href="class_q_x_label.html#a183d7a8794eeba09aa2fe814af1a90bc">QXLabel</a>
-, <a class="el" href="class_q_x_line_edit.html#a183d7a8794eeba09aa2fe814af1a90bc">QXLineEdit</a>
-, <a class="el" href="class_q_x_list_view.html#a183d7a8794eeba09aa2fe814af1a90bc">QXListView</a>
-, <a class="el" href="class_q_x_main_window.html#a183d7a8794eeba09aa2fe814af1a90bc">QXMainWindow</a>
-, <a class="el" href="class_q_x_mdi_sub_window.html#a183d7a8794eeba09aa2fe814af1a90bc">QXMdiSubWindow</a>
-, <a class="el" href="class_q_x_menu.html#a183d7a8794eeba09aa2fe814af1a90bc">QXMenu</a>
-, <a class="el" href="class_q_x_menu_bar.html#a183d7a8794eeba09aa2fe814af1a90bc">QXMenuBar</a>
-, <a class="el" href="class_q_x_progress_bar.html#a183d7a8794eeba09aa2fe814af1a90bc">QXProgressBar</a>
-, <a class="el" href="class_q_x_property_browser.html#a183d7a8794eeba09aa2fe814af1a90bc">QXPropertyBrowser</a>
-, <a class="el" href="class_q_x_push_button.html#a183d7a8794eeba09aa2fe814af1a90bc">QXPushButton</a>
-, <a class="el" href="class_q_x_sci.html#a07bce69267d2f555ab297162d30655a0">QXSci</a>
-, <a class="el" href="class_q_x_status_bar.html#aa66d027b4d8c7972332df51fe806748d">QXStatusBar</a>
-, <a class="el" href="class_q_x_table_widget.html#a5ed14e142d54ed69888ce16f9e7244e4">QXTableWidget</a>
-, <a class="el" href="class_q_x_text_edit.html#a183d7a8794eeba09aa2fe814af1a90bc">QXTextEdit</a>
-, <a class="el" href="class_q_x_time_edit.html#aa66d027b4d8c7972332df51fe806748d">QXTimeEdit</a>
-, <a class="el" href="class_q_x_tool_bar.html#aa66d027b4d8c7972332df51fe806748d">QXToolBar</a>
-, <a class="el" href="class_q_x_tree_view.html#aa66d027b4d8c7972332df51fe806748d">QXTreeView</a>
-, <a class="el" href="class_q_x_widget.html#aa47477c17413b09b89c49cc5ee72c856">QXWidget</a>
-, <a class="el" href="class_report_engine.html#aa66d027b4d8c7972332df51fe806748d">ReportEngine</a>
+: <a class="el" href="class_ado_connector.html#a24285b03307ae66ae30988f2f6d14ddc">AdoConnector</a>
+, <a class="el" href="class_mysql.html#a24285b03307ae66ae30988f2f6d14ddc">Mysql</a>
+, <a class="el" href="class_process.html#ab206fb52cee41d91bfa3724a0e79b523">Process</a>
+, <a class="el" href="class_qt_1_1_q_action.html#a183d7a8794eeba09aa2fe814af1a90bc">QAction</a>
+, <a class="el" href="class_qt_1_1_q_audio_input.html#a70194fc14dbfe4468dffdbdc20c7639a">QAudioInput</a>
+, <a class="el" href="class_qt_1_1_q_audio_output.html#a70194fc14dbfe4468dffdbdc20c7639a">QAudioOutput</a>
+, <a class="el" href="class_qt_1_1_q_brush_1_1_gradient.html#a41e3e977bdc678445fcd858b7c9312c9">QBrush.Gradient</a>
+, <a class="el" href="class_qt_1_1_q_calendar_widget.html#a5ed14e142d54ed69888ce16f9e7244e4">QCalendarWidget</a>
+, <a class="el" href="class_qt_1_1_q_check_box.html#a5ed14e142d54ed69888ce16f9e7244e4">QCheckBox</a>
+, <a class="el" href="class_qt_1_1_q_combo_box.html#a982062cd6a29a737cef52fbae701d3d6">QComboBox</a>
+, <a class="el" href="class_qt_1_1_q_date_edit.html#a5ed14e142d54ed69888ce16f9e7244e4">QDateEdit</a>
+, <a class="el" href="class_qt_1_1_q_date_time_edit.html#a5ed14e142d54ed69888ce16f9e7244e4">QDateTimeEdit</a>
+, <a class="el" href="class_qt_1_1_q_dialog.html#a5ed14e142d54ed69888ce16f9e7244e4">QDialog</a>
+, <a class="el" href="class_qt_1_1_q_dock_widget.html#a982062cd6a29a737cef52fbae701d3d6">QDockWidget</a>
+, <a class="el" href="class_qt_1_1_q_file_system_watcher.html#a3e6c583c55d38cf9e97baa5cb441129b">QFileSystemWatcher</a>
+, <a class="el" href="class_qt_1_1_q_h_box_layout.html#a3e6c583c55d38cf9e97baa5cb441129b">QHBoxLayout</a>
+, <a class="el" href="class_qt_1_1_q_label.html#a5ed14e142d54ed69888ce16f9e7244e4">QLabel</a>
+, <a class="el" href="class_qt_1_1_q_line_edit.html#a5ed14e142d54ed69888ce16f9e7244e4">QLineEdit</a>
+, <a class="el" href="class_qt_1_1_q_list_view.html#a5ed14e142d54ed69888ce16f9e7244e4">QListView</a>
+, <a class="el" href="class_qt_1_1_q_main_window.html#a5ed14e142d54ed69888ce16f9e7244e4">QMainWindow</a>
+, <a class="el" href="class_qt_1_1_q_mdi_sub_window.html#a5ed14e142d54ed69888ce16f9e7244e4">QMdiSubWindow</a>
+, <a class="el" href="class_qt_1_1_q_media_player.html#adb9109b42aa0d046aeb24173426a990d">QMediaPlayer</a>
+, <a class="el" href="class_qt_1_1_q_menu.html#a982062cd6a29a737cef52fbae701d3d6">QMenu</a>
+, <a class="el" href="class_qt_1_1_q_menu_bar.html#a982062cd6a29a737cef52fbae701d3d6">QMenuBar</a>
+, <a class="el" href="class_qt_1_1_q_open_g_l_context.html#a183d7a8794eeba09aa2fe814af1a90bc">QOpenGLContext</a>
+, <a class="el" href="class_qt_1_1_q_open_g_l_widget.html#aa47477c17413b09b89c49cc5ee72c856">QOpenGLWidget</a>
+, <a class="el" href="class_qt_1_1_q_print_dialog.html#a939753a061bd375a8336cee7809c58d9">QPrintDialog</a>
+, <a class="el" href="class_qt_1_1_q_print_preview_dialog.html#a982062cd6a29a737cef52fbae701d3d6">QPrintPreviewDialog</a>
+, <a class="el" href="class_qt_1_1_q_progress_bar.html#a5ed14e142d54ed69888ce16f9e7244e4">QProgressBar</a>
+, <a class="el" href="class_qt_1_1_q_property_browser.html#a982062cd6a29a737cef52fbae701d3d6">QPropertyBrowser</a>
+, <a class="el" href="class_qt_1_1_q_push_button.html#a5ed14e142d54ed69888ce16f9e7244e4">QPushButton</a>
+, <a class="el" href="class_qt_1_1_q_scintilla.html#a982062cd6a29a737cef52fbae701d3d6">QScintilla</a>
+, <a class="el" href="class_qt_1_1_q_slider.html#a982062cd6a29a737cef52fbae701d3d6">QSlider</a>
+, <a class="el" href="class_qt_1_1_q_status_bar.html#a982062cd6a29a737cef52fbae701d3d6">QStatusBar</a>
+, <a class="el" href="class_qt_1_1_q_system_tray_icon.html#aa47477c17413b09b89c49cc5ee72c856">QSystemTrayIcon</a>
+, <a class="el" href="class_qt_1_1_q_tab_bar.html#a982062cd6a29a737cef52fbae701d3d6">QTabBar</a>
+, <a class="el" href="class_qt_1_1_q_table_widget.html#a5ed14e142d54ed69888ce16f9e7244e4">QTableWidget</a>
+, <a class="el" href="class_qt_1_1_q_tab_widget.html#a982062cd6a29a737cef52fbae701d3d6">QTabWidget</a>
+, <a class="el" href="class_qt_1_1_q_text_edit.html#a5ed14e142d54ed69888ce16f9e7244e4">QTextEdit</a>
+, <a class="el" href="class_qt_1_1_q_time_edit.html#a5ed14e142d54ed69888ce16f9e7244e4">QTimeEdit</a>
+, <a class="el" href="class_qt_1_1_q_tool_bar.html#a982062cd6a29a737cef52fbae701d3d6">QToolBar</a>
+, <a class="el" href="class_qt_1_1_q_tree_widget.html#a5ed14e142d54ed69888ce16f9e7244e4">QTreeWidget</a>
+, <a class="el" href="class_qt_1_1_q_v_box_layout.html#a3e6c583c55d38cf9e97baa5cb441129b">QVBoxLayout</a>
+, <a class="el" href="class_qt_1_1_q_video_widget.html#a982062cd6a29a737cef52fbae701d3d6">QVideoWidget</a>
+, <a class="el" href="class_qt_1_1_q_widget.html#a55ad08eb8f71593397f6e72d7b926516">QWidget</a>
+, <a class="el" href="class_qt_1_1_report_engine.html#a3e6c583c55d38cf9e97baa5cb441129b">ReportEngine</a>
+, <a class="el" href="class_qt_1_1_switche.html#a5ed14e142d54ed69888ce16f9e7244e4">Switche</a>
+, <a class="el" href="class_qtitan_1_1_dock_bar_manager.html#accbc1f1a8c2783a61e8f78496efe303a">DockBarManager</a>
+, <a class="el" href="class_qtitan_1_1_dock_document_panel.html#af79029a421959b1833a74cbfb56b6b91">DockDocumentPanel</a>
+, <a class="el" href="class_qtitan_1_1_dock_main_window.html#a5ed14e142d54ed69888ce16f9e7244e4">DockMainWindow</a>
+, <a class="el" href="class_qtitan_1_1_dock_panel_manager.html#accbc1f1a8c2783a61e8f78496efe303a">DockPanelManager</a>
+, <a class="el" href="class_qtitan_1_1_dock_style.html#a2b349e74ebfe699a7973d6fa372377b2">DockStyle</a>
+, <a class="el" href="class_qtitan_1_1_dock_tool_bar.html#a48c1ea5abe7855c4461a3446502645b0">DockToolBar</a>
+, <a class="el" href="class_qtitan_1_1_dock_widget_panel.html#a6cafcc1566644c6e6d003ddb67e6cadf">DockWidgetPanel</a>
+, <a class="el" href="class_qtitan_1_1_dock_window.html#af79029a421959b1833a74cbfb56b6b91">DockWindow</a>
+, <a class="el" href="interface_sql_1_1_connection.html#a94d5ef018cbeeffead4d4b91bb8dadec">Connection</a>
+, <a class="el" href="class_sqlite.html#a24285b03307ae66ae30988f2f6d14ddc">Sqlite</a>
 , <a class="el" href="class_unsi.html#ac7fb5c93a921e7970d3aaff545c93553">Unsi</a>
 </li>
 <li>createCommentNode()
 : <a class="el" href="class_x_dom_node.html#aa60805232118338cc7664538d6efc12e">XDomNode</a>
+</li>
+<li>createConnection()
+: <a class="el" href="interface_sql_1_1_conn_pool_callback.html#a15a2c339895d5bf851894c1ae03c0166">ConnPoolCallback</a>
 </li>
 <li>createConsole()
 : <a class="el" href="class__system__.html#ad74503f22ed85a1eaebcaebe202d2090">_system_</a>
@@ -318,36 +490,60 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <li>createPipe()
 : <a class="el" href="class__system__.html#ac08fe73c795f38ca089be3768f1a90aa">_system_</a>
 </li>
-<li>createQXApplication()
-: <a class="el" href="class_q_x_application.html#aba95e5874a1b46ecd29d506a5f2455d6">QXApplication</a>
+<li>createQApplication()
+: <a class="el" href="class_qt_1_1_q_application.html#a7b1bafc957e69b600f20bf24b083f5a5">QApplication</a>
+</li>
+<li>createStatement()
+: <a class="el" href="class_ado_connector.html#acd826b80350573c3c739b9064382e8a6">AdoConnector</a>
+, <a class="el" href="class_mysql.html#acd826b80350573c3c739b9064382e8a6">Mysql</a>
+, <a class="el" href="interface_sql_1_1_connection.html#ac5d8681ed244f10b6baa802b5e338ba3">Connection</a>
+, <a class="el" href="class_sqlite.html#acd826b80350573c3c739b9064382e8a6">Sqlite</a>
 </li>
 <li>createSubWnd()
-: <a class="el" href="class_q_x_mdi_area.html#a9ce976e2f7b6acd0182508190446451c">QXMdiArea</a>
+: <a class="el" href="class_qt_1_1_q_mdi_area.html#a1bca41e15ce7378f5d6a86f01dd9941e">QMdiArea</a>
 </li>
 <li>Critical()
-: <a class="el" href="class_q_x_message_box.html#a1fd71ea79731543eb35dfd1822a8ca1b">QXMessageBox</a>
-, <a class="el" href="class_q_x_widget.html#a2b6937b206ed6567b0716cf036ae531e">QXWidget</a>
+: <a class="el" href="class_qt_1_1_q_message_box.html#a1fd71ea79731543eb35dfd1822a8ca1b">QMessageBox</a>
+, <a class="el" href="class_qt_1_1_q_widget.html#a2b6937b206ed6567b0716cf036ae531e">QWidget</a>
 </li>
 <li>cubicto()
-: <a class="el" href="class_q_x_path.html#a2b3cce5058c492882243752169074867">QXPath</a>
+: <a class="el" href="class_qt_1_1_q_path.html#a2b3cce5058c492882243752169074867">QPath</a>
+</li>
+<li>currentChanged()
+: <a class="el" href="class_qt_1_1_q_tab_bar.html#aa5b27daeabfdb9f208ea931249968c2e">QTabBar</a>
+, <a class="el" href="class_qt_1_1_q_tab_widget.html#aa5b27daeabfdb9f208ea931249968c2e">QTabWidget</a>
+</li>
+<li>currentContext()
+: <a class="el" href="class_qt_1_1_q_open_g_l_context.html#ade08fc20c71e17f1738bdf9a8eb5d8c4">QOpenGLContext</a>
+</li>
+<li>currentIndex()
+: <a class="el" href="class_qt_1_1_q_tab_bar.html#a89cf528c3e53736b292693249e6b68eb">QTabBar</a>
+, <a class="el" href="class_qt_1_1_q_tab_widget.html#a89cf528c3e53736b292693249e6b68eb">QTabWidget</a>
+</li>
+<li>currentMediaChanged()
+: <a class="el" href="class_qt_1_1on_media_player_listener.html#a353bb8573abed2704c83391f69bf67e2">onMediaPlayerListener</a>
+, <a class="el" href="class_qt_1_1_q_media_player.html#a04a9f4d878f7134efadbe4609bde8ec3">QMediaPlayer</a>
 </li>
 <li>currentMessage()
-: <a class="el" href="class_q_x_status_bar.html#a7cef04cdd82bd2e6e176cb01a97619c3">QXStatusBar</a>
+: <a class="el" href="class_qt_1_1_q_status_bar.html#a7cef04cdd82bd2e6e176cb01a97619c3">QStatusBar</a>
 </li>
 <li>currentPosition()
-: <a class="el" href="class_q_x_sci.html#aedf82eb80a2cc4ec218bca2057f80e06">QXSci</a>
+: <a class="el" href="class_qt_1_1_q_scintilla.html#aedf82eb80a2cc4ec218bca2057f80e06">QScintilla</a>
 </li>
 <li>currentSubWindow()
-: <a class="el" href="class_q_x_mdi_area.html#a342512b980f048f8c1dcdf77472906ec">QXMdiArea</a>
+: <a class="el" href="class_qt_1_1_q_mdi_area.html#a8419e767808590a64cb9724707bdc22e">QMdiArea</a>
 </li>
 <li>currentTimeMillis()
 : <a class="el" href="class__system__.html#ae2577c522d61ec6f231d1965385e6dba">_system_</a>
 </li>
+<li>currentWidget()
+: <a class="el" href="class_qt_1_1_q_tab_widget.html#ad0afa0f26d9339516fcaa26e09498cb3">QTabWidget</a>
+</li>
 <li>Cut()
-: <a class="el" href="class_q_x_sci.html#a90a7629204b24b8f69270b50f2ff4713">QXSci</a>
+: <a class="el" href="class_qt_1_1_q_scintilla.html#a90a7629204b24b8f69270b50f2ff4713">QScintilla</a>
 </li>
 <li>cut()
-: <a class="el" href="class_q_x_text_edit.html#ada01f65675afbbc0b8006d58df5acb81">QXTextEdit</a>
+: <a class="el" href="class_qt_1_1_q_text_edit.html#ada01f65675afbbc0b8006d58df5acb81">QTextEdit</a>
 </li>
 </ul>
 </div><!-- contents -->

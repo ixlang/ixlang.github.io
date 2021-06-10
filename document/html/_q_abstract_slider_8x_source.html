@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>xlang: E:/Developments/Cadaqs/caNamespace/castudio/xcross/xlang/xlang/xlibrarys/QT&amp;XLIB/QXLibrary/qt5/widgets/QAbstractSlider.x 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="xide_32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">xlang
+   &#160;<span id="projectnumber">v3.6 Release</span>
+   </div>
+   <div id="projectbrief">程序设计语言基础库文档</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>包</span></a></li>
+      <li><a href="annotated.html"><span>数据类型列表</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c26b241c633baa98de380b3fd590c11c.html">xlibrarys</a></li><li class="navelem"><a class="el" href="dir_5666ad1a9fdeb818d224f872b324982b.html">QT&amp;XLIB</a></li><li class="navelem"><a class="el" href="dir_7961984395364fe113330b5319164161.html">QXLibrary</a></li><li class="navelem"><a class="el" href="dir_0d599f6f40044cb1083515dc54bda2af.html">qt5</a></li><li class="navelem"><a class="el" href="dir_cfcbf8b0d8f6d8bd829feb69f92de4d5.html">widgets</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">QAbstractSlider.x</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_q_abstract_slider_8x.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//xlang Source, Name:qt5/widgets/QAbstractSlider.x </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//Date: Thu Oct 16:40:58 2020 </span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">package </span>Qt{</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html">    5</a></span>&#160;    public class QAbstractSlider : QWidget{</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider_1_1_slider_event_listener.html">    7</a></span>&#160;        public static class SliderEventListener{</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider_1_1_slider_event_listener.html#a3d849d85487cfcd3aec9c11624cd23b7">    8</a></span>&#160;            public void onValueChanged(QAbstractSlider, int value) {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;            }</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider_1_1_slider_event_listener.html#a5485c3603018a873b8392a62e370cfdc">   12</a></span>&#160;            public void onPressed(QAbstractSlider) {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            }</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider_1_1_slider_event_listener.html#af04e2e96077b4e601de7cb022e144369">   16</a></span>&#160;            public void onMoved(QAbstractSlider, int position) {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            }</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider_1_1_slider_event_listener.html#add223eec141c224fb66d7be43f15e18e">   20</a></span>&#160;            public void onReleased(QAbstractSlider) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider_1_1_slider_event_listener.html#ade8216aff7a6d23291800f2a9880cd67">   24</a></span>&#160;            public void onRangeChanged(QAbstractSlider, int min, int max) {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider_1_1_slider_event_listener.html#a7ad4a6263b00dd0667264bd573bf9f16">   28</a></span>&#160;            public void onActionTriggered(QAbstractSlider, int action) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        };</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a2f020cfa4f11465765fff24f06acba1e">   33</a></span>&#160;        SliderEventListener listener = nilptr;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a16a480bc7fd4fcb82cfbb376c2b48e09">   35</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#a16a480bc7fd4fcb82cfbb376c2b48e09">QAbstractSlider</a>(){</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a2d454b5d8880e0a0c3e6196c0ef07bd0">   39</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#a2d454b5d8880e0a0c3e6196c0ef07bd0">QAbstractSlider</a>(<span class="keywordtype">long</span> handle){</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            super(handle);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#ae4ac5af0d942fc3de7e8335d4ccfb3e6">   43</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#ae4ac5af0d942fc3de7e8335d4ccfb3e6">setSliderEventListener</a>(SliderEventListener l){</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            listener = l;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a20604e6f0c6b7a7f93a29ddef0aa03ff">   47</a></span>&#160;        <span class="keyword">public</span> SliderEventListener <a class="code" href="class_qt_1_1_q_abstract_slider.html#a20604e6f0c6b7a7f93a29ddef0aa03ff">getSliderEventListener</a>(){</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">return</span> listener;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a58751b47cf37aa744cdb471f7b1c6e67">   51</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#a58751b47cf37aa744cdb471f7b1c6e67">setMinimum</a>(<span class="keywordtype">int</span> v){</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            QtXnl.widget_set_vint_value(nativehandle, Constant.SLD_SETMIN, v);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a572f8673c943d6ebfe3b49d1f472333b">   55</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#a572f8673c943d6ebfe3b49d1f472333b">minimum</a>() {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_int_value(nativehandle, Constant.SLD_GETMIN);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a202ad8761a850dd8061810c133c29ee1">   59</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#a202ad8761a850dd8061810c133c29ee1">setMaximum</a>(<span class="keywordtype">int</span> v){</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            QtXnl.widget_set_vint_value(nativehandle, Constant.SLD_SETMAX, v);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#afa25dac2ec81611286a2108b33344d15">   63</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#afa25dac2ec81611286a2108b33344d15">maximum</a>() {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_int_value(nativehandle, Constant.SLD_GETMAX);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a21f9dff76ae2358ab33b0ace55ba4dbe">   67</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#a21f9dff76ae2358ab33b0ace55ba4dbe">setSingleStep</a>(<span class="keywordtype">int</span> v){</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            QtXnl.widget_set_vint_value(nativehandle, Constant.SLD_SETSINGLESTEP, v);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a033ea775849137ca849855e36569881e">   71</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#a033ea775849137ca849855e36569881e">singleStep</a>() {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_int_value(nativehandle, Constant.SLD_GETSINGLESTEP);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a86f79afb04dac223602fa10b146abde5">   75</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#a86f79afb04dac223602fa10b146abde5">setPageStep</a>(<span class="keywordtype">int</span> v){</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            QtXnl.widget_set_vint_value(nativehandle, Constant.SLD_SETPAGESTEP, v);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a3266969b1d656db7a413a57e797d39fe">   79</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#a3266969b1d656db7a413a57e797d39fe">pageStep</a>() {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_int_value(nativehandle, Constant.SLD_GETPAGESTEP);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#aa78f403f2f8aa3057fd9e50f456acbd2">   83</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#aa78f403f2f8aa3057fd9e50f456acbd2">setTracking</a>(<span class="keywordtype">bool</span> enable){</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            QtXnl.widget_set_bool_value(nativehandle, Constant.SLD_SETTRACKING, enable);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a6e309bd6bbf78db8ab0e226dc4d84503">   87</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#a6e309bd6bbf78db8ab0e226dc4d84503">hasTracking</a>() {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_bool_value(nativehandle, Constant.SLD_GETTRACKING);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a5a69e90386b656080664fe293d42a867">   91</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#a5a69e90386b656080664fe293d42a867">setSliderDown</a>(<span class="keywordtype">bool</span> enable){</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            QtXnl.widget_set_bool_value(nativehandle, Constant.SLD_SETSLIDDOWN, enable);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a486dd6ad5f9152fad54ab82fff1d2129">   95</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#a486dd6ad5f9152fad54ab82fff1d2129">isSliderDown</a>() {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_bool_value(nativehandle, Constant.SLD_GETSLIDDOWN);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a50781d34a681b309f2c2f299169f499c">   99</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#a50781d34a681b309f2c2f299169f499c">setSliderPosition</a>(<span class="keywordtype">int</span> v){</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            QtXnl.widget_set_vint_value(nativehandle, Constant.SLD_SETSLIDPOS, v);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        </div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a2d62c56815dd9c2c8368c5b7f62fcb6e">  103</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#a2d62c56815dd9c2c8368c5b7f62fcb6e">sliderPosition</a>() {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_int_value(nativehandle, Constant.SLD_GETSLIDPOS);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a306df48fc72985a23aa18bfc66dab444">  107</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#a306df48fc72985a23aa18bfc66dab444">setInvertedAppearance</a>(<span class="keywordtype">bool</span> enable){</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            QtXnl.widget_set_bool_value(nativehandle, Constant.SLD_SETINVERTEDAPPEARANCE, enable);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        </div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a478639993a7da04a370852d53f9d6268">  111</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#a478639993a7da04a370852d53f9d6268">invertedAppearance</a>() {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_bool_value(nativehandle, Constant.SLD_GETINVERTEDAPPEARANCE);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a4844b28ce491cd5a41f2399c062a3897">  115</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#a4844b28ce491cd5a41f2399c062a3897">setInvertedControls</a>(<span class="keywordtype">bool</span> enable){</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            QtXnl.widget_set_bool_value(nativehandle, Constant.SLD_SETINVERTEDCONTROLS, enable);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        </div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a9355bd42256cd7d181be618a22421598">  119</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#a9355bd42256cd7d181be618a22421598">invertedControls</a>() {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_bool_value(nativehandle, Constant.SLD_GETINVERTEDCONTROLS);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_abstract_slider_1_1_slider_action.html">  123</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">enum</span> SliderAction {</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_abstract_slider_1_1_slider_action.html#ad50527c9295dfe32e8d37db8c8611ae4">  124</a></span>&#160;            <a class="code" href="enum_qt_1_1_q_abstract_slider_1_1_slider_action.html#ad50527c9295dfe32e8d37db8c8611ae4">SliderNoAction</a>,</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_abstract_slider_1_1_slider_action.html#a89a6db9ca41368f0bb119c3cc5e1de8b">  125</a></span>&#160;            <a class="code" href="enum_qt_1_1_q_abstract_slider_1_1_slider_action.html#a89a6db9ca41368f0bb119c3cc5e1de8b">SliderSingleStepAdd</a>,</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_abstract_slider_1_1_slider_action.html#a7c6e6e3a3c7c3eb98d3989c7be1844b9">  126</a></span>&#160;            <a class="code" href="enum_qt_1_1_q_abstract_slider_1_1_slider_action.html#a7c6e6e3a3c7c3eb98d3989c7be1844b9">SliderSingleStepSub</a>,</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_abstract_slider_1_1_slider_action.html#a9e6ddbdde20e9ba1303d0137cde4647d">  127</a></span>&#160;            <a class="code" href="enum_qt_1_1_q_abstract_slider_1_1_slider_action.html#a9e6ddbdde20e9ba1303d0137cde4647d">SliderPageStepAdd</a>,</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_abstract_slider_1_1_slider_action.html#a538ebfbff66c4bca09493c597ee0b45a">  128</a></span>&#160;            <a class="code" href="enum_qt_1_1_q_abstract_slider_1_1_slider_action.html#a538ebfbff66c4bca09493c597ee0b45a">SliderPageStepSub</a>,</div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_abstract_slider_1_1_slider_action.html#aa3dddb7ae56b387486c07f1aa7c85e8a">  129</a></span>&#160;            <a class="code" href="enum_qt_1_1_q_abstract_slider_1_1_slider_action.html#aa3dddb7ae56b387486c07f1aa7c85e8a">SliderToMinimum</a>,</div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_abstract_slider_1_1_slider_action.html#ad74654803697e7dd7a8e33e15d681a3f">  130</a></span>&#160;            <a class="code" href="enum_qt_1_1_q_abstract_slider_1_1_slider_action.html#ad74654803697e7dd7a8e33e15d681a3f">SliderToMaximum</a>,</div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="enum_qt_1_1_q_abstract_slider_1_1_slider_action.html#aee77a61540cd06434e4f4eab205bad7e">  131</a></span>&#160;            SliderMove</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        };</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a8ef72dd2e54b46900e9123025dfedcf3">  134</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#a8ef72dd2e54b46900e9123025dfedcf3">value</a>() {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <span class="keywordflow">return</span> QtXnl.widget_get_int_value(nativehandle, Constant.SLD_GETVALUE);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a9ffbe927f35937ae86a2e9fcc9aa46dd">  138</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#a9ffbe927f35937ae86a2e9fcc9aa46dd">triggerAction</a>(SliderAction action){</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            QtXnl.widget_set_vint_value(nativehandle, Constant.SLD_TRIGGERACTION, action);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a9a5bdab2dd8e17afbef953122fb5f86a">  143</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#a9a5bdab2dd8e17afbef953122fb5f86a">setValue</a>(<span class="keywordtype">int</span> v){</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            QtXnl.widget_set_vint_value(nativehandle,Constant. SLD_SETVALUE, v);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        }</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        </div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#aa17de1df0244e37496eaba68203d05d4">  147</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#aa17de1df0244e37496eaba68203d05d4">setOrientation</a>(<span class="keywordtype">int</span> orientation){</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            QtXnl.widget_set_vint_value(nativehandle, Constant.SLD_SETORIENTATION, orientation);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        </div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a693c16cecd031a84aaf28be0427cff88">  151</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#a693c16cecd031a84aaf28be0427cff88">setRange</a>(<span class="keywordtype">int</span> min, <span class="keywordtype">int</span> max){</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            QtXnl.widget_set_v2int_value(nativehandle,Constant. SLD_SETRANGE, min, max);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        </div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#aebb078195c819c9984296112d415921e">  157</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#aebb078195c819c9984296112d415921e">onValueChanged</a>(<span class="keywordtype">int</span> value) {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="keywordflow">if</span> (listener != nilptr){</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                listener.onValueChanged(<span class="keyword">this</span>, value);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            }</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        }</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a37d0e164c5e53fc450815f34e16e7cac">  163</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#a37d0e164c5e53fc450815f34e16e7cac">onPressed</a>() {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="keywordflow">if</span> (listener != nilptr){</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                listener.onPressed(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        </div>
+<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a6a15f27c91428b60d887bac1bb53bd3c">  169</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#a6a15f27c91428b60d887bac1bb53bd3c">onMoved</a>(<span class="keywordtype">int</span> position) {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="keywordflow">if</span> (listener != nilptr){</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                listener.onMoved(<span class="keyword">this</span>, position);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        </div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#aee2b70d99215b9bde93f45d588ab277f">  175</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#aee2b70d99215b9bde93f45d588ab277f">onReleased</a>() {</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keywordflow">if</span> (listener != nilptr){</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                listener.onReleased(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            }</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        }</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a271b5def09b0f29e5766ec7e48a88904">  181</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#a271b5def09b0f29e5766ec7e48a88904">onRangeChanged</a>(<span class="keywordtype">int</span> min, <span class="keywordtype">int</span> max) {</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            <span class="keywordflow">if</span> (listener != nilptr){</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                listener.onRangeChanged(<span class="keyword">this</span>, min, max);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            }</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="class_qt_1_1_q_abstract_slider.html#a8098ac5db23e3f51b4a93178bb55ea9b">  187</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_qt_1_1_q_abstract_slider.html#a8098ac5db23e3f51b4a93178bb55ea9b">onActionTriggered</a>(<span class="keywordtype">int</span> action) {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <span class="keywordflow">if</span> (listener != nilptr){</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                listener.onActionTriggered(<span class="keyword">this</span>, action);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    };</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;};</div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a572f8673c943d6ebfe3b49d1f472333b"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a572f8673c943d6ebfe3b49d1f472333b">Qt.QAbstractSlider.minimum</a></div><div class="ttdeci">int minimum() </div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00055">QAbstractSlider.x:55</a></div></div>
+<div class="ttc" id="enum_qt_1_1_q_abstract_slider_1_1_slider_action_html_a538ebfbff66c4bca09493c597ee0b45a"><div class="ttname"><a href="enum_qt_1_1_q_abstract_slider_1_1_slider_action.html#a538ebfbff66c4bca09493c597ee0b45a">Qt.QAbstractSlider.SliderAction.SliderPageStepSub</a></div><div class="ttdeci">SliderPageStepSub</div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00128">QAbstractSlider.x:128</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a693c16cecd031a84aaf28be0427cff88"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a693c16cecd031a84aaf28be0427cff88">Qt.QAbstractSlider.setRange</a></div><div class="ttdeci">void setRange(int min, int max)</div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00151">QAbstractSlider.x:151</a></div></div>
+<div class="ttc" id="enum_qt_1_1_q_abstract_slider_1_1_slider_action_html_ad50527c9295dfe32e8d37db8c8611ae4"><div class="ttname"><a href="enum_qt_1_1_q_abstract_slider_1_1_slider_action.html#ad50527c9295dfe32e8d37db8c8611ae4">Qt.QAbstractSlider.SliderAction.SliderNoAction</a></div><div class="ttdeci">SliderNoAction</div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00124">QAbstractSlider.x:124</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a5a69e90386b656080664fe293d42a867"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a5a69e90386b656080664fe293d42a867">Qt.QAbstractSlider.setSliderDown</a></div><div class="ttdeci">void setSliderDown(bool enable)</div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00091">QAbstractSlider.x:91</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a486dd6ad5f9152fad54ab82fff1d2129"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a486dd6ad5f9152fad54ab82fff1d2129">Qt.QAbstractSlider.isSliderDown</a></div><div class="ttdeci">bool isSliderDown() </div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00095">QAbstractSlider.x:95</a></div></div>
+<div class="ttc" id="enum_qt_1_1_q_abstract_slider_1_1_slider_action_html_a7c6e6e3a3c7c3eb98d3989c7be1844b9"><div class="ttname"><a href="enum_qt_1_1_q_abstract_slider_1_1_slider_action.html#a7c6e6e3a3c7c3eb98d3989c7be1844b9">Qt.QAbstractSlider.SliderAction.SliderSingleStepSub</a></div><div class="ttdeci">SliderSingleStepSub</div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00126">QAbstractSlider.x:126</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a9ffbe927f35937ae86a2e9fcc9aa46dd"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a9ffbe927f35937ae86a2e9fcc9aa46dd">Qt.QAbstractSlider.triggerAction</a></div><div class="ttdeci">void triggerAction(SliderAction action)</div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00138">QAbstractSlider.x:138</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a033ea775849137ca849855e36569881e"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a033ea775849137ca849855e36569881e">Qt.QAbstractSlider.singleStep</a></div><div class="ttdeci">int singleStep() </div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00071">QAbstractSlider.x:71</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_ae4ac5af0d942fc3de7e8335d4ccfb3e6"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#ae4ac5af0d942fc3de7e8335d4ccfb3e6">Qt.QAbstractSlider.setSliderEventListener</a></div><div class="ttdeci">void setSliderEventListener(SliderEventListener l)</div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00043">QAbstractSlider.x:43</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a20604e6f0c6b7a7f93a29ddef0aa03ff"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a20604e6f0c6b7a7f93a29ddef0aa03ff">Qt.QAbstractSlider.getSliderEventListener</a></div><div class="ttdeci">SliderEventListener getSliderEventListener()</div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00047">QAbstractSlider.x:47</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_aee2b70d99215b9bde93f45d588ab277f"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#aee2b70d99215b9bde93f45d588ab277f">Qt.QAbstractSlider.onReleased</a></div><div class="ttdeci">void onReleased() </div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00175">QAbstractSlider.x:175</a></div></div>
+<div class="ttc" id="enum_qt_1_1_q_abstract_slider_1_1_slider_action_html_a9e6ddbdde20e9ba1303d0137cde4647d"><div class="ttname"><a href="enum_qt_1_1_q_abstract_slider_1_1_slider_action.html#a9e6ddbdde20e9ba1303d0137cde4647d">Qt.QAbstractSlider.SliderAction.SliderPageStepAdd</a></div><div class="ttdeci">SliderPageStepAdd</div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00127">QAbstractSlider.x:127</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a50781d34a681b309f2c2f299169f499c"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a50781d34a681b309f2c2f299169f499c">Qt.QAbstractSlider.setSliderPosition</a></div><div class="ttdeci">void setSliderPosition(int v)</div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00099">QAbstractSlider.x:99</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a6e309bd6bbf78db8ab0e226dc4d84503"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a6e309bd6bbf78db8ab0e226dc4d84503">Qt.QAbstractSlider.hasTracking</a></div><div class="ttdeci">bool hasTracking() </div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00087">QAbstractSlider.x:87</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a37d0e164c5e53fc450815f34e16e7cac"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a37d0e164c5e53fc450815f34e16e7cac">Qt.QAbstractSlider.onPressed</a></div><div class="ttdeci">void onPressed() </div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00163">QAbstractSlider.x:163</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a8098ac5db23e3f51b4a93178bb55ea9b"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a8098ac5db23e3f51b4a93178bb55ea9b">Qt.QAbstractSlider.onActionTriggered</a></div><div class="ttdeci">void onActionTriggered(int action) </div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00187">QAbstractSlider.x:187</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a86f79afb04dac223602fa10b146abde5"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a86f79afb04dac223602fa10b146abde5">Qt.QAbstractSlider.setPageStep</a></div><div class="ttdeci">void setPageStep(int v)</div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00075">QAbstractSlider.x:75</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a202ad8761a850dd8061810c133c29ee1"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a202ad8761a850dd8061810c133c29ee1">Qt.QAbstractSlider.setMaximum</a></div><div class="ttdeci">void setMaximum(int v)</div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00059">QAbstractSlider.x:59</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a21f9dff76ae2358ab33b0ace55ba4dbe"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a21f9dff76ae2358ab33b0ace55ba4dbe">Qt.QAbstractSlider.setSingleStep</a></div><div class="ttdeci">void setSingleStep(int v)</div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00067">QAbstractSlider.x:67</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a6a15f27c91428b60d887bac1bb53bd3c"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a6a15f27c91428b60d887bac1bb53bd3c">Qt.QAbstractSlider.onMoved</a></div><div class="ttdeci">void onMoved(int position) </div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00169">QAbstractSlider.x:169</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a306df48fc72985a23aa18bfc66dab444"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a306df48fc72985a23aa18bfc66dab444">Qt.QAbstractSlider.setInvertedAppearance</a></div><div class="ttdeci">void setInvertedAppearance(bool enable)</div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00107">QAbstractSlider.x:107</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a2d454b5d8880e0a0c3e6196c0ef07bd0"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a2d454b5d8880e0a0c3e6196c0ef07bd0">Qt.QAbstractSlider.QAbstractSlider</a></div><div class="ttdeci">QAbstractSlider(long handle)</div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00039">QAbstractSlider.x:39</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_aa78f403f2f8aa3057fd9e50f456acbd2"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#aa78f403f2f8aa3057fd9e50f456acbd2">Qt.QAbstractSlider.setTracking</a></div><div class="ttdeci">void setTracking(bool enable)</div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00083">QAbstractSlider.x:83</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a3266969b1d656db7a413a57e797d39fe"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a3266969b1d656db7a413a57e797d39fe">Qt.QAbstractSlider.pageStep</a></div><div class="ttdeci">int pageStep() </div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00079">QAbstractSlider.x:79</a></div></div>
+<div class="ttc" id="enum_qt_1_1_q_abstract_slider_1_1_slider_action_html_aa3dddb7ae56b387486c07f1aa7c85e8a"><div class="ttname"><a href="enum_qt_1_1_q_abstract_slider_1_1_slider_action.html#aa3dddb7ae56b387486c07f1aa7c85e8a">Qt.QAbstractSlider.SliderAction.SliderToMinimum</a></div><div class="ttdeci">SliderToMinimum</div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00129">QAbstractSlider.x:129</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a8ef72dd2e54b46900e9123025dfedcf3"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a8ef72dd2e54b46900e9123025dfedcf3">Qt.QAbstractSlider.value</a></div><div class="ttdeci">int value() </div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00134">QAbstractSlider.x:134</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a9a5bdab2dd8e17afbef953122fb5f86a"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a9a5bdab2dd8e17afbef953122fb5f86a">Qt.QAbstractSlider.setValue</a></div><div class="ttdeci">void setValue(int v)</div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00143">QAbstractSlider.x:143</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_afa25dac2ec81611286a2108b33344d15"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#afa25dac2ec81611286a2108b33344d15">Qt.QAbstractSlider.maximum</a></div><div class="ttdeci">int maximum() </div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00063">QAbstractSlider.x:63</a></div></div>
+<div class="ttc" id="enum_qt_1_1_q_abstract_slider_1_1_slider_action_html_a89a6db9ca41368f0bb119c3cc5e1de8b"><div class="ttname"><a href="enum_qt_1_1_q_abstract_slider_1_1_slider_action.html#a89a6db9ca41368f0bb119c3cc5e1de8b">Qt.QAbstractSlider.SliderAction.SliderSingleStepAdd</a></div><div class="ttdeci">SliderSingleStepAdd</div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00125">QAbstractSlider.x:125</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a9355bd42256cd7d181be618a22421598"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a9355bd42256cd7d181be618a22421598">Qt.QAbstractSlider.invertedControls</a></div><div class="ttdeci">bool invertedControls() </div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00119">QAbstractSlider.x:119</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_aebb078195c819c9984296112d415921e"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#aebb078195c819c9984296112d415921e">Qt.QAbstractSlider.onValueChanged</a></div><div class="ttdeci">void onValueChanged(int value) </div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00157">QAbstractSlider.x:157</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a478639993a7da04a370852d53f9d6268"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a478639993a7da04a370852d53f9d6268">Qt.QAbstractSlider.invertedAppearance</a></div><div class="ttdeci">bool invertedAppearance() </div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00111">QAbstractSlider.x:111</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a58751b47cf37aa744cdb471f7b1c6e67"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a58751b47cf37aa744cdb471f7b1c6e67">Qt.QAbstractSlider.setMinimum</a></div><div class="ttdeci">void setMinimum(int v)</div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00051">QAbstractSlider.x:51</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_aa17de1df0244e37496eaba68203d05d4"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#aa17de1df0244e37496eaba68203d05d4">Qt.QAbstractSlider.setOrientation</a></div><div class="ttdeci">void setOrientation(int orientation)</div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00147">QAbstractSlider.x:147</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a2d62c56815dd9c2c8368c5b7f62fcb6e"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a2d62c56815dd9c2c8368c5b7f62fcb6e">Qt.QAbstractSlider.sliderPosition</a></div><div class="ttdeci">int sliderPosition() </div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00103">QAbstractSlider.x:103</a></div></div>
+<div class="ttc" id="enum_qt_1_1_q_abstract_slider_1_1_slider_action_html_ad74654803697e7dd7a8e33e15d681a3f"><div class="ttname"><a href="enum_qt_1_1_q_abstract_slider_1_1_slider_action.html#ad74654803697e7dd7a8e33e15d681a3f">Qt.QAbstractSlider.SliderAction.SliderToMaximum</a></div><div class="ttdeci">SliderToMaximum</div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00130">QAbstractSlider.x:130</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a16a480bc7fd4fcb82cfbb376c2b48e09"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a16a480bc7fd4fcb82cfbb376c2b48e09">Qt.QAbstractSlider.QAbstractSlider</a></div><div class="ttdeci">QAbstractSlider()</div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00035">QAbstractSlider.x:35</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a271b5def09b0f29e5766ec7e48a88904"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a271b5def09b0f29e5766ec7e48a88904">Qt.QAbstractSlider.onRangeChanged</a></div><div class="ttdeci">void onRangeChanged(int min, int max) </div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00181">QAbstractSlider.x:181</a></div></div>
+<div class="ttc" id="class_qt_1_1_q_abstract_slider_html_a4844b28ce491cd5a41f2399c062a3897"><div class="ttname"><a href="class_qt_1_1_q_abstract_slider.html#a4844b28ce491cd5a41f2399c062a3897">Qt.QAbstractSlider.setInvertedControls</a></div><div class="ttdeci">void setInvertedControls(bool enable)</div><div class="ttdef"><b>Definition:</b> <a href="_q_abstract_slider_8x_source.html#l00115">QAbstractSlider.x:115</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>
